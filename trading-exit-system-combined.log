@@ -1,0 +1,262 @@
+2024-09-27T17:00:44.562Z [INFO]: Position added: U | Qty: 500 | Avg Entry: $22.92
+2024-09-27T17:00:46.041Z [INFO]: Attempting to set stop loss order: {"symbol":"U","qty":"500","side":"buy","type":"stop","stop_price":"23.07","time_in_force":"gtc","client_order_id":"STOP-27b1f050048d3f0f"}
+2024-09-27T17:00:47.360Z [INFO]: Stop loss set for U at $23.07. Order ID: 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e
+2024-09-27T17:00:47.378Z [INFO]: Polygon WebSocket connected.
+2024-09-27T17:00:47.380Z [INFO]: Started polling for new positions, breakeven stops, and order statuses.
+2024-09-27T17:00:49.705Z [INFO]: Polygon WebSocket connection opened.
+2024-09-27T17:00:49.708Z [INFO]: Polygon WebSocket connected.
+2024-09-27T17:00:50.013Z [INFO]: Polygon WebSocket authenticated.
+2024-09-27T17:01:55.454Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.460Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.463Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.467Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.469Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.478Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.480Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.483Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.485Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.487Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.489Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.511Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.514Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.515Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.517Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.518Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.520Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.522Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.524Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.525Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.527Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.528Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.530Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.531Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.533Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.534Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.536Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.537Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.538Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.539Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.540Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.956Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.962Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.966Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:01:55.968Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.622Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.627Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.631Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.634Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.636Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.638Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.640Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.642Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:23.643Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:24.846Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:24.852Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:24.855Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:24.858Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:24.860Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:24.862Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:24.865Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.165Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.171Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.175Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.177Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.179Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.181Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.183Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.185Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.187Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.189Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.675Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.683Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.687Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.689Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.691Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.692Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.694Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.696Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:25.698Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:27.446Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:27.451Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:27.456Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:27.459Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:27.462Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:27.464Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:27.465Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.087Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.093Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.097Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.100Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.102Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.104Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.106Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.107Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.109Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.673Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.675Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.676Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.678Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.679Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.680Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.681Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.683Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.691Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.692Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.693Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.694Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.695Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.696Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.698Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.699Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:29.700Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.453Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.461Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.464Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.467Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.469Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.471Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.473Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.475Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.477Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.478Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.960Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.965Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.968Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.971Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.973Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.975Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.978Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.980Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.982Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:30.983Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.454Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.460Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.465Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.467Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.469Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.471Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.473Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.475Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.477Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.479Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.480Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:31.953Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:02:58.914Z [ERROR]: Error polling order statuses: socket hang up
+2024-09-27T17:02:58.972Z [ERROR]: Error cancelling orders for U: Client network socket disconnected before secure TLS connection was established
+2024-09-27T17:02:58.976Z [ERROR]: Error cancelling orders for U: Client network socket disconnected before secure TLS connection was established
+2024-09-27T17:02:58.979Z [ERROR]: Error cancelling orders for U: Client network socket disconnected before secure TLS connection was established
+2024-09-27T17:03:03.654Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:03.697Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:05.509Z [ERROR]: Error checking for new positions: socket hang up
+2024-09-27T17:03:11.359Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:13.226Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:16.225Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:16.786Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:17.070Z [ERROR]: Error polling order statuses: socket hang up
+2024-09-27T17:03:18.495Z [ERROR]: Error checking for new positions: socket hang up
+2024-09-27T17:03:31.222Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:31.975Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:33.277Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:33.320Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:36.699Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-09-27T17:03:36.958Z [ERROR]: Error checking for new positions: read ECONNRESET
+2024-09-27T17:03:37.221Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-09-27T17:03:37.341Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:03:37.660Z [ERROR]: Error checking for new positions: read ECONNRESET
+2024-09-27T17:03:37.992Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:03:56.015Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-09-27T17:03:56.076Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:03:58.712Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:00.735Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-e4e26829b9aee898"}
+2024-09-27T17:04:01.002Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:01.006Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-984b623730ee0015"}
+2024-09-27T17:04:01.307Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:01.668Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:01.674Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:02.071Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-b4ad139a510546f0"}
+2024-09-27T17:04:02.241Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-5c47863da198fb84"}
+2024-09-27T17:04:03.223Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:03.540Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-badee068c9abf321"}
+2024-09-27T17:04:03.698Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-53f6505c5ff8845c"}
+2024-09-27T17:04:03.837Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-d49b44b8cc557438"}
+2024-09-27T17:04:03.974Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:04.228Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:04.456Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:04.466Z [INFO]: Placed IOC order for 125 shares of U at $22.90. Order ID: 3cc5bb48-b26d-4944-a161-2809ac58da0a
+2024-09-27T17:04:04.522Z [INFO]: Placed IOC order for 125 shares of U at $22.90. Order ID: a92c46ca-58eb-483b-a6a0-1edc8ee6a7b8
+2024-09-27T17:04:04.668Z [INFO]: Position in U partially closed. Remaining qty: 375
+2024-09-27T17:04:04.726Z [INFO]: Position in U partially closed. Remaining qty: 250
+2024-09-27T17:04:04.873Z [INFO]: Attempting to set breakeven stop order: {"symbol":"U","qty":"375","side":"buy","type":"stop","stop_price":"22.92","time_in_force":"gtc","client_order_id":"BREAKEVEN-20c99f09c5211ce2"}
+2024-09-27T17:04:04.930Z [INFO]: Attempting to set breakeven stop order: {"symbol":"U","qty":"250","side":"buy","type":"stop","stop_price":"22.92","time_in_force":"gtc","client_order_id":"BREAKEVEN-d34049239e55be2a"}
+2024-09-27T17:04:05.230Z [INFO]: Placed IOC order for 125 shares of U at $22.90. Order ID: e2a1d055-7f07-4b7d-aaea-4ae1b989be10
+2024-09-27T17:04:05.434Z [INFO]: Position in U partially closed. Remaining qty: 125
+2024-09-27T17:04:05.637Z [INFO]: Attempting to set breakeven stop order: {"symbol":"U","qty":"125","side":"buy","type":"stop","stop_price":"22.92","time_in_force":"gtc","client_order_id":"BREAKEVEN-ab5a154b7707ec20"}
+2024-09-27T17:04:05.697Z [INFO]: Attempting to set breakeven stop order: {"symbol":"U","qty":"125","side":"buy","type":"stop","stop_price":"22.92","time_in_force":"gtc","client_order_id":"BREAKEVEN-ed2f05e829ed99ee"}
+2024-09-27T17:04:06.664Z [INFO]: Placed IOC order for 125 shares of U at $22.90. Order ID: f889c862-4c60-4922-bfcf-36c0e6e8b98d
+2024-09-27T17:04:06.869Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:06.873Z [INFO]: Unsubscribed from U quotes.
+2024-09-27T17:04:07.581Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-be1befe65d47c5b6"}
+2024-09-27T17:04:07.922Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:04:07.961Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-5d313e2e2b2a7170"}
+2024-09-27T17:04:08.083Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-e3d41ba7fb0362f4"}
+2024-09-27T17:04:08.498Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-0e611b5110650b7f"}
+2024-09-27T17:04:08.697Z [ERROR]: Error fetching latest quote for U: code: undefined, message: undefined
+2024-09-27T17:04:08.902Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:08.944Z [INFO]: Placed IOC order for 125 shares of U at $22.90. Order ID: 554e7442-c88c-46f0-9dc1-8538711a2079
+2024-09-27T17:04:09.149Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:09.848Z [INFO]: Placed IOC order for 125 shares of U at $22.90. Order ID: e1a76df2-a695-406e-a385-3db9c18784e3
+2024-09-27T17:04:10.052Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:10.235Z [INFO]: Placed IOC order for 125 shares of U at $22.90. Order ID: a98c80db-a278-4eb8-8fd5-39d5062306de
+2024-09-27T17:04:10.439Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:11.511Z [INFO]: Breakeven stop set for U at $22.92. Order ID: 3f5859ea-4e0c-4033-bd10-6ee5e2620ce5
+2024-09-27T17:04:11.669Z [ERROR]: Error setting breakeven stop for U: {"available":"250","code":40310000,"existing_qty":"500","held_for_orders":"250","message":"insufficient qty available for order (requested: 375, available: 250)","related_orders":["3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:11.754Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:11.883Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:04:12.276Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:04:12.956Z [INFO]: Cancelled order a92c46ca-58eb-483b-a6a0-1edc8ee6a7b8 for U.
+2024-09-27T17:04:12.988Z [INFO]: Breakeven stop set for U at $22.92. Order ID: 5e3ba398-49f1-4f03-ad2c-fff4e712e639
+2024-09-27T17:04:13.014Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:13.138Z [INFO]: Breakeven stop set for U at $22.92. Order ID: b45b47fe-e5d1-4c4b-9d40-dc5348877cb6
+2024-09-27T17:04:13.855Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:15.627Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:15.639Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:15.841Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:15.866Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:16.038Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:16.068Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:16.139Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:16.241Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:16.343Z [INFO]: Position in U fully closed.
+2024-09-27T17:04:16.783Z [INFO]: Cancelled order 554e7442-c88c-46f0-9dc1-8538711a2079 for U.
+2024-09-27T17:04:16.946Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:16.951Z [ERROR]: Error polling order statuses: socket hang up
+2024-09-27T17:04:16.958Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:17.698Z [INFO]: Cancelled order a98c80db-a278-4eb8-8fd5-39d5062306de for U.
+2024-09-27T17:04:18.998Z [INFO]: Cancelled order a98c80db-a278-4eb8-8fd5-39d5062306de for U.
+2024-09-27T17:04:19.203Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-341371276d8068d9"}
+2024-09-27T17:04:19.221Z [INFO]: Cancelled order a98c80db-a278-4eb8-8fd5-39d5062306de for U.
+2024-09-27T17:04:19.225Z [INFO]: Cancelled order a98c80db-a278-4eb8-8fd5-39d5062306de for U.
+2024-09-27T17:04:19.255Z [INFO]: Cancelled order a98c80db-a278-4eb8-8fd5-39d5062306de for U.
+2024-09-27T17:04:19.301Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:19.345Z [INFO]: Cancelled order a98c80db-a278-4eb8-8fd5-39d5062306de for U.
+2024-09-27T17:04:19.423Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-54d5f4e984081416"}
+2024-09-27T17:04:19.428Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-aca83dfccbd13296"}
+2024-09-27T17:04:19.547Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-43b4caaad26decfd"}
+2024-09-27T17:04:19.582Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:19.799Z [INFO]: Cancelled order 3f5859ea-4e0c-4033-bd10-6ee5e2620ce5 for U.
+2024-09-27T17:04:20.002Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-3b705c0c7ff0a499"}
+2024-09-27T17:04:20.476Z [INFO]: Cancelled order 3f5859ea-4e0c-4033-bd10-6ee5e2620ce5 for U.
+2024-09-27T17:04:21.141Z [INFO]: Cancelled order 3f5859ea-4e0c-4033-bd10-6ee5e2620ce5 for U.
+2024-09-27T17:04:21.162Z [INFO]: Cancelled order 3cc5bb48-b26d-4944-a161-2809ac58da0a for U.
+2024-09-27T17:04:21.193Z [INFO]: Cancelled order 8610fbc7-2fe8-41dc-8db4-646a31d1cd6e for U.
+2024-09-27T17:04:21.343Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-8b9799f08ad6cc3c"}
+2024-09-27T17:04:21.363Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"125","side":"buy","type":"limit","limit_price":"22.90","time_in_force":"ioc","client_order_id":"IOC-06762dc2d09ff037"}
+2024-09-27T17:04:21.559Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:21.727Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:21.864Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:22.713Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:23.179Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:23.322Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:23.358Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:23.376Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:04:23.460Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.

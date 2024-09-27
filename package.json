@@ -1,0 +1,15 @@
+{
+  "name": "seismic-polygon",
+  "version": "1.1.0",
+  "description": "Trading exit system using Node.js, Blessed, Alpaca, and Polygon.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^3.1.2",
+    "blessed": "^0.1.81",
+    "winston": "^3.9.0",
+    "ws": "^8.13.0"
+  }
+}

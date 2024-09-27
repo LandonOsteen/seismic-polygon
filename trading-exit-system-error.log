@@ -1,0 +1,40 @@
+2024-09-27T17:02:58.914Z [ERROR]: Error polling order statuses: socket hang up
+2024-09-27T17:02:58.972Z [ERROR]: Error cancelling orders for U: Client network socket disconnected before secure TLS connection was established
+2024-09-27T17:02:58.976Z [ERROR]: Error cancelling orders for U: Client network socket disconnected before secure TLS connection was established
+2024-09-27T17:02:58.979Z [ERROR]: Error cancelling orders for U: Client network socket disconnected before secure TLS connection was established
+2024-09-27T17:03:03.654Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:03.697Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:05.509Z [ERROR]: Error checking for new positions: socket hang up
+2024-09-27T17:03:11.359Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:13.226Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:16.225Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:16.786Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:03:17.070Z [ERROR]: Error polling order statuses: socket hang up
+2024-09-27T17:03:18.495Z [ERROR]: Error checking for new positions: socket hang up
+2024-09-27T17:03:31.222Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:31.975Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:33.277Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:33.320Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:03:36.699Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-09-27T17:03:36.958Z [ERROR]: Error checking for new positions: read ECONNRESET
+2024-09-27T17:03:37.221Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-09-27T17:03:37.660Z [ERROR]: Error checking for new positions: read ECONNRESET
+2024-09-27T17:03:56.015Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-09-27T17:04:01.002Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:03.974Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:04.456Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:07.922Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:04:08.697Z [ERROR]: Error fetching latest quote for U: code: undefined, message: undefined
+2024-09-27T17:04:11.669Z [ERROR]: Error setting breakeven stop for U: {"available":"250","code":40310000,"existing_qty":"500","held_for_orders":"250","message":"insufficient qty available for order (requested: 375, available: 250)","related_orders":["3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:11.754Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:11.883Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:04:12.276Z [ERROR]: Error cancelling orders for U: socket hang up
+2024-09-27T17:04:13.014Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:13.855Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:15.639Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:15.866Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:16.038Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:16.139Z [ERROR]: Error placing IOC order for U: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["5e3ba398-49f1-4f03-ad2c-fff4e712e639","b45b47fe-e5d1-4c4b-9d40-dc5348877cb6","3f5859ea-4e0c-4033-bd10-6ee5e2620ce5"],"symbol":"U"}
+2024-09-27T17:04:16.946Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-27T17:04:16.951Z [ERROR]: Error polling order statuses: socket hang up
+2024-09-27T17:04:16.958Z [ERROR]: Error cancelling orders for U: read ECONNRESET
