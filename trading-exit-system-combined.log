@@ -260,3 +260,28 @@
 2024-09-27T17:04:23.358Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
 2024-09-27T17:04:23.376Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
 2024-09-27T17:04:23.460Z [INFO]: Cancelled order b45b47fe-e5d1-4c4b-9d40-dc5348877cb6 for U.
+2024-09-27T17:16:08.166Z [INFO]: Polygon WebSocket connected.
+2024-09-27T17:16:08.170Z [INFO]: Started polling for new positions, breakeven stops, and order statuses.
+2024-09-27T17:16:09.411Z [INFO]: Polygon WebSocket connection opened.
+2024-09-27T17:16:09.415Z [INFO]: Polygon WebSocket connected.
+2024-09-27T17:16:09.650Z [INFO]: Polygon WebSocket authenticated.
+2024-09-27T17:16:49.023Z [INFO]: New position opened: U
+2024-09-27T17:16:49.027Z [INFO]: Position added: U | Qty: 1000 | Avg Entry: $22.8
+2024-09-27T17:16:49.953Z [INFO]: Attempting to set stop loss order: {"symbol":"U","qty":"1000","side":"buy","type":"stop","stop_price":"22.95","time_in_force":"gtc","client_order_id":"STOP-5b86b1d019b9ee86"}
+2024-09-27T17:16:51.011Z [INFO]: Stop loss set for U at $22.95. Order ID: 4fd4ab7b-4dca-43a5-8919-2b8ffd272cef
+2024-09-27T17:16:51.015Z [INFO]: Subscribed to U quotes.
+2024-09-27T17:21:59.135Z [INFO]: Profit target hit for U: +4.00¢ >= +4¢
+2024-09-27T17:22:10.861Z [INFO]: Cancelled order 4fd4ab7b-4dca-43a5-8919-2b8ffd272cef for U.
+2024-09-27T17:22:12.755Z [INFO]: Attempting to place IOC order: {"symbol":"U","qty":"250","side":"buy","type":"limit","limit_price":"22.77","time_in_force":"ioc","client_order_id":"IOC-6b4c4f6f7c1f8aea"}
+2024-09-27T17:22:13.430Z [INFO]: Placed IOC order for 250 shares of U at $22.77. Order ID: 30a48db9-6713-4a40-850c-464591438be2
+2024-09-27T17:22:13.634Z [INFO]: Position in U partially closed. Remaining qty: 750
+2024-09-27T17:22:13.838Z [INFO]: Attempting to set breakeven stop order: {"symbol":"U","qty":"750","side":"buy","type":"stop","stop_price":"22.80","time_in_force":"gtc","client_order_id":"BREAKEVEN-34f2092d1a35553c"}
+2024-09-27T17:22:14.524Z [INFO]: Breakeven stop set for U at $22.80. Order ID: c33bbf3d-6432-4b7c-b254-5955288da79a
+2024-09-28T00:30:04.732Z [INFO]: Position added: U | Qty: 250 | Avg Entry: $22.8
+2024-09-28T00:30:04.821Z [INFO]: Attempting to set stop loss order: {"symbol":"U","qty":"250","side":"buy","type":"stop","stop_price":"22.95","time_in_force":"gtc","client_order_id":"STOP-8e5b7f9d89c80a6e"}
+2024-09-28T00:30:04.901Z [INFO]: Stop loss set for U at $22.95. Order ID: 58c3872c-29f2-40bc-8a8a-e8d2e391c627
+2024-09-28T00:30:04.912Z [INFO]: Polygon WebSocket connected.
+2024-09-28T00:30:04.914Z [INFO]: Started polling for new positions, breakeven stops, and order statuses.
+2024-09-28T00:30:05.067Z [INFO]: Polygon WebSocket connection opened.
+2024-09-28T00:30:05.069Z [INFO]: Polygon WebSocket connected.
+2024-09-28T00:30:05.109Z [INFO]: Polygon WebSocket authenticated.
