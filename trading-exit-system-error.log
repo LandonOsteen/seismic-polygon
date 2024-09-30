@@ -38,3 +38,135 @@
 2024-09-27T17:04:16.946Z [ERROR]: Error cancelling orders for U: read ECONNRESET
 2024-09-27T17:04:16.951Z [ERROR]: Error polling order statuses: socket hang up
 2024-09-27T17:04:16.958Z [ERROR]: Error cancelling orders for U: read ECONNRESET
+2024-09-30T16:57:17.453Z [ERROR]: Error polling order statuses: connect ETIMEDOUT 35.194.67.18:443
+2024-09-30T17:01:17.514Z [ERROR]: Error checking for new positions: connect ETIMEDOUT 35.194.67.18:443
+2024-09-30T17:18:27.390Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-09-30T17:25:07.916Z [ERROR]: Error setting stop loss for U: {"code":40010000,"message":"request body format is invalid"}
+2024-09-30T17:25:07.928Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'toFixed')
+2024-09-30T17:25:08.547Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:08.658Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:09.046Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:09.051Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:09.138Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:09.143Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:10.048Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:10.050Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:10.051Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:10.053Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:10.573Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:11.053Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:11.055Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:11.057Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:11.136Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:11.138Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:11.571Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'toFixed')
+2024-09-30T17:25:12.056Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.154Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.156Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.157Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.160Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.667Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.671Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.674Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.677Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.678Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.680Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:12.686Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:13.063Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:13.065Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:14.192Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:14.194Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.072Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.076Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.078Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.079Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.082Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.083Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.085Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.086Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.088Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.089Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.090Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.120Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.121Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.122Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.122Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.123Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.124Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.125Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.126Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.155Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.156Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.157Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.158Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:15.159Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:16.516Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'toFixed')
+2024-09-30T17:25:17.074Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:17.079Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:17.653Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.093Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.096Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.099Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.101Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.102Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.102Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.584Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.587Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.589Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.590Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.593Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.595Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:18.596Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:25:19.079Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-09-30T17:58:03.136Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:03.139Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:03.146Z [ERROR]: Error checking for new positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:03.148Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:03.149Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:03.151Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:03.791Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:04.792Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:05.792Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:06.014Z [ERROR]: Error checking for new positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:06.022Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:06.793Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:07.796Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:08.798Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:09.799Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:10.799Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:11.016Z [ERROR]: Error checking for new positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:11.023Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:11.800Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:15.117Z [ERROR]: Error initializing existing positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:15.126Z [ERROR]: Error initializing existing positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:15.175Z [ERROR]: Polygon WebSocket error: getaddrinfo ENOTFOUND socket.polygon.io
+2024-09-30T17:58:16.125Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:17.121Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:18.123Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:19.123Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:20.129Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:20.131Z [ERROR]: Error checking for new positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:20.139Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:21.126Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:22.122Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:23.127Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:24.129Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:25.130Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:25.136Z [ERROR]: Error checking for new positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:25.140Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:37.171Z [ERROR]: Error initializing existing positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:37.174Z [ERROR]: Error initializing existing positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:37.198Z [ERROR]: Polygon WebSocket error: getaddrinfo ENOTFOUND socket.polygon.io
+2024-09-30T17:58:38.178Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:39.176Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:40.179Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:41.180Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:42.182Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:42.184Z [ERROR]: Error checking for new positions: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:42.190Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:58:43.182Z [ERROR]: Error polling order statuses: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-09-30T17:59:10.181Z [ERROR]: Error setting stop loss for U: {"available":"0","code":40310000,"existing_qty":"100","held_for_orders":"100","message":"insufficient qty available for order (requested: 100, available: 0)","symbol":"U"}
+2024-09-30T18:02:05.211Z [ERROR]: Error checking for new positions: connect ETIMEDOUT 35.194.67.18:443
+2024-09-30T18:08:17.476Z [ERROR]: Error setting stop loss for U: {"available":"0","code":40310000,"existing_qty":"100","held_for_orders":"100","message":"insufficient qty available for order (requested: 100, available: 0)","symbol":"U"}
+2024-09-30T18:09:57.550Z [ERROR]: Error polling order statuses: connect ETIMEDOUT 35.194.67.18:443
+2024-09-30T18:10:49.611Z [ERROR]: Error polling order statuses: connect ETIMEDOUT 35.194.67.18:443
