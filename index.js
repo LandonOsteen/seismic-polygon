@@ -1,12 +1,13 @@
 // index.js
 
-const Polygon = require('./polygon');
+const PolygonClient = require('./polygon'); // Updated to use PolygonClient
 const { alpaca } = require('./alpaca');
 const Dashboard = require('./dashboard');
 const OrderManager = require('./orderManager');
 const logger = require('./logger');
+const config = require('./config'); // Ensure config is imported
 
-const polygon = new Polygon();
+const polygon = new PolygonClient(config.polygon.apiKey); // Initialize with API key
 const dashboard = new Dashboard();
 const orderManager = new OrderManager(dashboard, polygon);
 
@@ -20,28 +21,21 @@ process.on('unhandledRejection', (reason, promise) => {
   dashboard.error(`Unhandled Rejection: ${reason}`);
 });
 
-// Set the polling intervals (in milliseconds)
-const POLLING_INTERVAL = 5000; // 5 seconds for new positions
-const ORDER_STATUS_POLLING_INTERVAL = 5000; // 5 seconds for order status
-
 async function checkForNewPositions() {
   try {
-    // Fetch all current positions from Alpaca
-    const currentPositions = await alpaca.getPositions();
+    const currentPositions = await orderManager.limiter.schedule(() =>
+      alpaca.getPositions()
+    );
 
-    // Compare with existing tracked positions
     for (const position of currentPositions) {
       const symbol = position.symbol;
       if (!orderManager.positions[symbol]) {
         logger.info(`New position opened: ${symbol}`);
         dashboard.log(`New position opened: ${symbol}`);
-
-        // Add the new position to the order manager
         await orderManager.addPosition(position);
       }
     }
 
-    // Remove positions that have been closed
     for (const symbol in orderManager.positions) {
       if (!currentPositions.find((pos) => pos.symbol === symbol)) {
         logger.info(`Position closed: ${symbol}`);
@@ -50,8 +44,8 @@ async function checkForNewPositions() {
       }
     }
 
-    // Update the dashboard with the latest positions
     dashboard.updatePositions(Object.values(orderManager.positions));
+    // Removed the incorrect dashboard.updateSummary() call
   } catch (err) {
     logger.error(
       `Error checking for new positions: ${
@@ -68,10 +62,8 @@ async function checkForNewPositions() {
 
 async function main() {
   try {
-    // Initialize existing positions
     await orderManager.initializeExistingPositions();
 
-    // Connect to the Polygon WebSocket
     polygon.onQuote = async (symbol, bidPrice, askPrice) => {
       await orderManager.onQuoteUpdate(symbol, bidPrice, askPrice);
     };
@@ -82,24 +74,23 @@ async function main() {
     dashboard.log('Polygon WebSocket connected.');
 
     // Start the polling loop to check for new positions
-    setInterval(checkForNewPositions, POLLING_INTERVAL);
+    setInterval(checkForNewPositions, config.pollingIntervals.orderStatus);
 
-    // Start the periodic check for breakeven stops
-    setInterval(async () => {
-      await orderManager.checkBreakevenStops();
-    }, 10000); // Check every 10 seconds
+    logger.info('Started polling for new positions and order statuses.');
+    dashboard.log('Started polling for new positions and order statuses.');
 
-    // Start the polling loop to check for order statuses
-    setInterval(async () => {
-      await orderManager.pollOrderStatuses();
-    }, ORDER_STATUS_POLLING_INTERVAL);
+    // Graceful shutdown
+    process.on('SIGINT', async () => {
+      logger.info('Gracefully shutting down...');
+      dashboard.log('Gracefully shutting down...');
 
-    logger.info(
-      'Started polling for new positions, breakeven stops, and order statuses.'
-    );
-    dashboard.log(
-      'Started polling for new positions, breakeven stops, and order statuses.'
-    );
+      // Optionally, close all active positions
+      for (const symbol of Object.keys(orderManager.positions)) {
+        await orderManager.closePositionMarketOrder(symbol);
+      }
+
+      process.exit(0);
+    });
   } catch (err) {
     logger.error(
       `Error initializing positions or setting up connections: ${err.message}`
