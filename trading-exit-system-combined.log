@@ -38,3 +38,8 @@
 2024-10-01T19:58:33.082Z [INFO]: Unsubscribed from GME quotes.
 2024-10-01T19:58:33.085Z [INFO]: Position removed: SGML
 2024-10-01T19:58:33.088Z [INFO]: Unsubscribed from SGML quotes.
+2024-10-01T20:00:42.234Z [INFO]: Polygon WebSocket connected.
+2024-10-01T20:00:42.249Z [INFO]: Started polling for new positions and order statuses.
+2024-10-01T20:00:42.426Z [INFO]: Polygon WebSocket connection opened.
+2024-10-01T20:00:42.427Z [INFO]: Polygon WebSocket connected.
+2024-10-01T20:00:42.485Z [INFO]: Polygon WebSocket authenticated.
