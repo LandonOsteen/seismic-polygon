@@ -4,18 +4,35 @@ const { alpaca } = require('./alpaca');
 const config = require('./config');
 const logger = require('./logger');
 const crypto = require('crypto');
+const Bottleneck = require('bottleneck'); // Rate limiting library
 
 class OrderManager {
   constructor(dashboard, polygon) {
     this.positions = {}; // symbol => position info
     this.dashboard = dashboard;
     this.polygon = polygon;
-    this.apiCallDelay = 200; // Milliseconds between API calls to prevent rate limits
     this.orderTracking = {}; // orderId => { symbol, type, qty, side, filledQty }
-    this.orderQueue = []; // Queue to manage order processing
-    this.isProcessingQueue = false; // Flag to prevent multiple queue processors
 
-    // Initializing existing positions
+    // Flags to prevent concurrent API calls
+    this.isRefreshing = false;
+    this.isPolling = false;
+
+    // Initialize Alpaca rate limiter using Bottleneck
+    this.limiter = new Bottleneck({
+      minTime: 350, // Minimum time between requests in ms (approx 2.85 req/sec)
+      maxConcurrent: 1, // Ensure requests are executed sequentially
+    });
+
+    // Wrap Alpaca API calls with the rate limiter
+    this.limitedGetPositions = this.limiter.wrap(
+      alpaca.getPositions.bind(alpaca)
+    );
+    this.limitedGetOrders = this.limiter.wrap(alpaca.getOrders.bind(alpaca));
+    this.limitedCreateOrder = this.limiter.wrap(
+      alpaca.createOrder.bind(alpaca)
+    );
+
+    // Initialize existing positions
     this.initializeExistingPositions();
 
     // Periodic tasks
@@ -23,16 +40,16 @@ class OrderManager {
       () => this.pollOrderStatuses(),
       config.pollingIntervals.orderStatus
     );
+
+    // Periodically refresh positions
     setInterval(
-      () => this.checkBreakevenStops(),
-      config.pollingIntervals.breakevenCheck
+      () => this.refreshPositions(),
+      config.pollingIntervals.positionRefresh
     );
   }
 
   /**
    * Generates a unique client order ID with an optional prefix.
-   * @param {string} prefix - Prefix for the order ID.
-   * @returns {string} - Generated client order ID.
    */
   generateClientOrderId(prefix = 'MY_SYSTEM') {
     return `${prefix}-${crypto.randomBytes(8).toString('hex')}`;
@@ -40,8 +57,6 @@ class OrderManager {
 
   /**
    * Pauses execution for a specified duration.
-   * @param {number} ms - Milliseconds to sleep.
-   * @returns {Promise} - Resolves after the specified duration.
    */
   sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -49,10 +64,6 @@ class OrderManager {
 
   /**
    * Retries an asynchronous operation with exponential backoff in case of rate limits.
-   * @param {Function} operation - The asynchronous operation to retry.
-   * @param {number} retries - Number of retry attempts.
-   * @param {number} delay - Initial delay in milliseconds.
-   * @returns {Promise} - Resolves with the operation result or rejects after retries.
    */
   async retryOperation(operation, retries = 5, delay = 1000) {
     try {
@@ -61,9 +72,15 @@ class OrderManager {
       if (retries <= 0) throw err;
       if (err.statusCode === 429) {
         // Rate limit
-        logger.warn(`Rate limit hit. Retrying in ${delay}ms...`);
-        this.dashboard.log(`Rate limit hit. Retrying in ${delay}ms...`);
-        await this.sleep(delay);
+        const jitter = Math.random() * 1000; // Add jitter to prevent thundering herd
+        const totalDelay = delay + jitter;
+        logger.warn(
+          `Rate limit hit. Retrying in ${totalDelay.toFixed(0)}ms...`
+        );
+        this.dashboard.log(
+          `Rate limit hit. Retrying in ${totalDelay.toFixed(0)}ms...`
+        );
+        await this.sleep(totalDelay);
         return this.retryOperation(operation, retries - 1, delay * 2);
       }
       throw err;
@@ -75,15 +92,18 @@ class OrderManager {
    */
   async initializeExistingPositions() {
     try {
-      // Fetch all open positions using the Alpaca API
-      const positions = await alpaca.getPositions();
-
+      const positions = await this.retryOperation(() =>
+        this.limitedGetPositions()
+      );
       for (const position of positions) {
         await this.addPosition(position);
       }
 
       // Update the dashboard with the loaded positions
       this.dashboard.updatePositions(Object.values(this.positions));
+
+      // Update summary
+      this.updateSummary();
     } catch (err) {
       logger.error(`Error initializing existing positions: ${err.message}`);
       this.dashboard.error(
@@ -94,7 +114,6 @@ class OrderManager {
 
   /**
    * Adds a new position to the tracker.
-   * @param {Object} position - Position object from Alpaca.
    */
   async addPosition(position) {
     const symbol = position.symbol;
@@ -108,13 +127,14 @@ class OrderManager {
       initialQty: qty,
       side,
       avgEntryPrice,
-      currentBid: avgEntryPrice, // Initialize with avgEntryPrice
-      currentAsk: avgEntryPrice, // Initialize with avgEntryPrice
+      currentBid: avgEntryPrice,
+      currentAsk: avgEntryPrice,
       currentPrice: avgEntryPrice,
       profitTargetsHit: 0,
       isActive: true,
-      hasBreakevenStop: false, // Track if breakeven stop is set
-      isProcessing: false, // Prevent duplicate order placements
+      isProcessing: false,
+      stopPrice: this.calculateInitialStopPrice(avgEntryPrice, side),
+      stopTriggered: false,
     };
 
     logger.info(
@@ -124,22 +144,34 @@ class OrderManager {
       `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice}`
     );
 
-    // Cancel all existing orders for the symbol
-    await this.cancelAllOrdersForSymbol(symbol);
-
-    // Set initial stop loss for the new position
-    await this.setInitialStopLoss(symbol);
-
     // Subscribe to Polygon quotes for the symbol
     this.polygon.subscribe(symbol);
 
     // Update dashboard positions
     this.dashboard.updatePositions(Object.values(this.positions));
+
+    // Update summary
+    this.updateSummary();
+  }
+
+  /**
+   * Calculates the initial stop price based on the position side.
+   */
+  calculateInitialStopPrice(avgEntryPrice, side) {
+    const stopLossCents = config.orderSettings.stopLossCents;
+    if (side === 'buy') {
+      // Long position: stop price is below entry price
+      return avgEntryPrice - stopLossCents / 100;
+    } else if (side === 'sell') {
+      // Short position: stop price is above entry price
+      return avgEntryPrice + stopLossCents / 100;
+    }
+    // Default to breakeven if side is unknown
+    return avgEntryPrice;
   }
 
   /**
    * Removes an existing position from tracking.
-   * @param {string} symbol - The stock symbol to remove.
    */
   removePosition(symbol) {
     if (this.positions[symbol]) {
@@ -152,254 +184,175 @@ class OrderManager {
 
       // Update dashboard positions
       this.dashboard.updatePositions(Object.values(this.positions));
+
+      // Update summary
+      this.updateSummary();
     }
   }
 
   /**
-   * Cancels all existing orders for a given symbol.
-   * @param {string} symbol - The stock symbol.
+   * Handles quote updates from Polygon and manages profit targets and stop monitoring.
    */
-  async cancelAllOrdersForSymbol(symbol) {
-    try {
-      const orders = await alpaca.getOrders({
-        status: 'open',
-        symbols: [symbol],
-      });
-      for (const order of orders) {
-        await this.retryOperation(() => alpaca.cancelOrder(order.id));
-        logger.info(`Cancelled order ${order.id} for ${symbol}.`);
-        this.dashboard.log(`Cancelled order ${order.id} for ${symbol}.`);
-
-        // Track the cancellation
-        this.orderTracking[order.id] = {
-          symbol,
-          type: 'cancelled',
-          qty: parseFloat(order.qty),
-          side: order.side,
-          filledQty: 0,
-        };
-
-        await this.sleep(this.apiCallDelay); // Throttle API calls
-      }
-
-      // After cancellation, update active orders on the dashboard
-      const activeOrders = await alpaca.getOrders({ status: 'open' });
-      this.dashboard.updateOrders(activeOrders);
-    } catch (err) {
-      logger.error(`Error cancelling orders for ${symbol}: ${err.message}`);
-      this.dashboard.error(
-        `Error cancelling orders for ${symbol}: ${err.message}`
-      );
-    }
-  }
-
-  /**
-   * Calculates dynamic IOC offset based on price difference thresholds.
-   * @param {string} symbol - The stock symbol.
-   * @returns {number} - Calculated offset in cents.
-   */
-  calculateDynamicIOCOffset(symbol) {
+  async onQuoteUpdate(symbol, bidPrice, askPrice) {
     const pos = this.positions[symbol];
-    if (!pos) return config.orderSettings.limitOffsetCents; // Default to config value if position not found
-
-    const priceDifference = Math.abs(pos.currentPrice - pos.avgEntryPrice);
-    const priceDifferencePercent = (priceDifference / pos.avgEntryPrice) * 100;
-
-    let dynamicOffset = config.orderSettings.limitOffsetCents; // Start with base offset
-
-    for (const threshold of config.orderSettings.dynamicOffsetThresholds) {
-      if (priceDifferencePercent >= threshold.percentage) {
-        dynamicOffset = threshold.offset;
-      }
-    }
-
-    // Ensure the offset does not exceed the maximum limit
-    dynamicOffset = Math.min(
-      dynamicOffset,
-      config.orderSettings.maxLimitOffsetCents
-    );
-
-    return dynamicOffset;
-  }
-
-  /**
-   * Sets the initial stop loss order for a position.
-   * @param {string} symbol - The stock symbol.
-   */
-  async setInitialStopLoss(symbol) {
-    const pos = this.positions[symbol];
-    const side = pos.side;
-    const qty = Math.abs(pos.qty); // Ensure qty is positive
-
-    let stopPrice;
-    if (side === 'buy') {
-      stopPrice =
-        pos.avgEntryPrice - config.orderSettings.stopLossOffsetCents / 100;
-    } else if (side === 'sell') {
-      stopPrice =
-        pos.avgEntryPrice + config.orderSettings.stopLossOffsetCents / 100;
-    } else {
-      logger.warn(`Unknown position side for ${symbol}.`);
-      this.dashboard.log(`Unknown position side for ${symbol}.`);
+    if (!pos || !pos.isActive) {
       return;
     }
 
-    const order = {
-      symbol,
-      qty: qty.toFixed(0),
-      side: side === 'buy' ? 'sell' : 'buy', // Opposite side to close the position
-      type: 'stop',
-      stop_price: stopPrice.toFixed(2),
-      time_in_force: 'gtc',
-      client_order_id: this.generateClientOrderId('STOP'),
-    };
+    const side = pos.side;
+    const entryPrice = pos.avgEntryPrice;
+    const currentPrice = side === 'buy' ? bidPrice : askPrice;
 
-    logger.info(`Attempting to set stop loss order: ${JSON.stringify(order)}`);
+    // Update current bid and ask prices
+    pos.currentBid = bidPrice;
+    pos.currentAsk = askPrice;
+    pos.currentPrice = currentPrice;
+
+    // Calculate profit/loss in cents
+    const profitCents = (
+      (currentPrice - entryPrice) *
+      100 *
+      (side === 'buy' ? 1 : -1)
+    ).toFixed(2);
+
+    // Log current profit
     this.dashboard.log(
-      `Attempting to set stop loss order: ${JSON.stringify(order)}`
+      `Symbol: ${symbol} | Profit: ${profitCents}¢ | Current Price: $${currentPrice.toFixed(
+        2
+      )}`
     );
 
-    try {
-      const result = await this.retryOperation(() => alpaca.createOrder(order));
+    // Check for stop trigger only if stop has not been triggered yet
+    if (!pos.stopTriggered) {
+      if (
+        (side === 'buy' && currentPrice <= pos.stopPrice) || // Long position stop loss
+        (side === 'sell' && currentPrice >= pos.stopPrice) // Short position stop loss
+      ) {
+        pos.stopTriggered = true;
+        logger.info(
+          `Stop condition met for ${symbol}. Initiating market order to close position.`
+        );
+        this.dashboard.log(
+          `Stop condition met for ${symbol}. Initiating market order to close position.`
+        );
+        await this.closePositionMarketOrder(symbol);
+        return;
+      }
+    }
+
+    const profitTargets = config.orderSettings.profitTargets;
+
+    // Check if all profit targets have been hit
+    if (pos.profitTargetsHit >= profitTargets.length) {
+      return;
+    }
+
+    const target = profitTargets[pos.profitTargetsHit];
+
+    // Prevent duplicate order placements
+    if (!pos.isProcessing && parseFloat(profitCents) >= target.targetCents) {
+      pos.isProcessing = true;
+
       logger.info(
-        `Stop loss set for ${symbol} at $${stopPrice.toFixed(2)}. Order ID: ${
-          result.id
-        }`
+        `Profit target hit for ${symbol}: +${profitCents}¢ >= +${target.targetCents}¢`
       );
       this.dashboard.log(
-        `Stop loss set for ${symbol} at $${stopPrice.toFixed(2)}. Order ID: ${
-          result.id
-        }`
+        `Profit target hit for ${symbol}: +${profitCents}¢ >= +${target.targetCents}¢`
       );
 
-      // Track the stop loss order
-      this.orderTracking[result.id] = {
-        symbol,
-        type: 'stop',
-        qty: parseFloat(order.qty),
-        side: order.side,
-        filledQty: 0,
-      };
-    } catch (err) {
-      logger.error(
-        `Error setting stop loss for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
-      this.dashboard.error(
-        `Error setting stop loss for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
-    }
-  }
-  /**
-   * Cancels all stop loss orders for a given symbol.
-   * @param {string} symbol - The stock symbol.
-   */
-  async cancelStopLosses(symbol) {
-    try {
-      const orders = await alpaca.getOrders({
-        status: 'open',
-        symbols: [symbol],
-      });
-      for (const order of orders) {
-        if (order.type === 'stop') {
-          await this.retryOperation(() => alpaca.cancelOrder(order.id));
-          logger.info(`Cancelled stop loss order ${order.id} for ${symbol}.`);
-          this.dashboard.log(
-            `Cancelled stop loss order ${order.id} for ${symbol}.`
-          );
+      // Calculate order qty based on current position size
+      let qtyToClose = Math.floor(pos.qty * (target.percentToClose / 100));
 
-          // Track the cancellation
-          this.orderTracking[order.id] = {
-            symbol,
-            type: 'stop_cancelled',
-            qty: parseFloat(order.qty),
-            side: order.side,
-            filledQty: 0,
-          };
+      // Safety Check: Ensure qtyToClose does not exceed pos.qty
+      qtyToClose = Math.min(qtyToClose, pos.qty);
 
-          await this.sleep(this.apiCallDelay); // Throttle API calls
-        }
+      if (qtyToClose <= 0) {
+        logger.warn(`Quantity to close is zero or negative for ${symbol}.`);
+        this.dashboard.log(
+          `Quantity to close is zero or negative for ${symbol}.`
+        );
+        pos.isProcessing = false;
+        return;
       }
-    } catch (err) {
-      logger.error(
-        `Error cancelling stop losses for ${symbol}: ${err.message}`
+
+      // Place IOC order
+      await this.placeIOCOrder(
+        symbol,
+        qtyToClose,
+        side === 'buy' ? 'sell' : 'buy'
       );
-      this.dashboard.error(
-        `Error cancelling stop losses for ${symbol}: ${err.message}`
-      );
+
+      // Increment profit targets hit
+      pos.profitTargetsHit += 1;
+
+      // After the second profit target, adjust stop monitoring to breakeven
+      if (pos.profitTargetsHit === 2) {
+        logger.info(
+          `Second profit target hit for ${symbol}. Adjusting stop monitoring to breakeven.`
+        );
+        this.dashboard.log(
+          `Second profit target hit for ${symbol}. Adjusting stop monitoring to breakeven.`
+        );
+        // Update stop price to breakeven
+        pos.stopPrice = entryPrice;
+
+        // Log the new stop price
+        this.dashboard.log(
+          `Adjusted stop price for ${symbol} to breakeven at $${entryPrice.toFixed(
+            2
+          )}.`
+        );
+      }
+
+      pos.isProcessing = false;
+
+      // Update summary after processing
+      this.updateSummary();
     }
   }
 
   /**
    * Places an Immediate-Or-Cancel (IOC) order.
-   * @param {string} symbol - The stock symbol.
-   * @param {number} qty - Quantity to order.
-   * @param {string} side - 'buy' or 'sell'.
    */
   async placeIOCOrder(symbol, qty, side) {
-    qty = Math.abs(qty); // Ensure qty is positive
+    qty = Math.abs(qty);
 
-    // Calculate dynamic IOC offset
-    const dynamicOffset = this.calculateDynamicIOCOffset(symbol);
-
-    // Get the latest market data
-    let currentPrice;
-    try {
-      const lastQuote = await alpaca.getLatestQuote(symbol);
-      if (side === 'buy') {
-        currentPrice = lastQuote.askprice; // Correct property name
-      } else if (side === 'sell') {
-        currentPrice = lastQuote.bidprice; // Correct property name
-      } else {
-        throw new Error(`Invalid side: ${side}`);
-      }
-    } catch (err) {
-      logger.error(`Error fetching latest quote for ${symbol}: ${err.message}`);
-      this.dashboard.error(
-        `Error fetching latest quote for ${symbol}: ${err.message}`
-      );
-      return;
-    }
-
-    // Adjust limit price with offset
-    let limitPrice;
+    const pos = this.positions[symbol];
+    let marketPrice;
     if (side === 'buy') {
-      // Closing short position, increase limit price
-      limitPrice = currentPrice + dynamicOffset / 100; // Convert cents to dollars
+      // For short positions, buy at the ask price
+      marketPrice = pos.currentAsk;
     } else if (side === 'sell') {
-      // Closing long position, decrease limit price
-      limitPrice = currentPrice - dynamicOffset / 100; // Convert cents to dollars
-    }
-
-    // Ensure limit price does not cross the market
-    try {
-      const lastQuote = await alpaca.getLatestQuote(symbol);
-      if (side === 'sell' && limitPrice < lastQuote.bidprice) {
-        limitPrice = lastQuote.bidprice;
-      } else if (side === 'buy' && limitPrice > lastQuote.askprice) {
-        limitPrice = lastQuote.askprice;
-      }
-    } catch (err) {
-      logger.error(`Error fetching latest quote for ${symbol}: ${err.message}`);
+      // For long positions, sell at the bid price
+      marketPrice = pos.currentBid;
+    } else {
+      logger.error(`Invalid side "${side}" for IOC order on ${symbol}.`);
       this.dashboard.error(
-        `Error fetching latest quote for ${symbol}: ${err.message}`
+        `Invalid side "${side}" for IOC order on ${symbol}.`
       );
       return;
     }
 
-    // Cancel existing orders before placing a new IOC order
-    await this.cancelAllOrdersForSymbol(symbol);
+    // **Safety Check: Ensure marketPrice is valid**
+    if (
+      (side === 'buy' && marketPrice <= 0) ||
+      (side === 'sell' && marketPrice <= 0)
+    ) {
+      logger.error(
+        `Invalid market price for ${symbol}. Cannot place ${side} order.`
+      );
+      this.dashboard.error(
+        `Invalid market price for ${symbol}. Cannot place ${side} order.`
+      );
+      return;
+    }
 
     const order = {
       symbol,
       qty: qty.toFixed(0),
       side,
-      type: 'limit',
-      limit_price: limitPrice.toFixed(2),
-      time_in_force: 'ioc',
+      type: 'market', // Use market order for immediate execution
+      time_in_force: 'day',
       client_order_id: this.generateClientOrderId('IOC'),
     };
 
@@ -409,16 +362,14 @@ class OrderManager {
     );
 
     try {
-      const result = await this.retryOperation(() => alpaca.createOrder(order));
+      const result = await this.retryOperation(() =>
+        this.limitedCreateOrder(order)
+      );
       logger.info(
-        `Placed IOC order for ${qty} shares of ${symbol} at $${limitPrice.toFixed(
-          2
-        )}. Order ID: ${result.id}`
+        `Placed IOC order for ${qty} shares of ${symbol}. Order ID: ${result.id}`
       );
       this.dashboard.log(
-        `Placed IOC order for ${qty} shares of ${symbol} at $${limitPrice.toFixed(
-          2
-        )}. Order ID: ${result.id}`
+        `Placed IOC order for ${qty} shares of ${symbol}. Order ID: ${result.id}`
       );
 
       // Track the IOC order
@@ -430,9 +381,8 @@ class OrderManager {
         filledQty: 0,
       };
 
-      // Add to order queue for tracking
-      this.orderQueue.push(result.id);
-      this.processOrderQueue(); // Start processing if not already
+      // Immediately refresh positions after placing an order
+      await this.refreshPositions();
     } catch (err) {
       logger.error(
         `Error placing IOC order for ${symbol}: ${
@@ -444,186 +394,6 @@ class OrderManager {
           err.response ? JSON.stringify(err.response.data) : err.message
         }`
       );
-    }
-  }
-
-  /**
-   * Places a breakeven stop order for a position.
-   * @param {string} symbol - The stock symbol.
-   */
-  async placeBreakevenStop(symbol) {
-    const pos = this.positions[symbol];
-    const side = pos.side;
-    const qty = Math.abs(pos.qty); // Ensure qty is positive
-
-    const stopPrice = pos.avgEntryPrice;
-
-    // Throttle to account for order processing time
-    await this.sleep(this.apiCallDelay);
-
-    const order = {
-      symbol,
-      qty: qty.toFixed(0),
-      side: side === 'buy' ? 'sell' : 'buy',
-      type: 'stop',
-      stop_price: stopPrice.toFixed(2),
-      time_in_force: 'gtc',
-      client_order_id: this.generateClientOrderId('BREAKEVEN'),
-    };
-
-    logger.info(
-      `Attempting to set breakeven stop order: ${JSON.stringify(order)}`
-    );
-    this.dashboard.log(
-      `Attempting to set breakeven stop order: ${JSON.stringify(order)}`
-    );
-
-    try {
-      const result = await this.retryOperation(() => alpaca.createOrder(order));
-      logger.info(
-        `Breakeven stop set for ${symbol} at $${stopPrice.toFixed(
-          2
-        )}. Order ID: ${result.id}`
-      );
-      this.dashboard.log(
-        `Breakeven stop set for ${symbol} at $${stopPrice.toFixed(
-          2
-        )}. Order ID: ${result.id}`
-      );
-      pos.hasBreakevenStop = true; // Mark that breakeven stop is set
-
-      // Track the breakeven stop order
-      this.orderTracking[result.id] = {
-        symbol,
-        type: 'breakeven_stop',
-        qty: parseFloat(order.qty),
-        side: order.side,
-        filledQty: 0,
-      };
-    } catch (err) {
-      logger.error(
-        `Error setting breakeven stop for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
-      this.dashboard.error(
-        `Error setting breakeven stop for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
-    }
-  }
-
-  /**
-   * Handles quote updates from Polygon and manages profit targets.
-   * @param {string} symbol - The stock symbol.
-   * @param {number} bidPrice - Latest bid price.
-   * @param {number} askPrice - Latest ask price.
-   */
-  async onQuoteUpdate(symbol, bidPrice, askPrice) {
-    const pos = this.positions[symbol];
-    if (!pos || !pos.isActive) {
-      return;
-    }
-
-    const side = pos.side;
-    const entryPrice = pos.avgEntryPrice;
-    const currentPrice = side === 'buy' ? askPrice : bidPrice;
-
-    // Update current bid and ask prices
-    pos.currentBid = bidPrice;
-    pos.currentAsk = askPrice;
-
-    pos.currentPrice = currentPrice; // Update current price for P&L calculations
-
-    const profitCents =
-      side === 'buy'
-        ? ((currentPrice - entryPrice) * 100).toFixed(2)
-        : ((entryPrice - currentPrice) * 100).toFixed(2);
-
-    const profitTargets = config.orderSettings.profitTargets;
-
-    // Check if all profit targets have been hit
-    if (pos.profitTargetsHit >= profitTargets.length && !pos.hasBreakevenStop) {
-      // Ensure breakeven stop is in place
-      await this.placeBreakevenStop(symbol);
-      return;
-    }
-
-    // If all targets are hit and breakeven stop is set, do nothing
-    if (pos.profitTargetsHit >= profitTargets.length) {
-      return;
-    }
-
-    const target = profitTargets[pos.profitTargetsHit];
-
-    // Prevent duplicate order placements using isProcessing flag
-    if (!pos.isProcessing && parseFloat(profitCents) >= target.targetCents) {
-      pos.isProcessing = true; // Mark as processing
-
-      logger.info(
-        `Profit target hit for ${symbol}: +${profitCents}¢ >= +${target.targetCents}¢`
-      );
-      this.dashboard.log(
-        `Profit target hit for ${symbol}: +${profitCents}¢ >= +${target.targetCents}¢`
-      );
-
-      // Cancel existing orders before proceeding
-      await this.cancelAllOrdersForSymbol(symbol);
-
-      // Update the position to reflect the latest quantity
-      await this.updatePositionQuantity(symbol);
-
-      // Calculate order qty based on current position size
-      let qtyToClose = Math.floor(pos.qty * (target.percentToClose / 100));
-
-      if (qtyToClose <= 0) {
-        logger.warn(`Quantity to close is zero or negative for ${symbol}.`);
-        this.dashboard.log(
-          `Quantity to close is zero or negative for ${symbol}.`
-        );
-        pos.isProcessing = false; // Reset processing flag
-        return;
-      }
-
-      // Place IOC order
-      await this.placeIOCOrder(
-        symbol,
-        qtyToClose,
-        side === 'buy' ? 'sell' : 'buy'
-      );
-
-      // The IOC order is added to the queue and processed asynchronously
-
-      pos.profitTargetsHit += 1;
-
-      // Reset breakeven stop flag
-      pos.hasBreakevenStop = false;
-
-      pos.isProcessing = false; // Reset processing flag
-    }
-  }
-
-  /**
-   * Periodically checks and ensures breakeven stops are in place.
-   */
-  async checkBreakevenStops() {
-    for (const symbol in this.positions) {
-      const pos = this.positions[symbol];
-      if (
-        pos.isActive &&
-        !pos.hasBreakevenStop &&
-        pos.profitTargetsHit > 0 &&
-        !pos.isProcessing
-      ) {
-        logger.info(
-          `Breakeven stop missing for ${symbol}, placing breakeven stop.`
-        );
-        this.dashboard.log(
-          `Breakeven stop missing for ${symbol}, placing breakeven stop.`
-        );
-        await this.placeBreakevenStop(symbol);
-      }
     }
   }
 
@@ -631,11 +401,19 @@ class OrderManager {
    * Polls and updates the status of tracked orders.
    */
   async pollOrderStatuses() {
+    if (this.isPolling) {
+      // logger.warn('Already polling order statuses. Skipping this interval.');
+      // Optionally, you can choose not to log this warning to the dashboard
+      return;
+    }
+
+    this.isPolling = true;
+
     try {
       // Fetch all open orders
-      const openOrders = await alpaca.getOrders({
-        status: 'open',
-      });
+      const openOrders = await this.retryOperation(() =>
+        this.limitedGetOrders({ status: 'open' })
+      );
 
       // Update the dashboard with active orders
       this.dashboard.updateOrders(openOrders);
@@ -655,9 +433,9 @@ class OrderManager {
             if (pos) {
               if (
                 trackedOrder.type === 'ioc' ||
-                trackedOrder.type === 'breakeven_stop'
+                trackedOrder.type === 'close'
               ) {
-                // For IOC and breakeven stop orders, handle accordingly
+                // For IOC and close orders, adjust position quantity
                 pos.qty -= filledQty;
 
                 logger.info(
@@ -674,6 +452,11 @@ class OrderManager {
 
                 // Update the dashboard
                 this.dashboard.updatePositions(Object.values(this.positions));
+
+                // If all qty is closed, remove the position
+                if (pos.qty <= 0) {
+                  this.removePosition(trackedOrder.symbol);
+                }
               }
               // Handle other order types if necessary
             }
@@ -685,92 +468,187 @@ class OrderManager {
           }
         }
       }
+
+      // Update summary after polling
+      this.updateSummary();
     } catch (err) {
       logger.error(`Error polling order statuses: ${err.message}`);
       this.dashboard.error(`Error polling order statuses: ${err.message}`);
+    } finally {
+      this.isPolling = false;
     }
   }
 
   /**
-   * Updates the quantity of a position by fetching the latest data from Alpaca.
-   * @param {string} symbol - The stock symbol.
+   * Closes the full position with a market order.
    */
-  async updatePositionQuantity(symbol) {
-    try {
-      const position = await alpaca.getPosition(symbol);
-      const qty = Math.abs(parseFloat(position.qty));
-      this.positions[symbol].qty = qty;
+  async closePositionMarketOrder(symbol) {
+    const pos = this.positions[symbol];
+    const qty = pos.qty;
 
-      // If position qty is zero, mark as inactive and remove from tracking
-      if (qty === 0) {
-        delete this.positions[symbol];
-        logger.info(`Position in ${symbol} fully closed.`);
-        this.dashboard.log(`Position in ${symbol} fully closed.`);
-        this.polygon.unsubscribe(symbol);
-      }
-    } catch (err) {
-      if (err.statusCode === 404) {
-        // Position is closed
-        if (this.positions[symbol]) {
-          this.positions[symbol].qty = 0;
-          this.positions[symbol].isActive = false;
-          logger.info(`Position in ${symbol} fully closed.`);
-          this.dashboard.log(`Position in ${symbol} fully closed.`);
-          this.polygon.unsubscribe(symbol);
-        }
-      } else {
-        logger.error(
-          `Error updating position quantity for ${symbol}: ${err.message}`
-        );
-        this.dashboard.error(
-          `Error updating position quantity for ${symbol}: ${err.message}`
-        );
-      }
-    }
-  }
-
-  /**
-   * Processes the order queue by monitoring and handling order statuses.
-   */
-  async processOrderQueue() {
-    if (this.isProcessingQueue) {
-      // Already processing
+    if (qty <= 0) {
+      logger.warn(`Attempted to close position for ${symbol} with qty ${qty}.`);
+      this.dashboard.log(
+        `Attempted to close position for ${symbol} with qty ${qty}.`
+      );
       return;
     }
-    this.isProcessingQueue = true;
 
-    while (this.orderQueue.length > 0) {
-      const orderId = this.orderQueue[0]; // Peek at the first order
-      try {
-        const order = await alpaca.getOrder(orderId);
-        if (order.status === 'filled' || order.status === 'canceled') {
-          // Remove the order from the queue
-          this.orderQueue.shift();
+    const side = pos.side === 'buy' ? 'sell' : 'buy';
 
-          // Update position quantity after order execution
-          const symbol = order.symbol;
-          await this.updatePositionQuantity(symbol);
+    const order = {
+      symbol,
+      qty: qty.toFixed(0),
+      side,
+      type: 'market',
+      time_in_force: 'day',
+      client_order_id: this.generateClientOrderId('CLOSE'),
+    };
 
-          // Place a new breakeven stop if necessary
-          const pos = this.positions[symbol];
-          if (pos && pos.isActive && pos.qty > 0) {
-            await this.placeBreakevenStop(symbol);
-          }
-        } else {
-          // Order is still open, wait before checking again
-          await this.sleep(this.apiCallDelay);
-        }
-      } catch (err) {
-        logger.error(`Error processing order ${orderId}: ${err.message}`);
-        this.dashboard.error(
-          `Error processing order ${orderId}: ${err.message}`
-        );
-        // Remove the order from the queue to prevent infinite loop
-        this.orderQueue.shift();
-      }
+    logger.info(`Closing position with market order: ${JSON.stringify(order)}`);
+    this.dashboard.log(
+      `Closing position with market order: ${JSON.stringify(order)}`
+    );
+
+    try {
+      const result = await this.retryOperation(() =>
+        this.limitedCreateOrder(order)
+      );
+      logger.info(
+        `Market order placed to close position in ${symbol}. Order ID: ${result.id}`
+      );
+      this.dashboard.log(
+        `Market order placed to close position in ${symbol}. Order ID: ${result.id}`
+      );
+
+      // Track the market order
+      this.orderTracking[result.id] = {
+        symbol,
+        type: 'close',
+        qty: parseFloat(order.qty),
+        side: order.side,
+        filledQty: 0,
+      };
+
+      // Immediately refresh positions after placing an order
+      await this.refreshPositions();
+    } catch (err) {
+      logger.error(
+        `Error placing market order to close position for ${symbol}: ${
+          err.response ? JSON.stringify(err.response.data) : err.message
+        }`
+      );
+      this.dashboard.error(
+        `Error placing market order to close position for ${symbol}: ${
+          err.response ? JSON.stringify(err.response.data) : err.message
+        }`
+      );
+    }
+  }
+
+  /**
+   * Fetches the latest positions from Alpaca and updates internal tracking.
+   */
+  async refreshPositions() {
+    if (this.isRefreshing) {
+      // logger.warn('Already refreshing positions. Skipping this interval.');
+      // Do not send this warning to the dashboard to prevent clutter
+      return;
     }
 
-    this.isProcessingQueue = false;
+    this.isRefreshing = true;
+
+    try {
+      const latestPositions = await this.retryOperation(() =>
+        this.limitedGetPositions()
+      );
+      const latestPositionMap = {};
+      latestPositions.forEach((position) => {
+        latestPositionMap[position.symbol] = position;
+      });
+
+      // Update existing positions
+      for (const symbol in this.positions) {
+        if (latestPositionMap[symbol]) {
+          const latestQty = Math.abs(parseFloat(latestPositionMap[symbol].qty));
+          const latestAvgEntryPrice = parseFloat(
+            latestPositionMap[symbol].avg_entry_price
+          );
+          this.positions[symbol].qty = latestQty;
+          this.positions[symbol].avgEntryPrice = latestAvgEntryPrice;
+          this.positions[symbol].currentBid =
+            parseFloat(latestPositionMap[symbol].current_price) - 0.01; // Approximation
+          this.positions[symbol].currentAsk =
+            parseFloat(latestPositionMap[symbol].current_price) + 0.01; // Approximation
+          this.positions[symbol].currentPrice = parseFloat(
+            latestPositionMap[symbol].current_price
+          );
+
+          // Recalculate stopPrice if necessary
+          if (this.positions[symbol].profitTargetsHit >= 2) {
+            this.positions[symbol].stopPrice = latestAvgEntryPrice; // Breakeven
+          } else {
+            this.positions[symbol].stopPrice = this.calculateInitialStopPrice(
+              latestAvgEntryPrice,
+              this.positions[symbol].side
+            );
+          }
+
+          // If quantity is zero, remove the position
+          if (latestQty === 0) {
+            this.removePosition(symbol);
+          }
+        } else {
+          // Position no longer exists; remove from tracking
+          this.removePosition(symbol);
+        }
+      }
+
+      // Add any new positions not currently tracked
+      latestPositions.forEach((position) => {
+        const symbol = position.symbol;
+        if (!this.positions[symbol]) {
+          this.addPosition(position);
+        }
+      });
+
+      // Update dashboard and summary
+      this.dashboard.updatePositions(Object.values(this.positions));
+      this.updateSummary();
+    } catch (err) {
+      logger.error(`Error refreshing positions: ${err.message}`);
+      this.dashboard.error(`Error refreshing positions: ${err.message}`);
+    } finally {
+      this.isRefreshing = false;
+    }
+  }
+
+  /**
+   * Updates the Summary box with aggregated data.
+   */
+  updateSummary() {
+    const totalPositions = Object.keys(this.positions).length;
+    const activePositions = Object.values(this.positions).filter(
+      (pos) => pos.isActive
+    ).length;
+    const closedPositions = totalPositions - activePositions;
+
+    const totalOrders = Object.keys(this.orderTracking).length;
+    const activeOrders = Object.values(this.orderTracking).filter(
+      (order) => order.filledQty < order.qty
+    ).length;
+    const completedOrders = totalOrders - activeOrders;
+
+    const summary = {
+      totalPositions,
+      activePositions,
+      closedPositions,
+      totalOrders,
+      activeOrders,
+      completedOrders,
+    };
+
+    this.dashboard.updateSummary(summary);
   }
 }
 
