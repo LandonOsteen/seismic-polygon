@@ -4,7 +4,7 @@ const WebSocket = require('ws');
 const config = require('./config');
 const logger = require('./logger');
 
-class Polygon {
+class PolygonClient {
   constructor() {
     this.apiKey = config.polygon.apiKey;
     this.ws = null;
@@ -21,7 +21,14 @@ class Polygon {
     });
 
     this.ws.on('message', (data) => {
-      const messages = JSON.parse(data);
+      let messages;
+      try {
+        messages = JSON.parse(data);
+      } catch (err) {
+        logger.error(`Error parsing Polygon message: ${err.message}`);
+        return;
+      }
+
       messages.forEach((msg) => {
         if (msg.ev === 'status') {
           if (msg.status === 'auth_success') {
@@ -43,8 +50,8 @@ class Polygon {
           }
         } else if (msg.ev === 'Q' && this.onQuote) {
           const symbol = msg.sym;
-          const bidPrice = msg.bp;
-          const askPrice = msg.ap;
+          const bidPrice = parseFloat(msg.bp);
+          const askPrice = parseFloat(msg.ap);
           this.onQuote(symbol, bidPrice, askPrice);
         }
       });
@@ -85,4 +92,4 @@ class Polygon {
   }
 }
 
-module.exports = Polygon;
+module.exports = PolygonClient;

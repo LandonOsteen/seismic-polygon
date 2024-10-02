@@ -1,45 +1,74 @@
-2024-10-01T19:50:55.217Z [INFO]: Position added: GME | Qty: 100 | Avg Entry: $22.11
-2024-10-01T19:50:55.544Z [INFO]: Position added: GME | Qty: 100 | Avg Entry: $22.11
-2024-10-01T19:50:55.565Z [INFO]: Polygon WebSocket connected.
-2024-10-01T19:50:55.571Z [INFO]: Started polling for new positions and order statuses.
-2024-10-01T19:50:55.745Z [INFO]: Polygon WebSocket connection opened.
-2024-10-01T19:50:55.746Z [INFO]: Polygon WebSocket connected.
-2024-10-01T19:50:55.803Z [INFO]: Polygon WebSocket authenticated.
-2024-10-01T19:50:57.287Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'totalPositions')
-2024-10-01T19:50:58.342Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'totalPositions')
-2024-10-01T19:50:59.394Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'totalPositions')
-2024-10-01T19:51:00.437Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'totalPositions')
-2024-10-01T19:51:01.140Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'totalPositions')
-2024-10-01T19:51:02.546Z [ERROR]: Error checking for new positions: Cannot read properties of undefined (reading 'totalPositions')
-2024-10-01T19:52:28.674Z [INFO]: Position added: GME | Qty: 100 | Avg Entry: $22.11
-2024-10-01T19:52:28.962Z [INFO]: Position added: GME | Qty: 100 | Avg Entry: $22.11
-2024-10-01T19:52:28.986Z [INFO]: Polygon WebSocket connected.
-2024-10-01T19:52:28.992Z [INFO]: Started polling for new positions and order statuses.
-2024-10-01T19:52:29.218Z [INFO]: Polygon WebSocket connection opened.
-2024-10-01T19:52:29.219Z [INFO]: Polygon WebSocket connected.
-2024-10-01T19:52:29.275Z [INFO]: Polygon WebSocket authenticated.
-2024-10-01T19:53:10.592Z [INFO]: Position added: SGML | Qty: 64 | Avg Entry: $13.24
-2024-10-01T19:53:10.600Z [INFO]: Subscribed to SGML quotes.
-2024-10-01T19:56:27.680Z [INFO]: Position added: BEKE | Qty: 24 | Avg Entry: $23.19
-2024-10-01T19:56:27.687Z [INFO]: Subscribed to BEKE quotes.
-2024-10-01T19:56:49.591Z [INFO]: Stop condition met for BEKE. Initiating market order to close position.
-2024-10-01T19:56:49.594Z [INFO]: Closing position with market order: {"symbol":"BEKE","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-52740dd291b5a4ac"}
-2024-10-01T19:56:50.526Z [INFO]: Market order placed to close position in BEKE. Order ID: d3c1c322-9a84-4e02-8a24-8272b977c641
-2024-10-01T19:56:50.872Z [INFO]: Order d3c1c322-9a84-4e02-8a24-8272b977c641 filled 32 qty for BEKE. Remaining qty: 68
-2024-10-01T19:56:52.631Z [INFO]: Order d3c1c322-9a84-4e02-8a24-8272b977c641 filled 75 qty for BEKE. Remaining qty: -26
-2024-10-01T19:56:52.634Z [INFO]: Position removed: BEKE
-2024-10-01T19:56:52.637Z [INFO]: Unsubscribed from BEKE quotes.
-2024-10-01T19:56:52.979Z [INFO]: Position added: BEKE | Qty: 25 | Avg Entry: $23.1945
-2024-10-01T19:56:52.988Z [INFO]: Subscribed to BEKE quotes.
-2024-10-01T19:56:53.682Z [INFO]: Order d3c1c322-9a84-4e02-8a24-8272b977c641 filled 89 qty for BEKE. Remaining qty: -64
-2024-10-01T19:56:53.686Z [INFO]: Position removed: BEKE
-2024-10-01T19:56:53.689Z [INFO]: Unsubscribed from BEKE quotes.
-2024-10-01T19:58:33.077Z [INFO]: Position removed: GME
-2024-10-01T19:58:33.082Z [INFO]: Unsubscribed from GME quotes.
-2024-10-01T19:58:33.085Z [INFO]: Position removed: SGML
-2024-10-01T19:58:33.088Z [INFO]: Unsubscribed from SGML quotes.
-2024-10-01T20:00:42.234Z [INFO]: Polygon WebSocket connected.
-2024-10-01T20:00:42.249Z [INFO]: Started polling for new positions and order statuses.
-2024-10-01T20:00:42.426Z [INFO]: Polygon WebSocket connection opened.
-2024-10-01T20:00:42.427Z [INFO]: Polygon WebSocket connected.
-2024-10-01T20:00:42.485Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:06:03.589Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:06:03.605Z [INFO]: Started polling for order statuses.
+2024-10-02T19:06:03.824Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:06:03.825Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:06:03.883Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:06:04.568Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:48:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-10-02T19:06:05.569Z [ERROR]: Uncaught Exception: this.refreshPositions is not a function
+TypeError: this.refreshPositions is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:54:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-10-02T19:06:05.576Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:48:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-10-02T19:06:06.578Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:48:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-10-02T19:06:07.570Z [ERROR]: Uncaught Exception: this.refreshPositions is not a function
+TypeError: this.refreshPositions is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:54:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-10-02T19:06:07.577Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:48:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-10-02T19:06:08.579Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:48:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-10-02T19:18:22.396Z [INFO]: No persisted state found. Starting fresh.
+2024-10-02T19:18:22.435Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:18:22.450Z [INFO]: Started polling for order statuses.
+2024-10-02T19:18:22.955Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:18:22.958Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:18:23.008Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:30:52.351Z [INFO]: No persisted state found. Starting fresh.
+2024-10-02T19:30:52.394Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:30:52.410Z [INFO]: Started polling for order statuses.
+2024-10-02T19:30:52.602Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:30:52.603Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:30:52.654Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:31:53.575Z [INFO]: No persisted state found. Starting fresh.
+2024-10-02T19:31:53.612Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:31:53.626Z [INFO]: Started polling for order statuses.
+2024-10-02T19:31:53.784Z [INFO]: State persisted successfully.
+2024-10-02T19:31:53.785Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:31:53.786Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:31:53.840Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:32:12.092Z [WARN]: Invalid order data for order ID: 68cb6c1a-1cf9-4df5-961a-dd09b2fc96fa
+2024-10-02T19:32:12.101Z [ERROR]: Error polling order statuses: Cannot read properties of null (reading 'toFixed')
+2024-10-02T19:32:12.841Z [WARN]: Invalid order data for order ID: 68cb6c1a-1cf9-4df5-961a-dd09b2fc96fa
+2024-10-02T19:32:12.855Z [ERROR]: Error polling order statuses: Cannot read properties of null (reading 'toFixed')
+2024-10-02T19:32:14.103Z [ERROR]: Error adding/updating position NVAX: this.calculateInitialStopPrice is not a function
+2024-10-02T19:32:16.102Z [ERROR]: Error adding/updating position NVAX: this.calculateInitialStopPrice is not a function
+2024-10-02T19:32:18.102Z [ERROR]: Error adding/updating position NVAX: this.calculateInitialStopPrice is not a function
+2024-10-02T19:32:20.094Z [ERROR]: Error adding/updating position NVAX: this.calculateInitialStopPrice is not a function
+2024-10-02T19:32:22.099Z [ERROR]: Error adding/updating position NVAX: this.calculateInitialStopPrice is not a function
+2024-10-02T19:36:35.107Z [INFO]: Loaded persisted state successfully.
+2024-10-02T19:36:35.146Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:36:35.161Z [INFO]: Started polling for order statuses.
+2024-10-02T19:36:35.332Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:36:35.333Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:36:35.381Z [INFO]: Polygon WebSocket authenticated.
