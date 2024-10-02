@@ -72,3 +72,26 @@ TypeError: this.pollOrderStatuses is not a function
 2024-10-02T19:36:35.332Z [INFO]: Polygon WebSocket connection opened.
 2024-10-02T19:36:35.333Z [INFO]: Polygon WebSocket connected.
 2024-10-02T19:36:35.381Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:41:09.248Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:41:09.262Z [INFO]: Started polling for order statuses.
+2024-10-02T19:41:09.435Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:41:09.436Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:41:09.484Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:41:27.377Z [INFO]: Position added: NVAX | Qty: 98 | Avg Entry: $14.79
+2024-10-02T19:41:27.382Z [INFO]: Subscribed to NVAX quotes.
+2024-10-02T19:45:35.025Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:45:35.041Z [INFO]: Started polling for order statuses.
+2024-10-02T19:45:35.214Z [INFO]: Position added: NVAX | Qty: 100 | Avg Entry: $14.79
+2024-10-02T19:45:35.236Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:45:35.237Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:45:35.286Z [INFO]: Polygon WebSocket authenticated.
+2024-10-02T19:45:39.752Z [INFO]: Stop condition met for NVAX. Initiating market order to close position.
+2024-10-02T19:45:39.757Z [INFO]: Closing position with market order: {"symbol":"NVAX","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-d1f70e6de13f847f"}
+2024-10-02T19:45:40.097Z [INFO]: Market order placed to close position in NVAX. Order ID: 2a615d15-cfa5-49ff-9eac-e9357eaf9baa
+2024-10-02T19:45:41.296Z [INFO]: Position removed: NVAX
+2024-10-02T19:45:41.302Z [INFO]: Unsubscribed from NVAX quotes.
+2024-10-02T19:46:26.940Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:46:26.956Z [INFO]: Started polling for order statuses.
+2024-10-02T19:46:27.116Z [INFO]: Polygon WebSocket connection opened.
+2024-10-02T19:46:27.117Z [INFO]: Polygon WebSocket connected.
+2024-10-02T19:46:27.162Z [INFO]: Polygon WebSocket authenticated.
