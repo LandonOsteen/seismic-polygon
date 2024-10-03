@@ -226,3 +226,48 @@ TypeError: this.pollOrderStatuses is not a function
 2024-10-03T15:22:04.663Z [INFO]: Polygon WebSocket connection opened.
 2024-10-03T15:22:04.665Z [INFO]: Polygon WebSocket connected.
 2024-10-03T15:22:04.711Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:23:03.758Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T15:23:03.759Z [INFO]: Polygon WebSocket connected.
+2024-10-03T15:23:03.807Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:23:28.064Z [INFO]: Position added: HLX | Qty: 22000 | Avg Entry: $12.083202
+2024-10-03T15:23:28.091Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T15:23:28.092Z [INFO]: Polygon WebSocket connected.
+2024-10-03T15:23:28.143Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:23:32.693Z [INFO]: Profit target hit for HLX: +6.32¢ >= +6¢
+2024-10-03T15:23:32.697Z [INFO]: Attempting to place IOC order: {"symbol":"HLX","qty":"4400","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-816bf5424b9e569e"}
+2024-10-03T15:23:32.955Z [INFO]: Placed IOC order for 4400 shares of HLX. Order ID: fadcc1ee-dcf0-4ab3-ae14-79ca749d9ff1
+2024-10-03T15:23:33.493Z [INFO]: Order fadcc1ee-dcf0-4ab3-ae14-79ca749d9ff1 filled 3651 qty for HLX. Remaining qty: 18349
+2024-10-03T15:23:34.122Z [INFO]: Profit target hit for HLX: +12.32¢ >= +10¢
+2024-10-03T15:23:34.126Z [INFO]: Attempting to place IOC order: {"symbol":"HLX","qty":"9125","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-fd1326f4370a8871"}
+2024-10-03T15:23:34.351Z [INFO]: Order fadcc1ee-dcf0-4ab3-ae14-79ca749d9ff1 filled 3749 qty for HLX. Remaining qty: 14502
+2024-10-03T15:23:34.913Z [INFO]: Placed IOC order for 9125 shares of HLX. Order ID: 2cfc5902-423b-4040-963f-c861e55a5695
+2024-10-03T15:23:35.084Z [INFO]: Order fadcc1ee-dcf0-4ab3-ae14-79ca749d9ff1 filled 4300 qty for HLX. Remaining qty: 10202
+2024-10-03T15:23:35.402Z [INFO]: Second profit target hit for HLX. Adjusting stop monitoring to breakeven.
+2024-10-03T15:23:36.492Z [INFO]: Order 2cfc5902-423b-4040-963f-c861e55a5695 filled 9008 qty for HLX. Remaining qty: -351
+2024-10-03T15:23:36.498Z [INFO]: Position removed: HLX
+2024-10-03T15:23:36.502Z [INFO]: Unsubscribed from HLX quotes.
+2024-10-03T15:23:38.009Z [INFO]: Position added: HLX | Qty: 8475 | Avg Entry: $12.083202
+2024-10-03T15:23:38.018Z [INFO]: Subscribed to HLX quotes.
+2024-10-03T15:23:38.657Z [INFO]: Profit target hit for HLX: +6.32¢ >= +6¢
+2024-10-03T15:23:38.666Z [INFO]: Attempting to place IOC order: {"symbol":"HLX","qty":"1695","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-c9e8a494148dbfb7"}
+2024-10-03T15:23:38.815Z [INFO]: Placed IOC order for 1695 shares of HLX. Order ID: 35ea6a62-24f1-4271-aff8-f02625035224
+2024-10-03T15:24:10.492Z [INFO]: Profit target hit for HLX: +10.32¢ >= +10¢
+2024-10-03T15:24:10.496Z [INFO]: Attempting to place IOC order: {"symbol":"HLX","qty":"3390","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-c1877364cab33da0"}
+2024-10-03T15:24:10.754Z [INFO]: Placed IOC order for 3390 shares of HLX. Order ID: be6c4381-7cc5-4e8c-804e-965aa847e3d1
+2024-10-03T15:24:11.237Z [INFO]: Second profit target hit for HLX. Adjusting stop monitoring to breakeven.
+2024-10-03T15:24:11.466Z [INFO]: Order be6c4381-7cc5-4e8c-804e-965aa847e3d1 filled 1006 qty for HLX. Remaining qty: 5774
+2024-10-03T15:24:12.899Z [INFO]: Order be6c4381-7cc5-4e8c-804e-965aa847e3d1 filled 2044 qty for HLX. Remaining qty: 2692
+2024-10-03T15:24:13.951Z [INFO]: Order be6c4381-7cc5-4e8c-804e-965aa847e3d1 filled 2685 qty for HLX. Remaining qty: 7
+2024-10-03T15:24:15.560Z [INFO]: Stop condition met for HLX. Initiating market order to close position.
+2024-10-03T15:24:15.563Z [INFO]: Closing position with market order: {"symbol":"HLX","qty":"3390","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-94dec5a682b886f6"}
+2024-10-03T15:24:16.661Z [INFO]: Market order placed to close position in HLX. Order ID: b89c7f1c-af22-4fd3-972a-58cec7610cbf
+2024-10-03T15:24:17.621Z [INFO]: Order b89c7f1c-af22-4fd3-972a-58cec7610cbf filled 3071 qty for HLX. Remaining qty: 319
+2024-10-03T15:24:18.533Z [INFO]: Order b89c7f1c-af22-4fd3-972a-58cec7610cbf filled 3131 qty for HLX. Remaining qty: -2812
+2024-10-03T15:24:18.539Z [INFO]: Position removed: HLX
+2024-10-03T15:24:18.544Z [INFO]: Unsubscribed from HLX quotes.
+2024-10-03T15:33:41.068Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T15:33:41.070Z [INFO]: Polygon WebSocket connected.
+2024-10-03T15:33:41.125Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:35:36.686Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T15:35:36.687Z [INFO]: Polygon WebSocket connected.
+2024-10-03T15:35:36.736Z [INFO]: Polygon WebSocket authenticated.
