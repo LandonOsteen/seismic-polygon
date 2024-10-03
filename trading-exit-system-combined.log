@@ -271,3 +271,28 @@ TypeError: this.pollOrderStatuses is not a function
 2024-10-03T15:35:36.686Z [INFO]: Polygon WebSocket connection opened.
 2024-10-03T15:35:36.687Z [INFO]: Polygon WebSocket connected.
 2024-10-03T15:35:36.736Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:53:33.284Z [INFO]: Position added: SYF | Qty: 2000 | Avg Entry: $49.9
+2024-10-03T15:53:33.305Z [INFO]: Subscribed to SYF quotes.
+2024-10-03T15:55:25.385Z [INFO]: Position removed: SYF
+2024-10-03T15:55:25.394Z [INFO]: Unsubscribed from SYF quotes.
+2024-10-03T19:43:10.198Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T19:43:10.200Z [INFO]: Polygon WebSocket connected.
+2024-10-03T19:43:10.370Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T19:44:50.375Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T19:44:50.376Z [INFO]: Polygon WebSocket connected.
+2024-10-03T19:44:50.429Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T19:49:50.418Z [INFO]: Position added: NEOG | Qty: 2000 | Avg Entry: $15.07
+2024-10-03T19:49:50.436Z [INFO]: Subscribed to NEOG quotes.
+2024-10-03T19:50:00.202Z [INFO]: Profit target hit for NEOG: +3.00¢ >= +3¢
+2024-10-03T19:50:00.205Z [INFO]: Attempting to place IOC order: {"symbol":"NEOG","qty":"600","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-aed26aa7c47d53df"}
+2024-10-03T19:50:00.356Z [INFO]: Placed IOC order for 600 shares of NEOG. Order ID: 68b57eca-aadf-4ae1-81b6-be8e90bb6592
+2024-10-03T19:50:01.545Z [INFO]: Order 68b57eca-aadf-4ae1-81b6-be8e90bb6592 filled 364 qty for NEOG. Remaining qty: 1636
+2024-10-03T19:51:35.676Z [INFO]: Profit target hit for NEOG: +6.00¢ >= +6¢
+2024-10-03T19:51:35.679Z [INFO]: Attempting to place IOC order: {"symbol":"NEOG","qty":"700","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-22e412f1070a8fc6"}
+2024-10-03T19:51:35.990Z [INFO]: Placed IOC order for 700 shares of NEOG. Order ID: e7cb4863-6ce5-4132-9a38-6c90e8cb8a75
+2024-10-03T19:51:36.426Z [INFO]: Second profit target hit for NEOG. Adjusting stop monitoring to breakeven.
+2024-10-03T19:55:00.657Z [INFO]: Position removed: NEOG
+2024-10-03T19:55:00.661Z [INFO]: Unsubscribed from NEOG quotes.
+2024-10-03T21:03:12.010Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T21:03:12.012Z [INFO]: Polygon WebSocket connected.
+2024-10-03T21:03:12.062Z [INFO]: Polygon WebSocket authenticated.
