@@ -95,3 +95,131 @@ TypeError: this.pollOrderStatuses is not a function
 2024-10-02T19:46:27.116Z [INFO]: Polygon WebSocket connection opened.
 2024-10-02T19:46:27.117Z [INFO]: Polygon WebSocket connected.
 2024-10-02T19:46:27.162Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T13:26:19.320Z [INFO]: Polygon WebSocket connected.
+2024-10-03T13:26:19.335Z [INFO]: Started polling for order statuses.
+2024-10-03T13:26:19.491Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T13:26:19.492Z [INFO]: Polygon WebSocket connected.
+2024-10-03T13:26:19.542Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T13:36:15.744Z [INFO]: Position added: PLTR | Qty: 2000 | Avg Entry: $37.89
+2024-10-03T13:36:15.749Z [INFO]: Subscribed to PLTR quotes.
+2024-10-03T13:36:40.937Z [INFO]: Stop condition met for PLTR. Initiating market order to close position.
+2024-10-03T13:36:40.943Z [INFO]: Closing position with market order: {"symbol":"PLTR","qty":"2000","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-949a2d15929f80a8"}
+2024-10-03T13:36:41.220Z [INFO]: Market order placed to close position in PLTR. Order ID: d3bf72e2-13ae-4f16-970a-f65ed791280f
+2024-10-03T13:36:42.486Z [INFO]: Order d3bf72e2-13ae-4f16-970a-f65ed791280f filled 131 qty for PLTR. Remaining qty: 1869
+2024-10-03T13:36:43.255Z [INFO]: Order d3bf72e2-13ae-4f16-970a-f65ed791280f filled 131 qty for PLTR. Remaining qty: 1738
+2024-10-03T13:36:43.780Z [INFO]: Position removed: PLTR
+2024-10-03T13:36:43.791Z [INFO]: Unsubscribed from PLTR quotes.
+2024-10-03T13:40:03.880Z [INFO]: Position added: OXY | Qty: 2000 | Avg Entry: $53.66
+2024-10-03T13:40:03.890Z [INFO]: Subscribed to OXY quotes.
+2024-10-03T13:43:25.256Z [INFO]: Profit target hit for OXY: +6.00¢ >= +6¢
+2024-10-03T13:43:25.261Z [INFO]: Attempting to place IOC order: {"symbol":"OXY","qty":"400","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-290b56f652f58372"}
+2024-10-03T13:43:25.662Z [INFO]: Placed IOC order for 400 shares of OXY. Order ID: b0248cb0-6c7a-4c57-a08b-f290562b363f
+2024-10-03T13:44:13.120Z [INFO]: Profit target hit for OXY: +10.00¢ >= +10¢
+2024-10-03T13:44:13.125Z [INFO]: Attempting to place IOC order: {"symbol":"OXY","qty":"800","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-5a6a7a0626c9124b"}
+2024-10-03T13:44:13.323Z [INFO]: Placed IOC order for 800 shares of OXY. Order ID: a625a6e4-b4bd-47d9-8852-41ddd8a3d36a
+2024-10-03T13:44:14.023Z [INFO]: Second profit target hit for OXY. Adjusting stop monitoring to breakeven.
+2024-10-03T13:45:00.259Z [INFO]: Profit target hit for OXY: +15.00¢ >= +15¢
+2024-10-03T13:45:00.265Z [INFO]: Attempting to place IOC order: {"symbol":"OXY","qty":"800","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-ae08dee76bcfb920"}
+2024-10-03T13:45:00.570Z [INFO]: Placed IOC order for 800 shares of OXY. Order ID: 25fa6111-9d34-4b05-b2a5-8447f827751f
+2024-10-03T13:45:01.286Z [INFO]: Order 25fa6111-9d34-4b05-b2a5-8447f827751f filled 719 qty for OXY. Remaining qty: -638
+2024-10-03T13:45:01.296Z [INFO]: Position removed: OXY
+2024-10-03T13:45:01.302Z [INFO]: Unsubscribed from OXY quotes.
+2024-10-03T14:04:29.140Z [INFO]: Position added: PLTR | Qty: 2000 | Avg Entry: $38.83384
+2024-10-03T14:04:29.152Z [INFO]: Subscribed to PLTR quotes.
+2024-10-03T14:10:02.768Z [INFO]: Stop condition met for PLTR. Initiating market order to close position.
+2024-10-03T14:10:02.773Z [INFO]: Closing position with market order: {"symbol":"PLTR","qty":"2000","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-770fcf60ff7253e5"}
+2024-10-03T14:10:06.704Z [INFO]: Market order placed to close position in PLTR. Order ID: be9f3380-a4a0-463f-9781-bbe597fd0034
+2024-10-03T14:10:08.702Z [INFO]: Position removed: PLTR
+2024-10-03T14:10:08.707Z [INFO]: Unsubscribed from PLTR quotes.
+2024-10-03T14:13:52.859Z [INFO]: Position added: SLB | Qty: 2000 | Avg Entry: $44.51
+2024-10-03T14:13:52.870Z [INFO]: Subscribed to SLB quotes.
+2024-10-03T14:13:58.833Z [INFO]: Position added: MRO | Qty: 2000 | Avg Entry: $28.42
+2024-10-03T14:13:58.843Z [INFO]: Subscribed to MRO quotes.
+2024-10-03T14:14:25.221Z [INFO]: Profit target hit for SLB: +6.00¢ >= +6¢
+2024-10-03T14:14:25.226Z [INFO]: Attempting to place IOC order: {"symbol":"SLB","qty":"400","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-530acc45a859437d"}
+2024-10-03T14:14:26.737Z [INFO]: Placed IOC order for 400 shares of SLB. Order ID: 515eb274-e86b-4708-8284-72c58a415b94
+2024-10-03T14:14:27.668Z [INFO]: Order 515eb274-e86b-4708-8284-72c58a415b94 filled 337 qty for SLB. Remaining qty: 1663
+2024-10-03T14:14:28.882Z [INFO]: Order 515eb274-e86b-4708-8284-72c58a415b94 filled 348 qty for SLB. Remaining qty: 1315
+2024-10-03T14:14:39.860Z [INFO]: Profit target hit for MRO: +6.00¢ >= +6¢
+2024-10-03T14:14:39.864Z [INFO]: Attempting to place IOC order: {"symbol":"MRO","qty":"400","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-e4c7500b6b063710"}
+2024-10-03T14:14:41.268Z [INFO]: Placed IOC order for 400 shares of MRO. Order ID: 5b7d98c5-f083-4a6f-bc19-3c2cfdcab49e
+2024-10-03T14:19:27.885Z [INFO]: Stop condition met for SLB. Initiating market order to close position.
+2024-10-03T14:19:27.890Z [INFO]: Closing position with market order: {"symbol":"SLB","qty":"1600","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-c6ef491475c41fe5"}
+2024-10-03T14:19:28.493Z [INFO]: Market order placed to close position in SLB. Order ID: f93ff54c-0aa3-42f0-9867-a29b4baf9840
+2024-10-03T14:19:28.850Z [INFO]: Order f93ff54c-0aa3-42f0-9867-a29b4baf9840 filled 1385 qty for SLB. Remaining qty: 215
+2024-10-03T14:19:29.514Z [INFO]: Order f93ff54c-0aa3-42f0-9867-a29b4baf9840 filled 1431 qty for SLB. Remaining qty: -1216
+2024-10-03T14:19:29.521Z [INFO]: Position removed: SLB
+2024-10-03T14:19:29.526Z [INFO]: Unsubscribed from SLB quotes.
+2024-10-03T14:19:30.572Z [INFO]: Position added: SLB | Qty: 16 | Avg Entry: $44.51
+2024-10-03T14:19:30.583Z [INFO]: Subscribed to SLB quotes.
+2024-10-03T14:19:32.711Z [INFO]: Position removed: SLB
+2024-10-03T14:19:32.717Z [INFO]: Unsubscribed from SLB quotes.
+2024-10-03T14:24:05.451Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:24:05.473Z [INFO]: Started polling for order statuses.
+2024-10-03T14:24:05.642Z [INFO]: Position added: MRO | Qty: 1600 | Avg Entry: $28.42
+2024-10-03T14:24:05.693Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T14:24:05.693Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:24:05.742Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T14:24:40.242Z [INFO]: Profit target hit for MRO: +6.00¢ >= +6¢
+2024-10-03T14:24:40.248Z [INFO]: Attempting to place IOC order: {"symbol":"MRO","qty":"320","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-71fe1bf24f877661"}
+2024-10-03T14:24:40.853Z [INFO]: Placed IOC order for 320 shares of MRO. Order ID: e2038cf8-4a2f-40af-954e-c3c1fc3e5a42
+2024-10-03T14:25:32.138Z [INFO]: Profit target hit for MRO: +10.00¢ >= +10¢
+2024-10-03T14:25:32.144Z [INFO]: Attempting to place IOC order: {"symbol":"MRO","qty":"640","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-a0080d51c19bcb0c"}
+2024-10-03T14:25:32.976Z [INFO]: Placed IOC order for 640 shares of MRO. Order ID: 5c6b0250-87aa-47ae-91fd-970488c9a0c1
+2024-10-03T14:25:32.984Z [INFO]: Second profit target hit for MRO. Adjusting stop monitoring to breakeven.
+2024-10-03T14:25:33.508Z [INFO]: Order 5c6b0250-87aa-47ae-91fd-970488c9a0c1 filled 511 qty for MRO. Remaining qty: 769
+2024-10-03T14:25:34.706Z [INFO]: Order 5c6b0250-87aa-47ae-91fd-970488c9a0c1 filled 637 qty for MRO. Remaining qty: 14
+2024-10-03T14:28:43.055Z [INFO]: Stop condition met for MRO. Initiating market order to close position.
+2024-10-03T14:28:43.062Z [INFO]: Closing position with market order: {"symbol":"MRO","qty":"640","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-0c5ce6e1d5c15214"}
+2024-10-03T14:28:43.820Z [INFO]: Market order placed to close position in MRO. Order ID: d496b2ff-8396-4991-b635-7ceceb56f25d
+2024-10-03T14:28:44.528Z [INFO]: Order d496b2ff-8396-4991-b635-7ceceb56f25d filled 578 qty for MRO. Remaining qty: -516
+2024-10-03T14:28:44.543Z [INFO]: Position removed: MRO
+2024-10-03T14:28:44.554Z [INFO]: Unsubscribed from MRO quotes.
+2024-10-03T14:28:44.903Z [INFO]: Position added: MRO | Qty: 21 | Avg Entry: $28.42
+2024-10-03T14:28:44.914Z [INFO]: Subscribed to MRO quotes.
+2024-10-03T14:28:45.266Z [INFO]: Order d496b2ff-8396-4991-b635-7ceceb56f25d filled 622 qty for MRO. Remaining qty: -601
+2024-10-03T14:28:45.282Z [INFO]: Position removed: MRO
+2024-10-03T14:28:45.292Z [INFO]: Unsubscribed from MRO quotes.
+2024-10-03T14:28:46.926Z [INFO]: Position added: MRO | Qty: 1 | Avg Entry: $28.42
+2024-10-03T14:28:46.940Z [INFO]: Subscribed to MRO quotes.
+2024-10-03T14:28:47.302Z [INFO]: Order d496b2ff-8396-4991-b635-7ceceb56f25d filled 635 qty for MRO. Remaining qty: -634
+2024-10-03T14:28:47.313Z [INFO]: Position removed: MRO
+2024-10-03T14:28:47.321Z [INFO]: Unsubscribed from MRO quotes.
+2024-10-03T14:37:46.710Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:37:46.714Z [INFO]: Started polling for order statuses.
+2024-10-03T14:37:46.899Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T14:37:46.900Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:37:46.947Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T14:38:04.728Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T14:38:04.731Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:38:04.776Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T14:38:31.569Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T14:38:31.571Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:38:31.614Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T14:40:14.103Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T14:40:14.105Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:40:14.153Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T14:40:53.356Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T14:40:53.358Z [INFO]: Polygon WebSocket connected.
+2024-10-03T14:40:53.404Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:01:36.181Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T15:01:36.183Z [INFO]: Polygon WebSocket connected.
+2024-10-03T15:01:36.255Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:04:57.556Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T15:04:57.557Z [INFO]: Polygon WebSocket connected.
+2024-10-03T15:04:57.607Z [INFO]: Polygon WebSocket authenticated.
+2024-10-03T15:05:43.511Z [INFO]: Position added: PLTR | Qty: 99 | Avg Entry: $38.62
+2024-10-03T15:05:43.526Z [INFO]: Subscribed to PLTR quotes.
+2024-10-03T15:07:26.940Z [INFO]: Profit target hit for PLTR: +6.00¢ >= +6¢
+2024-10-03T15:07:26.944Z [INFO]: Attempting to place IOC order: {"symbol":"PLTR","qty":"20","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-dde630d0573af77b"}
+2024-10-03T15:07:27.285Z [INFO]: Placed IOC order for 20 shares of PLTR. Order ID: 458309ef-63d7-4864-a9d4-4aa375e2cc98
+2024-10-03T15:07:59.015Z [INFO]: Profit target hit for PLTR: +10.00¢ >= +10¢
+2024-10-03T15:07:59.019Z [INFO]: Attempting to place IOC order: {"symbol":"PLTR","qty":"40","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-db665760d42e5c2a"}
+2024-10-03T15:07:59.220Z [INFO]: Placed IOC order for 40 shares of PLTR. Order ID: e8112de2-5b30-40a5-a6be-5cece009a791
+2024-10-03T15:07:59.593Z [INFO]: Second profit target hit for PLTR. Adjusting stop monitoring to breakeven.
+2024-10-03T15:07:59.931Z [INFO]: Order e8112de2-5b30-40a5-a6be-5cece009a791 filled 12 qty for PLTR. Remaining qty: 56
+2024-10-03T15:11:13.328Z [INFO]: Profit target hit for PLTR: +15.00¢ >= +15¢
+2024-10-03T15:11:13.332Z [INFO]: Attempting to place IOC order: {"symbol":"PLTR","qty":"40","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-8275a41d0392d73d"}
+2024-10-03T15:11:13.693Z [INFO]: Placed IOC order for 40 shares of PLTR. Order ID: 97d2b121-07fb-41ea-8bdb-7fe6c710fc7d
+2024-10-03T15:11:14.301Z [INFO]: Position removed: PLTR
+2024-10-03T15:11:14.308Z [INFO]: Unsubscribed from PLTR quotes.

@@ -13,50 +13,17 @@ class Dashboard {
       title: 'Trading Exit System Dashboard',
     });
 
-    // Create a grid layout
+    // Create a grid layout with 12 rows and 12 columns.
     this.grid = new contrib.grid({
       rows: 12,
       cols: 12,
       screen: this.screen,
     });
 
-    // Logs Box
-    this.logBox = this.grid.set(0, 0, 4, 12, contrib.log, {
-      fg: 'green',
-      selectedFg: 'green',
-      label: ' Logs ',
-      tags: true,
-      keys: true,
-      vi: true,
-      mouse: true,
-      scrollbar: {
-        fg: 'blue',
-        ch: ' ',
-      },
-    });
-
-    // Errors Box
-    this.errorBox = this.grid.set(4, 0, 2, 12, blessed.box, {
-      label: ' Errors ',
-      content: '',
-      tags: true,
-      scrollable: true,
-      alwaysScroll: true,
-      scrollbar: {
-        ch: ' ',
-        inverse: true,
-      },
-      style: {
-        fg: 'red',
-        bg: 'black',
-        border: {
-          fg: '#f0f0f0',
-        },
-      },
-    });
-
-    // Positions Table
-    this.positionsTable = this.grid.set(6, 0, 3, 6, contrib.table, {
+    // --------------------------
+    // 1. Positions Table (Top)
+    // --------------------------
+    this.positionsTable = this.grid.set(0, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'cyan',
       selectedFg: 'white',
@@ -66,60 +33,10 @@ class Dashboard {
       width: '100%',
       height: '100%',
       border: { type: 'line', fg: 'cyan' },
-      columnWidth: [10, 6, 6, 10, 10, 10, 10, 15, 20], // Adjusted for new columns
-      columnSpacing: 2,
       columnWidth: [10, 6, 6, 10, 10, 10, 10, 15, 20], // Symbol, Side, Qty, Avg Entry, Bid, Ask, Profit, Stop Price, Profit Targets Hit
     });
 
-    // Orders Table
-    this.ordersTable = this.grid.set(6, 6, 3, 6, contrib.table, {
-      keys: true,
-      fg: 'yellow',
-      selectedFg: 'white',
-      selectedBg: 'blue',
-      interactive: true,
-      label: ' Orders ',
-      width: '100%',
-      height: '100%',
-      border: { type: 'line', fg: 'yellow' },
-      columnWidth: [8, 10, 6, 10, 10, 10, 12],
-    });
-
-    // Closed Positions Table
-    this.closedPositionsTable = this.grid.set(9, 0, 3, 12, contrib.table, {
-      keys: true,
-      fg: 'magenta',
-      selectedFg: 'white',
-      selectedBg: 'blue',
-      interactive: true,
-      label: ' Closed Positions Today ',
-      width: '100%',
-      height: '100%',
-      border: { type: 'line', fg: 'magenta' },
-      columnWidth: [10, 6, 6, 10, 10, 12], // Symbol, Side, Qty, Entry Price, Exit Price, P&L ($)
-    });
-
-    // Summary Box
-    this.summaryBox = this.grid.set(12, 0, 1, 12, blessed.box, {
-      label: ' Summary ',
-      content: '',
-      tags: true,
-      scrollable: true,
-      alwaysScroll: true,
-      scrollbar: {
-        ch: ' ',
-        inverse: true,
-      },
-      style: {
-        fg: 'magenta',
-        bg: 'black',
-        border: {
-          fg: '#f0f0f0',
-        },
-      },
-    });
-
-    // Define table headers
+    // Define table headers for Positions Table
     this.positionsTable.setData({
       headers: [
         'Symbol',
@@ -135,23 +52,82 @@ class Dashboard {
       data: [],
     });
 
+    // --------------------------
+    // 2. Info Box and Orders Table (Middle)
+    // --------------------------
+
+    // Info Box (Left)
+    this.infoBox = this.grid.set(4, 0, 4, 6, contrib.log, {
+      fg: 'green',
+      selectedFg: 'green',
+      label: ' Info ',
+      tags: true,
+      keys: true,
+      vi: true,
+      mouse: true,
+      scrollbar: {
+        fg: 'blue',
+        ch: ' ',
+      },
+    });
+
+    // Orders Table (Right)
+    this.ordersTable = this.grid.set(4, 6, 4, 6, contrib.table, {
+      keys: true,
+      fg: 'magenta',
+      selectedFg: 'white',
+      selectedBg: 'blue',
+      interactive: true,
+      label: ' Orders ',
+      width: '100%',
+      height: '100%',
+      border: { type: 'line', fg: 'magenta' },
+      columnWidth: [8, 10, 6, 10, 10, 10, 12], // ID, Symbol, Side, Type, Qty, Price, Status
+    });
+
+    // Define table headers for Orders Table
     this.ordersTable.setData({
       headers: ['ID', 'Symbol', 'Side', 'Type', 'Qty', 'Price', 'Status'],
       data: [],
     });
 
-    this.closedPositionsTable.setData({
-      headers: [
-        'Symbol',
-        'Side',
-        'Qty',
-        'Entry Price',
-        'Exit Price',
-        'P&L ($)',
-      ],
-      data: [],
+    // --------------------------
+    // 3. Errors Box and Warnings Box (Bottom)
+    // --------------------------
+
+    // Errors Box (Left)
+    this.errorBox = this.grid.set(8, 0, 4, 6, contrib.log, {
+      fg: 'red',
+      selectedFg: 'red',
+      label: ' Errors ',
+      tags: true,
+      keys: true,
+      vi: true,
+      mouse: true,
+      scrollbar: {
+        fg: 'blue',
+        ch: ' ',
+      },
     });
 
+    // Warnings Box (Right)
+    this.warningBox = this.grid.set(8, 6, 4, 6, contrib.log, {
+      fg: 'yellow',
+      selectedFg: 'yellow',
+      label: ' Warnings ',
+      tags: true,
+      keys: true,
+      vi: true,
+      mouse: true,
+      scrollbar: {
+        fg: 'blue',
+        ch: ' ',
+      },
+    });
+
+    // --------------------------
+    // 4. Quit Key Bindings
+    // --------------------------
     // Quit on Escape, q, or Control-C.
     this.screen.key(['escape', 'q', 'C-c'], function () {
       return process.exit(0);
@@ -161,7 +137,42 @@ class Dashboard {
   }
 
   /**
-   * Determines whether a message should be displayed on the dashboard.
+   * Logs informational messages to the Info box.
+   * @param {string} message - The message to log.
+   */
+  logInfo(message) {
+    if (this.shouldDisplayMessage(message)) {
+      const timestamp = new Date().toISOString();
+      this.infoBox.log(`[${timestamp}] INFO: ${message}`);
+      this.screen.render();
+    } else {
+      // Optionally, log to file without displaying on dashboard
+      logger.debug(`Filtered out info message: ${message}`);
+    }
+  }
+
+  /**
+   * Logs warning messages to the Warnings box.
+   * @param {string} message - The warning message to log.
+   */
+  logWarning(message) {
+    const timestamp = new Date().toISOString();
+    this.warningBox.log(`[${timestamp}] WARNING: ${message}`);
+    this.screen.render();
+  }
+
+  /**
+   * Logs error messages to the Errors box.
+   * @param {string} message - The error message to log.
+   */
+  logError(message) {
+    const timestamp = new Date().toISOString();
+    this.errorBox.log(`[${timestamp}] ERROR: ${message}`);
+    this.screen.render();
+  }
+
+  /**
+   * Determines whether a message should be displayed on the Info box.
    * @param {string} message - The message to evaluate.
    * @returns {boolean} - True if the message should be displayed; false otherwise.
    */
@@ -176,33 +187,6 @@ class Dashboard {
     return !excludedMessages.some((excludedMsg) =>
       message.includes(excludedMsg)
     );
-  }
-
-  /**
-   * Logs informational messages to the Logs box if they pass the filter.
-   * @param {string} message - The message to log.
-   */
-  log(message) {
-    if (this.shouldDisplayMessage(message)) {
-      const timestamp = new Date().toISOString();
-      this.logBox.log(`[${timestamp}] INFO: ${message}`);
-      this.screen.render();
-    } else {
-      // Optionally, log to file without displaying on dashboard
-      logger.debug(`Filtered out log message: ${message}`);
-    }
-  }
-
-  /**
-   * Logs error messages to the Errors box.
-   * @param {string} message - The error message to log.
-   */
-  error(message) {
-    const timestamp = new Date().toISOString();
-    this.errorBox.setContent(
-      this.errorBox.getContent() + `[${timestamp}] ERROR: ${message}\n`
-    );
-    this.screen.render();
   }
 
   /**
@@ -277,53 +261,6 @@ class Dashboard {
       data: tableData,
     });
 
-    this.screen.render();
-  }
-
-  /**
-   * Updates the Closed Positions table with the latest data.
-   * @param {Array} closedPositions - Array of closed position objects.
-   */
-  updateClosedPositions(closedPositions) {
-    const tableData = closedPositions.map((pos) => {
-      return [
-        pos.symbol,
-        pos.side,
-        pos.qty,
-        pos.entryPrice,
-        pos.exitPrice,
-        pos.pnl,
-      ];
-    });
-
-    this.closedPositionsTable.setData({
-      headers: [
-        'Symbol',
-        'Side',
-        'Qty',
-        'Entry Price',
-        'Exit Price',
-        'P&L ($)',
-      ],
-      data: tableData,
-    });
-
-    this.screen.render();
-  }
-
-  /**
-   * Updates the Summary box with aggregated data.
-   * @param {Object} summary - Summary data object.
-   */
-  updateSummary(summary) {
-    let content = '';
-    content += `{bold}Total Positions:{/bold} ${summary.totalPositions}\n`;
-    content += `{bold}Active Positions:{/bold} ${summary.activePositions}\n`;
-    content += `{bold}Closed Positions:{/bold} ${summary.closedPositions}\n`;
-    content += `{bold}Total Orders:{/bold} ${summary.totalOrders}\n`;
-    content += `{bold}Active Orders:{/bold} ${summary.activeOrders}\n`;
-    content += `{bold}Completed Orders:{/bold} ${summary.completedOrders}\n`;
-    this.summaryBox.setContent(content);
     this.screen.render();
   }
 }

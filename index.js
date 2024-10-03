@@ -33,11 +33,11 @@ async function main() {
     // Connect to Polygon WebSocket
     polygon.connect();
 
-    logger.info('Polygon WebSocket connected.');
-    dashboard.log('Polygon WebSocket connected.');
+    // logger.info('Polygon WebSocket connected.');
+    // dashboard.log('Polygon WebSocket connected.');
 
-    logger.info('Started polling for order statuses.');
-    dashboard.log('Started polling for order statuses.');
+    // logger.info('Started polling for order statuses.');
+    // dashboard.log('Started polling for order statuses.');
 
     // Graceful shutdown on SIGINT (Ctrl+C)
     process.on('SIGINT', async () => {

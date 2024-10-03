@@ -74,12 +74,11 @@ class OrderManager {
         // Rate limit
         const jitter = Math.random() * 1000; // Add jitter to prevent thundering herd
         const totalDelay = delay + jitter;
-        logger.warn(
-          `Rate limit hit. Retrying in ${totalDelay.toFixed(0)}ms...`
-        );
-        this.dashboard.log(
-          `Rate limit hit. Retrying in ${totalDelay.toFixed(0)}ms...`
-        );
+        const message = `Rate limit hit. Retrying in ${totalDelay.toFixed(
+          0
+        )}ms...`;
+        logger.warn(message);
+        this.dashboard.logWarning(message);
         await this.sleep(totalDelay);
         return this.retryOperation(operation, retries - 1, delay * 2);
       }
@@ -102,13 +101,11 @@ class OrderManager {
       // Update the dashboard with the loaded positions
       this.dashboard.updatePositions(Object.values(this.positions));
 
-      // Update summary
-      this.updateSummary();
+      // No need to update summary here since updatePositions handles it
     } catch (err) {
-      logger.error(`Error initializing existing positions: ${err.message}`);
-      this.dashboard.error(
-        `Error initializing existing positions: ${err.message}`
-      );
+      const message = `Error initializing existing positions: ${err.message}`;
+      logger.error(message);
+      this.dashboard.logError(message);
     }
   }
 
@@ -138,21 +135,15 @@ class OrderManager {
       stopTriggered: false,
     };
 
-    logger.info(
-      `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice}`
-    );
-    this.dashboard.log(
-      `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice}`
-    );
+    const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice}`;
+    logger.info(message);
+    this.dashboard.logInfo(message);
 
     // Subscribe to Polygon quotes for the symbol
     this.polygon.subscribe(symbol);
 
     // Update dashboard positions
     this.dashboard.updatePositions(Object.values(this.positions));
-
-    // Update summary
-    this.updateSummary();
   }
 
   /**
@@ -177,17 +168,15 @@ class OrderManager {
   removePosition(symbol) {
     if (this.positions[symbol]) {
       delete this.positions[symbol];
-      logger.info(`Position removed: ${symbol}`);
-      this.dashboard.log(`Position removed: ${symbol}`);
+      const message = `Position removed: ${symbol}`;
+      logger.info(message);
+      this.dashboard.logInfo(message);
 
       // Unsubscribe from Polygon quotes as the position is removed
       this.polygon.unsubscribe(symbol);
 
       // Update dashboard positions
       this.dashboard.updatePositions(Object.values(this.positions));
-
-      // Update summary
-      this.updateSummary();
     }
   }
 
@@ -217,11 +206,10 @@ class OrderManager {
     ).toFixed(2);
 
     // Log current profit
-    this.dashboard.log(
-      `Symbol: ${symbol} | Profit: ${
-        pos.profitCents
-      }¢ | Current Price: $${currentPrice.toFixed(2)}`
-    );
+    const message = `Symbol: ${symbol} | Profit: ${
+      pos.profitCents
+    }¢ | Current Price: $${currentPrice.toFixed(2)}`;
+    this.dashboard.logInfo(message);
 
     // Check for stop trigger only if stop has not been triggered yet
     if (!pos.stopTriggered) {
@@ -230,12 +218,9 @@ class OrderManager {
         (side === 'sell' && currentPrice >= pos.stopPrice) // Short position stop loss
       ) {
         pos.stopTriggered = true;
-        logger.info(
-          `Stop condition met for ${symbol}. Initiating market order to close position.`
-        );
-        this.dashboard.log(
-          `Stop condition met for ${symbol}. Initiating market order to close position.`
-        );
+        const stopMessage = `Stop condition met for ${symbol}. Initiating market order to close position.`;
+        logger.info(stopMessage);
+        this.dashboard.logWarning(stopMessage);
         await this.closePositionMarketOrder(symbol);
         return;
       }
@@ -257,12 +242,9 @@ class OrderManager {
     ) {
       pos.isProcessing = true;
 
-      logger.info(
-        `Profit target hit for ${symbol}: +${pos.profitCents}¢ >= +${target.targetCents}¢`
-      );
-      this.dashboard.log(
-        `Profit target hit for ${symbol}: +${pos.profitCents}¢ >= +${target.targetCents}¢`
-      );
+      const targetMessage = `Profit target hit for ${symbol}: +${pos.profitCents}¢ >= +${target.targetCents}¢`;
+      logger.info(targetMessage);
+      this.dashboard.logInfo(targetMessage);
 
       // Calculate order qty based on current position size
       let qtyToClose = Math.floor(pos.qty * (target.percentToClose / 100));
@@ -271,10 +253,9 @@ class OrderManager {
       qtyToClose = Math.min(qtyToClose, pos.qty);
 
       if (qtyToClose <= 0) {
-        logger.warn(`Quantity to close is zero or negative for ${symbol}.`);
-        this.dashboard.log(
-          `Quantity to close is zero or negative for ${symbol}.`
-        );
+        const warnMessage = `Quantity to close is zero or negative for ${symbol}.`;
+        logger.warn(warnMessage);
+        this.dashboard.logWarning(warnMessage);
         pos.isProcessing = false;
         return;
       }
@@ -291,27 +272,23 @@ class OrderManager {
 
       // After the second profit target, adjust stop monitoring to breakeven
       if (pos.profitTargetsHit === 2) {
-        logger.info(
-          `Second profit target hit for ${symbol}. Adjusting stop monitoring to breakeven.`
-        );
-        this.dashboard.log(
-          `Second profit target hit for ${symbol}. Adjusting stop monitoring to breakeven.`
-        );
+        const breakevenMessage = `Second profit target hit for ${symbol}. Adjusting stop monitoring to breakeven.`;
+        logger.info(breakevenMessage);
+        this.dashboard.logInfo(breakevenMessage);
         // Update stop price to breakeven
         pos.stopPrice = entryPrice;
 
         // Log the new stop price
-        this.dashboard.log(
-          `Adjusted stop price for ${symbol} to breakeven at $${entryPrice.toFixed(
-            2
-          )}.`
-        );
+        const stopPriceMessage = `Adjusted stop price for ${symbol} to breakeven at $${entryPrice.toFixed(
+          2
+        )}.`;
+        this.dashboard.logInfo(stopPriceMessage);
       }
 
       pos.isProcessing = false;
 
-      // Update summary after processing
-      this.updateSummary();
+      // Update dashboard positions
+      this.dashboard.updatePositions(Object.values(this.positions));
     }
   }
 
@@ -330,21 +307,17 @@ class OrderManager {
       // For long positions, sell at the bid price
       marketPrice = pos.currentBid;
     } else {
-      logger.error(`Invalid side "${side}" for IOC order on ${symbol}.`);
-      this.dashboard.error(
-        `Invalid side "${side}" for IOC order on ${symbol}.`
-      );
+      const errorMessage = `Invalid side "${side}" for IOC order on ${symbol}.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
       return;
     }
 
-    // **Safety Check: Ensure marketPrice is valid**
+    // Safety Check: Ensure marketPrice is valid
     if (marketPrice <= 0 || isNaN(marketPrice)) {
-      logger.error(
-        `Invalid market price for ${symbol}. Cannot place ${side} order.`
-      );
-      this.dashboard.error(
-        `Invalid market price for ${symbol}. Cannot place ${side} order.`
-      );
+      const errorMessage = `Invalid market price for ${symbol}. Cannot place ${side} order.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
       return;
     }
 
@@ -357,21 +330,19 @@ class OrderManager {
       client_order_id: this.generateClientOrderId('IOC'),
     };
 
-    logger.info(`Attempting to place IOC order: ${JSON.stringify(order)}`);
-    this.dashboard.log(
-      `Attempting to place IOC order: ${JSON.stringify(order)}`
-    );
+    const orderMessage = `Attempting to place IOC order: ${JSON.stringify(
+      order
+    )}`;
+    logger.info(orderMessage);
+    this.dashboard.logInfo(orderMessage);
 
     try {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      logger.info(
-        `Placed IOC order for ${qty} shares of ${symbol}. Order ID: ${result.id}`
-      );
-      this.dashboard.log(
-        `Placed IOC order for ${qty} shares of ${symbol}. Order ID: ${result.id}`
-      );
+      const successMessage = `Placed IOC order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
+      logger.info(successMessage);
+      this.dashboard.logInfo(successMessage);
 
       // Track the IOC order
       this.orderTracking[result.id] = {
@@ -385,16 +356,11 @@ class OrderManager {
       // Immediately refresh positions after placing an order
       await this.refreshPositions();
     } catch (err) {
-      logger.error(
-        `Error placing IOC order for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
-      this.dashboard.error(
-        `Error placing IOC order for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
+      const errorMessage = `Error placing IOC order for ${symbol}: ${
+        err.response ? JSON.stringify(err.response.data) : err.message
+      }`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
     }
   }
 
@@ -403,7 +369,7 @@ class OrderManager {
    */
   async pollOrderStatuses() {
     if (this.isPolling) {
-      // Optionally, you can choose not to log this warning to the dashboard
+      // Prevent concurrent polling
       return;
     }
 
@@ -422,8 +388,6 @@ class OrderManager {
         const trackedOrder = this.orderTracking[order.id];
         if (trackedOrder) {
           const filledQty = parseFloat(order.filled_qty || '0');
-          const totalQty = parseFloat(order.qty || '0');
-          const remainingQty = totalQty - filledQty;
 
           // Update filled quantity
           trackedOrder.filledQty = filledQty;
@@ -439,12 +403,9 @@ class OrderManager {
                 // For IOC and close orders, adjust position quantity
                 pos.qty -= filledQty;
 
-                logger.info(
-                  `Order ${order.id} filled ${filledQty} qty for ${trackedOrder.symbol}. Remaining qty: ${pos.qty}`
-                );
-                this.dashboard.log(
-                  `Order ${order.id} filled ${filledQty} qty for ${trackedOrder.symbol}. Remaining qty: ${pos.qty}`
-                );
+                const fillMessage = `Order ${order.id} filled ${filledQty} qty for ${trackedOrder.symbol}. Remaining qty: ${pos.qty}`;
+                logger.info(fillMessage);
+                this.dashboard.logInfo(fillMessage);
 
                 // Recalculate profit since qty has changed
                 pos.profitCents = (
@@ -461,7 +422,6 @@ class OrderManager {
                   this.removePosition(trackedOrder.symbol);
                 }
               }
-              // Handle other order types if necessary
             }
           }
 
@@ -471,12 +431,10 @@ class OrderManager {
           }
         }
       }
-
-      // Update summary after polling
-      this.updateSummary();
     } catch (err) {
-      logger.error(`Error polling order statuses: ${err.message}`);
-      this.dashboard.error(`Error polling order statuses: ${err.message}`);
+      const errorMessage = `Error polling order statuses: ${err.message}`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
     } finally {
       this.isPolling = false;
     }
@@ -490,10 +448,9 @@ class OrderManager {
     const qty = pos.qty;
 
     if (qty <= 0) {
-      logger.warn(`Attempted to close position for ${symbol} with qty ${qty}.`);
-      this.dashboard.log(
-        `Attempted to close position for ${symbol} with qty ${qty}.`
-      );
+      const warnMessage = `Attempted to close position for ${symbol} with qty ${qty}.`;
+      logger.warn(warnMessage);
+      this.dashboard.logWarning(warnMessage);
       return;
     }
 
@@ -508,21 +465,19 @@ class OrderManager {
       client_order_id: this.generateClientOrderId('CLOSE'),
     };
 
-    logger.info(`Closing position with market order: ${JSON.stringify(order)}`);
-    this.dashboard.log(
-      `Closing position with market order: ${JSON.stringify(order)}`
-    );
+    const closeMessage = `Closing position with market order: ${JSON.stringify(
+      order
+    )}`;
+    logger.info(closeMessage);
+    this.dashboard.logInfo(closeMessage);
 
     try {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      logger.info(
-        `Market order placed to close position in ${symbol}. Order ID: ${result.id}`
-      );
-      this.dashboard.log(
-        `Market order placed to close position in ${symbol}. Order ID: ${result.id}`
-      );
+      const successMessage = `Market order placed to close position in ${symbol}. Order ID: ${result.id}`;
+      logger.info(successMessage);
+      this.dashboard.logInfo(successMessage);
 
       // Track the market order
       this.orderTracking[result.id] = {
@@ -536,16 +491,11 @@ class OrderManager {
       // Immediately refresh positions after placing an order
       await this.refreshPositions();
     } catch (err) {
-      logger.error(
-        `Error placing market order to close position for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
-      this.dashboard.error(
-        `Error placing market order to close position for ${symbol}: ${
-          err.response ? JSON.stringify(err.response.data) : err.message
-        }`
-      );
+      const errorMessage = `Error placing market order to close position for ${symbol}: ${
+        err.response ? JSON.stringify(err.response.data) : err.message
+      }`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
     }
   }
 
@@ -554,7 +504,7 @@ class OrderManager {
    */
   async refreshPositions() {
     if (this.isRefreshing) {
-      // Do not send this warning to the dashboard to prevent clutter
+      // Prevent concurrent refresh
       return;
     }
 
@@ -622,43 +572,15 @@ class OrderManager {
         }
       });
 
-      // Update dashboard and summary
+      // Update dashboard positions
       this.dashboard.updatePositions(Object.values(this.positions));
-      this.updateSummary();
     } catch (err) {
-      logger.error(`Error refreshing positions: ${err.message}`);
-      this.dashboard.error(`Error refreshing positions: ${err.message}`);
+      const errorMessage = `Error refreshing positions: ${err.message}`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
     } finally {
       this.isRefreshing = false;
     }
-  }
-
-  /**
-   * Updates the Summary box with aggregated data.
-   */
-  updateSummary() {
-    const totalPositions = Object.keys(this.positions).length;
-    const activePositions = Object.values(this.positions).filter(
-      (pos) => pos.isActive
-    ).length;
-    const closedPositions = totalPositions - activePositions;
-
-    const totalOrders = Object.keys(this.orderTracking).length;
-    const activeOrders = Object.values(this.orderTracking).filter(
-      (order) => order.filledQty < order.qty
-    ).length;
-    const completedOrders = totalOrders - activeOrders;
-
-    const summary = {
-      totalPositions,
-      activePositions,
-      closedPositions,
-      totalOrders,
-      activeOrders,
-      completedOrders,
-    };
-
-    this.dashboard.updateSummary(summary);
   }
 }
 
