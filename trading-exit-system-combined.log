@@ -223,3 +223,6 @@ TypeError: this.pollOrderStatuses is not a function
 2024-10-03T15:11:13.693Z [INFO]: Placed IOC order for 40 shares of PLTR. Order ID: 97d2b121-07fb-41ea-8bdb-7fe6c710fc7d
 2024-10-03T15:11:14.301Z [INFO]: Position removed: PLTR
 2024-10-03T15:11:14.308Z [INFO]: Unsubscribed from PLTR quotes.
+2024-10-03T15:22:04.663Z [INFO]: Polygon WebSocket connection opened.
+2024-10-03T15:22:04.665Z [INFO]: Polygon WebSocket connected.
+2024-10-03T15:22:04.711Z [INFO]: Polygon WebSocket authenticated.
