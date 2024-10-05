@@ -1,5 +1,3 @@
-// orderManager.js
-
 const { alpaca } = require('./alpaca');
 const config = require('./config');
 const logger = require('./logger');
@@ -134,6 +132,8 @@ class OrderManager {
       isProcessing: false,
       stopPrice: this.calculateInitialStopPrice(avgEntryPrice, side),
       stopTriggered: false,
+      pyramidLevelsHit: 0,
+      totalPyramidLevels: config.orderSettings.pyramidLevels.length,
     };
 
     const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice}`;
@@ -182,7 +182,7 @@ class OrderManager {
   }
 
   /**
-   * Handles quote updates from Polygon and manages profit targets and stop monitoring.
+   * Handles quote updates from Polygon and manages profit targets, pyramiding, and stop monitoring.
    */
   async onQuoteUpdate(symbol, bidPrice, askPrice) {
     const pos = this.positions[symbol];
@@ -230,67 +230,175 @@ class OrderManager {
     const profitTargets = config.orderSettings.profitTargets;
 
     // Check if all profit targets have been hit
-    if (pos.profitTargetsHit >= profitTargets.length) {
+    if (pos.profitTargetsHit < profitTargets.length) {
+      const target = profitTargets[pos.profitTargetsHit];
+
+      // Prevent duplicate order placements
+      if (
+        !pos.isProcessing &&
+        parseFloat(pos.profitCents) >= target.targetCents
+      ) {
+        pos.isProcessing = true;
+
+        const targetMessage = `Profit target hit for ${symbol}: +${pos.profitCents}¢ >= +${target.targetCents}¢`;
+        logger.info(targetMessage);
+        this.dashboard.logInfo(targetMessage);
+
+        // Calculate order qty based on current position size
+        let qtyToClose = Math.floor(pos.qty * (target.percentToClose / 100));
+
+        // Safety Check: Ensure qtyToClose does not exceed pos.qty
+        qtyToClose = Math.min(qtyToClose, pos.qty);
+
+        if (qtyToClose <= 0) {
+          const warnMessage = `Quantity to close is zero or negative for ${symbol}.`;
+          logger.warn(warnMessage);
+          this.dashboard.logWarning(warnMessage);
+          pos.isProcessing = false;
+          return;
+        }
+
+        // Place IOC order
+        await this.placeIOCOrder(
+          symbol,
+          qtyToClose,
+          side === 'buy' ? 'sell' : 'buy'
+        );
+
+        // After processing a profit target hit
+        pos.profitTargetsHit += 1;
+
+        // Adjust stop monitoring to breakeven after hitting the configured profit target level
+        if (pos.profitTargetsHit === config.orderSettings.stopBreakevenLevel) {
+          const breakevenMessage = `Profit target level ${config.orderSettings.stopBreakevenLevel} hit for ${symbol}. Adjusting stop monitoring to breakeven.`;
+          logger.info(breakevenMessage);
+          this.dashboard.logInfo(breakevenMessage);
+
+          // Update stop price to breakeven
+          pos.stopPrice = entryPrice;
+
+          // Log the new stop price
+          const stopPriceMessage = `Adjusted stop price for ${symbol} to breakeven at $${entryPrice.toFixed(
+            2
+          )}.`;
+          this.dashboard.logInfo(stopPriceMessage);
+        }
+
+        pos.isProcessing = false;
+
+        // Update dashboard positions
+        this.dashboard.updatePositions(Object.values(this.positions));
+      }
+    }
+
+    // ------------------------------
+    // Check for Pyramiding Levels
+    // ------------------------------
+    const pyramidLevels = config.orderSettings.pyramidLevels;
+
+    // Check if all pyramid levels have been hit
+    if (pos.pyramidLevelsHit < pyramidLevels.length) {
+      const nextPyramidLevel = pyramidLevels[pos.pyramidLevelsHit];
+
+      if (parseFloat(pos.profitCents) >= nextPyramidLevel.addInCents) {
+        // Condition met to add into position
+        if (!pos.isProcessingPyramid) {
+          pos.isProcessingPyramid = true;
+
+          // Calculate qty to add
+          let qtyToAdd = Math.floor(
+            pos.qty * (nextPyramidLevel.percentToAdd / 100)
+          );
+
+          // Ensure qtyToAdd is at least 1
+          if (qtyToAdd >= 1) {
+            // Place IOC order to add to position
+            await this.placePyramidOrder(
+              pos,
+              qtyToAdd,
+              nextPyramidLevel.offsetCents
+            );
+            // Increment pyramidLevelsHit
+            pos.pyramidLevelsHit += 1;
+          } else {
+            const warnMessage = `Quantity to add is less than 1 for ${symbol} at pyramid level ${
+              pos.pyramidLevelsHit + 1
+            }.`;
+            logger.warn(warnMessage);
+            this.dashboard.logWarning(warnMessage);
+          }
+          pos.isProcessingPyramid = false;
+
+          // Update dashboard positions
+          this.dashboard.updatePositions(Object.values(this.positions));
+        }
+      }
+    }
+  }
+
+  /**
+   * Places an Immediate-Or-Cancel (IOC) order for pyramiding.
+   */
+  async placePyramidOrder(pos, qtyToAdd, offsetCents) {
+    const symbol = pos.symbol;
+    const side = pos.side; // 'buy' or 'sell'
+
+    let limitPrice;
+
+    if (side === 'buy') {
+      // For long positions, buy at ask price + offset
+      limitPrice = pos.currentAsk + offsetCents / 100;
+    } else if (side === 'sell') {
+      // For short positions, sell at bid price - offset
+      limitPrice = pos.currentBid - offsetCents / 100;
+    } else {
+      const errorMessage = `Invalid side "${side}" for pyramid order on ${symbol}.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
       return;
     }
 
-    const target = profitTargets[pos.profitTargetsHit];
+    const order = {
+      symbol,
+      qty: qtyToAdd.toFixed(0),
+      side,
+      type: 'limit',
+      time_in_force: 'ioc',
+      limit_price: limitPrice.toFixed(2),
+      client_order_id: this.generateClientOrderId('PYRAMID'),
+    };
 
-    // Prevent duplicate order placements
-    if (
-      !pos.isProcessing &&
-      parseFloat(pos.profitCents) >= target.targetCents
-    ) {
-      pos.isProcessing = true;
+    const orderMessage = `Attempting to place pyramid order: ${JSON.stringify(
+      order
+    )}`;
+    logger.info(orderMessage);
+    this.dashboard.logInfo(orderMessage);
 
-      const targetMessage = `Profit target hit for ${symbol}: +${pos.profitCents}¢ >= +${target.targetCents}¢`;
-      logger.info(targetMessage);
-      this.dashboard.logInfo(targetMessage);
-
-      // Calculate order qty based on current position size
-      let qtyToClose = Math.floor(pos.qty * (target.percentToClose / 100));
-
-      // Safety Check: Ensure qtyToClose does not exceed pos.qty
-      qtyToClose = Math.min(qtyToClose, pos.qty);
-
-      if (qtyToClose <= 0) {
-        const warnMessage = `Quantity to close is zero or negative for ${symbol}.`;
-        logger.warn(warnMessage);
-        this.dashboard.logWarning(warnMessage);
-        pos.isProcessing = false;
-        return;
-      }
-
-      // Place IOC order
-      await this.placeIOCOrder(
-        symbol,
-        qtyToClose,
-        side === 'buy' ? 'sell' : 'buy'
+    try {
+      const result = await this.retryOperation(() =>
+        this.limitedCreateOrder(order)
       );
+      const successMessage = `Placed pyramid order for ${qtyToAdd} shares of ${symbol}. Order ID: ${result.id}`;
+      logger.info(successMessage);
+      this.dashboard.logInfo(successMessage);
 
-      // After processing a profit target hit
-      pos.profitTargetsHit += 1;
+      // Track the pyramid order
+      this.orderTracking[result.id] = {
+        symbol,
+        type: 'pyramid',
+        qty: parseFloat(order.qty),
+        side: order.side,
+        filledQty: 0,
+      };
 
-      // Adjust stop monitoring to breakeven after hitting the configured profit target level
-      if (pos.profitTargetsHit === config.orderSettings.stopBreakevenLevel) {
-        const breakevenMessage = `Profit target level ${config.orderSettings.stopBreakevenLevel} hit for ${symbol}. Adjusting stop monitoring to breakeven.`;
-        logger.info(breakevenMessage);
-        this.dashboard.logInfo(breakevenMessage);
-
-        // Update stop price to breakeven
-        pos.stopPrice = entryPrice;
-
-        // Log the new stop price
-        const stopPriceMessage = `Adjusted stop price for ${symbol} to breakeven at $${entryPrice.toFixed(
-          2
-        )}.`;
-        this.dashboard.logInfo(stopPriceMessage);
-      }
-
-      pos.isProcessing = false;
-
-      // Update dashboard positions
-      this.dashboard.updatePositions(Object.values(this.positions));
+      // Refresh positions
+      await this.refreshPositions();
+    } catch (err) {
+      const errorMessage = `Error placing pyramid order for ${symbol}: ${
+        err.response ? JSON.stringify(err.response.data) : err.message
+      }`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
     }
   }
 
@@ -423,6 +531,35 @@ class OrderManager {
                 if (pos.qty <= 0) {
                   this.removePosition(trackedOrder.symbol);
                 }
+              } else if (trackedOrder.type === 'pyramid') {
+                // For pyramid orders, adjust position quantity and avgEntryPrice
+                pos.qty += filledQty;
+
+                // Need to recalculate avgEntryPrice
+                const totalCost =
+                  pos.avgEntryPrice * (pos.qty - filledQty) +
+                  filledQty * parseFloat(order.limit_price);
+                pos.avgEntryPrice = totalCost / pos.qty;
+
+                const fillMessage = `Pyramid order ${
+                  order.id
+                } filled ${filledQty} qty for ${
+                  trackedOrder.symbol
+                }. New qty: ${
+                  pos.qty
+                }, New Avg Entry Price: $${pos.avgEntryPrice.toFixed(2)}`;
+                logger.info(fillMessage);
+                this.dashboard.logInfo(fillMessage);
+
+                // Recalculate profit
+                pos.profitCents = (
+                  (pos.currentPrice - pos.avgEntryPrice) *
+                  100 *
+                  (pos.side === 'buy' ? 1 : -1)
+                ).toFixed(2);
+
+                // Update the dashboard
+                this.dashboard.updatePositions(Object.values(this.positions));
               }
             }
           }
@@ -546,15 +683,11 @@ class OrderManager {
             (this.positions[symbol].side === 'buy' ? 1 : -1)
           ).toFixed(2);
 
-          // Recalculate stopPrice if necessary
-          if (this.positions[symbol].profitTargetsHit >= 2) {
-            this.positions[symbol].stopPrice = latestAvgEntryPrice; // Breakeven
-          } else {
-            this.positions[symbol].stopPrice = this.calculateInitialStopPrice(
-              latestAvgEntryPrice,
-              this.positions[symbol].side
-            );
-          }
+          // Recalculate stopPrice based on new avgEntryPrice
+          this.positions[symbol].stopPrice = this.calculateInitialStopPrice(
+            latestAvgEntryPrice,
+            this.positions[symbol].side
+          );
 
           // If quantity is zero, remove the position
           if (latestQty === 0) {

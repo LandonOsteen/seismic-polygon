@@ -33,7 +33,18 @@ class Dashboard {
       width: '100%',
       height: '100%',
       border: { type: 'line', fg: 'cyan' },
-      columnWidth: [10, 6, 6, 10, 10, 10, 10, 15, 20], // Symbol, Side, Qty, Avg Entry, Bid, Ask, Profit, Stop Price, Profit Targets Hit
+      columnWidth: [
+        10, // Symbol
+        6, // Side
+        6, // Qty
+        10, // Avg Entry
+        10, // Bid
+        10, // Ask
+        10, // Profit
+        15, // Stop Price
+        20, // Profit Targets Hit
+        20, // Pyramid Levels Hit
+      ],
     });
 
     // Define table headers for Positions Table
@@ -48,6 +59,7 @@ class Dashboard {
         'Profit',
         'Stop Price',
         'Profit Targets Hit',
+        'Pyramid Levels Hit',
       ],
       data: [],
     });
@@ -207,6 +219,14 @@ class Dashboard {
         ? `${pos.profitTargetsHit}/${totalProfitTargets}`
         : `0/${totalProfitTargets}`;
 
+      // Fetch total pyramid levels from config
+      const totalPyramidLevels =
+        pos.totalPyramidLevels || config.orderSettings.pyramidLevels.length;
+
+      const pyramidLevelsHit = pos.pyramidLevelsHit
+        ? `${pos.pyramidLevelsHit}/${totalPyramidLevels}`
+        : `0/${totalPyramidLevels}`;
+
       return [
         pos.symbol,
         pos.side,
@@ -217,6 +237,7 @@ class Dashboard {
         profit,
         stopPrice,
         profitTargetsHit,
+        pyramidLevelsHit,
       ];
     });
 
@@ -231,6 +252,7 @@ class Dashboard {
         'Profit',
         'Stop Price',
         'Profit Targets Hit',
+        'Pyramid Levels Hit',
       ],
       data: tableData,
     });
