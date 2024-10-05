@@ -129,6 +129,7 @@ class OrderManager {
       currentPrice: parseFloat(position.current_price),
       profitCents: 0, // Initialize profit
       profitTargetsHit: 0,
+      totalProfitTargets: config.orderSettings.profitTargets.length,
       isActive: true,
       isProcessing: false,
       stopPrice: this.calculateInitialStopPrice(avgEntryPrice, side),
@@ -267,14 +268,15 @@ class OrderManager {
         side === 'buy' ? 'sell' : 'buy'
       );
 
-      // Increment profit targets hit
+      // After processing a profit target hit
       pos.profitTargetsHit += 1;
 
-      // After the second profit target, adjust stop monitoring to breakeven
-      if (pos.profitTargetsHit === 2) {
-        const breakevenMessage = `Second profit target hit for ${symbol}. Adjusting stop monitoring to breakeven.`;
+      // Adjust stop monitoring to breakeven after hitting the configured profit target level
+      if (pos.profitTargetsHit === config.orderSettings.stopBreakevenLevel) {
+        const breakevenMessage = `Profit target level ${config.orderSettings.stopBreakevenLevel} hit for ${symbol}. Adjusting stop monitoring to breakeven.`;
         logger.info(breakevenMessage);
         this.dashboard.logInfo(breakevenMessage);
+
         // Update stop price to breakeven
         pos.stopPrice = entryPrice;
 

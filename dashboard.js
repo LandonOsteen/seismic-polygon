@@ -177,10 +177,10 @@ class Dashboard {
    * @returns {boolean} - True if the message should be displayed; false otherwise.
    */
   shouldDisplayMessage(message) {
-    const excludedMessages = [
+    const excludedMessages = config.logging.excludedMessages || [
       'Already refreshing positions. Skipping this interval.',
       'Already polling order statuses. Skipping this interval.',
-      // Add any other messages you want to exclude
+      // Add any other messages you want to exclude from dashboard logs
     ];
 
     // Check if the message includes any of the excluded phrases
@@ -198,9 +198,14 @@ class Dashboard {
       // Ensure all necessary properties are present
       const profit = pos.profitCents ? `${pos.profitCents}¢` : '0¢';
       const stopPrice = pos.stopPrice ? `$${pos.stopPrice.toFixed(2)}` : 'N/A';
+
+      // Fetch total profit targets from config
+      const totalProfitTargets =
+        pos.totalProfitTargets || config.orderSettings.profitTargets.length;
+
       const profitTargetsHit = pos.profitTargetsHit
-        ? `${pos.profitTargetsHit}/${config.orderSettings.profitTargets.length}`
-        : '0/0';
+        ? `${pos.profitTargetsHit}/${totalProfitTargets}`
+        : `0/${totalProfitTargets}`;
 
       return [
         pos.symbol,

@@ -703,3 +703,9 @@ TypeError: this.pollOrderStatuses is not a function
 2024-10-04T15:12:49.616Z [INFO]: Market order placed to close position in SLV. Order ID: 66c55690-2c96-4263-a266-b310aaef6b0f
 2024-10-04T15:12:49.955Z [INFO]: Position removed: SLV
 2024-10-04T15:12:49.960Z [INFO]: Unsubscribed from SLV quotes.
+2024-10-05T15:06:50.315Z [INFO]: Polygon WebSocket connection opened.
+2024-10-05T15:06:50.317Z [INFO]: Polygon WebSocket connected.
+2024-10-05T15:06:50.364Z [INFO]: Polygon WebSocket authenticated.
+2024-10-05T15:09:29.664Z [INFO]: Polygon WebSocket connection opened.
+2024-10-05T15:09:29.666Z [INFO]: Polygon WebSocket connected.
+2024-10-05T15:09:29.712Z [INFO]: Polygon WebSocket authenticated.
