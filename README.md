@@ -1,4 +1,4 @@
-# Trading Exit System
+# Seismic - Automated Trading System
 
 A Node.js application for managing trading positions with dynamic stop loss adjustments, profit target executions, and real-time monitoring via a terminal dashboard. This system integrates with Alpaca for trading operations and Polygon for real-time market data.
 
