@@ -1,3 +1,5 @@
+// orderManager.js
+
 const { alpaca } = require('./alpaca');
 const config = require('./config');
 const logger = require('./logger');
@@ -106,7 +108,6 @@ class OrderManager {
       this.dashboard.logError(message);
     }
   }
-
   /**
    * Adds a new position to the tracker.
    */
