@@ -1,5 +1,6 @@
 require('dotenv').config(); // Load environment variables from .env
-const paperTrading = true; // Set to true for paper trading, false for live trading
+
+const paperTrading = process.env.PAPER_TRADING === 'true'; // Set to true for paper trading, false for live trading
 
 module.exports = {
   alpaca: {

@@ -2,3 +2,22 @@
 2024-10-07T11:53:28.301Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
 2024-10-07T11:53:30.287Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
 2024-10-07T11:53:32.293Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'length')
+2024-10-07T16:31:33.648Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:34.989Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:35.641Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:37.038Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:37.644Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:55.049Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:56.384Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:57.048Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:58.500Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:31:59.039Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:00.393Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:01.059Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:02.395Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:03.189Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:04.635Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:05.090Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:06.395Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:07.095Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function
+2024-10-07T16:32:08.404Z [ERROR]: Error polling order statuses: this.dashboard.updateOrders is not a function

@@ -1,7 +1,7 @@
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
-const logger = require('./logger'); // Ensure logger is imported
-const config = require('./config'); // Ensure config is imported
+const logger = require('./logger');
+const config = require('./config');
 
 class Dashboard {
   constructor() {
@@ -23,41 +23,52 @@ class Dashboard {
     // --------------------------
     this.positionsTable = this.grid.set(0, 0, 4, 12, contrib.table, {
       keys: true,
-      fg: 'cyan',
+      fg: 'white',
       selectedFg: 'white',
       selectedBg: 'blue',
       interactive: true,
-      label: ' Positions ',
+      label: ' POSITIONS ',
       width: '100%',
       height: '100%',
       border: { type: 'line', fg: 'cyan' },
+      columnSpacing: 2,
       columnWidth: [
-        10, // Symbol
-        6, // Side
-        6, // Qty
-        10, // Avg Entry
-        10, // Bid
-        10, // Ask
-        10, // Profit
-        25, // Stop Price (increased width)
-        20, // Profit Targets Hit
-        20, // Pyramid Levels Hit
+        8, // SYMBOL
+        6, // SIDE
+        6, // QTY
+        10, // AVG ENTRY
+        10, // BID
+        10, // ASK
+        9, // PROFIT
+        20, // STOP PRICE
+        16, // TARGETS HIT
+        16, // PYRAMIDS HIT
       ],
+      style: {
+        header: { fg: 'cyan', bold: true },
+        cell: {
+          fg: 'white',
+          selected: {
+            fg: 'white',
+            bg: 'blue',
+          },
+        },
+      },
     });
 
-    // Define table headers for Positions Table
+    // Define table headers for Positions Table (All Caps)
     this.positionsTable.setData({
       headers: [
-        'Symbol',
-        'Side',
-        'Qty',
-        'Avg Entry',
-        'Bid',
-        'Ask',
-        'Profit',
-        'Stop Price',
-        'Profit Targets Hit',
-        'Pyramid Levels Hit',
+        'SYMBOL',
+        'SIDE',
+        'QTY',
+        'AVG ENTRY',
+        'BID',
+        'ASK',
+        'PROFIT',
+        'STOP PRICE',
+        'TARGETS HIT',
+        'PYRAMIDS HIT',
       ],
       data: [],
     });
@@ -70,7 +81,7 @@ class Dashboard {
     this.infoBox = this.grid.set(4, 0, 4, 6, contrib.log, {
       fg: 'green',
       selectedFg: 'green',
-      label: ' Info ',
+      label: ' INFO ',
       tags: true,
       keys: true,
       vi: true,
@@ -88,16 +99,26 @@ class Dashboard {
       selectedFg: 'white',
       selectedBg: 'blue',
       interactive: true,
-      label: ' Orders ',
+      label: ' ORDERS ',
       width: '100%',
       height: '100%',
       border: { type: 'line', fg: 'magenta' },
-      columnWidth: [8, 10, 6, 10, 10, 10, 12], // ID, Symbol, Side, Type, Qty, Price, Status
+      columnWidth: [8, 10, 6, 10, 10, 10, 12], // ID, SYMBOL, SIDE, TYPE, QTY, PRICE, STATUS
+      style: {
+        header: { fg: 'magenta', bold: true },
+        cell: {
+          fg: 'white',
+          selected: {
+            fg: 'white',
+            bg: 'blue',
+          },
+        },
+      },
     });
 
-    // Define table headers for Orders Table
+    // Define table headers for Orders Table (All Caps)
     this.ordersTable.setData({
-      headers: ['ID', 'Symbol', 'Side', 'Type', 'Qty', 'Price', 'Status'],
+      headers: ['ID', 'SYMBOL', 'SIDE', 'TYPE', 'QTY', 'PRICE', 'STATUS'],
       data: [],
     });
 
@@ -109,7 +130,7 @@ class Dashboard {
     this.errorBox = this.grid.set(8, 0, 4, 6, contrib.log, {
       fg: 'red',
       selectedFg: 'red',
-      label: ' Errors ',
+      label: ' ERRORS ',
       tags: true,
       keys: true,
       vi: true,
@@ -124,7 +145,7 @@ class Dashboard {
     this.warningBox = this.grid.set(8, 6, 4, 6, contrib.log, {
       fg: 'yellow',
       selectedFg: 'yellow',
-      label: ' Warnings ',
+      label: ' WARNINGS ',
       tags: true,
       keys: true,
       vi: true,
@@ -139,7 +160,7 @@ class Dashboard {
     // 4. Quit Key Bindings
     // --------------------------
     // Quit on Escape, q, or Control-C.
-    this.screen.key(['escape', 'q', 'C-c'], function () {
+    this.screen.key(['escape', 'q', 'C-c'], () => {
       return process.exit(0);
     });
 
@@ -206,11 +227,17 @@ class Dashboard {
   updatePositions(positions) {
     const tableData = positions.map((pos) => {
       // Ensure all necessary properties are present
-      const profit = pos.profitCents ? `${pos.profitCents}¢` : '0¢';
+      const profitCents = parseFloat(pos.profitCents);
+      const profit = `${profitCents.toFixed(2)}¢`;
 
-      // Include stop description in the stop price display
+      // Simplify stop price display
+      const stopCentsValue = parseFloat(pos.stopCents);
+      const stopCentsDisplay = `${stopCentsValue >= 0 ? '' : '-'}${Math.abs(
+        stopCentsValue
+      )}¢`;
+
       const stopPrice = pos.stopPrice
-        ? `$${pos.stopPrice.toFixed(2)} (${pos.stopDescription})`
+        ? `$${pos.stopPrice.toFixed(2)} (${stopCentsDisplay})`
         : 'N/A';
 
       // Fetch total profit targets from config
@@ -231,7 +258,7 @@ class Dashboard {
 
       return [
         pos.symbol,
-        pos.side,
+        pos.side.toUpperCase(),
         pos.qty,
         `$${pos.avgEntryPrice.toFixed(2)}`,
         pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
@@ -243,21 +270,25 @@ class Dashboard {
       ];
     });
 
+    // Update the table data with the new positions
     this.positionsTable.setData({
       headers: [
-        'Symbol',
-        'Side',
-        'Qty',
-        'Avg Entry',
-        'Bid',
-        'Ask',
-        'Profit',
-        'Stop Price',
-        'Profit Targets Hit',
-        'Pyramid Levels Hit',
+        'SYMBOL',
+        'SIDE',
+        'QTY',
+        'AVG ENTRY',
+        'BID',
+        'ASK',
+        'PROFIT',
+        'STOP PRICE',
+        'TARGETS HIT',
+        'PYRAMIDS HIT',
       ],
       data: tableData,
     });
+
+    // Apply coloring to rows based on profit or loss
+    this.applyRowColors(positions);
 
     this.screen.render();
   }
@@ -277,20 +308,44 @@ class Dashboard {
       return [
         order.id,
         order.symbol,
-        order.side,
-        order.type,
+        order.side.toUpperCase(),
+        order.type.toUpperCase(),
         order.qty,
         limitPrice,
-        order.status,
+        order.status.toUpperCase(),
       ];
     });
 
     this.ordersTable.setData({
-      headers: ['ID', 'Symbol', 'Side', 'Type', 'Qty', 'Price', 'Status'],
+      headers: ['ID', 'SYMBOL', 'SIDE', 'TYPE', 'QTY', 'PRICE', 'STATUS'],
       data: tableData,
     });
 
     this.screen.render();
+  }
+
+  /**
+   * Applies color coding to the positions table rows based on profit or loss.
+   * @param {Array} positions - Array of position objects.
+   */
+  applyRowColors(positions) {
+    // Retrieve the table rows
+    const rows = this.positionsTable.rows;
+
+    positions.forEach((pos, index) => {
+      const profitCents = parseFloat(pos.profitCents);
+
+      if (profitCents > 0) {
+        // Profit zone: Green text
+        rows.items[index].style = { fg: 'green' };
+      } else if (profitCents < 0) {
+        // Loss zone: Red text
+        rows.items[index].style = { fg: 'red' };
+      } else {
+        // Breakeven: Yellow text
+        rows.items[index].style = { fg: 'yellow' };
+      }
+    });
   }
 }
 
