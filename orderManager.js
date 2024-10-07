@@ -1,5 +1,3 @@
-// orderManager.js
-
 const { alpaca } = require('./alpaca');
 const config = require('./config');
 const logger = require('./logger');
@@ -108,6 +106,26 @@ class OrderManager {
       this.dashboard.logError(message);
     }
   }
+
+  /**
+   * Calculates the dynamic stop price based on the number of profit targets hit.
+   */
+  calculateDynamicStopPrice(profitTargetsHit, avgEntryPrice, side) {
+    // Find the dynamic stop configuration for the given profitTargetsHit
+    const dynamicStop = config.orderSettings.dynamicStops.find(
+      (ds) => ds.profitTargetsHit === profitTargetsHit
+    );
+    if (dynamicStop) {
+      const stopCents = dynamicStop.stopCents;
+      const stopPrice =
+        avgEntryPrice + (stopCents / 100) * (side === 'buy' ? 1 : -1);
+      return { stopPrice, stopCents };
+    } else {
+      // If no dynamic stop configured for this profitTargetsHit, return null
+      return null;
+    }
+  }
+
   /**
    * Adds a new position to the tracker.
    */
@@ -116,6 +134,18 @@ class OrderManager {
     const qty = Math.abs(parseFloat(position.qty)); // Ensure qty is positive
     const side = position.side === 'long' ? 'buy' : 'sell';
     const avgEntryPrice = parseFloat(position.avg_entry_price);
+
+    // Get initial stop price and stop cents
+    const dynamicStop = this.calculateDynamicStopPrice(0, avgEntryPrice, side);
+    const stopPrice = dynamicStop ? dynamicStop.stopPrice : null;
+    const stopCents = dynamicStop ? dynamicStop.stopCents : null;
+    const stopDescription = dynamicStop
+      ? stopCents === 0
+        ? 'breakeven'
+        : `stop ${Math.abs(stopCents)}¢ ${
+            stopCents > 0 ? 'above' : 'below'
+          } avg price`
+      : 'N/A';
 
     this.positions[symbol] = {
       symbol,
@@ -131,7 +161,9 @@ class OrderManager {
       totalProfitTargets: config.orderSettings.profitTargets.length,
       isActive: true,
       isProcessing: false,
-      stopPrice: this.calculateInitialStopPrice(avgEntryPrice, side),
+      stopPrice: stopPrice,
+      stopCents: stopCents,
+      stopDescription: stopDescription,
       stopTriggered: false,
       pyramidLevelsHit: 0,
       totalPyramidLevels: config.orderSettings.pyramidLevels.length,
@@ -146,22 +178,6 @@ class OrderManager {
 
     // Update dashboard positions
     this.dashboard.updatePositions(Object.values(this.positions));
-  }
-
-  /**
-   * Calculates the initial stop price based on the position side.
-   */
-  calculateInitialStopPrice(avgEntryPrice, side) {
-    const stopLossCents = config.orderSettings.stopLossCents;
-    if (side === 'buy') {
-      // Long position: stop price is below entry price
-      return avgEntryPrice - stopLossCents / 100;
-    } else if (side === 'sell') {
-      // Short position: stop price is above entry price
-      return avgEntryPrice + stopLossCents / 100;
-    }
-    // Default to breakeven if side is unknown
-    return avgEntryPrice;
   }
 
   /**
@@ -214,10 +230,10 @@ class OrderManager {
     this.dashboard.logInfo(message);
 
     // Check for stop trigger only if stop has not been triggered yet
-    if (!pos.stopTriggered) {
+    if (!pos.stopTriggered && pos.stopPrice !== null) {
       if (
-        (side === 'buy' && currentPrice <= pos.stopPrice) || // Long position stop loss
-        (side === 'sell' && currentPrice >= pos.stopPrice) // Short position stop loss
+        (side === 'buy' && bidPrice <= pos.stopPrice) || // Long position stop loss
+        (side === 'sell' && askPrice >= pos.stopPrice) // Short position stop loss
       ) {
         pos.stopTriggered = true;
         const stopMessage = `Stop condition met for ${symbol}. Initiating market order to close position.`;
@@ -269,19 +285,24 @@ class OrderManager {
         // After processing a profit target hit
         pos.profitTargetsHit += 1;
 
-        // Adjust stop monitoring to breakeven after hitting the configured profit target level
-        if (pos.profitTargetsHit === config.orderSettings.stopBreakevenLevel) {
-          const breakevenMessage = `Profit target level ${config.orderSettings.stopBreakevenLevel} hit for ${symbol}. Adjusting stop monitoring to breakeven.`;
-          logger.info(breakevenMessage);
-          this.dashboard.logInfo(breakevenMessage);
-
-          // Update stop price to breakeven
-          pos.stopPrice = entryPrice;
-
-          // Log the new stop price
-          const stopPriceMessage = `Adjusted stop price for ${symbol} to breakeven at $${entryPrice.toFixed(
+        // Adjust stop price based on dynamicStops configuration
+        const dynamicStop = this.calculateDynamicStopPrice(
+          pos.profitTargetsHit,
+          pos.avgEntryPrice,
+          pos.side
+        );
+        if (dynamicStop) {
+          pos.stopPrice = dynamicStop.stopPrice;
+          pos.stopCents = dynamicStop.stopCents;
+          pos.stopDescription =
+            dynamicStop.stopCents === 0
+              ? 'breakeven'
+              : `stop ${Math.abs(dynamicStop.stopCents)}¢ ${
+                  dynamicStop.stopCents > 0 ? 'above' : 'below'
+                } avg price`;
+          const stopPriceMessage = `Adjusted stop price for ${symbol} to $${pos.stopPrice.toFixed(
             2
-          )}.`;
+          )} after hitting ${pos.profitTargetsHit} profit targets.`;
           this.dashboard.logInfo(stopPriceMessage);
         }
 
@@ -684,11 +705,26 @@ class OrderManager {
             (this.positions[symbol].side === 'buy' ? 1 : -1)
           ).toFixed(2);
 
-          // Recalculate stopPrice based on new avgEntryPrice
-          this.positions[symbol].stopPrice = this.calculateInitialStopPrice(
-            latestAvgEntryPrice,
+          // Recalculate stopPrice based on new avgEntryPrice and profitTargetsHit
+          const dynamicStop = this.calculateDynamicStopPrice(
+            this.positions[symbol].profitTargetsHit,
+            this.positions[symbol].avgEntryPrice,
             this.positions[symbol].side
           );
+          if (dynamicStop) {
+            this.positions[symbol].stopPrice = dynamicStop.stopPrice;
+            this.positions[symbol].stopCents = dynamicStop.stopCents;
+            this.positions[symbol].stopDescription =
+              dynamicStop.stopCents === 0
+                ? 'breakeven'
+                : `stop ${Math.abs(dynamicStop.stopCents)}¢ ${
+                    dynamicStop.stopCents > 0 ? 'above' : 'below'
+                  } avg price`;
+          } else {
+            this.positions[symbol].stopPrice = null;
+            this.positions[symbol].stopCents = null;
+            this.positions[symbol].stopDescription = 'N/A';
+          }
 
           // If quantity is zero, remove the position
           if (latestQty === 0) {

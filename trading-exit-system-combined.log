@@ -22,3 +22,267 @@
 2024-10-07T12:04:33.975Z [INFO]: Profit target hit for TIGR: +6.00¢ >= +6¢
 2024-10-07T12:04:33.980Z [INFO]: Attempting to place IOC order: {"symbol":"TIGR","qty":"10","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-3901ef35b79532c4"}
 2024-10-07T12:04:34.254Z [INFO]: Placed IOC order for 10 shares of TIGR. Order ID: c3504cff-03f8-47c2-a1d5-26fb15b37d4f
+2024-10-07T12:18:57.675Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:18:57.686Z [INFO]: Started polling for order statuses.
+2024-10-07T12:18:57.878Z [INFO]: Polygon WebSocket connection opened.
+2024-10-07T12:18:57.880Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:18:57.930Z [INFO]: Polygon WebSocket authenticated.
+2024-10-07T12:20:31.845Z [INFO]: Position added: TIGR | Qty: 100 | Avg Entry: $13.87
+2024-10-07T12:20:31.859Z [INFO]: Subscribed to TIGR quotes.
+2024-10-07T12:20:48.356Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:20:48.366Z [INFO]: Started polling for order statuses.
+2024-10-07T12:20:48.573Z [INFO]: Polygon WebSocket connection opened.
+2024-10-07T12:20:48.574Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:20:48.577Z [INFO]: Position added: TIGR | Qty: 100 | Avg Entry: $13.87
+2024-10-07T12:20:48.580Z [INFO]: Subscribed to TIGR quotes.
+2024-10-07T12:20:48.624Z [INFO]: Polygon WebSocket authenticated.
+2024-10-07T12:23:46.456Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:23:46.466Z [INFO]: Started polling for order statuses.
+2024-10-07T12:23:46.638Z [INFO]: Polygon WebSocket connection opened.
+2024-10-07T12:23:46.639Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:23:46.642Z [INFO]: Position added: TIGR | Qty: 100 | Avg Entry: $13.87
+2024-10-07T12:23:46.645Z [INFO]: Subscribed to TIGR quotes.
+2024-10-07T12:23:46.688Z [INFO]: Polygon WebSocket authenticated.
+2024-10-07T12:24:20.596Z [INFO]: Position removed: TIGR
+2024-10-07T12:24:20.611Z [INFO]: Unsubscribed from TIGR quotes.
+2024-10-07T12:26:22.181Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:26:22.192Z [INFO]: Started polling for order statuses.
+2024-10-07T12:26:22.364Z [INFO]: Polygon WebSocket connection opened.
+2024-10-07T12:26:22.365Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:26:22.415Z [INFO]: Polygon WebSocket authenticated.
+2024-10-07T12:49:44.419Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:49:44.430Z [INFO]: Started polling for order statuses.
+2024-10-07T12:49:44.669Z [INFO]: Polygon WebSocket connection opened.
+2024-10-07T12:49:44.670Z [INFO]: Polygon WebSocket connected.
+2024-10-07T12:49:44.721Z [INFO]: Polygon WebSocket authenticated.
+2024-10-07T13:30:20.504Z [INFO]: Position added: PLTR | Qty: 200 | Avg Entry: $40.1033
+2024-10-07T13:30:20.512Z [INFO]: Subscribed to PLTR quotes.
+2024-10-07T13:30:28.581Z [INFO]: Stop condition met for PLTR. Initiating market order to close position.
+2024-10-07T13:30:28.584Z [INFO]: Closing position with market order: {"symbol":"PLTR","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-6718f556161ee494"}
+2024-10-07T13:30:30.712Z [INFO]: Market order placed to close position in PLTR. Order ID: 8c3a610f-e5f0-48fb-9d2e-2a89516fc61a
+2024-10-07T13:30:31.392Z [INFO]: Position removed: PLTR
+2024-10-07T13:30:31.400Z [INFO]: Unsubscribed from PLTR quotes.
+2024-10-07T13:31:04.551Z [INFO]: Position added: SRRK | Qty: 200 | Avg Entry: $26.81772
+2024-10-07T13:31:04.559Z [INFO]: Subscribed to SRRK quotes.
+2024-10-07T13:31:04.729Z [INFO]: Stop condition met for SRRK. Initiating market order to close position.
+2024-10-07T13:31:04.732Z [INFO]: Closing position with market order: {"symbol":"SRRK","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-2f3053db057e288f"}
+2024-10-07T13:31:05.273Z [INFO]: Market order placed to close position in SRRK. Order ID: 14508626-06e1-45e0-acb5-7675147386d1
+2024-10-07T13:31:05.640Z [INFO]: Position removed: SRRK
+2024-10-07T13:31:05.644Z [INFO]: Unsubscribed from SRRK quotes.
+2024-10-07T13:31:05.646Z [INFO]: Position added: XPEV | Qty: 200 | Avg Entry: $13.6778
+2024-10-07T13:31:05.649Z [INFO]: Subscribed to XPEV quotes.
+2024-10-07T13:31:32.592Z [INFO]: Stop condition met for XPEV. Initiating market order to close position.
+2024-10-07T13:31:32.595Z [INFO]: Closing position with market order: {"symbol":"XPEV","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-97506156159d36aa"}
+2024-10-07T13:31:33.290Z [INFO]: Market order placed to close position in XPEV. Order ID: c78d25fc-3ac8-4ec4-9ece-6cb042cad216
+2024-10-07T13:31:33.626Z [INFO]: Position removed: XPEV
+2024-10-07T13:31:33.630Z [INFO]: Unsubscribed from XPEV quotes.
+2024-10-07T13:33:56.634Z [INFO]: Position added: GSIW | Qty: 100 | Avg Entry: $2.4917
+2024-10-07T13:33:56.642Z [INFO]: Subscribed to GSIW quotes.
+2024-10-07T13:34:03.545Z [INFO]: Profit target hit for GSIW: +6.83¢ >= +6¢
+2024-10-07T13:34:03.549Z [INFO]: Attempting to place IOC order: {"symbol":"GSIW","qty":"10","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7153c3bc95dc01c8"}
+2024-10-07T13:34:03.702Z [INFO]: Placed IOC order for 10 shares of GSIW. Order ID: b1b86634-bbe9-4353-8fb6-47e1abbee6ae
+2024-10-07T13:34:16.641Z [INFO]: Position added: HIMS | Qty: 200 | Avg Entry: $19.085
+2024-10-07T13:34:16.648Z [INFO]: Subscribed to HIMS quotes.
+2024-10-07T13:34:25.484Z [INFO]: Profit target hit for HIMS: +6.50¢ >= +6¢
+2024-10-07T13:34:25.487Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-320a13a92f8e9b6e"}
+2024-10-07T13:34:25.876Z [INFO]: Placed IOC order for 20 shares of HIMS. Order ID: 4f882abb-c3be-4258-ae29-c6ec397addad
+2024-10-07T13:34:26.598Z [INFO]: Profit target hit for HIMS: +10.50¢ >= +10¢
+2024-10-07T13:34:26.601Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"36","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a55f95f398695198"}
+2024-10-07T13:34:27.185Z [INFO]: Placed IOC order for 36 shares of HIMS. Order ID: e7003d28-1520-4a15-af47-bd03f0276e6e
+2024-10-07T13:34:30.052Z [INFO]: Profit target hit for HIMS: +12.50¢ >= +12¢
+2024-10-07T13:34:30.056Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-fc580ce90a8aca6a"}
+2024-10-07T13:34:30.392Z [INFO]: Placed IOC order for 28 shares of HIMS. Order ID: db948818-8838-4f30-bbc8-d74ffdabba34
+2024-10-07T13:34:30.756Z [INFO]: Profit target level 3 hit for HIMS. Adjusting stop monitoring to breakeven.
+2024-10-07T13:36:46.649Z [INFO]: Position added: PFE | Qty: 200 | Avg Entry: $29.405
+2024-10-07T13:36:46.653Z [INFO]: Subscribed to PFE quotes.
+2024-10-07T13:37:28.198Z [INFO]: Profit target hit for HIMS: +20.50¢ >= +20¢
+2024-10-07T13:37:28.201Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"23","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a860b21576eee5e2"}
+2024-10-07T13:37:28.385Z [INFO]: Placed IOC order for 23 shares of HIMS. Order ID: c93d54b4-1b49-4fb9-bcbf-b83b032430d1
+2024-10-07T13:37:29.368Z [INFO]: Attempting to place pyramid order: {"symbol":"HIMS","qty":"46","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"19.37","client_order_id":"PYRAMID-33a79f26e6026a83"}
+2024-10-07T13:37:29.609Z [INFO]: Placed pyramid order for 46 shares of HIMS. Order ID: 3b65f8b6-6afe-4dd1-a99f-2c4351da2d96
+2024-10-07T13:37:29.877Z [INFO]: Profit target hit for HIMS: +27.50¢ >= +27¢
+2024-10-07T13:37:29.881Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"18","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-e43948f658c8953c"}
+2024-10-07T13:37:30.654Z [INFO]: Placed IOC order for 18 shares of HIMS. Order ID: 3e53dc93-fe68-47d5-aa85-ab2afb6efd1b
+2024-10-07T13:37:34.122Z [INFO]: Profit target hit for HIMS: +32.50¢ >= +32¢
+2024-10-07T13:37:34.125Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"15","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-3ba13c756a5650e8"}
+2024-10-07T13:37:34.328Z [INFO]: Placed IOC order for 15 shares of HIMS. Order ID: 1b468ed5-8f16-49a2-b262-b64d891b8394
+2024-10-07T13:38:00.849Z [INFO]: Profit target hit for HIMS: +40.50¢ >= +40¢
+2024-10-07T13:38:00.852Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"18","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-9838caa2c387d7b8"}
+2024-10-07T13:38:01.185Z [INFO]: Placed IOC order for 18 shares of HIMS. Order ID: 519a3e69-7978-4f0c-8447-864d871b03cd
+2024-10-07T13:38:53.414Z [INFO]: Profit target hit for HIMS: +50.50¢ >= +50¢
+2024-10-07T13:38:53.417Z [INFO]: Attempting to place IOC order: {"symbol":"HIMS","qty":"42","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-bd40f33f60073f95"}
+2024-10-07T13:38:53.731Z [INFO]: Placed IOC order for 42 shares of HIMS. Order ID: 8d26d708-94d4-46c1-af84-4f9057d485f9
+2024-10-07T13:38:54.058Z [INFO]: Position removed: HIMS
+2024-10-07T13:38:54.061Z [INFO]: Unsubscribed from HIMS quotes.
+2024-10-07T13:40:13.396Z [INFO]: Profit target hit for PFE: +6.50¢ >= +6¢
+2024-10-07T13:40:13.399Z [INFO]: Attempting to place IOC order: {"symbol":"PFE","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0e92479a3d6823c0"}
+2024-10-07T13:40:13.655Z [INFO]: Placed IOC order for 20 shares of PFE. Order ID: 69857fb1-7143-4d6c-9e15-a1bfdded8f41
+2024-10-07T13:42:54.882Z [INFO]: Profit target hit for PFE: +10.50¢ >= +10¢
+2024-10-07T13:42:54.885Z [INFO]: Attempting to place IOC order: {"symbol":"PFE","qty":"36","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-373cfedd6c3abfff"}
+2024-10-07T13:42:56.705Z [INFO]: Placed IOC order for 36 shares of PFE. Order ID: aca44e06-5cff-4b0e-9f97-56fb0966f7bb
+2024-10-07T13:43:27.763Z [INFO]: Profit target hit for PFE: +12.50¢ >= +12¢
+2024-10-07T13:43:27.766Z [INFO]: Attempting to place IOC order: {"symbol":"PFE","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-464049c2b3e918e7"}
+2024-10-07T13:43:28.049Z [INFO]: Placed IOC order for 28 shares of PFE. Order ID: 4d8893e7-444f-4d05-a00a-7d1216aff11c
+2024-10-07T13:43:28.898Z [INFO]: Profit target level 3 hit for PFE. Adjusting stop monitoring to breakeven.
+2024-10-07T13:49:04.768Z [INFO]: Profit target hit for PFE: +20.50¢ >= +20¢
+2024-10-07T13:49:04.771Z [INFO]: Attempting to place IOC order: {"symbol":"PFE","qty":"23","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a679a59dbff5a7f8"}
+2024-10-07T13:49:05.068Z [INFO]: Placed IOC order for 23 shares of PFE. Order ID: 894a96bb-fd65-4537-b66b-91a604edefe5
+2024-10-07T13:51:07.922Z [INFO]: Position added: LI | Qty: 200 | Avg Entry: $31.0274
+2024-10-07T13:51:07.930Z [INFO]: Subscribed to LI quotes.
+2024-10-07T13:51:10.287Z [INFO]: Attempting to place pyramid order: {"symbol":"PFE","qty":"46","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"29.68","client_order_id":"PYRAMID-04e633294c3d27b9"}
+2024-10-07T13:51:10.751Z [INFO]: Placed pyramid order for 46 shares of PFE. Order ID: bf165e84-6912-4ff5-a2e2-3dd00e042f42
+2024-10-07T13:52:16.402Z [INFO]: Position added: DJT | Qty: 200 | Avg Entry: $18.0347
+2024-10-07T13:52:16.411Z [INFO]: Subscribed to DJT quotes.
+2024-10-07T13:52:51.563Z [INFO]: Stop condition met for LI. Initiating market order to close position.
+2024-10-07T13:52:51.566Z [INFO]: Closing position with market order: {"symbol":"LI","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-78e69454f00ff9e1"}
+2024-10-07T13:52:51.885Z [INFO]: Market order placed to close position in LI. Order ID: d7a2f162-5d10-4141-8e07-0f80c493b878
+2024-10-07T13:52:52.810Z [INFO]: Position removed: LI
+2024-10-07T13:52:52.814Z [INFO]: Unsubscribed from LI quotes.
+2024-10-07T13:53:29.139Z [INFO]: Profit target hit for DJT: +6.53¢ >= +6¢
+2024-10-07T13:53:29.142Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-eb60b46e72043ecd"}
+2024-10-07T13:53:29.475Z [INFO]: Placed IOC order for 20 shares of DJT. Order ID: 91be2c42-b669-462d-9a18-78a676811909
+2024-10-07T13:53:42.150Z [INFO]: Profit target hit for DJT: +10.53¢ >= +10¢
+2024-10-07T13:53:42.154Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"36","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c7e2710f8795e614"}
+2024-10-07T13:53:42.443Z [INFO]: Placed IOC order for 36 shares of DJT. Order ID: f44a5ba1-db33-4847-b8ca-22e222bf0aca
+2024-10-07T13:53:43.145Z [INFO]: Profit target hit for DJT: +12.53¢ >= +12¢
+2024-10-07T13:53:43.148Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7df3150976faf367"}
+2024-10-07T13:53:43.500Z [INFO]: Placed IOC order for 28 shares of DJT. Order ID: a47d9011-e793-4ca5-8fcf-86c33833de2e
+2024-10-07T13:53:43.844Z [INFO]: Profit target level 3 hit for DJT. Adjusting stop monitoring to breakeven.
+2024-10-07T13:54:00.171Z [INFO]: Profit target hit for DJT: +20.53¢ >= +20¢
+2024-10-07T13:54:00.174Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"23","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-b64f745a036ecb22"}
+2024-10-07T13:54:00.485Z [INFO]: Placed IOC order for 23 shares of DJT. Order ID: f2104c54-a833-4d72-b460-597bd2436aa0
+2024-10-07T13:55:39.612Z [INFO]: Stop condition met for DJT. Initiating market order to close position.
+2024-10-07T13:55:39.615Z [INFO]: Closing position with market order: {"symbol":"DJT","qty":"93","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-0ba63004cf41a7b5"}
+2024-10-07T13:55:39.827Z [INFO]: Market order placed to close position in DJT. Order ID: 5bd61721-b7cb-4fa7-8679-507625c48668
+2024-10-07T13:55:40.633Z [INFO]: Position removed: DJT
+2024-10-07T13:55:40.636Z [INFO]: Unsubscribed from DJT quotes.
+2024-10-07T13:56:26.344Z [INFO]: Position removed: GSIW
+2024-10-07T13:56:26.354Z [INFO]: Unsubscribed from GSIW quotes.
+2024-10-07T13:58:03.166Z [INFO]: Profit target hit for PFE: +27.06¢ >= +27¢
+2024-10-07T13:58:03.168Z [INFO]: Attempting to place IOC order: {"symbol":"PFE","qty":"27","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-4ffe07ccadfbd32a"}
+2024-10-07T13:58:03.446Z [INFO]: Placed IOC order for 27 shares of PFE. Order ID: 1c43690e-33a8-442f-b74e-97d05f7a0318
+2024-10-07T13:59:48.752Z [INFO]: Position removed: PFE
+2024-10-07T13:59:48.756Z [INFO]: Unsubscribed from PFE quotes.
+2024-10-07T14:00:30.698Z [INFO]: Polygon WebSocket connected.
+2024-10-07T14:00:30.709Z [INFO]: Started polling for order statuses.
+2024-10-07T14:00:30.877Z [INFO]: Polygon WebSocket connection opened.
+2024-10-07T14:00:30.878Z [INFO]: Polygon WebSocket connected.
+2024-10-07T14:00:30.928Z [INFO]: Polygon WebSocket authenticated.
+2024-10-07T14:01:26.863Z [INFO]: Position added: SERV | Qty: 100 | Avg Entry: $10.14
+2024-10-07T14:01:26.871Z [INFO]: Subscribed to SERV quotes.
+2024-10-07T14:01:32.288Z [INFO]: Profit target hit for SERV: +6.00¢ >= +6¢
+2024-10-07T14:01:32.293Z [INFO]: Attempting to place IOC order: {"symbol":"SERV","qty":"10","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-ef8bca993398769e"}
+2024-10-07T14:01:32.508Z [INFO]: Placed IOC order for 10 shares of SERV. Order ID: d2f315a9-9a15-4e92-830e-9743c26f233e
+2024-10-07T14:01:33.603Z [INFO]: Profit target hit for SERV: +10.00¢ >= +10¢
+2024-10-07T14:01:33.606Z [INFO]: Attempting to place IOC order: {"symbol":"SERV","qty":"18","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-612d25e267144378"}
+2024-10-07T14:01:33.788Z [INFO]: Placed IOC order for 18 shares of SERV. Order ID: 150be363-8fc6-436c-9e03-da777f451b4d
+2024-10-07T14:01:34.497Z [INFO]: Profit target level 2 hit for SERV. Adjusting stop monitoring to breakeven.
+2024-10-07T14:06:05.077Z [INFO]: Position added: CPNG | Qty: 200 | Avg Entry: $26.1195
+2024-10-07T14:06:05.085Z [INFO]: Subscribed to CPNG quotes.
+2024-10-07T14:07:27.280Z [INFO]: Position added: CSIQ | Qty: 200 | Avg Entry: $19.3954
+2024-10-07T14:07:27.288Z [INFO]: Subscribed to CSIQ quotes.
+2024-10-07T14:07:30.454Z [INFO]: Profit target hit for CSIQ: +6.46¢ >= +6¢
+2024-10-07T14:07:30.457Z [INFO]: Attempting to place IOC order: {"symbol":"CSIQ","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-3529d619a023804f"}
+2024-10-07T14:07:31.305Z [INFO]: Profit target hit for SERV: +12.00¢ >= +12¢
+2024-10-07T14:07:31.308Z [INFO]: Attempting to place IOC order: {"symbol":"SERV","qty":"14","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-2569ffbe1e27b446"}
+2024-10-07T14:07:31.624Z [INFO]: Placed IOC order for 20 shares of CSIQ. Order ID: 5305e3f4-b551-4868-816a-437099af0c03
+2024-10-07T14:07:32.037Z [INFO]: Profit target hit for CSIQ: +10.46¢ >= +10¢
+2024-10-07T14:07:32.040Z [INFO]: Attempting to place IOC order: {"symbol":"CSIQ","qty":"40","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0ef473bd909df871"}
+2024-10-07T14:07:32.625Z [INFO]: Placed IOC order for 14 shares of SERV. Order ID: dab32bf1-45ce-4c89-a9a3-7bd245e667e8
+2024-10-07T14:07:33.281Z [INFO]: Placed IOC order for 40 shares of CSIQ. Order ID: 80bb66b0-f539-4858-818d-b976eda2f459
+2024-10-07T14:07:33.284Z [INFO]: Profit target level 2 hit for CSIQ. Adjusting stop monitoring to breakeven.
+2024-10-07T14:07:41.218Z [INFO]: Profit target hit for SERV: +20.00¢ >= +20¢
+2024-10-07T14:07:41.222Z [INFO]: Attempting to place IOC order: {"symbol":"SERV","qty":"11","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-bfa253f964045412"}
+2024-10-07T14:07:41.649Z [INFO]: Placed IOC order for 11 shares of SERV. Order ID: 35a9b95d-49f9-45e4-9d64-ca843194c014
+2024-10-07T14:07:59.389Z [INFO]: Stop condition met for CSIQ. Initiating market order to close position.
+2024-10-07T14:07:59.393Z [INFO]: Closing position with market order: {"symbol":"CSIQ","qty":"140","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-8157eae5f89d1be8"}
+2024-10-07T14:07:59.574Z [INFO]: Profit target hit for CPNG: +6.05¢ >= +6¢
+2024-10-07T14:07:59.577Z [INFO]: Attempting to place IOC order: {"symbol":"CPNG","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-09e15cd820e16299"}
+2024-10-07T14:08:00.152Z [INFO]: Market order placed to close position in CSIQ. Order ID: 311a2c9c-84cc-426b-a10e-ace910910406
+2024-10-07T14:08:00.330Z [INFO]: Placed IOC order for 20 shares of CPNG. Order ID: 8e44d076-e15c-48a2-ad3d-a465ed76a506
+2024-10-07T14:08:00.338Z [INFO]: Profit target hit for CPNG: +11.05¢ >= +10¢
+2024-10-07T14:08:00.341Z [INFO]: Attempting to place IOC order: {"symbol":"CPNG","qty":"40","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-1fbdab7d98c73476"}
+2024-10-07T14:08:01.001Z [INFO]: Position removed: CSIQ
+2024-10-07T14:08:01.009Z [INFO]: Unsubscribed from CSIQ quotes.
+2024-10-07T14:08:01.369Z [INFO]: Placed IOC order for 40 shares of CPNG. Order ID: 897c8d2e-301b-4b3d-a055-1e360f6e59b2
+2024-10-07T14:08:01.373Z [INFO]: Profit target level 2 hit for CPNG. Adjusting stop monitoring to breakeven.
+2024-10-07T14:08:01.383Z [INFO]: Profit target hit for CPNG: +12.05¢ >= +12¢
+2024-10-07T14:08:01.386Z [INFO]: Attempting to place IOC order: {"symbol":"CPNG","qty":"36","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c6ff901e26fd386e"}
+2024-10-07T14:08:02.398Z [INFO]: Placed IOC order for 36 shares of CPNG. Order ID: b5ee316f-cfb9-4c0f-beb1-bbebd402589f
+2024-10-07T14:08:17.329Z [INFO]: Position added: JKS | Qty: 200 | Avg Entry: $36.42
+2024-10-07T14:08:17.336Z [INFO]: Subscribed to JKS quotes.
+2024-10-07T14:08:19.332Z [INFO]: Profit target hit for JKS: +7.00¢ >= +6¢
+2024-10-07T14:08:19.335Z [INFO]: Attempting to place IOC order: {"symbol":"JKS","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-fd494646da15a427"}
+2024-10-07T14:08:19.690Z [INFO]: Placed IOC order for 20 shares of JKS. Order ID: 93d32bf9-fe25-468c-9f7f-dd1a4371ccf6
+2024-10-07T14:08:22.048Z [INFO]: Profit target hit for JKS: +12.00¢ >= +10¢
+2024-10-07T14:08:22.053Z [INFO]: Attempting to place IOC order: {"symbol":"JKS","qty":"36","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d07336e325c61000"}
+2024-10-07T14:08:22.245Z [INFO]: Placed IOC order for 36 shares of JKS. Order ID: 5f5f02ce-02e5-4452-8e30-ba278cc333ab
+2024-10-07T14:08:22.598Z [INFO]: Profit target level 2 hit for JKS. Adjusting stop monitoring to breakeven.
+2024-10-07T14:08:24.187Z [INFO]: Profit target hit for JKS: +12.00¢ >= +12¢
+2024-10-07T14:08:24.190Z [INFO]: Attempting to place IOC order: {"symbol":"JKS","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-38d910e8671945be"}
+2024-10-07T14:08:24.370Z [INFO]: Placed IOC order for 28 shares of JKS. Order ID: c557be95-5d8c-4b3d-a03d-0350c767fb05
+2024-10-07T14:08:27.973Z [INFO]: Profit target hit for JKS: +20.00¢ >= +20¢
+2024-10-07T14:08:27.977Z [INFO]: Attempting to place IOC order: {"symbol":"JKS","qty":"23","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-de2588174abac3e6"}
+2024-10-07T14:08:28.255Z [INFO]: Placed IOC order for 23 shares of JKS. Order ID: 3d8f07c4-2f71-47e2-b132-a80d7ccbd8d7
+2024-10-07T14:08:39.199Z [INFO]: Attempting to place pyramid order: {"symbol":"JKS","qty":"46","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"36.80","client_order_id":"PYRAMID-e7a1bae11010512c"}
+2024-10-07T14:08:39.376Z [INFO]: Placed pyramid order for 46 shares of JKS. Order ID: ccf141eb-aac4-43f7-b3c3-00f58b09d879
+2024-10-07T14:08:43.494Z [INFO]: Profit target hit for JKS: +28.21¢ >= +27¢
+2024-10-07T14:08:43.497Z [INFO]: Attempting to place IOC order: {"symbol":"JKS","qty":"19","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7a2c12c3a233c50c"}
+2024-10-07T14:08:43.729Z [INFO]: Placed IOC order for 19 shares of JKS. Order ID: ab434ec1-99cd-4685-914a-f56888ccda57
+2024-10-07T14:09:16.003Z [INFO]: Stop condition met for JKS. Initiating market order to close position.
+2024-10-07T14:09:16.006Z [INFO]: Closing position with market order: {"symbol":"JKS","qty":"79","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-b379d7e4ca6e56a2"}
+2024-10-07T14:09:16.337Z [INFO]: Market order placed to close position in JKS. Order ID: 5965cf54-7a58-4140-b666-da20d733328d
+2024-10-07T14:09:16.769Z [INFO]: Position removed: JKS
+2024-10-07T14:09:16.772Z [INFO]: Unsubscribed from JKS quotes.
+2024-10-07T14:12:03.590Z [INFO]: Position removed: CPNG
+2024-10-07T14:12:03.599Z [INFO]: Unsubscribed from CPNG quotes.
+2024-10-07T14:12:05.584Z [INFO]: Position removed: SERV
+2024-10-07T14:12:05.592Z [INFO]: Unsubscribed from SERV quotes.
+2024-10-07T14:19:56.761Z [INFO]: Polygon WebSocket connected.
+2024-10-07T14:19:56.764Z [INFO]: Started polling for order statuses.
+2024-10-07T14:19:56.927Z [INFO]: Polygon WebSocket connection opened.
+2024-10-07T14:19:56.928Z [INFO]: Polygon WebSocket connected.
+2024-10-07T14:19:56.975Z [INFO]: Polygon WebSocket authenticated.
+2024-10-07T14:27:39.113Z [INFO]: Position added: DJT | Qty: 200 | Avg Entry: $19.3698
+2024-10-07T14:27:39.121Z [INFO]: Subscribed to DJT quotes.
+2024-10-07T14:28:00.217Z [INFO]: Profit target hit for DJT: +6.02¢ >= +6¢
+2024-10-07T14:28:00.219Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-45d5b521966f90e9"}
+2024-10-07T14:28:00.453Z [INFO]: Placed IOC order for 20 shares of DJT. Order ID: bab59fbc-5a6f-4554-911d-f194af774fba
+2024-10-07T14:28:02.195Z [INFO]: Profit target hit for DJT: +10.02¢ >= +10¢
+2024-10-07T14:28:02.199Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"36","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-64f7b2efa412763e"}
+2024-10-07T14:28:02.422Z [INFO]: Placed IOC order for 36 shares of DJT. Order ID: 9ee1211b-fae1-4d16-8404-d643e2a8218c
+2024-10-07T14:28:03.119Z [INFO]: Profit target level 2 hit for DJT. Adjusting stop monitoring to breakeven.
+2024-10-07T14:28:11.773Z [INFO]: Profit target hit for DJT: +12.02¢ >= +12¢
+2024-10-07T14:28:11.775Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-ff266fc7318bca74"}
+2024-10-07T14:28:11.976Z [INFO]: Placed IOC order for 28 shares of DJT. Order ID: 479300d8-e674-45a2-9ab9-161c7cf49e6a
+2024-10-07T14:28:47.494Z [INFO]: Profit target hit for DJT: +20.02¢ >= +20¢
+2024-10-07T14:28:47.496Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"23","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-4bcaecfb3dbce08d"}
+2024-10-07T14:28:47.992Z [INFO]: Placed IOC order for 23 shares of DJT. Order ID: 81ec1cd0-89d3-4015-b52e-18ed8fa220b5
+2024-10-07T14:29:06.864Z [INFO]: Profit target hit for DJT: +27.02¢ >= +27¢
+2024-10-07T14:29:06.867Z [INFO]: Attempting to place IOC order: {"symbol":"DJT","qty":"18","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-aa167acfef538741"}
+2024-10-07T14:29:07.051Z [INFO]: Placed IOC order for 18 shares of DJT. Order ID: def7472d-34d0-4657-a139-2bdb596f5484
+2024-10-07T14:29:57.196Z [INFO]: Position removed: DJT
+2024-10-07T14:29:57.205Z [INFO]: Unsubscribed from DJT quotes.
+2024-10-07T14:34:59.360Z [INFO]: Position added: QSG | Qty: 100 | Avg Entry: $5.88
+2024-10-07T14:34:59.364Z [INFO]: Subscribed to QSG quotes.
+2024-10-07T14:34:59.812Z [INFO]: Profit target hit for QSG: +6.00¢ >= +6¢
+2024-10-07T14:34:59.815Z [INFO]: Attempting to place IOC order: {"symbol":"QSG","qty":"10","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-648d972e2dd37a2d"}
+2024-10-07T14:34:59.992Z [INFO]: Placed IOC order for 10 shares of QSG. Order ID: e3582216-769f-416b-aee6-30e2adc0b4ff
+2024-10-07T14:35:03.691Z [INFO]: Profit target hit for QSG: +10.00¢ >= +10¢
+2024-10-07T14:35:03.695Z [INFO]: Attempting to place IOC order: {"symbol":"QSG","qty":"18","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-87c11db82f9c0c09"}
+2024-10-07T14:35:03.884Z [INFO]: Placed IOC order for 18 shares of QSG. Order ID: 25cbec74-9713-4b57-9ad9-d6569119448e
+2024-10-07T14:35:04.599Z [INFO]: Profit target level 2 hit for QSG. Adjusting stop monitoring to breakeven.
+2024-10-07T14:35:05.096Z [INFO]: Profit target hit for QSG: +12.00¢ >= +12¢
+2024-10-07T14:35:05.098Z [INFO]: Attempting to place IOC order: {"symbol":"QSG","qty":"14","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0684e572014de832"}
+2024-10-07T14:35:05.382Z [INFO]: Placed IOC order for 14 shares of QSG. Order ID: a3fc5eb2-bcca-4943-8d1b-50fb6139920d
+2024-10-07T14:35:05.725Z [INFO]: Profit target hit for QSG: +20.00¢ >= +20¢
+2024-10-07T14:35:05.727Z [INFO]: Attempting to place IOC order: {"symbol":"QSG","qty":"14","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-05aa6c8197cd0dc3"}
+2024-10-07T14:35:06.081Z [INFO]: Placed IOC order for 14 shares of QSG. Order ID: b72ade5c-97bd-4170-8fcf-d28532db8b34
+2024-10-07T14:35:09.904Z [INFO]: Profit target hit for QSG: +27.00¢ >= +27¢
+2024-10-07T14:35:09.906Z [INFO]: Attempting to place IOC order: {"symbol":"QSG","qty":"8","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0999b9697c4e939e"}
+2024-10-07T14:35:10.134Z [INFO]: Placed IOC order for 8 shares of QSG. Order ID: fb69abf0-08e9-40f4-8219-4260294f8f07
+2024-10-07T14:37:55.114Z [INFO]: Stop condition met for QSG. Initiating market order to close position.
+2024-10-07T14:37:55.116Z [INFO]: Closing position with market order: {"symbol":"QSG","qty":"36","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-7e61454ca77146ab"}
+2024-10-07T14:37:55.357Z [INFO]: Market order placed to close position in QSG. Order ID: 6ab4b2e1-a382-48d6-8e3f-0c3e0b8a50af
+2024-10-07T14:37:55.768Z [INFO]: Position removed: QSG
+2024-10-07T14:37:55.770Z [INFO]: Unsubscribed from QSG quotes.

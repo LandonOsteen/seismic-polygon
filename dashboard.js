@@ -1,5 +1,3 @@
-// dashboard.js
-
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger'); // Ensure logger is imported
@@ -41,7 +39,7 @@ class Dashboard {
         10, // Bid
         10, // Ask
         10, // Profit
-        15, // Stop Price
+        25, // Stop Price (increased width)
         20, // Profit Targets Hit
         20, // Pyramid Levels Hit
       ],
@@ -209,7 +207,11 @@ class Dashboard {
     const tableData = positions.map((pos) => {
       // Ensure all necessary properties are present
       const profit = pos.profitCents ? `${pos.profitCents}¢` : '0¢';
-      const stopPrice = pos.stopPrice ? `$${pos.stopPrice.toFixed(2)}` : 'N/A';
+
+      // Include stop description in the stop price display
+      const stopPrice = pos.stopPrice
+        ? `$${pos.stopPrice.toFixed(2)} (${pos.stopDescription})`
+        : 'N/A';
 
       // Fetch total profit targets from config
       const totalProfitTargets =
