@@ -1,2 +1,4 @@
 node_modules
 .env
+trading-exit-system-combined.log
+trading-exit-system-error.log
