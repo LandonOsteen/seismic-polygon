@@ -33,10 +33,11 @@ module.exports = {
       { profitTargetsHit: 0, stopCents: -15 }, // Initial stop: 15 cents below avg price
       { profitTargetsHit: 2, stopCents: 0 }, // After 2 targets hit, stop at breakeven
       { profitTargetsHit: 4, stopCents: 10 }, // After 4 targets hit, stop 10 cents above avg price
+      { profitTargetsHit: 6, stopCents: 15 }, // After 6 targets hit, stop 15 cents above avg price
       // Add more levels as needed
     ],
     pyramidLevels: [
-      // { addInCents: 25, percentToAdd: 50, offsetCents: 2 },
+      { addInCents: 25, percentToAdd: 50, offsetCents: 4 },
       // Define pyramiding levels if needed
     ],
   },
