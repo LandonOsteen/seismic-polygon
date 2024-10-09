@@ -16,8 +16,8 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   orderSettings: {
-    stopLossCents: 15,
-    limitOffsetCents: 4,
+    stopLossCents: -20,
+    limitOffsetCents: 3,
     profitTargets: [
       { targetCents: 5, percentToClose: 5 },
       { targetCents: 8, percentToClose: 5 },
