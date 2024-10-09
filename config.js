@@ -16,7 +16,7 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   orderSettings: {
-    stopLossCents: -20,
+    stopLossCents: -15,
     limitOffsetCents: 3,
     profitTargets: [
       { targetCents: 5, percentToClose: 5 },
@@ -32,12 +32,12 @@ module.exports = {
     ],
     // Removed 'stopBreakevenLevel' in favor of 'dynamicStops'
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -20 }, // Initial stop: 20 cents below avg price
-      { profitTargetsHit: 1, stopCents: -15 }, // 1st stop move: 15 cents below avg price
+      { profitTargetsHit: 0, stopCents: -15 }, // Initial stop: 15 cents below avg price
+      { profitTargetsHit: 1, stopCents: -10 }, // 1st stop move: 10 cents below avg price
       { profitTargetsHit: 2, stopCents: 0 }, // After 2 targets hit, stop at breakeven
       { profitTargetsHit: 4, stopCents: 2 }, // After 4 targets hit, stop 2 cents above avg price
-      { profitTargetsHit: 7, stopCents: 12 }, // After 6 targets hit, stop 15 cents above avg price
-      { profitTargetsHit: 8, stopCents: 20 }, // After 6 targets hit, stop 15 cents above avg price
+      { profitTargetsHit: 7, stopCents: 12 }, // After 7 targets hit, stop 12 cents above avg price
+      { profitTargetsHit: 8, stopCents: 20 }, // After 8 targets hit, stop 20 cents above avg price
       // Add more levels as needed
     ],
     pyramidLevels: [
