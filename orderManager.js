@@ -1,3 +1,5 @@
+// orderManager.js
+
 const { alpaca } = require('./alpaca');
 const config = require('./config');
 const logger = require('./logger');
@@ -98,8 +100,6 @@ class OrderManager {
 
       // Update the dashboard with the loaded positions
       this.dashboard.updatePositions(Object.values(this.positions));
-
-      // No need to update summary here since updatePositions handles it
     } catch (err) {
       const message = `Error initializing existing positions: ${err.message}`;
       logger.error(message);
@@ -108,22 +108,33 @@ class OrderManager {
   }
 
   /**
-   * Calculates the dynamic stop price based on the number of profit targets hit.
+   * Calculates the dynamic stop price or determines if a trailing stop should be used.
    */
   calculateDynamicStopPrice(profitTargetsHit, avgEntryPrice, side) {
-    // Find the dynamic stop configurations with profitTargetsHit less than or equal to the current
+    const trailingStopConfig = config.orderSettings.trailingStop;
+    if (
+      trailingStopConfig &&
+      profitTargetsHit >= trailingStopConfig.activateAfterTargetsHit
+    ) {
+      // Activate trailing stop
+      return {
+        useTrailingStop: true,
+        trailCents: trailingStopConfig.trailCents,
+      };
+    }
+
+    // Existing dynamic stop logic
     const dynamicStops = config.orderSettings.dynamicStops
       .filter((ds) => ds.profitTargetsHit <= profitTargetsHit)
-      .sort((a, b) => b.profitTargetsHit - a.profitTargetsHit); // Sort descending
+      .sort((a, b) => b.profitTargetsHit - a.profitTargetsHit);
 
     if (dynamicStops.length > 0) {
-      const dynamicStop = dynamicStops[0]; // Get the highest profitTargetsHit <= current
+      const dynamicStop = dynamicStops[0];
       const stopCents = dynamicStop.stopCents;
       const stopPrice =
         avgEntryPrice + (stopCents / 100) * (side === 'buy' ? 1 : -1);
       return { stopPrice, stopCents };
     } else {
-      // If no dynamic stop configured, return initial stop loss
       const stopLossCents = config.orderSettings.stopLossCents;
       const stopPrice =
         avgEntryPrice - (stopLossCents / 100) * (side === 'buy' ? 1 : -1);
@@ -168,6 +179,8 @@ class OrderManager {
       stopCents: stopCents,
       stopDescription: stopDescription,
       stopTriggered: false,
+      trailingStopActive: false,
+      highWaterMark: null,
       pyramidLevelsHit: 0,
       totalPyramidLevels: config.orderSettings.pyramidLevels.length,
     };
@@ -232,18 +245,52 @@ class OrderManager {
     }¢ | Current Price: $${currentPrice.toFixed(2)}`;
     this.dashboard.logInfo(message);
 
-    // Check for stop trigger only if stop has not been triggered yet
-    if (!pos.stopTriggered) {
+    // Trailing Stop Logic
+    if (pos.trailingStopActive) {
+      // Update high water mark
+      const newHighWaterMark = currentPrice;
       if (
-        (side === 'buy' && bidPrice <= pos.stopPrice) || // Long position stop loss
-        (side === 'sell' && askPrice >= pos.stopPrice) // Short position stop loss
+        (side === 'buy' && newHighWaterMark > pos.highWaterMark) ||
+        (side === 'sell' && newHighWaterMark < pos.highWaterMark)
+      ) {
+        pos.highWaterMark = newHighWaterMark;
+        pos.stopPrice =
+          pos.highWaterMark -
+          (config.orderSettings.trailingStop.trailCents / 100) *
+            (side === 'buy' ? 1 : -1);
+        const tsMessage = `Updated trailing stop for ${symbol}: New Stop Price $${pos.stopPrice.toFixed(
+          2
+        )}`;
+        logger.info(tsMessage);
+        this.dashboard.logInfo(tsMessage);
+      }
+
+      // Check if trailing stop is hit
+      if (
+        (side === 'buy' && bidPrice <= pos.stopPrice) ||
+        (side === 'sell' && askPrice >= pos.stopPrice)
       ) {
         pos.stopTriggered = true;
-        const stopMessage = `Stop condition met for ${symbol}. Initiating market order to close position.`;
+        const stopMessage = `Trailing stop hit for ${symbol}. Initiating market order to close position.`;
         logger.info(stopMessage);
         this.dashboard.logWarning(stopMessage);
         await this.closePositionMarketOrder(symbol);
         return;
+      }
+    } else {
+      // Check for stop trigger only if stop has not been triggered yet
+      if (!pos.stopTriggered) {
+        if (
+          (side === 'buy' && bidPrice <= pos.stopPrice) || // Long position stop loss
+          (side === 'sell' && askPrice >= pos.stopPrice) // Short position stop loss
+        ) {
+          pos.stopTriggered = true;
+          const stopMessage = `Stop condition met for ${symbol}. Initiating market order to close position.`;
+          logger.info(stopMessage);
+          this.dashboard.logWarning(stopMessage);
+          await this.closePositionMarketOrder(symbol);
+          return;
+        }
       }
     }
 
@@ -288,22 +335,38 @@ class OrderManager {
         // After processing a profit target hit
         pos.profitTargetsHit += 1;
 
-        // Adjust stop price based on dynamicStops configuration
+        // Adjust stop price or activate trailing stop based on dynamicStops or trailingStop configuration
         const dynamicStop = this.calculateDynamicStopPrice(
           pos.profitTargetsHit,
           pos.avgEntryPrice,
           pos.side
         );
         if (dynamicStop) {
-          pos.stopPrice = dynamicStop.stopPrice;
-          pos.stopCents = dynamicStop.stopCents;
-          pos.stopDescription = `Stop ${pos.stopCents}¢ ${
-            pos.stopCents > 0 ? 'above' : pos.stopCents < 0 ? 'below' : 'at'
-          } avg price`;
-          const stopPriceMessage = `Adjusted stop price for ${symbol} to $${pos.stopPrice.toFixed(
-            2
-          )} after hitting ${pos.profitTargetsHit} profit targets.`;
-          this.dashboard.logInfo(stopPriceMessage);
+          if (dynamicStop.useTrailingStop) {
+            pos.trailingStopActive = true;
+            pos.highWaterMark = currentPrice;
+            pos.stopPrice =
+              pos.highWaterMark -
+              (dynamicStop.trailCents / 100) * (side === 'buy' ? 1 : -1);
+            const trailingStopMessage = `Activated trailing stop for ${symbol} at $${pos.stopPrice.toFixed(
+              2
+            )}`;
+            logger.info(trailingStopMessage);
+            this.dashboard.logInfo(trailingStopMessage);
+
+            // Update dashboard to show trailing stop activation
+            this.dashboard.updateTrailingStopStatus(symbol, pos.stopPrice);
+          } else {
+            pos.stopPrice = dynamicStop.stopPrice;
+            pos.stopCents = dynamicStop.stopCents;
+            pos.stopDescription = `Stop ${pos.stopCents}¢ ${
+              pos.stopCents > 0 ? 'above' : pos.stopCents < 0 ? 'below' : 'at'
+            } avg price`;
+            const stopPriceMessage = `Adjusted stop price for ${symbol} to $${pos.stopPrice.toFixed(
+              2
+            )} after hitting ${pos.profitTargetsHit} profit targets.`;
+            this.dashboard.logInfo(stopPriceMessage);
+          }
         }
 
         pos.isProcessing = false;
@@ -712,17 +775,26 @@ class OrderManager {
             this.positions[symbol].side
           );
           if (dynamicStop) {
-            this.positions[symbol].stopPrice = dynamicStop.stopPrice;
-            this.positions[symbol].stopCents = dynamicStop.stopCents;
-            this.positions[symbol].stopDescription = `Stop ${
-              this.positions[symbol].stopCents
-            }¢ ${
-              this.positions[symbol].stopCents > 0
-                ? 'above'
-                : this.positions[symbol].stopCents < 0
-                ? 'below'
-                : 'at'
-            } avg price`;
+            if (dynamicStop.useTrailingStop) {
+              this.positions[symbol].trailingStopActive = true;
+              // Recalculate stopPrice based on highWaterMark
+              this.positions[symbol].stopPrice =
+                this.positions[symbol].highWaterMark -
+                (dynamicStop.trailCents / 100) *
+                  (this.positions[symbol].side === 'buy' ? 1 : -1);
+            } else {
+              this.positions[symbol].stopPrice = dynamicStop.stopPrice;
+              this.positions[symbol].stopCents = dynamicStop.stopCents;
+              this.positions[symbol].stopDescription = `Stop ${
+                this.positions[symbol].stopCents
+              }¢ ${
+                this.positions[symbol].stopCents > 0
+                  ? 'above'
+                  : this.positions[symbol].stopCents < 0
+                  ? 'below'
+                  : 'at'
+              } avg price`;
+            }
           }
 
           // If quantity is zero, remove the position

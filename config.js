@@ -16,28 +16,27 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   orderSettings: {
-    stopLossCents: 15,
-    limitOffsetCents: 4,
+    limitOffsetCents: 2,
     profitTargets: [
-      { targetCents: 6, percentToClose: 10 },
+      { targetCents: 5, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
-      { targetCents: 12, percentToClose: 20 },
-      { targetCents: 20, percentToClose: 20 },
-      { targetCents: 27, percentToClose: 20 },
-      { targetCents: 32, percentToClose: 20 },
-      { targetCents: 40, percentToClose: 30 },
-      { targetCents: 50, percentToClose: 100 },
+      { targetCents: 20, percentToClose: 30 },
+      { targetCents: 30, percentToClose: 20 },
+      { targetCents: 40, percentToClose: 20 },
+      { targetCents: 50, percentToClose: 20 },
+      { targetCents: 60, percentToClose: 20 },
     ],
-    // Removed 'stopBreakevenLevel' in favor of 'dynamicStops'
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -15 }, // Initial stop: 15 cents below avg price
-      { profitTargetsHit: 2, stopCents: 0 }, // After 2 targets hit, stop at breakeven
-      { profitTargetsHit: 4, stopCents: 10 }, // After 4 targets hit, stop 10 cents above avg price
-      { profitTargetsHit: 6, stopCents: 15 }, // After 6 targets hit, stop 15 cents above avg price
-      // Add more levels as needed
+      { profitTargetsHit: 0, stopCents: -20 }, // initial stop
+      { profitTargetsHit: 1, stopCents: -10 }, // 10 cent stop at 5 cent profit
+      { profitTargetsHit: 2, stopCents: 0 }, // breakeven stop at 10 cents profit
+      // Switch to trailing stop after hitting 3 profit targets
     ],
+    trailingStop: {
+      activateAfterTargetsHit: 3, // Activate trailing stop after this many profit targets are hit
+      trailCents: 20, // Trailing stop distance in cents
+    },
     pyramidLevels: [
-      { addInCents: 25, percentToAdd: 50, offsetCents: 4 },
       // Define pyramiding levels if needed
     ],
   },

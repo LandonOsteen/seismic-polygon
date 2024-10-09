@@ -1,3 +1,5 @@
+// dashboard.js
+
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -230,15 +232,19 @@ class Dashboard {
       const profitCents = parseFloat(pos.profitCents);
       const profit = `${profitCents.toFixed(2)}¢`;
 
-      // Simplify stop price display
-      const stopCentsValue = parseFloat(pos.stopCents);
-      const stopCentsDisplay = `${stopCentsValue >= 0 ? '' : '-'}${Math.abs(
-        stopCentsValue
-      )}¢`;
-
-      const stopPrice = pos.stopPrice
-        ? `$${pos.stopPrice.toFixed(2)} (${stopCentsDisplay})`
-        : 'N/A';
+      // Update stop price display
+      let stopPriceDisplay;
+      if (pos.trailingStopActive) {
+        stopPriceDisplay = `Trailing at $${pos.stopPrice.toFixed(2)}`;
+      } else if (pos.stopPrice) {
+        const stopCentsValue = parseFloat(pos.stopCents);
+        const stopCentsDisplay = `${stopCentsValue >= 0 ? '' : '-'}${Math.abs(
+          stopCentsValue
+        )}¢`;
+        stopPriceDisplay = `$${pos.stopPrice.toFixed(2)} (${stopCentsDisplay})`;
+      } else {
+        stopPriceDisplay = 'N/A';
+      }
 
       // Fetch total profit targets from config
       const totalProfitTargets =
@@ -264,7 +270,7 @@ class Dashboard {
         pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
         pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
         profit,
-        stopPrice,
+        stopPriceDisplay,
         profitTargetsHit,
         pyramidLevelsHit,
       ];
@@ -346,6 +352,19 @@ class Dashboard {
         rows.items[index].style = { fg: 'yellow' };
       }
     });
+  }
+
+  /**
+   * Updates trailing stop status on the dashboard.
+   * @param {string} symbol - The symbol for which the trailing stop is activated.
+   * @param {number} stopPrice - The current stop price.
+   */
+  updateTrailingStopStatus(symbol, stopPrice) {
+    const message = `Trailing stop activated for ${symbol} at $${stopPrice.toFixed(
+      2
+    )}`;
+    this.logInfo(message);
+    this.screen.render();
   }
 }
 
