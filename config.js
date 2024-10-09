@@ -19,13 +19,15 @@ module.exports = {
     stopLossCents: 15,
     limitOffsetCents: 4,
     profitTargets: [
-      { targetCents: 6, percentToClose: 10 },
-      { targetCents: 10, percentToClose: 20 },
-      { targetCents: 12, percentToClose: 20 },
-      { targetCents: 20, percentToClose: 20 },
+      { targetCents: 5, percentToClose: 5 },
+      { targetCents: 8, percentToClose: 5 },
+      { targetCents: 10, percentToClose: 10 },
+      { targetCents: 12, percentToClose: 10 },
+      { targetCents: 15, percentToClose: 10 },
+      { targetCents: 20, percentToClose: 10 },
       { targetCents: 27, percentToClose: 20 },
-      { targetCents: 32, percentToClose: 20 },
-      { targetCents: 40, percentToClose: 30 },
+      { targetCents: 32, percentToClose: 30 },
+      { targetCents: 40, percentToClose: 40 },
       { targetCents: 50, percentToClose: 100 },
     ],
     // Removed 'stopBreakevenLevel' in favor of 'dynamicStops'
@@ -33,10 +35,11 @@ module.exports = {
       { profitTargetsHit: 0, stopCents: -15 }, // Initial stop: 15 cents below avg price
       { profitTargetsHit: 2, stopCents: 0 }, // After 2 targets hit, stop at breakeven
       { profitTargetsHit: 4, stopCents: 10 }, // After 4 targets hit, stop 10 cents above avg price
+      { profitTargetsHit: 6, stopCents: 15 }, // After 6 targets hit, stop 15 cents above avg price
       // Add more levels as needed
     ],
     pyramidLevels: [
-      // { addInCents: 25, percentToAdd: 50, offsetCents: 2 },
+      // { addInCents: 25, percentToAdd: 50, offsetCents: 4 },
       // Define pyramiding levels if needed
     ],
   },
