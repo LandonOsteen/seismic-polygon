@@ -3,3 +3,8 @@
 2024-10-07T18:22:49.089Z [INFO]: Polygon WebSocket connection opened.
 2024-10-07T18:22:49.090Z [INFO]: Polygon WebSocket connected.
 2024-10-07T18:22:49.147Z [INFO]: Polygon WebSocket authenticated.
+2024-10-09T21:13:44.912Z [INFO]: Polygon WebSocket connected.
+2024-10-09T21:13:44.917Z [INFO]: Started polling for order statuses.
+2024-10-09T21:13:45.144Z [INFO]: Polygon WebSocket connection opened.
+2024-10-09T21:13:45.146Z [INFO]: Polygon WebSocket connected.
+2024-10-09T21:13:45.202Z [INFO]: Polygon WebSocket authenticated.
