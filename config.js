@@ -16,33 +16,28 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   orderSettings: {
-    stopLossCents: -15,
-    limitOffsetCents: 3,
+    stopLossCents: -20, // Slightly wider stop to handle small-cap volatility
+    limitOffsetCents: 3, // Keep this tight for momentum trades
     profitTargets: [
       { targetCents: 5, percentToClose: 5 },
-      { targetCents: 8, percentToClose: 5 },
-      { targetCents: 10, percentToClose: 10 },
-      { targetCents: 12, percentToClose: 10 },
-      { targetCents: 15, percentToClose: 10 },
-      { targetCents: 20, percentToClose: 10 },
-      { targetCents: 27, percentToClose: 20 },
-      { targetCents: 32, percentToClose: 30 },
-      { targetCents: 40, percentToClose: 40 },
-      { targetCents: 50, percentToClose: 100 },
+      { targetCents: 10, percentToClose: 50 }, // Early scaling out to secure some gains
+      { targetCents: 15, percentToClose: 20 },
+      { targetCents: 20, percentToClose: 50 },
+      { targetCents: 30, percentToClose: 10 },
+      { targetCents: 50, percentToClose: 50 },
+      { targetCents: 75, percentToClose: 100 },
     ],
-    // Removed 'stopBreakevenLevel' in favor of 'dynamicStops'
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -15 }, // Initial stop: 15 cents below avg price
-      { profitTargetsHit: 1, stopCents: -10 }, // 1st stop move: 10 cents below avg price
-      { profitTargetsHit: 2, stopCents: 0 }, // After 2 targets hit, stop at breakeven
-      { profitTargetsHit: 4, stopCents: 2 }, // After 4 targets hit, stop 2 cents above avg price
-      { profitTargetsHit: 7, stopCents: 12 }, // After 7 targets hit, stop 12 cents above avg price
-      { profitTargetsHit: 8, stopCents: 20 }, // After 8 targets hit, stop 20 cents above avg price
-      // Add more levels as needed
+      { profitTargetsHit: 0, stopCents: -20 }, // Initial stop: 20 cents below entry
+      { profitTargetsHit: 1, stopCents: -10 }, // After first target, tighten stop to 10 cents
+      { profitTargetsHit: 3, stopCents: 0 }, // Breakeven stop after 3 targets hit
+      { profitTargetsHit: 6, stopCents: 20 }, // Stop moves 20 cents above entry after 5 targets hit
+      { profitTargetsHit: 7, stopCents: 50 }, // Lock in significant profits if price continues running
+      { profitTargetsHit: 8, stopCents: 70 }, // Lock in significant profits if price continues running
     ],
     pyramidLevels: [
-      // { addInCents: 25, percentToAdd: 50, offsetCents: 4 },
-      // Define pyramiding levels if needed
+      { addInCents: 25, percentToAdd: 30, offsetCents: 4 },
+      { addInCents: 40, percentToAdd: 20, offsetCents: 4 },
     ],
   },
   pollingIntervals: {

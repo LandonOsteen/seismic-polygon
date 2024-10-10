@@ -18,3 +18,174 @@
 2024-10-09T21:29:28.560Z [INFO]: Polygon WebSocket connection opened.
 2024-10-09T21:29:28.562Z [INFO]: Polygon WebSocket connected.
 2024-10-09T21:29:28.606Z [INFO]: Polygon WebSocket authenticated.
+2024-10-09T21:49:41.069Z [INFO]: Polygon WebSocket connected.
+2024-10-09T21:49:41.077Z [INFO]: Started polling for order statuses.
+2024-10-09T21:49:41.259Z [INFO]: Polygon WebSocket connection opened.
+2024-10-09T21:49:41.260Z [INFO]: Polygon WebSocket connected.
+2024-10-09T21:49:41.311Z [INFO]: Polygon WebSocket authenticated.
+2024-10-10T13:21:43.375Z [INFO]: Polygon WebSocket connected.
+2024-10-10T13:21:43.382Z [INFO]: Started polling for order statuses.
+2024-10-10T13:21:43.557Z [INFO]: Polygon WebSocket connection opened.
+2024-10-10T13:21:43.559Z [INFO]: Polygon WebSocket connected.
+2024-10-10T13:21:43.609Z [INFO]: Polygon WebSocket authenticated.
+2024-10-10T13:31:09.777Z [INFO]: Position added: CCL | Qty: 300 | Avg Entry: $20.0099
+2024-10-10T13:31:09.785Z [INFO]: Subscribed to CCL quotes.
+2024-10-10T13:31:15.889Z [INFO]: Profit target hit for CCL: +5.01¢ >= +5¢
+2024-10-10T13:31:15.893Z [INFO]: Attempting to place IOC order: {"symbol":"CCL","qty":"15","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d6aea79f70eabd1a"}
+2024-10-10T13:31:16.126Z [INFO]: Placed IOC order for 15 shares of CCL. Order ID: 55dc1c86-8f40-4894-8f52-a94a15dc4192
+2024-10-10T13:31:19.775Z [INFO]: Position added: TXG | Qty: 108 | Avg Entry: $14.730833
+2024-10-10T13:31:19.783Z [INFO]: Subscribed to TXG quotes.
+2024-10-10T13:31:21.830Z [INFO]: Profit target hit for TXG: +5.08¢ >= +5¢
+2024-10-10T13:31:21.833Z [INFO]: Attempting to place IOC order: {"symbol":"TXG","qty":"5","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-b219ad3fccc5bd13"}
+2024-10-10T13:31:22.130Z [INFO]: Placed IOC order for 5 shares of TXG. Order ID: 7de7ed0b-c756-4edc-9f48-145b6cb73d04
+2024-10-10T13:31:23.217Z [INFO]: Stop condition met for TXG. Initiating market order to close position.
+2024-10-10T13:31:23.221Z [INFO]: Closing position with market order: {"symbol":"TXG","qty":"295","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-872d7a3cd1d8d07d"}
+2024-10-10T13:31:23.526Z [INFO]: Market order placed to close position in TXG. Order ID: 63b8d7df-bf5f-4ad6-8910-070d4ea2eee8
+2024-10-10T13:31:23.903Z [INFO]: Position removed: TXG
+2024-10-10T13:31:23.912Z [INFO]: Unsubscribed from TXG quotes.
+2024-10-10T13:31:33.517Z [INFO]: Profit target hit for CCL: +10.01¢ >= +10¢
+2024-10-10T13:31:33.520Z [INFO]: Attempting to place IOC order: {"symbol":"CCL","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0c3438c996126ecb"}
+2024-10-10T13:31:34.060Z [INFO]: Placed IOC order for 28 shares of CCL. Order ID: ce4767ad-3cb9-4a3e-8ac3-8be4aa3596d0
+2024-10-10T13:33:57.777Z [INFO]: Profit target hit for CCL: +15.01¢ >= +15¢
+2024-10-10T13:33:57.780Z [INFO]: Attempting to place IOC order: {"symbol":"CCL","qty":"25","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-f90bcc5d989ae37f"}
+2024-10-10T13:33:58.620Z [INFO]: Placed IOC order for 25 shares of CCL. Order ID: 38996d69-1db9-486c-b965-52f7cd16fdec
+2024-10-10T13:34:14.507Z [INFO]: Position added: EVGO | Qty: 300 | Avg Entry: $7.8565
+2024-10-10T13:34:14.516Z [INFO]: Subscribed to EVGO quotes.
+2024-10-10T13:34:38.640Z [INFO]: Profit target hit for EVGO: +5.35¢ >= +5¢
+2024-10-10T13:34:38.643Z [INFO]: Attempting to place IOC order: {"symbol":"EVGO","qty":"15","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-910549643520cc3f"}
+2024-10-10T13:34:39.111Z [INFO]: Placed IOC order for 15 shares of EVGO. Order ID: cf75b2c7-6062-49e5-b784-aa56bce37a45
+2024-10-10T13:35:20.563Z [INFO]: Stop condition met for CCL. Initiating market order to close position.
+2024-10-10T13:35:20.566Z [INFO]: Closing position with market order: {"symbol":"CCL","qty":"232","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-d0afc143ec2ddf98"}
+2024-10-10T13:35:20.973Z [INFO]: Market order placed to close position in CCL. Order ID: f42e14ed-f642-44a2-b263-18671e6bec08
+2024-10-10T13:35:21.536Z [INFO]: Position removed: CCL
+2024-10-10T13:35:21.545Z [INFO]: Unsubscribed from CCL quotes.
+2024-10-10T13:35:30.044Z [INFO]: Stop condition met for EVGO. Initiating market order to close position.
+2024-10-10T13:35:30.047Z [INFO]: Closing position with market order: {"symbol":"EVGO","qty":"285","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-9602bbaa6b253190"}
+2024-10-10T13:35:30.369Z [INFO]: Market order placed to close position in EVGO. Order ID: 57e927eb-f741-4bc7-bff2-a12f2e1a342a
+2024-10-10T13:35:30.739Z [INFO]: Position removed: EVGO
+2024-10-10T13:35:30.747Z [INFO]: Unsubscribed from EVGO quotes.
+2024-10-10T13:36:08.096Z [INFO]: Polygon WebSocket connected.
+2024-10-10T13:36:08.105Z [INFO]: Started polling for order statuses.
+2024-10-10T13:36:08.284Z [INFO]: Polygon WebSocket connection opened.
+2024-10-10T13:36:08.285Z [INFO]: Polygon WebSocket connected.
+2024-10-10T13:36:08.340Z [INFO]: Polygon WebSocket authenticated.
+2024-10-10T13:36:14.232Z [INFO]: Position added: APLD | Qty: 300 | Avg Entry: $7.9575
+2024-10-10T13:36:14.239Z [INFO]: Subscribed to APLD quotes.
+2024-10-10T13:36:44.993Z [INFO]: Profit target hit for APLD: +5.25¢ >= +5¢
+2024-10-10T13:36:44.996Z [INFO]: Attempting to place IOC order: {"symbol":"APLD","qty":"15","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-67d7ecda1d2f4875"}
+2024-10-10T13:36:45.197Z [INFO]: Placed IOC order for 15 shares of APLD. Order ID: 357f116a-1f92-4c10-b6d6-66aefe5cdc42
+2024-10-10T13:37:49.397Z [INFO]: Profit target hit for APLD: +11.25¢ >= +10¢
+2024-10-10T13:37:49.399Z [INFO]: Attempting to place IOC order: {"symbol":"APLD","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d982a0a2f7ab4b0b"}
+2024-10-10T13:37:49.596Z [INFO]: Placed IOC order for 28 shares of APLD. Order ID: a2e11814-ed0e-4efc-9f64-c21f37bd193b
+2024-10-10T13:39:08.515Z [INFO]: Position removed: APLD
+2024-10-10T13:39:08.523Z [INFO]: Unsubscribed from APLD quotes.
+2024-10-10T13:39:52.554Z [INFO]: Position added: FFIE | Qty: 200 | Avg Entry: $2.7799
+2024-10-10T13:39:52.564Z [INFO]: Subscribed to FFIE quotes.
+2024-10-10T13:41:01.018Z [INFO]: Profit target hit for FFIE: +5.01¢ >= +5¢
+2024-10-10T13:41:01.021Z [INFO]: Attempting to place IOC order: {"symbol":"FFIE","qty":"10","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-394a1ec21678e3ec"}
+2024-10-10T13:41:01.514Z [INFO]: Placed IOC order for 10 shares of FFIE. Order ID: a4c9dc6e-4172-4f41-baec-a767e7d4db59
+2024-10-10T13:41:09.168Z [INFO]: Profit target hit for FFIE: +10.01¢ >= +10¢
+2024-10-10T13:41:09.171Z [INFO]: Attempting to place IOC order: {"symbol":"FFIE","qty":"19","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-5576e43eb7406a60"}
+2024-10-10T13:41:09.353Z [INFO]: Placed IOC order for 19 shares of FFIE. Order ID: e924a6a4-458f-4c5a-b701-04225c98aa45
+2024-10-10T13:41:10.112Z [INFO]: Profit target hit for FFIE: +15.01¢ >= +15¢
+2024-10-10T13:41:10.115Z [INFO]: Attempting to place IOC order: {"symbol":"FFIE","qty":"17","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0ba172016d52840f"}
+2024-10-10T13:41:10.458Z [INFO]: Placed IOC order for 17 shares of FFIE. Order ID: 174fbafa-d253-424e-9e50-2163d259cb79
+2024-10-10T13:42:06.178Z [INFO]: Stop condition met for FFIE. Initiating market order to close position.
+2024-10-10T13:42:06.181Z [INFO]: Closing position with market order: {"symbol":"FFIE","qty":"154","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-6e70f06c2c2dcc52"}
+2024-10-10T13:42:06.522Z [INFO]: Market order placed to close position in FFIE. Order ID: 5a0caad9-11b6-4eae-8e11-10079069f6a9
+2024-10-10T13:42:07.218Z [INFO]: Position removed: FFIE
+2024-10-10T13:42:07.227Z [INFO]: Unsubscribed from FFIE quotes.
+2024-10-10T13:43:26.886Z [INFO]: Position added: TXG | Qty: 300 | Avg Entry: $14.2501
+2024-10-10T13:43:26.893Z [INFO]: Subscribed to TXG quotes.
+2024-10-10T13:43:35.257Z [INFO]: Profit target hit for TXG: +5.01¢ >= +5¢
+2024-10-10T13:43:35.261Z [INFO]: Attempting to place IOC order: {"symbol":"TXG","qty":"15","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-d3ebcb4da5b7a939"}
+2024-10-10T13:43:35.488Z [INFO]: Placed IOC order for 15 shares of TXG. Order ID: 7a663cbb-4550-4ea4-868a-fe933e330b5c
+2024-10-10T13:43:36.632Z [INFO]: Profit target hit for TXG: +13.01¢ >= +10¢
+2024-10-10T13:43:36.635Z [INFO]: Attempting to place IOC order: {"symbol":"TXG","qty":"28","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-e8d400b2865f40e5"}
+2024-10-10T13:43:37.270Z [INFO]: Placed IOC order for 28 shares of TXG. Order ID: 5e90a482-bb18-4da0-a272-7ad1d2b31006
+2024-10-10T13:43:45.502Z [INFO]: Profit target hit for TXG: +15.01¢ >= +15¢
+2024-10-10T13:43:45.506Z [INFO]: Attempting to place IOC order: {"symbol":"TXG","qty":"25","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-78ced7ee3c07089a"}
+2024-10-10T13:43:45.677Z [INFO]: Placed IOC order for 25 shares of TXG. Order ID: d966e617-9ad5-4028-bda6-a3ff7861fe91
+2024-10-10T13:44:47.232Z [INFO]: Profit target hit for TXG: +20.01¢ >= +20¢
+2024-10-10T13:44:47.235Z [INFO]: Attempting to place IOC order: {"symbol":"TXG","qty":"23","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-c24766cba2f32a77"}
+2024-10-10T13:44:47.486Z [INFO]: Placed IOC order for 23 shares of TXG. Order ID: 38d2f589-63f5-4c9c-9841-22bef1d7af95
+2024-10-10T13:46:06.340Z [INFO]: Stop condition met for TXG. Initiating market order to close position.
+2024-10-10T13:46:06.345Z [INFO]: Closing position with market order: {"symbol":"TXG","qty":"209","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-439f20f13070b874"}
+2024-10-10T13:46:06.522Z [INFO]: Market order placed to close position in TXG. Order ID: d1475968-ef51-4dff-b82b-1521ea738abe
+2024-10-10T13:46:06.897Z [INFO]: Position removed: TXG
+2024-10-10T13:46:06.900Z [INFO]: Unsubscribed from TXG quotes.
+2024-10-10T14:02:01.256Z [INFO]: Polygon WebSocket connected.
+2024-10-10T14:02:01.265Z [INFO]: Started polling for order statuses.
+2024-10-10T14:02:01.453Z [INFO]: Polygon WebSocket connection opened.
+2024-10-10T14:02:01.454Z [INFO]: Polygon WebSocket connected.
+2024-10-10T14:02:01.524Z [INFO]: Polygon WebSocket authenticated.
+2024-10-10T14:03:41.438Z [INFO]: Position added: TNA | Qty: 1000 | Avg Entry: $41.36
+2024-10-10T14:03:41.444Z [INFO]: Subscribed to TNA quotes.
+2024-10-10T14:04:52.885Z [INFO]: Stop condition met for TNA. Initiating market order to close position.
+2024-10-10T14:04:52.889Z [INFO]: Closing position with market order: {"symbol":"TNA","qty":"1000","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-6ffe2b53580a6ed8"}
+2024-10-10T14:04:53.331Z [INFO]: Market order placed to close position in TNA. Order ID: ee1d2751-e22f-46f4-9309-cba92c3ca16e
+2024-10-10T14:04:53.996Z [INFO]: Order ee1d2751-e22f-46f4-9309-cba92c3ca16e filled 927 qty for TNA. Remaining qty: -854
+2024-10-10T14:04:54.002Z [INFO]: Position removed: TNA
+2024-10-10T14:04:54.007Z [INFO]: Unsubscribed from TNA quotes.
+2024-10-10T14:05:31.844Z [INFO]: Position added: PLTR | Qty: 1000 | Avg Entry: $43.22066
+2024-10-10T14:05:31.852Z [INFO]: Subscribed to PLTR quotes.
+2024-10-10T14:06:16.675Z [INFO]: Stop condition met for PLTR. Initiating market order to close position.
+2024-10-10T14:06:16.678Z [INFO]: Closing position with market order: {"symbol":"PLTR","qty":"1000","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-d8fb67e26e718736"}
+2024-10-10T14:06:17.151Z [INFO]: Market order placed to close position in PLTR. Order ID: 488df14c-fca3-4411-9d93-5c303c5c3578
+2024-10-10T14:06:17.333Z [INFO]: Order 488df14c-fca3-4411-9d93-5c303c5c3578 filled 287 qty for PLTR. Remaining qty: 713
+2024-10-10T14:06:17.776Z [INFO]: Position removed: PLTR
+2024-10-10T14:06:17.780Z [INFO]: Unsubscribed from PLTR quotes.
+2024-10-10T14:06:20.416Z [INFO]: Position added: INTC | Qty: 361 | Avg Entry: $23.27
+2024-10-10T14:06:20.423Z [INFO]: Subscribed to INTC quotes.
+2024-10-10T14:07:32.493Z [INFO]: Position removed: INTC
+2024-10-10T14:07:32.496Z [INFO]: Unsubscribed from INTC quotes.
+2024-10-10T14:08:18.532Z [INFO]: Position added: CELH | Qty: 1000 | Avg Entry: $34.16028
+2024-10-10T14:08:18.536Z [INFO]: Subscribed to CELH quotes.
+2024-10-10T14:08:29.966Z [INFO]: Stop condition met for CELH. Initiating market order to close position.
+2024-10-10T14:08:29.969Z [INFO]: Closing position with market order: {"symbol":"CELH","qty":"1000","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-b59d5df742c9f87b"}
+2024-10-10T14:08:30.151Z [INFO]: Market order placed to close position in CELH. Order ID: 275f109a-6d57-4f77-b08d-54bd66b29946
+2024-10-10T14:08:30.534Z [INFO]: Order 275f109a-6d57-4f77-b08d-54bd66b29946 filled 833 qty for CELH. Remaining qty: 167
+2024-10-10T14:08:31.290Z [INFO]: Order 275f109a-6d57-4f77-b08d-54bd66b29946 filled 988 qty for CELH. Remaining qty: -910
+2024-10-10T14:08:31.295Z [INFO]: Position removed: CELH
+2024-10-10T14:08:31.299Z [INFO]: Unsubscribed from CELH quotes.
+2024-10-10T14:09:31.366Z [INFO]: Polygon WebSocket connected.
+2024-10-10T14:09:31.375Z [INFO]: Started polling for order statuses.
+2024-10-10T14:09:31.548Z [INFO]: Polygon WebSocket connection opened.
+2024-10-10T14:09:31.549Z [INFO]: Polygon WebSocket connected.
+2024-10-10T14:09:31.601Z [INFO]: Polygon WebSocket authenticated.
+2024-10-10T14:31:08.073Z [INFO]: Position added: SRFM | Qty: 200 | Avg Entry: $3.2921
+2024-10-10T14:31:08.082Z [INFO]: Subscribed to SRFM quotes.
+2024-10-10T14:33:42.168Z [INFO]: Position added: ADMA | Qty: 300 | Avg Entry: $17.0608
+2024-10-10T14:33:42.176Z [INFO]: Subscribed to ADMA quotes.
+2024-10-10T14:34:07.631Z [INFO]: Stop condition met for SRFM. Initiating market order to close position.
+2024-10-10T14:34:07.634Z [INFO]: Closing position with market order: {"symbol":"SRFM","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-f49e18a771bff1b5"}
+2024-10-10T14:34:07.875Z [INFO]: Market order placed to close position in SRFM. Order ID: a6c81e78-94f3-4669-892e-5fa585c34c1d
+2024-10-10T14:34:08.562Z [INFO]: Position removed: SRFM
+2024-10-10T14:34:08.565Z [INFO]: Unsubscribed from SRFM quotes.
+2024-10-10T14:35:13.485Z [INFO]: Profit target hit for ADMA: +5.08¢ >= +5¢
+2024-10-10T14:35:13.488Z [INFO]: Attempting to place IOC order: {"symbol":"ADMA","qty":"15","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-4fba5d5b0fc856f6"}
+2024-10-10T14:35:13.714Z [INFO]: Placed IOC order for 15 shares of ADMA. Order ID: 459182a6-675e-4013-ba52-297d72425b1b
+2024-10-10T14:35:16.849Z [INFO]: Profit target hit for ADMA: +10.08¢ >= +10¢
+2024-10-10T14:35:16.852Z [INFO]: Attempting to place IOC order: {"symbol":"ADMA","qty":"28","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-9aa55c903aa8e3b6"}
+2024-10-10T14:35:17.130Z [INFO]: Placed IOC order for 28 shares of ADMA. Order ID: 5fe30670-35fd-4e77-ad13-d4b682da1d16
+2024-10-10T14:35:40.141Z [INFO]: Profit target hit for ADMA: +15.08¢ >= +15¢
+2024-10-10T14:35:40.145Z [INFO]: Attempting to place IOC order: {"symbol":"ADMA","qty":"25","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-e665dbc77a37cd56"}
+2024-10-10T14:35:41.285Z [INFO]: Placed IOC order for 25 shares of ADMA. Order ID: def60442-7e9a-4920-b621-5355867fa4de
+2024-10-10T14:35:41.990Z [INFO]: Profit target hit for ADMA: +22.08¢ >= +20¢
+2024-10-10T14:35:41.993Z [INFO]: Attempting to place IOC order: {"symbol":"ADMA","qty":"23","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-4e67f794e7a66f53"}
+2024-10-10T14:35:42.318Z [INFO]: Placed IOC order for 23 shares of ADMA. Order ID: 2ba96ff0-679e-453c-b2c7-2caa22877bad
+2024-10-10T14:36:05.295Z [INFO]: Profit target hit for ADMA: +30.08¢ >= +30¢
+2024-10-10T14:36:05.298Z [INFO]: Attempting to place IOC order: {"symbol":"ADMA","qty":"20","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-8d33d75c8f27af96"}
+2024-10-10T14:36:05.921Z [INFO]: Placed IOC order for 20 shares of ADMA. Order ID: 859b3de6-cbbd-4fb6-a11f-ad4e5b80de51
+2024-10-10T14:37:20.743Z [INFO]: Position removed: ADMA
+2024-10-10T14:37:20.747Z [INFO]: Unsubscribed from ADMA quotes.
+2024-10-10T14:41:40.768Z [INFO]: Position added: SRFM | Qty: 300 | Avg Entry: $3.2974
+2024-10-10T14:41:40.777Z [INFO]: Subscribed to SRFM quotes.
+2024-10-10T14:41:57.158Z [INFO]: Profit target hit for SRFM: +5.26¢ >= +5¢
+2024-10-10T14:41:57.161Z [INFO]: Attempting to place IOC order: {"symbol":"SRFM","qty":"15","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7d36eac374adbcd3"}
+2024-10-10T14:41:57.375Z [INFO]: Placed IOC order for 15 shares of SRFM. Order ID: 9eba902f-8c84-40cd-9346-6168de0e4442
+2024-10-10T14:42:33.979Z [INFO]: Profit target hit for SRFM: +10.26¢ >= +10¢
+2024-10-10T14:42:33.982Z [INFO]: Attempting to place IOC order: {"symbol":"SRFM","qty":"28","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-39372c5cdda8acd3"}
+2024-10-10T14:42:34.160Z [INFO]: Placed IOC order for 28 shares of SRFM. Order ID: 4c57f8c3-ed88-4c83-b3ff-56c9b4a6e7f4
+2024-10-10T14:42:58.840Z [INFO]: Position removed: SRFM
+2024-10-10T14:42:58.849Z [INFO]: Unsubscribed from SRFM quotes.
