@@ -16,28 +16,27 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   orderSettings: {
-    stopLossCents: -20, // Slightly wider stop to handle small-cap volatility
+    stopLossCents: -30, // Slightly wider stop to handle small-cap volatility
     limitOffsetCents: 3, // Keep this tight for momentum trades
     profitTargets: [
-      { targetCents: 5, percentToClose: 5 },
-      { targetCents: 10, percentToClose: 50 }, // Early scaling out to secure some gains
-      { targetCents: 15, percentToClose: 20 },
-      { targetCents: 20, percentToClose: 50 },
-      { targetCents: 30, percentToClose: 10 },
+      { targetCents: 10, percentToClose: 10 }, // Early scaling out to pad profit in case of a false breakout
+      { targetCents: 20, percentToClose: 10 },
+      { targetCents: 30, percentToClose: 30 },
       { targetCents: 50, percentToClose: 50 },
-      { targetCents: 75, percentToClose: 100 },
+      { targetCents: 70, percentToClose: 50 },
+      { targetCents: 90, percentToClose: 100 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -20 }, // Initial stop: 20 cents below entry
-      { profitTargetsHit: 1, stopCents: -10 }, // After first target, tighten stop to 10 cents
-      { profitTargetsHit: 3, stopCents: 0 }, // Breakeven stop after 3 targets hit
-      { profitTargetsHit: 6, stopCents: 20 }, // Stop moves 20 cents above entry after 5 targets hit
-      { profitTargetsHit: 7, stopCents: 50 }, // Lock in significant profits if price continues running
-      { profitTargetsHit: 8, stopCents: 70 }, // Lock in significant profits if price continues running
+      { profitTargetsHit: 0, stopCents: -30 }, // Initial stop: 30 cents below entry
+      { profitTargetsHit: 1, stopCents: -15 }, // After first target, tighten stop to 15 cents
+      { profitTargetsHit: 2, stopCents: 0 }, // Breakeven stop at 20 cents of profit
+      { profitTargetsHit: 4, stopCents: 20 },
+      { profitTargetsHit: 5, stopCents: 40 },
     ],
     pyramidLevels: [
-      { addInCents: 25, percentToAdd: 30, offsetCents: 4 },
-      { addInCents: 40, percentToAdd: 20, offsetCents: 4 },
+      { addInCents: 25, percentToAdd: 30, offsetCents: 3 },
+      { addInCents: 35, percentToAdd: 20, offsetCents: 3 },
+      { addInCents: 45, percentToAdd: 10, offsetCents: 3 },
     ],
   },
   pollingIntervals: {
