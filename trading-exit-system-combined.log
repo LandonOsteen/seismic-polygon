@@ -189,3 +189,17 @@
 2024-10-10T14:42:34.160Z [INFO]: Placed IOC order for 28 shares of SRFM. Order ID: 4c57f8c3-ed88-4c83-b3ff-56c9b4a6e7f4
 2024-10-10T14:42:58.840Z [INFO]: Position removed: SRFM
 2024-10-10T14:42:58.849Z [INFO]: Unsubscribed from SRFM quotes.
+2024-10-11T18:29:48.007Z [INFO]: Polygon WebSocket connected.
+2024-10-11T18:29:48.012Z [INFO]: Started polling for order statuses.
+2024-10-11T18:29:48.190Z [INFO]: Polygon WebSocket connection opened.
+2024-10-11T18:29:48.191Z [INFO]: Polygon WebSocket connected.
+2024-10-11T18:29:48.252Z [INFO]: Polygon WebSocket authenticated.
+2024-10-11T18:29:48.515Z [INFO]: Position added: TWG | Qty: 500 | Avg Entry: $6.35
+2024-10-11T18:29:48.520Z [INFO]: Subscribed to TWG quotes.
+2024-10-11T18:32:31.360Z [INFO]: Stop condition met for TWG. Initiating market order to close position.
+2024-10-11T18:32:31.363Z [INFO]: Closing position with market order: {"symbol":"TWG","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-baa0b42d87302e7e"}
+2024-10-11T18:32:32.245Z [INFO]: Market order placed to close position in TWG. Order ID: 39337e71-eda7-49b2-beb2-3fca95f9c569
+2024-10-11T18:32:32.889Z [INFO]: Order 39337e71-eda7-49b2-beb2-3fca95f9c569 filled 450 qty for TWG. Remaining qty: 46
+2024-10-11T18:32:33.314Z [INFO]: Order 39337e71-eda7-49b2-beb2-3fca95f9c569 filled 450 qty for TWG. Remaining qty: -404
+2024-10-11T18:32:33.323Z [INFO]: Position removed: TWG
+2024-10-11T18:32:33.330Z [INFO]: Unsubscribed from TWG quotes.

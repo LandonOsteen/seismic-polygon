@@ -20,23 +20,22 @@ module.exports = {
     limitOffsetCents: 3, // Keep this tight for momentum trades
     profitTargets: [
       { targetCents: 10, percentToClose: 10 }, // Early scaling out to pad profit in case of a false breakout
-      { targetCents: 20, percentToClose: 10 },
+      { targetCents: 20, percentToClose: 50 },
       { targetCents: 30, percentToClose: 30 },
       { targetCents: 50, percentToClose: 50 },
-      { targetCents: 70, percentToClose: 50 },
+      { targetCents: 70, percentToClose: 30 },
       { targetCents: 90, percentToClose: 100 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -30 }, // Initial stop: 30 cents below entry
-      { profitTargetsHit: 1, stopCents: -15 }, // After first target, tighten stop to 15 cents
+      { profitTargetsHit: 0, stopCents: -20 }, // Initial stop: 20 cents below entry
+      { profitTargetsHit: 1, stopCents: -15 }, // After first target, tighten stop to 10 cents
       { profitTargetsHit: 2, stopCents: 0 }, // Breakeven stop at 20 cents of profit
       { profitTargetsHit: 4, stopCents: 20 },
       { profitTargetsHit: 5, stopCents: 40 },
     ],
     pyramidLevels: [
-      { addInCents: 25, percentToAdd: 30, offsetCents: 3 },
-      { addInCents: 35, percentToAdd: 20, offsetCents: 3 },
-      { addInCents: 45, percentToAdd: 10, offsetCents: 3 },
+      { addInCents: 25, percentToAdd: 20, offsetCents: 3 },
+      { addInCents: 35, percentToAdd: 10, offsetCents: 3 },
     ],
   },
   pollingIntervals: {
