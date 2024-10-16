@@ -203,3 +203,374 @@
 2024-10-11T18:32:33.314Z [INFO]: Order 39337e71-eda7-49b2-beb2-3fca95f9c569 filled 450 qty for TWG. Remaining qty: -404
 2024-10-11T18:32:33.323Z [INFO]: Position removed: TWG
 2024-10-11T18:32:33.330Z [INFO]: Unsubscribed from TWG quotes.
+2024-10-14T13:12:08.941Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:12:08.953Z [INFO]: Started polling for order statuses.
+2024-10-14T13:12:09.145Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T13:12:09.146Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:12:09.199Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T13:29:09.573Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:29:09.582Z [INFO]: Started polling for order statuses.
+2024-10-14T13:29:09.777Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T13:29:09.778Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:29:09.828Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T13:40:36.982Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:40:36.986Z [INFO]: Started polling for order statuses.
+2024-10-14T13:40:37.159Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T13:40:37.160Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:40:37.209Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T13:40:37.221Z [INFO]: Position added: HIMS | Qty: 500 | Avg Entry: $20.7382
+2024-10-14T13:40:37.225Z [INFO]: Subscribed to HIMS quotes.
+2024-10-14T13:40:41.674Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:40:41.682Z [INFO]: Started polling for order statuses.
+2024-10-14T13:40:41.842Z [INFO]: Position added: HIMS | Qty: 500 | Avg Entry: $20.7382
+2024-10-14T13:40:41.866Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T13:40:41.868Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:40:41.913Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T13:40:46.105Z [INFO]: Stop condition met for HIMS. Initiating market order to close position.
+2024-10-14T13:40:46.112Z [INFO]: Closing position with market order: {"symbol":"HIMS","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-bd3ba2803655a278"}
+2024-10-14T13:40:46.562Z [INFO]: Market order placed to close position in HIMS. Order ID: 3ffdbe9f-afa4-406d-9599-68993b059d0f
+2024-10-14T13:40:46.859Z [INFO]: Position removed: HIMS
+2024-10-14T13:40:46.865Z [INFO]: Unsubscribed from HIMS quotes.
+2024-10-14T13:43:17.887Z [INFO]: Position added: DJT | Qty: 500 | Avg Entry: $27.5785
+2024-10-14T13:43:17.895Z [INFO]: Subscribed to DJT quotes.
+2024-10-14T13:43:35.827Z [INFO]: Stop condition met for DJT. Initiating market order to close position.
+2024-10-14T13:43:35.830Z [INFO]: Closing position with market order: {"symbol":"DJT","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-c5748e963f4cb37d"}
+2024-10-14T13:43:36.156Z [INFO]: Market order placed to close position in DJT. Order ID: ba56c5ce-769c-4370-9fef-1aaadc11cd50
+2024-10-14T13:43:36.518Z [INFO]: Position removed: DJT
+2024-10-14T13:43:36.525Z [INFO]: Unsubscribed from DJT quotes.
+2024-10-14T13:44:56.173Z [INFO]: Position added: XPON | Qty: 500 | Avg Entry: $4.14
+2024-10-14T13:44:56.180Z [INFO]: Subscribed to XPON quotes.
+2024-10-14T13:45:24.552Z [INFO]: Stop condition met for XPON. Initiating market order to close position.
+2024-10-14T13:45:24.555Z [INFO]: Closing position with market order: {"symbol":"XPON","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-dccb473d8f412a27"}
+2024-10-14T13:45:24.876Z [INFO]: Market order placed to close position in XPON. Order ID: 65193e54-d40d-4ef0-ad16-8d5c9c3c0973
+2024-10-14T13:45:25.235Z [INFO]: Position removed: XPON
+2024-10-14T13:45:25.244Z [INFO]: Unsubscribed from XPON quotes.
+2024-10-14T13:47:08.265Z [INFO]: Position added: CELH | Qty: 500 | Avg Entry: $31.9789
+2024-10-14T13:47:08.274Z [INFO]: Subscribed to CELH quotes.
+2024-10-14T13:48:49.312Z [INFO]: Profit target hit for CELH: +10.05¢ >= +10¢
+2024-10-14T13:48:49.315Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-9d0b106d3afdd35f"}
+2024-10-14T13:48:49.564Z [INFO]: Placed IOC order for 100 shares of CELH. Order ID: 14572654-0b68-4a7f-a7dd-5045b186c742
+2024-10-14T13:48:52.313Z [INFO]: Position added: SMCI | Qty: 500 | Avg Entry: $48.7104
+2024-10-14T13:48:52.321Z [INFO]: Subscribed to SMCI quotes.
+2024-10-14T13:48:56.562Z [INFO]: Stop condition met for SMCI. Initiating market order to close position.
+2024-10-14T13:48:56.565Z [INFO]: Closing position with market order: {"symbol":"SMCI","qty":"500","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-50bd1cbbfb60099f"}
+2024-10-14T13:48:59.078Z [INFO]: Market order placed to close position in SMCI. Order ID: f9fb4bda-9527-424a-ac20-45833ea69742
+2024-10-14T13:48:59.420Z [INFO]: Position removed: SMCI
+2024-10-14T13:48:59.424Z [INFO]: Unsubscribed from SMCI quotes.
+2024-10-14T13:49:54.659Z [INFO]: Position added: SMCI | Qty: 500 | Avg Entry: $48.8369
+2024-10-14T13:49:54.663Z [INFO]: Subscribed to SMCI quotes.
+2024-10-14T13:50:05.761Z [INFO]: Stop condition met for SMCI. Initiating market order to close position.
+2024-10-14T13:50:05.764Z [INFO]: Closing position with market order: {"symbol":"SMCI","qty":"500","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-d2c60b04f800b293"}
+2024-10-14T13:50:06.845Z [INFO]: Market order placed to close position in SMCI. Order ID: 4e08f4aa-f319-4e7f-a8c9-dc460a28ab9c
+2024-10-14T13:50:07.324Z [INFO]: Position removed: SMCI
+2024-10-14T13:50:07.328Z [INFO]: Unsubscribed from SMCI quotes.
+2024-10-14T13:50:38.811Z [INFO]: Position added: SMCI | Qty: 500 | Avg Entry: $49.3801
+2024-10-14T13:50:38.821Z [INFO]: Subscribed to SMCI quotes.
+2024-10-14T13:57:15.962Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:57:15.970Z [INFO]: Started polling for order statuses.
+2024-10-14T13:57:16.190Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T13:57:16.191Z [INFO]: Polygon WebSocket connected.
+2024-10-14T13:57:16.201Z [INFO]: Position added: CELH | Qty: 1800 | Avg Entry: $32.059725
+2024-10-14T13:57:16.210Z [INFO]: Subscribed to CELH quotes.
+2024-10-14T13:57:16.240Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T13:58:47.659Z [INFO]: Profit target hit for CELH: +10.03¢ >= +10¢
+2024-10-14T13:58:47.663Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"90","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-f80a81aa0f17b230"}
+2024-10-14T13:58:47.946Z [INFO]: Placed IOC order for 90 shares of CELH. Order ID: c84a7da8-58c2-4949-a315-67a8a67aa755
+2024-10-14T14:01:46.942Z [INFO]: Profit target hit for CELH: +20.97¢ >= +20¢
+2024-10-14T14:01:46.946Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"513","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-55bc2ec400322c2d"}
+2024-10-14T14:01:47.099Z [INFO]: Placed IOC order for 513 shares of CELH. Order ID: 719c3c3b-9674-496f-844d-857fdffa841e
+2024-10-14T14:01:53.956Z [INFO]: Attempting to place pyramid order: {"symbol":"CELH","qty":"239","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"32.44","client_order_id":"PYRAMID-d8bc52ea105caa50"}
+2024-10-14T14:01:54.119Z [INFO]: Placed pyramid order for 239 shares of CELH. Order ID: 441f7ef2-d5fa-4edf-acd7-c286196d8f1b
+2024-10-14T14:36:55.645Z [INFO]: Polygon WebSocket connected.
+2024-10-14T14:36:55.654Z [INFO]: Started polling for order statuses.
+2024-10-14T14:36:55.842Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T14:36:55.843Z [INFO]: Polygon WebSocket connected.
+2024-10-14T14:36:55.917Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T15:05:44.657Z [INFO]: Polygon WebSocket connected.
+2024-10-14T15:05:44.669Z [INFO]: Started polling for order statuses.
+2024-10-14T15:05:44.847Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T15:05:44.848Z [INFO]: Polygon WebSocket connected.
+2024-10-14T15:05:44.903Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T15:05:44.905Z [INFO]: Position added: AFRM | Qty: 500 | Avg Entry: $47.8261
+2024-10-14T15:05:44.916Z [INFO]: Subscribed to AFRM quotes.
+2024-10-14T15:07:12.417Z [INFO]: Profit target hit for AFRM: +10.39¢ >= +10¢
+2024-10-14T15:07:12.422Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"50","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0e4fe946757a985c"}
+2024-10-14T15:07:12.672Z [INFO]: Placed IOC order for 50 shares of AFRM. Order ID: ad4c9528-3803-4c78-bc7b-ecc0ad37ce8b
+2024-10-14T15:07:43.567Z [INFO]: Profit target hit for AFRM: +20.39¢ >= +20¢
+2024-10-14T15:07:43.571Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"135","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a440564c68ed2a12"}
+2024-10-14T15:07:43.731Z [INFO]: Attempting to place pyramid order: {"symbol":"AFRM","qty":"90","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"48.13","client_order_id":"PYRAMID-01c0cee5e858f579"}
+2024-10-14T15:07:44.507Z [INFO]: Placed IOC order for 135 shares of AFRM. Order ID: 3c329879-4a38-4324-9698-e6040ae8d272
+2024-10-14T15:07:44.862Z [INFO]: Placed pyramid order for 90 shares of AFRM. Order ID: 5f03c8de-ea9b-4199-9114-3cf4f2ece416
+2024-10-14T15:08:46.264Z [INFO]: Profit target hit for AFRM: +30.64¢ >= +30¢
+2024-10-14T15:08:46.269Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"121","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-5038834cdabb12f6"}
+2024-10-14T15:08:46.476Z [INFO]: Placed IOC order for 121 shares of AFRM. Order ID: 3f037eed-9e97-4bfa-a1d1-4e6d867d5326
+2024-10-14T15:10:01.947Z [INFO]: Attempting to place pyramid order: {"symbol":"AFRM","qty":"28","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"48.29","client_order_id":"PYRAMID-daf07e877ba28359"}
+2024-10-14T15:10:02.145Z [INFO]: Placed pyramid order for 28 shares of AFRM. Order ID: d3afb587-980d-4b95-b0be-2a3b9edb04e2
+2024-10-14T15:10:16.531Z [INFO]: Profit target hit for AFRM: +50.17¢ >= +50¢
+2024-10-14T15:10:16.535Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"156","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a75758f048e495b2"}
+2024-10-14T15:10:16.802Z [INFO]: Placed IOC order for 156 shares of AFRM. Order ID: 1b8213d5-4a39-42d1-ae14-a65529b10925
+2024-10-14T15:10:49.374Z [INFO]: Profit target hit for AFRM: +70.17¢ >= +70¢
+2024-10-14T15:10:49.377Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"46","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-b0c4747de3509938"}
+2024-10-14T15:10:49.791Z [INFO]: Placed IOC order for 46 shares of AFRM. Order ID: 7a6eac15-8aa1-41e2-a70c-496481207456
+2024-10-14T15:11:15.491Z [INFO]: Position removed: AFRM
+2024-10-14T15:11:15.499Z [INFO]: Unsubscribed from AFRM quotes.
+2024-10-14T15:12:39.481Z [INFO]: Polygon WebSocket connected.
+2024-10-14T15:12:39.490Z [INFO]: Started polling for order statuses.
+2024-10-14T15:12:39.663Z [INFO]: Polygon WebSocket connection opened.
+2024-10-14T15:12:39.663Z [INFO]: Polygon WebSocket connected.
+2024-10-14T15:12:39.711Z [INFO]: Polygon WebSocket authenticated.
+2024-10-14T15:13:31.636Z [INFO]: Position added: AFRM | Qty: 500 | Avg Entry: $48.8846
+2024-10-14T15:13:31.643Z [INFO]: Subscribed to AFRM quotes.
+2024-10-14T15:17:15.647Z [INFO]: Profit target hit for AFRM: +10.46¢ >= +10¢
+2024-10-14T15:17:15.651Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-5c6c92afb7f6766f"}
+2024-10-14T15:17:15.892Z [INFO]: Placed IOC order for 100 shares of AFRM. Order ID: 7f9391ab-575b-4822-aae4-726fdd6b838a
+2024-10-14T15:19:41.839Z [INFO]: Stop condition met for AFRM. Initiating market order to close position.
+2024-10-14T15:19:41.846Z [INFO]: Closing position with market order: {"symbol":"AFRM","qty":"900","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-649168856e100a5a"}
+2024-10-14T15:19:42.055Z [INFO]: Market order placed to close position in AFRM. Order ID: ae486feb-bb49-43dd-af70-23a3863f3e42
+2024-10-14T15:19:42.637Z [INFO]: Position removed: AFRM
+2024-10-14T15:19:42.643Z [INFO]: Unsubscribed from AFRM quotes.
+2024-10-14T15:20:54.182Z [INFO]: Position added: AFRM | Qty: 500 | Avg Entry: $49.025
+2024-10-14T15:20:54.188Z [INFO]: Subscribed to AFRM quotes.
+2024-10-14T15:21:05.030Z [INFO]: Profit target hit for AFRM: +10.50¢ >= +10¢
+2024-10-14T15:21:05.033Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"50","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-7ccfa240cd15af57"}
+2024-10-14T15:21:05.254Z [INFO]: Placed IOC order for 50 shares of AFRM. Order ID: 28c6b6da-3b97-4051-a16b-51c4f8e877c3
+2024-10-14T15:22:12.054Z [INFO]: Profit target hit for AFRM: +20.84¢ >= +20¢
+2024-10-14T15:22:12.057Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"270","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-f832157c1156a716"}
+2024-10-14T15:22:12.256Z [INFO]: Placed IOC order for 270 shares of AFRM. Order ID: d4eec85d-3935-4353-b96c-93bcbbccb4f5
+2024-10-14T15:22:15.057Z [INFO]: Attempting to place pyramid order: {"symbol":"AFRM","qty":"126","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"48.68","client_order_id":"PYRAMID-bf77b16bad73d3be"}
+2024-10-14T15:22:15.243Z [INFO]: Placed pyramid order for 126 shares of AFRM. Order ID: 4e65097e-4193-4b25-8ea0-b6d0e629332d
+2024-10-14T15:24:06.033Z [INFO]: Stop condition met for AFRM. Initiating market order to close position.
+2024-10-14T15:24:06.036Z [INFO]: Closing position with market order: {"symbol":"AFRM","qty":"756","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-dbec1a8f218a3853"}
+2024-10-14T15:24:06.362Z [INFO]: Market order placed to close position in AFRM. Order ID: b168a333-68a3-42fe-aa1e-c3da50957eba
+2024-10-14T15:24:06.692Z [INFO]: Position removed: AFRM
+2024-10-14T15:24:06.700Z [INFO]: Unsubscribed from AFRM quotes.
+2024-10-14T16:42:41.573Z [INFO]: Position added: CELH | Qty: 500 | Avg Entry: $34.0686
+2024-10-14T16:42:41.581Z [INFO]: Subscribed to CELH quotes.
+2024-10-14T17:00:04.474Z [INFO]: Profit target hit for CELH: +10.75¢ >= +10¢
+2024-10-14T17:00:04.477Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"150","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-02ea1d1ffa116c8f"}
+2024-10-14T17:00:04.653Z [INFO]: Placed IOC order for 150 shares of CELH. Order ID: 91d62832-43b8-4c8c-b515-e539af365d5e
+2024-10-14T17:00:53.356Z [INFO]: Position removed: CELH
+2024-10-14T17:00:53.360Z [INFO]: Unsubscribed from CELH quotes.
+2024-10-15T13:17:34.713Z [INFO]: Polygon WebSocket connected.
+2024-10-15T13:17:34.717Z [INFO]: Started polling for order statuses.
+2024-10-15T13:17:34.915Z [INFO]: Polygon WebSocket connection opened.
+2024-10-15T13:17:34.916Z [INFO]: Polygon WebSocket connected.
+2024-10-15T13:17:34.982Z [INFO]: Polygon WebSocket authenticated.
+2024-10-15T13:30:23.208Z [INFO]: Position added: CCL | Qty: 500 | Avg Entry: $21.0969
+2024-10-15T13:30:23.213Z [INFO]: Subscribed to CCL quotes.
+2024-10-15T13:30:25.209Z [INFO]: Position added: CSCO | Qty: 500 | Avg Entry: $54.4932
+2024-10-15T13:30:25.213Z [INFO]: Subscribed to CSCO quotes.
+2024-10-15T13:31:01.378Z [INFO]: Position added: SGD | Qty: 500 | Avg Entry: $6.37
+2024-10-15T13:31:01.382Z [INFO]: Subscribed to SGD quotes.
+2024-10-15T13:31:13.497Z [INFO]: Profit target hit for CCL: +10.31¢ >= +10¢
+2024-10-15T13:31:13.500Z [INFO]: Attempting to place IOC order: {"symbol":"CCL","qty":"50","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-5872f875c139827b"}
+2024-10-15T13:31:14.017Z [INFO]: Placed IOC order for 50 shares of CCL. Order ID: 6f95f99b-6211-45a2-bf78-f056a0438ee6
+2024-10-15T13:31:35.892Z [INFO]: Profit target hit for SGD: +10.00¢ >= +10¢
+2024-10-15T13:31:35.894Z [INFO]: Attempting to place IOC order: {"symbol":"SGD","qty":"50","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-47ecb9b54dbaf581"}
+2024-10-15T13:31:36.402Z [INFO]: Placed IOC order for 50 shares of SGD. Order ID: 15c7e480-8679-4033-bbdd-94aed3755fd6
+2024-10-15T13:31:41.698Z [INFO]: Position added: AES | Qty: 500 | Avg Entry: $18.0344
+2024-10-15T13:31:41.700Z [INFO]: Subscribed to AES quotes.
+2024-10-15T13:31:43.978Z [INFO]: Profit target hit for CCL: +20.31¢ >= +20¢
+2024-10-15T13:31:43.979Z [INFO]: Attempting to place IOC order: {"symbol":"CCL","qty":"135","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-ba43f29ba08c38c4"}
+2024-10-15T13:31:44.574Z [INFO]: Placed IOC order for 135 shares of CCL. Order ID: fcdd6fe0-7d91-4e4a-8396-44239215d4cd
+2024-10-15T13:31:48.242Z [INFO]: Attempting to place pyramid order: {"symbol":"CCL","qty":"63","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"21.38","client_order_id":"PYRAMID-7c8e3cfa23903b0d"}
+2024-10-15T13:31:48.475Z [INFO]: Placed pyramid order for 63 shares of CCL. Order ID: 507b5066-b3bb-423c-8d15-c9ba9c570593
+2024-10-15T13:31:48.808Z [INFO]: Position added: WBA | Qty: 500 | Avg Entry: $10.089
+2024-10-15T13:31:48.813Z [INFO]: Subscribed to WBA quotes.
+2024-10-15T13:32:02.700Z [INFO]: Stop condition met for SGD. Initiating market order to close position.
+2024-10-15T13:32:02.702Z [INFO]: Closing position with market order: {"symbol":"SGD","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-aabed84380149002"}
+2024-10-15T13:32:02.877Z [INFO]: Market order placed to close position in SGD. Order ID: 66bc0c9f-2034-4bd0-92fb-4d2c839a19da
+2024-10-15T13:32:03.541Z [INFO]: Position removed: SGD
+2024-10-15T13:32:03.543Z [INFO]: Unsubscribed from SGD quotes.
+2024-10-15T13:32:04.119Z [INFO]: Profit target hit for WBA: +10.10¢ >= +10¢
+2024-10-15T13:32:04.120Z [INFO]: Attempting to place IOC order: {"symbol":"WBA","qty":"50","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c89d96bdad930eb2"}
+2024-10-15T13:32:04.995Z [INFO]: Placed IOC order for 50 shares of WBA. Order ID: e079c43a-0348-4f5b-84f4-f3f577c3f031
+2024-10-15T13:32:11.852Z [INFO]: Position added: IMRX | Qty: 500 | Avg Entry: $2.4778
+2024-10-15T13:32:11.853Z [INFO]: Subscribed to IMRX quotes.
+2024-10-15T13:32:20.452Z [INFO]: Profit target hit for WBA: +20.10¢ >= +20¢
+2024-10-15T13:32:20.454Z [INFO]: Attempting to place IOC order: {"symbol":"WBA","qty":"135","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-0691ab20633377bb"}
+2024-10-15T13:32:20.667Z [INFO]: Placed IOC order for 135 shares of WBA. Order ID: 3b3094df-6511-4b68-b624-15433046aa76
+2024-10-15T13:32:38.696Z [INFO]: Attempting to place pyramid order: {"symbol":"WBA","qty":"63","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"10.38","client_order_id":"PYRAMID-4d9fad20e193b317"}
+2024-10-15T13:32:39.021Z [INFO]: Placed pyramid order for 63 shares of WBA. Order ID: f8af6453-fcce-44c1-bbf0-8983354a3287
+2024-10-15T13:32:57.902Z [INFO]: Position removed: CSCO
+2024-10-15T13:32:57.904Z [INFO]: Unsubscribed from CSCO quotes.
+2024-10-15T13:33:34.341Z [INFO]: Position removed: CCL
+2024-10-15T13:33:34.347Z [INFO]: Unsubscribed from CCL quotes.
+2024-10-15T13:33:37.254Z [INFO]: Stop condition met for AES. Initiating market order to close position.
+2024-10-15T13:33:37.255Z [INFO]: Closing position with market order: {"symbol":"AES","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-2c4551a864106990"}
+2024-10-15T13:33:37.490Z [INFO]: Market order placed to close position in AES. Order ID: 6ab852e8-0f6c-490c-8665-f9b864d25ffc
+2024-10-15T13:33:37.773Z [INFO]: Position removed: AES
+2024-10-15T13:33:37.775Z [INFO]: Unsubscribed from AES quotes.
+2024-10-15T13:34:22.980Z [INFO]: Stop condition met for WBA. Initiating market order to close position.
+2024-10-15T13:34:22.981Z [INFO]: Closing position with market order: {"symbol":"WBA","qty":"378","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-cc203b6acfd1c9be"}
+2024-10-15T13:34:23.231Z [INFO]: Market order placed to close position in WBA. Order ID: a06e6c71-48c8-4ac5-8e0a-537129871507
+2024-10-15T13:34:23.542Z [INFO]: Position removed: WBA
+2024-10-15T13:34:23.543Z [INFO]: Unsubscribed from WBA quotes.
+2024-10-15T13:36:48.302Z [INFO]: Position added: SGD | Qty: 500 | Avg Entry: $6.0489
+2024-10-15T13:36:48.307Z [INFO]: Subscribed to SGD quotes.
+2024-10-15T13:37:06.271Z [INFO]: Profit target hit for SGD: +10.11¢ >= +10¢
+2024-10-15T13:37:06.275Z [INFO]: Attempting to place IOC order: {"symbol":"SGD","qty":"50","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-e5dd49ef95b1e5ce"}
+2024-10-15T13:37:06.735Z [INFO]: Placed IOC order for 50 shares of SGD. Order ID: 93865f6b-d9db-4dd4-8308-47fd1d31509a
+2024-10-15T13:37:11.611Z [INFO]: Stop condition met for IMRX. Initiating market order to close position.
+2024-10-15T13:37:11.612Z [INFO]: Closing position with market order: {"symbol":"IMRX","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-197a11d5c4da4e33"}
+2024-10-15T13:37:11.830Z [INFO]: Market order placed to close position in IMRX. Order ID: 456a2384-3f05-4c64-b026-9fdf7876ea56
+2024-10-15T13:37:12.316Z [INFO]: Stop condition met for SGD. Initiating market order to close position.
+2024-10-15T13:37:12.318Z [INFO]: Closing position with market order: {"symbol":"SGD","qty":"950","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-d3c614df3ce2ad0d"}
+2024-10-15T13:37:12.530Z [INFO]: Position removed: IMRX
+2024-10-15T13:37:12.534Z [INFO]: Unsubscribed from IMRX quotes.
+2024-10-15T13:37:12.881Z [INFO]: Market order placed to close position in SGD. Order ID: 5457dd1f-6a92-409c-a59f-ea7a05d5b531
+2024-10-15T13:37:13.571Z [INFO]: Position removed: SGD
+2024-10-15T13:37:13.575Z [INFO]: Unsubscribed from SGD quotes.
+2024-10-15T13:41:26.443Z [INFO]: Polygon WebSocket connected.
+2024-10-15T13:41:26.447Z [INFO]: Started polling for order statuses.
+2024-10-15T13:41:26.632Z [INFO]: Polygon WebSocket connection opened.
+2024-10-15T13:41:26.633Z [INFO]: Polygon WebSocket connected.
+2024-10-15T13:41:26.686Z [INFO]: Polygon WebSocket authenticated.
+2024-10-15T13:52:12.935Z [INFO]: Position added: PLTR | Qty: 500 | Avg Entry: $42.7915
+2024-10-15T13:52:12.941Z [INFO]: Subscribed to PLTR quotes.
+2024-10-15T13:54:22.923Z [INFO]: Position removed: PLTR
+2024-10-15T13:54:22.929Z [INFO]: Unsubscribed from PLTR quotes.
+2024-10-15T13:59:09.053Z [INFO]: Position added: BMY | Qty: 500 | Avg Entry: $52.755
+2024-10-15T13:59:09.057Z [INFO]: Subscribed to BMY quotes.
+2024-10-15T14:02:59.336Z [INFO]: Position added: PHUN | Qty: 500 | Avg Entry: $5.802
+2024-10-15T14:02:59.343Z [INFO]: Subscribed to PHUN quotes.
+2024-10-15T14:03:05.866Z [INFO]: Stop condition met for PHUN. Initiating market order to close position.
+2024-10-15T14:03:05.868Z [INFO]: Closing position with market order: {"symbol":"PHUN","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-486cd5000db0f1cc"}
+2024-10-15T14:03:06.072Z [INFO]: Market order placed to close position in PHUN. Order ID: b90ec35e-7acd-4f4e-a6c0-c523b82ce4e2
+2024-10-15T14:03:06.854Z [INFO]: Position removed: PHUN
+2024-10-15T14:03:06.855Z [INFO]: Unsubscribed from PHUN quotes.
+2024-10-15T14:07:29.348Z [INFO]: Position removed: BMY
+2024-10-15T14:07:29.349Z [INFO]: Unsubscribed from BMY quotes.
+2024-10-15T14:08:47.395Z [INFO]: Position added: BMY | Qty: 500 | Avg Entry: $52.8201
+2024-10-15T14:08:47.400Z [INFO]: Subscribed to BMY quotes.
+2024-10-15T14:13:15.638Z [INFO]: Profit target hit for BMY: +10.27¢ >= +10¢
+2024-10-15T14:13:15.640Z [INFO]: Attempting to place IOC order: {"symbol":"BMY","qty":"150","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-6cb6dae24b1fde76"}
+2024-10-15T14:13:15.970Z [INFO]: Placed IOC order for 150 shares of BMY. Order ID: 5e7eb835-9bcc-4fde-a5c1-8b45713369d3
+2024-10-15T14:14:21.655Z [INFO]: Position removed: BMY
+2024-10-15T14:14:21.659Z [INFO]: Unsubscribed from BMY quotes.
+2024-10-15T14:15:01.667Z [INFO]: Position added: AFRM | Qty: 500 | Avg Entry: $48.7786
+2024-10-15T14:15:01.673Z [INFO]: Subscribed to AFRM quotes.
+2024-10-15T14:15:29.338Z [INFO]: Profit target hit for AFRM: +10.14¢ >= +10¢
+2024-10-15T14:15:29.340Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"50","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-8342c1f07661162f"}
+2024-10-15T14:15:29.600Z [INFO]: Placed IOC order for 50 shares of AFRM. Order ID: 59c60e09-c34d-4fb6-9e79-6786d41ff86c
+2024-10-15T14:15:33.826Z [INFO]: Profit target hit for AFRM: +20.14¢ >= +20¢
+2024-10-15T14:15:33.827Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"135","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-ce4ff3248dfab3e1"}
+2024-10-15T14:15:34.113Z [INFO]: Placed IOC order for 135 shares of AFRM. Order ID: 93c644c2-d00e-43e5-aeec-0a88410068ea
+2024-10-15T14:15:35.319Z [INFO]: Stop condition met for AFRM. Initiating market order to close position.
+2024-10-15T14:15:35.326Z [INFO]: Closing position with market order: {"symbol":"AFRM","qty":"135","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-382af6ab2ddfb987"}
+2024-10-15T14:15:35.519Z [INFO]: Market order placed to close position in AFRM. Order ID: edad86a7-9314-4947-b2c7-9930924b9d84
+2024-10-15T14:15:45.765Z [INFO]: Position removed: AFRM
+2024-10-15T14:15:45.771Z [INFO]: Unsubscribed from AFRM quotes.
+2024-10-15T14:16:11.777Z [INFO]: Position added: AFRM | Qty: 500 | Avg Entry: $48.9149
+2024-10-15T14:16:11.783Z [INFO]: Subscribed to AFRM quotes.
+2024-10-15T14:17:48.733Z [INFO]: Profit target hit for AFRM: +10.29¢ >= +10¢
+2024-10-15T14:17:48.735Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-596f76dce15ab7a5"}
+2024-10-15T14:17:48.911Z [INFO]: Placed IOC order for 100 shares of AFRM. Order ID: e35831cc-d8f1-4e45-beb7-1115761ec16d
+2024-10-15T14:18:13.890Z [INFO]: Profit target hit for AFRM: +20.30¢ >= +20¢
+2024-10-15T14:18:13.891Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"270","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-aea13429ad83db16"}
+2024-10-15T14:18:14.209Z [INFO]: Placed IOC order for 270 shares of AFRM. Order ID: 819a0bda-305b-4eb6-b5c1-2ef2bb205ee9
+2024-10-15T14:18:14.908Z [INFO]: Attempting to place pyramid order: {"symbol":"AFRM","qty":"126","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"48.57","client_order_id":"PYRAMID-04a002fd5075bfc9"}
+2024-10-15T14:18:15.268Z [INFO]: Placed pyramid order for 126 shares of AFRM. Order ID: bdb519d8-56f7-4b6c-a95c-0eb12fcd8fa3
+2024-10-15T14:18:15.911Z [INFO]: Profit target hit for AFRM: +30.30¢ >= +30¢
+2024-10-15T14:18:15.913Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"189","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-2af5d751490c21e6"}
+2024-10-15T14:18:16.315Z [INFO]: Placed IOC order for 189 shares of AFRM. Order ID: 220868a2-0593-4009-befa-8a9b034fac0f
+2024-10-15T14:18:19.194Z [INFO]: Attempting to place pyramid order: {"symbol":"AFRM","qty":"49","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"48.47","client_order_id":"PYRAMID-296cdd7e91a2985c"}
+2024-10-15T14:18:19.559Z [INFO]: Placed pyramid order for 49 shares of AFRM. Order ID: a405c319-0ec1-4cdd-aedb-40a3cad5e971
+2024-10-15T14:18:29.885Z [INFO]: Position removed: AFRM
+2024-10-15T14:18:29.890Z [INFO]: Unsubscribed from AFRM quotes.
+2024-10-15T14:19:43.911Z [INFO]: Position added: PLTR | Qty: 500 | Avg Entry: $42.682
+2024-10-15T14:19:43.916Z [INFO]: Subscribed to PLTR quotes.
+2024-10-15T14:20:24.964Z [INFO]: Profit target hit for PLTR: +10.66¢ >= +10¢
+2024-10-15T14:20:24.965Z [INFO]: Attempting to place IOC order: {"symbol":"PLTR","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-0caf6889ad2e0f7f"}
+2024-10-15T14:20:25.303Z [INFO]: Placed IOC order for 100 shares of PLTR. Order ID: 68cbc00e-3c4f-42cc-b6c0-db2cd53e1295
+2024-10-15T14:26:39.650Z [INFO]: Position removed: PLTR
+2024-10-15T14:26:39.652Z [INFO]: Unsubscribed from PLTR quotes.
+2024-10-15T14:28:51.793Z [INFO]: Position added: DRUG | Qty: 500 | Avg Entry: $6.14834
+2024-10-15T14:28:51.798Z [INFO]: Subscribed to DRUG quotes.
+2024-10-15T14:30:27.850Z [INFO]: Position removed: DRUG
+2024-10-15T14:30:27.856Z [INFO]: Unsubscribed from DRUG quotes.
+2024-10-15T14:31:07.868Z [INFO]: Position added: HOOD | Qty: 500 | Avg Entry: $26.298
+2024-10-15T14:31:07.875Z [INFO]: Subscribed to HOOD quotes.
+2024-10-15T14:39:25.369Z [INFO]: Stop condition met for HOOD. Initiating market order to close position.
+2024-10-15T14:39:25.371Z [INFO]: Closing position with market order: {"symbol":"HOOD","qty":"2000","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-a3c4197940ace9d4"}
+2024-10-15T14:39:25.570Z [INFO]: Market order placed to close position in HOOD. Order ID: 91d68be4-03f1-408a-a99c-f0f544be8e77
+2024-10-15T14:39:25.966Z [INFO]: Position removed: HOOD
+2024-10-15T14:39:25.968Z [INFO]: Unsubscribed from HOOD quotes.
+2024-10-15T14:41:12.921Z [INFO]: Position added: AFRM | Qty: 1000 | Avg Entry: $47.56
+2024-10-15T14:41:12.926Z [INFO]: Subscribed to AFRM quotes.
+2024-10-15T14:41:20.550Z [INFO]: Profit target hit for AFRM: +10.00¢ >= +10¢
+2024-10-15T14:41:20.552Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d566516410a5d289"}
+2024-10-15T14:41:20.765Z [INFO]: Placed IOC order for 100 shares of AFRM. Order ID: 14254a30-da90-4b01-b268-ae29192aabcc
+2024-10-15T14:41:45.100Z [INFO]: Profit target hit for AFRM: +23.00¢ >= +20¢
+2024-10-15T14:41:45.102Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"270","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-74e7858d282832b3"}
+2024-10-15T14:41:45.632Z [INFO]: Placed IOC order for 270 shares of AFRM. Order ID: 83ebf509-ef0a-4905-873c-c4d0281047c4
+2024-10-15T14:41:47.108Z [INFO]: Attempting to place pyramid order: {"symbol":"AFRM","qty":"126","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"47.88","client_order_id":"PYRAMID-1c858e81404c9c7d"}
+2024-10-15T14:41:47.642Z [INFO]: Placed pyramid order for 126 shares of AFRM. Order ID: 46c211dc-4b3d-4721-9494-8eceff2ef803
+2024-10-15T14:42:18.275Z [INFO]: Profit target hit for AFRM: +31.17¢ >= +30¢
+2024-10-15T14:42:18.276Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"226","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-8a2306d33a01b2ae"}
+2024-10-15T14:42:18.554Z [INFO]: Placed IOC order for 226 shares of AFRM. Order ID: 2a7a6519-91ca-4f56-a2c6-cc5cd2f1e991
+2024-10-15T14:42:47.865Z [INFO]: Attempting to place pyramid order: {"symbol":"AFRM","qty":"53","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"48.03","client_order_id":"PYRAMID-c63f9394be804cf8"}
+2024-10-15T14:42:48.024Z [INFO]: Placed pyramid order for 53 shares of AFRM. Order ID: ba6150b5-8fbe-4dd8-bd1b-d73d195fd73b
+2024-10-15T14:43:08.986Z [INFO]: Position removed: AFRM
+2024-10-15T14:43:08.990Z [INFO]: Unsubscribed from AFRM quotes.
+2024-10-15T14:44:39.034Z [INFO]: Position added: AFRM | Qty: 500 | Avg Entry: $47.91
+2024-10-15T14:44:39.040Z [INFO]: Subscribed to AFRM quotes.
+2024-10-15T14:44:42.348Z [INFO]: Profit target hit for AFRM: +10.00¢ >= +10¢
+2024-10-15T14:44:42.352Z [INFO]: Attempting to place IOC order: {"symbol":"AFRM","qty":"50","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-2febbb9817ca73c2"}
+2024-10-15T14:44:42.702Z [INFO]: Placed IOC order for 50 shares of AFRM. Order ID: a87d9109-4664-4db7-98c6-aadc3a4ca721
+2024-10-15T14:45:22.914Z [INFO]: Stop condition met for AFRM. Initiating market order to close position.
+2024-10-15T14:45:22.915Z [INFO]: Closing position with market order: {"symbol":"AFRM","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-84e2f6b5e2a2b074"}
+2024-10-15T14:45:23.110Z [INFO]: Market order placed to close position in AFRM. Order ID: aafd441b-720f-4f0c-9235-659c62523bee
+2024-10-15T14:45:23.471Z [INFO]: Position removed: AFRM
+2024-10-15T14:45:23.473Z [INFO]: Unsubscribed from AFRM quotes.
+2024-10-15T14:46:01.123Z [INFO]: Position added: HOOD | Qty: 500 | Avg Entry: $26.16
+2024-10-15T14:46:01.129Z [INFO]: Subscribed to HOOD quotes.
+2024-10-15T14:46:55.836Z [INFO]: Profit target hit for HOOD: +10.00¢ >= +10¢
+2024-10-15T14:46:55.838Z [INFO]: Attempting to place IOC order: {"symbol":"HOOD","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-79555acfef4b7123"}
+2024-10-15T14:46:56.059Z [INFO]: Placed IOC order for 100 shares of HOOD. Order ID: c2c8b346-b9a2-41e0-bb07-4c2c56916376
+2024-10-15T14:55:52.085Z [INFO]: Position removed: HOOD
+2024-10-15T14:55:52.091Z [INFO]: Unsubscribed from HOOD quotes.
+2024-10-15T14:57:30.135Z [INFO]: Position added: HOOD | Qty: 500 | Avg Entry: $26.25898
+2024-10-15T14:57:30.141Z [INFO]: Subscribed to HOOD quotes.
+2024-10-15T15:05:52.666Z [INFO]: Position removed: HOOD
+2024-10-15T15:05:52.673Z [INFO]: Unsubscribed from HOOD quotes.
+2024-10-15T15:06:10.677Z [INFO]: Position added: CELH | Qty: 500 | Avg Entry: $35.155
+2024-10-15T15:06:10.682Z [INFO]: Subscribed to CELH quotes.
+2024-10-15T15:06:21.633Z [INFO]: Profit target hit for CELH: +10.50¢ >= +10¢
+2024-10-15T15:06:21.634Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"50","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-c9f83253bcaa70ae"}
+2024-10-15T15:06:21.841Z [INFO]: Placed IOC order for 50 shares of CELH. Order ID: 85dd5b44-0c3c-4bb5-b0ac-6f90efea195c
+2024-10-15T15:18:56.413Z [INFO]: Polygon WebSocket connected.
+2024-10-15T15:18:56.417Z [INFO]: Started polling for order statuses.
+2024-10-15T15:18:56.591Z [INFO]: Polygon WebSocket connection opened.
+2024-10-15T15:18:56.592Z [INFO]: Polygon WebSocket connected.
+2024-10-15T15:18:56.645Z [INFO]: Polygon WebSocket authenticated.
+2024-10-15T15:18:56.739Z [INFO]: Position added: CELH | Qty: 1900 | Avg Entry: $35.257031
+2024-10-15T15:18:56.746Z [INFO]: Subscribed to CELH quotes.
+2024-10-15T15:18:56.988Z [INFO]: Profit target hit for CELH: +10.70¢ >= +10¢
+2024-10-15T15:18:56.993Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"190","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-9533002bda1af2b1"}
+2024-10-15T15:18:57.205Z [INFO]: Placed IOC order for 190 shares of CELH. Order ID: d860760b-f524-4179-ab33-3b12ea0052bd
+2024-10-15T15:43:05.407Z [INFO]: Polygon WebSocket connected.
+2024-10-15T15:43:05.411Z [INFO]: Started polling for order statuses.
+2024-10-15T15:43:05.614Z [INFO]: Polygon WebSocket connection opened.
+2024-10-15T15:43:05.616Z [INFO]: Polygon WebSocket connected.
+2024-10-15T15:43:05.628Z [INFO]: Position added: CELH | Qty: 1210 | Avg Entry: $35.240616
+2024-10-15T15:43:05.634Z [INFO]: Subscribed to CELH quotes.
+2024-10-15T15:43:05.664Z [INFO]: Polygon WebSocket authenticated.
+2024-10-15T15:45:23.749Z [INFO]: Profit target hit for CELH: +10.06¢ >= +10¢
+2024-10-15T15:45:23.752Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"121","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-b8133545d6af1388"}
+2024-10-15T15:45:24.390Z [INFO]: Placed IOC order for 121 shares of CELH. Order ID: 82e16405-93c1-48cb-a9dc-5cbdf9ce7206
+2024-10-15T15:45:32.082Z [INFO]: Profit target hit for CELH: +20.06¢ >= +20¢
+2024-10-15T15:45:32.083Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"326","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-93e6bb3adc61e4ba"}
+2024-10-15T15:45:32.364Z [INFO]: Placed IOC order for 326 shares of CELH. Order ID: 13dc3903-ed43-46c7-ad6a-8949bbd9e37f
+2024-10-15T15:45:33.460Z [INFO]: Attempting to place pyramid order: {"symbol":"CELH","qty":"152","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"34.95","client_order_id":"PYRAMID-f417745e87b20519"}
+2024-10-15T15:45:33.724Z [INFO]: Placed pyramid order for 152 shares of CELH. Order ID: 768924ec-a457-4928-9eda-1423f9ea0019
+2024-10-15T15:46:10.186Z [INFO]: Profit target hit for CELH: +30.40¢ >= +30¢
+2024-10-15T15:46:10.187Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"274","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-10bdc9066c5e178c"}
+2024-10-15T15:46:10.439Z [INFO]: Placed IOC order for 274 shares of CELH. Order ID: e5fbd8b3-d673-40b6-bd91-d4453061614d
+2024-10-15T15:46:27.730Z [INFO]: Attempting to place pyramid order: {"symbol":"CELH","qty":"64","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"34.80","client_order_id":"PYRAMID-85ba8c8e20f0dc7d"}
+2024-10-15T15:46:28.444Z [INFO]: Placed pyramid order for 64 shares of CELH. Order ID: 76882b6e-1e7a-4745-81a3-74e8c0d864b9
+2024-10-15T15:47:59.228Z [INFO]: Profit target hit for CELH: +50.10¢ >= +50¢
+2024-10-15T15:47:59.230Z [INFO]: Attempting to place IOC order: {"symbol":"CELH","qty":"352","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-5c5deed349e78c66"}
+2024-10-15T15:47:59.403Z [INFO]: Placed IOC order for 352 shares of CELH. Order ID: 375283ef-bbb8-4518-ab56-d8518b389ed1
+2024-10-15T15:49:11.922Z [INFO]: Position removed: CELH
+2024-10-15T15:49:11.927Z [INFO]: Unsubscribed from CELH quotes.
