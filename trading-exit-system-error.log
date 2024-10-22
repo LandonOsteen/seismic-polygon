@@ -1,0 +1,23 @@
+2024-10-18T14:52:53.292Z [ERROR]: Error polling order statuses: connect ETIMEDOUT 35.221.23.121:443
+2024-10-18T14:53:01.960Z [ERROR]: Error refreshing positions: connect ETIMEDOUT 35.221.23.121:443
+2024-10-18T14:54:58.439Z [ERROR]: Error polling order statuses: connect ETIMEDOUT 35.221.23.121:443
+2024-10-18T14:55:06.406Z [ERROR]: Error refreshing positions: connect ETIMEDOUT 35.221.23.121:443
+2024-10-18T23:29:21.785Z [ERROR]: Error initializing existing positions: Request failed with status code 403
+2024-10-18T23:29:22.662Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:29:23.661Z [ERROR]: Error refreshing positions: Request failed with status code 403
+2024-10-18T23:29:24.016Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:29:24.662Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:29:25.660Z [ERROR]: Error refreshing positions: Request failed with status code 403
+2024-10-18T23:29:26.007Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:29:26.654Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:29:27.659Z [ERROR]: Error refreshing positions: Request failed with status code 403
+2024-10-18T23:29:28.012Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:29:28.661Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:29:29.663Z [ERROR]: Error refreshing positions: Request failed with status code 403
+2024-10-18T23:30:15.141Z [ERROR]: Error initializing existing positions: Request failed with status code 403
+2024-10-18T23:30:16.120Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:30:17.118Z [ERROR]: Error refreshing positions: Request failed with status code 403
+2024-10-18T23:30:17.462Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:30:18.107Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-10-18T23:30:19.117Z [ERROR]: Error refreshing positions: Request failed with status code 403
+2024-10-18T23:30:19.465Z [ERROR]: Error polling order statuses: Request failed with status code 403
