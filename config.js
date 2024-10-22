@@ -29,8 +29,8 @@ module.exports = {
       { profitTargetsHit: 2, stopCents: 0 },
     ],
     pyramidLevels: [
-      { addInCents: 2, percentToAdd: 100, offsetCents: 3 },
-      { addInCents: 4, percentToAdd: 50, offsetCents: 3 },
+      { addInCents: 2, percentToAdd: 200, offsetCents: 3 },
+      { addInCents: 12, percentToAdd: 30, offsetCents: 3 },
     ],
   },
   pollingIntervals: {
