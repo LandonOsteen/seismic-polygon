@@ -170,6 +170,8 @@ class OrderManager {
       stopTriggered: false,
       pyramidLevelsHit: 0,
       totalPyramidLevels: config.orderSettings.pyramidLevels.length,
+      skipPyramiding: false, // New property to skip pyramiding
+      lastProcessedProfitCents: 0, // New property to track last profitCents processed
     };
 
     const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice}`;
@@ -249,17 +251,31 @@ class OrderManager {
 
     const profitTargets = config.orderSettings.profitTargets;
 
-    // Check if all profit targets have been hit
-    if (pos.profitTargetsHit < profitTargets.length) {
-      const target = profitTargets[pos.profitTargetsHit];
+    // Check for missed profit targets
+    let targetsToProcess = [];
 
-      // Prevent duplicate order placements
-      if (
-        !pos.isProcessing &&
-        parseFloat(pos.profitCents) >= target.targetCents
-      ) {
-        pos.isProcessing = true;
+    for (let i = pos.profitTargetsHit; i < profitTargets.length; i++) {
+      const target = profitTargets[i];
+      if (parseFloat(pos.profitCents) >= target.targetCents) {
+        targetsToProcess.push(target);
+      } else {
+        break; // Exit loop once a target is not met
+      }
+    }
 
+    if (targetsToProcess.length > 0 && !pos.isProcessing) {
+      pos.isProcessing = true;
+
+      // Check if multiple profit targets were skipped
+      if (targetsToProcess.length > 1) {
+        // Skip pyramiding in this case
+        pos.skipPyramiding = true;
+        const skipPyramidMessage = `Multiple profit targets skipped for ${symbol}. Skipping pyramiding to avoid adding into volatility.`;
+        logger.info(skipPyramidMessage);
+        this.dashboard.logInfo(skipPyramidMessage);
+      }
+
+      for (const target of targetsToProcess) {
         const targetMessage = `Profit target hit for ${symbol}: +${pos.profitCents}¢ >= +${target.targetCents}¢`;
         logger.info(targetMessage);
         this.dashboard.logInfo(targetMessage);
@@ -274,8 +290,7 @@ class OrderManager {
           const warnMessage = `Quantity to close is zero or negative for ${symbol}.`;
           logger.warn(warnMessage);
           this.dashboard.logWarning(warnMessage);
-          pos.isProcessing = false;
-          return;
+          continue; // Skip to next target
         }
 
         // Place IOC order
@@ -306,11 +321,19 @@ class OrderManager {
           this.dashboard.logInfo(stopPriceMessage);
         }
 
-        pos.isProcessing = false;
+        // Update last processed profitCents
+        pos.lastProcessedProfitCents = parseFloat(pos.profitCents);
 
-        // Update dashboard positions
-        this.dashboard.updatePositions(Object.values(this.positions));
+        // Break if position is closed
+        if (pos.qty <= 0) {
+          break;
+        }
       }
+
+      pos.isProcessing = false;
+
+      // Update dashboard positions
+      this.dashboard.updatePositions(Object.values(this.positions));
     }
 
     // ------------------------------
@@ -318,8 +341,8 @@ class OrderManager {
     // ------------------------------
     const pyramidLevels = config.orderSettings.pyramidLevels;
 
-    // Check if all pyramid levels have been hit
-    if (pos.pyramidLevelsHit < pyramidLevels.length) {
+    // Skip pyramiding if multiple profit targets were missed
+    if (!pos.skipPyramiding && pos.pyramidLevelsHit < pyramidLevels.length) {
       const nextPyramidLevel = pyramidLevels[pos.pyramidLevelsHit];
 
       if (parseFloat(pos.profitCents) >= nextPyramidLevel.addInCents) {
@@ -356,6 +379,9 @@ class OrderManager {
         }
       }
     }
+
+    // Update last processed profitCents
+    pos.lastProcessedProfitCents = parseFloat(pos.profitCents);
   }
 
   /**

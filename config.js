@@ -16,21 +16,40 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   orderSettings: {
-    limitOffsetCents: 3,
+    limitOffsetCents: 4,
     profitTargets: [
-      { targetCents: 8, percentToClose: 30 },
-      { targetCents: 10, percentToClose: 70 },
-      { targetCents: 15, percentToClose: 50 },
-      { targetCents: 20, percentToClose: 100 },
+      { targetCents: 6, percentToClose: 20 }, // 1
+      { targetCents: 10, percentToClose: 50 }, // 2
+      { targetCents: 15, percentToClose: 20 }, // 3
+      { targetCents: 20, percentToClose: 30 }, // 4
+      { targetCents: 30, percentToClose: 20 }, // 5
+      { targetCents: 40, percentToClose: 20 }, // 6
+      { targetCents: 50, percentToClose: 50 }, // 7
+      { targetCents: 60, percentToClose: 20 }, // 8
+      { targetCents: 70, percentToClose: 20 }, // 9
+      { targetCents: 80, percentToClose: 20 }, // 10
+      { targetCents: 90, percentToClose: 20 }, // 11
+      { targetCents: 100, percentToClose: 100 }, // 12
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -25 },
+      { profitTargetsHit: 0, stopCents: -15 },
       { profitTargetsHit: 1, stopCents: -10 },
       { profitTargetsHit: 2, stopCents: 0 },
+      { profitTargetsHit: 4, stopCents: 5 },
+      { profitTargetsHit: 5, stopCents: 10 },
+      { profitTargetsHit: 6, stopCents: 15 },
+      { profitTargetsHit: 7, stopCents: 20 },
+      { profitTargetsHit: 8, stopCents: 30 },
+      { profitTargetsHit: 9, stopCents: 40 },
+      { profitTargetsHit: 10, stopCents: 50 },
+      { profitTargetsHit: 11, stopCents: 60 },
     ],
     pyramidLevels: [
-      { addInCents: 2, percentToAdd: 200, offsetCents: 3 },
-      { addInCents: 12, percentToAdd: 30, offsetCents: 3 },
+      { addInCents: 5, percentToAdd: 100, offsetCents: 4 },
+      { addInCents: 12, percentToAdd: 30, offsetCents: 4 },
+      { addInCents: 24, percentToAdd: 30, offsetCents: 4 },
+      { addInCents: 34, percentToAdd: 20, offsetCents: 4 },
+      { addInCents: 54, percentToAdd: 20, offsetCents: 4 },
     ],
   },
   pollingIntervals: {
