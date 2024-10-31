@@ -110,9 +110,14 @@ class OrderManager {
   /**
    * Calculates the dynamic stop price based on the number of profit targets hit.
    */
-  calculateDynamicStopPrice(profitTargetsHit, avgEntryPrice, side) {
+  calculateDynamicStopPrice(
+    profitTargetsHit,
+    avgEntryPrice,
+    side,
+    orderSettings
+  ) {
     // Find the dynamic stop configurations with profitTargetsHit less than or equal to the current
-    const dynamicStops = config.orderSettings.dynamicStops
+    const dynamicStops = orderSettings.dynamicStops
       .filter((ds) => ds.profitTargetsHit <= profitTargetsHit)
       .sort((a, b) => b.profitTargetsHit - a.profitTargetsHit); // Sort descending
 
@@ -124,7 +129,7 @@ class OrderManager {
       return { stopPrice, stopCents };
     } else {
       // If no dynamic stop configured, return initial stop loss
-      const stopLossCents = config.orderSettings.stopLossCents;
+      const stopLossCents = orderSettings.stopLossCents || -25; // Default stop loss if not specified
       const stopPrice =
         avgEntryPrice - (stopLossCents / 100) * (side === 'buy' ? 1 : -1);
       return { stopPrice, stopCents: -stopLossCents };
@@ -140,8 +145,19 @@ class OrderManager {
     const side = position.side === 'long' ? 'buy' : 'sell';
     const avgEntryPrice = parseFloat(position.avg_entry_price);
 
+    // Select the appropriate settings based on the entry price
+    const isUnder10 = avgEntryPrice < 10;
+    const orderSettings = isUnder10
+      ? config.orderSettingsUnder10
+      : config.orderSettingsOver10;
+
     // Get initial stop price and stop cents
-    const dynamicStop = this.calculateDynamicStopPrice(0, avgEntryPrice, side);
+    const dynamicStop = this.calculateDynamicStopPrice(
+      0,
+      avgEntryPrice,
+      side,
+      orderSettings
+    );
     const stopPrice = dynamicStop ? dynamicStop.stopPrice : null;
     const stopCents = dynamicStop ? dynamicStop.stopCents : null;
     const stopDescription = dynamicStop
@@ -161,7 +177,7 @@ class OrderManager {
       currentPrice: parseFloat(position.current_price),
       profitCents: 0, // Initialize profit
       profitTargetsHit: 0,
-      totalProfitTargets: config.orderSettings.profitTargets.length,
+      totalProfitTargets: orderSettings.profitTargets.length,
       isActive: true,
       isProcessing: false,
       stopPrice: stopPrice,
@@ -169,9 +185,10 @@ class OrderManager {
       stopDescription: stopDescription,
       stopTriggered: false,
       pyramidLevelsHit: 0,
-      totalPyramidLevels: config.orderSettings.pyramidLevels.length,
+      totalPyramidLevels: orderSettings.pyramidLevels.length,
       skipPyramiding: false, // New property to skip pyramiding
       lastProcessedProfitCents: 0, // New property to track last profitCents processed
+      orderSettings, // Include the order settings for this position
     };
 
     const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice}`;
@@ -249,7 +266,7 @@ class OrderManager {
       }
     }
 
-    const profitTargets = config.orderSettings.profitTargets;
+    const profitTargets = pos.orderSettings.profitTargets;
 
     // Check for missed profit targets
     let targetsToProcess = [];
@@ -307,7 +324,8 @@ class OrderManager {
         const dynamicStop = this.calculateDynamicStopPrice(
           pos.profitTargetsHit,
           pos.avgEntryPrice,
-          pos.side
+          pos.side,
+          pos.orderSettings
         );
         if (dynamicStop) {
           pos.stopPrice = dynamicStop.stopPrice;
@@ -339,7 +357,7 @@ class OrderManager {
     // ------------------------------
     // Check for Pyramiding Levels
     // ------------------------------
-    const pyramidLevels = config.orderSettings.pyramidLevels;
+    const pyramidLevels = pos.orderSettings.pyramidLevels;
 
     // Skip pyramiding if multiple profit targets were missed
     if (!pos.skipPyramiding && pos.pyramidLevelsHit < pyramidLevels.length) {
@@ -383,7 +401,6 @@ class OrderManager {
     // Update last processed profitCents
     pos.lastProcessedProfitCents = parseFloat(pos.profitCents);
   }
-
   /**
    * Places an Immediate-Or-Cancel (IOC) order for pyramiding.
    */
@@ -735,7 +752,8 @@ class OrderManager {
           const dynamicStop = this.calculateDynamicStopPrice(
             this.positions[symbol].profitTargetsHit,
             this.positions[symbol].avgEntryPrice,
-            this.positions[symbol].side
+            this.positions[symbol].side,
+            this.positions[symbol].orderSettings
           );
           if (dynamicStop) {
             this.positions[symbol].stopPrice = dynamicStop.stopPrice;

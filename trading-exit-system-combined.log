@@ -1,244 +1,281 @@
-2024-10-24T13:16:20.237Z [INFO]: Polygon WebSocket connected.
-2024-10-24T13:16:20.242Z [INFO]: Started polling for order statuses.
-2024-10-24T13:16:20.398Z [INFO]: Polygon WebSocket connection opened.
-2024-10-24T13:16:20.399Z [INFO]: Polygon WebSocket connected.
-2024-10-24T13:16:20.451Z [INFO]: Polygon WebSocket authenticated.
-2024-10-24T13:16:29.790Z [INFO]: Polygon WebSocket connected.
-2024-10-24T13:16:29.795Z [INFO]: Started polling for order statuses.
-2024-10-24T13:16:29.961Z [INFO]: Polygon WebSocket connection opened.
-2024-10-24T13:16:29.963Z [INFO]: Polygon WebSocket connected.
-2024-10-24T13:16:30.014Z [INFO]: Polygon WebSocket authenticated.
-2024-10-24T13:30:20.356Z [INFO]: Position added: AAL | Qty: 500 | Avg Entry: $13.40844
-2024-10-24T13:30:20.362Z [INFO]: Subscribed to AAL quotes.
-2024-10-24T13:31:05.050Z [INFO]: Profit target hit for AAL: +6.16¢ >= +6¢
-2024-10-24T13:31:05.052Z [INFO]: Attempting to place IOC order: {"symbol":"AAL","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-8e1c5fdc7b1f2a00"}
-2024-10-24T13:31:05.891Z [INFO]: Placed IOC order for 100 shares of AAL. Order ID: f120a72e-f48f-49e7-8635-d3c1dd7c9ed5
-2024-10-24T13:31:06.875Z [INFO]: Profit target hit for AAL: +10.16¢ >= +10¢
-2024-10-24T13:31:06.877Z [INFO]: Attempting to place IOC order: {"symbol":"AAL","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7e66a7fd0f7ecfa2"}
-2024-10-24T13:31:07.270Z [INFO]: Placed IOC order for 200 shares of AAL. Order ID: 96423c72-ef6d-4863-beb8-9a376e6b4508
-2024-10-24T13:31:12.068Z [INFO]: Attempting to place pyramid order: {"symbol":"AAL","qty":"100","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"13.58","client_order_id":"PYRAMID-237ddfe54110191e"}
-2024-10-24T13:31:12.334Z [INFO]: Placed pyramid order for 100 shares of AAL. Order ID: c6346e99-076e-4a82-aabb-1960d78e7997
-2024-10-24T13:31:20.898Z [INFO]: Profit target hit for AAL: +15.10¢ >= +15¢
-2024-10-24T13:31:20.900Z [INFO]: Attempting to place IOC order: {"symbol":"AAL","qty":"60","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d4d72fa8dae11dd5"}
-2024-10-24T13:31:21.243Z [INFO]: Placed IOC order for 60 shares of AAL. Order ID: a6d54084-d286-48f3-b7db-4a4fc062d46d
-2024-10-24T13:31:32.555Z [INFO]: Position added: TAL | Qty: 500 | Avg Entry: $10.2106
-2024-10-24T13:31:32.557Z [INFO]: Subscribed to TAL quotes.
-2024-10-24T13:31:37.322Z [INFO]: Profit target hit for TAL: +6.06¢ >= +6¢
-2024-10-24T13:31:37.324Z [INFO]: Attempting to place IOC order: {"symbol":"TAL","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-83e16c6dc84f7cc4"}
-2024-10-24T13:31:37.504Z [INFO]: Placed IOC order for 100 shares of TAL. Order ID: c604742a-0af0-48bd-b192-fa7452215273
-2024-10-24T13:32:03.698Z [INFO]: Stop condition met for AAL. Initiating market order to close position.
-2024-10-24T13:32:03.700Z [INFO]: Closing position with market order: {"symbol":"AAL","qty":"240","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-cd88898832da97ac"}
-2024-10-24T13:32:04.000Z [INFO]: Market order placed to close position in AAL. Order ID: 2906e920-8d89-415a-9946-e4ed30bf0010
-2024-10-24T13:32:04.357Z [INFO]: Position removed: AAL
-2024-10-24T13:32:04.362Z [INFO]: Unsubscribed from AAL quotes.
-2024-10-24T13:32:06.798Z [INFO]: Stop condition met for TAL. Initiating market order to close position.
-2024-10-24T13:32:06.800Z [INFO]: Closing position with market order: {"symbol":"TAL","qty":"400","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-8b84ce65a5667091"}
-2024-10-24T13:32:07.361Z [INFO]: Market order placed to close position in TAL. Order ID: 591066d2-496e-4390-829e-677f9fe5704c
-2024-10-24T13:32:07.712Z [INFO]: Position removed: TAL
-2024-10-24T13:32:07.718Z [INFO]: Unsubscribed from TAL quotes.
-2024-10-24T13:33:34.612Z [INFO]: Position added: LUV | Qty: 500 | Avg Entry: $29.5712
-2024-10-24T13:33:34.620Z [INFO]: Subscribed to LUV quotes.
-2024-10-24T13:33:59.647Z [INFO]: Profit target hit for LUV: +6.12¢ >= +6¢
-2024-10-24T13:33:59.649Z [INFO]: Attempting to place IOC order: {"symbol":"LUV","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-1bb3e5e2938fd348"}
-2024-10-24T13:33:59.827Z [INFO]: Placed IOC order for 100 shares of LUV. Order ID: d9561758-216f-45f6-bbeb-faf469461d0a
-2024-10-24T13:34:04.284Z [INFO]: Profit target hit for LUV: +10.12¢ >= +10¢
-2024-10-24T13:34:04.286Z [INFO]: Attempting to place IOC order: {"symbol":"LUV","qty":"200","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-170e258a21ca05cf"}
-2024-10-24T13:34:04.299Z [INFO]: Attempting to place pyramid order: {"symbol":"LUV","qty":"200","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"29.36","client_order_id":"PYRAMID-f805d8c8633e6e15"}
-2024-10-24T13:34:04.511Z [INFO]: Placed IOC order for 200 shares of LUV. Order ID: 63477de8-11fa-476f-90a3-c8e620e0bb83
-2024-10-24T13:34:04.873Z [INFO]: Placed pyramid order for 200 shares of LUV. Order ID: 3377fcd7-3d4e-40f4-ab56-ab6d321a8d6c
-2024-10-24T13:34:05.212Z [INFO]: Position added: T | Qty: 500 | Avg Entry: $22.1247
-2024-10-24T13:34:05.218Z [INFO]: Subscribed to T quotes.
-2024-10-24T13:34:05.236Z [INFO]: Profit target hit for LUV: +17.12¢ >= +15¢
-2024-10-24T13:34:05.237Z [INFO]: Attempting to place IOC order: {"symbol":"LUV","qty":"40","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-a198c5dcc0cd9db1"}
-2024-10-24T13:34:05.972Z [INFO]: Placed IOC order for 40 shares of LUV. Order ID: bba412e5-4559-461f-8c70-96acebfd722b
-2024-10-24T13:34:06.944Z [INFO]: Profit target hit for LUV: +20.12¢ >= +20¢
-2024-10-24T13:34:06.947Z [INFO]: Attempting to place IOC order: {"symbol":"LUV","qty":"48","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-bd7b2e193496422c"}
-2024-10-24T13:34:07.353Z [INFO]: Placed IOC order for 48 shares of LUV. Order ID: 362a8678-d17b-4030-9423-af9a19c6c327
-2024-10-24T13:34:10.095Z [INFO]: Attempting to place pyramid order: {"symbol":"LUV","qty":"56","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"29.27","client_order_id":"PYRAMID-a12a37940e57f617"}
-2024-10-24T13:34:10.277Z [INFO]: Placed pyramid order for 56 shares of LUV. Order ID: 5511850d-dc95-4aff-8150-d9b24f6cedaa
-2024-10-24T13:34:24.080Z [INFO]: Profit target hit for LUV: +30.41¢ >= +30¢
-2024-10-24T13:34:24.082Z [INFO]: Attempting to place IOC order: {"symbol":"LUV","qty":"33","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-de5b5417c77a7a8b"}
-2024-10-24T13:34:24.269Z [INFO]: Placed IOC order for 33 shares of LUV. Order ID: d534ea1d-db1b-4e7c-a4fa-7921a7c40766
-2024-10-24T13:34:42.697Z [INFO]: Position added: SOFI | Qty: 500 | Avg Entry: $11.0777
-2024-10-24T13:34:42.703Z [INFO]: Subscribed to SOFI quotes.
-2024-10-24T13:34:49.675Z [INFO]: Stop condition met for LUV. Initiating market order to close position.
-2024-10-24T13:34:49.677Z [INFO]: Closing position with market order: {"symbol":"LUV","qty":"135","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-4df1ebb52b631f8b"}
-2024-10-24T13:34:49.840Z [INFO]: Market order placed to close position in LUV. Order ID: 29c96708-ce1d-4c5c-8ff8-84bc59290623
-2024-10-24T13:34:50.531Z [INFO]: Position removed: LUV
-2024-10-24T13:34:50.537Z [INFO]: Unsubscribed from LUV quotes.
-2024-10-24T13:35:30.744Z [INFO]: Position added: ASTS | Qty: 500 | Avg Entry: $27.9638
-2024-10-24T13:35:30.746Z [INFO]: Subscribed to ASTS quotes.
-2024-10-24T13:35:31.459Z [INFO]: Profit target hit for ASTS: +6.62¢ >= +6¢
-2024-10-24T13:35:31.461Z [INFO]: Attempting to place IOC order: {"symbol":"ASTS","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-6ad45bb63f56000e"}
-2024-10-24T13:35:31.691Z [INFO]: Placed IOC order for 100 shares of ASTS. Order ID: f98dbe73-ddb9-48c5-91c4-c0c08a7ed5ee
-2024-10-24T13:35:34.737Z [INFO]: Profit target hit for ASTS: +10.62¢ >= +10¢
-2024-10-24T13:35:34.739Z [INFO]: Attempting to place IOC order: {"symbol":"ASTS","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7821c04f20e0cec6"}
-2024-10-24T13:35:34.757Z [INFO]: Position added: RKLB | Qty: 500 | Avg Entry: $11.355
-2024-10-24T13:35:34.759Z [INFO]: Subscribed to RKLB quotes.
-2024-10-24T13:35:35.096Z [INFO]: Placed IOC order for 200 shares of ASTS. Order ID: a108669c-b58f-4f45-971a-8920d30617b8
-2024-10-24T13:35:38.273Z [INFO]: Attempting to place pyramid order: {"symbol":"ASTS","qty":"100","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"28.14","client_order_id":"PYRAMID-6c4ae51f255580c8"}
-2024-10-24T13:35:38.605Z [INFO]: Placed pyramid order for 100 shares of ASTS. Order ID: 71cb939b-d80c-41df-91d0-9f7aa558f9cb
-2024-10-24T13:35:38.795Z [INFO]: Profit target hit for ASTS: +15.62¢ >= +15¢
-2024-10-24T13:35:38.796Z [INFO]: Attempting to place IOC order: {"symbol":"ASTS","qty":"40","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7a97c3884884cd03"}
-2024-10-24T13:35:39.308Z [INFO]: Placed IOC order for 40 shares of ASTS. Order ID: 8f9f6182-72a9-4e36-b575-aabb5e8fb588
-2024-10-24T13:35:40.008Z [INFO]: Attempting to place pyramid order: {"symbol":"ASTS","qty":"80","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"28.30","client_order_id":"PYRAMID-0aa674a3d4356741"}
-2024-10-24T13:35:40.155Z [INFO]: Profit target hit for ASTS: +21.62¢ >= +20¢
-2024-10-24T13:35:40.157Z [INFO]: Attempting to place IOC order: {"symbol":"ASTS","qty":"48","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c91abc9e1e007581"}
-2024-10-24T13:35:40.352Z [INFO]: Placed pyramid order for 80 shares of ASTS. Order ID: 20a0238f-1883-4783-8d32-c13bb67c6d22
-2024-10-24T13:35:41.066Z [INFO]: Placed IOC order for 48 shares of ASTS. Order ID: 3343f7c2-4997-4beb-9c2e-7a9795c059d4
-2024-10-24T13:35:43.113Z [INFO]: Stop condition met for ASTS. Initiating market order to close position.
-2024-10-24T13:35:43.115Z [INFO]: Closing position with market order: {"symbol":"ASTS","qty":"192","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-9d1b3eb8254e11ba"}
-2024-10-24T13:35:43.350Z [INFO]: Market order placed to close position in ASTS. Order ID: eb469e45-0868-481d-b619-0ce21106b4d0
-2024-10-24T13:35:44.095Z [INFO]: Position removed: ASTS
-2024-10-24T13:35:44.101Z [INFO]: Unsubscribed from ASTS quotes.
-2024-10-24T13:36:09.499Z [INFO]: Profit target hit for SOFI: +6.23¢ >= +6¢
-2024-10-24T13:36:09.500Z [INFO]: Attempting to place IOC order: {"symbol":"SOFI","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a3279a8cbffa2883"}
-2024-10-24T13:36:09.727Z [INFO]: Profit target hit for RKLB: +6.50¢ >= +6¢
-2024-10-24T13:36:09.730Z [INFO]: Attempting to place IOC order: {"symbol":"RKLB","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-ba2c916cb44a417c"}
-2024-10-24T13:36:10.686Z [INFO]: Placed IOC order for 100 shares of SOFI. Order ID: 4d402cc8-cea8-4bef-8fa6-3ab04fc41812
-2024-10-24T13:36:11.040Z [INFO]: Placed IOC order for 100 shares of RKLB. Order ID: 7fc4fc44-27e5-4ee8-97c9-b76284c94349
-2024-10-24T13:36:28.939Z [INFO]: Position added: CLSK | Qty: 500 | Avg Entry: $12.1798
-2024-10-24T13:36:28.941Z [INFO]: Subscribed to CLSK quotes.
-2024-10-24T13:37:28.874Z [INFO]: Position added: MARA | Qty: 500 | Avg Entry: $18.6384
-2024-10-24T13:37:28.880Z [INFO]: Subscribed to MARA quotes.
-2024-10-24T13:38:24.621Z [INFO]: Stop condition met for T. Initiating market order to close position.
-2024-10-24T13:38:24.623Z [INFO]: Closing position with market order: {"symbol":"T","qty":"500","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-134fd0bfacf86e8a"}
-2024-10-24T13:38:25.403Z [INFO]: Market order placed to close position in T. Order ID: a08d511c-96ee-4747-ab51-1beeadb9fe9f
-2024-10-24T13:38:25.823Z [INFO]: Position removed: T
-2024-10-24T13:38:25.825Z [INFO]: Unsubscribed from T quotes.
-2024-10-24T13:38:35.374Z [INFO]: Position added: UPST | Qty: 500 | Avg Entry: $52.85
-2024-10-24T13:38:35.380Z [INFO]: Subscribed to UPST quotes.
-2024-10-24T13:38:40.365Z [INFO]: Stop condition met for UPST. Initiating market order to close position.
-2024-10-24T13:38:40.367Z [INFO]: Closing position with market order: {"symbol":"UPST","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-fde1d346d8423692"}
-2024-10-24T13:38:40.679Z [INFO]: Market order placed to close position in UPST. Order ID: 718217e4-84f6-46d2-b817-ffe9eb8e1579
-2024-10-24T13:38:40.905Z [INFO]: Position removed: UPST
-2024-10-24T13:38:40.907Z [INFO]: Unsubscribed from UPST quotes.
-2024-10-24T13:38:57.495Z [INFO]: Position added: LC | Qty: 1500 | Avg Entry: $15.3482
-2024-10-24T13:38:57.503Z [INFO]: Subscribed to LC quotes.
-2024-10-24T13:39:21.417Z [INFO]: Stop condition met for LC. Initiating market order to close position.
-2024-10-24T13:39:21.419Z [INFO]: Closing position with market order: {"symbol":"LC","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-1b658df9c9d666e9"}
-2024-10-24T13:39:22.015Z [INFO]: Market order placed to close position in LC. Order ID: c6425cd1-5119-4194-b835-39a67f950b33
-2024-10-24T13:39:22.343Z [INFO]: Position removed: LC
-2024-10-24T13:39:22.349Z [INFO]: Unsubscribed from LC quotes.
-2024-10-24T13:40:15.734Z [INFO]: Position added: LC | Qty: 1500 | Avg Entry: $15.43
-2024-10-24T13:40:15.740Z [INFO]: Subscribed to LC quotes.
-2024-10-24T13:40:34.170Z [INFO]: Profit target hit for LC: +6.00¢ >= +6¢
-2024-10-24T13:40:34.172Z [INFO]: Attempting to place IOC order: {"symbol":"LC","qty":"300","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-fec78ebd54ec9c6f"}
-2024-10-24T13:40:34.634Z [INFO]: Placed IOC order for 300 shares of LC. Order ID: 67b8ea8b-c888-4b05-92f2-4d3cb5f73dd5
-2024-10-24T13:41:26.867Z [INFO]: Stop condition met for LC. Initiating market order to close position.
-2024-10-24T13:41:26.869Z [INFO]: Closing position with market order: {"symbol":"LC","qty":"1200","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-297135781baeeccd"}
-2024-10-24T13:41:27.099Z [INFO]: Market order placed to close position in LC. Order ID: 6e719120-2806-4142-b286-ca2aa6fe4553
-2024-10-24T13:41:27.631Z [INFO]: Position removed: LC
-2024-10-24T13:41:27.633Z [INFO]: Unsubscribed from LC quotes.
-2024-10-24T13:42:13.131Z [INFO]: Profit target hit for RKLB: +10.50¢ >= +10¢
-2024-10-24T13:42:13.133Z [INFO]: Attempting to place IOC order: {"symbol":"RKLB","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-9dd916d1f5a19bc1"}
-2024-10-24T13:42:13.366Z [INFO]: Placed IOC order for 200 shares of RKLB. Order ID: a514c43f-d558-4223-be59-e700bac093ee
-2024-10-24T13:42:13.719Z [INFO]: Position added: PLTR | Qty: 500 | Avg Entry: $43.4777
-2024-10-24T13:42:13.721Z [INFO]: Subscribed to PLTR quotes.
-2024-10-24T13:42:13.725Z [INFO]: Attempting to place pyramid order: {"symbol":"RKLB","qty":"100","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"11.53","client_order_id":"PYRAMID-da7a43f0c1b726c9"}
-2024-10-24T13:42:14.051Z [INFO]: Placed pyramid order for 100 shares of RKLB. Order ID: bb04a6f8-f0da-43c5-b67f-0a58a527305c
-2024-10-24T13:42:41.363Z [INFO]: Stop condition met for PLTR. Initiating market order to close position.
-2024-10-24T13:42:41.365Z [INFO]: Closing position with market order: {"symbol":"PLTR","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-fcf235ada22a18fe"}
-2024-10-24T13:42:41.560Z [INFO]: Market order placed to close position in PLTR. Order ID: d93044cc-07d9-4a2e-a344-7e2f8fe48a00
-2024-10-24T13:42:42.355Z [INFO]: Position removed: PLTR
-2024-10-24T13:42:42.357Z [INFO]: Unsubscribed from PLTR quotes.
-2024-10-24T13:43:19.127Z [INFO]: Position added: SMCI | Qty: 500 | Avg Entry: $46.5177
-2024-10-24T13:43:19.134Z [INFO]: Subscribed to SMCI quotes.
-2024-10-24T13:43:26.229Z [INFO]: Profit target hit for RKLB: +15.33¢ >= +15¢
-2024-10-24T13:43:26.230Z [INFO]: Attempting to place IOC order: {"symbol":"RKLB","qty":"60","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a14b01c35cb3c451"}
-2024-10-24T13:43:26.646Z [INFO]: Placed IOC order for 60 shares of RKLB. Order ID: 235a9ac5-997c-4262-b854-fd9bcf09a2bf
-2024-10-24T13:43:27.543Z [INFO]: Profit target hit for SMCI: +6.23¢ >= +6¢
-2024-10-24T13:43:27.545Z [INFO]: Attempting to place IOC order: {"symbol":"SMCI","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-1df85757655b4ec8"}
-2024-10-24T13:43:28.078Z [INFO]: Placed IOC order for 100 shares of SMCI. Order ID: 663ca38f-8567-4c33-8ded-81fb2a4f4836
-2024-10-24T13:43:30.536Z [INFO]: Profit target hit for SMCI: +10.23¢ >= +10¢
-2024-10-24T13:43:30.538Z [INFO]: Attempting to place IOC order: {"symbol":"SMCI","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-18e0b9d765851ced"}
-2024-10-24T13:43:30.751Z [INFO]: Placed IOC order for 200 shares of SMCI. Order ID: a6777549-b9cb-4a82-b64e-423d3cb41384
-2024-10-24T13:43:33.068Z [INFO]: Attempting to place pyramid order: {"symbol":"SMCI","qty":"100","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"46.69","client_order_id":"PYRAMID-3cbb251bb0b1489a"}
-2024-10-24T13:43:33.495Z [INFO]: Placed pyramid order for 100 shares of SMCI. Order ID: 8c4c400f-0b96-4b30-83fe-f6def97b718f
-2024-10-24T13:43:35.204Z [INFO]: Position added: VZ | Qty: 500 | Avg Entry: $41.8935
-2024-10-24T13:43:35.206Z [INFO]: Subscribed to VZ quotes.
-2024-10-24T13:43:44.561Z [INFO]: Stop condition met for SMCI. Initiating market order to close position.
-2024-10-24T13:43:44.563Z [INFO]: Closing position with market order: {"symbol":"SMCI","qty":"300","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-a30a851a3ddeebf1"}
-2024-10-24T13:43:44.754Z [INFO]: Market order placed to close position in SMCI. Order ID: be41617b-9985-4974-9ff0-2513ac3f8971
-2024-10-24T13:43:45.140Z [INFO]: Position removed: SMCI
-2024-10-24T13:43:45.143Z [INFO]: Unsubscribed from SMCI quotes.
-2024-10-24T13:43:46.430Z [INFO]: Profit target hit for VZ: +6.35¢ >= +6¢
-2024-10-24T13:43:46.432Z [INFO]: Attempting to place IOC order: {"symbol":"VZ","qty":"100","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-ea0d18cf4bdc443d"}
-2024-10-24T13:43:46.709Z [INFO]: Placed IOC order for 100 shares of VZ. Order ID: fcc8be36-cabc-40db-8c33-8b041838b305
-2024-10-24T13:44:00.729Z [INFO]: Profit target hit for VZ: +10.35¢ >= +10¢
-2024-10-24T13:44:00.731Z [INFO]: Attempting to place IOC order: {"symbol":"VZ","qty":"200","side":"buy","type":"market","time_in_force":"day","client_order_id":"IOC-277f8a65770496f7"}
-2024-10-24T13:44:00.928Z [INFO]: Placed IOC order for 200 shares of VZ. Order ID: d49dfd4d-e702-4749-ad94-2e88690c0d55
-2024-10-24T13:44:09.041Z [INFO]: Profit target hit for MARA: +6.16¢ >= +6¢
-2024-10-24T13:44:09.043Z [INFO]: Attempting to place IOC order: {"symbol":"MARA","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-023bf2e83badc4c9"}
-2024-10-24T13:44:09.349Z [INFO]: Placed IOC order for 100 shares of MARA. Order ID: cbb0af80-1a82-4a2e-bfd4-8292ea76b7b7
-2024-10-24T13:44:10.881Z [INFO]: Profit target hit for MARA: +10.16¢ >= +10¢
-2024-10-24T13:44:10.883Z [INFO]: Attempting to place IOC order: {"symbol":"MARA","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-43316234a1e3cc80"}
-2024-10-24T13:44:11.240Z [INFO]: Placed IOC order for 200 shares of MARA. Order ID: fb4bc981-9ed4-40a4-afcb-e4cb277249d0
-2024-10-24T13:44:14.976Z [INFO]: Profit target hit for RKLB: +20.33¢ >= +20¢
-2024-10-24T13:44:14.979Z [INFO]: Attempting to place IOC order: {"symbol":"RKLB","qty":"72","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-5490342fb0bb668c"}
-2024-10-24T13:44:15.171Z [INFO]: Placed IOC order for 72 shares of RKLB. Order ID: 5ebcae31-565f-43de-8255-3ac55d1f7965
-2024-10-24T13:44:26.910Z [INFO]: Attempting to place pyramid order: {"symbol":"MARA","qty":"100","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"18.81","client_order_id":"PYRAMID-224d5a1a9de12bd3"}
-2024-10-24T13:44:27.255Z [INFO]: Placed pyramid order for 100 shares of MARA. Order ID: 1b81b60d-4144-4a40-a487-caaf9a5da02a
-2024-10-24T13:44:49.100Z [INFO]: Attempting to place pyramid order: {"symbol":"RKLB","qty":"84","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"11.69","client_order_id":"PYRAMID-9c3ef0895f9b92f4"}
-2024-10-24T13:44:49.525Z [INFO]: Placed pyramid order for 84 shares of RKLB. Order ID: c15bf90a-c466-4607-a7cd-5bdac5f88089
-2024-10-24T13:44:59.728Z [INFO]: Profit target hit for SOFI: +10.23¢ >= +10¢
-2024-10-24T13:44:59.729Z [INFO]: Attempting to place IOC order: {"symbol":"SOFI","qty":"200","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-5c35baea01c5db20"}
-2024-10-24T13:45:00.028Z [INFO]: Placed IOC order for 200 shares of SOFI. Order ID: 89c2e9ec-bd5b-457f-81d1-4fa71a2e6f2e
-2024-10-24T13:45:04.338Z [INFO]: Attempting to place pyramid order: {"symbol":"VZ","qty":"100","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"41.72","client_order_id":"PYRAMID-d9f1bd302b353ac8"}
-2024-10-24T13:45:04.545Z [INFO]: Placed pyramid order for 100 shares of VZ. Order ID: c662ec01-acfc-40d8-bfd4-d98de776bc8c
-2024-10-24T13:45:08.206Z [INFO]: Stop condition met for MARA. Initiating market order to close position.
-2024-10-24T13:45:08.207Z [INFO]: Closing position with market order: {"symbol":"MARA","qty":"300","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-18e7db92bfe467af"}
-2024-10-24T13:45:08.658Z [INFO]: Market order placed to close position in MARA. Order ID: 260f29ea-5cd5-4e4d-bdbd-1d78d478b057
-2024-10-24T13:45:08.999Z [INFO]: Position removed: MARA
-2024-10-24T13:45:09.006Z [INFO]: Unsubscribed from MARA quotes.
-2024-10-24T13:45:35.046Z [INFO]: Attempting to place pyramid order: {"symbol":"SOFI","qty":"100","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"11.25","client_order_id":"PYRAMID-ec1c10f3af6c375a"}
-2024-10-24T13:45:35.532Z [INFO]: Placed pyramid order for 100 shares of SOFI. Order ID: 9695629a-1f6d-4f06-aed5-7f5bff1f2daa
-2024-10-24T13:45:43.168Z [INFO]: Stop condition met for RKLB. Initiating market order to close position.
-2024-10-24T13:45:43.170Z [INFO]: Closing position with market order: {"symbol":"RKLB","qty":"252","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-760641104ce1a7ac"}
-2024-10-24T13:45:43.966Z [INFO]: Market order placed to close position in RKLB. Order ID: bcb15d86-1447-4e45-9650-c5b68a910285
-2024-10-24T13:45:44.319Z [INFO]: Position removed: RKLB
-2024-10-24T13:45:44.321Z [INFO]: Unsubscribed from RKLB quotes.
-2024-10-24T13:45:55.692Z [INFO]: Position added: IONQ | Qty: 500 | Avg Entry: $15.2953
-2024-10-24T13:45:55.698Z [INFO]: Subscribed to IONQ quotes.
-2024-10-24T13:47:22.220Z [INFO]: Stop condition met for IONQ. Initiating market order to close position.
-2024-10-24T13:47:22.222Z [INFO]: Closing position with market order: {"symbol":"IONQ","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-235f38a48cf962ff"}
-2024-10-24T13:47:22.461Z [INFO]: Market order placed to close position in IONQ. Order ID: 383fa46f-d7d6-4026-95a3-e2cb648447be
-2024-10-24T13:47:22.867Z [INFO]: Position removed: IONQ
-2024-10-24T13:47:22.870Z [INFO]: Unsubscribed from IONQ quotes.
-2024-10-24T13:47:38.098Z [INFO]: Stop condition met for VZ. Initiating market order to close position.
-2024-10-24T13:47:38.100Z [INFO]: Closing position with market order: {"symbol":"VZ","qty":"300","side":"buy","type":"market","time_in_force":"day","client_order_id":"CLOSE-197c4e6705c9fecd"}
-2024-10-24T13:47:38.708Z [INFO]: Market order placed to close position in VZ. Order ID: 46879cf2-05bc-4388-be3c-62ec810a04e6
-2024-10-24T13:47:39.044Z [INFO]: Position removed: VZ
-2024-10-24T13:47:39.050Z [INFO]: Unsubscribed from VZ quotes.
-2024-10-24T13:48:28.488Z [INFO]: Stop condition met for CLSK. Initiating market order to close position.
-2024-10-24T13:48:28.490Z [INFO]: Closing position with market order: {"symbol":"CLSK","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-cfc8ca318e1c0845"}
-2024-10-24T13:48:29.031Z [INFO]: Market order placed to close position in CLSK. Order ID: 1674777e-5f9f-4724-b862-79b1b71fce97
-2024-10-24T13:48:29.496Z [INFO]: Position removed: CLSK
-2024-10-24T13:48:29.499Z [INFO]: Unsubscribed from CLSK quotes.
-2024-10-24T13:51:04.710Z [INFO]: Profit target hit for SOFI: +15.83¢ >= +15¢
-2024-10-24T13:51:04.712Z [INFO]: Attempting to place IOC order: {"symbol":"SOFI","qty":"60","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7653d50dbc0cc8ed"}
-2024-10-24T13:51:05.102Z [INFO]: Placed IOC order for 60 shares of SOFI. Order ID: 53451df1-ccdd-4b84-b9ce-34bd145efe9e
-2024-10-24T14:07:08.219Z [INFO]: Stop condition met for SOFI. Initiating market order to close position.
-2024-10-24T14:07:08.220Z [INFO]: Closing position with market order: {"symbol":"SOFI","qty":"240","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-11beaa79392808dd"}
-2024-10-24T14:07:08.805Z [INFO]: Market order placed to close position in SOFI. Order ID: 11181870-b344-4dca-b1cf-e00b514b08e9
-2024-10-24T14:07:09.133Z [INFO]: Position removed: SOFI
-2024-10-24T14:07:09.139Z [INFO]: Unsubscribed from SOFI quotes.
-2024-10-25T12:37:35.448Z [INFO]: Polygon WebSocket connected.
-2024-10-25T12:37:35.452Z [INFO]: Started polling for order statuses.
-2024-10-25T12:37:35.671Z [INFO]: Polygon WebSocket connection opened.
-2024-10-25T12:37:35.673Z [INFO]: Polygon WebSocket connected.
-2024-10-25T12:37:35.727Z [INFO]: Polygon WebSocket authenticated.
-2024-10-25T13:43:52.123Z [INFO]: Position added: UAVS | Qty: 500 | Avg Entry: $2.5955
-2024-10-25T13:43:52.127Z [INFO]: Subscribed to UAVS quotes.
-2024-10-25T13:43:59.345Z [INFO]: Stop condition met for UAVS. Initiating market order to close position.
-2024-10-25T13:43:59.347Z [INFO]: Closing position with market order: {"symbol":"UAVS","qty":"500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-78212de666662c47"}
-2024-10-25T13:43:59.502Z [INFO]: Market order placed to close position in UAVS. Order ID: e9c705db-a918-493a-8ef6-17ee3e975f37
-2024-10-25T13:43:59.865Z [INFO]: Position removed: UAVS
-2024-10-25T13:43:59.867Z [INFO]: Unsubscribed from UAVS quotes.
-2024-10-25T15:22:57.422Z [INFO]: Polygon WebSocket connected.
-2024-10-25T15:22:57.427Z [INFO]: Started polling for order statuses.
-2024-10-25T15:22:57.602Z [INFO]: Polygon WebSocket connection opened.
-2024-10-25T15:22:57.603Z [INFO]: Polygon WebSocket connected.
-2024-10-25T15:22:57.651Z [INFO]: Polygon WebSocket authenticated.
-2024-10-25T15:23:33.558Z [INFO]: Position added: PLTR | Qty: 1000 | Avg Entry: $44.915
-2024-10-25T15:23:33.563Z [INFO]: Subscribed to PLTR quotes.
+2024-10-31T19:28:55.170Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:28:55.176Z [INFO]: Started polling for order statuses.
+2024-10-31T19:28:55.328Z [INFO]: Polygon WebSocket connection opened.
+2024-10-31T19:28:55.329Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:28:55.343Z [INFO]: Position added: BKR | Qty: 27 | Avg Entry: $38.07
+2024-10-31T19:28:55.350Z [INFO]: Subscribed to BKR quotes.
+2024-10-31T19:28:55.350Z [ERROR]: Error initializing existing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:55.379Z [INFO]: Polygon WebSocket authenticated.
+2024-10-31T19:28:55.938Z [INFO]: Multiple profit targets skipped for BKR. Skipping pyramiding to avoid adding into volatility.
+2024-10-31T19:28:55.940Z [INFO]: Profit target hit for BKR: +4.00¢ >= +1¢
+2024-10-31T19:28:55.942Z [INFO]: Attempting to place IOC order: {"symbol":"BKR","qty":"13","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c6138675a624ad13"}
+2024-10-31T19:28:56.093Z [INFO]: Placed IOC order for 13 shares of BKR. Order ID: 48923e91-3c4e-41ee-9cfb-911e2b672391
+2024-10-31T19:28:56.441Z [INFO]: Position added: PK | Qty: 3000 | Avg Entry: $14.17
+2024-10-31T19:28:56.445Z [INFO]: Subscribed to PK quotes.
+2024-10-31T19:28:56.446Z [INFO]: Position added: T | Qty: 3000 | Avg Entry: $22.54
+2024-10-31T19:28:56.450Z [INFO]: Subscribed to T quotes.
+2024-10-31T19:28:56.450Z [INFO]: Position added: ZI | Qty: 525 | Avg Entry: $11.04
+2024-10-31T19:28:56.454Z [INFO]: Subscribed to ZI quotes.
+2024-10-31T19:28:56.454Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:56.459Z [INFO]: Profit target hit for BKR: +4.50¢ >= +2¢
+2024-10-31T19:28:56.461Z [INFO]: Attempting to place IOC order: {"symbol":"BKR","qty":"4","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-867c56056f5ed57f"}
+2024-10-31T19:28:56.463Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:56.465Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:56.467Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:57.153Z [INFO]: Placed IOC order for 4 shares of BKR. Order ID: f8904472-e9c5-4cad-b7fe-e389d25c08d0
+2024-10-31T19:28:57.163Z [INFO]: Profit target hit for BKR: +4.50¢ >= +3¢
+2024-10-31T19:28:57.167Z [INFO]: Attempting to place IOC order: {"symbol":"BKR","qty":"4","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c04bb484d9bdb2d5"}
+2024-10-31T19:28:57.475Z [INFO]: Multiple profit targets skipped for ZI. Skipping pyramiding to avoid adding into volatility.
+2024-10-31T19:28:57.478Z [INFO]: Profit target hit for ZI: +2.00¢ >= +1¢
+2024-10-31T19:28:57.481Z [INFO]: Attempting to place IOC order: {"symbol":"ZI","qty":"262","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d8669495440a76ef"}
+2024-10-31T19:28:57.493Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:57.852Z [INFO]: Order f8904472-e9c5-4cad-b7fe-e389d25c08d0 filled 3 qty for BKR. Remaining qty: 11
+2024-10-31T19:28:57.859Z [ERROR]: Error polling order statuses: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:58.197Z [INFO]: Placed IOC order for 4 shares of BKR. Order ID: 7357c2de-b7d8-45b7-bbd7-688b5f24304d
+2024-10-31T19:28:58.572Z [INFO]: Placed IOC order for 262 shares of ZI. Order ID: 93a0b029-f909-498a-b78c-5461020d4a13
+2024-10-31T19:28:58.580Z [INFO]: Profit target hit for ZI: +2.00¢ >= +2¢
+2024-10-31T19:28:58.583Z [INFO]: Attempting to place IOC order: {"symbol":"ZI","qty":"157","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-1d1d9c0b3efb0e83"}
+2024-10-31T19:28:58.909Z [INFO]: Order 93a0b029-f909-498a-b78c-5461020d4a13 filled 200 qty for ZI. Remaining qty: 325
+2024-10-31T19:28:58.914Z [ERROR]: Error polling order statuses: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:59.258Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:28:59.264Z [INFO]: Profit target hit for BKR: +5.00¢ >= +4¢
+2024-10-31T19:28:59.266Z [INFO]: Attempting to place IOC order: {"symbol":"BKR","qty":"1","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-48c70a49c9fde7c2"}
+2024-10-31T19:28:59.598Z [INFO]: Placed IOC order for 157 shares of ZI. Order ID: 94c7dc8f-7c6d-4be4-a093-b4a84a87c7f6
+2024-10-31T19:28:59.937Z [INFO]: Order 93a0b029-f909-498a-b78c-5461020d4a13 filled 252 qty for ZI. Remaining qty: 30
+2024-10-31T19:28:59.944Z [ERROR]: Error polling order statuses: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:00.302Z [INFO]: Placed IOC order for 1 shares of BKR. Order ID: ecc6b7e9-a92e-44ed-a7bb-fe7934cd70a4
+2024-10-31T19:29:00.311Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:00.663Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:00.670Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:01.344Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:03.296Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:18.908Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:29:18.914Z [INFO]: Started polling for order statuses.
+2024-10-31T19:29:19.064Z [INFO]: Polygon WebSocket connection opened.
+2024-10-31T19:29:19.065Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:29:19.069Z [INFO]: Position added: BTI | Qty: 3000 | Avg Entry: $34.96
+2024-10-31T19:29:19.075Z [INFO]: Subscribed to BTI quotes.
+2024-10-31T19:29:19.075Z [ERROR]: Error initializing existing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:19.117Z [INFO]: Polygon WebSocket authenticated.
+2024-10-31T19:29:21.041Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:23.065Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:25.052Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:27.035Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:29.044Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:31.035Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:33.086Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-10-31T19:29:35.557Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:29:35.563Z [INFO]: Started polling for order statuses.
+2024-10-31T19:29:35.724Z [INFO]: Polygon WebSocket connection opened.
+2024-10-31T19:29:35.725Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:29:35.728Z [INFO]: Position added: BTI | Qty: 3000 | Avg Entry: $34.96
+2024-10-31T19:29:35.732Z [INFO]: Subscribed to BTI quotes.
+2024-10-31T19:29:35.771Z [INFO]: Polygon WebSocket authenticated.
+2024-10-31T19:30:08.060Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:30:08.065Z [INFO]: Started polling for order statuses.
+2024-10-31T19:30:08.220Z [INFO]: Polygon WebSocket connection opened.
+2024-10-31T19:30:08.222Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:30:08.226Z [INFO]: Position added: BTI | Qty: 3000 | Avg Entry: $34.96
+2024-10-31T19:30:08.233Z [INFO]: Subscribed to BTI quotes.
+2024-10-31T19:30:08.265Z [INFO]: Polygon WebSocket authenticated.
+2024-10-31T19:30:18.190Z [INFO]: Position added: TAL | Qty: 1480 | Avg Entry: $11.12
+2024-10-31T19:30:18.193Z [INFO]: Subscribed to TAL quotes.
+2024-10-31T19:32:21.644Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:32:21.649Z [INFO]: Started polling for order statuses.
+2024-10-31T19:32:21.811Z [INFO]: Position added: BTI | Qty: 3000 | Avg Entry: $34.96
+2024-10-31T19:32:21.817Z [INFO]: Position added: TAL | Qty: 3000 | Avg Entry: $11.12
+2024-10-31T19:32:21.830Z [INFO]: Polygon WebSocket connection opened.
+2024-10-31T19:32:21.832Z [INFO]: Polygon WebSocket connected.
+2024-10-31T19:32:21.880Z [INFO]: Polygon WebSocket authenticated.
+2024-10-31T19:34:04.236Z [INFO]: Profit target hit for BTI: +1.00¢ >= +1¢
+2024-10-31T19:34:04.238Z [INFO]: Attempting to place IOC order: {"symbol":"BTI","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a41008dc85605d84"}
+2024-10-31T19:34:04.590Z [INFO]: Placed IOC order for 1500 shares of BTI. Order ID: 48614e1b-5a95-4c4a-b3c9-75052f235829
+2024-10-31T19:34:05.299Z [INFO]: Order 48614e1b-5a95-4c4a-b3c9-75052f235829 filled 1438 qty for BTI. Remaining qty: 629
+2024-10-31T19:34:39.856Z [INFO]: Profit target hit for TAL: +1.00¢ >= +1¢
+2024-10-31T19:34:39.858Z [INFO]: Attempting to place IOC order: {"symbol":"TAL","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-3f063ba396a17ef5"}
+2024-10-31T19:34:40.261Z [INFO]: Placed IOC order for 1500 shares of TAL. Order ID: e172b020-ca18-4743-aa8b-32807cf16957
+2024-10-31T19:34:40.645Z [INFO]: Order e172b020-ca18-4743-aa8b-32807cf16957 filled 33 qty for TAL. Remaining qty: 2967
+2024-10-31T19:34:41.312Z [INFO]: Order e172b020-ca18-4743-aa8b-32807cf16957 filled 1391 qty for TAL. Remaining qty: 219
+2024-10-31T19:34:48.603Z [INFO]: Profit target hit for TAL: +2.00¢ >= +2¢
+2024-10-31T19:34:48.605Z [INFO]: Attempting to place IOC order: {"symbol":"TAL","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-5deed1d75217dc4f"}
+2024-10-31T19:34:48.812Z [INFO]: Placed IOC order for 450 shares of TAL. Order ID: 893ee28e-1e17-4ca4-90f0-177cd5c93a18
+2024-10-31T19:35:17.954Z [INFO]: Position added: DOW | Qty: 3000 | Avg Entry: $49.57
+2024-10-31T19:35:17.958Z [INFO]: Subscribed to DOW quotes.
+2024-10-31T19:35:40.384Z [INFO]: Profit target hit for DOW: +1.00¢ >= +1¢
+2024-10-31T19:35:40.386Z [INFO]: Attempting to place IOC order: {"symbol":"DOW","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-99b7b64323157e0b"}
+2024-10-31T19:35:40.646Z [INFO]: Placed IOC order for 1500 shares of DOW. Order ID: c911505a-810d-4f04-bd08-4a61abbdd6ec
+2024-10-31T19:36:15.349Z [INFO]: Profit target hit for DOW: +2.00¢ >= +2¢
+2024-10-31T19:36:15.351Z [INFO]: Attempting to place IOC order: {"symbol":"DOW","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-8fdb2e179e344d92"}
+2024-10-31T19:36:15.651Z [INFO]: Placed IOC order for 450 shares of DOW. Order ID: 205b7868-d8c4-4cf8-b940-1863c44f504c
+2024-10-31T19:36:16.365Z [INFO]: Order 205b7868-d8c4-4cf8-b940-1863c44f504c filled 243 qty for DOW. Remaining qty: 1014
+2024-10-31T19:36:21.752Z [INFO]: Stop condition met for DOW. Initiating market order to close position.
+2024-10-31T19:36:21.755Z [INFO]: Closing position with market order: {"symbol":"DOW","qty":"1050","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-86d3a82cf3546b95"}
+2024-10-31T19:36:21.930Z [INFO]: Market order placed to close position in DOW. Order ID: 380f7102-0082-475e-b14e-5da84ad038e8
+2024-10-31T19:36:22.292Z [INFO]: Position removed: DOW
+2024-10-31T19:36:22.299Z [INFO]: Unsubscribed from DOW quotes.
+2024-10-31T19:36:34.932Z [INFO]: Stop condition met for TAL. Initiating market order to close position.
+2024-10-31T19:36:34.933Z [INFO]: Closing position with market order: {"symbol":"TAL","qty":"1050","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-e2551601c925f93c"}
+2024-10-31T19:36:35.120Z [INFO]: Market order placed to close position in TAL. Order ID: e7943431-8703-4fe9-9396-5569a51ef8b8
+2024-10-31T19:36:35.853Z [INFO]: Order e7943431-8703-4fe9-9396-5569a51ef8b8 filled 906 qty for TAL. Remaining qty: -263
+2024-10-31T19:36:35.857Z [INFO]: Position removed: TAL
+2024-10-31T19:36:35.861Z [INFO]: Unsubscribed from TAL quotes.
+2024-10-31T19:36:36.190Z [INFO]: Position added: TAL | Qty: 2 | Avg Entry: $11.12
+2024-10-31T19:36:36.195Z [INFO]: Subscribed to TAL quotes.
+2024-10-31T19:36:36.547Z [INFO]: Order e7943431-8703-4fe9-9396-5569a51ef8b8 filled 1049 qty for TAL. Remaining qty: -1047
+2024-10-31T19:36:36.551Z [INFO]: Position removed: TAL
+2024-10-31T19:36:36.553Z [INFO]: Unsubscribed from TAL quotes.
+2024-10-31T19:38:28.091Z [INFO]: Position added: SIRI | Qty: 1778 | Avg Entry: $27.29
+2024-10-31T19:38:28.097Z [INFO]: Subscribed to SIRI quotes.
+2024-10-31T19:38:34.556Z [INFO]: Profit target hit for SIRI: +1.00¢ >= +1¢
+2024-10-31T19:38:34.558Z [INFO]: Attempting to place IOC order: {"symbol":"SIRI","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d3fa8c195c4ba2c0"}
+2024-10-31T19:38:34.721Z [INFO]: Placed IOC order for 1500 shares of SIRI. Order ID: b28c5729-e388-4758-a8b1-02801dee6a49
+2024-10-31T19:39:34.403Z [INFO]: Stop condition met for SIRI. Initiating market order to close position.
+2024-10-31T19:39:34.405Z [INFO]: Closing position with market order: {"symbol":"SIRI","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-de0a395ce1b13426"}
+2024-10-31T19:39:34.571Z [INFO]: Market order placed to close position in SIRI. Order ID: 2e48c7bf-28a6-4907-98ed-43c90a97cd6f
+2024-10-31T19:39:35.282Z [INFO]: Order 2e48c7bf-28a6-4907-98ed-43c90a97cd6f filled 1498 qty for SIRI. Remaining qty: -1217
+2024-10-31T19:39:35.286Z [INFO]: Position removed: SIRI
+2024-10-31T19:39:35.288Z [INFO]: Unsubscribed from SIRI quotes.
+2024-10-31T19:40:50.215Z [INFO]: Position added: FL | Qty: 3000 | Avg Entry: $23.41
+2024-10-31T19:40:50.224Z [INFO]: Subscribed to FL quotes.
+2024-10-31T19:41:12.874Z [INFO]: Profit target hit for FL: +1.00¢ >= +1¢
+2024-10-31T19:41:12.876Z [INFO]: Attempting to place IOC order: {"symbol":"FL","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-dd58327173424454"}
+2024-10-31T19:41:13.290Z [INFO]: Placed IOC order for 1500 shares of FL. Order ID: 16d6e324-34b0-4574-ba04-3e9e0882e64d
+2024-10-31T19:41:14.474Z [INFO]: Profit target hit for FL: +2.00¢ >= +2¢
+2024-10-31T19:41:14.476Z [INFO]: Attempting to place IOC order: {"symbol":"FL","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a2c2df005257f844"}
+2024-10-31T19:41:14.690Z [INFO]: Placed IOC order for 450 shares of FL. Order ID: 4574488b-10be-4ec9-a6ec-44a9288b5a2a
+2024-10-31T19:41:44.394Z [INFO]: Profit target hit for FL: +3.00¢ >= +3¢
+2024-10-31T19:41:44.396Z [INFO]: Attempting to place IOC order: {"symbol":"FL","qty":"315","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-832146fbf185cd02"}
+2024-10-31T19:41:44.666Z [INFO]: Placed IOC order for 315 shares of FL. Order ID: 5ede61be-7628-448e-a388-0adfc5136879
+2024-10-31T19:41:45.279Z [INFO]: Profit target hit for FL: +4.00¢ >= +4¢
+2024-10-31T19:41:45.281Z [INFO]: Attempting to place IOC order: {"symbol":"FL","qty":"220","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c041d9ef8c797ad8"}
+2024-10-31T19:41:45.748Z [INFO]: Placed IOC order for 220 shares of FL. Order ID: 48c111a9-52d5-492b-a02a-2aa2543c9902
+2024-10-31T19:42:35.784Z [INFO]: Profit target hit for FL: +5.00¢ >= +5¢
+2024-10-31T19:42:35.786Z [INFO]: Attempting to place IOC order: {"symbol":"FL","qty":"103","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-2fc43b5252c2feda"}
+2024-10-31T19:42:35.949Z [INFO]: Placed IOC order for 103 shares of FL. Order ID: 82a68c90-6c5f-4d93-8f80-5e8248f34c3d
+2024-10-31T19:42:45.399Z [INFO]: Profit target hit for BTI: +2.00¢ >= +2¢
+2024-10-31T19:42:45.400Z [INFO]: Attempting to place IOC order: {"symbol":"BTI","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-f165f643f757dede"}
+2024-10-31T19:42:45.616Z [INFO]: Placed IOC order for 450 shares of BTI. Order ID: bdad4a22-7511-43b4-bbbf-12462abaa0bd
+2024-10-31T19:42:46.329Z [INFO]: Order bdad4a22-7511-43b4-bbbf-12462abaa0bd filled 403 qty for BTI. Remaining qty: 708
+2024-10-31T19:42:47.101Z [INFO]: Order bdad4a22-7511-43b4-bbbf-12462abaa0bd filled 403 qty for BTI. Remaining qty: 657
+2024-10-31T19:42:55.659Z [INFO]: Stop condition met for FL. Initiating market order to close position.
+2024-10-31T19:42:55.661Z [INFO]: Closing position with market order: {"symbol":"FL","qty":"412","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-c80fee47369baa25"}
+2024-10-31T19:42:55.844Z [INFO]: Market order placed to close position in FL. Order ID: bc64970c-7807-461c-85b1-22d036773f23
+2024-10-31T19:42:56.196Z [INFO]: Position removed: FL
+2024-10-31T19:42:56.203Z [INFO]: Unsubscribed from FL quotes.
+2024-10-31T19:44:02.601Z [INFO]: Position added: TAL | Qty: 3000 | Avg Entry: $11.16
+2024-10-31T19:44:02.609Z [INFO]: Subscribed to TAL quotes.
+2024-10-31T19:44:05.288Z [INFO]: Profit target hit for BTI: +3.00¢ >= +3¢
+2024-10-31T19:44:05.291Z [INFO]: Attempting to place IOC order: {"symbol":"BTI","qty":"315","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c92d493ea3e8e847"}
+2024-10-31T19:44:05.597Z [INFO]: Placed IOC order for 315 shares of BTI. Order ID: 46f34aa3-7151-4331-8033-114996d4a7f1
+2024-10-31T19:44:16.593Z [INFO]: Position added: CPRI | Qty: 2579 | Avg Entry: $19.47
+2024-10-31T19:44:16.600Z [INFO]: Subscribed to CPRI quotes.
+2024-10-31T19:44:36.059Z [INFO]: Stop condition met for BTI. Initiating market order to close position.
+2024-10-31T19:44:36.061Z [INFO]: Closing position with market order: {"symbol":"BTI","qty":"735","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-c64fa2063a0a4a65"}
+2024-10-31T19:44:36.371Z [INFO]: Market order placed to close position in BTI. Order ID: 260ee795-d293-436f-b926-8048b8a49dbe
+2024-10-31T19:44:36.729Z [INFO]: Order 260ee795-d293-436f-b926-8048b8a49dbe filled 194 qty for BTI. Remaining qty: 541
+2024-10-31T19:44:37.068Z [INFO]: Position removed: BTI
+2024-10-31T19:44:37.070Z [INFO]: Unsubscribed from BTI quotes.
+2024-10-31T19:44:46.401Z [INFO]: Position added: FL | Qty: 3000 | Avg Entry: $23.48
+2024-10-31T19:44:46.407Z [INFO]: Subscribed to FL quotes.
+2024-10-31T19:45:28.404Z [INFO]: Position added: DOW | Qty: 2990 | Avg Entry: $49.61
+2024-10-31T19:45:28.411Z [INFO]: Subscribed to DOW quotes.
+2024-10-31T19:45:55.293Z [INFO]: Profit target hit for DOW: +1.00¢ >= +1¢
+2024-10-31T19:45:55.296Z [INFO]: Attempting to place IOC order: {"symbol":"DOW","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-3b78d3b7b95d0509"}
+2024-10-31T19:45:55.459Z [INFO]: Placed IOC order for 1500 shares of DOW. Order ID: bb5ac54b-6752-461c-9eef-978a963fc31b
+2024-10-31T19:45:55.820Z [INFO]: Order bb5ac54b-6752-461c-9eef-978a963fc31b filled 228 qty for DOW. Remaining qty: 2772
+2024-10-31T19:46:01.489Z [INFO]: Profit target hit for FL: +1.00¢ >= +1¢
+2024-10-31T19:46:01.491Z [INFO]: Attempting to place IOC order: {"symbol":"FL","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-062e197b51d335c1"}
+2024-10-31T19:46:01.724Z [INFO]: Profit target hit for DOW: +2.00¢ >= +2¢
+2024-10-31T19:46:01.726Z [INFO]: Attempting to place IOC order: {"symbol":"DOW","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-4df8ff9afc46b881"}
+2024-10-31T19:46:01.918Z [INFO]: Placed IOC order for 1500 shares of FL. Order ID: e5068688-43f7-4c31-952e-2f4479f96a47
+2024-10-31T19:46:02.244Z [INFO]: Placed IOC order for 450 shares of DOW. Order ID: a1fa7c6b-3e16-4a18-9899-b10efcf8d118
+2024-10-31T19:46:02.915Z [INFO]: Order a1fa7c6b-3e16-4a18-9899-b10efcf8d118 filled 378 qty for DOW. Remaining qty: 1122
+2024-10-31T19:46:03.507Z [INFO]: Order a1fa7c6b-3e16-4a18-9899-b10efcf8d118 filled 421 qty for DOW. Remaining qty: 701
+2024-10-31T19:46:04.438Z [INFO]: Position added: BTI | Qty: 3000 | Avg Entry: $35.01
+2024-10-31T19:46:04.440Z [INFO]: Subscribed to BTI quotes.
+2024-10-31T19:46:20.671Z [INFO]: Stop condition met for DOW. Initiating market order to close position.
+2024-10-31T19:46:20.674Z [INFO]: Closing position with market order: {"symbol":"DOW","qty":"1050","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-b2f8306705e67588"}
+2024-10-31T19:46:21.144Z [INFO]: Market order placed to close position in DOW. Order ID: f180d561-51c1-492a-9cb9-0aeac895ef76
+2024-10-31T19:46:21.513Z [INFO]: Position removed: DOW
+2024-10-31T19:46:21.520Z [INFO]: Unsubscribed from DOW quotes.
+2024-10-31T19:46:34.362Z [INFO]: Profit target hit for CPRI: +1.00¢ >= +1¢
+2024-10-31T19:46:34.365Z [INFO]: Attempting to place IOC order: {"symbol":"CPRI","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-6a5498443329ac0d"}
+2024-10-31T19:46:34.793Z [INFO]: Placed IOC order for 1500 shares of CPRI. Order ID: 2f3c5294-8544-4ecd-885a-82bc63635583
+2024-10-31T19:46:35.159Z [INFO]: Order 2f3c5294-8544-4ecd-885a-82bc63635583 filled 791 qty for CPRI. Remaining qty: 2209
+2024-10-31T19:46:40.007Z [INFO]: Profit target hit for FL: +2.00¢ >= +2¢
+2024-10-31T19:46:40.009Z [INFO]: Attempting to place IOC order: {"symbol":"FL","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-abd6ca7796bd4a95"}
+2024-10-31T19:46:40.175Z [INFO]: Placed IOC order for 450 shares of FL. Order ID: 87ff7644-1b05-47ae-9da5-61c1667af62f
+2024-10-31T19:46:40.885Z [INFO]: Order 87ff7644-1b05-47ae-9da5-61c1667af62f filled 377 qty for FL. Remaining qty: 895
+2024-10-31T19:46:48.995Z [INFO]: Stop condition met for FL. Initiating market order to close position.
+2024-10-31T19:46:48.997Z [INFO]: Closing position with market order: {"symbol":"FL","qty":"1050","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-01bba472d9bf5971"}
+2024-10-31T19:46:49.165Z [INFO]: Market order placed to close position in FL. Order ID: 65d4ff36-a881-4852-bcc4-f06e97b3c181
+2024-10-31T19:46:49.860Z [INFO]: Order 65d4ff36-a881-4852-bcc4-f06e97b3c181 filled 460 qty for FL. Remaining qty: 284
+2024-10-31T19:46:50.828Z [INFO]: Order 65d4ff36-a881-4852-bcc4-f06e97b3c181 filled 808 qty for FL. Remaining qty: -566
+2024-10-31T19:46:50.833Z [INFO]: Position removed: FL
+2024-10-31T19:46:50.836Z [INFO]: Unsubscribed from FL quotes.
+2024-10-31T19:46:52.480Z [INFO]: Position added: MRNA | Qty: 3000 | Avg Entry: $54.46
+2024-10-31T19:46:52.487Z [INFO]: Subscribed to MRNA quotes.
+2024-10-31T19:47:07.596Z [INFO]: Profit target hit for CPRI: +2.00¢ >= +2¢
+2024-10-31T19:47:07.598Z [INFO]: Attempting to place IOC order: {"symbol":"CPRI","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-22e3277b8401e294"}
+2024-10-31T19:47:08.053Z [INFO]: Placed IOC order for 450 shares of CPRI. Order ID: c46f86b5-bc8d-4114-b38e-af60c1d6daa5
+2024-10-31T19:47:10.005Z [INFO]: Profit target hit for CPRI: +3.00¢ >= +3¢
+2024-10-31T19:47:10.007Z [INFO]: Attempting to place IOC order: {"symbol":"CPRI","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-78278838f85d03a5"}
+2024-10-31T19:47:10.180Z [INFO]: Placed IOC order for 450 shares of CPRI. Order ID: 356c9d20-2ded-4e22-877b-44876f1682ad
+2024-10-31T19:47:11.237Z [INFO]: Profit target hit for CPRI: +4.00¢ >= +4¢
+2024-10-31T19:47:11.239Z [INFO]: Attempting to place IOC order: {"symbol":"CPRI","qty":"180","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-9417b8476c10fc2c"}
+2024-10-31T19:47:11.419Z [INFO]: Placed IOC order for 180 shares of CPRI. Order ID: 1c9290f0-35bc-4ddc-b441-1fd89e39deb5
+2024-10-31T19:47:12.025Z [INFO]: Profit target hit for CPRI: +5.00¢ >= +5¢
+2024-10-31T19:47:12.027Z [INFO]: Attempting to place IOC order: {"symbol":"CPRI","qty":"103","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-4e3d2e8818e4975a"}
+2024-10-31T19:47:12.183Z [INFO]: Order 1c9290f0-35bc-4ddc-b441-1fd89e39deb5 filled 120 qty for CPRI. Remaining qty: 395
+2024-10-31T19:47:12.464Z [INFO]: Placed IOC order for 103 shares of CPRI. Order ID: f1f5e33c-2952-4895-bd67-dbf98157e759
+2024-10-31T19:47:13.167Z [INFO]: Order f1f5e33c-2952-4895-bd67-dbf98157e759 filled 95 qty for CPRI. Remaining qty: 266
+2024-10-31T19:47:13.172Z [INFO]: Order 1c9290f0-35bc-4ddc-b441-1fd89e39deb5 filled 133 qty for CPRI. Remaining qty: 133
+2024-10-31T19:47:13.701Z [INFO]: Order f1f5e33c-2952-4895-bd67-dbf98157e759 filled 102 qty for CPRI. Remaining qty: 31
+2024-10-31T19:47:16.213Z [INFO]: Stop condition met for MRNA. Initiating market order to close position.
+2024-10-31T19:47:16.215Z [INFO]: Closing position with market order: {"symbol":"MRNA","qty":"3000","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-5014f8f06d0017cd"}
+2024-10-31T19:47:16.391Z [INFO]: Market order placed to close position in MRNA. Order ID: a16514ed-ae0f-421a-be1e-a16f21f0126d
+2024-10-31T19:47:17.080Z [INFO]: Order a16514ed-ae0f-421a-be1e-a16f21f0126d filled 1606 qty for MRNA. Remaining qty: -212
+2024-10-31T19:47:17.086Z [INFO]: Position removed: MRNA
+2024-10-31T19:47:17.088Z [INFO]: Unsubscribed from MRNA quotes.
+2024-10-31T19:47:23.914Z [INFO]: Profit target hit for CPRI: +6.00¢ >= +6¢
+2024-10-31T19:47:23.916Z [INFO]: Attempting to place IOC order: {"symbol":"CPRI","qty":"63","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-d0506c3e05432339"}
+2024-10-31T19:47:24.209Z [INFO]: Placed IOC order for 63 shares of CPRI. Order ID: 6c8fc864-67c2-43b7-a532-1462f6dae86d
+2024-10-31T19:47:24.891Z [INFO]: Order 6c8fc864-67c2-43b7-a532-1462f6dae86d filled 50 qty for CPRI. Remaining qty: 223
+2024-10-31T19:47:28.193Z [INFO]: Profit target hit for CPRI: +7.00¢ >= +7¢
+2024-10-31T19:47:28.196Z [INFO]: Attempting to place IOC order: {"symbol":"CPRI","qty":"127","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-75429967a35566ab"}
+2024-10-31T19:47:28.359Z [INFO]: Placed IOC order for 127 shares of CPRI. Order ID: 527e5074-397d-41dc-9a16-4087b8df787a
+2024-10-31T19:47:30.038Z [INFO]: Stop condition met for CPRI. Initiating market order to close position.
+2024-10-31T19:47:30.039Z [INFO]: Closing position with market order: {"symbol":"CPRI","qty":"127","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-183476583f7345e5"}
+2024-10-31T19:47:30.324Z [INFO]: Market order placed to close position in CPRI. Order ID: 1b19fafe-4735-40c9-93ac-7de1bafa5411
+2024-10-31T19:47:30.933Z [INFO]: Order 1b19fafe-4735-40c9-93ac-7de1bafa5411 filled 24 qty for CPRI. Remaining qty: 79
+2024-10-31T19:47:32.497Z [INFO]: Position removed: CPRI
+2024-10-31T19:47:32.503Z [INFO]: Unsubscribed from CPRI quotes.
+2024-10-31T19:50:10.198Z [INFO]: Profit target hit for BTI: +1.00¢ >= +1¢
+2024-10-31T19:50:10.200Z [INFO]: Attempting to place IOC order: {"symbol":"BTI","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-2061cb78ae28d5c0"}
+2024-10-31T19:50:10.726Z [INFO]: Placed IOC order for 1500 shares of BTI. Order ID: ecbd51a4-dad3-48cc-a57b-c5e160f71386
+2024-10-31T19:50:27.124Z [INFO]: Profit target hit for BTI: +2.00¢ >= +2¢
+2024-10-31T19:50:27.126Z [INFO]: Attempting to place IOC order: {"symbol":"BTI","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-24eb2f3b5265f9eb"}
+2024-10-31T19:50:27.541Z [INFO]: Placed IOC order for 450 shares of BTI. Order ID: d3647370-ff14-46d1-a58c-4d73cbfc45a0
+2024-10-31T19:50:28.243Z [INFO]: Order d3647370-ff14-46d1-a58c-4d73cbfc45a0 filled 306 qty for BTI. Remaining qty: 1181
+2024-10-31T19:50:29.140Z [INFO]: Order d3647370-ff14-46d1-a58c-4d73cbfc45a0 filled 415 qty for BTI. Remaining qty: 670
+2024-10-31T19:50:38.347Z [INFO]: Profit target hit for TAL: +1.00¢ >= +1¢
+2024-10-31T19:50:38.349Z [INFO]: Attempting to place IOC order: {"symbol":"TAL","qty":"1500","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-4eebf750b8a1a09c"}
+2024-10-31T19:50:38.591Z [INFO]: Placed IOC order for 1500 shares of TAL. Order ID: 786d914d-9ce1-4ea2-9092-bf66cec35f68
+2024-10-31T19:51:09.844Z [INFO]: Profit target hit for TAL: +2.00¢ >= +2¢
+2024-10-31T19:51:09.846Z [INFO]: Attempting to place IOC order: {"symbol":"TAL","qty":"450","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-64c2f7c729355215"}
+2024-10-31T19:51:10.061Z [INFO]: Placed IOC order for 450 shares of TAL. Order ID: 706e1942-47db-4ca0-8b65-61d06af4cc07
+2024-10-31T19:51:10.410Z [INFO]: Order 706e1942-47db-4ca0-8b65-61d06af4cc07 filled 114 qty for TAL. Remaining qty: 1386
+2024-10-31T19:51:11.113Z [INFO]: Order 706e1942-47db-4ca0-8b65-61d06af4cc07 filled 426 qty for TAL. Remaining qty: 687
+2024-10-31T19:51:12.132Z [INFO]: Profit target hit for BTI: +3.00¢ >= +3¢
+2024-10-31T19:51:12.134Z [INFO]: Attempting to place IOC order: {"symbol":"BTI","qty":"315","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-2ffae4e6eda7147b"}
+2024-10-31T19:51:12.631Z [INFO]: Placed IOC order for 315 shares of BTI. Order ID: 70cb44fc-a4dc-4bf8-94e6-3d450c9d8094
+2024-10-31T19:51:13.327Z [INFO]: Order 70cb44fc-a4dc-4bf8-94e6-3d450c9d8094 filled 304 qty for BTI. Remaining qty: 577
+2024-10-31T19:51:14.160Z [INFO]: Order 70cb44fc-a4dc-4bf8-94e6-3d450c9d8094 filled 313 qty for BTI. Remaining qty: 264
+2024-10-31T19:51:51.947Z [INFO]: Stop condition met for BTI. Initiating market order to close position.
+2024-10-31T19:51:51.950Z [INFO]: Closing position with market order: {"symbol":"BTI","qty":"735","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-c00ab751272d6874"}
+2024-10-31T19:51:52.175Z [INFO]: Market order placed to close position in BTI. Order ID: 9fbd6f49-9c3c-49fd-ac3a-eb7c46bd287b
+2024-10-31T19:51:52.520Z [INFO]: Order 9fbd6f49-9c3c-49fd-ac3a-eb7c46bd287b filled 269 qty for BTI. Remaining qty: 466
+2024-10-31T19:51:52.883Z [INFO]: Position removed: BTI
+2024-10-31T19:51:52.885Z [INFO]: Unsubscribed from BTI quotes.
+2024-10-31T19:55:15.062Z [INFO]: Position removed: TAL
+2024-10-31T19:55:15.068Z [INFO]: Unsubscribed from TAL quotes.
