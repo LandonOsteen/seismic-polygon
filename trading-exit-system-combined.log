@@ -279,3 +279,149 @@
 2024-10-31T19:51:52.885Z [INFO]: Unsubscribed from BTI quotes.
 2024-10-31T19:55:15.062Z [INFO]: Position removed: TAL
 2024-10-31T19:55:15.068Z [INFO]: Unsubscribed from TAL quotes.
+2024-11-01T16:11:57.584Z [INFO]: Polygon WebSocket connected.
+2024-11-01T16:11:57.588Z [INFO]: Started polling for order statuses.
+2024-11-01T16:11:57.777Z [INFO]: Polygon WebSocket connection opened.
+2024-11-01T16:11:57.778Z [INFO]: Polygon WebSocket connected.
+2024-11-01T16:11:57.806Z [INFO]: Position added: TMF | Qty: 3000 | Avg Entry: $48.02
+2024-11-01T16:11:57.810Z [INFO]: Subscribed to TMF quotes.
+2024-11-01T16:11:57.827Z [INFO]: Polygon WebSocket authenticated.
+2024-11-01T16:11:58.456Z [INFO]: Stop condition met for TMF. Initiating market order to close position.
+2024-11-01T16:11:58.464Z [INFO]: Closing position with market order: {"symbol":"TMF","qty":"3000","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-bd48d949c3c0f272"}
+2024-11-01T16:11:58.684Z [INFO]: Market order placed to close position in TMF. Order ID: 1b2cadf7-5c84-4f96-949b-6c8218a5dc57
+2024-11-01T16:11:58.995Z [INFO]: Order 1b2cadf7-5c84-4f96-949b-6c8218a5dc57 filled 1048 qty for TMF. Remaining qty: 1952
+2024-11-01T16:12:00.062Z [INFO]: Order 1b2cadf7-5c84-4f96-949b-6c8218a5dc57 filled 2662 qty for TMF. Remaining qty: -2324
+2024-11-01T16:12:00.064Z [INFO]: Position removed: TMF
+2024-11-01T16:12:00.066Z [INFO]: Unsubscribed from TMF quotes.
+2024-11-01T16:12:14.172Z [INFO]: Polygon WebSocket connected.
+2024-11-01T16:12:14.176Z [INFO]: Started polling for order statuses.
+2024-11-01T16:12:14.339Z [INFO]: Polygon WebSocket connection opened.
+2024-11-01T16:12:14.340Z [INFO]: Polygon WebSocket connected.
+2024-11-01T16:12:14.387Z [INFO]: Polygon WebSocket authenticated.
+2024-11-01T16:19:20.491Z [INFO]: Position added: VSTE | Qty: 400 | Avg Entry: $6.9659
+2024-11-01T16:19:20.496Z [INFO]: Subscribed to VSTE quotes.
+2024-11-01T16:19:22.576Z [INFO]: Profit target hit for VSTE: +7.41¢ >= +5¢
+2024-11-01T16:19:22.577Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"80","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-9977b8ee756e5c8d"}
+2024-11-01T16:19:22.822Z [INFO]: Attempting to place pyramid order: {"symbol":"VSTE","qty":"120","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"7.17","client_order_id":"PYRAMID-cf3a96f09a1ed24c"}
+2024-11-01T16:19:23.192Z [INFO]: Placed IOC order for 80 shares of VSTE. Order ID: 2abfc229-780a-4e0e-b3d8-83209dbd4daf
+2024-11-01T16:19:23.540Z [INFO]: Placed pyramid order for 120 shares of VSTE. Order ID: a43c6ea6-edc2-46c0-b0c2-4343ca9ea088
+2024-11-01T16:19:24.315Z [INFO]: Multiple profit targets skipped for VSTE. Skipping pyramiding to avoid adding into volatility.
+2024-11-01T16:19:24.318Z [INFO]: Profit target hit for VSTE: +25.41¢ >= +10¢
+2024-11-01T16:19:24.320Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"96","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-bdd1de4f9923dd94"}
+2024-11-01T16:19:24.596Z [INFO]: Placed IOC order for 96 shares of VSTE. Order ID: 53a9afb6-3944-4caf-a714-ac8879dcce85
+2024-11-01T16:19:24.599Z [INFO]: Profit target hit for VSTE: +33.41¢ >= +15¢
+2024-11-01T16:19:24.601Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"64","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-ae617fc2632343ee"}
+2024-11-01T16:19:25.650Z [INFO]: Placed IOC order for 64 shares of VSTE. Order ID: 3de61b71-bcf0-49d8-9399-baa11b2be206
+2024-11-01T16:19:26.394Z [INFO]: Profit target hit for VSTE: +18.41¢ >= +20¢
+2024-11-01T16:19:26.396Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"48","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-c530206d2b2884fc"}
+2024-11-01T16:19:26.686Z [INFO]: Placed IOC order for 48 shares of VSTE. Order ID: e73211cd-eee5-41fe-88e6-2b0e5c30d802
+2024-11-01T16:19:28.354Z [INFO]: Profit target hit for VSTE: +34.41¢ >= +30¢
+2024-11-01T16:19:28.355Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"22","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-62ca24f70188358b"}
+2024-11-01T16:19:28.563Z [INFO]: Placed IOC order for 22 shares of VSTE. Order ID: 59d67380-11ec-4989-a6aa-146e6d304c4f
+2024-11-01T16:19:29.350Z [INFO]: Profit target hit for VSTE: +40.41¢ >= +40¢
+2024-11-01T16:19:29.352Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"18","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-024cdc44132dde55"}
+2024-11-01T16:19:29.614Z [INFO]: Placed IOC order for 18 shares of VSTE. Order ID: d733446a-604e-4bdc-a144-5330347f25ce
+2024-11-01T16:19:30.362Z [INFO]: Stop condition met for VSTE. Initiating market order to close position.
+2024-11-01T16:19:30.364Z [INFO]: Closing position with market order: {"symbol":"VSTE","qty":"72","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-97160057e22929f3"}
+2024-11-01T16:19:30.663Z [INFO]: Market order placed to close position in VSTE. Order ID: 23c3c1a3-3d1d-4d91-aaa4-babfe3bdfe01
+2024-11-01T16:19:31.068Z [INFO]: Position removed: VSTE
+2024-11-01T16:19:31.070Z [INFO]: Unsubscribed from VSTE quotes.
+2024-11-01T16:19:56.568Z [INFO]: Position added: VSTE | Qty: 300 | Avg Entry: $6.1501
+2024-11-01T16:19:56.574Z [INFO]: Subscribed to VSTE quotes.
+2024-11-01T16:20:00.170Z [INFO]: Profit target hit for VSTE: +6.99¢ >= +5¢
+2024-11-01T16:20:00.172Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"60","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-861262e885c18b2e"}
+2024-11-01T16:20:00.194Z [INFO]: Attempting to place pyramid order: {"symbol":"VSTE","qty":"90","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"6.38","client_order_id":"PYRAMID-2ce3e3198d7b6613"}
+2024-11-01T16:20:00.348Z [INFO]: Placed IOC order for 60 shares of VSTE. Order ID: 816b5e5a-f804-410d-a2a5-01aa6fa6afc9
+2024-11-01T16:20:00.707Z [INFO]: Placed pyramid order for 90 shares of VSTE. Order ID: 2c617898-bc4b-4012-a064-05711e01036e
+2024-11-01T16:20:07.286Z [INFO]: Profit target hit for VSTE: +10.90¢ >= +10¢
+2024-11-01T16:20:07.288Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"99","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a45efdd74bfbd741"}
+2024-11-01T16:20:07.462Z [INFO]: Placed IOC order for 99 shares of VSTE. Order ID: e3910491-b1d1-46ee-9074-b2f6693c8544
+2024-11-01T16:20:09.817Z [INFO]: Profit target hit for VSTE: +15.90¢ >= +15¢
+2024-11-01T16:20:09.819Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"46","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-594dfef431ed8846"}
+2024-11-01T16:20:10.108Z [INFO]: Placed IOC order for 46 shares of VSTE. Order ID: 70f6bad6-bdd2-4b27-a8b3-4b5450c09bdc
+2024-11-01T16:20:11.322Z [INFO]: Profit target hit for VSTE: +21.90¢ >= +20¢
+2024-11-01T16:20:11.324Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"55","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-e2f543fd7acf2a33"}
+2024-11-01T16:20:11.481Z [INFO]: Placed IOC order for 55 shares of VSTE. Order ID: 6a803111-198c-4f5b-b8ec-86cef256a29a
+2024-11-01T16:20:12.318Z [INFO]: Profit target hit for VSTE: +31.90¢ >= +30¢
+2024-11-01T16:20:12.321Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"26","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7979c94c96947cd5"}
+2024-11-01T16:20:12.538Z [INFO]: Placed IOC order for 26 shares of VSTE. Order ID: 9c1e8167-4b58-4d48-8a4e-c00bdd4a6986
+2024-11-01T16:20:19.398Z [INFO]: Profit target hit for VSTE: +40.90¢ >= +40¢
+2024-11-01T16:20:19.400Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"20","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-650547057eef120c"}
+2024-11-01T16:20:19.556Z [INFO]: Placed IOC order for 20 shares of VSTE. Order ID: 1b386ac1-8481-44a8-81c3-c7da4441df8f
+2024-11-01T16:20:24.496Z [INFO]: Profit target hit for VSTE: +50.90¢ >= +50¢
+2024-11-01T16:20:24.498Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"42","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-8c4a876f9b258699"}
+2024-11-01T16:20:24.921Z [INFO]: Placed IOC order for 42 shares of VSTE. Order ID: 832bba49-aa29-4652-99ef-0575fe600c0f
+2024-11-01T16:20:59.696Z [INFO]: Profit target hit for VSTE: +61.90¢ >= +60¢
+2024-11-01T16:20:59.698Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"8","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-536717f8ac3ac497"}
+2024-11-01T16:21:00.158Z [INFO]: Placed IOC order for 8 shares of VSTE. Order ID: 5f98f8a4-7fc5-4bb3-bee0-ebf35b0e9978
+2024-11-01T16:21:01.220Z [INFO]: Profit target hit for VSTE: +71.90¢ >= +70¢
+2024-11-01T16:21:01.222Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"6","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-73ad7859c3da30dd"}
+2024-11-01T16:21:01.398Z [INFO]: Placed IOC order for 6 shares of VSTE. Order ID: 6209bd4c-771e-482b-b31c-18114f725dfe
+2024-11-01T16:21:06.296Z [INFO]: Profit target hit for VSTE: +80.90¢ >= +80¢
+2024-11-01T16:21:06.298Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"5","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-5bc572042c7219ef"}
+2024-11-01T16:21:06.486Z [INFO]: Placed IOC order for 5 shares of VSTE. Order ID: eff442b3-18f3-42f0-94e2-930df66227b2
+2024-11-01T16:21:09.345Z [INFO]: Profit target hit for VSTE: +90.90¢ >= +90¢
+2024-11-01T16:21:09.347Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"4","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-05df0c0e62db2f04"}
+2024-11-01T16:21:09.535Z [INFO]: Placed IOC order for 4 shares of VSTE. Order ID: 8574eead-86d0-473f-b875-350283f3ae99
+2024-11-01T16:21:10.843Z [INFO]: Profit target hit for VSTE: +100.90¢ >= +100¢
+2024-11-01T16:21:10.845Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"19","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-54f91abc791381e9"}
+2024-11-01T16:21:11.351Z [INFO]: Placed IOC order for 19 shares of VSTE. Order ID: cc7ef908-b2c9-4144-a30b-58edb9bc5fb3
+2024-11-01T16:21:11.678Z [INFO]: Position removed: VSTE
+2024-11-01T16:21:11.684Z [INFO]: Unsubscribed from VSTE quotes.
+2024-11-01T16:21:32.648Z [INFO]: Position added: VSTE | Qty: 500 | Avg Entry: $7.622
+2024-11-01T16:21:32.654Z [INFO]: Subscribed to VSTE quotes.
+2024-11-01T16:21:35.889Z [INFO]: Profit target hit for VSTE: +5.80¢ >= +5¢
+2024-11-01T16:21:35.890Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-910b8a7e7d6d2892"}
+2024-11-01T16:21:36.201Z [INFO]: Placed IOC order for 100 shares of VSTE. Order ID: f7c37e59-1dcb-456c-a978-f8cdf75c344c
+2024-11-01T16:21:42.504Z [INFO]: Profit target hit for VSTE: +11.80¢ >= +10¢
+2024-11-01T16:21:42.506Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"120","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-7f7ec0741dddbe89"}
+2024-11-01T16:21:42.509Z [INFO]: Attempting to place pyramid order: {"symbol":"VSTE","qty":"120","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"7.81","client_order_id":"PYRAMID-a5760299af1c9526"}
+2024-11-01T16:21:42.692Z [INFO]: Placed IOC order for 120 shares of VSTE. Order ID: 444e183e-55c2-4995-b95d-a305669ba2f9
+2024-11-01T16:21:43.047Z [INFO]: Placed pyramid order for 120 shares of VSTE. Order ID: 32d2d801-fe5f-4ca4-96cb-1cea18ef614d
+2024-11-01T16:21:43.983Z [INFO]: Profit target hit for VSTE: +16.46¢ >= +15¢
+2024-11-01T16:21:43.985Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"80","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-a80a546d03218619"}
+2024-11-01T16:21:44.154Z [INFO]: Placed IOC order for 80 shares of VSTE. Order ID: 989344d2-1677-487d-b597-4ebbb6f71971
+2024-11-01T16:21:46.495Z [INFO]: Profit target hit for VSTE: +23.46¢ >= +20¢
+2024-11-01T16:21:46.498Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"96","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-927d160cd764ffad"}
+2024-11-01T16:21:46.657Z [INFO]: Placed IOC order for 96 shares of VSTE. Order ID: 2c585f94-fd79-4c00-8690-34e97304c148
+2024-11-01T16:21:50.545Z [INFO]: Profit target hit for VSTE: +30.46¢ >= +30¢
+2024-11-01T16:21:50.547Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"44","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-f2f9d34d7328de7f"}
+2024-11-01T16:21:50.701Z [INFO]: Placed IOC order for 44 shares of VSTE. Order ID: 210f0802-21cd-418f-aec1-20ef388d59eb
+2024-11-01T16:21:54.615Z [INFO]: Stop condition met for VSTE. Initiating market order to close position.
+2024-11-01T16:21:54.616Z [INFO]: Closing position with market order: {"symbol":"VSTE","qty":"180","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-07d0950a10429161"}
+2024-11-01T16:21:55.186Z [INFO]: Market order placed to close position in VSTE. Order ID: 6ba0b99f-1dea-4d6f-b562-c662486e7b6d
+2024-11-01T16:21:55.842Z [INFO]: Position removed: VSTE
+2024-11-01T16:21:55.848Z [INFO]: Unsubscribed from VSTE quotes.
+2024-11-01T16:59:32.733Z [INFO]: Position added: VSTE | Qty: 500 | Avg Entry: $6.5065
+2024-11-01T16:59:32.740Z [INFO]: Subscribed to VSTE quotes.
+2024-11-01T17:02:26.714Z [INFO]: Stop condition met for VSTE. Initiating market order to close position.
+2024-11-01T17:02:26.716Z [INFO]: Closing position with market order: {"symbol":"VSTE","qty":"1000","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-ee946622b19b6ba2"}
+2024-11-01T17:02:27.109Z [INFO]: Market order placed to close position in VSTE. Order ID: 10c8b8b5-e926-4976-912c-7c2117449659
+2024-11-01T17:02:27.456Z [INFO]: Position removed: VSTE
+2024-11-01T17:02:27.461Z [INFO]: Unsubscribed from VSTE quotes.
+2024-11-01T17:06:48.585Z [INFO]: Position added: VSTE | Qty: 500 | Avg Entry: $5.5892
+2024-11-01T17:06:48.592Z [INFO]: Subscribed to VSTE quotes.
+2024-11-01T17:06:59.610Z [INFO]: Profit target hit for VSTE: +5.08¢ >= +5¢
+2024-11-01T17:06:59.613Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"100","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-8724d57aefb000d5"}
+2024-11-01T17:06:59.947Z [INFO]: Placed IOC order for 100 shares of VSTE. Order ID: f70237dd-d10e-49a2-9efe-47c18834b277
+2024-11-01T17:08:43.396Z [INFO]: Stop condition met for VSTE. Initiating market order to close position.
+2024-11-01T17:08:43.399Z [INFO]: Closing position with market order: {"symbol":"VSTE","qty":"400","side":"sell","type":"market","time_in_force":"day","client_order_id":"CLOSE-575d640e0b4a92f8"}
+2024-11-01T17:08:43.584Z [INFO]: Market order placed to close position in VSTE. Order ID: 988e640d-86b1-4eba-8c03-0b495075d192
+2024-11-01T17:09:30.708Z [INFO]: Profit target hit for VSTE: +10.26¢ >= +10¢
+2024-11-01T17:09:30.710Z [INFO]: Attempting to place IOC order: {"symbol":"VSTE","qty":"150","side":"sell","type":"market","time_in_force":"day","client_order_id":"IOC-20bcab165e94b677"}
+2024-11-01T17:09:30.716Z [INFO]: Attempting to place pyramid order: {"symbol":"VSTE","qty":"150","side":"buy","type":"limit","time_in_force":"ioc","limit_price":"5.64","client_order_id":"PYRAMID-480c1401a973a08e"}
+2024-11-01T17:09:31.439Z [INFO]: Placed IOC order for 150 shares of VSTE. Order ID: f6091ca6-ff43-4812-b636-b63870936f64
+2024-11-01T17:09:31.773Z [INFO]: Placed pyramid order for 150 shares of VSTE. Order ID: 2cc1d2fb-cedf-4ac1-983b-eec3344428d0
+2024-11-01T17:14:46.862Z [INFO]: Position removed: VSTE
+2024-11-01T17:14:46.869Z [INFO]: Unsubscribed from VSTE quotes.
+2024-11-01T17:20:57.646Z [ERROR]: Error refreshing positions: connect ETIMEDOUT 35.221.23.121:443
+2024-11-01T17:22:05.323Z [INFO]: Polygon WebSocket connected.
+2024-11-01T17:22:05.327Z [INFO]: Started polling for order statuses.
+2024-11-01T17:22:05.508Z [INFO]: Polygon WebSocket connection opened.
+2024-11-01T17:22:05.509Z [INFO]: Polygon WebSocket connected.
+2024-11-01T17:22:05.562Z [INFO]: Polygon WebSocket authenticated.
+2024-11-02T18:28:00.659Z [INFO]: Polygon WebSocket connected.
+2024-11-02T18:28:00.664Z [INFO]: Started polling for order statuses.
+2024-11-02T18:28:00.869Z [INFO]: Polygon WebSocket connection opened.
+2024-11-02T18:28:00.871Z [INFO]: Polygon WebSocket connected.
+2024-11-02T18:28:00.937Z [INFO]: Polygon WebSocket authenticated.

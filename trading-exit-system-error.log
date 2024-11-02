@@ -21,3 +21,4 @@
 2024-10-31T19:29:29.044Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
 2024-10-31T19:29:31.035Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
 2024-10-31T19:29:33.086Z [ERROR]: Error refreshing positions: Cannot read properties of undefined (reading 'pyramidLevels')
+2024-11-01T17:20:57.646Z [ERROR]: Error refreshing positions: connect ETIMEDOUT 35.221.23.121:443
