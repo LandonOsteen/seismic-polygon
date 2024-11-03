@@ -239,7 +239,7 @@ class OrderManager {
         (side === 'sell' && askPrice >= pos.stopPrice) // Short position stop loss
       ) {
         pos.stopTriggered = true;
-        const stopMessage = `Stop condition met for ${symbol}. Initiating market order to close position.`;
+        const stopMessage = `Stop condition met for ${symbol}. Initiating limit order to close position.`;
         logger.info(stopMessage);
         this.dashboard.logWarning(stopMessage);
         await this.closePositionMarketOrder(symbol);
@@ -278,7 +278,7 @@ class OrderManager {
           return;
         }
 
-        // Place IOC order
+        // Place limit order
         await this.placeIOCOrder(
           symbol,
           qtyToClose,
@@ -334,7 +334,7 @@ class OrderManager {
 
           // Ensure qtyToAdd is at least 1
           if (qtyToAdd >= 1) {
-            // Place IOC order to add to position
+            // Place limit order to add to position
             await this.placePyramidOrder(
               pos,
               qtyToAdd,
@@ -359,7 +359,7 @@ class OrderManager {
   }
 
   /**
-   * Places an Immediate-Or-Cancel (IOC) order for pyramiding.
+   * Places a limit order for pyramiding.
    */
   async placePyramidOrder(pos, qtyToAdd, offsetCents) {
     const symbol = pos.symbol;
@@ -385,8 +385,9 @@ class OrderManager {
       qty: qtyToAdd.toFixed(0),
       side,
       type: 'limit',
-      time_in_force: 'ioc',
+      time_in_force: 'day',
       limit_price: limitPrice.toFixed(2),
+      extended_hours: true,
       client_order_id: this.generateClientOrderId('PYRAMID'),
     };
 
@@ -425,29 +426,31 @@ class OrderManager {
   }
 
   /**
-   * Places an Immediate-Or-Cancel (IOC) order.
+   * Places a limit order to close a portion of the position.
    */
   async placeIOCOrder(symbol, qty, side) {
     qty = Math.abs(qty);
 
     const pos = this.positions[symbol];
-    let marketPrice;
+    let limitPrice;
+    const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
+
     if (side === 'buy') {
-      // For short positions, buy at the ask price
-      marketPrice = pos.currentAsk;
+      // For short positions, buy at the ask price + offset
+      limitPrice = pos.currentAsk + limitOffsetCents / 100;
     } else if (side === 'sell') {
-      // For long positions, sell at the bid price
-      marketPrice = pos.currentBid;
+      // For long positions, sell at the bid price - offset
+      limitPrice = pos.currentBid - limitOffsetCents / 100;
     } else {
-      const errorMessage = `Invalid side "${side}" for IOC order on ${symbol}.`;
+      const errorMessage = `Invalid side "${side}" for limit order on ${symbol}.`;
       logger.error(errorMessage);
       this.dashboard.logError(errorMessage);
       return;
     }
 
-    // Safety Check: Ensure marketPrice is valid
-    if (marketPrice <= 0 || isNaN(marketPrice)) {
-      const errorMessage = `Invalid market price for ${symbol}. Cannot place ${side} order.`;
+    // Safety Check: Ensure limitPrice is valid
+    if (limitPrice <= 0 || isNaN(limitPrice)) {
+      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
       logger.error(errorMessage);
       this.dashboard.logError(errorMessage);
       return;
@@ -457,12 +460,14 @@ class OrderManager {
       symbol,
       qty: qty.toFixed(0),
       side,
-      type: 'market', // Use market order for immediate execution
+      type: 'limit',
       time_in_force: 'day',
-      client_order_id: this.generateClientOrderId('IOC'),
+      limit_price: limitPrice.toFixed(2),
+      extended_hours: true,
+      client_order_id: this.generateClientOrderId('LIMIT'),
     };
 
-    const orderMessage = `Attempting to place IOC order: ${JSON.stringify(
+    const orderMessage = `Attempting to place limit order: ${JSON.stringify(
       order
     )}`;
     logger.info(orderMessage);
@@ -472,11 +477,11 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Placed IOC order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
+      const successMessage = `Placed limit order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
-      // Track the IOC order
+      // Track the limit order
       this.orderTracking[result.id] = {
         symbol,
         type: 'ioc',
@@ -488,7 +493,7 @@ class OrderManager {
       // Immediately refresh positions after placing an order
       await this.refreshPositions();
     } catch (err) {
-      const errorMessage = `Error placing IOC order for ${symbol}: ${
+      const errorMessage = `Error placing limit order for ${symbol}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMessage);
@@ -532,7 +537,7 @@ class OrderManager {
                 trackedOrder.type === 'ioc' ||
                 trackedOrder.type === 'close'
               ) {
-                // For IOC and close orders, adjust position quantity
+                // For limit and close orders, adjust position quantity
                 pos.qty -= filledQty;
 
                 const fillMessage = `Order ${order.id} filled ${filledQty} qty for ${trackedOrder.symbol}. Remaining qty: ${pos.qty}`;
@@ -602,7 +607,7 @@ class OrderManager {
   }
 
   /**
-   * Closes the full position with a market order.
+   * Closes the full position with a limit order.
    */
   async closePositionMarketOrder(symbol) {
     const pos = this.positions[symbol];
@@ -616,17 +621,42 @@ class OrderManager {
     }
 
     const side = pos.side === 'buy' ? 'sell' : 'buy';
+    let limitPrice;
+    const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
+
+    if (side === 'buy') {
+      // For short positions, buy at the ask price + offset
+      limitPrice = pos.currentAsk + limitOffsetCents / 100;
+    } else if (side === 'sell') {
+      // For long positions, sell at the bid price - offset
+      limitPrice = pos.currentBid - limitOffsetCents / 100;
+    } else {
+      const errorMessage = `Invalid side "${side}" for limit order on ${symbol}.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+      return;
+    }
+
+    // Safety Check: Ensure limitPrice is valid
+    if (limitPrice <= 0 || isNaN(limitPrice)) {
+      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+      return;
+    }
 
     const order = {
       symbol,
       qty: qty.toFixed(0),
       side,
-      type: 'market',
+      type: 'limit',
       time_in_force: 'day',
+      limit_price: limitPrice.toFixed(2),
+      extended_hours: true,
       client_order_id: this.generateClientOrderId('CLOSE'),
     };
 
-    const closeMessage = `Closing position with market order: ${JSON.stringify(
+    const closeMessage = `Closing position with limit order: ${JSON.stringify(
       order
     )}`;
     logger.info(closeMessage);
@@ -636,11 +666,11 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Market order placed to close position in ${symbol}. Order ID: ${result.id}`;
+      const successMessage = `Limit order placed to close position in ${symbol}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
-      // Track the market order
+      // Track the limit order
       this.orderTracking[result.id] = {
         symbol,
         type: 'close',
@@ -652,7 +682,7 @@ class OrderManager {
       // Immediately refresh positions after placing an order
       await this.refreshPositions();
     } catch (err) {
-      const errorMessage = `Error placing market order to close position for ${symbol}: ${
+      const errorMessage = `Error placing limit order to close position for ${symbol}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMessage);
