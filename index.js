@@ -11,6 +11,10 @@ const polygon = new PolygonClient();
 const dashboard = new Dashboard();
 const orderManager = new OrderManager(dashboard, polygon);
 
+// Set references between instances
+dashboard.setOrderManager(orderManager);
+dashboard.setPolygonClient(polygon);
+
 // Handle uncaught exceptions
 process.on('uncaughtException', (err) => {
   logger.error(`Uncaught Exception: ${err.message}\n${err.stack}`);

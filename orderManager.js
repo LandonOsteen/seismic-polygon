@@ -1,3 +1,5 @@
+// orderManager.js
+
 const { alpaca } = require('./alpaca');
 const config = require('./config');
 const logger = require('./logger');
@@ -98,8 +100,6 @@ class OrderManager {
 
       // Update the dashboard with the loaded positions
       this.dashboard.updatePositions(Object.values(this.positions));
-
-      // No need to update summary here since updatePositions handles it
     } catch (err) {
       const message = `Error initializing existing positions: ${err.message}`;
       logger.error(message);
@@ -207,6 +207,8 @@ class OrderManager {
   async onQuoteUpdate(symbol, bidPrice, askPrice) {
     const pos = this.positions[symbol];
     if (!pos || !pos.isActive) {
+      // Update symbol boxes with latest prices
+      this.dashboard.updateSymbolBoxPrices(symbol, bidPrice, askPrice);
       return;
     }
 
@@ -359,39 +361,82 @@ class OrderManager {
   }
 
   /**
-   * Places a limit order for pyramiding.
+   * Handles hotkey actions triggered from the dashboard.
+   * @param {number} actionNumber - The action number corresponding to the hotkey.
+   * @param {string} symbol - The symbol associated with the action.
    */
-  async placePyramidOrder(pos, qtyToAdd, offsetCents) {
-    const symbol = pos.symbol;
-    const side = pos.side; // 'buy' or 'sell'
+  async handleHotkeyAction(actionNumber, symbol) {
+    switch (actionNumber) {
+      case 1:
+        // Buy a specified amount of shares with offset above the ask
+        await this.buyShares(symbol);
+        break;
+      case 2:
+        // Close 25% of position with offset below the ask
+        await this.closePositionPercent(symbol, 25, 'ask');
+        break;
+      case 3:
+        // Close 50% of position with offset below the ask
+        await this.closePositionPercent(symbol, 50, 'ask');
+        break;
+      case 4:
+        // Close 100% of position with offset below the ask
+        await this.closePositionPercent(symbol, 100, 'ask');
+        break;
+      case 5:
+        // Close 100% of position with offset below the bid
+        await this.closePositionPercent(symbol, 100, 'bid');
+        break;
+      default:
+        this.dashboard.logWarning(`Unknown action number: ${actionNumber}`);
+    }
+  }
 
-    let limitPrice;
+  /**
+   * Buys a specified amount of shares with an offset above the ask.
+   * @param {string} symbol - The symbol to buy.
+   */
+  async buyShares(symbol) {
+    const qty = config.orderSettings.buyAmountShares;
+    const offsetCents = config.orderSettings.buyLimitOffsetCents || 0;
 
-    if (side === 'buy') {
-      // For long positions, buy at ask price + offset
-      limitPrice = pos.currentAsk + offsetCents / 100;
-    } else if (side === 'sell') {
-      // For short positions, sell at bid price - offset
-      limitPrice = pos.currentBid - offsetCents / 100;
+    // Get current ask price from positions or dashboard symbol boxes
+    let askPrice = null;
+
+    const pos = this.positions[symbol];
+    if (pos) {
+      askPrice = pos.currentAsk;
     } else {
-      const errorMessage = `Invalid side "${side}" for pyramid order on ${symbol}.`;
-      logger.error(errorMessage);
-      this.dashboard.logError(errorMessage);
+      // Get from dashboard symbol boxes
+      const symbolBox = this.dashboard.symbolBoxes.find(
+        (sb) => sb.symbol === symbol
+      );
+      if (symbolBox && symbolBox.currentAsk) {
+        askPrice = symbolBox.currentAsk;
+      }
+    }
+
+    if (!askPrice) {
+      const message = `No ask price available for symbol ${symbol}. Cannot place buy order.`;
+      logger.error(message);
+      this.dashboard.logError(message);
       return;
     }
 
+    const limitPrice = askPrice + offsetCents / 100;
+
     const order = {
       symbol,
-      qty: qtyToAdd.toFixed(0),
-      side,
+      qty: qty.toFixed(0),
+      side: 'buy',
       type: 'limit',
       time_in_force: 'day',
       limit_price: limitPrice.toFixed(2),
       extended_hours: true,
-      client_order_id: this.generateClientOrderId('PYRAMID'),
+      client_order_id: this.generateClientOrderId('HOTKEY_BUY'),
     };
 
-    const orderMessage = `Attempting to place pyramid order: ${JSON.stringify(
+    const orderMessage = `Attempting to place buy order: ${JSON.stringify(
       order
     )}`;
     logger.info(orderMessage);
@@ -401,14 +446,14 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Placed pyramid order for ${qtyToAdd} shares of ${symbol}. Order ID: ${result.id}`;
+      const successMessage = `Placed buy order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
-      // Track the pyramid order
+      // Track the order
       this.orderTracking[result.id] = {
         symbol,
-        type: 'pyramid',
+        type: 'buy_hotkey',
         qty: parseFloat(order.qty),
         side: order.side,
         filledQty: 0,
@@ -417,7 +462,7 @@ class OrderManager {
       // Refresh positions
       await this.refreshPositions();
     } catch (err) {
-      const errorMessage = `Error placing pyramid order for ${symbol}: ${
+      const errorMessage = `Error placing buy order for ${symbol}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMessage);
@@ -426,48 +471,60 @@ class OrderManager {
   }
 
   /**
-   * Places a limit order to close a portion of the position.
+   * Closes a percentage of the position with an offset below the ask or bid.
+   * @param {string} symbol - The symbol to close.
+   * @param {number} percent - The percentage of the position to close.
+   * @param {string} priceType - 'ask' or 'bid' to determine price reference.
    */
-  async placeIOCOrder(symbol, qty, side) {
-    qty = Math.abs(qty);
-
+  async closePositionPercent(symbol, percent, priceType) {
+    // percent: 25, 50, 100
+    // priceType: 'ask' or 'bid'
+    // Get position
     const pos = this.positions[symbol];
-    let limitPrice;
-    const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
+    if (!pos) {
+      const message = `No existing position for symbol ${symbol}. Cannot close position.`;
+      logger.error(message);
+      this.dashboard.logError(message);
+      return;
+    }
 
-    if (side === 'buy') {
-      // For short positions, buy at the ask price + offset
-      limitPrice = pos.currentAsk + limitOffsetCents / 100;
-    } else if (side === 'sell') {
-      // For long positions, sell at the bid price - offset
-      limitPrice = pos.currentBid - limitOffsetCents / 100;
+    // Get current price
+    let price = null;
+    if (priceType === 'ask') {
+      price = pos.currentAsk;
+      price -= (config.orderSettings.sellLimitOffsetCents || 0) / 100;
+    } else if (priceType === 'bid') {
+      price = pos.currentBid;
+      price -= (config.orderSettings.sellLimitOffsetCents || 0) / 100;
     } else {
-      const errorMessage = `Invalid side "${side}" for limit order on ${symbol}.`;
-      logger.error(errorMessage);
-      this.dashboard.logError(errorMessage);
+      const message = `Invalid price type ${priceType} for closing position.`;
+      logger.error(message);
+      this.dashboard.logError(message);
       return;
     }
 
-    // Safety Check: Ensure limitPrice is valid
-    if (limitPrice <= 0 || isNaN(limitPrice)) {
-      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
-      logger.error(errorMessage);
-      this.dashboard.logError(errorMessage);
+    const qtyToClose = Math.floor(pos.qty * (percent / 100));
+    if (qtyToClose <= 0) {
+      const message = `Quantity to close is zero for ${symbol} at ${percent}% of position.`;
+      logger.warn(message);
+      this.dashboard.logWarning(message);
       return;
     }
+
+    const side = pos.side === 'buy' ? 'sell' : 'buy';
 
     const order = {
       symbol,
-      qty: qty.toFixed(0),
+      qty: qtyToClose.toFixed(0),
       side,
       type: 'limit',
       time_in_force: 'day',
-      limit_price: limitPrice.toFixed(2),
+      limit_price: price.toFixed(2),
       extended_hours: true,
-      client_order_id: this.generateClientOrderId('LIMIT'),
+      client_order_id: this.generateClientOrderId('HOTKEY_CLOSE'),
     };
 
-    const orderMessage = `Attempting to place limit order: ${JSON.stringify(
+    const orderMessage = `Attempting to place close order: ${JSON.stringify(
       order
     )}`;
     logger.info(orderMessage);
@@ -477,23 +534,23 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Placed limit order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
+      const successMessage = `Placed close order for ${qtyToClose} shares of ${symbol}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
-      // Track the limit order
+      // Track the order
       this.orderTracking[result.id] = {
         symbol,
-        type: 'ioc',
+        type: 'close_hotkey',
         qty: parseFloat(order.qty),
         side: order.side,
         filledQty: 0,
       };
 
-      // Immediately refresh positions after placing an order
+      // Refresh positions
       await this.refreshPositions();
     } catch (err) {
-      const errorMessage = `Error placing limit order for ${symbol}: ${
+      const errorMessage = `Error placing close order for ${symbol}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMessage);
@@ -535,7 +592,8 @@ class OrderManager {
             if (pos) {
               if (
                 trackedOrder.type === 'ioc' ||
-                trackedOrder.type === 'close'
+                trackedOrder.type === 'close' ||
+                trackedOrder.type === 'close_hotkey'
               ) {
                 // For limit and close orders, adjust position quantity
                 pos.qty -= filledQty;
@@ -558,17 +616,20 @@ class OrderManager {
                 if (pos.qty <= 0) {
                   this.removePosition(trackedOrder.symbol);
                 }
-              } else if (trackedOrder.type === 'pyramid') {
-                // For pyramid orders, adjust position quantity and avgEntryPrice
+              } else if (
+                trackedOrder.type === 'pyramid' ||
+                trackedOrder.type === 'buy_hotkey'
+              ) {
+                // For pyramid orders or buy_hotkey, adjust position quantity and avgEntryPrice
                 pos.qty += filledQty;
 
-                // Need to recalculate avgEntryPrice
+                // Recalculate avgEntryPrice
                 const totalCost =
                   pos.avgEntryPrice * (pos.qty - filledQty) +
                   filledQty * parseFloat(order.limit_price);
                 pos.avgEntryPrice = totalCost / pos.qty;
 
-                const fillMessage = `Pyramid order ${
+                const fillMessage = `Order ${
                   order.id
                 } filled ${filledQty} qty for ${
                   trackedOrder.symbol
@@ -781,6 +842,149 @@ class OrderManager {
       this.dashboard.logError(errorMessage);
     } finally {
       this.isRefreshing = false;
+    }
+  }
+
+  /**
+   * Places a limit order for pyramiding.
+   */
+  async placePyramidOrder(pos, qtyToAdd, offsetCents) {
+    const symbol = pos.symbol;
+    const side = pos.side; // 'buy' or 'sell'
+
+    let limitPrice;
+
+    if (side === 'buy') {
+      // For long positions, buy at ask price + offset
+      limitPrice = pos.currentAsk + offsetCents / 100;
+    } else if (side === 'sell') {
+      // For short positions, sell at bid price - offset
+      limitPrice = pos.currentBid - offsetCents / 100;
+    } else {
+      const errorMessage = `Invalid side "${side}" for pyramid order on ${symbol}.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+      return;
+    }
+
+    const order = {
+      symbol,
+      qty: qtyToAdd.toFixed(0),
+      side,
+      type: 'limit',
+      time_in_force: 'day',
+      limit_price: limitPrice.toFixed(2),
+      extended_hours: true,
+      client_order_id: this.generateClientOrderId('PYRAMID'),
+    };
+
+    const orderMessage = `Attempting to place pyramid order: ${JSON.stringify(
+      order
+    )}`;
+    logger.info(orderMessage);
+    this.dashboard.logInfo(orderMessage);
+
+    try {
+      const result = await this.retryOperation(() =>
+        this.limitedCreateOrder(order)
+      );
+      const successMessage = `Placed pyramid order for ${qtyToAdd} shares of ${symbol}. Order ID: ${result.id}`;
+      logger.info(successMessage);
+      this.dashboard.logInfo(successMessage);
+
+      // Track the pyramid order
+      this.orderTracking[result.id] = {
+        symbol,
+        type: 'pyramid',
+        qty: parseFloat(order.qty),
+        side: order.side,
+        filledQty: 0,
+      };
+
+      // Refresh positions
+      await this.refreshPositions();
+    } catch (err) {
+      const errorMessage = `Error placing pyramid order for ${symbol}: ${
+        err.response ? JSON.stringify(err.response.data) : err.message
+      }`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+    }
+  }
+
+  /**
+   * Places a limit order to close a portion of the position.
+   */
+  async placeIOCOrder(symbol, qty, side) {
+    qty = Math.abs(qty);
+
+    const pos = this.positions[symbol];
+    let limitPrice;
+    const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
+
+    if (side === 'buy') {
+      // For short positions, buy at the ask price + offset
+      limitPrice = pos.currentAsk + limitOffsetCents / 100;
+    } else if (side === 'sell') {
+      // For long positions, sell at the bid price - offset
+      limitPrice = pos.currentBid - limitOffsetCents / 100;
+    } else {
+      const errorMessage = `Invalid side "${side}" for limit order on ${symbol}.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+      return;
+    }
+
+    // Safety Check: Ensure limitPrice is valid
+    if (limitPrice <= 0 || isNaN(limitPrice)) {
+      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+      return;
+    }
+
+    const order = {
+      symbol,
+      qty: qty.toFixed(0),
+      side,
+      type: 'limit',
+      time_in_force: 'day',
+      limit_price: limitPrice.toFixed(2),
+      extended_hours: true,
+      client_order_id: this.generateClientOrderId('LIMIT'),
+    };
+
+    const orderMessage = `Attempting to place limit order: ${JSON.stringify(
+      order
+    )}`;
+    logger.info(orderMessage);
+    this.dashboard.logInfo(orderMessage);
+
+    try {
+      const result = await this.retryOperation(() =>
+        this.limitedCreateOrder(order)
+      );
+      const successMessage = `Placed limit order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
+      logger.info(successMessage);
+      this.dashboard.logInfo(successMessage);
+
+      // Track the limit order
+      this.orderTracking[result.id] = {
+        symbol,
+        type: 'ioc',
+        qty: parseFloat(order.qty),
+        side: order.side,
+        filledQty: 0,
+      };
+
+      // Immediately refresh positions after placing an order
+      await this.refreshPositions();
+    } catch (err) {
+      const errorMessage = `Error placing limit order for ${symbol}: ${
+        err.response ? JSON.stringify(err.response.data) : err.message
+      }`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
     }
   }
 }

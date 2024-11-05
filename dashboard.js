@@ -1,3 +1,5 @@
+// dashboard.js
+
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -5,10 +7,16 @@ const config = require('./config');
 
 class Dashboard {
   constructor() {
-    // Create a screen object.
+    this.orderManager = null;
+    this.polygon = null;
+
+    // Create a screen object with mouse support enabled.
     this.screen = blessed.screen({
       smartCSR: true,
       title: 'Trading Exit System Dashboard',
+      // Mouse support is optional since we're focusing on keyboard navigation
+      // mouse: true,
+      // keys: true, // Enabled by default
     });
 
     // Create a grid layout with 12 rows and 12 columns.
@@ -19,9 +27,118 @@ class Dashboard {
     });
 
     // --------------------------
-    // 1. Positions Table (Top)
+    // Symbol Entry Boxes (Top)
     // --------------------------
-    this.positionsTable = this.grid.set(0, 0, 4, 12, contrib.table, {
+    this.symbolBoxes = [];
+
+    for (let i = 0; i < 3; i++) {
+      const col = i * 4; // Each box is 4 columns wide
+      const symbolBox = this.grid.set(0, col, 3, 4, blessed.box, {
+        label: ` SYMBOL ${i + 1} `,
+        border: { type: 'line' },
+        style: {
+          fg: 'white',
+          border: { fg: 'cyan' },
+        },
+      });
+
+      // Add input field for symbol
+      const symbolInput = blessed.textbox({
+        parent: symbolBox,
+        top: 0,
+        left: 'center',
+        width: '80%',
+        height: 1,
+        inputOnFocus: true,
+        name: `symbolInput${i}`,
+        style: {
+          fg: 'white',
+          bg: 'black',
+          focus: {
+            bg: 'blue',
+          },
+        },
+      });
+
+      // Add text elements for bid and ask prices
+      const bidText = blessed.text({
+        parent: symbolBox,
+        top: 1,
+        left: 0,
+        content: 'Bid: N/A',
+        style: {
+          fg: 'green',
+        },
+      });
+
+      const askText = blessed.text({
+        parent: symbolBox,
+        top: 2,
+        left: 0,
+        content: 'Ask: N/A',
+        style: {
+          fg: 'red',
+        },
+      });
+
+      // Store references
+      this.symbolBoxes.push({
+        box: symbolBox,
+        input: symbolInput,
+        bidText: bidText,
+        askText: askText,
+        symbol: '',
+        selected: false,
+        currentBid: null,
+        currentAsk: null,
+      });
+
+      // Handle symbol input submission
+      symbolInput.on('submit', (value) => {
+        const symbol = value.toUpperCase().trim();
+        if (!symbol) {
+          this.logWarning(`No symbol entered in box ${i + 1}.`);
+          return;
+        }
+        this.logInfo(`Symbol entered in box ${i + 1}: ${symbol}`);
+
+        // Update the symbol in the symbol box
+        this.symbolBoxes[i].symbol = symbol;
+
+        // Display the symbol in the box label
+        this.symbolBoxes[i].box.setLabel(` SYMBOL ${i + 1} - ${symbol} `);
+
+        // Subscribe to symbol in Polygon
+        this.onSymbolEntered(i, symbol);
+
+        symbolInput.clearValue();
+
+        // Keep the box selected
+        this.selectSymbolBox(i);
+
+        this.screen.render();
+      });
+
+      // Prevent Tab from inserting spaces in the input
+      symbolInput.on('keypress', (ch, key) => {
+        if (key.name === 'tab' || (key.shift && key.name === 'tab')) {
+          // Prevent default Tab behavior
+          key.preventDefault = true;
+          key.stopPropagation = true;
+        }
+      });
+
+      // Handle box focus to select it
+      symbolBox.on('focus', () => {
+        this.selectSymbolBox(i);
+        this.screen.render();
+      });
+    }
+
+    // --------------------------
+    // Positions Table (Below Symbol Boxes)
+    // --------------------------
+    this.positionsTable = this.grid.set(3, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
       selectedFg: 'white',
@@ -74,11 +191,11 @@ class Dashboard {
     });
 
     // --------------------------
-    // 2. Info Box and Orders Table (Middle)
+    // Info Box and Orders Table (Middle)
     // --------------------------
 
     // Info Box (Left)
-    this.infoBox = this.grid.set(4, 0, 4, 6, contrib.log, {
+    this.infoBox = this.grid.set(7, 0, 2, 6, contrib.log, {
       fg: 'green',
       selectedFg: 'green',
       label: ' INFO ',
@@ -93,7 +210,7 @@ class Dashboard {
     });
 
     // Orders Table (Right)
-    this.ordersTable = this.grid.set(4, 6, 4, 6, contrib.table, {
+    this.ordersTable = this.grid.set(7, 6, 2, 6, contrib.table, {
       keys: true,
       fg: 'magenta',
       selectedFg: 'white',
@@ -123,11 +240,11 @@ class Dashboard {
     });
 
     // --------------------------
-    // 3. Errors Box and Warnings Box (Bottom)
+    // Errors Box and Warnings Box (Bottom)
     // --------------------------
 
     // Errors Box (Left)
-    this.errorBox = this.grid.set(8, 0, 4, 6, contrib.log, {
+    this.errorBox = this.grid.set(9, 0, 3, 6, contrib.log, {
       fg: 'red',
       selectedFg: 'red',
       label: ' ERRORS ',
@@ -142,7 +259,7 @@ class Dashboard {
     });
 
     // Warnings Box (Right)
-    this.warningBox = this.grid.set(8, 6, 4, 6, contrib.log, {
+    this.warningBox = this.grid.set(9, 6, 3, 6, contrib.log, {
       fg: 'yellow',
       selectedFg: 'yellow',
       label: ' WARNINGS ',
@@ -157,14 +274,57 @@ class Dashboard {
     });
 
     // --------------------------
-    // 4. Quit Key Bindings
+    // Hotkey Listener
+    // --------------------------
+    const keyMap = { '!': 1, '@': 2, '#': 3, $: 4, '%': 5 };
+
+    this.screen.key(['!', '@', '#', '$', '%'], (ch, key) => {
+      // Find the selected symbol box
+      const selectedBox = this.symbolBoxes.find((sb) => sb.selected);
+      if (selectedBox) {
+        const symbol = selectedBox.symbol;
+        if (!symbol) {
+          this.logWarning('No symbol entered in the selected box.');
+          return;
+        }
+        // Handle the hotkey
+        const actionNumber = keyMap[key.full];
+        this.handleHotkey(actionNumber, symbol);
+      } else {
+        this.logWarning('No symbol box selected.');
+      }
+    });
+
+    // --------------------------
+    // Quit Key Bindings
     // --------------------------
     // Quit on Escape, q, or Control-C.
     this.screen.key(['escape', 'q', 'C-c'], () => {
       return process.exit(0);
     });
 
+    // --------------------------
+    // Tab Navigation Key Bindings
+    // --------------------------
+    this.screen.key(['tab', 'S-tab'], (ch, key) => {
+      this.cycleSymbolBox(key.shift);
+    });
+
+    // Select the first symbol box by default and focus its input
+    if (this.symbolBoxes.length > 0) {
+      this.selectSymbolBox(0);
+      this.symbolBoxes[0].input.focus();
+    }
+
     this.screen.render();
+  }
+
+  setOrderManager(orderManager) {
+    this.orderManager = orderManager;
+  }
+
+  setPolygonClient(polygon) {
+    this.polygon = polygon;
   }
 
   /**
@@ -346,6 +506,115 @@ class Dashboard {
         rows.items[index].style = { fg: 'yellow' };
       }
     });
+  }
+
+  /**
+   * Selects a symbol box and highlights it.
+   * @param {number} index - Index of the symbol box to select.
+   */
+  selectSymbolBox(index) {
+    // Deselect all symbol boxes
+    this.symbolBoxes.forEach((sb, i) => {
+      sb.selected = false;
+      sb.box.style.border.fg = 'cyan';
+    });
+
+    // Select the specified box
+    this.symbolBoxes[index].selected = true;
+    this.symbolBoxes[index].box.style.border.fg = 'yellow';
+
+    // Focus the input field of the selected box
+    this.symbolBoxes[index].input.focus();
+  }
+
+  /**
+   * Cycles through the symbol boxes based on the direction.
+   * @param {boolean} reverse - If true, cycles in reverse order.
+   */
+  cycleSymbolBox(reverse = false) {
+    const totalBoxes = this.symbolBoxes.length;
+    if (totalBoxes === 0) return;
+
+    // Find the currently selected box index
+    let currentIndex = this.symbolBoxes.findIndex((sb) => sb.selected);
+
+    // If no box is selected, default to first box
+    if (currentIndex === -1) {
+      currentIndex = 0;
+    }
+
+    // Determine the next index based on the direction
+    if (reverse) {
+      currentIndex = (currentIndex - 1 + totalBoxes) % totalBoxes;
+    } else {
+      currentIndex = (currentIndex + 1) % totalBoxes;
+    }
+
+    // Select the new box
+    this.selectSymbolBox(currentIndex);
+
+    this.screen.render();
+  }
+
+  /**
+   * Handles when a symbol is entered into a symbol box.
+   * @param {number} index - Index of the symbol box.
+   * @param {string} symbol - The symbol entered.
+   */
+  onSymbolEntered(index, symbol) {
+    if (!this.polygon) {
+      this.logError('Polygon client is not set.');
+      return;
+    }
+
+    // Unsubscribe from previous symbol if any
+    const previousSymbol = this.symbolBoxes[index].currentSymbol;
+    if (previousSymbol) {
+      this.polygon.unsubscribe(previousSymbol);
+    }
+
+    // Subscribe to symbol in Polygon
+    this.polygon.subscribe(symbol);
+
+    // Store the symbol in the symbol box data
+    this.symbolBoxes[index].currentSymbol = symbol;
+
+    // Update the bid and ask prices to N/A until new data arrives
+    this.symbolBoxes[index].bidText.setContent('Bid: N/A');
+    this.symbolBoxes[index].askText.setContent('Ask: N/A');
+
+    this.screen.render();
+  }
+
+  /**
+   * Updates the bid and ask prices in the symbol boxes.
+   * @param {string} symbol - The symbol for which to update prices.
+   * @param {number} bidPrice - The latest bid price.
+   * @param {number} askPrice - The latest ask price.
+   */
+  updateSymbolBoxPrices(symbol, bidPrice, askPrice) {
+    const symbolBox = this.symbolBoxes.find((sb) => sb.symbol === symbol);
+    if (symbolBox) {
+      symbolBox.bidText.setContent(`Bid: $${bidPrice.toFixed(2)}`);
+      symbolBox.askText.setContent(`Ask: $${askPrice.toFixed(2)}`);
+      symbolBox.currentBid = bidPrice;
+      symbolBox.currentAsk = askPrice;
+      this.screen.render();
+    }
+  }
+
+  /**
+   * Handles hotkey actions for the selected symbol box.
+   * @param {number} actionNumber - The action number corresponding to the hotkey.
+   * @param {string} symbol - The symbol associated with the action.
+   */
+  handleHotkey(actionNumber, symbol) {
+    this.logInfo(`Hotkey ${actionNumber} pressed for symbol ${symbol}`);
+    if (!this.orderManager) {
+      this.logError('OrderManager is not set.');
+      return;
+    }
+    this.orderManager.handleHotkeyAction(actionNumber, symbol);
   }
 }
 

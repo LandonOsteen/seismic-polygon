@@ -21,3 +21,39 @@
 2024-10-18T23:30:18.107Z [ERROR]: Error polling order statuses: Request failed with status code 403
 2024-10-18T23:30:19.117Z [ERROR]: Error refreshing positions: Request failed with status code 403
 2024-10-18T23:30:19.465Z [ERROR]: Error polling order statuses: Request failed with status code 403
+2024-11-04T14:42:19.949Z [ERROR]: Error placing limit order for NUWE: {"available":"480","code":40310000,"existing_qty":"480","held_for_orders":"0","message":"insufficient qty available for order (requested: 960, available: 480)","symbol":"NUWE"}
+2024-11-05T00:37:17.232Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:40:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-11-05T00:37:18.232Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:40:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-11-05T00:37:19.237Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:40:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-11-05T00:37:20.238Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:40:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-11-05T00:37:21.239Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:40:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-11-05T00:37:22.239Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:40:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+2024-11-05T00:37:23.240Z [ERROR]: Uncaught Exception: this.pollOrderStatuses is not a function
+TypeError: this.pollOrderStatuses is not a function
+    at Timeout._onTimeout (/Users/landonosteen/Desktop/seismic-polygon/orderManager.js:40:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
