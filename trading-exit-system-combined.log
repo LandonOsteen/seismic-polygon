@@ -574,3 +574,13 @@
 2024-10-31T20:17:14.172Z [INFO]: Polygon WebSocket connection opened.
 2024-10-31T20:17:14.176Z [INFO]: Polygon WebSocket connected.
 2024-10-31T20:17:14.225Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T01:05:07.594Z [INFO]: Polygon WebSocket connected.
+2024-11-05T01:05:07.598Z [INFO]: Started polling for order statuses.
+2024-11-05T01:05:07.792Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T01:05:07.794Z [INFO]: Polygon WebSocket connected.
+2024-11-05T01:05:07.841Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T01:23:39.261Z [INFO]: Polygon WebSocket connected.
+2024-11-05T01:23:39.265Z [INFO]: Started polling for order statuses.
+2024-11-05T01:23:39.472Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T01:23:39.473Z [INFO]: Polygon WebSocket connected.
+2024-11-05T01:23:39.525Z [INFO]: Polygon WebSocket authenticated.
