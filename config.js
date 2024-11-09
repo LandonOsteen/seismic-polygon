@@ -16,18 +16,17 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   orderSettings: {
-    limitOffsetCents: 4, // Adjusted limit offset for limit orders
+    limitOffsetCents: 5, // Adjusted limit offset for limit orders
     profitTargets: [
-      { targetCents: 5, percentToClose: 20 }, // 1
-      { targetCents: 10, percentToClose: 40 }, // 2
-      { targetCents: 15, percentToClose: 50 }, // 3
-      { targetCents: 20, percentToClose: 100 }, // 4
+      { targetCents: 5, percentToClose: 10 }, // 1
+      { targetCents: 10, percentToClose: 10 }, // 2
+      { targetCents: 15, percentToClose: 10 }, // 3
+      { targetCents: 20, percentToClose: 20 }, // 4
     ],
     dynamicStops: [
       { profitTargetsHit: 0, stopCents: -20 },
-      { profitTargetsHit: 1, stopCents: -15 },
-      { profitTargetsHit: 2, stopCents: 0 },
-      { profitTargetsHit: 3, stopCents: 5 },
+      { profitTargetsHit: 2, stopCents: -10 },
+      { profitTargetsHit: 4, stopCents: 0 },
     ],
     pyramidLevels: [{ addInCents: 25, percentToAdd: 10, offsetCents: 4 }],
   },

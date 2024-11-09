@@ -584,3 +584,2008 @@
 2024-11-05T01:23:39.472Z [INFO]: Polygon WebSocket connection opened.
 2024-11-05T01:23:39.473Z [INFO]: Polygon WebSocket connected.
 2024-11-05T01:23:39.525Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T13:23:34.384Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:23:34.389Z [INFO]: Started polling for order statuses.
+2024-11-05T13:23:34.591Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T13:23:34.592Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:23:34.647Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T13:24:01.486Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:24:01.491Z [INFO]: Started polling for order statuses.
+2024-11-05T13:24:01.722Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T13:24:01.723Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:24:01.776Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T13:24:23.701Z [INFO]: Position added: ALBT | Qty: 10 | Avg Entry: $4.77
+2024-11-05T13:24:23.705Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T13:26:12.764Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:26:12.769Z [INFO]: Started polling for order statuses.
+2024-11-05T13:26:12.935Z [INFO]: Position added: ALBT | Qty: 20 | Avg Entry: $4.78
+2024-11-05T13:26:12.969Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T13:26:12.970Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:26:13.021Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T13:26:39.928Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:26:39.933Z [INFO]: Started polling for order statuses.
+2024-11-05T13:26:40.108Z [INFO]: Position added: ALBT | Qty: 30 | Avg Entry: $4.78
+2024-11-05T13:26:40.116Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T13:26:40.117Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:26:40.169Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T13:27:30.088Z [INFO]: Position added: AGFY | Qty: 1000 | Avg Entry: $5.09
+2024-11-05T13:27:30.093Z [INFO]: Subscribed to AGFY quotes.
+2024-11-05T13:27:42.549Z [INFO]: Profit target hit for AGFY: +6.26¢ >= +5¢
+2024-11-05T13:27:42.551Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.11","extended_hours":true,"client_order_id":"LIMIT-08bdd47830448392"}
+2024-11-05T13:27:42.879Z [INFO]: Placed limit order for 400 shares of AGFY. Order ID: c2f8b675-a3b4-4d6c-b017-6901bc531b73
+2024-11-05T13:27:47.078Z [INFO]: Profit target hit for AGFY: +10.26¢ >= +10¢
+2024-11-05T13:27:47.080Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"640","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.15","extended_hours":true,"client_order_id":"LIMIT-eda0ee5d8c5b4835"}
+2024-11-05T13:27:47.465Z [INFO]: Placed limit order for 640 shares of AGFY. Order ID: 37f88217-8a9b-421e-b8d4-f318490a0817
+2024-11-05T13:27:48.514Z [INFO]: Order 37f88217-8a9b-421e-b8d4-f318490a0817 filled 351 qty for AGFY. Remaining qty: 898
+2024-11-05T13:27:49.170Z [INFO]: Order 37f88217-8a9b-421e-b8d4-f318490a0817 filled 351 qty for AGFY. Remaining qty: 547
+2024-11-05T13:27:50.445Z [INFO]: Order 37f88217-8a9b-421e-b8d4-f318490a0817 filled 351 qty for AGFY. Remaining qty: 898
+2024-11-05T13:27:51.121Z [INFO]: Order 37f88217-8a9b-421e-b8d4-f318490a0817 filled 351 qty for AGFY. Remaining qty: 547
+2024-11-05T13:27:52.448Z [INFO]: Order 37f88217-8a9b-421e-b8d4-f318490a0817 filled 351 qty for AGFY. Remaining qty: 898
+2024-11-05T13:27:53.127Z [INFO]: Order 37f88217-8a9b-421e-b8d4-f318490a0817 filled 435 qty for AGFY. Remaining qty: 463
+2024-11-05T13:28:00.612Z [INFO]: Stop condition met for AGFY. Initiating limit order to close position.
+2024-11-05T13:28:00.615Z [INFO]: Closing position with limit order: {"symbol":"AGFY","qty":"960","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-d313ba0d64b91606"}
+2024-11-05T13:28:00.839Z [INFO]: Limit order placed to close position in AGFY. Order ID: f95c5cc8-c7cb-4f23-a896-cb75c5e5203c
+2024-11-05T13:28:50.161Z [INFO]: Position removed: AGFY
+2024-11-05T13:28:50.163Z [INFO]: Unsubscribed from AGFY quotes.
+2024-11-05T13:29:49.808Z [INFO]: Stop condition met for ALBT. Initiating limit order to close position.
+2024-11-05T13:29:49.810Z [INFO]: Closing position with limit order: {"symbol":"ALBT","qty":"1030","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.54","extended_hours":true,"client_order_id":"CLOSE-22004a19ec1c81a0"}
+2024-11-05T13:29:49.963Z [INFO]: Limit order placed to close position in ALBT. Order ID: 2a489a6d-74c0-40eb-8215-59b1bbe086c4
+2024-11-05T13:29:50.667Z [INFO]: Order 2a489a6d-74c0-40eb-8215-59b1bbe086c4 filled 861 qty for ALBT. Remaining qty: -797
+2024-11-05T13:29:50.671Z [INFO]: Position removed: ALBT
+2024-11-05T13:29:50.673Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T13:30:56.192Z [INFO]: Position added: ALBT | Qty: 500 | Avg Entry: $4.49
+2024-11-05T13:30:56.199Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T13:31:12.210Z [INFO]: Position removed: ALBT
+2024-11-05T13:31:12.212Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T13:39:13.011Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:39:13.015Z [INFO]: Started polling for order statuses.
+2024-11-05T13:39:13.198Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T13:39:13.199Z [INFO]: Polygon WebSocket connected.
+2024-11-05T13:39:13.250Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T13:51:25.487Z [INFO]: Position added: SPPL | Qty: 5 | Avg Entry: $1.6797
+2024-11-05T13:51:25.494Z [INFO]: Subscribed to SPPL quotes.
+2024-11-05T13:51:35.512Z [INFO]: Position removed: SPPL
+2024-11-05T13:51:35.517Z [INFO]: Unsubscribed from SPPL quotes.
+2024-11-05T14:06:34.672Z [INFO]: Polygon WebSocket connected.
+2024-11-05T14:06:34.677Z [INFO]: Started polling for order statuses.
+2024-11-05T14:06:34.843Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T14:06:34.844Z [INFO]: Polygon WebSocket connected.
+2024-11-05T14:06:34.899Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T14:07:52.839Z [INFO]: Position added: ZVSA | Qty: 500 | Avg Entry: $2.86
+2024-11-05T14:07:52.844Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:08:40.855Z [INFO]: Position removed: ZVSA
+2024-11-05T14:08:40.858Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:09:14.867Z [INFO]: Position added: ZVSA | Qty: 500 | Avg Entry: $2.98
+2024-11-05T14:09:14.869Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:10:24.982Z [INFO]: Position removed: ZVSA
+2024-11-05T14:10:24.988Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:10:34.993Z [INFO]: Position added: ZVSA | Qty: 500 | Avg Entry: $3.08998
+2024-11-05T14:10:34.998Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:11:27.113Z [INFO]: Position removed: ZVSA
+2024-11-05T14:11:27.118Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:19:11.318Z [INFO]: Position added: AGFY | Qty: 500 | Avg Entry: $5.61
+2024-11-05T14:19:11.320Z [INFO]: Subscribed to AGFY quotes.
+2024-11-05T14:19:11.815Z [INFO]: Profit target hit for AGFY: +5.00¢ >= +5¢
+2024-11-05T14:19:11.818Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.61","extended_hours":true,"client_order_id":"LIMIT-c01bd6735530b95f"}
+2024-11-05T14:19:12.023Z [INFO]: Placed limit order for 100 shares of AGFY. Order ID: 471d9a02-f9e8-4ad5-926b-9a31b4366781
+2024-11-05T14:19:21.325Z [INFO]: Profit target hit for AGFY: +10.89¢ >= +10¢
+2024-11-05T14:19:21.327Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"360","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.70","extended_hours":true,"client_order_id":"LIMIT-12430d76d10e8fbb"}
+2024-11-05T14:19:21.670Z [INFO]: Placed limit order for 360 shares of AGFY. Order ID: 337bd899-43cc-4e3d-ad4d-93592edbdf6e
+2024-11-05T14:19:35.343Z [INFO]: Stop condition met for AGFY. Initiating limit order to close position.
+2024-11-05T14:19:35.345Z [INFO]: Closing position with limit order: {"symbol":"AGFY","qty":"540","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.58","extended_hours":true,"client_order_id":"CLOSE-56c325d44895cf4b"}
+2024-11-05T14:19:35.685Z [INFO]: Limit order placed to close position in AGFY. Order ID: 7fc60b6b-e713-4469-a234-2ed1c62b7e65
+2024-11-05T14:19:36.371Z [INFO]: Position removed: AGFY
+2024-11-05T14:19:36.378Z [INFO]: Unsubscribed from AGFY quotes.
+2024-11-05T14:20:01.338Z [INFO]: Position added: AGFY | Qty: 500 | Avg Entry: $5.7393
+2024-11-05T14:20:01.344Z [INFO]: Subscribed to AGFY quotes.
+2024-11-05T14:20:47.419Z [INFO]: Profit target hit for AGFY: +5.44¢ >= +5¢
+2024-11-05T14:20:47.420Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.76","extended_hours":true,"client_order_id":"LIMIT-52bf7dd34113ecfb"}
+2024-11-05T14:20:47.719Z [INFO]: Placed limit order for 300 shares of AGFY. Order ID: 1de564f0-452e-4f93-8894-9056671a151d
+2024-11-05T14:21:05.970Z [INFO]: Profit target hit for AGFY: +10.44¢ >= +10¢
+2024-11-05T14:21:05.972Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"480","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.81","extended_hours":true,"client_order_id":"LIMIT-d2e03b3b53f362b2"}
+2024-11-05T14:21:06.144Z [INFO]: Placed limit order for 480 shares of AGFY. Order ID: 2c7e7a88-9b1d-4e7d-a25f-58d3ccca6877
+2024-11-05T14:21:26.994Z [INFO]: Profit target hit for AGFY: +15.44¢ >= +15¢
+2024-11-05T14:21:26.996Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"360","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.86","extended_hours":true,"client_order_id":"LIMIT-48b12b9b2ef0fe8b"}
+2024-11-05T14:21:27.176Z [INFO]: Placed limit order for 360 shares of AGFY. Order ID: 69ec2e61-6c71-483b-b7e4-3191f64975bf
+2024-11-05T14:21:45.492Z [INFO]: Stop condition met for AGFY. Initiating limit order to close position.
+2024-11-05T14:21:45.494Z [INFO]: Closing position with limit order: {"symbol":"AGFY","qty":"860","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.78","extended_hours":true,"client_order_id":"CLOSE-4e451381ce5b4c2d"}
+2024-11-05T14:21:45.730Z [INFO]: Limit order placed to close position in AGFY. Order ID: de472823-fcad-4384-9647-275b90dee4ef
+2024-11-05T14:21:46.439Z [INFO]: Position removed: AGFY
+2024-11-05T14:21:46.445Z [INFO]: Unsubscribed from AGFY quotes.
+2024-11-05T14:31:31.711Z [INFO]: Position added: ALBT | Qty: 1000 | Avg Entry: $4.35792
+2024-11-05T14:31:31.716Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T14:33:09.730Z [INFO]: Stop condition met for ALBT. Initiating limit order to close position.
+2024-11-05T14:33:09.733Z [INFO]: Closing position with limit order: {"symbol":"ALBT","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.09","extended_hours":true,"client_order_id":"CLOSE-959fcc8e67f9129c"}
+2024-11-05T14:33:10.048Z [INFO]: Limit order placed to close position in ALBT. Order ID: e9d2e5e1-7aa8-4652-a918-4e9986392857
+2024-11-05T14:33:10.397Z [INFO]: Position removed: ALBT
+2024-11-05T14:33:10.404Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T14:33:31.781Z [INFO]: Position added: ZVSA | Qty: 1000 | Avg Entry: $3.081761
+2024-11-05T14:33:31.787Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:33:49.112Z [INFO]: Profit target hit for ZVSA: +5.10¢ >= +5¢
+2024-11-05T14:33:49.114Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"600","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.08","extended_hours":true,"client_order_id":"LIMIT-6ec1856f8608bf43"}
+2024-11-05T14:33:49.320Z [INFO]: Placed limit order for 600 shares of ZVSA. Order ID: a7e233b5-d094-4ad1-9dfa-d4d2e294bd23
+2024-11-05T14:33:50.633Z [INFO]: Profit target hit for ZVSA: +10.10¢ >= +10¢
+2024-11-05T14:33:50.635Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"960","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.13","extended_hours":true,"client_order_id":"LIMIT-9a132fcbaa09e2f7"}
+2024-11-05T14:33:50.846Z [INFO]: Placed limit order for 960 shares of ZVSA. Order ID: 2bc1b566-0d65-45bb-84c0-5635293a7066
+2024-11-05T14:34:10.706Z [INFO]: Stop condition met for ZVSA. Initiating limit order to close position.
+2024-11-05T14:34:10.708Z [INFO]: Closing position with limit order: {"symbol":"ZVSA","qty":"1440","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.02","extended_hours":true,"client_order_id":"CLOSE-e3dc9798658a3c1b"}
+2024-11-05T14:34:10.882Z [INFO]: Limit order placed to close position in ZVSA. Order ID: 8b56bfb7-09d4-4c43-8fe6-d4f2e52e44c3
+2024-11-05T14:34:11.257Z [INFO]: Position removed: ZVSA
+2024-11-05T14:34:11.260Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:34:23.942Z [INFO]: Position added: ZVSA | Qty: 2000 | Avg Entry: $3.14455
+2024-11-05T14:34:23.948Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:34:40.275Z [INFO]: Profit target hit for ZVSA: +5.54¢ >= +5¢
+2024-11-05T14:34:40.277Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.15","extended_hours":true,"client_order_id":"LIMIT-21f920443906df86"}
+2024-11-05T14:34:40.569Z [INFO]: Placed limit order for 400 shares of ZVSA. Order ID: fec11ba6-100a-4057-9d81-468ff0bc94cc
+2024-11-05T14:34:41.584Z [INFO]: Profit target hit for ZVSA: +11.54¢ >= +10¢
+2024-11-05T14:34:41.586Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"640","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.21","extended_hours":true,"client_order_id":"LIMIT-463e52535ebb55e8"}
+2024-11-05T14:34:42.124Z [INFO]: Placed limit order for 640 shares of ZVSA. Order ID: 6b86241b-a6be-4526-99c8-e5a7e2af9e33
+2024-11-05T14:34:42.341Z [INFO]: Profit target hit for ZVSA: +21.54¢ >= +15¢
+2024-11-05T14:34:42.343Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"800","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.31","extended_hours":true,"client_order_id":"LIMIT-0137519d0d88012e"}
+2024-11-05T14:34:42.773Z [INFO]: Placed limit order for 800 shares of ZVSA. Order ID: 65504b45-56b7-4b56-b913-38c5b431f542
+2024-11-05T14:34:44.235Z [INFO]: Profit target hit for ZVSA: +20.54¢ >= +20¢
+2024-11-05T14:34:44.237Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"160","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.30","extended_hours":true,"client_order_id":"LIMIT-666c54e83efa4c45"}
+2024-11-05T14:34:44.513Z [INFO]: Placed limit order for 160 shares of ZVSA. Order ID: 134df043-e6bc-48db-b6e2-4d99b6060f9d
+2024-11-05T14:34:45.293Z [INFO]: Position removed: ZVSA
+2024-11-05T14:34:45.294Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:35:09.995Z [INFO]: Position added: ZVSA | Qty: 1000 | Avg Entry: $3.0699
+2024-11-05T14:35:09.997Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:35:27.617Z [INFO]: Profit target hit for ZVSA: +5.69¢ >= +5¢
+2024-11-05T14:35:27.619Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.07","extended_hours":true,"client_order_id":"LIMIT-e6ca0800ccbab920"}
+2024-11-05T14:35:28.017Z [INFO]: Placed limit order for 400 shares of ZVSA. Order ID: f3d74276-d520-4055-a49b-87a8f2fc59ad
+2024-11-05T14:35:29.594Z [INFO]: Profit target hit for ZVSA: +10.69¢ >= +10¢
+2024-11-05T14:35:29.596Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"640","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.12","extended_hours":true,"client_order_id":"LIMIT-1c5de939e17bf33b"}
+2024-11-05T14:35:30.023Z [INFO]: Placed limit order for 640 shares of ZVSA. Order ID: 514644c9-f31c-4fff-9a76-3b022f7e196f
+2024-11-05T14:35:32.382Z [INFO]: Profit target hit for ZVSA: +15.69¢ >= +15¢
+2024-11-05T14:35:32.384Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"480","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.17","extended_hours":true,"client_order_id":"LIMIT-dc0bfcdf72a75c80"}
+2024-11-05T14:35:32.597Z [INFO]: Placed limit order for 480 shares of ZVSA. Order ID: 5e1999a2-70a6-4f6f-b74b-7ea51fcaf257
+2024-11-05T14:35:40.952Z [INFO]: Stop condition met for ZVSA. Initiating limit order to close position.
+2024-11-05T14:35:40.954Z [INFO]: Closing position with limit order: {"symbol":"ZVSA","qty":"480","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.06","extended_hours":true,"client_order_id":"CLOSE-e1b6d3ea32401de6"}
+2024-11-05T14:35:41.229Z [INFO]: Limit order placed to close position in ZVSA. Order ID: 791934ba-fb59-46ee-a501-6139696af29a
+2024-11-05T14:35:41.527Z [INFO]: Position removed: ZVSA
+2024-11-05T14:35:41.529Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:37:18.101Z [INFO]: Position added: ZVSA | Qty: 1000 | Avg Entry: $2.98792
+2024-11-05T14:37:18.107Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:37:27.343Z [INFO]: Profit target hit for ZVSA: +5.21¢ >= +5¢
+2024-11-05T14:37:27.346Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.99","extended_hours":true,"client_order_id":"LIMIT-ec8f591b99d7238b"}
+2024-11-05T14:37:27.539Z [INFO]: Placed limit order for 200 shares of ZVSA. Order ID: 1fe1d9e6-2286-4f06-a353-07262d33e9a5
+2024-11-05T14:37:53.103Z [INFO]: Profit target hit for ZVSA: +10.76¢ >= +10¢
+2024-11-05T14:37:53.104Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"720","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.08","extended_hours":true,"client_order_id":"LIMIT-0f03b3b96c4220d3"}
+2024-11-05T14:37:53.351Z [INFO]: Placed limit order for 720 shares of ZVSA. Order ID: cc3ee0b8-53c9-4a7e-9167-205748d72f36
+2024-11-05T14:37:55.928Z [INFO]: Stop condition met for ZVSA. Initiating limit order to close position.
+2024-11-05T14:37:55.930Z [INFO]: Closing position with limit order: {"symbol":"ZVSA","qty":"1080","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.97","extended_hours":true,"client_order_id":"CLOSE-58ed0c7ef2f33afe"}
+2024-11-05T14:37:56.192Z [INFO]: Limit order placed to close position in ZVSA. Order ID: c2d8d947-511c-487a-ad03-589398a07dc5
+2024-11-05T14:37:56.631Z [INFO]: Position removed: ZVSA
+2024-11-05T14:37:56.636Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:38:46.300Z [INFO]: Position added: ZVSA | Qty: 1000 | Avg Entry: $3.1261
+2024-11-05T14:38:46.305Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:40:02.136Z [INFO]: Profit target hit for ZVSA: +5.20¢ >= +5¢
+2024-11-05T14:40:02.138Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.12","extended_hours":true,"client_order_id":"LIMIT-b6380158e93c40be"}
+2024-11-05T14:40:02.660Z [INFO]: Placed limit order for 400 shares of ZVSA. Order ID: e7345933-4696-41f6-9014-4dd638c56b83
+2024-11-05T14:40:03.372Z [INFO]: Profit target hit for ZVSA: +10.20¢ >= +10¢
+2024-11-05T14:40:03.373Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"640","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.17","extended_hours":true,"client_order_id":"LIMIT-9a8f8dedf27a2225"}
+2024-11-05T14:40:03.720Z [INFO]: Placed limit order for 640 shares of ZVSA. Order ID: 2ea7a379-7355-4d85-8f19-014dbca1f851
+2024-11-05T14:40:16.215Z [INFO]: Stop condition met for ZVSA. Initiating limit order to close position.
+2024-11-05T14:40:16.217Z [INFO]: Closing position with limit order: {"symbol":"ZVSA","qty":"960","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.06","extended_hours":true,"client_order_id":"CLOSE-ff4777e1858b2f44"}
+2024-11-05T14:40:16.668Z [INFO]: Limit order placed to close position in ZVSA. Order ID: e0207f3e-e8cd-4066-a850-b5ad84dd8dfb
+2024-11-05T14:40:17.158Z [INFO]: Position removed: ZVSA
+2024-11-05T14:40:17.160Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:40:48.347Z [INFO]: Position added: ZVSA | Qty: 1000 | Avg Entry: $3.2399
+2024-11-05T14:40:48.354Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:40:53.104Z [INFO]: Profit target hit for ZVSA: +5.02¢ >= +5¢
+2024-11-05T14:40:53.105Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.26","extended_hours":true,"client_order_id":"LIMIT-04e2f349498c27c4"}
+2024-11-05T14:40:53.354Z [INFO]: Placed limit order for 400 shares of ZVSA. Order ID: f014785c-e304-470d-b597-91c6c7c38723
+2024-11-05T14:40:56.884Z [INFO]: Stop condition met for ZVSA. Initiating limit order to close position.
+2024-11-05T14:40:56.886Z [INFO]: Closing position with limit order: {"symbol":"ZVSA","qty":"1600","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.05","extended_hours":true,"client_order_id":"CLOSE-521592c1f80eedce"}
+2024-11-05T14:40:57.076Z [INFO]: Limit order placed to close position in ZVSA. Order ID: e329bc07-8f9f-477f-b623-b6c1906cbbca
+2024-11-05T14:40:57.765Z [INFO]: Position removed: ZVSA
+2024-11-05T14:40:57.771Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:46:08.852Z [INFO]: Position added: AGFY | Qty: 1000 | Avg Entry: $4.65
+2024-11-05T14:46:08.858Z [INFO]: Subscribed to AGFY quotes.
+2024-11-05T14:48:10.972Z [INFO]: Profit target hit for AGFY: +5.00¢ >= +5¢
+2024-11-05T14:48:10.974Z [INFO]: Attempting to place limit order: {"symbol":"AGFY","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.65","extended_hours":true,"client_order_id":"LIMIT-30ad31d14cb8c03b"}
+2024-11-05T14:48:11.167Z [INFO]: Placed limit order for 400 shares of AGFY. Order ID: aa49ceb8-06d3-44a2-a342-bae4654bffe9
+2024-11-05T14:48:42.582Z [INFO]: Position removed: AGFY
+2024-11-05T14:48:42.588Z [INFO]: Unsubscribed from AGFY quotes.
+2024-11-05T14:49:08.492Z [INFO]: Position added: ALBT | Qty: 2000 | Avg Entry: $4.329605
+2024-11-05T14:49:08.498Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T14:49:26.879Z [INFO]: Stop condition met for ALBT. Initiating limit order to close position.
+2024-11-05T14:49:26.881Z [INFO]: Closing position with limit order: {"symbol":"ALBT","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.07","extended_hours":true,"client_order_id":"CLOSE-0448547a0988813c"}
+2024-11-05T14:49:27.274Z [INFO]: Limit order placed to close position in ALBT. Order ID: f3b0bce4-0463-4e77-8a13-726ef7829c2d
+2024-11-05T14:49:27.915Z [INFO]: Order f3b0bce4-0463-4e77-8a13-726ef7829c2d filled 930 qty for ALBT. Remaining qty: 140
+2024-11-05T14:49:28.915Z [INFO]: Order f3b0bce4-0463-4e77-8a13-726ef7829c2d filled 1030 qty for ALBT. Remaining qty: -60
+2024-11-05T14:49:28.921Z [INFO]: Position removed: ALBT
+2024-11-05T14:49:28.923Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T14:49:30.513Z [INFO]: Position added: ALBT | Qty: 970 | Avg Entry: $4.329605
+2024-11-05T14:49:30.520Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T14:49:30.660Z [INFO]: Stop condition met for ALBT. Initiating limit order to close position.
+2024-11-05T14:49:30.664Z [INFO]: Closing position with limit order: {"symbol":"ALBT","qty":"970","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.96","extended_hours":true,"client_order_id":"CLOSE-3e9f9460441886dd"}
+2024-11-05T14:49:30.864Z [INFO]: Order f3b0bce4-0463-4e77-8a13-726ef7829c2d filled 1030 qty for ALBT. Remaining qty: -60
+2024-11-05T14:49:30.870Z [INFO]: Position removed: ALBT
+2024-11-05T14:49:30.873Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T14:49:31.283Z [ERROR]: Error placing limit order to close position for ALBT: {"available":"0","code":40310000,"existing_qty":"970","held_for_orders":"970","message":"insufficient qty available for order (requested: 970, available: 0)","related_orders":["f3b0bce4-0463-4e77-8a13-726ef7829c2d"],"symbol":"ALBT"}
+2024-11-05T14:49:32.527Z [INFO]: Position added: ALBT | Qty: 970 | Avg Entry: $4.329605
+2024-11-05T14:49:32.534Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T14:49:32.888Z [INFO]: Order f3b0bce4-0463-4e77-8a13-726ef7829c2d filled 1030 qty for ALBT. Remaining qty: -60
+2024-11-05T14:49:32.891Z [INFO]: Position removed: ALBT
+2024-11-05T14:49:32.893Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T14:49:34.523Z [INFO]: Position added: ALBT | Qty: 970 | Avg Entry: $4.329605
+2024-11-05T14:49:34.529Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T14:49:34.948Z [INFO]: Order f3b0bce4-0463-4e77-8a13-726ef7829c2d filled 1035 qty for ALBT. Remaining qty: -65
+2024-11-05T14:49:34.953Z [INFO]: Position removed: ALBT
+2024-11-05T14:49:34.955Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T14:49:58.612Z [INFO]: Position added: ALBT | Qty: 1000 | Avg Entry: $4.0898
+2024-11-05T14:49:58.618Z [INFO]: Subscribed to ALBT quotes.
+2024-11-05T14:50:17.850Z [INFO]: Profit target hit for ALBT: +5.01¢ >= +5¢
+2024-11-05T14:50:17.853Z [INFO]: Attempting to place limit order: {"symbol":"ALBT","qty":"600","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.09","extended_hours":true,"client_order_id":"LIMIT-1781518709c16f50"}
+2024-11-05T14:50:18.023Z [INFO]: Placed limit order for 600 shares of ALBT. Order ID: 87a3537e-6cad-441d-9098-4d360e47278b
+2024-11-05T14:50:19.309Z [INFO]: Profit target hit for ALBT: +10.01¢ >= +10¢
+2024-11-05T14:50:19.311Z [INFO]: Attempting to place limit order: {"symbol":"ALBT","qty":"960","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.14","extended_hours":true,"client_order_id":"LIMIT-23f4f312a0196142"}
+2024-11-05T14:50:19.554Z [INFO]: Placed limit order for 960 shares of ALBT. Order ID: 990a1320-03d0-44c7-ba45-2ad8f7186f7f
+2024-11-05T14:50:34.615Z [INFO]: Position removed: ALBT
+2024-11-05T14:50:34.620Z [INFO]: Unsubscribed from ALBT quotes.
+2024-11-05T14:51:12.592Z [INFO]: Position added: AGFY | Qty: 1000 | Avg Entry: $4.7478
+2024-11-05T14:51:12.598Z [INFO]: Subscribed to AGFY quotes.
+2024-11-05T14:51:32.146Z [INFO]: Stop condition met for AGFY. Initiating limit order to close position.
+2024-11-05T14:51:32.148Z [INFO]: Closing position with limit order: {"symbol":"AGFY","qty":"1000","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.49","extended_hours":true,"client_order_id":"CLOSE-2202579edf663fc1"}
+2024-11-05T14:51:32.400Z [INFO]: Limit order placed to close position in AGFY. Order ID: 37c0482b-eb16-4767-9eac-f1264107c4d0
+2024-11-05T14:51:32.669Z [INFO]: Position removed: AGFY
+2024-11-05T14:51:32.671Z [INFO]: Unsubscribed from AGFY quotes.
+2024-11-05T14:51:58.653Z [INFO]: Position added: ZVSA | Qty: 1000 | Avg Entry: $3.0895
+2024-11-05T14:51:58.655Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T14:52:23.495Z [INFO]: Stop condition met for ZVSA. Initiating limit order to close position.
+2024-11-05T14:52:23.496Z [INFO]: Closing position with limit order: {"symbol":"ZVSA","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.84","extended_hours":true,"client_order_id":"CLOSE-d4fa77fed67876fe"}
+2024-11-05T14:52:23.768Z [INFO]: Limit order placed to close position in ZVSA. Order ID: c7baaee3-2ab2-449e-88d6-9241a3dd3e78
+2024-11-05T14:52:24.498Z [INFO]: Position removed: ZVSA
+2024-11-05T14:52:24.499Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T14:58:33.908Z [INFO]: Polygon WebSocket connected.
+2024-11-05T14:58:33.913Z [INFO]: Started polling for order statuses.
+2024-11-05T14:58:34.138Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T14:58:34.140Z [INFO]: Polygon WebSocket connected.
+2024-11-05T14:58:34.206Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T15:00:24.088Z [INFO]: Position added: ZVSA | Qty: 1000 | Avg Entry: $2.8599
+2024-11-05T15:00:24.093Z [INFO]: Subscribed to ZVSA quotes.
+2024-11-05T15:00:42.156Z [INFO]: Profit target hit for ZVSA: +5.01¢ >= +5¢
+2024-11-05T15:00:42.157Z [INFO]: Attempting to place limit order: {"symbol":"ZVSA","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.86","extended_hours":true,"client_order_id":"LIMIT-9b29c8a41c64117e"}
+2024-11-05T15:00:42.870Z [INFO]: Placed limit order for 200 shares of ZVSA. Order ID: eb89487f-555e-49ea-be3e-1faf5e7480fb
+2024-11-05T15:01:12.158Z [INFO]: Position removed: ZVSA
+2024-11-05T15:01:12.159Z [INFO]: Unsubscribed from ZVSA quotes.
+2024-11-05T15:09:38.452Z [INFO]: Polygon WebSocket connected.
+2024-11-05T15:09:38.457Z [INFO]: Started polling for order statuses.
+2024-11-05T15:09:38.651Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T15:09:38.652Z [INFO]: Polygon WebSocket connected.
+2024-11-05T15:09:38.705Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T15:41:47.554Z [INFO]: Polygon WebSocket connected.
+2024-11-05T15:41:47.558Z [INFO]: Started polling for order statuses.
+2024-11-05T15:41:47.822Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T15:41:47.823Z [INFO]: Polygon WebSocket connected.
+2024-11-05T15:41:48.178Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T15:45:01.743Z [INFO]: Position added: W | Qty: 1000 | Avg Entry: $43.9355
+2024-11-05T15:45:01.748Z [INFO]: Subscribed to W quotes.
+2024-11-05T15:45:27.215Z [INFO]: Profit target hit for W: +5.70¢ >= +5¢
+2024-11-05T15:45:27.220Z [INFO]: Attempting to place limit order: {"symbol":"W","qty":"1600","side":"buy","type":"limit","time_in_force":"day","limit_price":"43.88","extended_hours":true,"client_order_id":"LIMIT-e5211f70edc3c06a"}
+2024-11-05T15:45:27.374Z [INFO]: Placed limit order for 1600 shares of W. Order ID: 460a38f8-bf8b-4319-a40a-c5233a4d8256
+2024-11-05T15:52:19.901Z [INFO]: Polygon WebSocket connected.
+2024-11-05T15:52:19.906Z [INFO]: Started polling for order statuses.
+2024-11-05T15:52:20.170Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T15:52:20.171Z [INFO]: Polygon WebSocket connected.
+2024-11-05T15:52:20.235Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T19:50:14.815Z [INFO]: Polygon WebSocket connected.
+2024-11-05T19:50:14.820Z [INFO]: Started polling for order statuses.
+2024-11-05T19:50:15.161Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T19:50:15.163Z [INFO]: Polygon WebSocket connected.
+2024-11-05T19:50:15.365Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T19:55:01.131Z [INFO]: Position added: DJT | Qty: 500 | Avg Entry: $32.92
+2024-11-05T19:55:01.136Z [INFO]: Subscribed to DJT quotes.
+2024-11-05T19:58:18.495Z [INFO]: Polygon WebSocket connected.
+2024-11-05T19:58:18.500Z [INFO]: Started polling for order statuses.
+2024-11-05T19:58:18.688Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T19:58:18.689Z [INFO]: Polygon WebSocket connected.
+2024-11-05T19:58:18.694Z [INFO]: Position added: DJT | Qty: 500 | Avg Entry: $32.92
+2024-11-05T19:58:18.701Z [INFO]: Subscribed to DJT quotes.
+2024-11-05T19:58:18.785Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T19:58:19.596Z [INFO]: Stop condition met for DJT. Initiating limit order to close position.
+2024-11-05T19:58:19.602Z [INFO]: Closing position with limit order: {"symbol":"DJT","qty":"500","side":"sell","type":"limit","time_in_force":"day","limit_price":"31.85","extended_hours":true,"client_order_id":"CLOSE-b34ae7bcb68a2475"}
+2024-11-05T19:58:20.003Z [ERROR]: Error placing limit order to close position for DJT: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 500, available: 0)","related_orders":["5aa14f1f-d8c7-43d3-9447-b61278f7c8a8"],"symbol":"DJT"}
+2024-11-05T20:16:25.524Z [INFO]: Polygon WebSocket connected.
+2024-11-05T20:16:25.529Z [INFO]: Started polling for order statuses.
+2024-11-05T20:16:25.776Z [INFO]: Polygon WebSocket connection opened.
+2024-11-05T20:16:25.778Z [INFO]: Polygon WebSocket connected.
+2024-11-05T20:16:25.863Z [INFO]: Polygon WebSocket authenticated.
+2024-11-05T20:17:25.685Z [INFO]: Position added: DJT | Qty: 500 | Avg Entry: $36.34972
+2024-11-05T20:17:25.690Z [INFO]: Subscribed to DJT quotes.
+2024-11-05T20:17:33.808Z [INFO]: Stop condition met for DJT. Initiating limit order to close position.
+2024-11-05T20:17:33.810Z [INFO]: Closing position with limit order: {"symbol":"DJT","qty":"500","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.09","extended_hours":true,"client_order_id":"CLOSE-0882ecead384ba63"}
+2024-11-05T20:17:34.453Z [INFO]: Limit order placed to close position in DJT. Order ID: 6c885d56-df8a-4432-9426-2352c2875dd3
+2024-11-05T20:17:34.828Z [INFO]: Position removed: DJT
+2024-11-05T20:17:34.834Z [INFO]: Unsubscribed from DJT quotes.
+2024-11-05T20:17:41.752Z [INFO]: Position added: DJT | Qty: 1000 | Avg Entry: $36.17666
+2024-11-05T20:17:41.762Z [INFO]: Subscribed to DJT quotes.
+2024-11-05T20:17:52.798Z [INFO]: Profit target hit for DJT: +5.25¢ >= +5¢
+2024-11-05T20:17:52.801Z [INFO]: Attempting to place limit order: {"symbol":"DJT","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.21","extended_hours":true,"client_order_id":"LIMIT-fe3b05af60783170"}
+2024-11-05T20:17:53.086Z [INFO]: Placed limit order for 400 shares of DJT. Order ID: de512661-725c-4877-bd41-64514775157c
+2024-11-05T20:17:53.805Z [INFO]: Profit target hit for DJT: +12.25¢ >= +10¢
+2024-11-05T20:17:53.807Z [INFO]: Attempting to place limit order: {"symbol":"DJT","qty":"640","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.28","extended_hours":true,"client_order_id":"LIMIT-b7c338c101e4f55d"}
+2024-11-05T20:17:54.311Z [INFO]: Attempting to place pyramid order: {"symbol":"DJT","qty":"160","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.54","extended_hours":true,"client_order_id":"PYRAMID-f91c8633d716608b"}
+2024-11-05T20:17:54.546Z [INFO]: Placed limit order for 640 shares of DJT. Order ID: 73d427d2-3254-470a-a26c-cc1129c2e2a1
+2024-11-05T20:17:54.892Z [INFO]: Placed pyramid order for 160 shares of DJT. Order ID: 81cdbc3d-cf71-4159-bee0-7949c33c7dd8
+2024-11-05T20:17:55.315Z [INFO]: Profit target hit for DJT: +15.70¢ >= +15¢
+2024-11-05T20:17:55.318Z [INFO]: Attempting to place limit order: {"symbol":"DJT","qty":"526","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.34","extended_hours":true,"client_order_id":"LIMIT-c170367108a8851b"}
+2024-11-05T20:17:55.539Z [INFO]: Pyramid order 81cdbc3d-cf71-4159-bee0-7949c33c7dd8 filled 107 qty for DJT. New qty: 1159, New Avg Entry Price: $36.26
+2024-11-05T20:17:55.935Z [ERROR]: Error placing limit order for DJT: {"buy_limit_price":"36.54","code":40310000,"existing_order_id":"81cdbc3d-cf71-4159-bee0-7949c33c7dd8","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"36.34"}
+2024-11-05T20:17:56.329Z [INFO]: Stop condition met for DJT. Initiating limit order to close position.
+2024-11-05T20:17:56.333Z [INFO]: Closing position with limit order: {"symbol":"DJT","qty":"1120","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.20","extended_hours":true,"client_order_id":"CLOSE-727be077ff64e922"}
+2024-11-05T20:17:57.014Z [INFO]: Limit order placed to close position in DJT. Order ID: 2bc95185-e1a5-4a16-b957-779eb6129b38
+2024-11-05T20:17:58.048Z [INFO]: Order 2bc95185-e1a5-4a16-b957-779eb6129b38 filled 958 qty for DJT. Remaining qty: -693
+2024-11-05T20:17:58.056Z [INFO]: Position removed: DJT
+2024-11-05T20:17:58.060Z [INFO]: Unsubscribed from DJT quotes.
+2024-11-05T20:18:25.787Z [INFO]: Position added: TGTX | Qty: 500 | Avg Entry: $25.72
+2024-11-05T20:18:25.792Z [INFO]: Subscribed to TGTX quotes.
+2024-11-05T20:21:21.904Z [INFO]: Position removed: TGTX
+2024-11-05T20:21:21.909Z [INFO]: Unsubscribed from TGTX quotes.
+2024-11-05T20:31:08.143Z [INFO]: Position added: DJT | Qty: 500 | Avg Entry: $35.94
+2024-11-05T20:31:08.150Z [INFO]: Subscribed to DJT quotes.
+2024-11-05T20:31:10.388Z [INFO]: Profit target hit for DJT: +5.00¢ >= +5¢
+2024-11-05T20:31:10.390Z [INFO]: Attempting to place limit order: {"symbol":"DJT","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"35.94","extended_hours":true,"client_order_id":"LIMIT-f882aa4850655fef"}
+2024-11-05T20:31:10.627Z [INFO]: Placed limit order for 100 shares of DJT. Order ID: 641bda65-c3ba-41ff-929c-3e35d463f6af
+2024-11-05T20:31:10.919Z [INFO]: Order 641bda65-c3ba-41ff-929c-3e35d463f6af filled 8 qty for DJT. Remaining qty: 492
+2024-11-05T20:31:11.677Z [INFO]: Order 641bda65-c3ba-41ff-929c-3e35d463f6af filled 87 qty for DJT. Remaining qty: 328
+2024-11-05T20:31:13.383Z [INFO]: Profit target hit for DJT: +10.00¢ >= +10¢
+2024-11-05T20:31:13.385Z [INFO]: Attempting to place limit order: {"symbol":"DJT","qty":"160","side":"sell","type":"limit","time_in_force":"day","limit_price":"35.99","extended_hours":true,"client_order_id":"LIMIT-7d53b4157c0877ed"}
+2024-11-05T20:31:13.555Z [INFO]: Placed limit order for 160 shares of DJT. Order ID: 6c0ad780-678b-4d83-a729-f10419623c8a
+2024-11-05T20:31:14.344Z [INFO]: Profit target hit for DJT: +18.00¢ >= +15¢
+2024-11-05T20:31:14.347Z [INFO]: Attempting to place limit order: {"symbol":"DJT","qty":"120","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.07","extended_hours":true,"client_order_id":"LIMIT-bf208ab660382cc5"}
+2024-11-05T20:31:14.605Z [INFO]: Placed limit order for 120 shares of DJT. Order ID: 34bfdfd5-fb40-4c7c-9ae3-c92f1033c1eb
+2024-11-05T20:31:21.361Z [INFO]: Profit target hit for DJT: +22.00¢ >= +20¢
+2024-11-05T20:31:21.364Z [INFO]: Attempting to place limit order: {"symbol":"DJT","qty":"120","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.11","extended_hours":true,"client_order_id":"LIMIT-611460d35155ada9"}
+2024-11-05T20:31:21.522Z [INFO]: Placed limit order for 120 shares of DJT. Order ID: a4878f1b-674c-4307-a7dc-262e33f8ffb5
+2024-11-05T20:31:21.881Z [INFO]: Order a4878f1b-674c-4307-a7dc-262e33f8ffb5 filled 110 qty for DJT. Remaining qty: 10
+2024-11-05T20:31:22.579Z [INFO]: Order a4878f1b-674c-4307-a7dc-262e33f8ffb5 filled 110 qty for DJT. Remaining qty: -100
+2024-11-05T20:31:22.585Z [INFO]: Position removed: DJT
+2024-11-05T20:31:22.589Z [INFO]: Unsubscribed from DJT quotes.
+2024-11-05T20:34:12.186Z [INFO]: Position added: DJT | Qty: 500 | Avg Entry: $36.08
+2024-11-05T20:34:12.193Z [INFO]: Subscribed to DJT quotes.
+2024-11-05T20:34:16.700Z [INFO]: Stop condition met for DJT. Initiating limit order to close position.
+2024-11-05T20:34:16.701Z [INFO]: Closing position with limit order: {"symbol":"DJT","qty":"1000","side":"sell","type":"limit","time_in_force":"day","limit_price":"35.78","extended_hours":true,"client_order_id":"CLOSE-c334f1af46771451"}
+2024-11-05T20:34:17.076Z [INFO]: Limit order placed to close position in DJT. Order ID: 8f883ce3-08d0-4727-a75c-0228d11fd1c4
+2024-11-05T20:34:24.233Z [INFO]: Position removed: DJT
+2024-11-05T20:34:24.235Z [INFO]: Unsubscribed from DJT quotes.
+2024-11-05T20:36:36.306Z [INFO]: Position added: DJT | Qty: 500 | Avg Entry: $35.67004
+2024-11-05T20:36:36.311Z [INFO]: Subscribed to DJT quotes.
+2024-11-05T20:36:52.309Z [INFO]: Position removed: DJT
+2024-11-05T20:36:52.311Z [INFO]: Unsubscribed from DJT quotes.
+2024-11-05T20:37:06.316Z [INFO]: Position added: INTC | Qty: 500 | Avg Entry: $23.34
+2024-11-05T20:37:06.322Z [INFO]: Subscribed to INTC quotes.
+2024-11-05T20:37:24.315Z [INFO]: Position removed: INTC
+2024-11-05T20:37:24.321Z [INFO]: Unsubscribed from INTC quotes.
+2024-11-06T04:07:38.073Z [INFO]: Polygon WebSocket connected.
+2024-11-06T04:07:38.076Z [INFO]: Started polling for order statuses.
+2024-11-06T04:07:38.560Z [INFO]: Polygon WebSocket connection opened.
+2024-11-06T04:07:38.560Z [INFO]: Polygon WebSocket connected.
+2024-11-06T04:07:38.613Z [INFO]: Polygon WebSocket authenticated.
+2024-11-06T12:48:20.176Z [INFO]: Polygon WebSocket connected.
+2024-11-06T12:48:20.180Z [INFO]: Started polling for order statuses.
+2024-11-06T12:48:20.364Z [INFO]: Polygon WebSocket connection opened.
+2024-11-06T12:48:20.365Z [INFO]: Polygon WebSocket connected.
+2024-11-06T12:48:20.412Z [INFO]: Polygon WebSocket authenticated.
+2024-11-06T12:50:16.369Z [INFO]: Position added: AREB | Qty: 500 | Avg Entry: $4.89978
+2024-11-06T12:50:16.375Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T12:50:18.007Z [INFO]: Profit target hit for AREB: +5.02¢ >= +5¢
+2024-11-06T12:50:18.012Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.90","extended_hours":true,"client_order_id":"LIMIT-a684b2f7bf146da4"}
+2024-11-06T12:50:18.214Z [INFO]: Placed limit order for 100 shares of AREB. Order ID: 8de1dec7-d26d-4d6f-9f51-7aa3039dfc40
+2024-11-06T12:50:42.461Z [INFO]: Profit target hit for AREB: +11.15¢ >= +10¢
+2024-11-06T12:50:42.463Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"560","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.98","extended_hours":true,"client_order_id":"LIMIT-8d6268e078717778"}
+2024-11-06T12:50:43.098Z [INFO]: Placed limit order for 560 shares of AREB. Order ID: 762cc9c5-ec99-4b03-8d8c-dd3e102ef763
+2024-11-06T12:50:46.926Z [INFO]: Profit target hit for AREB: +15.15¢ >= +15¢
+2024-11-06T12:50:46.927Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"420","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"LIMIT-3004db9678d6efa1"}
+2024-11-06T12:50:47.192Z [INFO]: Placed limit order for 420 shares of AREB. Order ID: 35144568-f89d-41a8-bcaf-c324f3807ed1
+2024-11-06T12:50:50.480Z [INFO]: Profit target hit for AREB: +20.15¢ >= +20¢
+2024-11-06T12:50:50.481Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"420","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.07","extended_hours":true,"client_order_id":"LIMIT-86c7b6150f31c912"}
+2024-11-06T12:50:51.104Z [INFO]: Placed limit order for 420 shares of AREB. Order ID: 167cbe5a-6ea4-4f80-b5af-0ef48400643f
+2024-11-06T12:50:51.436Z [INFO]: Position removed: AREB
+2024-11-06T12:50:51.437Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T12:50:58.377Z [INFO]: Position added: AREB | Qty: 500 | Avg Entry: $5.08
+2024-11-06T12:50:58.385Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T12:52:01.040Z [INFO]: Profit target hit for AREB: +5.50¢ >= +5¢
+2024-11-06T12:52:01.042Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.08","extended_hours":true,"client_order_id":"LIMIT-8ce996f012c6d487"}
+2024-11-06T12:52:01.201Z [INFO]: Placed limit order for 400 shares of AREB. Order ID: ab387d50-3f99-46f1-9df9-494731eee10c
+2024-11-06T12:52:14.081Z [INFO]: Profit target hit for AREB: +11.50¢ >= +10¢
+2024-11-06T12:52:14.083Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"640","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.14","extended_hours":true,"client_order_id":"LIMIT-b7c6a7eb86e950d9"}
+2024-11-06T12:52:14.263Z [INFO]: Placed limit order for 640 shares of AREB. Order ID: 273b623b-b76b-40b9-8c37-8ecceabede33
+2024-11-06T12:52:40.593Z [INFO]: Stop condition met for AREB. Initiating limit order to close position.
+2024-11-06T12:52:40.595Z [INFO]: Closing position with limit order: {"symbol":"AREB","qty":"960","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-1eb4456c32c8be14"}
+2024-11-06T12:52:41.195Z [INFO]: Limit order placed to close position in AREB. Order ID: 5dad1118-0f48-4c86-a187-8df3bd2cd650
+2024-11-06T12:52:41.491Z [INFO]: Position removed: AREB
+2024-11-06T12:52:41.497Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T12:53:10.443Z [INFO]: Position added: AREB | Qty: 1000 | Avg Entry: $5.265
+2024-11-06T12:53:10.449Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T12:53:15.113Z [INFO]: Profit target hit for AREB: +5.01¢ >= +5¢
+2024-11-06T12:53:15.114Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.28","extended_hours":true,"client_order_id":"LIMIT-9adcfd02cd3e6565"}
+2024-11-06T12:53:15.298Z [INFO]: Placed limit order for 300 shares of AREB. Order ID: 5d28ca77-27c2-41d9-ac62-1b0691608387
+2024-11-06T12:53:16.104Z [INFO]: Profit target hit for AREB: +12.01¢ >= +10¢
+2024-11-06T12:53:16.106Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"480","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.35","extended_hours":true,"client_order_id":"LIMIT-51467335ea469bc3"}
+2024-11-06T12:53:16.351Z [INFO]: Placed limit order for 480 shares of AREB. Order ID: 5022889a-fe88-4289-b356-6fcaa12faffd
+2024-11-06T12:53:17.172Z [INFO]: Profit target hit for AREB: +16.01¢ >= +15¢
+2024-11-06T12:53:17.173Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"360","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.39","extended_hours":true,"client_order_id":"LIMIT-a360054e779a5330"}
+2024-11-06T12:53:17.404Z [INFO]: Placed limit order for 360 shares of AREB. Order ID: a38eafe5-17ed-47b4-85c8-d6b3d2755311
+2024-11-06T12:53:21.629Z [INFO]: Profit target hit for AREB: +20.01¢ >= +20¢
+2024-11-06T12:53:21.631Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"360","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.43","extended_hours":true,"client_order_id":"LIMIT-f02f2a84074933c6"}
+2024-11-06T12:53:21.930Z [INFO]: Placed limit order for 360 shares of AREB. Order ID: 76091b61-8859-42bb-988c-ea3fbbe7002e
+2024-11-06T12:53:22.299Z [INFO]: Position removed: AREB
+2024-11-06T12:53:22.301Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T12:54:24.482Z [INFO]: Position added: AREB | Qty: 1000 | Avg Entry: $5.54515
+2024-11-06T12:54:24.492Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T12:54:58.504Z [INFO]: Position removed: AREB
+2024-11-06T12:54:58.506Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T12:55:26.509Z [INFO]: Position added: AREB | Qty: 1000 | Avg Entry: $5.3299
+2024-11-06T12:55:26.515Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T12:55:29.851Z [INFO]: Profit target hit for AREB: +5.01¢ >= +5¢
+2024-11-06T12:55:29.852Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.33","extended_hours":true,"client_order_id":"LIMIT-7a4172927c308f3b"}
+2024-11-06T12:55:30.044Z [INFO]: Placed limit order for 200 shares of AREB. Order ID: 2bb1d171-fd98-4653-84dd-1001421af93b
+2024-11-06T12:57:25.558Z [INFO]: Stop condition met for AREB. Initiating limit order to close position.
+2024-11-06T12:57:25.559Z [INFO]: Closing position with limit order: {"symbol":"AREB","qty":"2800","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.17","extended_hours":true,"client_order_id":"CLOSE-e4e9782c548f18f9"}
+2024-11-06T12:57:25.717Z [INFO]: Limit order placed to close position in AREB. Order ID: 7fd886ca-2b73-4726-ab07-822b89b16d63
+2024-11-06T12:57:26.407Z [INFO]: Position removed: AREB
+2024-11-06T12:57:26.412Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T12:57:52.618Z [INFO]: Position added: AREB | Qty: 1000 | Avg Entry: $5.2496
+2024-11-06T12:57:52.624Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T12:58:09.636Z [INFO]: Profit target hit for AREB: +5.68¢ >= +5¢
+2024-11-06T12:58:09.637Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"600","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.26","extended_hours":true,"client_order_id":"LIMIT-0e711cf2084f15dc"}
+2024-11-06T12:58:09.790Z [INFO]: Placed limit order for 600 shares of AREB. Order ID: dba3ce69-e712-4139-a6f7-7e6942c3c193
+2024-11-06T12:58:25.160Z [INFO]: Profit target hit for AREB: +10.68¢ >= +10¢
+2024-11-06T12:58:25.162Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"960","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.31","extended_hours":true,"client_order_id":"LIMIT-4b81dc8d34cbe148"}
+2024-11-06T12:58:25.344Z [INFO]: Placed limit order for 960 shares of AREB. Order ID: cdcb7a72-5b01-4e1a-b7aa-b08230e85d28
+2024-11-06T12:58:31.173Z [INFO]: Profit target hit for AREB: +15.68¢ >= +15¢
+2024-11-06T12:58:31.174Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"720","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.36","extended_hours":true,"client_order_id":"LIMIT-428f72b9f2edd7ae"}
+2024-11-06T12:58:31.366Z [INFO]: Placed limit order for 720 shares of AREB. Order ID: 5b63b5e2-1dbe-4dae-9a18-9c5993d56982
+2024-11-06T12:58:33.186Z [INFO]: Stop condition met for AREB. Initiating limit order to close position.
+2024-11-06T12:58:33.188Z [INFO]: Closing position with limit order: {"symbol":"AREB","qty":"1720","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.36","extended_hours":true,"client_order_id":"CLOSE-d715c9ecdbc82238"}
+2024-11-06T12:58:33.350Z [INFO]: Limit order placed to close position in AREB. Order ID: 8dc55430-68cc-4a14-b919-5c5ebf897fc1
+2024-11-06T12:58:33.696Z [INFO]: Position removed: AREB
+2024-11-06T12:58:33.698Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T12:58:48.637Z [INFO]: Position added: AREB | Qty: 1000 | Avg Entry: $5.379
+2024-11-06T12:58:48.643Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T12:59:11.248Z [INFO]: Profit target hit for AREB: +5.50¢ >= +5¢
+2024-11-06T12:59:11.250Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.39","extended_hours":true,"client_order_id":"LIMIT-58b7018e2049bc89"}
+2024-11-06T12:59:11.427Z [INFO]: Placed limit order for 400 shares of AREB. Order ID: 6c3d3531-e114-4ab8-a771-11b09b58cbf5
+2024-11-06T12:59:13.261Z [INFO]: Profit target hit for AREB: +10.50¢ >= +10¢
+2024-11-06T12:59:13.263Z [INFO]: Attempting to place limit order: {"symbol":"AREB","qty":"640","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.44","extended_hours":true,"client_order_id":"LIMIT-624883914b8dd5d6"}
+2024-11-06T12:59:13.427Z [INFO]: Placed limit order for 640 shares of AREB. Order ID: 7a3781eb-a250-4d56-ab4e-73e651cf6dc3
+2024-11-06T12:59:29.781Z [INFO]: Stop condition met for AREB. Initiating limit order to close position.
+2024-11-06T12:59:29.783Z [INFO]: Closing position with limit order: {"symbol":"AREB","qty":"960","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.32","extended_hours":true,"client_order_id":"CLOSE-403ead7797386da0"}
+2024-11-06T12:59:29.952Z [INFO]: Limit order placed to close position in AREB. Order ID: 2ed8f60e-4ebd-4fea-9d08-59711e4d310a
+2024-11-06T12:59:30.671Z [INFO]: Position removed: AREB
+2024-11-06T12:59:30.676Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T13:01:30.720Z [INFO]: Position added: AREB | Qty: 1000 | Avg Entry: $4.98
+2024-11-06T13:01:30.727Z [INFO]: Subscribed to AREB quotes.
+2024-11-06T13:03:00.830Z [INFO]: Position removed: AREB
+2024-11-06T13:03:00.836Z [INFO]: Unsubscribed from AREB quotes.
+2024-11-06T13:10:59.108Z [INFO]: Position added: DATS | Qty: 500 | Avg Entry: $4.16588
+2024-11-06T13:10:59.116Z [INFO]: Subscribed to DATS quotes.
+2024-11-06T13:12:14.995Z [INFO]: Stop condition met for DATS. Initiating limit order to close position.
+2024-11-06T13:12:14.997Z [INFO]: Closing position with limit order: {"symbol":"DATS","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.87","extended_hours":true,"client_order_id":"CLOSE-11ae36f46335047e"}
+2024-11-06T13:12:15.157Z [INFO]: Limit order placed to close position in DATS. Order ID: 26b1a2f5-16c7-4ac5-9278-7ef0f97fd854
+2024-11-06T13:12:15.501Z [INFO]: Position removed: DATS
+2024-11-06T13:12:15.504Z [INFO]: Unsubscribed from DATS quotes.
+2024-11-06T13:28:05.588Z [INFO]: Position added: DJT | Qty: 200 | Avg Entry: $44.45
+2024-11-06T13:28:05.595Z [INFO]: Subscribed to DJT quotes.
+2024-11-06T13:28:06.496Z [INFO]: Stop condition met for DJT. Initiating limit order to close position.
+2024-11-06T13:28:06.499Z [INFO]: Closing position with limit order: {"symbol":"DJT","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"44.17","extended_hours":true,"client_order_id":"CLOSE-afdb8c6c3d148422"}
+2024-11-06T13:28:06.962Z [INFO]: Limit order placed to close position in DJT. Order ID: 483b40dc-1ac7-4981-9037-99ac7ef106f8
+2024-11-06T13:28:07.303Z [INFO]: Position removed: DJT
+2024-11-06T13:28:07.308Z [INFO]: Unsubscribed from DJT quotes.
+2024-11-06T13:32:31.719Z [INFO]: Position added: SGBX | Qty: 2000 | Avg Entry: $1.21
+2024-11-06T13:32:31.725Z [INFO]: Subscribed to SGBX quotes.
+2024-11-06T13:33:33.737Z [INFO]: Position removed: SGBX
+2024-11-06T13:33:33.742Z [INFO]: Unsubscribed from SGBX quotes.
+2024-11-06T13:39:53.927Z [INFO]: Position added: SONN | Qty: 500 | Avg Entry: $11.4199
+2024-11-06T13:39:53.933Z [INFO]: Subscribed to SONN quotes.
+2024-11-06T13:39:55.450Z [INFO]: Stop condition met for SONN. Initiating limit order to close position.
+2024-11-06T13:39:55.452Z [INFO]: Closing position with limit order: {"symbol":"SONN","qty":"500","side":"sell","type":"limit","time_in_force":"day","limit_price":"11.16","extended_hours":true,"client_order_id":"CLOSE-222eb09df34468ca"}
+2024-11-06T13:39:55.682Z [INFO]: Limit order placed to close position in SONN. Order ID: 4fa22540-007c-4e37-b1b4-111824edeec3
+2024-11-06T13:39:56.030Z [INFO]: Position removed: SONN
+2024-11-06T13:39:56.036Z [INFO]: Unsubscribed from SONN quotes.
+2024-11-06T13:40:01.938Z [INFO]: Position added: SONN | Qty: 1000 | Avg Entry: $11.33
+2024-11-06T13:40:01.943Z [INFO]: Subscribed to SONN quotes.
+2024-11-06T13:40:02.446Z [INFO]: Stop condition met for SONN. Initiating limit order to close position.
+2024-11-06T13:40:02.449Z [INFO]: Closing position with limit order: {"symbol":"SONN","qty":"1000","side":"sell","type":"limit","time_in_force":"day","limit_price":"11.08","extended_hours":true,"client_order_id":"CLOSE-b5f8f3d9e97245aa"}
+2024-11-06T13:40:02.699Z [INFO]: Limit order placed to close position in SONN. Order ID: b27241cb-919c-4956-b8bb-4710b08ed0e2
+2024-11-06T13:40:03.037Z [INFO]: Position removed: SONN
+2024-11-06T13:40:03.039Z [INFO]: Unsubscribed from SONN quotes.
+2024-11-06T14:31:11.658Z [INFO]: Polygon WebSocket connected.
+2024-11-06T14:31:11.663Z [INFO]: Started polling for order statuses.
+2024-11-06T14:31:11.855Z [INFO]: Polygon WebSocket connection opened.
+2024-11-06T14:31:11.856Z [INFO]: Polygon WebSocket connected.
+2024-11-06T14:31:11.913Z [INFO]: Polygon WebSocket authenticated.
+2024-11-06T14:56:35.435Z [INFO]: Polygon WebSocket connected.
+2024-11-06T14:56:35.441Z [INFO]: Started polling for order statuses.
+2024-11-06T14:56:35.628Z [INFO]: Polygon WebSocket connection opened.
+2024-11-06T14:56:35.629Z [INFO]: Polygon WebSocket connected.
+2024-11-06T14:56:35.683Z [INFO]: Polygon WebSocket authenticated.
+2024-11-06T14:57:25.602Z [INFO]: Position added: SGBX | Qty: 1000 | Avg Entry: $1.188839
+2024-11-06T14:57:25.607Z [INFO]: Subscribed to SGBX quotes.
+2024-11-06T14:58:31.729Z [INFO]: Position removed: SGBX
+2024-11-06T14:58:31.732Z [INFO]: Unsubscribed from SGBX quotes.
+2024-11-06T14:58:53.742Z [INFO]: Position added: CFG | Qty: 500 | Avg Entry: $45.4902
+2024-11-06T14:58:53.747Z [INFO]: Subscribed to CFG quotes.
+2024-11-06T15:00:03.628Z [INFO]: Stop condition met for CFG. Initiating limit order to close position.
+2024-11-06T15:00:03.630Z [INFO]: Closing position with limit order: {"symbol":"CFG","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"45.75","extended_hours":true,"client_order_id":"CLOSE-b621ab2b23b85600"}
+2024-11-06T15:00:03.829Z [INFO]: Limit order placed to close position in CFG. Order ID: 517aae50-aa53-473c-a594-1e7a4116d9d4
+2024-11-06T15:00:04.163Z [INFO]: Position removed: CFG
+2024-11-06T15:00:04.165Z [INFO]: Unsubscribed from CFG quotes.
+2024-11-06T15:00:29.973Z [INFO]: Position added: SNV | Qty: 500 | Avg Entry: $56.9962
+2024-11-06T15:00:29.979Z [INFO]: Subscribed to SNV quotes.
+2024-11-06T15:00:31.699Z [INFO]: Profit target hit for SNV: +5.62¢ >= +5¢
+2024-11-06T15:00:31.701Z [INFO]: Attempting to place limit order: {"symbol":"SNV","qty":"100","side":"buy","type":"limit","time_in_force":"day","limit_price":"56.99","extended_hours":true,"client_order_id":"LIMIT-aabb3e3f56328b88"}
+2024-11-06T15:00:31.869Z [INFO]: Placed limit order for 100 shares of SNV. Order ID: 8db09d40-6b27-40b0-b20c-2acae5d8393a
+2024-11-06T15:00:47.860Z [INFO]: Stop condition met for SNV. Initiating limit order to close position.
+2024-11-06T15:00:47.863Z [INFO]: Closing position with limit order: {"symbol":"SNV","qty":"1400","side":"buy","type":"limit","time_in_force":"day","limit_price":"57.15","extended_hours":true,"client_order_id":"CLOSE-96a80cb458040b2a"}
+2024-11-06T15:00:48.350Z [INFO]: Limit order placed to close position in SNV. Order ID: 6d49776f-3fbb-4f25-a82e-a3861e33d31f
+2024-11-06T15:00:49.033Z [INFO]: Position removed: SNV
+2024-11-06T15:00:49.039Z [INFO]: Unsubscribed from SNV quotes.
+2024-11-07T14:16:46.109Z [INFO]: Polygon WebSocket connected.
+2024-11-07T14:16:46.113Z [INFO]: Started polling for order statuses.
+2024-11-07T14:16:46.340Z [INFO]: Polygon WebSocket connection opened.
+2024-11-07T14:16:46.342Z [INFO]: Polygon WebSocket connected.
+2024-11-07T14:16:46.598Z [INFO]: Polygon WebSocket authenticated.
+2024-11-08T13:24:50.696Z [INFO]: Polygon WebSocket connected.
+2024-11-08T13:24:50.698Z [INFO]: Started polling for order statuses.
+2024-11-08T13:24:50.901Z [INFO]: Polygon WebSocket connection opened.
+2024-11-08T13:24:50.902Z [INFO]: Polygon WebSocket connected.
+2024-11-08T13:24:50.951Z [INFO]: Polygon WebSocket authenticated.
+2024-11-08T13:25:09.466Z [INFO]: Polygon WebSocket connected.
+2024-11-08T13:25:09.469Z [INFO]: Started polling for order statuses.
+2024-11-08T13:25:10.161Z [INFO]: Polygon WebSocket connection opened.
+2024-11-08T13:25:10.162Z [INFO]: Polygon WebSocket connected.
+2024-11-08T13:25:10.212Z [INFO]: Polygon WebSocket authenticated.
+2024-11-08T13:26:29.708Z [INFO]: Position added: VMAR | Qty: 10 | Avg Entry: $4.28
+2024-11-08T13:26:29.715Z [INFO]: Subscribed to VMAR quotes.
+2024-11-08T13:26:36.391Z [INFO]: Profit target hit for VMAR: +5.00¢ >= +5¢
+2024-11-08T13:26:36.393Z [INFO]: Attempting to place limit order: {"symbol":"VMAR","qty":"1","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.28","extended_hours":true,"client_order_id":"LIMIT-ab737ec874954c3b"}
+2024-11-08T13:26:36.616Z [INFO]: Placed limit order for 1 shares of VMAR. Order ID: 46c3051a-5c01-47a5-a9f3-976803898a86
+2024-11-08T13:26:38.374Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:38.375Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:38.389Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:38.390Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:38.393Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:38.395Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.355Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.357Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.364Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.365Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.368Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.369Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.372Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.373Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.375Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.377Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.379Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.380Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.389Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.391Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.393Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.395Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.398Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:39.399Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.402Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:39.403Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.855Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:39.859Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:39.865Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:39.868Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.360Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.361Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.364Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.366Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.369Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.370Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.373Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.374Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.378Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.379Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.382Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.384Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.387Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.388Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.857Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.859Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.863Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:40.865Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.869Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.871Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.875Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:40.877Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.880Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:40.882Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.886Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.888Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.891Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.893Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.896Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:40.897Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.900Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:40.902Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.905Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:40.907Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:40.910Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:40.911Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.364Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.366Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.369Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.370Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.373Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.375Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.378Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.379Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.383Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.384Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.387Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.389Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.392Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.393Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.396Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:41.397Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:41.401Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:41.402Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.887Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:49.890Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.895Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:49.897Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.902Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:49.904Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.907Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:49.909Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.913Z [INFO]: Profit target hit for VMAR: +10.00¢ >= +10¢
+2024-11-08T13:26:49.915Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.918Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:49.920Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.923Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:49.925Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.928Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:49.930Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.933Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:49.935Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.938Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:49.939Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.943Z [INFO]: Profit target hit for VMAR: +11.00¢ >= +10¢
+2024-11-08T13:26:49.945Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.948Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.949Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.952Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.954Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.956Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.958Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.961Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.962Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.965Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.966Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.969Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.970Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.973Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.975Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.978Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.979Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.982Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.983Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.985Z [INFO]: Profit target hit for VMAR: +12.00¢ >= +10¢
+2024-11-08T13:26:49.987Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.989Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:49.991Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.993Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:49.995Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:49.997Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:49.999Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.001Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.003Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.006Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.008Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.011Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.012Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.015Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.016Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.372Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.374Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.377Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.378Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.381Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.382Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.385Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.387Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.390Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.391Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.395Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.396Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.399Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.401Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.403Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.405Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.408Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.410Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.412Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.414Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.417Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.418Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.421Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.423Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.426Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.427Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.431Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.432Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.435Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.437Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.440Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.441Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.444Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.445Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.448Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.450Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.453Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.454Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.457Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.458Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.462Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.463Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.467Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.468Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.471Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.472Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.475Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.477Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.480Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.481Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.484Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.485Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.488Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.490Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.493Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.494Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.497Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.499Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.502Z [INFO]: Profit target hit for VMAR: +13.00¢ >= +10¢
+2024-11-08T13:26:50.503Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.506Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.507Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.510Z [INFO]: Profit target hit for VMAR: +14.00¢ >= +10¢
+2024-11-08T13:26:50.512Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.514Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.516Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.518Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.520Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.523Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.525Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.527Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.529Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.532Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.534Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.537Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.538Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.541Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.543Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.546Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.547Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.550Z [INFO]: Profit target hit for VMAR: +15.00¢ >= +10¢
+2024-11-08T13:26:50.551Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.554Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.556Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.559Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.560Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.563Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.565Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.568Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.570Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.573Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.574Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.577Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.578Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.581Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.583Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.585Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.587Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.590Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.591Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.594Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.596Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.599Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.600Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.877Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.880Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.884Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.886Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.890Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.892Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.896Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.898Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.901Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.903Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.906Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.908Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.912Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.913Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.916Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.918Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.922Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.923Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.926Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.928Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.931Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.932Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.935Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:50.936Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.939Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.940Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.943Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.944Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.947Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.949Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.951Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.953Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.956Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.958Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.960Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.961Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.964Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:50.965Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.968Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:50.969Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.972Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.973Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.976Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.977Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.980Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.981Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.984Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.985Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.988Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.990Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.992Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.994Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:50.996Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:50.998Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.000Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.002Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.004Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.005Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.008Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.010Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.012Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:51.014Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.017Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:51.019Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.022Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:51.023Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.378Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:51.380Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.382Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.384Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.387Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.388Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.391Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.393Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.396Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.398Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.400Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.402Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.404Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.406Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.408Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.410Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.412Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.414Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.417Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.418Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.421Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.423Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.426Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.427Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.430Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.431Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.435Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.436Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.439Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.441Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.444Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.445Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.449Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:51.451Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.454Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:51.456Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.458Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:51.460Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.463Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:51.464Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.467Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:51.468Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.471Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:51.473Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.476Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.477Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.480Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.482Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.485Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.486Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.489Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.490Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.494Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.495Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.498Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.500Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.502Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.504Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.507Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:51.508Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.511Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.512Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.877Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.881Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.887Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.889Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.895Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.897Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.901Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.903Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.907Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.909Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.913Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.915Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.918Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:51.920Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.923Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.925Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.928Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.930Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.933Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.935Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.938Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.940Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.943Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.945Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.948Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.949Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.952Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.954Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.956Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.958Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.961Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.962Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.966Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.967Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.970Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.972Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.975Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.976Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.979Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.980Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.983Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.984Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.987Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.988Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.991Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.992Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.995Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:51.996Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:51.999Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.000Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.003Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.004Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.007Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.008Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.011Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.012Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.015Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.016Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.019Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.020Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.023Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.024Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.027Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.029Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.033Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.034Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.377Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.379Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.382Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.384Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.386Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.388Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.391Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.392Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.395Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.397Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.400Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.401Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.404Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.406Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.409Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.410Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.413Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.415Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.417Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.419Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.422Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.423Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.426Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.428Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.431Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.433Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.435Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.437Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.440Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.442Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.445Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.446Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.449Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.450Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.453Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.454Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.457Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.459Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.462Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.463Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.466Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.467Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.470Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.472Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.474Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.476Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.479Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.480Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.483Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.485Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.878Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.879Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.882Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.884Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.887Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.888Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.891Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.893Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.896Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.897Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.900Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.902Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.904Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.906Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.909Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.910Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.913Z [INFO]: Profit target hit for VMAR: +16.00¢ >= +10¢
+2024-11-08T13:26:52.914Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.917Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.918Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.921Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.923Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.925Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.927Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.929Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.931Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.934Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.935Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.938Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.939Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.942Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.943Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.946Z [INFO]: Profit target hit for VMAR: +17.00¢ >= +10¢
+2024-11-08T13:26:52.947Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.950Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.951Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.954Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.956Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.958Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:52.960Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.963Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:52.964Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.968Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:52.970Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:52.972Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:52.974Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.379Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.381Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.384Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.385Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.388Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.390Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.392Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.394Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.397Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.398Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.401Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.403Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.406Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.407Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.410Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.411Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.414Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.416Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.418Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.420Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.423Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.424Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.427Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.429Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.432Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.434Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.437Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.438Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.442Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.443Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.446Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.448Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.451Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.452Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.879Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.881Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.887Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.890Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.895Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.898Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.902Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.904Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.908Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.910Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.914Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.916Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.919Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.921Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.924Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:53.926Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.929Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:53.931Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.934Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.936Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.939Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:53.940Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.943Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.945Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.948Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.950Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.952Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.954Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.957Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:53.959Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.962Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:53.963Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.966Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.967Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.970Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.971Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.974Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.975Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.978Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.980Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.983Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:53.984Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.987Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.989Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.992Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.993Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:53.996Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:53.997Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.000Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:54.002Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.004Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:54.006Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.381Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:54.383Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.386Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.387Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.390Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.392Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.395Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.397Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.400Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.401Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.404Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:54.406Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.409Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.410Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.413Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.414Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.418Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.419Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.422Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.423Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.426Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.428Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.431Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.432Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.435Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.437Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.440Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.441Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.444Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.446Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.449Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.450Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.454Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.455Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.458Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.459Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.463Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.464Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.467Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.468Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.471Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.473Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.476Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:54.477Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.480Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.481Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.484Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.486Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.882Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.886Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.892Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.895Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.900Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.902Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.907Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.909Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.913Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.914Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.918Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.920Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.923Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.925Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.930Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.931Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.935Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.936Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.939Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.941Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.944Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.945Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.948Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.950Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.953Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.955Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.958Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.959Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.962Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:54.963Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.966Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.967Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.970Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.971Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.974Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.976Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.978Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.980Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.982Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.984Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.986Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:54.987Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.990Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:54.991Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:54.994Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:54.996Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.000Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:55.001Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.384Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:55.386Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.389Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:55.391Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.393Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:55.395Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.398Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.399Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.402Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.404Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.407Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.408Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.411Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.413Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.416Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.418Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.420Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.422Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.425Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.426Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.429Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.431Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.434Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.435Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.881Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.884Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.889Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.892Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.897Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.899Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.903Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.905Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.909Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.911Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.914Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.916Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.920Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.921Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.924Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.926Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:55.929Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:55.931Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.403Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.405Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.408Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.409Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.412Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.414Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.417Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.418Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.421Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.422Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.425Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.427Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.430Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.431Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.435Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.436Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.439Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.441Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.444Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.445Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.448Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.450Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.452Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.454Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.457Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.459Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.462Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.464Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.931Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.935Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.941Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:56.944Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.949Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.952Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.956Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.958Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.962Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.964Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.968Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.970Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.974Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.976Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.980Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.982Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.985Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.987Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.990Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.992Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:56.995Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:56.997Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.000Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.001Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.004Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.005Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.008Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.010Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.452Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.454Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.457Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.459Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.462Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.464Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.467Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.468Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.471Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.473Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.476Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.477Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.480Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.482Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.485Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.486Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.489Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:57.491Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.494Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.495Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.498Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.500Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.504Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.505Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.508Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.510Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.513Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.514Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.517Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.518Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.521Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.523Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.526Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.527Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.530Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.532Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.535Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.536Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.539Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.540Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.543Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:57.544Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.977Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.979Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.982Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:57.984Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.987Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:57.988Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.991Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:57.993Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:57.995Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:57.997Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.000Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.002Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.005Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.007Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.010Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.012Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.015Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.016Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.019Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.021Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.024Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.026Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.029Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.031Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.034Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.036Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.039Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.040Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.044Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.045Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.048Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.049Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.052Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.054Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.057Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.058Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.061Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.062Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.065Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.066Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.069Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.071Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.073Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.076Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.386Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.388Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.391Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.393Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.396Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.398Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.401Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.402Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.405Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.407Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.410Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.411Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.414Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.416Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.419Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.421Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.423Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.425Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.428Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.430Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.432Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.434Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.437Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.439Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.441Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.443Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.446Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.447Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.450Z [INFO]: Profit target hit for VMAR: +21.00¢ >= +10¢
+2024-11-08T13:26:58.451Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.455Z [INFO]: Profit target hit for VMAR: +21.00¢ >= +10¢
+2024-11-08T13:26:58.456Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.459Z [INFO]: Profit target hit for VMAR: +21.00¢ >= +10¢
+2024-11-08T13:26:58.461Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.463Z [INFO]: Profit target hit for VMAR: +21.00¢ >= +10¢
+2024-11-08T13:26:58.465Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.468Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.469Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.472Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.474Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.476Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.478Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.481Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.482Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.889Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.893Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.897Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.899Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.903Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.905Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.909Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.912Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.916Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.918Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.922Z [INFO]: Profit target hit for VMAR: +21.00¢ >= +10¢
+2024-11-08T13:26:58.924Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.928Z [INFO]: Profit target hit for VMAR: +21.00¢ >= +10¢
+2024-11-08T13:26:58.930Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.934Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.936Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.939Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.941Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.945Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.947Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.950Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.952Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.955Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.957Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.960Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.961Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.964Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:58.965Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.968Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.969Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.972Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.974Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.976Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.978Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.981Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:58.982Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.985Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:58.986Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.989Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:58.991Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.994Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:58.995Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:58.998Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:58.999Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.002Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:59.004Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.006Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:59.008Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.010Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:59.012Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.015Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.016Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.019Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.021Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.024Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.025Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.028Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.029Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.032Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.034Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.037Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.038Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.041Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.042Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.045Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.046Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.049Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.050Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.392Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.393Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.396Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.398Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.401Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:59.402Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.405Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:26:59.407Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.410Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.411Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.414Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.415Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.418Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.420Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.423Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.425Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.428Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.429Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.432Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.434Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.436Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.438Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.441Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.442Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.445Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.447Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.450Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.451Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.454Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.456Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.896Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.900Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.907Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.910Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.916Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.918Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.923Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:26:59.925Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.930Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.932Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.935Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.937Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.941Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.942Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.947Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.948Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.952Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.953Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.956Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.958Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.961Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.963Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.965Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.967Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.970Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.971Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.974Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.976Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.978Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.980Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.983Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.984Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.987Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.988Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.991Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.992Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.995Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:26:59.996Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:26:59.999Z [INFO]: Profit target hit for VMAR: +20.00¢ >= +10¢
+2024-11-08T13:27:00.000Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.003Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.004Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.007Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.008Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.011Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.012Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.015Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.018Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.020Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.022Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.394Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.395Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.398Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.400Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.402Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.404Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.407Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.408Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.412Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.413Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.416Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.417Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.421Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.422Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.425Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.427Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.430Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.431Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.434Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.436Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.439Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.441Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.444Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.445Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.448Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.449Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.452Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.454Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.458Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.459Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.462Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.464Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.467Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.468Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.471Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.473Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.475Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.477Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.480Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.481Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.484Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.486Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.488Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.490Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.492Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.494Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.497Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.498Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.501Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.503Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.891Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.893Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.896Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.898Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.902Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.903Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.906Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.908Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.911Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.913Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.917Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.918Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.921Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.922Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.925Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.927Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.929Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.931Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.934Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.935Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.938Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.939Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.942Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.943Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.946Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.948Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.950Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.952Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.955Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.956Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.959Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.960Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.963Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.964Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.967Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.969Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.971Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.973Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.975Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.977Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.979Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.981Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.984Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.985Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.988Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:00.990Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.992Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.994Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:00.997Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:00.998Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.001Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.003Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.006Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.007Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.396Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.398Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.401Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.403Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.406Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.407Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.410Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.412Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.415Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.416Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.419Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.420Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.424Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.425Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.428Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.429Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.432Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.434Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.436Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.438Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.442Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.443Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.446Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.447Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.450Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:01.452Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.455Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.456Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.900Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.905Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.912Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.914Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.919Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.922Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.926Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.928Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.933Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.934Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.938Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.940Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.944Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.946Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.949Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.951Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.954Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.956Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.959Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.961Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.964Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.965Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.969Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.971Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.974Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.975Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.978Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.980Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.983Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.984Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.987Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.988Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.991Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.992Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.995Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:01.996Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:01.999Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.000Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.003Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.004Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.007Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.008Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.011Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.012Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.015Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.016Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.019Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.020Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.023Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.025Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.027Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:02.029Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.397Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.399Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.402Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.404Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.407Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.408Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.411Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.412Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.415Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.417Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.420Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.421Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.424Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.426Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.429Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.430Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.433Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.434Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.904Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.906Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.909Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.910Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.913Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.914Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.917Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.918Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.922Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.923Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.926Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.928Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.930Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.932Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.935Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.937Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.939Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.941Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.943Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.945Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.948Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.949Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:02.952Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:02.953Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.408Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.410Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.413Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.414Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.417Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.418Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.421Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.423Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.425Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.427Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.430Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:03.431Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.434Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:03.435Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.438Z [INFO]: Profit target hit for VMAR: +19.00¢ >= +10¢
+2024-11-08T13:27:03.440Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.443Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.444Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.447Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.449Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.452Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.453Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.457Z [INFO]: Profit target hit for VMAR: +18.00¢ >= +10¢
+2024-11-08T13:27:03.458Z [WARN]: Quantity to close is zero or negative for VMAR.
+2024-11-08T13:27:03.780Z [INFO]: Position removed: VMAR
+2024-11-08T13:27:03.788Z [INFO]: Unsubscribed from VMAR quotes.
+2024-11-08T13:27:11.752Z [INFO]: Position added: VMAR | Qty: 500 | Avg Entry: $4.44
+2024-11-08T13:27:11.758Z [INFO]: Subscribed to VMAR quotes.
+2024-11-08T13:27:11.918Z [INFO]: Profit target hit for VMAR: +5.00¢ >= +5¢
+2024-11-08T13:27:11.921Z [INFO]: Attempting to place limit order: {"symbol":"VMAR","qty":"50","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.44","extended_hours":true,"client_order_id":"LIMIT-d62c5ed6ce72af81"}
+2024-11-08T13:27:12.456Z [INFO]: Placed limit order for 50 shares of VMAR. Order ID: f4cc02ec-3029-4a09-bf62-c4b092999149
+2024-11-08T13:28:02.008Z [INFO]: Profit target hit for VMAR: +10.89¢ >= +10¢
+2024-11-08T13:28:02.009Z [INFO]: Attempting to place limit order: {"symbol":"VMAR","qty":"47","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.52","extended_hours":true,"client_order_id":"LIMIT-710030480eed8a01"}
+2024-11-08T13:28:02.575Z [INFO]: Placed limit order for 47 shares of VMAR. Order ID: dd863b92-0f87-4bdb-97a2-30c488760680
+2024-11-08T13:28:05.749Z [INFO]: Position removed: VMAR
+2024-11-08T13:28:05.756Z [INFO]: Unsubscribed from VMAR quotes.
+2024-11-08T14:01:44.819Z [INFO]: Position added: VMAR | Qty: 500 | Avg Entry: $4.2099
+2024-11-08T14:01:44.826Z [INFO]: Subscribed to VMAR quotes.
+2024-11-08T14:02:16.961Z [INFO]: Profit target hit for VMAR: +6.01¢ >= +5¢
+2024-11-08T14:02:16.963Z [INFO]: Attempting to place limit order: {"symbol":"VMAR","qty":"50","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.22","extended_hours":true,"client_order_id":"LIMIT-5bd9d19cb2447f85"}
+2024-11-08T14:02:17.528Z [INFO]: Placed limit order for 50 shares of VMAR. Order ID: 572bd281-8654-4efb-be9c-8ea3f7028c13
+2024-11-08T14:02:30.013Z [INFO]: Profit target hit for VMAR: +10.01¢ >= +10¢
+2024-11-08T14:02:30.015Z [INFO]: Attempting to place limit order: {"symbol":"VMAR","qty":"45","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.26","extended_hours":true,"client_order_id":"LIMIT-c0df8ce0b0af411c"}
+2024-11-08T14:02:30.250Z [INFO]: Placed limit order for 45 shares of VMAR. Order ID: 499bfece-43fa-449e-88fd-ad35aba2490c
+2024-11-08T14:03:33.106Z [INFO]: Profit target hit for VMAR: +15.01¢ >= +15¢
+2024-11-08T14:03:33.108Z [INFO]: Attempting to place limit order: {"symbol":"VMAR","qty":"20","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.31","extended_hours":true,"client_order_id":"LIMIT-d7230b78e6590c58"}
+2024-11-08T14:03:33.572Z [INFO]: Placed limit order for 20 shares of VMAR. Order ID: 5266c0e7-2e0f-4d17-bede-042f8391e33f
+2024-11-08T14:03:48.356Z [INFO]: Polygon WebSocket connected.
+2024-11-08T14:03:48.360Z [INFO]: Started polling for order statuses.
+2024-11-08T14:03:48.538Z [INFO]: Polygon WebSocket connection opened.
+2024-11-08T14:03:48.539Z [INFO]: Polygon WebSocket connected.
+2024-11-08T14:03:48.593Z [INFO]: Polygon WebSocket authenticated.
+2024-11-08T14:04:48.227Z [INFO]: Polygon WebSocket connected.
+2024-11-08T14:04:48.232Z [INFO]: Started polling for order statuses.
+2024-11-08T14:04:48.393Z [INFO]: Polygon WebSocket connection opened.
+2024-11-08T14:04:48.394Z [INFO]: Polygon WebSocket connected.
+2024-11-08T14:04:48.444Z [INFO]: Polygon WebSocket authenticated.
+2024-11-08T14:30:27.245Z [INFO]: Position added: INDI | Qty: 500 | Avg Entry: $4.7369
+2024-11-08T14:30:27.251Z [INFO]: Subscribed to INDI quotes.
+2024-11-08T14:30:27.752Z [INFO]: Profit target hit for INDI: +6.31¢ >= +5¢
+2024-11-08T14:30:27.754Z [INFO]: Attempting to place limit order: {"symbol":"INDI","qty":"50","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.75","extended_hours":true,"client_order_id":"LIMIT-bc3f1d4d69e66380"}
+2024-11-08T14:30:28.042Z [INFO]: Placed limit order for 50 shares of INDI. Order ID: 6aabf381-3301-478d-8efb-2b6fc102ece7
+2024-11-08T14:30:33.247Z [INFO]: Profit target hit for INDI: +10.31¢ >= +10¢
+2024-11-08T14:30:33.248Z [INFO]: Attempting to place limit order: {"symbol":"INDI","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.80","extended_hours":true,"client_order_id":"LIMIT-be75e0de101a8d11"}
+2024-11-08T14:30:33.764Z [INFO]: Placed limit order for 95 shares of INDI. Order ID: cf821ca6-98e3-4dd0-98f4-0f80cb4d6f6d
+2024-11-08T14:31:35.808Z [INFO]: Profit target hit for INDI: +15.70¢ >= +15¢
+2024-11-08T14:31:35.809Z [INFO]: Attempting to place limit order: {"symbol":"INDI","qty":"123","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.88","extended_hours":true,"client_order_id":"LIMIT-3770bea7eb103b3a"}
+2024-11-08T14:31:35.999Z [INFO]: Placed limit order for 123 shares of INDI. Order ID: 81e81f63-0ab0-4774-90b6-075e0456eb8d
+2024-11-08T14:31:38.256Z [INFO]: Profit target hit for INDI: +20.70¢ >= +20¢
+2024-11-08T14:31:38.258Z [INFO]: Attempting to place limit order: {"symbol":"INDI","qty":"160","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.93","extended_hours":true,"client_order_id":"LIMIT-a3223110e696af63"}
+2024-11-08T14:31:38.623Z [INFO]: Placed limit order for 160 shares of INDI. Order ID: 60700e15-8e36-405b-8b3e-47814d2b1b80
+2024-11-08T14:31:40.633Z [INFO]: Attempting to place pyramid order: {"symbol":"INDI","qty":"44","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.08","extended_hours":true,"client_order_id":"PYRAMID-11f1b4bf704d9a48"}
+2024-11-08T14:31:40.826Z [INFO]: Placed pyramid order for 44 shares of INDI. Order ID: dd618bb0-ec28-4b47-bf1c-59718e2e807f
+2024-11-08T14:31:43.339Z [INFO]: Position removed: INDI
+2024-11-08T14:31:43.341Z [INFO]: Unsubscribed from INDI quotes.
+2024-11-08T14:31:59.314Z [INFO]: Position added: INDI | Qty: 1000 | Avg Entry: $5.143
+2024-11-08T14:31:59.318Z [INFO]: Subscribed to INDI quotes.
+2024-11-08T14:32:27.340Z [INFO]: Position removed: INDI
+2024-11-08T14:32:27.346Z [INFO]: Unsubscribed from INDI quotes.
+2024-11-08T14:33:17.359Z [INFO]: Position added: INDI | Qty: 1000 | Avg Entry: $4.9944
+2024-11-08T14:33:17.364Z [INFO]: Subscribed to INDI quotes.
+2024-11-08T14:34:41.440Z [INFO]: Position removed: INDI
+2024-11-08T14:34:41.445Z [INFO]: Unsubscribed from INDI quotes.
+2024-11-08T14:35:31.449Z [INFO]: Position added: INDI | Qty: 500 | Avg Entry: $5.0595
+2024-11-08T14:35:31.456Z [INFO]: Subscribed to INDI quotes.
+2024-11-08T14:35:39.288Z [INFO]: Profit target hit for INDI: +5.05¢ >= +5¢
+2024-11-08T14:35:39.290Z [INFO]: Attempting to place limit order: {"symbol":"INDI","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.07","extended_hours":true,"client_order_id":"LIMIT-c883dc0f0ee7dab0"}
+2024-11-08T14:35:39.463Z [INFO]: Placed limit order for 100 shares of INDI. Order ID: edba88e7-0f7f-41b5-bbac-aed6bf2cc47e
+2024-11-08T14:36:05.546Z [INFO]: Profit target hit for INDI: +10.25¢ >= +10¢
+2024-11-08T14:36:05.547Z [INFO]: Attempting to place limit order: {"symbol":"INDI","qty":"140","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.14","extended_hours":true,"client_order_id":"LIMIT-b14e1160c5948050"}
+2024-11-08T14:36:06.247Z [INFO]: Placed limit order for 140 shares of INDI. Order ID: c0f10793-c6f3-4091-a3a4-a34ab69c4bd9
+2024-11-08T14:36:09.444Z [INFO]: Profit target hit for INDI: +15.25¢ >= +15¢
+2024-11-08T14:36:09.445Z [INFO]: Attempting to place limit order: {"symbol":"INDI","qty":"56","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.19","extended_hours":true,"client_order_id":"LIMIT-7c4f9b93cf4e3f77"}
+2024-11-08T14:36:09.947Z [INFO]: Placed limit order for 56 shares of INDI. Order ID: 81c508e8-5eb1-4a42-862d-ff6a3bf63c48
+2024-11-08T14:36:39.556Z [INFO]: Position removed: INDI
+2024-11-08T14:36:39.562Z [INFO]: Unsubscribed from INDI quotes.
+2024-11-08T14:39:43.637Z [INFO]: Position added: SMR | Qty: 500 | Avg Entry: $23.0928
+2024-11-08T14:39:43.642Z [INFO]: Subscribed to SMR quotes.
+2024-11-08T14:39:45.162Z [INFO]: Profit target hit for SMR: +7.72¢ >= +5¢
+2024-11-08T14:39:45.163Z [INFO]: Attempting to place limit order: {"symbol":"SMR","qty":"50","side":"sell","type":"limit","time_in_force":"day","limit_price":"23.12","extended_hours":true,"client_order_id":"LIMIT-cb505751663c998a"}
+2024-11-08T14:39:45.367Z [INFO]: Placed limit order for 50 shares of SMR. Order ID: a83e58d1-200b-43c4-bdf2-4f355de9108f
+2024-11-08T14:39:47.643Z [INFO]: Position removed: SMR
+2024-11-08T14:39:47.647Z [INFO]: Unsubscribed from SMR quotes.
+2024-11-08T14:40:15.644Z [INFO]: Position added: SMR | Qty: 500 | Avg Entry: $23.4807
+2024-11-08T14:40:15.648Z [INFO]: Subscribed to SMR quotes.
+2024-11-08T14:40:19.642Z [INFO]: Position removed: SMR
+2024-11-08T14:40:19.647Z [INFO]: Unsubscribed from SMR quotes.
+2024-11-08T14:41:33.698Z [INFO]: Position added: SMR | Qty: 500 | Avg Entry: $23.3444
+2024-11-08T14:41:33.703Z [INFO]: Subscribed to SMR quotes.
+2024-11-08T14:41:55.569Z [INFO]: Stop condition met for SMR. Initiating limit order to close position.
+2024-11-08T14:41:55.570Z [INFO]: Closing position with limit order: {"symbol":"SMR","qty":"1000","side":"sell","type":"limit","time_in_force":"day","limit_price":"23.10","extended_hours":true,"client_order_id":"CLOSE-4c65c2d1cbd0230a"}
+2024-11-08T14:41:55.762Z [INFO]: Limit order placed to close position in SMR. Order ID: d801d033-8964-496a-91b3-eec76be6dbf6
+2024-11-08T14:41:56.116Z [INFO]: Position removed: SMR
+2024-11-08T14:41:56.121Z [INFO]: Unsubscribed from SMR quotes.
+2024-11-08T14:42:21.764Z [INFO]: Position added: SMR | Qty: 500 | Avg Entry: $23.12
+2024-11-08T14:42:21.768Z [INFO]: Subscribed to SMR quotes.
+2024-11-08T14:42:27.489Z [INFO]: Stop condition met for SMR. Initiating limit order to close position.
+2024-11-08T14:42:27.490Z [INFO]: Closing position with limit order: {"symbol":"SMR","qty":"1000","side":"sell","type":"limit","time_in_force":"day","limit_price":"22.85","extended_hours":true,"client_order_id":"CLOSE-52413d63449cda79"}
+2024-11-08T14:42:27.680Z [INFO]: Limit order placed to close position in SMR. Order ID: 27fc4601-5d14-4e5d-8bbf-4e73206460af
+2024-11-08T14:42:28.012Z [INFO]: Position removed: SMR
+2024-11-08T14:42:28.014Z [INFO]: Unsubscribed from SMR quotes.
+2024-11-08T14:42:41.773Z [INFO]: Position added: SMR | Qty: 500 | Avg Entry: $22.6917
+2024-11-08T14:42:41.778Z [INFO]: Subscribed to SMR quotes.
+2024-11-08T14:43:45.696Z [INFO]: Polygon WebSocket connected.
+2024-11-08T14:43:45.701Z [INFO]: Started polling for order statuses.
+2024-11-08T14:43:45.891Z [INFO]: Polygon WebSocket connection opened.
+2024-11-08T14:43:45.892Z [INFO]: Polygon WebSocket connected.
+2024-11-08T14:43:45.948Z [INFO]: Polygon WebSocket authenticated.
