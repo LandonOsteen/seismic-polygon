@@ -2589,3 +2589,51 @@
 2024-11-08T14:43:45.891Z [INFO]: Polygon WebSocket connection opened.
 2024-11-08T14:43:45.892Z [INFO]: Polygon WebSocket connected.
 2024-11-08T14:43:45.948Z [INFO]: Polygon WebSocket authenticated.
+2024-11-27T18:10:27.404Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:10:27.407Z [INFO]: Started polling for order statuses.
+2024-11-27T18:10:27.576Z [INFO]: Polygon WebSocket connection opened.
+2024-11-27T18:10:27.578Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:10:27.624Z [INFO]: Polygon WebSocket authenticated.
+2024-11-27T18:14:38.792Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:14:38.797Z [INFO]: Started polling for order statuses.
+2024-11-27T18:14:39.031Z [INFO]: Polygon WebSocket connection opened.
+2024-11-27T18:14:39.032Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:14:39.089Z [INFO]: Polygon WebSocket authenticated.
+2024-11-27T18:14:44.942Z [INFO]: Position added: HUT | Qty: 4000 | Avg Entry: $27.91305
+2024-11-27T18:14:44.948Z [INFO]: Subscribed to HUT quotes.
+2024-11-27T18:16:41.417Z [INFO]: Profit target hit for HUT: +5.73¢ >= +5¢
+2024-11-27T18:16:41.419Z [INFO]: Attempting to place limit order: {"symbol":"HUT","qty":"500","side":"buy","type":"limit","time_in_force":"day","limit_price":"27.90","extended_hours":true,"client_order_id":"LIMIT-97c79154ee684129"}
+2024-11-27T18:16:41.758Z [INFO]: Placed limit order for 500 shares of HUT. Order ID: 4ed5a224-20ce-43e9-b415-fc92efe97b0a
+2024-11-27T18:23:41.530Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:43.469Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:45.536Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:49.815Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-27T18:23:51.543Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:53.475Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:55.492Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:24:01.428Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:24:01.432Z [INFO]: Started polling for order statuses.
+2024-11-27T18:24:01.686Z [INFO]: Position added: HUT | Qty: 9125 | Avg Entry: $27.917974
+2024-11-27T18:24:01.866Z [INFO]: Polygon WebSocket connection opened.
+2024-11-27T18:24:01.869Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:24:01.975Z [INFO]: Polygon WebSocket authenticated.
+2024-11-27T18:27:58.748Z [INFO]: Profit target hit for HUT: +5.91¢ >= +5¢
+2024-11-27T18:27:58.751Z [INFO]: Attempting to place limit order: {"symbol":"HUT","qty":"417","side":"buy","type":"limit","time_in_force":"day","limit_price":"27.92","extended_hours":true,"client_order_id":"LIMIT-792ed1880bfe3994"}
+2024-11-27T18:27:59.058Z [INFO]: Placed limit order for 417 shares of HUT. Order ID: 3ea8ebdd-6751-4129-ae46-c9e0b1045001
+2024-11-27T18:48:08.287Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:48:08.291Z [INFO]: Started polling for order statuses.
+2024-11-27T18:48:08.467Z [INFO]: Polygon WebSocket connection opened.
+2024-11-27T18:48:08.469Z [INFO]: Polygon WebSocket connected.
+2024-11-27T18:48:08.515Z [INFO]: Polygon WebSocket authenticated.
+2024-11-27T19:33:28.953Z [INFO]: Polygon WebSocket connected.
+2024-11-27T19:33:28.958Z [INFO]: Started polling for order statuses.
+2024-11-27T19:33:29.174Z [INFO]: Polygon WebSocket connection opened.
+2024-11-27T19:33:29.175Z [INFO]: Polygon WebSocket connected.
+2024-11-27T19:33:29.230Z [INFO]: Polygon WebSocket authenticated.
+2024-11-27T19:33:57.100Z [INFO]: Position added: HUT | Qty: 2000 | Avg Entry: $28.4184
+2024-11-27T19:33:57.112Z [INFO]: Subscribed to HUT quotes.
+2024-11-27T19:35:08.078Z [INFO]: Profit target hit for HUT: +5.66¢ >= +5¢
+2024-11-27T19:35:08.081Z [INFO]: Attempting to place limit order: {"symbol":"HUT","qty":"300","side":"buy","type":"limit","time_in_force":"day","limit_price":"28.40","extended_hours":true,"client_order_id":"LIMIT-0aa7ecf8612b4365"}
+2024-11-27T19:35:08.522Z [INFO]: Placed limit order for 300 shares of HUT. Order ID: 989e5fab-fed4-4c2c-99ff-8c9ce1bf73fb
+2024-11-27T19:35:31.144Z [INFO]: Position removed: HUT
+2024-11-27T19:35:31.151Z [INFO]: Unsubscribed from HUT quotes.

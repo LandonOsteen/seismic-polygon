@@ -1,3 +1,5 @@
+// dashboard.js
+
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -19,9 +21,9 @@ class Dashboard {
     });
 
     // --------------------------
-    // 1. Positions Table (Top)
+    // 1. Positions Table (Top-Left)
     // --------------------------
-    this.positionsTable = this.grid.set(0, 0, 4, 12, contrib.table, {
+    this.positionsTable = this.grid.set(0, 0, 4, 9, contrib.table, {
       keys: true,
       fg: 'white',
       selectedFg: 'white',
@@ -71,6 +73,17 @@ class Dashboard {
         'PYRAMIDS HIT',
       ],
       data: [],
+    });
+
+    // --------------------------
+    // 1.5 Account Summary Box (Top-Right)
+    // --------------------------
+    this.accountSummaryBox = this.grid.set(0, 9, 4, 3, contrib.markdown, {
+      label: ' ACCOUNT SUMMARY ',
+      border: { type: 'line', fg: 'cyan' },
+      style: {
+        fg: 'white',
+      },
     });
 
     // --------------------------
@@ -346,6 +359,22 @@ class Dashboard {
         rows.items[index].style = { fg: 'yellow' };
       }
     });
+  }
+
+  /**
+   * Updates the Account Summary section with the latest account information.
+   * @param {Object} accountSummary - The account summary data.
+   */
+  updateAccountSummary(accountSummary) {
+    const content = `### Account Summary
+
+- **Equity**: $${accountSummary.equity}
+- **Cash**: $${accountSummary.cash}
+- **Day's P&L**: $${accountSummary.pnl} (${accountSummary.pnl_percentage}%)
+- **Open P&L**: $${accountSummary.unrealized_pl}
+`;
+    this.accountSummaryBox.setMarkdown(content);
+    this.screen.render();
   }
 }
 

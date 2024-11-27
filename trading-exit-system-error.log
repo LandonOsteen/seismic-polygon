@@ -24,3 +24,10 @@
 2024-11-05T14:49:31.283Z [ERROR]: Error placing limit order to close position for ALBT: {"available":"0","code":40310000,"existing_qty":"970","held_for_orders":"970","message":"insufficient qty available for order (requested: 970, available: 0)","related_orders":["f3b0bce4-0463-4e77-8a13-726ef7829c2d"],"symbol":"ALBT"}
 2024-11-05T19:58:20.003Z [ERROR]: Error placing limit order to close position for DJT: {"available":"0","code":40310000,"existing_qty":"500","held_for_orders":"500","message":"insufficient qty available for order (requested: 500, available: 0)","related_orders":["5aa14f1f-d8c7-43d3-9447-b61278f7c8a8"],"symbol":"DJT"}
 2024-11-05T20:17:55.935Z [ERROR]: Error placing limit order for DJT: {"buy_limit_price":"36.54","code":40310000,"existing_order_id":"81cdbc3d-cf71-4159-bee0-7949c33c7dd8","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"36.34"}
+2024-11-27T18:23:41.530Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:43.469Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:45.536Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:49.815Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-27T18:23:51.543Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:53.475Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-27T18:23:55.492Z [ERROR]: Error refreshing positions: Request failed with status code 429
