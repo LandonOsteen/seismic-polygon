@@ -31,3 +31,28 @@
 2024-11-27T18:23:51.543Z [ERROR]: Error refreshing positions: Request failed with status code 429
 2024-11-27T18:23:53.475Z [ERROR]: Error refreshing positions: Request failed with status code 429
 2024-11-27T18:23:55.492Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:05.057Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:06.156Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:09.205Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:12.129Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:15.063Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:15.166Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:17.074Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:18.194Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:21.216Z [ERROR]: Error initializing existing positions: Request failed with status code 429
+2024-11-29T17:19:23.127Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:24.107Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:24.113Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:25.620Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:25.818Z [ERROR]: Error placing limit order for UAVS: {"code":42910000,"message":"rate limit exceeded"}
+2024-11-29T17:19:26.177Z [ERROR]: Error placing pyramid order for UAVS: {"code":42910000,"message":"rate limit exceeded"}
+2024-11-29T17:19:27.118Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:27.211Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:28.267Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:28.966Z [ERROR]: Error placing limit order for UAVS: {"code":42910000,"message":"rate limit exceeded"}
+2024-11-29T17:19:28.976Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:29.310Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:30.224Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:30.227Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-12-02T12:52:18.829Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-02T13:32:23.117Z [ERROR]: Error placing limit order to close position for SNTI: {"code":42210000,"message":"asset \"SNTI\" cannot be sold short"}

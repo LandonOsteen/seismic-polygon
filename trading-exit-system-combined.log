@@ -2637,3 +2637,936 @@
 2024-11-27T19:35:08.522Z [INFO]: Placed limit order for 300 shares of HUT. Order ID: 989e5fab-fed4-4c2c-99ff-8c9ce1bf73fb
 2024-11-27T19:35:31.144Z [INFO]: Position removed: HUT
 2024-11-27T19:35:31.151Z [INFO]: Unsubscribed from HUT quotes.
+2024-11-29T12:52:50.494Z [INFO]: Polygon WebSocket connected.
+2024-11-29T12:52:50.498Z [INFO]: Started polling for order statuses.
+2024-11-29T12:52:50.912Z [INFO]: Polygon WebSocket connection opened.
+2024-11-29T12:52:50.914Z [INFO]: Polygon WebSocket connected.
+2024-11-29T12:52:50.962Z [INFO]: Polygon WebSocket authenticated.
+2024-11-29T12:57:04.754Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $12.726495
+2024-11-29T12:57:04.760Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T12:57:05.817Z [INFO]: Profit target hit for UMAC: +7.35¢ >= +5¢
+2024-11-29T12:57:05.819Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"12.75","extended_hours":true,"client_order_id":"LIMIT-8acfea3e533e4971"}
+2024-11-29T12:57:06.177Z [INFO]: Placed limit order for 100 shares of UMAC. Order ID: ca3624c6-1eca-4e0b-b022-91cf1e314d6a
+2024-11-29T12:57:06.779Z [INFO]: Profit target hit for UMAC: +12.35¢ >= +10¢
+2024-11-29T12:57:06.781Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"12.80","extended_hours":true,"client_order_id":"LIMIT-1faea4c629a9ff48"}
+2024-11-29T12:57:07.641Z [INFO]: Placed limit order for 95 shares of UMAC. Order ID: 297beb21-f1fb-4d40-a807-1ef80bfb1ee0
+2024-11-29T12:58:10.451Z [INFO]: Profit target hit for UMAC: +15.63¢ >= +15¢
+2024-11-29T12:58:10.454Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"142","side":"sell","type":"limit","time_in_force":"day","limit_price":"12.92","extended_hours":true,"client_order_id":"LIMIT-d8c3f719f9761753"}
+2024-11-29T12:58:10.620Z [INFO]: Placed limit order for 142 shares of UMAC. Order ID: 30ad9d0e-ad8c-4f94-bf92-167e19f9223f
+2024-11-29T12:58:19.452Z [INFO]: Profit target hit for UMAC: +20.73¢ >= +20¢
+2024-11-29T12:58:19.453Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"235","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.04","extended_hours":true,"client_order_id":"LIMIT-d43085f6ceffb5c6"}
+2024-11-29T12:58:19.610Z [INFO]: Placed limit order for 235 shares of UMAC. Order ID: e19622c8-da34-4b2d-a613-8104cf029836
+2024-11-29T12:58:31.954Z [INFO]: Attempting to place pyramid order: {"symbol":"UMAC","qty":"167","side":"buy","type":"limit","time_in_force":"day","limit_price":"13.21","extended_hours":true,"client_order_id":"PYRAMID-35dbfa0d06548c15"}
+2024-11-29T12:58:32.253Z [INFO]: Placed pyramid order for 167 shares of UMAC. Order ID: 13875c82-d67d-45a0-ab6f-852a2085a757
+2024-11-29T12:58:42.787Z [INFO]: Position removed: UMAC
+2024-11-29T12:58:42.794Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:04:12.945Z [INFO]: Position added: VCIG | Qty: 2000 | Avg Entry: $4.7699
+2024-11-29T13:04:12.952Z [INFO]: Subscribed to VCIG quotes.
+2024-11-29T13:04:16.547Z [INFO]: Profit target hit for VCIG: +6.01¢ >= +5¢
+2024-11-29T13:04:16.550Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.78","extended_hours":true,"client_order_id":"LIMIT-20102705e646f5dc"}
+2024-11-29T13:04:16.706Z [INFO]: Placed limit order for 100 shares of VCIG. Order ID: 283ed080-9bb3-4e14-be00-063803ff4dbf
+2024-11-29T13:04:21.596Z [INFO]: Profit target hit for VCIG: +10.01¢ >= +10¢
+2024-11-29T13:04:21.597Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"195","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.86","extended_hours":true,"client_order_id":"LIMIT-ab3c32a4708f45e7"}
+2024-11-29T13:04:21.781Z [INFO]: Placed limit order for 195 shares of VCIG. Order ID: 9d940372-d4a1-4e5e-800f-7f5950bec385
+2024-11-29T13:04:29.045Z [INFO]: Position removed: VCIG
+2024-11-29T13:04:29.047Z [INFO]: Unsubscribed from VCIG quotes.
+2024-11-29T13:04:51.057Z [INFO]: Position added: VCIG | Qty: 2000 | Avg Entry: $4.6699
+2024-11-29T13:04:51.063Z [INFO]: Subscribed to VCIG quotes.
+2024-11-29T13:05:03.360Z [INFO]: Profit target hit for VCIG: +5.26¢ >= +5¢
+2024-11-29T13:05:03.363Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.71","extended_hours":true,"client_order_id":"LIMIT-fa95071f084eb9fb"}
+2024-11-29T13:05:03.729Z [INFO]: Placed limit order for 200 shares of VCIG. Order ID: 34c3d75d-8a1f-4f09-9ee1-3d6c8e7fa560
+2024-11-29T13:05:27.044Z [INFO]: Position removed: VCIG
+2024-11-29T13:05:27.049Z [INFO]: Unsubscribed from VCIG quotes.
+2024-11-29T13:07:13.278Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.109855
+2024-11-29T13:07:13.285Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:07:45.851Z [INFO]: Profit target hit for UMAC: +7.48¢ >= +5¢
+2024-11-29T13:07:45.854Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.15","extended_hours":true,"client_order_id":"LIMIT-03cc8aab93e65b79"}
+2024-11-29T13:07:46.218Z [INFO]: Placed limit order for 300 shares of UMAC. Order ID: fefac7d9-4bc5-4f3a-8a5d-92a4b832a041
+2024-11-29T13:07:47.358Z [INFO]: Profit target hit for UMAC: +10.48¢ >= +10¢
+2024-11-29T13:07:47.360Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"285","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.18","extended_hours":true,"client_order_id":"LIMIT-f9b2a03cd9155577"}
+2024-11-29T13:07:47.609Z [INFO]: Placed limit order for 285 shares of UMAC. Order ID: 88a6a94f-27df-413a-91ae-1498257689f4
+2024-11-29T13:07:58.876Z [INFO]: Profit target hit for UMAC: +16.48¢ >= +15¢
+2024-11-29T13:07:58.878Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"199","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.24","extended_hours":true,"client_order_id":"LIMIT-cf201732b73913f1"}
+2024-11-29T13:07:59.050Z [INFO]: Placed limit order for 199 shares of UMAC. Order ID: a715912a-e6f1-401c-8009-feadf79e8a4a
+2024-11-29T13:08:05.891Z [INFO]: Profit target hit for UMAC: +20.48¢ >= +20¢
+2024-11-29T13:08:05.894Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"189","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.28","extended_hours":true,"client_order_id":"LIMIT-ea360dfef38dcbdc"}
+2024-11-29T13:08:06.144Z [INFO]: Placed limit order for 189 shares of UMAC. Order ID: 537ec998-d769-445c-b5c6-3dbf9e0750bd
+2024-11-29T13:08:11.932Z [INFO]: Attempting to place pyramid order: {"symbol":"UMAC","qty":"135","side":"buy","type":"limit","time_in_force":"day","limit_price":"13.43","extended_hours":true,"client_order_id":"PYRAMID-a4aee3516f4a47bb"}
+2024-11-29T13:08:12.098Z [INFO]: Placed pyramid order for 135 shares of UMAC. Order ID: c571266d-cc91-47bd-8f7e-393cd05af3c9
+2024-11-29T13:09:59.291Z [INFO]: Position removed: UMAC
+2024-11-29T13:09:59.296Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:10:21.304Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.426503
+2024-11-29T13:10:21.307Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:11:34.722Z [INFO]: Profit target hit for UMAC: +6.36¢ >= +5¢
+2024-11-29T13:11:34.724Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.46","extended_hours":true,"client_order_id":"LIMIT-f1df39bd355e5710"}
+2024-11-29T13:11:34.947Z [INFO]: Placed limit order for 300 shares of UMAC. Order ID: c8dc4f91-f963-4c70-a459-f6d7a47abbd5
+2024-11-29T13:11:43.390Z [INFO]: Position removed: UMAC
+2024-11-29T13:11:43.394Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:12:17.418Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.39475
+2024-11-29T13:12:17.422Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:12:36.795Z [INFO]: Profit target hit for UMAC: +8.28¢ >= +5¢
+2024-11-29T13:12:36.799Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.44","extended_hours":true,"client_order_id":"LIMIT-4fcd24479854df00"}
+2024-11-29T13:12:36.989Z [INFO]: Placed limit order for 300 shares of UMAC. Order ID: 274d62f5-d210-4c00-9032-c80899335422
+2024-11-29T13:12:38.801Z [INFO]: Profit target hit for UMAC: +13.65¢ >= +10¢
+2024-11-29T13:12:38.804Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"385","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.52","extended_hours":true,"client_order_id":"LIMIT-48535704a934e9ba"}
+2024-11-29T13:12:38.949Z [INFO]: Placed limit order for 385 shares of UMAC. Order ID: 4a81d071-2d82-4a47-b87e-d91156712112
+2024-11-29T13:12:39.830Z [INFO]: Profit target hit for UMAC: +17.65¢ >= +15¢
+2024-11-29T13:12:39.833Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"274","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.56","extended_hours":true,"client_order_id":"LIMIT-f1ef14f893f2d2ba"}
+2024-11-29T13:12:40.009Z [INFO]: Placed limit order for 274 shares of UMAC. Order ID: 41643c7a-2d34-422f-9b06-9f492ed22397
+2024-11-29T13:12:40.892Z [INFO]: Profit target hit for UMAC: +20.65¢ >= +20¢
+2024-11-29T13:12:40.895Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"260","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.59","extended_hours":true,"client_order_id":"LIMIT-acdcae9a2a667fbc"}
+2024-11-29T13:12:41.495Z [INFO]: Placed limit order for 260 shares of UMAC. Order ID: e43de512-11fa-421e-b9aa-3a1d57570a26
+2024-11-29T13:12:43.817Z [INFO]: Attempting to place pyramid order: {"symbol":"UMAC","qty":"185","side":"buy","type":"limit","time_in_force":"day","limit_price":"13.79","extended_hours":true,"client_order_id":"PYRAMID-3a5b35c1020ab70b"}
+2024-11-29T13:12:44.072Z [INFO]: Placed pyramid order for 185 shares of UMAC. Order ID: a3b4549c-e262-4c2e-bb8b-cb2cef145b4a
+2024-11-29T13:13:19.517Z [INFO]: Position removed: UMAC
+2024-11-29T13:13:19.520Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:13:33.533Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.845
+2024-11-29T13:13:33.541Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:13:49.918Z [INFO]: Profit target hit for UMAC: +5.50¢ >= +5¢
+2024-11-29T13:13:49.921Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.85","extended_hours":true,"client_order_id":"LIMIT-fbb749c6aa30e58f"}
+2024-11-29T13:13:50.140Z [INFO]: Placed limit order for 100 shares of UMAC. Order ID: 614e1f11-dba0-4931-8e62-e3fe0ee8971d
+2024-11-29T13:13:51.949Z [INFO]: Profit target hit for UMAC: +10.50¢ >= +10¢
+2024-11-29T13:13:51.951Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.90","extended_hours":true,"client_order_id":"LIMIT-8a953a54bcd2c4d6"}
+2024-11-29T13:13:52.178Z [INFO]: Placed limit order for 95 shares of UMAC. Order ID: 787a8cfe-aa39-43b4-a3ca-7bbdf52db1f7
+2024-11-29T13:13:57.554Z [INFO]: Position removed: UMAC
+2024-11-29T13:13:57.561Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:14:47.136Z [INFO]: Polygon WebSocket connected.
+2024-11-29T13:14:47.140Z [INFO]: Started polling for order statuses.
+2024-11-29T13:14:47.387Z [INFO]: Polygon WebSocket connection opened.
+2024-11-29T13:14:47.390Z [INFO]: Polygon WebSocket connected.
+2024-11-29T13:14:47.437Z [INFO]: Polygon WebSocket authenticated.
+2024-11-29T13:15:55.388Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.894095
+2024-11-29T13:15:55.396Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:16:02.437Z [INFO]: Profit target hit for UMAC: +6.59¢ >= +5¢
+2024-11-29T13:16:02.441Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.81","extended_hours":true,"client_order_id":"LIMIT-170f9ab3a1b10320"}
+2024-11-29T13:16:02.729Z [INFO]: Placed limit order for 100 shares of UMAC. Order ID: 21a49118-b56c-4db5-8593-0f1bdfc36187
+2024-11-29T13:16:03.484Z [INFO]: Profit target hit for UMAC: +11.59¢ >= +10¢
+2024-11-29T13:16:03.486Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.86","extended_hours":true,"client_order_id":"LIMIT-755d7121de4b92b8"}
+2024-11-29T13:16:04.094Z [INFO]: Placed limit order for 95 shares of UMAC. Order ID: 5126dfc3-f794-4cd8-b760-a1dbaf89be02
+2024-11-29T13:16:11.310Z [INFO]: Position removed: UMAC
+2024-11-29T13:16:11.316Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:19:43.504Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.637565
+2024-11-29T13:19:43.510Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:19:55.350Z [INFO]: Stop condition met for UMAC. Initiating limit order to close position.
+2024-11-29T13:19:55.352Z [INFO]: Closing position with limit order: {"symbol":"UMAC","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.23","extended_hours":true,"client_order_id":"CLOSE-8a7b4ae35c60f1d2"}
+2024-11-29T13:19:55.757Z [INFO]: Limit order placed to close position in UMAC. Order ID: e894c90a-42a6-4b43-a2b5-15997cc5633f
+2024-11-29T13:19:56.449Z [INFO]: Position removed: UMAC
+2024-11-29T13:19:56.452Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:33:01.849Z [INFO]: Position added: VCIG | Qty: 2000 | Avg Entry: $5.19
+2024-11-29T13:33:01.857Z [INFO]: Subscribed to VCIG quotes.
+2024-11-29T13:33:11.441Z [INFO]: Profit target hit for VCIG: +5.59¢ >= +5¢
+2024-11-29T13:33:11.444Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.12","extended_hours":true,"client_order_id":"LIMIT-48f9b8a5000ce9b2"}
+2024-11-29T13:33:11.645Z [INFO]: Placed limit order for 200 shares of VCIG. Order ID: 3dab3e9d-3914-4145-bfbb-2fe64d635313
+2024-11-29T13:34:41.900Z [INFO]: Position removed: VCIG
+2024-11-29T13:34:41.906Z [INFO]: Unsubscribed from VCIG quotes.
+2024-11-29T13:34:53.899Z [INFO]: Position added: VCIG | Qty: 2000 | Avg Entry: $5.17
+2024-11-29T13:34:53.906Z [INFO]: Subscribed to VCIG quotes.
+2024-11-29T13:35:02.635Z [INFO]: Profit target hit for VCIG: +5.51¢ >= +5¢
+2024-11-29T13:35:02.637Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.07","extended_hours":true,"client_order_id":"LIMIT-240da811a774b044"}
+2024-11-29T13:35:02.801Z [INFO]: Placed limit order for 200 shares of VCIG. Order ID: dc6f5705-49d4-4b59-833f-d641733ed9a0
+2024-11-29T13:36:23.935Z [INFO]: Position removed: VCIG
+2024-11-29T13:36:23.943Z [INFO]: Unsubscribed from VCIG quotes.
+2024-11-29T13:36:35.957Z [INFO]: Position added: VCIG | Qty: 2000 | Avg Entry: $5.206715
+2024-11-29T13:36:35.964Z [INFO]: Subscribed to VCIG quotes.
+2024-11-29T13:37:13.768Z [INFO]: Profit target hit for VCIG: +5.33¢ >= +5¢
+2024-11-29T13:37:13.770Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.11","extended_hours":true,"client_order_id":"LIMIT-ec2287ffe979dd33"}
+2024-11-29T13:37:13.921Z [INFO]: Placed limit order for 100 shares of VCIG. Order ID: 4bd2ebd4-1a8e-4791-9ab3-a777c213389e
+2024-11-29T13:37:21.976Z [INFO]: Position removed: VCIG
+2024-11-29T13:37:21.983Z [INFO]: Unsubscribed from VCIG quotes.
+2024-11-29T13:37:31.981Z [INFO]: Position added: VCIG | Qty: 2000 | Avg Entry: $5.27
+2024-11-29T13:37:31.987Z [INFO]: Subscribed to VCIG quotes.
+2024-11-29T13:38:13.434Z [INFO]: Profit target hit for VCIG: +5.83¢ >= +5¢
+2024-11-29T13:38:13.439Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.17","extended_hours":true,"client_order_id":"LIMIT-246604fe15bb8811"}
+2024-11-29T13:38:13.632Z [INFO]: Placed limit order for 200 shares of VCIG. Order ID: 22b86ec6-7612-4426-8685-141362a6c0c6
+2024-11-29T13:38:19.346Z [INFO]: Profit target hit for VCIG: +10.83¢ >= +10¢
+2024-11-29T13:38:19.349Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"142","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.22","extended_hours":true,"client_order_id":"LIMIT-b22e368e45e42d2d"}
+2024-11-29T13:38:19.507Z [INFO]: Placed limit order for 142 shares of VCIG. Order ID: 68998bff-483c-4234-983f-daf002821ab3
+2024-11-29T13:38:20.887Z [INFO]: Profit target hit for VCIG: +15.83¢ >= +15¢
+2024-11-29T13:38:20.889Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"135","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.27","extended_hours":true,"client_order_id":"LIMIT-d4c5434fe4ca1335"}
+2024-11-29T13:38:21.054Z [INFO]: Placed limit order for 135 shares of VCIG. Order ID: f46ff80e-a20e-494d-9859-48e8bdfc7787
+2024-11-29T13:38:34.368Z [INFO]: Profit target hit for VCIG: +20.83¢ >= +20¢
+2024-11-29T13:38:34.370Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"96","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.32","extended_hours":true,"client_order_id":"LIMIT-05b629b19b4b0edd"}
+2024-11-29T13:38:34.538Z [INFO]: Placed limit order for 96 shares of VCIG. Order ID: 1e8c9748-6fa2-4802-9077-5b7ed23c2e82
+2024-11-29T13:39:18.156Z [INFO]: Position removed: VCIG
+2024-11-29T13:39:18.160Z [INFO]: Unsubscribed from VCIG quotes.
+2024-11-29T13:40:06.179Z [INFO]: Position added: VCIG | Qty: 2000 | Avg Entry: $5.5
+2024-11-29T13:40:06.187Z [INFO]: Subscribed to VCIG quotes.
+2024-11-29T13:40:28.509Z [INFO]: Profit target hit for VCIG: +6.00¢ >= +5¢
+2024-11-29T13:40:28.511Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.41","extended_hours":true,"client_order_id":"LIMIT-f4ae500b66aefa5c"}
+2024-11-29T13:40:28.664Z [INFO]: Placed limit order for 200 shares of VCIG. Order ID: dd1c12f9-6758-42de-8e19-2529c3ac5b7b
+2024-11-29T13:40:30.518Z [INFO]: Profit target hit for VCIG: +10.00¢ >= +10¢
+2024-11-29T13:40:30.519Z [INFO]: Attempting to place limit order: {"symbol":"VCIG","qty":"190","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.45","extended_hours":true,"client_order_id":"LIMIT-b35d741b6869992f"}
+2024-11-29T13:40:30.681Z [INFO]: Placed limit order for 190 shares of VCIG. Order ID: 9e2b76e9-d1bd-4c00-bedc-962085d3deb9
+2024-11-29T13:40:46.307Z [INFO]: Position removed: VCIG
+2024-11-29T13:40:46.314Z [INFO]: Unsubscribed from VCIG quotes.
+2024-11-29T13:53:02.935Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.86981
+2024-11-29T13:53:02.942Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:53:28.417Z [INFO]: Profit target hit for UMAC: +5.79¢ >= +5¢
+2024-11-29T13:53:28.420Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.74","extended_hours":true,"client_order_id":"LIMIT-547ba3d9221c7b3e"}
+2024-11-29T13:53:28.724Z [INFO]: Placed limit order for 200 shares of UMAC. Order ID: bb5f2c75-289c-450e-a7e6-23da108d4d21
+2024-11-29T13:55:09.514Z [INFO]: Profit target hit for UMAC: +12.36¢ >= +10¢
+2024-11-29T13:55:09.516Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"195","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.82","extended_hours":true,"client_order_id":"LIMIT-e5f8676e17c2cfda"}
+2024-11-29T13:55:09.723Z [INFO]: Placed limit order for 195 shares of UMAC. Order ID: aad21645-776b-4cc7-955f-7107996b88fc
+2024-11-29T13:55:13.104Z [INFO]: Profit target hit for UMAC: +15.36¢ >= +15¢
+2024-11-29T13:55:13.106Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"185","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.85","extended_hours":true,"client_order_id":"LIMIT-ff5db6d73f2ebd07"}
+2024-11-29T13:55:13.623Z [INFO]: Placed limit order for 185 shares of UMAC. Order ID: c89db4ad-6792-4bc8-8de0-18033f04b0e3
+2024-11-29T13:55:14.529Z [INFO]: Profit target hit for UMAC: +22.36¢ >= +20¢
+2024-11-29T13:55:14.531Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"132","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.92","extended_hours":true,"client_order_id":"LIMIT-941a932995f45eb4"}
+2024-11-29T13:55:14.763Z [INFO]: Placed limit order for 132 shares of UMAC. Order ID: b90c6901-c50d-49e7-8550-e122140a9bf9
+2024-11-29T13:55:17.255Z [INFO]: Position removed: UMAC
+2024-11-29T13:55:17.263Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T13:56:37.188Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $13.92042
+2024-11-29T13:56:37.193Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T13:56:54.704Z [INFO]: Profit target hit for UMAC: +5.96¢ >= +5¢
+2024-11-29T13:56:54.706Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.83","extended_hours":true,"client_order_id":"LIMIT-42e3edcdc66fa420"}
+2024-11-29T13:56:54.866Z [INFO]: Placed limit order for 100 shares of UMAC. Order ID: 110c5b54-98db-4076-bf2e-48bc74c33149
+2024-11-29T13:56:56.194Z [INFO]: Profit target hit for UMAC: +10.96¢ >= +10¢
+2024-11-29T13:56:56.197Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.88","extended_hours":true,"client_order_id":"LIMIT-cc6ce0964a3aa9e8"}
+2024-11-29T13:56:56.379Z [INFO]: Placed limit order for 95 shares of UMAC. Order ID: d3f90826-2c40-40ae-baf8-f85a3d0bbcb3
+2024-11-29T13:56:58.320Z [INFO]: Profit target hit for UMAC: +18.36¢ >= +15¢
+2024-11-29T13:56:58.323Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"190","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.03","extended_hours":true,"client_order_id":"LIMIT-414237604bdcca86"}
+2024-11-29T13:56:58.478Z [INFO]: Placed limit order for 190 shares of UMAC. Order ID: 612d1ed8-7c41-49be-868e-68851b4bb9ba
+2024-11-29T13:57:00.708Z [INFO]: Profit target hit for UMAC: +23.36¢ >= +20¢
+2024-11-29T13:57:00.711Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"133","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.08","extended_hours":true,"client_order_id":"LIMIT-e9773db1c93e093d"}
+2024-11-29T13:57:00.967Z [INFO]: Placed limit order for 133 shares of UMAC. Order ID: 18afc619-9104-47b9-92a8-a23866c23ce8
+2024-11-29T13:57:06.231Z [INFO]: Attempting to place pyramid order: {"symbol":"UMAC","qty":"94","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.31","extended_hours":true,"client_order_id":"PYRAMID-4053967d108b88b1"}
+2024-11-29T13:57:06.396Z [INFO]: Placed pyramid order for 94 shares of UMAC. Order ID: 2a38f61b-68ba-45b6-9180-5b9435e030e0
+2024-11-29T13:57:20.923Z [INFO]: Position removed: UMAC
+2024-11-29T13:57:20.926Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T14:28:19.918Z [INFO]: Position added: UMAC | Qty: 1000 | Avg Entry: $14.178738
+2024-11-29T14:28:19.930Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T14:28:57.560Z [INFO]: Profit target hit for UMAC: +6.13¢ >= +5¢
+2024-11-29T14:28:57.563Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"50","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.09","extended_hours":true,"client_order_id":"LIMIT-82abdc82b18ff753"}
+2024-11-29T14:28:57.728Z [INFO]: Placed limit order for 50 shares of UMAC. Order ID: 56d1ea3a-a442-4046-a8cf-dec5b5d01ea2
+2024-11-29T14:28:59.553Z [INFO]: Profit target hit for UMAC: +13.13¢ >= +10¢
+2024-11-29T14:28:59.555Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"47","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.16","extended_hours":true,"client_order_id":"LIMIT-20444e0ee50a8b1b"}
+2024-11-29T14:28:59.722Z [INFO]: Placed limit order for 47 shares of UMAC. Order ID: 654bef2f-bb41-49a2-8b4a-15c548fffeb3
+2024-11-29T14:29:01.564Z [INFO]: Profit target hit for UMAC: +16.13¢ >= +15¢
+2024-11-29T14:29:01.567Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"45","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.19","extended_hours":true,"client_order_id":"LIMIT-e9cf9c81d738d296"}
+2024-11-29T14:29:01.758Z [INFO]: Placed limit order for 45 shares of UMAC. Order ID: 9d97d00c-f925-4c72-8a34-775446ab3ae4
+2024-11-29T14:29:03.564Z [INFO]: Profit target hit for UMAC: +22.13¢ >= +20¢
+2024-11-29T14:29:03.568Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"42","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.25","extended_hours":true,"client_order_id":"LIMIT-220b752843de9343"}
+2024-11-29T14:29:03.737Z [INFO]: Placed limit order for 42 shares of UMAC. Order ID: e2d5212f-2b47-442d-848a-322c31b0c08b
+2024-11-29T14:29:20.598Z [INFO]: Attempting to place pyramid order: {"symbol":"UMAC","qty":"40","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.49","extended_hours":true,"client_order_id":"PYRAMID-d5f9525ff100cb51"}
+2024-11-29T14:29:20.780Z [INFO]: Placed pyramid order for 40 shares of UMAC. Order ID: 77d4e187-5051-4ee2-9905-9b000e83e7f2
+2024-11-29T14:29:25.784Z [INFO]: Position removed: UMAC
+2024-11-29T14:29:25.790Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T14:30:23.817Z [INFO]: Position added: UMAC | Qty: 1000 | Avg Entry: $14.205798
+2024-11-29T14:30:23.819Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T14:30:31.713Z [INFO]: Stop condition met for UMAC. Initiating limit order to close position.
+2024-11-29T14:30:31.715Z [INFO]: Closing position with limit order: {"symbol":"UMAC","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.80","extended_hours":true,"client_order_id":"CLOSE-c4ab572f4d76da14"}
+2024-11-29T14:30:32.263Z [INFO]: Limit order placed to close position in UMAC. Order ID: b5260ce3-1f79-44f7-8833-f931a25ed715
+2024-11-29T14:30:32.961Z [INFO]: Position removed: UMAC
+2024-11-29T14:30:32.966Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T14:31:01.832Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $14.67762
+2024-11-29T14:31:01.835Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T14:31:02.965Z [INFO]: Stop condition met for UMAC. Initiating limit order to close position.
+2024-11-29T14:31:02.967Z [INFO]: Closing position with limit order: {"symbol":"UMAC","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.26","extended_hours":true,"client_order_id":"CLOSE-2a71a52aeaf8c8fb"}
+2024-11-29T14:31:03.452Z [INFO]: Limit order placed to close position in UMAC. Order ID: ccc3038b-a4dd-4718-ba64-90b7a2d86b74
+2024-11-29T14:31:03.781Z [INFO]: Position removed: UMAC
+2024-11-29T14:31:03.783Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T14:31:11.847Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $14.863489
+2024-11-29T14:31:11.856Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T14:31:18.187Z [INFO]: Profit target hit for UMAC: +5.65¢ >= +5¢
+2024-11-29T14:31:18.188Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.77","extended_hours":true,"client_order_id":"LIMIT-cd6112364557371d"}
+2024-11-29T14:31:18.607Z [INFO]: Placed limit order for 100 shares of UMAC. Order ID: e306b618-61b4-4160-ba0d-7f8af53f6794
+2024-11-29T14:31:19.474Z [INFO]: Profit target hit for UMAC: +10.65¢ >= +10¢
+2024-11-29T14:31:19.476Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.82","extended_hours":true,"client_order_id":"LIMIT-f30cd644b08d5c95"}
+2024-11-29T14:31:19.695Z [INFO]: Placed limit order for 95 shares of UMAC. Order ID: ef0e69b7-dd67-45cb-9952-8f365afeeb12
+2024-11-29T14:31:29.977Z [INFO]: Profit target hit for UMAC: +15.65¢ >= +15¢
+2024-11-29T14:31:29.979Z [INFO]: Attempting to place limit order: {"symbol":"UMAC","qty":"90","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.87","extended_hours":true,"client_order_id":"LIMIT-0fa627ff164b0d1b"}
+2024-11-29T14:31:30.280Z [INFO]: Placed limit order for 90 shares of UMAC. Order ID: ddae9060-ec87-4013-8c72-c2715ed7767a
+2024-11-29T14:31:31.892Z [INFO]: Stop condition met for UMAC. Initiating limit order to close position.
+2024-11-29T14:31:31.893Z [INFO]: Closing position with limit order: {"symbol":"UMAC","qty":"1715","side":"sell","type":"limit","time_in_force":"day","limit_price":"14.56","extended_hours":true,"client_order_id":"CLOSE-5f99018f3abe0208"}
+2024-11-29T14:31:32.249Z [INFO]: Limit order placed to close position in UMAC. Order ID: 7e9b8472-b310-42f5-943e-a84a0026d240
+2024-11-29T14:31:35.272Z [INFO]: Order 7e9b8472-b310-42f5-943e-a84a0026d240 filled 774 qty for UMAC. Remaining qty: 941
+2024-11-29T14:31:35.903Z [INFO]: Position removed: UMAC
+2024-11-29T14:31:35.906Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T14:32:22.474Z [INFO]: Polygon WebSocket connected.
+2024-11-29T14:32:22.479Z [INFO]: Started polling for order statuses.
+2024-11-29T14:32:22.804Z [INFO]: Polygon WebSocket connection opened.
+2024-11-29T14:32:22.810Z [INFO]: Polygon WebSocket connected.
+2024-11-29T14:32:22.861Z [INFO]: Polygon WebSocket authenticated.
+2024-11-29T14:32:38.610Z [INFO]: Position added: UMAC | Qty: 2000 | Avg Entry: $14.22503
+2024-11-29T14:32:38.619Z [INFO]: Subscribed to UMAC quotes.
+2024-11-29T14:32:43.056Z [INFO]: Stop condition met for UMAC. Initiating limit order to close position.
+2024-11-29T14:32:43.058Z [INFO]: Closing position with limit order: {"symbol":"UMAC","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.72","extended_hours":true,"client_order_id":"CLOSE-bec2d207c4e1bc0c"}
+2024-11-29T14:32:43.347Z [INFO]: Limit order placed to close position in UMAC. Order ID: a85a5d73-c66f-48d9-9658-5d5b16241229
+2024-11-29T14:32:43.692Z [INFO]: Position removed: UMAC
+2024-11-29T14:32:43.698Z [INFO]: Unsubscribed from UMAC quotes.
+2024-11-29T14:36:10.773Z [INFO]: Position added: AAOI | Qty: 1000 | Avg Entry: $40.0142
+2024-11-29T14:36:10.777Z [INFO]: Subscribed to AAOI quotes.
+2024-11-29T14:36:19.826Z [INFO]: Profit target hit for AAOI: +9.42¢ >= +5¢
+2024-11-29T14:36:19.829Z [INFO]: Attempting to place limit order: {"symbol":"AAOI","qty":"50","side":"buy","type":"limit","time_in_force":"day","limit_price":"40.17","extended_hours":true,"client_order_id":"LIMIT-918ff9b90be7c69c"}
+2024-11-29T14:36:20.154Z [INFO]: Placed limit order for 50 shares of AAOI. Order ID: df5371c2-ffbb-4dbd-be23-d4fc20c7479e
+2024-11-29T14:36:21.283Z [INFO]: Profit target hit for AAOI: +13.42¢ >= +10¢
+2024-11-29T14:36:21.285Z [INFO]: Attempting to place limit order: {"symbol":"AAOI","qty":"47","side":"buy","type":"limit","time_in_force":"day","limit_price":"40.13","extended_hours":true,"client_order_id":"LIMIT-5854477100f2511f"}
+2024-11-29T14:36:21.552Z [INFO]: Placed limit order for 47 shares of AAOI. Order ID: 276ec105-a47f-4acc-bc01-23d836ff79c4
+2024-11-29T14:36:32.790Z [INFO]: Position removed: AAOI
+2024-11-29T14:36:32.794Z [INFO]: Unsubscribed from AAOI quotes.
+2024-11-29T14:37:00.799Z [INFO]: Position added: RKLB | Qty: 1000 | Avg Entry: $26.726
+2024-11-29T14:37:00.805Z [INFO]: Subscribed to RKLB quotes.
+2024-11-29T14:38:42.449Z [INFO]: Profit target hit for RKLB: +5.70¢ >= +5¢
+2024-11-29T14:38:42.452Z [INFO]: Attempting to place limit order: {"symbol":"RKLB","qty":"300","side":"buy","type":"limit","time_in_force":"day","limit_price":"26.92","extended_hours":true,"client_order_id":"LIMIT-454279aa312587ac"}
+2024-11-29T14:38:42.610Z [INFO]: Placed limit order for 300 shares of RKLB. Order ID: 142d1372-b47c-434c-8b0b-a2c4d60d67f0
+2024-11-29T14:38:55.179Z [INFO]: Profit target hit for RKLB: +10.52¢ >= +10¢
+2024-11-29T14:38:55.181Z [INFO]: Attempting to place limit order: {"symbol":"RKLB","qty":"251","side":"buy","type":"limit","time_in_force":"day","limit_price":"26.87","extended_hours":true,"client_order_id":"LIMIT-16293b6d39f5452e"}
+2024-11-29T14:38:55.580Z [INFO]: Placed limit order for 251 shares of RKLB. Order ID: 2fb70311-0e23-416e-9b35-c74180967419
+2024-11-29T14:40:12.059Z [INFO]: Profit target hit for RKLB: +15.52¢ >= +15¢
+2024-11-29T14:40:12.060Z [INFO]: Attempting to place limit order: {"symbol":"RKLB","qty":"238","side":"buy","type":"limit","time_in_force":"day","limit_price":"26.82","extended_hours":true,"client_order_id":"LIMIT-c6f10ac515dc4354"}
+2024-11-29T14:40:12.939Z [INFO]: Placed limit order for 238 shares of RKLB. Order ID: 1bdf97b8-6373-4425-a6eb-444c5923369f
+2024-11-29T14:40:13.940Z [INFO]: Profit target hit for RKLB: +20.52¢ >= +20¢
+2024-11-29T14:40:13.941Z [INFO]: Attempting to place limit order: {"symbol":"RKLB","qty":"226","side":"buy","type":"limit","time_in_force":"day","limit_price":"26.77","extended_hours":true,"client_order_id":"LIMIT-fc0d4f9fbcdb6331"}
+2024-11-29T14:40:14.015Z [INFO]: Attempting to place pyramid order: {"symbol":"RKLB","qty":"226","side":"sell","type":"limit","time_in_force":"day","limit_price":"26.42","extended_hours":true,"client_order_id":"PYRAMID-221037ff5af983ad"}
+2024-11-29T14:40:14.295Z [INFO]: Placed limit order for 226 shares of RKLB. Order ID: 99e5d40f-7653-48c7-aa2e-1777605c5178
+2024-11-29T14:40:14.658Z [INFO]: Placed pyramid order for 226 shares of RKLB. Order ID: 6a326afb-7049-4a8c-8ee2-a09d80e1130e
+2024-11-29T14:40:38.974Z [INFO]: Position removed: RKLB
+2024-11-29T14:40:38.976Z [INFO]: Unsubscribed from RKLB quotes.
+2024-11-29T14:41:04.916Z [INFO]: Position added: BTDR | Qty: 2000 | Avg Entry: $14.11
+2024-11-29T14:41:04.922Z [INFO]: Subscribed to BTDR quotes.
+2024-11-29T14:42:20.374Z [INFO]: Stop condition met for BTDR. Initiating limit order to close position.
+2024-11-29T14:42:20.376Z [INFO]: Closing position with limit order: {"symbol":"BTDR","qty":"6000","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.62","extended_hours":true,"client_order_id":"CLOSE-fbbe058847accda7"}
+2024-11-29T14:42:20.716Z [INFO]: Limit order placed to close position in BTDR. Order ID: 8691e154-bcf0-4f52-89a8-1b573e605c67
+2024-11-29T14:42:21.083Z [INFO]: Position removed: BTDR
+2024-11-29T14:42:21.085Z [INFO]: Unsubscribed from BTDR quotes.
+2024-11-29T14:43:39.132Z [INFO]: Position added: BTDR | Qty: 2000 | Avg Entry: $14.4936
+2024-11-29T14:43:39.137Z [INFO]: Subscribed to BTDR quotes.
+2024-11-29T14:44:05.290Z [INFO]: Profit target hit for BTDR: +6.66¢ >= +5¢
+2024-11-29T14:44:05.291Z [INFO]: Attempting to place limit order: {"symbol":"BTDR","qty":"400","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.65","extended_hours":true,"client_order_id":"LIMIT-d38b2dfbd349ea5a"}
+2024-11-29T14:44:05.773Z [INFO]: Placed limit order for 400 shares of BTDR. Order ID: 47538a99-0831-446b-8ed3-a22c17c1daa4
+2024-11-29T14:44:16.096Z [INFO]: Profit target hit for BTDR: +10.67¢ >= +10¢
+2024-11-29T14:44:16.098Z [INFO]: Attempting to place limit order: {"symbol":"BTDR","qty":"285","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.61","extended_hours":true,"client_order_id":"LIMIT-09a69366813d2712"}
+2024-11-29T14:44:16.279Z [INFO]: Placed limit order for 285 shares of BTDR. Order ID: 348d5f72-9c5b-4719-9dcd-0b6d2fdced83
+2024-11-29T14:45:07.432Z [INFO]: Position removed: BTDR
+2024-11-29T14:45:07.434Z [INFO]: Unsubscribed from BTDR quotes.
+2024-11-29T14:45:13.412Z [INFO]: Position added: BTDR | Qty: 2000 | Avg Entry: $14.3108
+2024-11-29T14:45:13.419Z [INFO]: Subscribed to BTDR quotes.
+2024-11-29T14:45:48.573Z [INFO]: Profit target hit for BTDR: +5.04¢ >= +5¢
+2024-11-29T14:45:48.575Z [INFO]: Attempting to place limit order: {"symbol":"BTDR","qty":"200","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.53","extended_hours":true,"client_order_id":"LIMIT-dc8e067ac893cf81"}
+2024-11-29T14:45:49.022Z [INFO]: Placed limit order for 200 shares of BTDR. Order ID: 5e631aad-6108-4238-a41a-5f6c96b50f12
+2024-11-29T14:47:24.441Z [INFO]: Stop condition met for BTDR. Initiating limit order to close position.
+2024-11-29T14:47:24.442Z [INFO]: Closing position with limit order: {"symbol":"BTDR","qty":"3800","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.84","extended_hours":true,"client_order_id":"CLOSE-2962de3e31f40e80"}
+2024-11-29T14:47:24.604Z [INFO]: Limit order placed to close position in BTDR. Order ID: ef66fc71-681b-4608-8840-aa8beb453eb4
+2024-11-29T14:47:25.017Z [INFO]: Position removed: BTDR
+2024-11-29T14:47:25.019Z [INFO]: Unsubscribed from BTDR quotes.
+2024-11-29T14:47:43.486Z [INFO]: Position added: BTDR | Qty: 4000 | Avg Entry: $14.599
+2024-11-29T14:47:43.491Z [INFO]: Subscribed to BTDR quotes.
+2024-11-29T14:48:21.605Z [INFO]: Stop condition met for BTDR. Initiating limit order to close position.
+2024-11-29T14:48:21.607Z [INFO]: Closing position with limit order: {"symbol":"BTDR","qty":"4000","side":"buy","type":"limit","time_in_force":"day","limit_price":"15.11","extended_hours":true,"client_order_id":"CLOSE-a952b1d7cee66c8e"}
+2024-11-29T14:48:21.849Z [INFO]: Limit order placed to close position in BTDR. Order ID: edb221c8-0b1c-49f9-83fc-f17e41a4026a
+2024-11-29T14:48:22.549Z [INFO]: Position removed: BTDR
+2024-11-29T14:48:22.552Z [INFO]: Unsubscribed from BTDR quotes.
+2024-11-29T14:48:31.516Z [INFO]: Position added: BTDR | Qty: 4000 | Avg Entry: $14.67555
+2024-11-29T14:48:31.522Z [INFO]: Subscribed to BTDR quotes.
+2024-11-29T17:17:52.301Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:17:52.305Z [INFO]: Started polling for order statuses.
+2024-11-29T17:17:52.609Z [INFO]: Polygon WebSocket connection opened.
+2024-11-29T17:17:52.611Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:17:52.668Z [INFO]: Polygon WebSocket authenticated.
+2024-11-29T17:18:12.532Z [INFO]: Position added: UAVS | Qty: 4000 | Avg Entry: $9.12965
+2024-11-29T17:18:12.537Z [INFO]: Subscribed to UAVS quotes.
+2024-11-29T17:18:29.559Z [INFO]: Profit target hit for UAVS: +5.69¢ >= +5¢
+2024-11-29T17:18:29.562Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"600","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.96","extended_hours":true,"client_order_id":"LIMIT-6295854bc0cd4839"}
+2024-11-29T17:18:29.888Z [INFO]: Placed limit order for 600 shares of UAVS. Order ID: d4f9894f-cb6e-4230-84a4-b935a9cc3132
+2024-11-29T17:18:34.256Z [INFO]: Profit target hit for UAVS: +10.69¢ >= +10¢
+2024-11-29T17:18:34.259Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"570","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.01","extended_hours":true,"client_order_id":"LIMIT-69481e4476161e52"}
+2024-11-29T17:18:34.413Z [INFO]: Placed limit order for 570 shares of UAVS. Order ID: 236087f7-9243-41ff-959e-70efc0db356a
+2024-11-29T17:18:38.267Z [INFO]: Profit target hit for UAVS: +16.69¢ >= +15¢
+2024-11-29T17:18:38.269Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"541","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.07","extended_hours":true,"client_order_id":"LIMIT-c43b458e8dfc6ded"}
+2024-11-29T17:18:38.434Z [INFO]: Placed limit order for 541 shares of UAVS. Order ID: eca42c1a-ffbb-4d2c-b919-c2d2fb4cc4cf
+2024-11-29T17:18:40.850Z [INFO]: Profit target hit for UAVS: +20.69¢ >= +20¢
+2024-11-29T17:18:40.852Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"514","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.11","extended_hours":true,"client_order_id":"LIMIT-04228dbc83ee8f74"}
+2024-11-29T17:18:41.146Z [INFO]: Placed limit order for 514 shares of UAVS. Order ID: 296265de-6036-4190-9fc5-28b83a317333
+2024-11-29T17:18:45.779Z [INFO]: Attempting to place pyramid order: {"symbol":"UAVS","qty":"366","side":"buy","type":"limit","time_in_force":"day","limit_price":"9.48","extended_hours":true,"client_order_id":"PYRAMID-25588dfe252f14a8"}
+2024-11-29T17:18:45.985Z [INFO]: Placed pyramid order for 366 shares of UAVS. Order ID: a6fb0012-1631-4c96-b70b-42234246a9ec
+2024-11-29T17:18:51.006Z [INFO]: Pyramid order a6fb0012-1631-4c96-b70b-42234246a9ec filled 25 qty for UAVS. New qty: 7357, New Avg Entry Price: $9.15
+2024-11-29T17:18:51.640Z [INFO]: Pyramid order a6fb0012-1631-4c96-b70b-42234246a9ec filled 25 qty for UAVS. New qty: 7382, New Avg Entry Price: $9.16
+2024-11-29T17:19:05.057Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:06.156Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:09.205Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:12.129Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:15.063Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:15.166Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:17.074Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:18.194Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:20.981Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:19:20.985Z [INFO]: Started polling for order statuses.
+2024-11-29T17:19:21.216Z [ERROR]: Error initializing existing positions: Request failed with status code 429
+2024-11-29T17:19:21.224Z [INFO]: Polygon WebSocket connection opened.
+2024-11-29T17:19:21.225Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:19:21.273Z [INFO]: Polygon WebSocket authenticated.
+2024-11-29T17:19:23.127Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:24.107Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:19:24.113Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:25.119Z [INFO]: Position added: UAVS | Qty: 2887 | Avg Entry: $9.168671
+2024-11-29T17:19:25.122Z [INFO]: Subscribed to UAVS quotes.
+2024-11-29T17:19:25.508Z [INFO]: Profit target hit for UAVS: +33.13¢ >= +5¢
+2024-11-29T17:19:25.511Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"144","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.25","extended_hours":true,"client_order_id":"LIMIT-7b253cc9fc42c3a8"}
+2024-11-29T17:19:25.620Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:25.818Z [ERROR]: Error placing limit order for UAVS: {"code":42910000,"message":"rate limit exceeded"}
+2024-11-29T17:19:25.822Z [INFO]: Attempting to place pyramid order: {"symbol":"UAVS","qty":"144","side":"buy","type":"limit","time_in_force":"day","limit_price":"9.59","extended_hours":true,"client_order_id":"PYRAMID-e80cddd7fbbfde06"}
+2024-11-29T17:19:26.015Z [INFO]: Profit target hit for UAVS: +34.13¢ >= +10¢
+2024-11-29T17:19:26.018Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"144","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.26","extended_hours":true,"client_order_id":"LIMIT-fd7a3976140a2c8a"}
+2024-11-29T17:19:26.177Z [ERROR]: Error placing pyramid order for UAVS: {"code":42910000,"message":"rate limit exceeded"}
+2024-11-29T17:19:26.886Z [INFO]: Placed limit order for 144 shares of UAVS. Order ID: ea015913-d087-4f17-af40-327b3cacb625
+2024-11-29T17:19:27.118Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:27.211Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:27.518Z [INFO]: Profit target hit for UAVS: +34.13¢ >= +15¢
+2024-11-29T17:19:27.522Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"144","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.26","extended_hours":true,"client_order_id":"LIMIT-476745921e39dc41"}
+2024-11-29T17:19:27.913Z [INFO]: Placed limit order for 144 shares of UAVS. Order ID: 6f598d8e-9da3-46a4-930f-21645d64fbdd
+2024-11-29T17:19:28.267Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:28.558Z [INFO]: Profit target hit for UAVS: +35.13¢ >= +20¢
+2024-11-29T17:19:28.563Z [INFO]: Attempting to place limit order: {"symbol":"UAVS","qty":"144","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.27","extended_hours":true,"client_order_id":"LIMIT-5674d9f2a78e5bc4"}
+2024-11-29T17:19:28.966Z [ERROR]: Error placing limit order for UAVS: {"code":42910000,"message":"rate limit exceeded"}
+2024-11-29T17:19:28.976Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:29.310Z [ERROR]: Error refreshing positions: Request failed with status code 429
+2024-11-29T17:19:30.224Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-11-29T17:19:30.227Z [ERROR]: Error polling order statuses: Request failed with status code 429
+2024-11-29T17:20:00.447Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:20:00.451Z [INFO]: Started polling for order statuses.
+2024-11-29T17:20:00.677Z [INFO]: Polygon WebSocket connection opened.
+2024-11-29T17:20:00.678Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:20:00.725Z [INFO]: Polygon WebSocket authenticated.
+2024-11-29T17:20:26.839Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:20:26.843Z [INFO]: Started polling for order statuses.
+2024-11-29T17:20:26.993Z [INFO]: Polygon WebSocket connection opened.
+2024-11-29T17:20:26.994Z [INFO]: Polygon WebSocket connected.
+2024-11-29T17:20:27.047Z [INFO]: Polygon WebSocket authenticated.
+2024-11-29T17:21:17.082Z [INFO]: Position added: SMR | Qty: 4000 | Avg Entry: $29.9705
+2024-11-29T17:21:17.094Z [INFO]: Subscribed to SMR quotes.
+2024-11-29T17:22:05.257Z [INFO]: Profit target hit for SMR: +5.29¢ >= +5¢
+2024-11-29T17:22:05.259Z [INFO]: Attempting to place limit order: {"symbol":"SMR","qty":"500","side":"buy","type":"limit","time_in_force":"day","limit_price":"30.17","extended_hours":true,"client_order_id":"LIMIT-65fcfca81c720759"}
+2024-11-29T17:22:05.707Z [INFO]: Placed limit order for 500 shares of SMR. Order ID: 633c7287-27f4-4854-85a4-d412df855ea3
+2024-11-29T17:22:21.671Z [INFO]: Profit target hit for SMR: +10.29¢ >= +10¢
+2024-11-29T17:22:21.674Z [INFO]: Attempting to place limit order: {"symbol":"SMR","qty":"475","side":"buy","type":"limit","time_in_force":"day","limit_price":"30.12","extended_hours":true,"client_order_id":"LIMIT-fd50a079b609d2d6"}
+2024-11-29T17:22:21.849Z [INFO]: Placed limit order for 475 shares of SMR. Order ID: d08e22ac-cd11-44ed-bd4a-d87121e78c3a
+2024-11-29T17:25:17.105Z [INFO]: Position removed: SMR
+2024-11-29T17:25:17.111Z [INFO]: Unsubscribed from SMR quotes.
+2024-11-29T17:26:49.137Z [INFO]: Position added: SMR | Qty: 2000 | Avg Entry: $29.8803
+2024-11-29T17:26:49.143Z [INFO]: Subscribed to SMR quotes.
+2024-11-29T17:28:52.735Z [INFO]: Profit target hit for SMR: +5.59¢ >= +5¢
+2024-11-29T17:28:52.737Z [INFO]: Attempting to place limit order: {"symbol":"SMR","qty":"500","side":"buy","type":"limit","time_in_force":"day","limit_price":"30.06","extended_hours":true,"client_order_id":"LIMIT-a2cf12ac7e0e3fa8"}
+2024-11-29T17:28:52.954Z [INFO]: Placed limit order for 500 shares of SMR. Order ID: 3df597fb-2556-4061-b380-50e1763dfc49
+2024-11-29T17:29:15.273Z [INFO]: Position removed: SMR
+2024-11-29T17:29:15.280Z [INFO]: Unsubscribed from SMR quotes.
+2024-11-29T17:30:13.215Z [INFO]: Position added: SMR | Qty: 4000 | Avg Entry: $30.0644
+2024-11-29T17:30:13.220Z [INFO]: Subscribed to SMR quotes.
+2024-11-29T17:32:47.107Z [INFO]: Stop condition met for SMR. Initiating limit order to close position.
+2024-11-29T17:32:47.109Z [INFO]: Closing position with limit order: {"symbol":"SMR","qty":"10000","side":"sell","type":"limit","time_in_force":"day","limit_price":"29.55","extended_hours":true,"client_order_id":"CLOSE-fd148cdf9502a1df"}
+2024-11-29T17:32:47.353Z [INFO]: Limit order placed to close position in SMR. Order ID: 64c07618-be19-4dba-91b1-51c17f448785
+2024-11-29T17:32:47.717Z [INFO]: Position removed: SMR
+2024-11-29T17:32:47.720Z [INFO]: Unsubscribed from SMR quotes.
+2024-11-29T17:33:09.362Z [INFO]: Position added: SMR | Qty: 4000 | Avg Entry: $29.79
+2024-11-29T17:33:09.368Z [INFO]: Subscribed to SMR quotes.
+2024-11-29T17:34:26.722Z [INFO]: Profit target hit for SMR: +6.09¢ >= +5¢
+2024-11-29T17:34:26.724Z [INFO]: Attempting to place limit order: {"symbol":"SMR","qty":"700","side":"buy","type":"limit","time_in_force":"day","limit_price":"29.96","extended_hours":true,"client_order_id":"LIMIT-d0e91f3f312e04a1"}
+2024-11-29T17:34:27.170Z [INFO]: Placed limit order for 700 shares of SMR. Order ID: f4b997b4-5d17-46ed-a1bc-b8eb60cf0352
+2024-11-29T17:34:27.716Z [INFO]: Profit target hit for SMR: +12.09¢ >= +10¢
+2024-11-29T17:34:27.719Z [INFO]: Attempting to place limit order: {"symbol":"SMR","qty":"665","side":"buy","type":"limit","time_in_force":"day","limit_price":"29.90","extended_hours":true,"client_order_id":"LIMIT-be6209afe495b37a"}
+2024-11-29T17:34:28.218Z [INFO]: Placed limit order for 665 shares of SMR. Order ID: 8678c02f-d0c9-4bb3-a127-f593f4f1e9d1
+2024-11-29T17:36:46.142Z [INFO]: Stop condition met for SMR. Initiating limit order to close position.
+2024-11-29T17:36:46.144Z [INFO]: Closing position with limit order: {"symbol":"SMR","qty":"12635","side":"buy","type":"limit","time_in_force":"day","limit_price":"30.18","extended_hours":true,"client_order_id":"CLOSE-15d0abf90431427a"}
+2024-11-29T17:36:46.304Z [INFO]: Limit order placed to close position in SMR. Order ID: 9acbbf90-0ab6-4161-92f2-c09e269ceb5a
+2024-11-29T17:36:46.724Z [INFO]: Position removed: SMR
+2024-11-29T17:36:46.726Z [INFO]: Unsubscribed from SMR quotes.
+2024-12-02T10:38:17.097Z [INFO]: Polygon WebSocket connected.
+2024-12-02T10:38:17.102Z [INFO]: Started polling for order statuses.
+2024-12-02T10:38:17.271Z [INFO]: Polygon WebSocket connection opened.
+2024-12-02T10:38:17.272Z [INFO]: Polygon WebSocket connected.
+2024-12-02T10:38:17.321Z [INFO]: Polygon WebSocket authenticated.
+2024-12-02T10:38:47.247Z [INFO]: Position added: EHGO | Qty: 2000 | Avg Entry: $6.998925
+2024-12-02T10:38:47.255Z [INFO]: Subscribed to EHGO quotes.
+2024-12-02T10:38:48.354Z [INFO]: Profit target hit for EHGO: +5.11¢ >= +5¢
+2024-12-02T10:38:48.356Z [INFO]: Attempting to place limit order: {"symbol":"EHGO","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.80","extended_hours":true,"client_order_id":"LIMIT-5f88ad17579aa32f"}
+2024-12-02T10:38:48.611Z [INFO]: Placed limit order for 100 shares of EHGO. Order ID: f10cfd8f-dcf3-41fb-80c6-70e28c06ae05
+2024-12-02T10:38:49.848Z [INFO]: Profit target hit for EHGO: +10.11¢ >= +10¢
+2024-12-02T10:38:49.851Z [INFO]: Attempting to place limit order: {"symbol":"EHGO","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.85","extended_hours":true,"client_order_id":"LIMIT-ea7f40bdc94421b1"}
+2024-12-02T10:38:50.013Z [INFO]: Placed limit order for 95 shares of EHGO. Order ID: f1803da7-83a4-472e-8141-9e4830707726
+2024-12-02T10:41:30.531Z [INFO]: Profit target hit for EHGO: +15.64¢ >= +15¢
+2024-12-02T10:41:30.535Z [INFO]: Attempting to place limit order: {"symbol":"EHGO","qty":"245","side":"sell","type":"limit","time_in_force":"day","limit_price":"7.03","extended_hours":true,"client_order_id":"LIMIT-48045da95eef69a9"}
+2024-12-02T10:41:30.750Z [INFO]: Placed limit order for 245 shares of EHGO. Order ID: ea422112-7e53-4249-ae0f-ee192b9a589d
+2024-12-02T10:41:39.316Z [INFO]: Position removed: EHGO
+2024-12-02T10:41:39.322Z [INFO]: Unsubscribed from EHGO quotes.
+2024-12-02T10:41:49.343Z [INFO]: Position added: EHGO | Qty: 2000 | Avg Entry: $7.273505
+2024-12-02T10:41:49.350Z [INFO]: Subscribed to EHGO quotes.
+2024-12-02T10:44:30.268Z [INFO]: Profit target hit for EHGO: +6.29¢ >= +5¢
+2024-12-02T10:44:30.270Z [INFO]: Attempting to place limit order: {"symbol":"EHGO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"7.06","extended_hours":true,"client_order_id":"LIMIT-dbbe400d4673b415"}
+2024-12-02T10:44:30.433Z [INFO]: Placed limit order for 300 shares of EHGO. Order ID: ce6416c3-1f24-4f18-ae89-dea548081a72
+2024-12-02T10:44:32.740Z [INFO]: Profit target hit for EHGO: +11.51¢ >= +10¢
+2024-12-02T10:44:32.742Z [INFO]: Attempting to place limit order: {"symbol":"EHGO","qty":"385","side":"sell","type":"limit","time_in_force":"day","limit_price":"7.14","extended_hours":true,"client_order_id":"LIMIT-3f8bc3760d0c9694"}
+2024-12-02T10:44:32.928Z [INFO]: Placed limit order for 385 shares of EHGO. Order ID: caa4f557-05cf-4a87-a68c-7a06c7318d75
+2024-12-02T10:46:26.383Z [INFO]: Stop condition met for EHGO. Initiating limit order to close position.
+2024-12-02T10:46:26.386Z [INFO]: Closing position with limit order: {"symbol":"EHGO","qty":"7315","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.87","extended_hours":true,"client_order_id":"CLOSE-644bcce6f72d6fcb"}
+2024-12-02T10:46:26.562Z [INFO]: Limit order placed to close position in EHGO. Order ID: 6427a13e-325a-44e4-9dd2-71bbe0cb3741
+2024-12-02T10:46:27.252Z [INFO]: Position removed: EHGO
+2024-12-02T10:46:27.258Z [INFO]: Unsubscribed from EHGO quotes.
+2024-12-02T10:48:59.610Z [INFO]: Position added: EHGO | Qty: 2000 | Avg Entry: $7.040865
+2024-12-02T10:48:59.618Z [INFO]: Subscribed to EHGO quotes.
+2024-12-02T10:51:23.200Z [INFO]: Stop condition met for EHGO. Initiating limit order to close position.
+2024-12-02T10:51:23.202Z [INFO]: Closing position with limit order: {"symbol":"EHGO","qty":"4000","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.54","extended_hours":true,"client_order_id":"CLOSE-bd21d363cff3eaf0"}
+2024-12-02T10:51:23.355Z [INFO]: Limit order placed to close position in EHGO. Order ID: a446d9c5-e3cd-42b3-b9d4-67489056d838
+2024-12-02T10:51:23.729Z [INFO]: Position removed: EHGO
+2024-12-02T10:51:23.731Z [INFO]: Unsubscribed from EHGO quotes.
+2024-12-02T10:52:37.737Z [INFO]: Position added: EHGO | Qty: 2000 | Avg Entry: $6.88543
+2024-12-02T10:52:37.739Z [INFO]: Subscribed to EHGO quotes.
+2024-12-02T10:54:13.881Z [INFO]: Profit target hit for EHGO: +5.62¢ >= +5¢
+2024-12-02T10:54:13.884Z [INFO]: Attempting to place limit order: {"symbol":"EHGO","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.72","extended_hours":true,"client_order_id":"LIMIT-9da5b25f92c679bf"}
+2024-12-02T10:54:14.161Z [INFO]: Placed limit order for 200 shares of EHGO. Order ID: f6301697-519d-48df-b139-a0cab24ca9dd
+2024-12-02T10:55:32.496Z [INFO]: Stop condition met for EHGO. Initiating limit order to close position.
+2024-12-02T10:55:32.499Z [INFO]: Closing position with limit order: {"symbol":"EHGO","qty":"5800","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.43","extended_hours":true,"client_order_id":"CLOSE-8ee35032c099b1f9"}
+2024-12-02T10:55:32.656Z [INFO]: Limit order placed to close position in EHGO. Order ID: 16ef5cb9-8441-4006-a683-cd9de28e83ec
+2024-12-02T10:55:33.038Z [INFO]: Position removed: EHGO
+2024-12-02T10:55:33.040Z [INFO]: Unsubscribed from EHGO quotes.
+2024-12-02T11:09:42.294Z [INFO]: Position added: EHGO | Qty: 2000 | Avg Entry: $6.04588
+2024-12-02T11:09:42.302Z [INFO]: Subscribed to EHGO quotes.
+2024-12-02T11:11:02.084Z [INFO]: Profit target hit for EHGO: +5.41¢ >= +5¢
+2024-12-02T11:11:02.089Z [INFO]: Attempting to place limit order: {"symbol":"EHGO","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.85","extended_hours":true,"client_order_id":"LIMIT-13cfb10125859b98"}
+2024-12-02T11:11:02.356Z [INFO]: Placed limit order for 100 shares of EHGO. Order ID: 2d82f4bf-1190-49cf-92b9-206b02d35396
+2024-12-02T11:11:28.372Z [INFO]: Position removed: EHGO
+2024-12-02T11:11:28.375Z [INFO]: Unsubscribed from EHGO quotes.
+2024-12-02T12:52:18.829Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-02T12:59:30.970Z [INFO]: Position added: SNTI | Qty: 2000 | Avg Entry: $5.8
+2024-12-02T12:59:30.977Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T12:59:31.021Z [WARN]: Polygon WebSocket closed. Code: 1006, Reason: 
+2024-12-02T12:59:41.236Z [INFO]: Polygon WebSocket connection opened.
+2024-12-02T12:59:41.236Z [INFO]: Polygon WebSocket connected.
+2024-12-02T12:59:41.284Z [INFO]: Polygon WebSocket authenticated.
+2024-12-02T12:59:41.836Z [INFO]: Profit target hit for SNTI: +18.09¢ >= +5¢
+2024-12-02T12:59:41.840Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.80","extended_hours":true,"client_order_id":"LIMIT-4af621d9bba16a92"}
+2024-12-02T12:59:42.089Z [INFO]: Placed limit order for 300 shares of SNTI. Order ID: 2f0635f0-1400-46a8-9abc-b0ce854d0a5c
+2024-12-02T12:59:42.833Z [INFO]: Profit target hit for SNTI: +21.09¢ >= +10¢
+2024-12-02T12:59:42.835Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"210","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.83","extended_hours":true,"client_order_id":"LIMIT-ac4dd6e5112096ef"}
+2024-12-02T12:59:43.126Z [INFO]: Placed limit order for 210 shares of SNTI. Order ID: f2210c6f-27c2-4056-b847-6cdc4e0b99db
+2024-12-02T12:59:43.333Z [INFO]: Profit target hit for SNTI: +20.09¢ >= +15¢
+2024-12-02T12:59:43.335Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"210","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.82","extended_hours":true,"client_order_id":"LIMIT-a2fc3fb2bf14140f"}
+2024-12-02T12:59:44.182Z [INFO]: Placed limit order for 210 shares of SNTI. Order ID: fa1b554b-38df-4b81-bcd8-716ec5b8a722
+2024-12-02T12:59:44.867Z [INFO]: Profit target hit for SNTI: +20.09¢ >= +20¢
+2024-12-02T12:59:44.869Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"189","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.82","extended_hours":true,"client_order_id":"LIMIT-a33541defff826de"}
+2024-12-02T12:59:45.236Z [INFO]: Placed limit order for 189 shares of SNTI. Order ID: a31324e9-429a-4b05-98b1-9b9a459dfc13
+2024-12-02T12:59:49.380Z [INFO]: Attempting to place pyramid order: {"symbol":"SNTI","qty":"134","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.16","extended_hours":true,"client_order_id":"PYRAMID-ed0878fbc970a988"}
+2024-12-02T12:59:49.828Z [INFO]: Placed pyramid order for 134 shares of SNTI. Order ID: f2c37f0a-e23a-49ce-998d-9549f3c3e179
+2024-12-02T13:00:07.175Z [INFO]: Position removed: SNTI
+2024-12-02T13:00:07.179Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:00:11.193Z [INFO]: Position added: SNTI | Qty: 4000 | Avg Entry: $6.290643
+2024-12-02T13:00:11.200Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T13:00:16.464Z [INFO]: Stop condition met for SNTI. Initiating limit order to close position.
+2024-12-02T13:00:16.466Z [INFO]: Closing position with limit order: {"symbol":"SNTI","qty":"4000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.79","extended_hours":true,"client_order_id":"CLOSE-4a5f810db515d85a"}
+2024-12-02T13:00:16.839Z [INFO]: Limit order placed to close position in SNTI. Order ID: 43de5249-3901-41e4-b520-db249b53dfa2
+2024-12-02T13:00:17.174Z [INFO]: Position removed: SNTI
+2024-12-02T13:00:17.177Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:00:23.191Z [INFO]: Position added: SNTI | Qty: 4000 | Avg Entry: $5.971913
+2024-12-02T13:00:23.199Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T13:00:24.966Z [INFO]: Profit target hit for SNTI: +5.81¢ >= +5¢
+2024-12-02T13:00:24.968Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.78","extended_hours":true,"client_order_id":"LIMIT-420434597f999222"}
+2024-12-02T13:00:25.209Z [INFO]: Placed limit order for 200 shares of SNTI. Order ID: fb98d781-98e6-43d1-a2b2-8c335da49769
+2024-12-02T13:01:23.240Z [INFO]: Position removed: SNTI
+2024-12-02T13:01:23.243Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:01:33.246Z [INFO]: Position added: SNTI | Qty: 4000 | Avg Entry: $6.044867
+2024-12-02T13:01:33.252Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T13:03:14.260Z [INFO]: Stop condition met for SNTI. Initiating limit order to close position.
+2024-12-02T13:03:14.261Z [INFO]: Closing position with limit order: {"symbol":"SNTI","qty":"4000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.54","extended_hours":true,"client_order_id":"CLOSE-fa8a3c14c1fb3e92"}
+2024-12-02T13:03:14.413Z [INFO]: Limit order placed to close position in SNTI. Order ID: 6c289dd4-5083-4ca3-b4c5-6bc42464987a
+2024-12-02T13:03:14.795Z [INFO]: Position removed: SNTI
+2024-12-02T13:03:14.797Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:03:53.450Z [INFO]: Position added: SNTI | Qty: 2000 | Avg Entry: $5.84
+2024-12-02T13:03:53.457Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T13:04:57.491Z [INFO]: Position removed: SNTI
+2024-12-02T13:04:57.492Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:05:07.470Z [INFO]: Position added: SPAI | Qty: 2000 | Avg Entry: $5.98468
+2024-12-02T13:05:07.476Z [INFO]: Subscribed to SPAI quotes.
+2024-12-02T13:05:11.413Z [INFO]: Stop condition met for SPAI. Initiating limit order to close position.
+2024-12-02T13:05:11.415Z [INFO]: Closing position with limit order: {"symbol":"SPAI","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.47","extended_hours":true,"client_order_id":"CLOSE-e70965a408975ef7"}
+2024-12-02T13:05:11.833Z [INFO]: Limit order placed to close position in SPAI. Order ID: 868e36e3-81f6-4ce1-ac29-9b8cf1dbdfc0
+2024-12-02T13:05:12.527Z [INFO]: Position removed: SPAI
+2024-12-02T13:05:12.530Z [INFO]: Unsubscribed from SPAI quotes.
+2024-12-02T13:05:21.489Z [INFO]: Position added: SPAI | Qty: 2000 | Avg Entry: $5.677861
+2024-12-02T13:05:21.496Z [INFO]: Subscribed to SPAI quotes.
+2024-12-02T13:05:45.450Z [INFO]: Stop condition met for SPAI. Initiating limit order to close position.
+2024-12-02T13:05:45.452Z [INFO]: Closing position with limit order: {"symbol":"SPAI","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.16","extended_hours":true,"client_order_id":"CLOSE-05e5f931062c590b"}
+2024-12-02T13:05:45.843Z [INFO]: Limit order placed to close position in SPAI. Order ID: cc0c7dcd-d8eb-4822-be1a-e42d38dc7f69
+2024-12-02T13:05:46.548Z [INFO]: Position removed: SPAI
+2024-12-02T13:05:46.555Z [INFO]: Unsubscribed from SPAI quotes.
+2024-12-02T13:07:57.557Z [INFO]: Position added: SNTI | Qty: 4000 | Avg Entry: $5.479487
+2024-12-02T13:07:57.563Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T13:08:07.755Z [INFO]: Profit target hit for SNTI: +5.05¢ >= +5¢
+2024-12-02T13:08:07.757Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.28","extended_hours":true,"client_order_id":"LIMIT-c9c18fc9e9d98dc0"}
+2024-12-02T13:08:07.943Z [INFO]: Placed limit order for 200 shares of SNTI. Order ID: 1c2b55fa-6ca0-431d-a443-81675a01dce8
+2024-12-02T13:08:55.382Z [INFO]: Profit target hit for SNTI: +10.05¢ >= +10¢
+2024-12-02T13:08:55.384Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"190","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.33","extended_hours":true,"client_order_id":"LIMIT-7757c577ca6fe922"}
+2024-12-02T13:08:55.544Z [INFO]: Placed limit order for 190 shares of SNTI. Order ID: e494e51b-f23d-4d6e-9c86-7248b8df1b3d
+2024-12-02T13:09:02.843Z [INFO]: Profit target hit for SNTI: +15.05¢ >= +15¢
+2024-12-02T13:09:02.845Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"180","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.38","extended_hours":true,"client_order_id":"LIMIT-45590335f193d91a"}
+2024-12-02T13:09:03.009Z [INFO]: Placed limit order for 180 shares of SNTI. Order ID: 417605a2-5386-4f23-a72f-2bfd9d2c8f79
+2024-12-02T13:09:27.602Z [INFO]: Position removed: SNTI
+2024-12-02T13:09:27.609Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:11:42.380Z [INFO]: Polygon WebSocket connected.
+2024-12-02T13:11:42.384Z [INFO]: Started polling for order statuses.
+2024-12-02T13:11:42.563Z [INFO]: Polygon WebSocket connection opened.
+2024-12-02T13:11:42.564Z [INFO]: Polygon WebSocket connected.
+2024-12-02T13:11:42.610Z [INFO]: Polygon WebSocket authenticated.
+2024-12-02T13:17:58.719Z [INFO]: Position added: SNTI | Qty: 2000 | Avg Entry: $5.32861
+2024-12-02T13:17:58.729Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T13:20:07.703Z [INFO]: Profit target hit for SNTI: +5.57¢ >= +5¢
+2024-12-02T13:20:07.705Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.13","extended_hours":true,"client_order_id":"LIMIT-255184f590fe0fa9"}
+2024-12-02T13:20:08.042Z [INFO]: Placed limit order for 200 shares of SNTI. Order ID: 4d2c7481-a9e2-41f3-a4f9-94a032dcd47f
+2024-12-02T13:21:39.918Z [INFO]: Profit target hit for SNTI: +10.57¢ >= +10¢
+2024-12-02T13:21:39.920Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"190","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.18","extended_hours":true,"client_order_id":"LIMIT-48f9d6920272beb3"}
+2024-12-02T13:21:40.124Z [INFO]: Placed limit order for 190 shares of SNTI. Order ID: 33af9b67-e05c-4ad8-a421-151fea23cdb1
+2024-12-02T13:23:03.095Z [INFO]: Position removed: SNTI
+2024-12-02T13:23:03.099Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:25:25.174Z [INFO]: Position added: SNTI | Qty: 2000 | Avg Entry: $5.325065
+2024-12-02T13:25:25.179Z [INFO]: Subscribed to SNTI quotes.
+2024-12-02T13:29:41.202Z [INFO]: Profit target hit for SNTI: +5.32¢ >= +5¢
+2024-12-02T13:29:41.204Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.13","extended_hours":true,"client_order_id":"LIMIT-95553a79d31e4ad2"}
+2024-12-02T13:29:41.607Z [INFO]: Placed limit order for 300 shares of SNTI. Order ID: 88a4e262-bfee-44a8-aeff-37ace8e4e9d8
+2024-12-02T13:29:56.186Z [INFO]: Profit target hit for SNTI: +10.32¢ >= +10¢
+2024-12-02T13:29:56.188Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"285","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.18","extended_hours":true,"client_order_id":"LIMIT-ca3ee90f55482f74"}
+2024-12-02T13:29:56.366Z [INFO]: Placed limit order for 285 shares of SNTI. Order ID: 652d6b27-337b-4599-90c5-67b77c6a24b2
+2024-12-02T13:29:57.698Z [INFO]: Profit target hit for SNTI: +15.32¢ >= +15¢
+2024-12-02T13:29:57.701Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"270","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.23","extended_hours":true,"client_order_id":"LIMIT-95471edf0bef0014"}
+2024-12-02T13:29:58.237Z [INFO]: Placed limit order for 270 shares of SNTI. Order ID: b45be306-d348-483f-9d2c-61cdacef9347
+2024-12-02T13:30:29.293Z [INFO]: Profit target hit for SNTI: +20.32¢ >= +20¢
+2024-12-02T13:30:29.295Z [INFO]: Attempting to place limit order: {"symbol":"SNTI","qty":"192","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.28","extended_hours":true,"client_order_id":"LIMIT-b420cc8456b355b5"}
+2024-12-02T13:30:29.740Z [INFO]: Placed limit order for 192 shares of SNTI. Order ID: bfeb1a92-0a2e-475d-a789-cb8cd2d1e8d4
+2024-12-02T13:30:33.777Z [INFO]: Attempting to place pyramid order: {"symbol":"SNTI","qty":"183","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.62","extended_hours":true,"client_order_id":"PYRAMID-a957b465cea423eb"}
+2024-12-02T13:30:33.996Z [INFO]: Placed pyramid order for 183 shares of SNTI. Order ID: a3fab8b9-e03b-4044-8fd9-b664f97ac5de
+2024-12-02T13:32:22.947Z [INFO]: Stop condition met for SNTI. Initiating limit order to close position.
+2024-12-02T13:32:22.949Z [INFO]: Closing position with limit order: {"symbol":"SNTI","qty":"6166","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.10","extended_hours":true,"client_order_id":"CLOSE-e1e54a7685719258"}
+2024-12-02T13:32:23.117Z [ERROR]: Error placing limit order to close position for SNTI: {"code":42210000,"message":"asset \"SNTI\" cannot be sold short"}
+2024-12-02T13:32:23.536Z [INFO]: Position removed: SNTI
+2024-12-02T13:32:23.538Z [INFO]: Unsubscribed from SNTI quotes.
+2024-12-02T13:44:12.050Z [INFO]: Polygon WebSocket connected.
+2024-12-02T13:44:12.054Z [INFO]: Started polling for order statuses.
+2024-12-02T13:44:12.468Z [INFO]: Polygon WebSocket connection opened.
+2024-12-02T13:44:12.470Z [INFO]: Polygon WebSocket connected.
+2024-12-02T13:44:12.516Z [INFO]: Polygon WebSocket authenticated.
+2024-12-02T13:44:26.191Z [INFO]: Position added: PPBT | Qty: 2000 | Avg Entry: $5.5184
+2024-12-02T13:44:26.198Z [INFO]: Subscribed to PPBT quotes.
+2024-12-02T13:44:34.107Z [INFO]: Profit target hit for PPBT: +8.61¢ >= +5¢
+2024-12-02T13:44:34.111Z [INFO]: Attempting to place limit order: {"symbol":"PPBT","qty":"300","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.67","extended_hours":true,"client_order_id":"LIMIT-008dd884c1c06781"}
+2024-12-02T13:44:34.960Z [INFO]: Placed limit order for 300 shares of PPBT. Order ID: d1c868c9-04b4-4616-8adf-80346f06f9c8
+2024-12-02T13:44:35.660Z [INFO]: Profit target hit for PPBT: +14.91¢ >= +10¢
+2024-12-02T13:44:35.662Z [INFO]: Attempting to place limit order: {"symbol":"PPBT","qty":"485","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.58","extended_hours":true,"client_order_id":"LIMIT-f7d019cbca0dc6d7"}
+2024-12-02T13:44:36.014Z [INFO]: Placed limit order for 485 shares of PPBT. Order ID: 88ad924b-0f56-465f-8f8d-27ee23a85d34
+2024-12-02T13:44:37.112Z [INFO]: Profit target hit for PPBT: +15.91¢ >= +15¢
+2024-12-02T13:44:37.114Z [INFO]: Attempting to place limit order: {"symbol":"PPBT","qty":"460","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.57","extended_hours":true,"client_order_id":"LIMIT-af0d8978b66e2363"}
+2024-12-02T13:44:37.578Z [INFO]: Placed limit order for 460 shares of PPBT. Order ID: 59c07761-a8a4-4e8b-baf4-2c8e9a41086d
+2024-12-02T13:45:42.859Z [INFO]: Stop condition met for PPBT. Initiating limit order to close position.
+2024-12-02T13:45:42.861Z [INFO]: Closing position with limit order: {"symbol":"PPBT","qty":"12755","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.84","extended_hours":true,"client_order_id":"CLOSE-38fa78c3e454b767"}
+2024-12-02T13:45:43.070Z [INFO]: Limit order placed to close position in PPBT. Order ID: 89017bc8-0265-4710-869d-996a8df7ff56
+2024-12-02T13:45:43.416Z [INFO]: Position removed: PPBT
+2024-12-02T13:45:43.418Z [INFO]: Unsubscribed from PPBT quotes.
+2024-12-02T13:46:04.244Z [INFO]: Position added: PPBT | Qty: 4000 | Avg Entry: $5.552
+2024-12-02T13:46:04.248Z [INFO]: Subscribed to PPBT quotes.
+2024-12-02T13:47:59.389Z [INFO]: Polygon WebSocket connected.
+2024-12-02T13:47:59.394Z [INFO]: Started polling for order statuses.
+2024-12-02T13:47:59.552Z [INFO]: Position added: PPBT | Qty: 12000 | Avg Entry: $5.54704
+2024-12-02T13:47:59.562Z [INFO]: Polygon WebSocket connection opened.
+2024-12-02T13:47:59.563Z [INFO]: Polygon WebSocket connected.
+2024-12-02T13:47:59.611Z [INFO]: Polygon WebSocket authenticated.
+2024-12-02T13:47:59.681Z [INFO]: Profit target hit for PPBT: +10.70¢ >= +5¢
+2024-12-02T13:47:59.683Z [INFO]: Attempting to place limit order: {"symbol":"PPBT","qty":"600","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.69","extended_hours":true,"client_order_id":"LIMIT-8a4b6699d344d91b"}
+2024-12-02T13:47:59.902Z [INFO]: Placed limit order for 600 shares of PPBT. Order ID: d42f2878-191f-46f9-85a1-8a662bc2205f
+2024-12-02T13:48:01.686Z [INFO]: Profit target hit for PPBT: +10.70¢ >= +10¢
+2024-12-02T13:48:01.696Z [INFO]: Attempting to place limit order: {"symbol":"PPBT","qty":"570","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.69","extended_hours":true,"client_order_id":"LIMIT-54af04cb3eeff4fe"}
+2024-12-02T13:48:02.234Z [INFO]: Placed limit order for 570 shares of PPBT. Order ID: e27f8a86-6226-4071-ac20-996049ef4f3c
+2024-12-03T12:06:07.429Z [INFO]: Polygon WebSocket connected.
+2024-12-03T12:06:07.433Z [INFO]: Started polling for order statuses.
+2024-12-03T12:06:07.631Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T12:06:07.632Z [INFO]: Polygon WebSocket connected.
+2024-12-03T12:06:07.684Z [INFO]: Polygon WebSocket authenticated.
+2024-12-03T12:08:01.614Z [INFO]: Position added: CTNT | Qty: 2000 | Avg Entry: $6.149795
+2024-12-03T12:08:01.626Z [INFO]: Subscribed to CTNT quotes.
+2024-12-03T12:08:03.659Z [INFO]: Profit target hit for CTNT: +5.02¢ >= +5¢
+2024-12-03T12:08:03.662Z [INFO]: Attempting to place limit order: {"symbol":"CTNT","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.95","extended_hours":true,"client_order_id":"LIMIT-3315842fcfe198a4"}
+2024-12-03T12:08:04.315Z [INFO]: Placed limit order for 100 shares of CTNT. Order ID: b4763484-76ba-4e3a-b9de-9fa19577d786
+2024-12-03T12:08:05.127Z [INFO]: Profit target hit for CTNT: +10.02¢ >= +10¢
+2024-12-03T12:08:05.130Z [INFO]: Attempting to place limit order: {"symbol":"CTNT","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.00","extended_hours":true,"client_order_id":"LIMIT-f8c1964c90f67195"}
+2024-12-03T12:08:05.363Z [INFO]: Placed limit order for 95 shares of CTNT. Order ID: b8228b85-54bb-421d-bf58-77200dc9351c
+2024-12-03T12:08:06.677Z [INFO]: Profit target hit for CTNT: +15.02¢ >= +15¢
+2024-12-03T12:08:06.679Z [INFO]: Attempting to place limit order: {"symbol":"CTNT","qty":"90","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.05","extended_hours":true,"client_order_id":"LIMIT-876a9ab0e67aa175"}
+2024-12-03T12:08:06.992Z [INFO]: Placed limit order for 90 shares of CTNT. Order ID: aacbad79-2e6c-4f1a-b978-4308c297db59
+2024-12-03T12:08:09.850Z [INFO]: Stop condition met for CTNT. Initiating limit order to close position.
+2024-12-03T12:08:09.852Z [INFO]: Closing position with limit order: {"symbol":"CTNT","qty":"3715","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.83","extended_hours":true,"client_order_id":"CLOSE-728254712d5b707f"}
+2024-12-03T12:08:10.366Z [INFO]: Limit order placed to close position in CTNT. Order ID: 47b7c8c2-cb75-4764-be37-a5c425562fa4
+2024-12-03T12:08:10.786Z [INFO]: Position removed: CTNT
+2024-12-03T12:08:10.789Z [INFO]: Unsubscribed from CTNT quotes.
+2024-12-03T12:11:03.674Z [INFO]: Position added: CHRS | Qty: 2000 | Avg Entry: $2.01
+2024-12-03T12:11:03.677Z [INFO]: Subscribed to CHRS quotes.
+2024-12-03T12:11:33.710Z [INFO]: Position removed: CHRS
+2024-12-03T12:11:33.713Z [INFO]: Unsubscribed from CHRS quotes.
+2024-12-03T12:28:38.151Z [INFO]: Position added: JFBR | Qty: 2000 | Avg Entry: $3.55002
+2024-12-03T12:28:38.156Z [INFO]: Subscribed to JFBR quotes.
+2024-12-03T12:28:46.980Z [INFO]: Profit target hit for JFBR: +6.00¢ >= +5¢
+2024-12-03T12:28:46.983Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.39","extended_hours":true,"client_order_id":"LIMIT-c76244aa86ba21df"}
+2024-12-03T12:28:47.161Z [INFO]: Placed limit order for 200 shares of JFBR. Order ID: a9893466-75d8-41b0-91dc-a4a10958ce29
+2024-12-03T12:29:21.534Z [INFO]: Stop condition met for JFBR. Initiating limit order to close position.
+2024-12-03T12:29:21.537Z [INFO]: Closing position with limit order: {"symbol":"JFBR","qty":"3800","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.08","extended_hours":true,"client_order_id":"CLOSE-6625dcae7fd1e726"}
+2024-12-03T12:29:21.710Z [INFO]: Limit order placed to close position in JFBR. Order ID: 80a0798b-0b8a-4c17-b40a-f18ffda9262e
+2024-12-03T12:29:22.414Z [INFO]: Position removed: JFBR
+2024-12-03T12:29:22.420Z [INFO]: Unsubscribed from JFBR quotes.
+2024-12-03T12:29:38.207Z [INFO]: Position added: JFBR | Qty: 2000 | Avg Entry: $3.487325
+2024-12-03T12:29:38.210Z [INFO]: Subscribed to JFBR quotes.
+2024-12-03T12:29:38.566Z [INFO]: Profit target hit for JFBR: +5.27¢ >= +5¢
+2024-12-03T12:29:38.569Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.29","extended_hours":true,"client_order_id":"LIMIT-755fc2efe329f318"}
+2024-12-03T12:29:38.959Z [INFO]: Placed limit order for 100 shares of JFBR. Order ID: f6c45282-5354-419d-9d9e-7bf7c3a65382
+2024-12-03T12:29:53.102Z [INFO]: Profit target hit for JFBR: +10.06¢ >= +10¢
+2024-12-03T12:29:53.104Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"195","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.37","extended_hours":true,"client_order_id":"LIMIT-5a8e9bbd0e6c4d70"}
+2024-12-03T12:29:53.293Z [INFO]: Placed limit order for 195 shares of JFBR. Order ID: 73b4c5c8-ad93-43ad-acb4-394e38d74125
+2024-12-03T12:29:54.075Z [INFO]: Profit target hit for JFBR: +16.06¢ >= +15¢
+2024-12-03T12:29:54.078Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"185","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.43","extended_hours":true,"client_order_id":"LIMIT-16f6c9072cb9a46c"}
+2024-12-03T12:29:54.345Z [INFO]: Placed limit order for 185 shares of JFBR. Order ID: f6d618ec-378a-4cba-b5bc-89425c2af411
+2024-12-03T12:29:54.606Z [INFO]: Profit target hit for JFBR: +21.06¢ >= +20¢
+2024-12-03T12:29:54.608Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"185","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.48","extended_hours":true,"client_order_id":"LIMIT-b9daaaf36fd58349"}
+2024-12-03T12:29:55.042Z [INFO]: Placed limit order for 185 shares of JFBR. Order ID: d4fda63a-5228-4fef-98c6-0354c3c1bdf6
+2024-12-03T12:30:01.091Z [INFO]: Attempting to place pyramid order: {"symbol":"JFBR","qty":"120","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.84","extended_hours":true,"client_order_id":"PYRAMID-eff0b95f8ca4012a"}
+2024-12-03T12:30:01.253Z [INFO]: Placed pyramid order for 120 shares of JFBR. Order ID: 64723e30-0aa3-4826-89cb-5bf752624a79
+2024-12-03T12:30:38.301Z [INFO]: Position removed: JFBR
+2024-12-03T12:30:38.307Z [INFO]: Unsubscribed from JFBR quotes.
+2024-12-03T12:30:52.311Z [INFO]: Position added: JFBR | Qty: 2000 | Avg Entry: $3.62249
+2024-12-03T12:30:52.313Z [INFO]: Subscribed to JFBR quotes.
+2024-12-03T12:31:43.701Z [INFO]: Profit target hit for JFBR: +5.38¢ >= +5¢
+2024-12-03T12:31:43.704Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.43","extended_hours":true,"client_order_id":"LIMIT-eac5e32f5b07f504"}
+2024-12-03T12:31:43.867Z [INFO]: Placed limit order for 200 shares of JFBR. Order ID: 80b77a0e-14b2-4dfe-a9ca-dc0289e79afd
+2024-12-03T12:31:44.709Z [INFO]: Profit target hit for JFBR: +10.38¢ >= +10¢
+2024-12-03T12:31:44.712Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"142","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.48","extended_hours":true,"client_order_id":"LIMIT-f89d151f76508386"}
+2024-12-03T12:31:44.923Z [INFO]: Placed limit order for 142 shares of JFBR. Order ID: 3f3db1a3-cd58-4921-be35-8bb35f02cb2d
+2024-12-03T12:31:47.280Z [INFO]: Profit target hit for JFBR: +15.38¢ >= +15¢
+2024-12-03T12:31:47.281Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"135","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.53","extended_hours":true,"client_order_id":"LIMIT-205707c2c4022f68"}
+2024-12-03T12:31:47.453Z [INFO]: Placed limit order for 135 shares of JFBR. Order ID: ae87dfed-bfdf-49af-8599-ec11fe498950
+2024-12-03T12:31:51.734Z [INFO]: Profit target hit for JFBR: +20.38¢ >= +20¢
+2024-12-03T12:31:51.737Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"128","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.58","extended_hours":true,"client_order_id":"LIMIT-13b22d495f6fccb5"}
+2024-12-03T12:31:51.897Z [INFO]: Placed limit order for 128 shares of JFBR. Order ID: ed8ddd52-40b1-48a8-945a-8cbd60440efa
+2024-12-03T12:31:52.248Z [INFO]: Attempting to place pyramid order: {"symbol":"JFBR","qty":"128","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.94","extended_hours":true,"client_order_id":"PYRAMID-ab710108248161e2"}
+2024-12-03T12:31:53.010Z [INFO]: Placed pyramid order for 128 shares of JFBR. Order ID: ab8f5641-0024-4132-8acb-c850abf75d0a
+2024-12-03T12:33:22.532Z [INFO]: Position removed: JFBR
+2024-12-03T12:33:22.535Z [INFO]: Unsubscribed from JFBR quotes.
+2024-12-03T12:33:30.541Z [INFO]: Position added: JFBR | Qty: 4000 | Avg Entry: $4.24929
+2024-12-03T12:33:30.547Z [INFO]: Subscribed to JFBR quotes.
+2024-12-03T12:33:38.845Z [INFO]: Profit target hit for JFBR: +5.07¢ >= +5¢
+2024-12-03T12:33:38.848Z [INFO]: Attempting to place limit order: {"symbol":"JFBR","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.05","extended_hours":true,"client_order_id":"LIMIT-aa17d4aaa032115a"}
+2024-12-03T12:33:39.050Z [INFO]: Placed limit order for 200 shares of JFBR. Order ID: fddce862-4ba5-46d3-acaf-7aa927ce58fc
+2024-12-03T12:34:16.571Z [INFO]: Position removed: JFBR
+2024-12-03T12:34:16.574Z [INFO]: Unsubscribed from JFBR quotes.
+2024-12-03T12:47:37.202Z [INFO]: Position added: NLSP | Qty: 2000 | Avg Entry: $6.71183
+2024-12-03T12:47:37.209Z [INFO]: Subscribed to NLSP quotes.
+2024-12-03T12:47:49.509Z [INFO]: Stop condition met for NLSP. Initiating limit order to close position.
+2024-12-03T12:47:49.512Z [INFO]: Closing position with limit order: {"symbol":"NLSP","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.20","extended_hours":true,"client_order_id":"CLOSE-2f1fff9c51b0e3b7"}
+2024-12-03T12:47:49.708Z [INFO]: Limit order placed to close position in NLSP. Order ID: 215dfe6f-0727-4c1c-a5df-dafc1dbf6fa7
+2024-12-03T12:47:50.051Z [INFO]: Position removed: NLSP
+2024-12-03T12:47:50.053Z [INFO]: Unsubscribed from NLSP quotes.
+2024-12-03T12:47:57.218Z [INFO]: Position added: NLSP | Qty: 2000 | Avg Entry: $6.329995
+2024-12-03T12:47:57.223Z [INFO]: Subscribed to NLSP quotes.
+2024-12-03T12:48:03.028Z [INFO]: Profit target hit for NLSP: +5.00¢ >= +5¢
+2024-12-03T12:48:03.031Z [INFO]: Attempting to place limit order: {"symbol":"NLSP","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.13","extended_hours":true,"client_order_id":"LIMIT-1e3e8c9c2cd53c6c"}
+2024-12-03T12:48:03.570Z [INFO]: Placed limit order for 100 shares of NLSP. Order ID: 55474319-cf1e-4393-a4b3-31606564d979
+2024-12-03T12:48:04.032Z [INFO]: Profit target hit for NLSP: +13.00¢ >= +10¢
+2024-12-03T12:48:04.034Z [INFO]: Attempting to place limit order: {"symbol":"NLSP","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.21","extended_hours":true,"client_order_id":"LIMIT-ad3dfb9f8388c5aa"}
+2024-12-03T12:48:04.647Z [INFO]: Placed limit order for 95 shares of NLSP. Order ID: e665ffca-c572-4ec3-b9b6-aea58d505530
+2024-12-03T12:48:05.022Z [INFO]: Profit target hit for NLSP: +18.00¢ >= +15¢
+2024-12-03T12:48:05.025Z [INFO]: Attempting to place limit order: {"symbol":"NLSP","qty":"90","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.26","extended_hours":true,"client_order_id":"LIMIT-7045227afe403bca"}
+2024-12-03T12:48:05.697Z [INFO]: Placed limit order for 90 shares of NLSP. Order ID: f7887534-c43d-4fe6-b0a4-6a069e27aa6f
+2024-12-03T12:48:10.022Z [INFO]: Stop condition met for NLSP. Initiating limit order to close position.
+2024-12-03T12:48:10.025Z [INFO]: Closing position with limit order: {"symbol":"NLSP","qty":"1715","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.89","extended_hours":true,"client_order_id":"CLOSE-f3986f31b22e6a91"}
+2024-12-03T12:48:10.221Z [INFO]: Limit order placed to close position in NLSP. Order ID: d688212e-2ebd-4469-8211-32ca7a0e09aa
+2024-12-03T12:48:10.562Z [INFO]: Position removed: NLSP
+2024-12-03T12:48:10.564Z [INFO]: Unsubscribed from NLSP quotes.
+2024-12-03T12:48:23.224Z [INFO]: Position added: NLSP | Qty: 2000 | Avg Entry: $6.302395
+2024-12-03T12:48:23.228Z [INFO]: Subscribed to NLSP quotes.
+2024-12-03T12:48:33.013Z [INFO]: Stop condition met for NLSP. Initiating limit order to close position.
+2024-12-03T12:48:33.014Z [INFO]: Closing position with limit order: {"symbol":"NLSP","qty":"4000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.80","extended_hours":true,"client_order_id":"CLOSE-e4d28ef368cf307e"}
+2024-12-03T12:48:33.590Z [INFO]: Limit order placed to close position in NLSP. Order ID: d047b758-7213-46a0-971b-383ab32b4a76
+2024-12-03T12:48:33.944Z [INFO]: Position removed: NLSP
+2024-12-03T12:48:33.950Z [INFO]: Unsubscribed from NLSP quotes.
+2024-12-03T12:48:58.020Z [INFO]: Polygon WebSocket connected.
+2024-12-03T12:48:58.024Z [INFO]: Started polling for order statuses.
+2024-12-03T12:48:58.192Z [INFO]: Position added: NLSP | Qty: 4000 | Avg Entry: $5.8442
+2024-12-03T12:48:58.202Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T12:48:58.204Z [INFO]: Polygon WebSocket connected.
+2024-12-03T12:48:58.249Z [INFO]: Polygon WebSocket authenticated.
+2024-12-03T12:48:58.519Z [INFO]: Profit target hit for NLSP: +15.58¢ >= +5¢
+2024-12-03T12:48:58.522Z [INFO]: Attempting to place limit order: {"symbol":"NLSP","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.75","extended_hours":true,"client_order_id":"LIMIT-12e6c03546698bfa"}
+2024-12-03T12:48:58.690Z [INFO]: Placed limit order for 200 shares of NLSP. Order ID: f94c8ca1-1f73-45bc-a9bf-5ec68c872b59
+2024-12-03T12:48:59.025Z [INFO]: Profit target hit for NLSP: +15.58¢ >= +10¢
+2024-12-03T12:48:59.027Z [INFO]: Attempting to place limit order: {"symbol":"NLSP","qty":"190","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.75","extended_hours":true,"client_order_id":"LIMIT-1b38fe797b04f94d"}
+2024-12-03T12:48:59.727Z [INFO]: Placed limit order for 190 shares of NLSP. Order ID: 628f8fbc-4fad-4701-a460-752bbf41f4ce
+2024-12-03T12:49:09.067Z [INFO]: Stop condition met for NLSP. Initiating limit order to close position.
+2024-12-03T12:49:09.070Z [INFO]: Closing position with limit order: {"symbol":"NLSP","qty":"3610","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.43","extended_hours":true,"client_order_id":"CLOSE-2ce6be00a19d14f5"}
+2024-12-03T12:49:09.507Z [INFO]: Limit order placed to close position in NLSP. Order ID: c0b33cb6-cd16-41d9-94ce-dd856df54a92
+2024-12-03T12:49:09.849Z [INFO]: Position removed: NLSP
+2024-12-03T12:49:09.855Z [INFO]: Unsubscribed from NLSP quotes.
+2024-12-03T12:49:38.168Z [INFO]: Position added: NLSP | Qty: 4000 | Avg Entry: $5.260845
+2024-12-03T12:49:38.172Z [INFO]: Subscribed to NLSP quotes.
+2024-12-03T12:51:09.958Z [INFO]: Polygon WebSocket connected.
+2024-12-03T12:51:09.963Z [INFO]: Started polling for order statuses.
+2024-12-03T12:51:10.139Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T12:51:10.141Z [INFO]: Polygon WebSocket connected.
+2024-12-03T12:51:10.191Z [INFO]: Polygon WebSocket authenticated.
+2024-12-03T12:52:28.130Z [INFO]: Position added: PSQH | Qty: 2000 | Avg Entry: $3.98
+2024-12-03T12:52:28.138Z [INFO]: Subscribed to PSQH quotes.
+2024-12-03T12:52:32.581Z [INFO]: Profit target hit for PSQH: +5.00¢ >= +5¢
+2024-12-03T12:52:32.584Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.78","extended_hours":true,"client_order_id":"LIMIT-b3aac4d552e9cf75"}
+2024-12-03T12:52:32.825Z [INFO]: Placed limit order for 100 shares of PSQH. Order ID: 21e14d82-8677-4c9b-b7eb-81aeaa9f0e30
+2024-12-03T12:52:38.094Z [INFO]: Profit target hit for PSQH: +10.07¢ >= +10¢
+2024-12-03T12:52:38.095Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"195","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.86","extended_hours":true,"client_order_id":"LIMIT-3ee5ebd05c315702"}
+2024-12-03T12:52:38.833Z [INFO]: Placed limit order for 195 shares of PSQH. Order ID: 1513b882-fd0e-4dad-a034-aaa52722258b
+2024-12-03T12:52:40.558Z [INFO]: Profit target hit for PSQH: +15.07¢ >= +15¢
+2024-12-03T12:52:40.562Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"185","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.91","extended_hours":true,"client_order_id":"LIMIT-c29c0250c52176c2"}
+2024-12-03T12:52:40.647Z [INFO]: Attempting to place pyramid order: {"symbol":"PSQH","qty":"185","side":"buy","type":"limit","time_in_force":"day","limit_price":"4.33","extended_hours":true,"client_order_id":"PYRAMID-777a23000001336c"}
+2024-12-03T12:52:40.845Z [INFO]: Placed limit order for 185 shares of PSQH. Order ID: 8db75d09-3906-4b86-8947-4ea998884d1d
+2024-12-03T12:52:41.200Z [INFO]: Placed pyramid order for 185 shares of PSQH. Order ID: d9688c3f-5f5a-4d07-9324-383e326782db
+2024-12-03T12:52:41.563Z [INFO]: Profit target hit for PSQH: +20.67¢ >= +20¢
+2024-12-03T12:52:41.566Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"138","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.98","extended_hours":true,"client_order_id":"LIMIT-002a539f312cc114"}
+2024-12-03T12:52:42.229Z [INFO]: Placed limit order for 138 shares of PSQH. Order ID: fdd24031-9940-4d55-ad21-b1d051bbcd6a
+2024-12-03T12:53:10.092Z [INFO]: Stop condition met for PSQH. Initiating limit order to close position.
+2024-12-03T12:53:10.097Z [INFO]: Closing position with limit order: {"symbol":"PSQH","qty":"974","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.71","extended_hours":true,"client_order_id":"CLOSE-4348f5f680762a10"}
+2024-12-03T12:53:10.878Z [INFO]: Limit order placed to close position in PSQH. Order ID: e12ee6fa-2c48-4f5c-892e-8c08c8d75586
+2024-12-03T12:53:11.206Z [INFO]: Position removed: PSQH
+2024-12-03T12:53:11.213Z [INFO]: Unsubscribed from PSQH quotes.
+2024-12-03T12:54:36.189Z [INFO]: Position added: NLSP | Qty: 2000 | Avg Entry: $4.604618
+2024-12-03T12:54:36.196Z [INFO]: Subscribed to NLSP quotes.
+2024-12-03T12:55:22.065Z [INFO]: Stop condition met for NLSP. Initiating limit order to close position.
+2024-12-03T12:55:22.069Z [INFO]: Closing position with limit order: {"symbol":"NLSP","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.10","extended_hours":true,"client_order_id":"CLOSE-a2cffb137eb9a46d"}
+2024-12-03T12:55:22.248Z [INFO]: Limit order placed to close position in NLSP. Order ID: 65793983-8e8e-4b39-b56f-18b7f5ea2d6a
+2024-12-03T12:55:22.584Z [INFO]: Position removed: NLSP
+2024-12-03T12:55:22.588Z [INFO]: Unsubscribed from NLSP quotes.
+2024-12-03T12:55:48.245Z [INFO]: Position added: PSQH | Qty: 2000 | Avg Entry: $3.94
+2024-12-03T12:55:48.249Z [INFO]: Subscribed to PSQH quotes.
+2024-12-03T12:57:24.372Z [INFO]: Profit target hit for PSQH: +5.00¢ >= +5¢
+2024-12-03T12:57:24.376Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.74","extended_hours":true,"client_order_id":"LIMIT-308784b90e786748"}
+2024-12-03T12:57:25.013Z [INFO]: Placed limit order for 100 shares of PSQH. Order ID: 3dc9b62a-4f04-40f3-af8f-2553c243ed30
+2024-12-03T12:57:25.369Z [INFO]: Profit target hit for PSQH: +14.00¢ >= +10¢
+2024-12-03T12:57:25.372Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.83","extended_hours":true,"client_order_id":"LIMIT-af2184c9d092a3c2"}
+2024-12-03T12:57:26.223Z [INFO]: Placed limit order for 95 shares of PSQH. Order ID: cdb161e5-7559-44a7-992f-8c3979c78561
+2024-12-03T12:57:26.374Z [INFO]: Profit target hit for PSQH: +20.00¢ >= +15¢
+2024-12-03T12:57:26.377Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.89","extended_hours":true,"client_order_id":"LIMIT-a02d1a998484a135"}
+2024-12-03T12:57:27.097Z [INFO]: Placed limit order for 95 shares of PSQH. Order ID: ea57c810-d3d6-4c40-8c1f-73526c1c7272
+2024-12-03T12:57:27.877Z [INFO]: Profit target hit for PSQH: +24.00¢ >= +20¢
+2024-12-03T12:57:27.880Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"61","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.93","extended_hours":true,"client_order_id":"LIMIT-d7fbb047ec0c9213"}
+2024-12-03T12:57:28.143Z [INFO]: Placed limit order for 61 shares of PSQH. Order ID: 3e6b9fc6-92eb-44b1-a46e-1fb336ed5c5d
+2024-12-03T12:57:43.919Z [INFO]: Attempting to place pyramid order: {"symbol":"PSQH","qty":"29","side":"buy","type":"limit","time_in_force":"day","limit_price":"4.24","extended_hours":true,"client_order_id":"PYRAMID-e99242b38cb8de60"}
+2024-12-03T12:57:44.066Z [INFO]: Placed pyramid order for 29 shares of PSQH. Order ID: a0d17aa2-fb1d-4704-ac8c-da07a1de2d91
+2024-12-03T12:58:26.321Z [INFO]: Position removed: PSQH
+2024-12-03T12:58:26.328Z [INFO]: Unsubscribed from PSQH quotes.
+2024-12-03T12:58:46.510Z [INFO]: Position added: PSQH | Qty: 4000 | Avg Entry: $4.6696
+2024-12-03T12:58:46.518Z [INFO]: Subscribed to PSQH quotes.
+2024-12-03T12:58:48.284Z [INFO]: Profit target hit for PSQH: +5.04¢ >= +5¢
+2024-12-03T12:58:48.287Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.47","extended_hours":true,"client_order_id":"LIMIT-14c97993d0822e0a"}
+2024-12-03T12:58:49.000Z [INFO]: Placed limit order for 200 shares of PSQH. Order ID: 558a2f0a-7251-4c8e-b8b6-b9437e5057f5
+2024-12-03T12:58:49.453Z [INFO]: Profit target hit for PSQH: +18.04¢ >= +10¢
+2024-12-03T12:58:49.456Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"140","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.60","extended_hours":true,"client_order_id":"LIMIT-a46cb1657d21d70c"}
+2024-12-03T12:58:49.912Z [INFO]: Placed limit order for 140 shares of PSQH. Order ID: e045fa99-e0dd-4328-9bf1-875b7d6d7f62
+2024-12-03T12:58:50.961Z [INFO]: Profit target hit for PSQH: +21.04¢ >= +15¢
+2024-12-03T12:58:50.964Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"98","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.63","extended_hours":true,"client_order_id":"LIMIT-df95ef8eee71b691"}
+2024-12-03T12:58:51.338Z [INFO]: Placed limit order for 98 shares of PSQH. Order ID: 76262989-d91e-4257-8d08-211ba1a257ba
+2024-12-03T12:58:51.481Z [INFO]: Attempting to place pyramid order: {"symbol":"PSQH","qty":"98","side":"buy","type":"limit","time_in_force":"day","limit_price":"4.97","extended_hours":true,"client_order_id":"PYRAMID-d4e9fadc67ada842"}
+2024-12-03T12:58:51.960Z [INFO]: Profit target hit for PSQH: +20.04¢ >= +20¢
+2024-12-03T12:58:51.962Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"44","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.62","extended_hours":true,"client_order_id":"LIMIT-ea2fff3fcf2fdaab"}
+2024-12-03T12:58:52.075Z [INFO]: Placed pyramid order for 98 shares of PSQH. Order ID: acf2accc-f094-472b-b481-fac98571dc74
+2024-12-03T12:58:52.694Z [INFO]: Placed limit order for 44 shares of PSQH. Order ID: 78c69f9b-39ae-45ba-8d0f-0af14aff0417
+2024-12-03T12:59:56.759Z [INFO]: Position removed: PSQH
+2024-12-03T12:59:56.767Z [INFO]: Unsubscribed from PSQH quotes.
+2024-12-03T13:00:20.769Z [INFO]: Position added: PSQH | Qty: 2000 | Avg Entry: $4.772175
+2024-12-03T13:00:20.773Z [INFO]: Subscribed to PSQH quotes.
+2024-12-03T13:01:00.142Z [INFO]: Profit target hit for PSQH: +6.13¢ >= +5¢
+2024-12-03T13:01:00.144Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"100","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.59","extended_hours":true,"client_order_id":"LIMIT-acd3c21167121d96"}
+2024-12-03T13:01:00.306Z [INFO]: Placed limit order for 100 shares of PSQH. Order ID: f069a799-015b-42c5-825b-b2aee8615d10
+2024-12-03T13:01:02.634Z [INFO]: Profit target hit for PSQH: +10.13¢ >= +10¢
+2024-12-03T13:01:02.637Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.63","extended_hours":true,"client_order_id":"LIMIT-f57db17fce3f833b"}
+2024-12-03T13:01:02.824Z [INFO]: Placed limit order for 95 shares of PSQH. Order ID: db858ca4-0e38-40e4-bcf3-874251038945
+2024-12-03T13:01:03.186Z [INFO]: Profit target hit for PSQH: +15.13¢ >= +15¢
+2024-12-03T13:01:03.188Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.68","extended_hours":true,"client_order_id":"LIMIT-3f853824619ecea1"}
+2024-12-03T13:01:03.935Z [INFO]: Placed limit order for 95 shares of PSQH. Order ID: 889646e5-cff8-4c20-89e2-dc2737633409
+2024-12-03T13:01:05.689Z [INFO]: Profit target hit for PSQH: +20.13¢ >= +20¢
+2024-12-03T13:01:05.691Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"45","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.73","extended_hours":true,"client_order_id":"LIMIT-e0f052ee24b9559d"}
+2024-12-03T13:01:05.873Z [INFO]: Placed limit order for 45 shares of PSQH. Order ID: c10fb119-f5ca-40f5-bd1f-5fdaf6613b53
+2024-12-03T13:01:09.142Z [INFO]: Stop condition met for PSQH. Initiating limit order to close position.
+2024-12-03T13:01:09.144Z [INFO]: Closing position with limit order: {"symbol":"PSQH","qty":"3644","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.67","extended_hours":true,"client_order_id":"CLOSE-09e65b4ca0377187"}
+2024-12-03T13:01:09.581Z [INFO]: Limit order placed to close position in PSQH. Order ID: 37e2e904-c6f7-4e6a-a258-e7bb8060d27a
+2024-12-03T13:01:09.915Z [INFO]: Position removed: PSQH
+2024-12-03T13:01:09.921Z [INFO]: Unsubscribed from PSQH quotes.
+2024-12-03T13:01:14.865Z [INFO]: Position added: PSQH | Qty: 4000 | Avg Entry: $4.95955
+2024-12-03T13:01:14.871Z [INFO]: Subscribed to PSQH quotes.
+2024-12-03T13:01:20.169Z [INFO]: Stop condition met for PSQH. Initiating limit order to close position.
+2024-12-03T13:01:20.172Z [INFO]: Closing position with limit order: {"symbol":"PSQH","qty":"4000","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.45","extended_hours":true,"client_order_id":"CLOSE-b98d81822bd82683"}
+2024-12-03T13:01:20.386Z [INFO]: Limit order placed to close position in PSQH. Order ID: ca6c3000-4364-45e3-a46e-f05a063d0dad
+2024-12-03T13:01:20.701Z [INFO]: Position removed: PSQH
+2024-12-03T13:01:20.703Z [INFO]: Unsubscribed from PSQH quotes.
+2024-12-03T13:02:23.374Z [INFO]: Polygon WebSocket connected.
+2024-12-03T13:02:23.378Z [INFO]: Started polling for order statuses.
+2024-12-03T13:02:23.553Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T13:02:23.555Z [INFO]: Polygon WebSocket connected.
+2024-12-03T13:02:23.602Z [INFO]: Polygon WebSocket authenticated.
+2024-12-03T13:04:38.203Z [INFO]: Polygon WebSocket connected.
+2024-12-03T13:04:38.208Z [INFO]: Started polling for order statuses.
+2024-12-03T13:04:38.377Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T13:04:38.382Z [INFO]: Polygon WebSocket connected.
+2024-12-03T13:04:38.425Z [INFO]: Polygon WebSocket authenticated.
+2024-12-03T13:05:28.364Z [INFO]: Position added: TZUP | Qty: 2000 | Avg Entry: $6.564195
+2024-12-03T13:05:28.369Z [INFO]: Subscribed to TZUP quotes.
+2024-12-03T13:07:03.281Z [INFO]: Stop condition met for TZUP. Initiating limit order to close position.
+2024-12-03T13:07:03.283Z [INFO]: Closing position with limit order: {"symbol":"TZUP","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.95","extended_hours":true,"client_order_id":"CLOSE-6b0db52b6366f38f"}
+2024-12-03T13:07:03.453Z [INFO]: Limit order placed to close position in TZUP. Order ID: da1926fe-76b0-4fdf-a6dd-42cf1d89f3f6
+2024-12-03T13:07:04.279Z [INFO]: Position removed: TZUP
+2024-12-03T13:07:04.282Z [INFO]: Unsubscribed from TZUP quotes.
+2024-12-03T13:09:30.488Z [INFO]: Position added: ZJK | Qty: 2000 | Avg Entry: $22.49749
+2024-12-03T13:09:30.494Z [INFO]: Subscribed to ZJK quotes.
+2024-12-03T13:09:30.748Z [INFO]: Stop condition met for ZJK. Initiating limit order to close position.
+2024-12-03T13:09:30.752Z [INFO]: Closing position with limit order: {"symbol":"ZJK","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"21.65","extended_hours":true,"client_order_id":"CLOSE-950418e928d5eb75"}
+2024-12-03T13:09:31.196Z [INFO]: Limit order placed to close position in ZJK. Order ID: f91eaa39-d0f3-4a3f-bc49-edaac421ed94
+2024-12-03T13:09:31.534Z [INFO]: Position removed: ZJK
+2024-12-03T13:09:31.537Z [INFO]: Unsubscribed from ZJK quotes.
+2024-12-03T14:33:22.331Z [INFO]: Polygon WebSocket connected.
+2024-12-03T14:33:22.336Z [INFO]: Started polling for order statuses.
+2024-12-03T14:33:22.549Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T14:33:22.550Z [INFO]: Polygon WebSocket connected.
+2024-12-03T14:33:22.599Z [INFO]: Polygon WebSocket authenticated.
+2024-12-03T14:33:28.461Z [INFO]: Position added: PSQH | Qty: 4000 | Avg Entry: $5.182407
+2024-12-03T14:33:28.468Z [INFO]: Subscribed to PSQH quotes.
+2024-12-03T14:33:34.549Z [INFO]: Profit target hit for PSQH: +5.76¢ >= +5¢
+2024-12-03T14:33:34.552Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"200","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.99","extended_hours":true,"client_order_id":"LIMIT-b9d6962409c89666"}
+2024-12-03T14:33:35.183Z [INFO]: Placed limit order for 200 shares of PSQH. Order ID: c60b6282-3eef-4825-9566-7f9e8aabb982
+2024-12-03T14:34:00.922Z [INFO]: Profit target hit for PSQH: +10.76¢ >= +10¢
+2024-12-03T14:34:00.924Z [INFO]: Attempting to place limit order: {"symbol":"PSQH","qty":"190","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.04","extended_hours":true,"client_order_id":"LIMIT-a0c40d758b407524"}
+2024-12-03T14:34:01.189Z [INFO]: Placed limit order for 190 shares of PSQH. Order ID: e97da8fd-41e7-482f-b74a-a66ae2f11836
+2024-12-03T14:34:16.508Z [INFO]: Position removed: PSQH
+2024-12-03T14:34:16.510Z [INFO]: Unsubscribed from PSQH quotes.
+2024-12-03T14:34:46.533Z [INFO]: Position added: PSQH | Qty: 2000 | Avg Entry: $5.1897
+2024-12-03T14:34:46.536Z [INFO]: Subscribed to PSQH quotes.
+2024-12-03T14:35:13.628Z [INFO]: Stop condition met for PSQH. Initiating limit order to close position.
+2024-12-03T14:35:13.630Z [INFO]: Closing position with limit order: {"symbol":"PSQH","qty":"6000","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.61","extended_hours":true,"client_order_id":"CLOSE-b66c280dd2dd5901"}
+2024-12-03T14:35:14.063Z [INFO]: Limit order placed to close position in PSQH. Order ID: a7c754af-474e-49f1-9d40-fc3b235f676b
+2024-12-03T14:35:14.392Z [INFO]: Position removed: PSQH
+2024-12-03T14:35:14.394Z [INFO]: Unsubscribed from PSQH quotes.
+2024-12-03T14:36:46.575Z [INFO]: Position added: CRDO | Qty: 2000 | Avg Entry: $65.9947
+2024-12-03T14:36:46.578Z [INFO]: Subscribed to CRDO quotes.
+2024-12-03T14:36:46.983Z [INFO]: Profit target hit for CRDO: +11.47¢ >= +5¢
+2024-12-03T14:36:46.985Z [INFO]: Attempting to place limit order: {"symbol":"CRDO","qty":"100","side":"buy","type":"limit","time_in_force":"day","limit_price":"66.13","extended_hours":true,"client_order_id":"LIMIT-43c7a15de1b14e81"}
+2024-12-03T14:36:47.294Z [INFO]: Placed limit order for 100 shares of CRDO. Order ID: 36ab517e-ab08-4fbc-b0e1-fe17cfefa681
+2024-12-03T14:36:48.933Z [INFO]: Profit target hit for CRDO: +12.47¢ >= +10¢
+2024-12-03T14:36:48.935Z [INFO]: Attempting to place limit order: {"symbol":"CRDO","qty":"95","side":"buy","type":"limit","time_in_force":"day","limit_price":"66.12","extended_hours":true,"client_order_id":"LIMIT-1b9165cc283ca465"}
+2024-12-03T14:36:49.291Z [INFO]: Placed limit order for 95 shares of CRDO. Order ID: d9f3195b-82fa-4df0-81af-997826c7b605
+2024-12-03T14:36:49.643Z [INFO]: Attempting to place pyramid order: {"symbol":"CRDO","qty":"90","side":"sell","type":"limit","time_in_force":"day","limit_price":"65.66","extended_hours":true,"client_order_id":"PYRAMID-ff07abbb5db4adc6"}
+2024-12-03T14:36:50.355Z [INFO]: Placed pyramid order for 90 shares of CRDO. Order ID: b213eb16-3b31-4cdf-b257-0b6c317e538e
+2024-12-03T14:36:54.854Z [INFO]: Stop condition met for CRDO. Initiating limit order to close position.
+2024-12-03T14:36:54.857Z [INFO]: Closing position with limit order: {"symbol":"CRDO","qty":"3895","side":"buy","type":"limit","time_in_force":"day","limit_price":"66.28","extended_hours":true,"client_order_id":"CLOSE-ace369d8acafa0b0"}
+2024-12-03T14:36:55.290Z [INFO]: Limit order placed to close position in CRDO. Order ID: d2e63648-1bc3-4559-b526-f8553969eec5
+2024-12-03T14:36:55.636Z [INFO]: Position removed: CRDO
+2024-12-03T14:36:55.639Z [INFO]: Unsubscribed from CRDO quotes.
+2024-12-03T18:07:12.872Z [INFO]: Polygon WebSocket connected.
+2024-12-03T18:07:12.876Z [INFO]: Started polling for order statuses.
+2024-12-03T18:07:13.194Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T18:07:13.196Z [INFO]: Polygon WebSocket connected.
+2024-12-03T18:07:13.248Z [INFO]: Polygon WebSocket authenticated.
+2024-12-03T18:07:33.002Z [INFO]: Position added: PRCH | Qty: 4000 | Avg Entry: $5.6718
+2024-12-03T18:07:33.008Z [INFO]: Subscribed to PRCH quotes.
+2024-12-03T18:07:55.917Z [INFO]: Profit target hit for PRCH: +5.10¢ >= +5¢
+2024-12-03T18:07:55.919Z [INFO]: Attempting to place limit order: {"symbol":"PRCH","qty":"900","side":"buy","type":"limit","time_in_force":"day","limit_price":"5.84","extended_hours":true,"client_order_id":"LIMIT-28e709de5b62558c"}
+2024-12-03T18:07:56.379Z [INFO]: Placed limit order for 900 shares of PRCH. Order ID: 6fc237d2-5305-4b9a-9a8d-6724bca28ed7
+2024-12-03T18:08:23.029Z [INFO]: Position removed: PRCH
+2024-12-03T18:08:23.035Z [INFO]: Unsubscribed from PRCH quotes.
+2024-12-03T18:30:30.178Z [INFO]: Polygon WebSocket connected.
+2024-12-03T18:30:30.182Z [INFO]: Started polling for order statuses.
+2024-12-03T18:30:30.384Z [INFO]: Polygon WebSocket connection opened.
+2024-12-03T18:30:30.385Z [INFO]: Polygon WebSocket connected.
+2024-12-03T18:30:30.437Z [INFO]: Polygon WebSocket authenticated.
