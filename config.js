@@ -18,15 +18,15 @@ module.exports = {
   orderSettings: {
     limitOffsetCents: 25, // Adjusted limit offset for limit orders
     profitTargets: [
-      { targetCents: 10, percentToClose: 0 }, // 2
-      { targetCents: 15, percentToClose: 0 }, // 3
-      { targetCents: 20, percentToClose: 0 }, // 4
+      { targetCents: 10, percentToClose: 3 }, // 2
+      { targetCents: 20, percentToClose: 3 }, // 4
     ],
     dynamicStops: [
       { profitTargetsHit: 0, stopCents: -35 },
-      { profitTargetsHit: 1, stopCents: -20 },
+      { profitTargetsHit: 1, stopCents: -25 },
+      { profitTargetsHit: 2, stopCents: -20 },
     ],
-    pyramidLevels: [{ addInCents: 25, percentToAdd: 5, offsetCents: 4 }],
+    pyramidLevels: [{ addInCents: 25, percentToAdd: 1, offsetCents: 4 }],
   },
   pollingIntervals: {
     orderStatus: 1000, // Poll order statuses every second
