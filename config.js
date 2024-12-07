@@ -1,6 +1,6 @@
-require('dotenv').config(); // Load environment variables from .env
+require('dotenv').config();
 
-const paperTrading = process.env.PAPER_TRADING === 'true'; // Set to true for paper trading, false for live trading
+const paperTrading = process.env.PAPER_TRADING === 'true';
 
 module.exports = {
   alpaca: {
@@ -10,32 +10,44 @@ module.exports = {
     secretKey: paperTrading
       ? process.env.ALPACA_PAPER_SECRET_KEY
       : process.env.ALPACA_LIVE_SECRET_KEY,
-    paper: paperTrading, // true for paper trading, false for live trading
+    paper: paperTrading,
   },
   polygon: {
     apiKey: process.env.POLYGON_API_KEY,
   },
+  strategySettings: {
+    volumeRequirement: 800000, // Min required volume
+    gapPercentageRequirement: 20, // Min gap percentage
+    priceRange: { min: 3, max: 20 }, // Price range filter
+    initialEntryOffsetCents: -2, // Offset from HOD for initial entry (-2 means 2¢ below HOD)
+    initialShareSize: 1000, // Initial position size
+    trailingStopIncrementCents: 5, // Trailing stop increments in cents
+  },
   orderSettings: {
-    limitOffsetCents: 25, // Adjusted limit offset for limit orders
+    limitOffsetCents: 25,
     profitTargets: [
-      { targetCents: 10, percentToClose: 3 }, // 2
-      { targetCents: 20, percentToClose: 3 }, // 4
+      { targetCents: 10, percentToClose: 3 },
+      { targetCents: 20, percentToClose: 3 },
     ],
     dynamicStops: [
       { profitTargetsHit: 0, stopCents: -35 },
       { profitTargetsHit: 1, stopCents: -15 },
-      { profitTargetsHit: 2, stopCents: -0 },
+      { profitTargetsHit: 2, stopCents: 0 },
     ],
     pyramidLevels: [{ addInCents: 25, percentToAdd: 1, offsetCents: 4 }],
+  },
+  trailingStopSettings: {
+    // Additional trailing stop parameters can be added here if needed
   },
   pollingIntervals: {
     orderStatus: 1000, // Poll order statuses every second
     positionRefresh: 2000, // Refresh positions every 2 seconds
+    watchlistRefresh: 60000, // Refresh watchlist every 1 minute
   },
   logging: {
-    level: 'info', // Logging level: 'debug', 'info', 'warn', 'error'
-    file: 'logger.js', // Log file name
-    excludedMessages: [], // Add any messages to exclude from dashboard logs
+    level: 'info',
+    file: 'logger.js',
+    excludedMessages: [],
   },
-  timeZone: 'America/New_York', // Set your time zone for accurate time calculations
+  timeZone: 'America/New_York',
 };

@@ -1,5 +1,3 @@
-// alpaca.js
-
 const Alpaca = require('@alpacahq/alpaca-trade-api');
 const config = require('./config');
 

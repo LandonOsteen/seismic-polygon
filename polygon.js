@@ -1,5 +1,3 @@
-// polygon.js
-
 const WebSocket = require('ws');
 const config = require('./config');
 const logger = require('./logger');
@@ -9,7 +7,7 @@ class PolygonClient {
     this.apiKey = config.polygon.apiKey;
     this.ws = null;
     this.subscribedSymbols = new Set();
-    this.onQuote = null; // This should be set by the consumer
+    this.onQuote = null;
   }
 
   connect() {
@@ -33,7 +31,6 @@ class PolygonClient {
         if (msg.ev === 'status') {
           if (msg.status === 'auth_success') {
             logger.info('Polygon WebSocket authenticated.');
-            // Resubscribe to any symbols after reconnecting
             if (this.subscribedSymbols.size > 0) {
               const symbols = Array.from(this.subscribedSymbols)
                 .map((sym) => `Q.${sym}`)
@@ -63,7 +60,7 @@ class PolygonClient {
 
     this.ws.on('close', (code, reason) => {
       logger.warn(`Polygon WebSocket closed. Code: ${code}, Reason: ${reason}`);
-      setTimeout(() => this.connect(), 10000); // Reconnect after 10 seconds
+      setTimeout(() => this.connect(), 10000);
     });
   }
 
