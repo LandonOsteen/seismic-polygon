@@ -1,7 +1,7 @@
 {
   "name": "seismic-polygon",
-  "version": "1.1.0",
-  "description": "Trading exit system using Node.js, Blessed, Alpaca, and Polygon.",
+  "version": "1.3.0",
+  "description": "Trading exit system using Node.js, Alpaca, and Polygon with advanced trailing stop, dynamic volume requirements, and immediate updates.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -10,10 +10,12 @@
     "@alpacahq/alpaca-trade-api": "^3.1.2",
     "@polygon.io/client-js": "^7.3.2",
     "async-mutex": "^0.5.0",
+    "axios": "^1.3.6",
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.11.0",
     "bottleneck": "^2.19.5",
     "dotenv": "^16.4.5",
+    "moment-timezone": "^0.5.40",
     "node-cron": "^3.0.3",
     "winston": "^3.14.2",
     "ws": "^8.13.0"

@@ -16,12 +16,15 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    volumeRequirement: 800000, // Min required volume
-    gapPercentageRequirement: 20, // Min gap percentage
-    priceRange: { min: 3, max: 20 }, // Price range filter
-    initialEntryOffsetCents: -2, // Offset from HOD for initial entry (-2 means 2¢ below HOD)
+    // Volume requirements will be determined dynamically by time, but this is the base for pre-market and post-11 AM
+    baseVolumeRequirement: 800000,
+    morningVolumeRequirement: 2000000, // From 9:30 AM to 11:00 AM ET
+    gapPercentageRequirement: 20,
+    priceRange: { min: 3, max: 20 },
+    initialEntryOffsetCents: -2, // Offset from HOD for initial entry
     initialShareSize: 1000, // Initial position size
     trailingStopIncrementCents: 5, // Trailing stop increments in cents
+    initialTrailingStopOffsetCents: 20, // Initial trailing stop offset from the highest price in cents
   },
   orderSettings: {
     limitOffsetCents: 25,
@@ -36,13 +39,10 @@ module.exports = {
     ],
     pyramidLevels: [{ addInCents: 25, percentToAdd: 1, offsetCents: 4 }],
   },
-  trailingStopSettings: {
-    // Additional trailing stop parameters can be added here if needed
-  },
   pollingIntervals: {
-    orderStatus: 1000, // Poll order statuses every second
-    positionRefresh: 2000, // Refresh positions every 2 seconds
-    watchlistRefresh: 60000, // Refresh watchlist every 1 minute
+    orderStatus: 1000,
+    positionRefresh: 2000,
+    watchlistRefresh: 15000, // Refresh watchlist every 15 seconds
   },
   logging: {
     level: 'info',

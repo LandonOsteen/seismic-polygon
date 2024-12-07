@@ -1,5 +1,3 @@
-// logger.js
-
 const winston = require('winston');
 
 const logger = winston.createLogger({
@@ -15,11 +13,10 @@ const logger = winston.createLogger({
     new winston.transports.File({
       filename: 'trading-exit-system-error.log',
       level: 'error',
-    }), // Log errors to file
+    }),
     new winston.transports.File({
       filename: 'trading-exit-system-combined.log',
-    }), // Log all to a combined file
-    // Removed console transport to prevent logs from overlapping the dashboard
+    }),
   ],
 });
 
