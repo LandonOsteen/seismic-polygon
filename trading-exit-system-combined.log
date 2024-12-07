@@ -23,3 +23,15 @@
 2024-12-07T21:41:21.058Z [INFO]: Polygon WebSocket connection opened.
 2024-12-07T21:41:21.060Z [INFO]: Polygon WebSocket connected.
 2024-12-07T21:41:21.107Z [INFO]: Polygon WebSocket authenticated.
+2024-12-07T21:43:14.765Z [INFO]: Polygon WebSocket connected.
+2024-12-07T21:43:14.770Z [INFO]: Started polling for order statuses.
+2024-12-07T21:43:14.960Z [INFO]: Polygon WebSocket connection opened.
+2024-12-07T21:43:14.962Z [INFO]: Polygon WebSocket connected.
+2024-12-07T21:43:15.010Z [INFO]: Polygon WebSocket authenticated.
+2024-12-07T21:43:15.513Z [INFO]: Subscribed to BTCT quotes.
+2024-12-07T21:47:34.589Z [INFO]: Polygon WebSocket connected.
+2024-12-07T21:47:34.595Z [INFO]: Started polling for order statuses.
+2024-12-07T21:47:34.798Z [INFO]: Polygon WebSocket connection opened.
+2024-12-07T21:47:34.799Z [INFO]: Polygon WebSocket connected.
+2024-12-07T21:47:34.846Z [INFO]: Polygon WebSocket authenticated.
+2024-12-07T21:47:35.538Z [INFO]: Subscribed to BTCT quotes.

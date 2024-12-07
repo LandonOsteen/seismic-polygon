@@ -1,3 +1,4 @@
+// Dashboard.js
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -10,8 +11,9 @@ class Dashboard {
       title: 'Trading Exit System Dashboard',
     });
 
+    // Updated grid to have 16 rows to accommodate the Watchlist
     this.grid = new contrib.grid({
-      rows: 12,
+      rows: 16,
       cols: 12,
       screen: this.screen,
     });
@@ -136,6 +138,7 @@ class Dashboard {
       data: [],
     });
 
+    // Exit Keys
     this.screen.key(['escape', 'q', 'C-c'], () => {
       return process.exit(0);
     });
@@ -143,6 +146,11 @@ class Dashboard {
     this.screen.render();
   }
 
+  /**
+   * Logs an informational message to the Info Box.
+   * Filters out excluded messages based on config.
+   * @param {string} message - The message to log.
+   */
   logInfo(message) {
     if (this.shouldDisplayMessage(message)) {
       const timestamp = new Date().toISOString();
@@ -151,18 +159,31 @@ class Dashboard {
     }
   }
 
+  /**
+   * Logs a warning message to the Warnings Box.
+   * @param {string} message - The warning message.
+   */
   logWarning(message) {
     const timestamp = new Date().toISOString();
     this.warningBox.log(`[${timestamp}] WARNING: ${message}`);
     this.screen.render();
   }
 
+  /**
+   * Logs an error message to the Errors Box.
+   * @param {string} message - The error message.
+   */
   logError(message) {
     const timestamp = new Date().toISOString();
     this.errorBox.log(`[${timestamp}] ERROR: ${message}`);
     this.screen.render();
   }
 
+  /**
+   * Determines whether a message should be displayed based on exclusions.
+   * @param {string} message - The message to evaluate.
+   * @returns {boolean} - True if the message should be displayed.
+   */
   shouldDisplayMessage(message) {
     const excludedMessages = config.logging.excludedMessages || [];
     return !excludedMessages.some((excludedMsg) =>
@@ -170,6 +191,10 @@ class Dashboard {
     );
   }
 
+  /**
+   * Updates the Positions Table with the latest positions data.
+   * @param {Array} positions - Array of position objects.
+   */
   updatePositions(positions) {
     const tableData = positions.map((pos) => {
       const profitCents = parseFloat(pos.profitCents);
@@ -184,15 +209,13 @@ class Dashboard {
         ? `$${pos.stopPrice.toFixed(2)} (${stopCentsDisplay})`
         : 'N/A';
 
-      const totalProfitTargets = pos.totalProfitTargets;
       const profitTargetsHit = pos.profitTargetsHit
-        ? `${pos.profitTargetsHit}/${totalProfitTargets}`
-        : `0/${totalProfitTargets}`;
+        ? `${pos.profitTargetsHit}/${pos.totalProfitTargets}`
+        : `0/${pos.totalProfitTargets}`;
 
-      const totalPyramidLevels = pos.totalPyramidLevels;
       const pyramidLevelsHit = pos.pyramidLevelsHit
-        ? `${pos.pyramidLevelsHit}/${totalPyramidLevels}`
-        : `0/${totalPyramidLevels}`;
+        ? `${pos.pyramidLevelsHit}/${pos.totalPyramidLevels}`
+        : `0/${pos.totalPyramidLevels}`;
 
       return [
         pos.symbol,
@@ -228,6 +251,10 @@ class Dashboard {
     this.screen.render();
   }
 
+  /**
+   * Updates the Orders Table with the latest orders data.
+   * @param {Array} orders - Array of order objects.
+   */
   updateOrders(orders) {
     const tableData = orders.map((order) => {
       const limitPrice = order.limit_price
@@ -255,6 +282,11 @@ class Dashboard {
     this.screen.render();
   }
 
+  /**
+   * Applies color coding to the Positions Table rows based on profit.
+   * Green for profit, Red for loss, Yellow for neutral.
+   * @param {Array} positions - Array of position objects.
+   */
   applyRowColors(positions) {
     const rows = this.positionsTable.rows;
     positions.forEach((pos, index) => {
@@ -269,18 +301,28 @@ class Dashboard {
     });
   }
 
+  /**
+   * Updates the Account Summary Box with the latest account data.
+   * @param {object} accountSummary - The account summary object.
+   */
   updateAccountSummary(accountSummary) {
     const content = `### Account Summary
 
-- **Equity**: $${accountSummary.equity}
-- **Cash**: $${accountSummary.cash}
-- **Day's P&L**: $${accountSummary.pnl} (${accountSummary.pnl_percentage}%)
-- **Open P&L**: $${accountSummary.unrealized_pl}
+- **Equity**: $${parseFloat(accountSummary.equity).toFixed(2)}
+- **Cash**: $${parseFloat(accountSummary.cash).toFixed(2)}
+- **Day's P&L**: $${parseFloat(accountSummary.pnl).toFixed(2)} (${parseFloat(
+      accountSummary.pnl_percentage
+    ).toFixed(2)}%)
+- **Open P&L**: $${parseFloat(accountSummary.unrealized_pl).toFixed(2)}
 `;
     this.accountSummaryBox.setMarkdown(content);
     this.screen.render();
   }
 
+  /**
+   * Updates the Watchlist Table with the latest watchlist data.
+   * @param {object} watchlist - The watchlist object.
+   */
   updateWatchlist(watchlist) {
     const data = Object.keys(watchlist).map((symbol) => {
       const hod = watchlist[symbol].highOfDay;

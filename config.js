@@ -62,6 +62,7 @@ module.exports = {
   // **Manual Override Symbols**
   // Symbols listed here will be **always added** to the watchlist, regardless of filter criteria.
   overrideAddSymbols: [
+    'BTCT',
     // Example: "AAPL", "TSLA"
     // Add symbols you want to manually include in the watchlist
   ],
