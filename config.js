@@ -23,8 +23,8 @@ module.exports = {
     ],
     dynamicStops: [
       { profitTargetsHit: 0, stopCents: -35 },
-      { profitTargetsHit: 1, stopCents: -25 },
-      { profitTargetsHit: 2, stopCents: -20 },
+      { profitTargetsHit: 1, stopCents: -15 },
+      { profitTargetsHit: 2, stopCents: -0 },
     ],
     pyramidLevels: [{ addInCents: 25, percentToAdd: 1, offsetCents: 4 }],
   },
