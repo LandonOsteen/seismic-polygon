@@ -134,7 +134,7 @@ class Dashboard {
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HIGH OF DAY'],
+      headers: ['SYMBOL', 'HOD'],
       data: [],
     });
 
@@ -330,7 +330,7 @@ class Dashboard {
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HIGH OF DAY'],
+      headers: ['SYMBOL', 'HOD'],
       data: data,
     });
     this.screen.render();
