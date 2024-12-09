@@ -61,3 +61,9 @@
 2024-12-07T22:58:10.338Z [INFO]: Polygon WebSocket connected.
 2024-12-07T22:58:10.383Z [INFO]: Polygon WebSocket authenticated.
 2024-12-07T22:58:10.913Z [INFO]: Subscribed to BTCT quotes.
+2024-12-09T03:15:32.330Z [INFO]: Polygon WebSocket connected.
+2024-12-09T03:15:32.338Z [INFO]: Started polling for order statuses.
+2024-12-09T03:15:32.668Z [INFO]: Polygon WebSocket connection opened.
+2024-12-09T03:15:32.669Z [INFO]: Polygon WebSocket connected.
+2024-12-09T03:15:32.719Z [INFO]: Polygon WebSocket authenticated.
+2024-12-09T03:15:33.011Z [INFO]: Subscribed to BTCT quotes.

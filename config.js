@@ -18,14 +18,14 @@ module.exports = {
   },
   strategySettings: {
     // Volume requirements will be determined dynamically by time, but this is the base for pre-market and post-11 AM
-    baseVolumeRequirement: 800000,
+    baseVolumeRequirement: 1500000,
     morningVolumeRequirement: 2000000, // From 9:30 AM to 11:00 AM ET
     gapPercentageRequirement: 20, // Minimum gap percentage
     priceRange: { min: 3, max: 20 }, // Stock price range in USD
-    initialEntryOffsetCents: -1, // Offset from HOD for initial entry (-2 = 2¢ below)
+    initialEntryOffsetCents: 1, // Offset from HOD for initial entry (-2 = 2¢ below)
     initialShareSize: 3000, // Number of shares for the initial position
     trailingStopIncrementCents: 5, // Trailing stop increments in cents
-    initialTrailingStopOffsetCents: 30, // Initial trailing stop offset from the highest price in cents
+    initialTrailingStopOffsetCents: 20, // Initial trailing stop offset from the highest price in cents
   },
   orderSettings: {
     limitOffsetCents: 15, // Offset for limit orders in cents
@@ -62,7 +62,6 @@ module.exports = {
   // **Manual Override Symbols**
   // Symbols listed here will be **always added** to the watchlist, regardless of filter criteria.
   overrideAddSymbols: [
-    'BTCT',
     // Example: "AAPL", "TSLA"
     // Add symbols you want to manually include in the watchlist
   ],
