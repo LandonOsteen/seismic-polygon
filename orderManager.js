@@ -78,6 +78,15 @@ class OrderManager {
     ) {
       this.dashboard.setOrderTracking(this.orderTracking);
     }
+
+    // Add Global Unhandled Rejection Handler
+    process.on('unhandledRejection', (reason, promise) => {
+      const errorMsg = `Unhandled Rejection at: ${promise}, reason: ${reason}`;
+      logger.error(errorMsg);
+      this.dashboard.logError(errorMsg);
+      // Optionally, you can decide to exit the process or attempt recovery
+      // process.exit(1);
+    });
   }
 
   reloadDynamicOverrides() {
@@ -261,21 +270,28 @@ class OrderManager {
   }
 
   async addSymbolToWatchlist(symbol) {
-    const hod = await this.restClient.getIntradayHigh(symbol);
-    if (!this.watchlist[symbol]) {
-      this.watchlist[symbol] = {
-        highOfDay: hod,
-        lastEntryTime: null,
-        hasPosition: !!this.positions[symbol],
-        hasPendingEntryOrder: false,
-      };
-      this.polygon.subscribe(symbol);
-    } else {
-      this.watchlist[symbol].highOfDay = hod;
-      this.watchlist[symbol].hasPosition = !!this.positions[symbol];
-      if (this.watchlist[symbol].hasPendingEntryOrder === undefined) {
-        this.watchlist[symbol].hasPendingEntryOrder = false;
+    try {
+      const hod = await this.restClient.getIntradayHigh(symbol);
+      if (!this.watchlist[symbol]) {
+        this.watchlist[symbol] = {
+          highOfDay: hod,
+          lastEntryTime: null,
+          hasPosition: !!this.positions[symbol],
+          hasPendingEntryOrder: false,
+        };
+        this.polygon.subscribe(symbol);
+      } else {
+        this.watchlist[symbol].highOfDay = hod;
+        this.watchlist[symbol].hasPosition = !!this.positions[symbol];
+        if (this.watchlist[symbol].hasPendingEntryOrder === undefined) {
+          this.watchlist[symbol].hasPendingEntryOrder = false;
+        }
       }
+      this.dashboard.updateWatchlist(this.watchlist);
+    } catch (err) {
+      const errorMsg = `Error adding symbol ${symbol} to watchlist: ${err.message}`;
+      logger.error(errorMsg);
+      this.dashboard.logError(errorMsg);
     }
   }
 
@@ -284,6 +300,7 @@ class OrderManager {
       this.polygon.unsubscribe(symbol);
       delete this.watchlist[symbol];
       this.dashboard.logInfo(`Symbol ${symbol} removed from watchlist.`);
+      this.dashboard.updateWatchlist(this.watchlist);
     }
   }
 
@@ -447,13 +464,19 @@ class OrderManager {
       const currentPrice = askPrice;
       // Update HOD if currentPrice exceeds known HOD
       if (currentPrice > w.highOfDay) {
-        const newHod = await this.restClient.getIntradayHigh(upperSymbol);
-        if (newHod && newHod > w.highOfDay) {
-          w.highOfDay = newHod;
-          this.dashboard.logInfo(
-            `HOD updated for ${upperSymbol}: $${newHod.toFixed(2)}`
-          );
-          this.dashboard.updateWatchlist(this.watchlist);
+        try {
+          const newHod = await this.restClient.getIntradayHigh(upperSymbol);
+          if (newHod && newHod > w.highOfDay) {
+            w.highOfDay = newHod;
+            this.dashboard.logInfo(
+              `HOD updated for ${upperSymbol}: $${newHod.toFixed(2)}`
+            );
+            this.dashboard.updateWatchlist(this.watchlist);
+          }
+        } catch (err) {
+          const errorMsg = `Error updating HOD for ${upperSymbol}: ${err.message}`;
+          logger.error(errorMsg);
+          this.dashboard.logError(errorMsg);
         }
       }
 
@@ -490,7 +513,9 @@ class OrderManager {
             );
           } catch (err) {
             w.hasPendingEntryOrder = false;
-            throw err;
+            const errorMsg = `Error placing entry order for ${upperSymbol}: ${err.message}`;
+            logger.error(errorMsg);
+            this.dashboard.logError(errorMsg);
           }
         }
       }
@@ -722,7 +747,9 @@ class OrderManager {
     } catch (err) {
       if (this.watchlist[symbol])
         this.watchlist[symbol].hasPendingEntryOrder = false;
-      throw err;
+      const errorMsg = `Error placing entry order for ${symbol}: ${err.message}`;
+      logger.error(errorMsg);
+      this.dashboard.logError(errorMsg);
     }
   }
 
@@ -1127,17 +1154,30 @@ class OrderManager {
       return await operation();
     } catch (err) {
       if (retries <= 0) throw err;
-      if (err.response && err.response.status === 429) {
+      if (
+        err.response &&
+        (err.response.status === 429 ||
+          (err.response.status >= 500 && err.response.status < 600))
+      ) {
+        // Retry on 429 and 5xx errors
         const jitter = Math.random() * 1000;
         const totalDelay = delay + jitter;
-        const message = `Rate limit hit. Retrying in ${totalDelay.toFixed(
-          0
-        )}ms...`;
+        let message = '';
+
+        if (err.response.status === 429) {
+          message = `Rate limit hit. Retrying in ${totalDelay.toFixed(0)}ms...`;
+        } else {
+          message = `Server error ${
+            err.response.status
+          }. Retrying in ${totalDelay.toFixed(0)}ms...`;
+        }
+
         logger.warn(message);
         this.dashboard.logWarning(message);
         await this.sleep(totalDelay);
         return this.retryOperation(operation, retries - 1, delay * 2);
       }
+      // For other errors, do not retry
       throw err;
     }
   }
