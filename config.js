@@ -23,8 +23,8 @@ module.exports = {
     initialEntryOffsetCents: -1, // HOD breakout offset
     entryLimitOffsetCents: 10, // Additional limit offset for entry orders
     initialShareSize: 3000,
-    trailingStopIncrementCents: 10,
-    initialTrailingStopOffsetCents: 50,
+    trailingStopIncrementCents: 5,
+    initialTrailingStopOffsetCents: 25,
     openingOrderCooldownSeconds: 5,
   },
   orderSettings: {
@@ -37,15 +37,14 @@ module.exports = {
       { targetCents: 50, percentToClose: 50 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -20 },
-      { profitTargetsHit: 1, stopCents: -15 },
+      { profitTargetsHit: 0, stopCents: -15 },
+      { profitTargetsHit: 1, stopCents: -10 },
       { profitTargetsHit: 2, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 5 },
-      { profitTargetsHit: 4, stopCents: 10 },
     ],
     pyramidLevels: [
       { addInCents: 2, percentToAdd: 40, offsetCents: 10 },
-      { addInCents: 15, percentToAdd: 10, offsetCents: 6 },
+      { addInCents: 12, percentToAdd: 20, offsetCents: 6 },
     ],
   },
   orderTimeouts: {

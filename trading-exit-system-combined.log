@@ -2176,3 +2176,145 @@
 2024-12-09T18:26:56.389Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-09T18:27:11.386Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-09T18:27:26.390Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:27:41.387Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:27:56.394Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:28:11.395Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:28:26.392Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:28:41.395Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:28:56.397Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:29:11.396Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:29:12.383Z [INFO]: Subscribed to HUIZ quotes.
+2024-12-09T18:29:26.396Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:29:41.400Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:29:56.402Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:30:11.402Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:30:26.402Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:30:41.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:30:56.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:31:11.407Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:31:26.407Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:31:41.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:31:56.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:32:11.408Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:32:23.863Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"MGX","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.91","extended_hours":true,"client_order_id":"ENTRY-b37554e6a302c3f6"}
+2024-12-09T18:32:24.062Z [INFO]: Entry order placed for 3000 shares of MGX at $3.91. Order ID: f569ab2b-ed67-4146-9e3e-c475356914be
+2024-12-09T18:32:25.071Z [INFO]: Position added: MGX | Qty: 3000 | Avg Entry: $3.82
+2024-12-09T18:32:26.413Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:32:41.413Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:32:56.412Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:33:11.413Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:33:26.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:33:41.414Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:33:56.417Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:34:11.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:34:26.418Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:34:41.419Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:34:56.420Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:35:11.423Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:35:17.557Z [INFO]: Subscribed to REAL quotes.
+2024-12-09T18:35:26.419Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:35:31.768Z [INFO]: Unsubscribed from REAL quotes.
+2024-12-09T18:35:41.424Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:35:48.212Z [INFO]: Subscribed to REAL quotes.
+2024-12-09T18:35:56.428Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:36:01.771Z [INFO]: Unsubscribed from REAL quotes.
+2024-12-09T18:36:11.429Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:36:26.431Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:36:41.428Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:36:56.435Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:37:11.435Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:37:26.434Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:37:41.439Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:37:56.442Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:38:11.441Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:38:26.441Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:38:41.469Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:38:56.482Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:39:11.489Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:39:26.490Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:39:41.491Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:39:56.494Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:40:11.499Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:40:26.502Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:40:41.500Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:40:56.504Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:41:11.503Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:41:26.506Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:41:41.508Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:41:46.618Z [INFO]: Unsubscribed from SONN quotes.
+2024-12-09T18:41:56.507Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:42:01.795Z [INFO]: Subscribed to SONN quotes.
+2024-12-09T18:42:11.508Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:42:26.508Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:42:28.815Z [INFO]: Polygon WebSocket connected.
+2024-12-09T18:42:28.822Z [INFO]: Started polling for order statuses.
+2024-12-09T18:42:28.981Z [INFO]: Position added: MGX | Qty: 3000 | Avg Entry: $3.82
+2024-12-09T18:42:29.016Z [INFO]: Polygon WebSocket connection opened.
+2024-12-09T18:42:29.017Z [INFO]: Polygon WebSocket connected.
+2024-12-09T18:42:29.069Z [INFO]: Polygon WebSocket authenticated.
+2024-12-09T18:42:29.863Z [INFO]: Subscribed to HUIZ quotes.
+2024-12-09T18:42:32.288Z [INFO]: Subscribed to GXAI quotes.
+2024-12-09T18:42:32.920Z [INFO]: Subscribed to GELS quotes.
+2024-12-09T18:42:33.792Z [INFO]: Subscribed to SONN quotes.
+2024-12-09T18:42:43.829Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:42:47.610Z [INFO]: Unsubscribed from SONN quotes.
+2024-12-09T18:42:58.827Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:43:03.195Z [INFO]: Subscribed to SONN quotes.
+2024-12-09T18:43:13.827Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:43:28.827Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:43:43.832Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:43:48.013Z [INFO]: Unsubscribed from SONN quotes.
+2024-12-09T18:43:58.831Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:44:02.883Z [INFO]: Subscribed to SONN quotes.
+2024-12-09T18:44:13.834Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:44:28.834Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:44:43.885Z [INFO]: Stop condition met for MGX. Closing position.
+2024-12-09T18:44:43.888Z [INFO]: Closing position with limit order: {"symbol":"MGX","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.27","extended_hours":true,"client_order_id":"CLOSE-6bd340ef65cd7242"}
+2024-12-09T18:44:43.957Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:44:44.119Z [INFO]: Limit order placed to close position in MGX. Order ID: 41a7e4c4-064a-4f28-9132-507953126f50
+2024-12-09T18:44:45.159Z [INFO]: Position removed: MGX
+2024-12-09T18:44:58.967Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:45:13.970Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:45:28.969Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:45:43.969Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:45:58.969Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:46:13.972Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:46:20.213Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"GELS","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.84","extended_hours":true,"client_order_id":"ENTRY-ac3707ff72f372a4"}
+2024-12-09T18:46:20.565Z [INFO]: Entry order placed for 3000 shares of GELS at $3.84. Order ID: 5d40a4b6-f08e-4696-9347-8f6a6fd879a5
+2024-12-09T18:46:21.079Z [INFO]: Position added: GELS | Qty: 2811 | Avg Entry: $3.744959
+2024-12-09T18:46:21.438Z [INFO]: Order 5d40a4b6-f08e-4696-9347-8f6a6fd879a5 filled 1394 qty for GELS. New qty: 4205, New Avg Entry Price: $3.78
+2024-12-09T18:46:28.973Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:46:43.972Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:46:58.969Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:47:07.342Z [INFO]: Profit target hit for GELS: +8.22¢ >= +8¢
+2024-12-09T18:47:07.345Z [INFO]: Attempting to place limit order: {"symbol":"GELS","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.43","extended_hours":true,"client_order_id":"LIMIT-7d609655093d2755"}
+2024-12-09T18:47:07.793Z [INFO]: Placed limit order for 300 shares of GELS. Order ID: 57efa5c6-3b65-40ea-aa1b-97717cf5d86b
+2024-12-09T18:47:08.489Z [INFO]: Order 57efa5c6-3b65-40ea-aa1b-97717cf5d86b filled 160 qty for GELS. Remaining qty: 2682
+2024-12-09T18:47:09.454Z [INFO]: Order 57efa5c6-3b65-40ea-aa1b-97717cf5d86b filled 277 qty for GELS. Remaining qty: 2469
+2024-12-09T18:47:10.283Z [INFO]: Order 57efa5c6-3b65-40ea-aa1b-97717cf5d86b filled 280 qty for GELS. Remaining qty: 2189
+2024-12-09T18:47:10.801Z [INFO]: Profit target hit for GELS: +11.22¢ >= +10¢
+2024-12-09T18:47:10.806Z [INFO]: Attempting to place limit order: {"symbol":"GELS","qty":"437","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.46","extended_hours":true,"client_order_id":"LIMIT-ddfd3789f54b8623"}
+2024-12-09T18:47:10.974Z [INFO]: Placed limit order for 437 shares of GELS. Order ID: 7d585611-4f74-40db-82b5-38f87de5e40a
+2024-12-09T18:47:11.674Z [INFO]: Order 7d585611-4f74-40db-82b5-38f87de5e40a filled 354 qty for GELS. Remaining qty: 2346
+2024-12-09T18:47:13.974Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:47:28.974Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:47:32.942Z [INFO]: Stop condition met for GELS. Closing position.
+2024-12-09T18:47:32.944Z [INFO]: Closing position with limit order: {"symbol":"GELS","qty":"2263","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.33","extended_hours":true,"client_order_id":"CLOSE-bdf62abc0b399f1a"}
+2024-12-09T18:47:33.150Z [INFO]: Limit order placed to close position in GELS. Order ID: 5a606257-f185-40b3-9fe5-eb59f38cf6d9
+2024-12-09T18:47:33.921Z [INFO]: Order 5a606257-f185-40b3-9fe5-eb59f38cf6d9 filled 661 qty for GELS. Remaining qty: 1602
+2024-12-09T18:47:34.294Z [INFO]: Order 5a606257-f185-40b3-9fe5-eb59f38cf6d9 filled 946 qty for GELS. Remaining qty: 656
+2024-12-09T18:47:35.182Z [INFO]: Position removed: GELS
+2024-12-09T18:47:43.976Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:47:58.976Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:48:13.978Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-09T18:48:28.979Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T01:26:20.967Z [INFO]: Polygon WebSocket connected.
+2024-12-10T01:26:20.974Z [INFO]: Started polling for order statuses.
+2024-12-10T01:26:21.210Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T01:26:21.212Z [INFO]: Polygon WebSocket connected.
+2024-12-10T01:26:21.278Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T01:26:22.485Z [INFO]: Subscribed to MGX quotes.
+2024-12-10T01:26:23.158Z [INFO]: Subscribed to GELS quotes.
+2024-12-10T01:26:23.759Z [INFO]: Subscribed to HUIZ quotes.
+2024-12-10T01:26:24.701Z [INFO]: Subscribed to GXAI quotes.
+2024-12-10T01:26:35.983Z [INFO]: Dynamic config reloaded. Updated override symbols.
