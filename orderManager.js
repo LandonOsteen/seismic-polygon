@@ -162,7 +162,8 @@ class OrderManager {
     for (const symbol of this.overrideRemoveList) {
       if (this.watchlist[symbol]) {
         if (!this.positions[symbol]) {
-          this.polygon.unsubscribe(symbol);
+          this.polygon.unsubscribeTrade(symbol); // Unsubscribe from trade-level data
+          this.polygon.unsubscribeQuote(symbol); // Unsubscribe from quote data if subscribed
         }
         delete this.watchlist[symbol];
         this.dashboard.logInfo(
@@ -180,8 +181,9 @@ class OrderManager {
           lastEntryTime: null,
           hasPosition: !!this.positions[symbol],
           hasPendingEntryOrder: false,
+          isHODFrozen: false, // For freezing HOD during pending entry
         };
-        this.polygon.subscribe(symbol);
+        this.polygon.subscribeQuote(symbol); // Subscribe to quote data
         this.dashboard.logInfo(
           `Symbol ${symbol} added to watchlist due to override add list.`
         );
@@ -278,13 +280,15 @@ class OrderManager {
           lastEntryTime: null,
           hasPosition: !!this.positions[symbol],
           hasPendingEntryOrder: false,
+          isHODFrozen: false,
         };
-        this.polygon.subscribe(symbol);
+        this.polygon.subscribeQuote(symbol); // Subscribe to quote data
       } else {
         this.watchlist[symbol].highOfDay = hod;
         this.watchlist[symbol].hasPosition = !!this.positions[symbol];
         if (this.watchlist[symbol].hasPendingEntryOrder === undefined) {
           this.watchlist[symbol].hasPendingEntryOrder = false;
+          this.watchlist[symbol].isHODFrozen = false;
         }
       }
       this.dashboard.updateWatchlist(this.watchlist);
@@ -297,7 +301,8 @@ class OrderManager {
 
   removeSymbolFromWatchlist(symbol) {
     if (this.watchlist[symbol] && !this.positions[symbol]) {
-      this.polygon.unsubscribe(symbol);
+      this.polygon.unsubscribeTrade(symbol); // Unsubscribe from trade-level data
+      this.polygon.unsubscribeQuote(symbol); // Unsubscribe from quote data
       delete this.watchlist[symbol];
       this.dashboard.logInfo(`Symbol ${symbol} removed from watchlist.`);
       this.dashboard.updateWatchlist(this.watchlist);
@@ -394,7 +399,7 @@ class OrderManager {
     logger.info(message);
     this.dashboard.logInfo(message);
 
-    this.polygon.subscribe(symbol);
+    this.polygon.subscribeQuote(symbol);
     this.dashboard.updatePositions(Object.values(this.positions));
 
     if (this.watchlist[symbol]) {
@@ -411,7 +416,8 @@ class OrderManager {
       this.dashboard.logInfo(message);
 
       if (!this.watchlist[symbol]) {
-        this.polygon.unsubscribe(symbol);
+        this.polygon.unsubscribeTrade(symbol); // Ensure trade-level data is unsubscribed
+        this.polygon.unsubscribeQuote(symbol);
       }
 
       this.dashboard.updatePositions(Object.values(this.positions));
@@ -426,6 +432,8 @@ class OrderManager {
   async onQuoteUpdate(symbol, bidPrice, askPrice) {
     const upperSymbol = symbol.toUpperCase();
     const pos = this.positions[upperSymbol];
+    const w = this.watchlist[upperSymbol];
+
     if (pos && pos.isActive) {
       await this.handlePositionQuoteUpdate(
         pos,
@@ -452,8 +460,7 @@ class OrderManager {
       }
     }
 
-    if (this.watchlist[upperSymbol]) {
-      const w = this.watchlist[upperSymbol];
+    if (w) {
       const {
         initialEntryOffsetCents,
         initialShareSize,
@@ -462,8 +469,8 @@ class OrderManager {
       const openingOrderCooldownMs = openingOrderCooldownSeconds * 1000;
 
       const currentPrice = askPrice;
-      // Update HOD if currentPrice exceeds known HOD
-      if (currentPrice > w.highOfDay) {
+      // Update HOD if currentPrice exceeds known HOD and HOD is not frozen
+      if (currentPrice > w.highOfDay && !w.isHODFrozen) {
         try {
           const newHod = await this.restClient.getIntradayHigh(upperSymbol);
           if (newHod && newHod > w.highOfDay) {
@@ -478,6 +485,22 @@ class OrderManager {
           logger.error(errorMsg);
           this.dashboard.logError(errorMsg);
         }
+      }
+
+      // Manage Trade-Level Subscription based on proximity to HOD
+      const distanceToHODCents = (w.highOfDay - currentPrice) * 100;
+      if (distanceToHODCents <= 20 && !w.isSubscribedToTrade) {
+        this.polygon.subscribeTrade(upperSymbol);
+        w.isSubscribedToTrade = true;
+        this.dashboard.logInfo(
+          `Subscribed to trade-level data for ${upperSymbol} (within 20 cents of HOD).`
+        );
+      } else if (distanceToHODCents > 20 && w.isSubscribedToTrade) {
+        this.polygon.unsubscribeTrade(upperSymbol);
+        w.isSubscribedToTrade = false;
+        this.dashboard.logInfo(
+          `Unsubscribed from trade-level data for ${upperSymbol} (moved beyond 20 cents of HOD).`
+        );
       }
 
       // Attempt anticipation entry order if conditions met:
@@ -498,6 +521,8 @@ class OrderManager {
           w.hasPendingEntryOrder = true;
 
           const targetPrice = w.highOfDay + initialEntryOffsetCents / 100;
+          w.isHODFrozen = true; // Freeze HOD during pending entry
+
           this.dashboard.logInfo(
             `Anticipation entry for ${upperSymbol}: targetPrice=$${targetPrice.toFixed(
               2
@@ -513,12 +538,40 @@ class OrderManager {
             );
           } catch (err) {
             w.hasPendingEntryOrder = false;
+            w.isHODFrozen = false; // Unfreeze HOD if order fails
             const errorMsg = `Error placing entry order for ${upperSymbol}: ${err.message}`;
             logger.error(errorMsg);
             this.dashboard.logError(errorMsg);
           }
         }
       }
+    }
+  }
+
+  async onTradeUpdate(symbol, price, size, timestamp) {
+    const upperSymbol = symbol.toUpperCase();
+    const w = this.watchlist[upperSymbol];
+
+    if (!w) return;
+
+    // Check if the trade price exceeds HOD
+    if (price > w.highOfDay) {
+      this.dashboard.logInfo(
+        `Trade breakout detected for ${upperSymbol} at $${price.toFixed(2)}`
+      );
+      await this.placeEntryOrder(
+        upperSymbol,
+        config.strategySettings.initialShareSize,
+        'buy',
+        price // Immediate market entry or limit order based on strategy
+      );
+
+      // After placing the entry order, unsubscribe from trade-level data
+      this.polygon.unsubscribeTrade(upperSymbol);
+      w.isSubscribedToTrade = false;
+      this.dashboard.logInfo(
+        `Unsubscribed from trade-level data for ${upperSymbol} after breakout.`
+      );
     }
   }
 
@@ -744,6 +797,10 @@ class OrderManager {
         triggerPrice: targetPrice,
         entryOffsetUsed: entryLimitOffsetCents,
       };
+
+      // Subscribe to trade-level data since we're near HOD
+      this.polygon.subscribeTrade(symbol);
+      this.watchlist[symbol].isSubscribedToTrade = true;
     } catch (err) {
       if (this.watchlist[symbol])
         this.watchlist[symbol].hasPendingEntryOrder = false;
@@ -890,7 +947,17 @@ class OrderManager {
         const trackedOrder = this.orderTracking[orderId];
 
         if (!openOrderIds.has(orderId)) {
+          // Order is no longer open
           delete this.orderTracking[orderId];
+
+          if (trackedOrder.type === 'entry') {
+            // Reset the pending entry order flag and unfreeze HOD
+            if (this.watchlist[trackedOrder.symbol]) {
+              this.watchlist[trackedOrder.symbol].hasPendingEntryOrder = false;
+              this.watchlist[trackedOrder.symbol].isHODFrozen = false;
+            }
+          }
+
           continue;
         }
 
@@ -914,7 +981,14 @@ class OrderManager {
           if (trackedOrder.type === 'close') {
             await this.closePositionMarketOrder(trackedOrder.symbol);
           }
-          // 'ioc', 'pyramid', and 'entry' not resent after cancellation by default
+
+          if (trackedOrder.type === 'entry') {
+            // Reset the pending entry order flag and unfreeze HOD
+            if (this.watchlist[trackedOrder.symbol]) {
+              this.watchlist[trackedOrder.symbol].hasPendingEntryOrder = false;
+              this.watchlist[trackedOrder.symbol].isHODFrozen = false;
+            }
+          }
         }
       }
 
@@ -967,6 +1041,16 @@ class OrderManager {
               ).toFixed(2);
 
               this.dashboard.updatePositions(Object.values(this.positions));
+
+              if (trackedOrder.type === 'entry') {
+                // Reset the pending entry order flag and unfreeze HOD
+                if (this.watchlist[trackedOrder.symbol]) {
+                  this.watchlist[
+                    trackedOrder.symbol
+                  ].hasPendingEntryOrder = false;
+                  this.watchlist[trackedOrder.symbol].isHODFrozen = false;
+                }
+              }
             }
           }
         }

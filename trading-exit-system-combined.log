@@ -13452,3 +13452,123 @@
 2024-12-10T18:59:33.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-10T18:59:48.291Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-10T19:00:03.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:00:18.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:00:33.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:00:48.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:01:03.297Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:01:18.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:01:33.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:01:48.298Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:02:03.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:02:18.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:02:33.303Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:02:48.303Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:03:03.303Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:03:18.302Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:03:33.303Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:03:48.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:04:03.303Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:04:18.306Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:04:33.307Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:04:48.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:05:03.307Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:05:18.310Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:05:33.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:05:48.316Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:06:03.311Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:06:18.316Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:06:33.313Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:06:48.315Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:07:03.315Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:07:18.315Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:07:33.317Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:07:48.317Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:08:03.318Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:08:18.320Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:08:33.321Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:08:48.323Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:10:21.535Z [INFO]: Polygon WebSocket connected.
+2024-12-10T19:10:21.545Z [INFO]: Started polling for order statuses.
+2024-12-10T19:10:21.721Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T19:10:21.723Z [INFO]: Polygon WebSocket connected.
+2024-12-10T19:10:21.773Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T19:10:22.345Z [INFO]: Subscribed to CRDF quote data.
+2024-12-10T19:10:22.911Z [INFO]: Subscribed to GXAI quote data.
+2024-12-10T19:10:24.285Z [INFO]: Subscribed to RGTI quote data.
+2024-12-10T19:10:36.539Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:10:44.188Z [INFO]: Polygon WebSocket connected.
+2024-12-10T19:10:44.198Z [INFO]: Started polling for order statuses.
+2024-12-10T19:10:44.362Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T19:10:44.363Z [INFO]: Polygon WebSocket connected.
+2024-12-10T19:10:44.414Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T19:10:44.970Z [INFO]: Subscribed to CRDF quote data.
+2024-12-10T19:10:45.490Z [INFO]: Subscribed to GXAI quote data.
+2024-12-10T19:10:46.244Z [INFO]: Subscribed to RGTI quote data.
+2024-12-10T19:10:59.200Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:11:00.892Z [INFO]: Unsubscribed from RGTI trade data.
+2024-12-10T19:11:14.200Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:11:29.200Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:11:44.201Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:11:59.203Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:12:14.203Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:12:29.202Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:12:44.205Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:12:59.206Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:13:14.207Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:13:29.208Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:13:44.211Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:13:59.211Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:14:14.211Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:14:29.211Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:14:44.211Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:14:59.214Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:15:14.213Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:15:29.216Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:15:44.220Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:15:59.215Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:16:14.214Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:16:29.215Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:16:44.211Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:16:59.213Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:17:14.215Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:17:29.217Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:17:30.171Z [INFO]: Subscribed to CMRX quote data.
+2024-12-10T19:17:44.218Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:17:45.538Z [INFO]: Unsubscribed from CMRX trade data.
+2024-12-10T19:17:59.218Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:18:14.221Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:18:29.224Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:18:44.225Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:18:59.229Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:19:14.229Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:19:29.228Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:19:44.230Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:19:59.232Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:20:14.232Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:20:29.237Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:20:44.240Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:20:59.242Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:21:14.240Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:21:29.245Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:21:44.240Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:21:59.244Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:22:14.245Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:22:29.251Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:22:44.254Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:22:59.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:23:14.258Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:23:29.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:23:44.255Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:23:59.258Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:24:14.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:24:29.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:24:44.266Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:24:59.266Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:25:14.269Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:25:29.270Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:25:44.273Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:25:59.274Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:26:14.275Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:26:29.276Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:26:44.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T19:26:59.280Z [INFO]: Dynamic config reloaded. Updated override symbols.
