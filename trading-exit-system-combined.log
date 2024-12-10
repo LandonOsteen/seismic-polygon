@@ -2318,3 +2318,92 @@
 2024-12-10T01:26:23.759Z [INFO]: Subscribed to HUIZ quotes.
 2024-12-10T01:26:24.701Z [INFO]: Subscribed to GXAI quotes.
 2024-12-10T01:26:35.983Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:31:39.514Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:31:39.521Z [INFO]: Started polling for order statuses.
+2024-12-10T16:31:39.686Z [INFO]: Position added: QURE | Qty: 2664 | Avg Entry: $14.266523
+2024-12-10T16:31:39.870Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T16:31:39.872Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:31:39.932Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T16:31:40.148Z [INFO]: Stop condition met for QURE. Closing position.
+2024-12-10T16:31:40.151Z [INFO]: Closing position with limit order: {"symbol":"QURE","qty":"2664","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.50","extended_hours":true,"client_order_id":"CLOSE-bb67e7b4959f969d"}
+2024-12-10T16:31:40.293Z [INFO]: Limit order placed to close position in QURE. Order ID: 147a9293-f47a-4727-b3ba-a23148d1bfa8
+2024-12-10T16:31:41.006Z [INFO]: Order 147a9293-f47a-4727-b3ba-a23148d1bfa8 filled 2544 qty for QURE. Remaining qty: 120
+2024-12-10T16:31:41.206Z [INFO]: Subscribed to GXAI quotes.
+2024-12-10T16:31:41.897Z [INFO]: Subscribed to CRDF quotes.
+2024-12-10T16:31:42.039Z [INFO]: Order 147a9293-f47a-4727-b3ba-a23148d1bfa8 filled 2658 qty for QURE. Remaining qty: -2652
+2024-12-10T16:31:42.046Z [INFO]: Position removed: QURE
+2024-12-10T16:31:42.410Z [INFO]: Subscribed to GELS quotes.
+2024-12-10T16:31:43.511Z [INFO]: Subscribed to TSE quotes.
+2024-12-10T16:31:54.528Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:32:09.527Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:32:24.260Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:32:24.268Z [INFO]: Started polling for order statuses.
+2024-12-10T16:32:24.450Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T16:32:24.451Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:32:24.501Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T16:32:25.104Z [INFO]: Subscribed to QURE quotes.
+2024-12-10T16:32:26.209Z [INFO]: Subscribed to GXAI quotes.
+2024-12-10T16:32:26.906Z [INFO]: Subscribed to CRDF quotes.
+2024-12-10T16:32:27.421Z [INFO]: Subscribed to GELS quotes.
+2024-12-10T16:32:27.776Z [INFO]: Subscribed to TSE quotes.
+2024-12-10T16:32:39.274Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:32:54.265Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:32:57.800Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:32:57.808Z [INFO]: Started polling for order statuses.
+2024-12-10T16:32:58.204Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T16:32:58.205Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:32:58.274Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T16:32:58.755Z [INFO]: Subscribed to QURE quotes.
+2024-12-10T16:32:59.510Z [INFO]: Subscribed to GXAI quotes.
+2024-12-10T16:33:00.374Z [INFO]: Subscribed to CRDF quotes.
+2024-12-10T16:33:01.118Z [INFO]: Subscribed to GELS quotes.
+2024-12-10T16:33:01.855Z [INFO]: Subscribed to TSE quotes.
+2024-12-10T16:33:12.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:33:15.800Z [INFO]: Unsubscribed from TSE quotes.
+2024-12-10T16:33:27.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:33:30.855Z [INFO]: Subscribed to TSE quotes.
+2024-12-10T16:33:42.810Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:33:57.810Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:34:12.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:34:27.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:34:42.822Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:34:57.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:35:12.811Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:35:27.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:35:42.813Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:35:45.595Z [INFO]: Unsubscribed from GELS quotes.
+2024-12-10T16:35:57.813Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:36:12.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:36:15.705Z [INFO]: Subscribed to GELS quotes.
+2024-12-10T16:36:27.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:36:30.553Z [INFO]: Unsubscribed from GELS quotes.
+2024-12-10T16:36:42.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:36:57.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:37:12.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:37:27.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:37:42.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:37:57.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:38:12.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:38:27.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:38:42.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:38:57.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:39:12.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:39:27.825Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:39:42.823Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:39:57.825Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:40:12.825Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:40:27.826Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:40:42.827Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-10T16:40:49.587Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:40:49.596Z [INFO]: Started polling for order statuses.
+2024-12-10T16:40:49.781Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T16:40:49.782Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:40:49.840Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T16:41:07.659Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:41:07.668Z [INFO]: Started polling for order statuses.
+2024-12-10T16:41:07.840Z [INFO]: Polygon WebSocket connection opened.
+2024-12-10T16:41:07.841Z [INFO]: Polygon WebSocket connected.
+2024-12-10T16:41:07.889Z [INFO]: Polygon WebSocket authenticated.
+2024-12-10T16:41:08.358Z [INFO]: Subscribed to QURE quotes.
+2024-12-10T16:41:08.713Z [INFO]: Subscribed to GXAI quotes.
+2024-12-10T16:41:09.278Z [INFO]: Subscribed to CRDF quotes.

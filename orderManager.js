@@ -212,21 +212,24 @@ class OrderManager {
         const symbol = gainer.ticker.toUpperCase();
         if (symbol.includes('.')) continue;
 
+        // Use todaysChangePerc as gapPercentageRequirement
         const gapPerc = gainer.todaysChangePerc;
         if (gapPerc < config.strategySettings.gapPercentageRequirement)
           continue;
 
-        const currentClose = gainer.day?.c || 0;
+        // Use lastQuote.P as the price reference point
+        const currentPrice = gainer.lastQuote.P || 0;
         if (
-          currentClose < config.strategySettings.priceRange.min ||
-          currentClose > config.strategySettings.priceRange.max
+          currentPrice < config.strategySettings.priceRange.min ||
+          currentPrice > config.strategySettings.priceRange.max
         )
           continue;
 
-        const volume = await this.restClient.getIntradayVolume(symbol);
+        // Use min.v as the volume requirement
+        const volume = gainer.min.v || 0;
         this.topGainers[symbol] = {
           symbol,
-          dayClose: currentClose,
+          dayClose: currentPrice,
           gapPerc,
           volume,
         };
@@ -422,7 +425,7 @@ class OrderManager {
       !this.positions[upperSymbol]
     ) {
       const currentVolumeRequirement = this.getCurrentVolumeRequirement();
-      const volume = await this.restClient.getIntradayVolume(upperSymbol);
+      const volume = this.topGainers[upperSymbol].volume; // Using min.v from gainers response
       if (volume >= currentVolumeRequirement) {
         await this.addSymbolToWatchlist(upperSymbol);
         this.dashboard.logInfo(
