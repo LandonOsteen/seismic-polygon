@@ -1,4 +1,3 @@
-// polygonClient.js
 const WebSocket = require('ws');
 const config = require('./config');
 const logger = require('./logger');
@@ -7,9 +6,10 @@ class PolygonClient {
   constructor() {
     this.apiKey = config.polygon.apiKey;
     this.ws = null;
-    this.subscribedSymbols = new Set();
-    this.onTrade = null; // Callback for trade events
-    this.onQuote = null; // Callback for quote events
+    this.subscribedQuotes = new Set();
+    this.subscribedTrades = new Set();
+    this.onTrade = null;
+    this.onQuote = null;
   }
 
   connect() {
@@ -33,14 +33,7 @@ class PolygonClient {
         if (msg.ev === 'status') {
           if (msg.status === 'auth_success') {
             logger.info('Polygon WebSocket authenticated.');
-            if (this.subscribedSymbols.size > 0) {
-              const symbols = Array.from(this.subscribedSymbols)
-                .map((sym) => `T.${sym},Q.${sym}`)
-                .join(',');
-              this.ws.send(
-                JSON.stringify({ action: 'subscribe', params: symbols })
-              );
-            }
+            this.resubscribeAll();
           } else if (msg.status === 'auth_failed') {
             logger.error('Polygon WebSocket authentication failed.');
             this.ws.close();
@@ -68,25 +61,37 @@ class PolygonClient {
 
     this.ws.on('close', (code, reason) => {
       logger.warn(`Polygon WebSocket closed. Code: ${code}, Reason: ${reason}`);
-      setTimeout(() => this.connect(), 10000); // Reconnect after 10 seconds
+      setTimeout(() => this.connect(), 10000);
     });
   }
 
+  resubscribeAll() {
+    const quoteSymbols = Array.from(this.subscribedQuotes).map(
+      (sym) => `Q.${sym}`
+    );
+    const tradeSymbols = Array.from(this.subscribedTrades).map(
+      (sym) => `T.${sym}`
+    );
+    const params = [...quoteSymbols, ...tradeSymbols].join(',');
+    if (params.length > 0) {
+      this.ws.send(JSON.stringify({ action: 'subscribe', params }));
+      logger.info(`Resubscribed to: ${params}`);
+    }
+  }
+
   subscribeQuote(symbol) {
-    if (!this.subscribedSymbols.has(symbol)) {
-      this.subscribedSymbols.add(symbol);
-      if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-        this.ws.send(
-          JSON.stringify({ action: 'subscribe', params: `Q.${symbol}` })
-        );
-        logger.info(`Subscribed to ${symbol} quote data.`);
-      }
+    this.subscribedQuotes.add(symbol);
+    if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+      this.ws.send(
+        JSON.stringify({ action: 'subscribe', params: `Q.${symbol}` })
+      );
+      logger.info(`Subscribed to ${symbol} quote data.`);
     }
   }
 
   unsubscribeQuote(symbol) {
-    if (this.subscribedSymbols.has(symbol)) {
-      this.subscribedSymbols.delete(symbol);
+    if (this.subscribedQuotes.has(symbol)) {
+      this.subscribedQuotes.delete(symbol);
       if (this.ws && this.ws.readyState === WebSocket.OPEN) {
         this.ws.send(
           JSON.stringify({ action: 'unsubscribe', params: `Q.${symbol}` })
@@ -97,29 +102,18 @@ class PolygonClient {
   }
 
   subscribeTrade(symbol) {
-    if (!this.subscribedSymbols.has(symbol)) {
-      this.subscribedSymbols.add(symbol);
-      if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-        this.ws.send(
-          JSON.stringify({ action: 'subscribe', params: `T.${symbol}` })
-        );
-        logger.info(`Subscribed to ${symbol} trade data.`);
-      }
-    } else {
-      // If already subscribed to quotes, add trade subscription
-      const currentSubscriptions = Array.from(this.subscribedSymbols);
-      if (!currentSubscriptions.includes(symbol)) {
-        this.ws.send(
-          JSON.stringify({ action: 'subscribe', params: `T.${symbol}` })
-        );
-        logger.info(`Subscribed to ${symbol} trade data.`);
-      }
+    this.subscribedTrades.add(symbol);
+    if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+      this.ws.send(
+        JSON.stringify({ action: 'subscribe', params: `T.${symbol}` })
+      );
+      logger.info(`Subscribed to ${symbol} trade data.`);
     }
   }
 
   unsubscribeTrade(symbol) {
-    if (this.subscribedSymbols.has(symbol)) {
-      this.subscribedSymbols.delete(symbol);
+    if (this.subscribedTrades.has(symbol)) {
+      this.subscribedTrades.delete(symbol);
       if (this.ws && this.ws.readyState === WebSocket.OPEN) {
         this.ws.send(
           JSON.stringify({ action: 'unsubscribe', params: `T.${symbol}` })

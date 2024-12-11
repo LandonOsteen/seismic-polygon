@@ -1,0 +1,66 @@
+{
+  "positions": {
+    "OKLO": {
+      "symbol": "OKLO",
+      "qty": 5000,
+      "initialQty": 5000,
+      "side": "buy",
+      "avgEntryPrice": 19.48,
+      "currentBid": 19.18,
+      "currentAsk": 19.200000000000003,
+      "currentPrice": 19.19,
+      "profitCents": "-29.00",
+      "profitTargetsHit": 0,
+      "totalProfitTargets": 6,
+      "isActive": true,
+      "isProcessing": false,
+      "attemptHOD": 19.59,
+      "stopPrice": 19.57,
+      "stopCents": 2,
+      "stopDescription": "Initial Stop @ $19.57 (2¢ below HOD)",
+      "stopTriggered": false,
+      "executedPyramidLevels": [],
+      "totalPyramidLevels": 3,
+      "trailingStopActive": false,
+      "trailingStopPrice": null,
+      "trailingStopMaxPrice": null,
+      "trailingStopLastUpdatePrice": null
+    }
+  },
+  "watchlist": {
+    "SFIX": {
+      "highOfDay": 6.985,
+      "lastEntryTime": null,
+      "hasPosition": false,
+      "hasPendingEntryOrder": false,
+      "isHODFrozen": false,
+      "executedPyramidLevels": [],
+      "isSubscribedToTrade": false,
+      "isHalted": false,
+      "lastHaltTime": null
+    },
+    "OKLO": {
+      "highOfDay": 19.59,
+      "lastEntryTime": null,
+      "hasPosition": true,
+      "hasPendingEntryOrder": false,
+      "isHODFrozen": false,
+      "executedPyramidLevels": [],
+      "isSubscribedToTrade": false,
+      "isHalted": false,
+      "lastHaltTime": null
+    },
+    "CADL": {
+      "highOfDay": 14.6,
+      "lastEntryTime": null,
+      "hasPosition": false,
+      "hasPendingEntryOrder": false,
+      "isHODFrozen": false,
+      "executedPyramidLevels": [],
+      "isSubscribedToTrade": false,
+      "isHalted": false,
+      "lastHaltTime": null
+    }
+  },
+  "orderTracking": {}
+}

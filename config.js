@@ -1,5 +1,3 @@
-// config.js
-
 require('dotenv').config();
 
 const paperTrading = process.env.PAPER_TRADING === 'true';
@@ -21,52 +19,57 @@ module.exports = {
     baseVolumeRequirement: 50000,
     morningVolumeRequirement: 80000,
     gapPercentageRequirement: 30,
-    priceRange: { min: 2, max: 10 },
-    initialEntryOffsetCents: 0, // HOD breakout offset
-    entryLimitOffsetCents: 35, // Additional limit offset for entry orders
+    priceRange: { min: 2, max: 20 }, // Extended to 20 to allow >$10 stocks
+    initialEntryOffsetCents: 0,
+    entryLimitOffsetCents: 35,
     initialShareSize: 5000,
     trailingStopIncrementCents: 2,
     initialTrailingStopOffsetCents: 12,
     openingOrderCooldownSeconds: 5,
     tradeProximityCents: 15,
-
-    // Added Settings for Dynamic Initial Stop Based on HOD
-    initialStopOffsetCents: 2, // Number of cents below HOD for initial stop
-    dynamicStopThresholdCents: 1, // Minimum profit targets hit before dynamic stop adjustment
+    initialStopOffsetCents: 2,
+    dynamicStopThresholdCents: 1,
+    // Additional parameters for volatility adjustments
+    highPriceVolatilityThreshold: 0.2, // min 5-min range for >$10 stock
+    lowPriceVolatilityThreshold: 0.05, // min 5-min range for small caps
+    allowedAfterHaltCooldownSeconds: 60, // Wait after halt resume before new entry
   },
   orderSettings: {
-    limitOffsetCents: 10, // Offset for placing LIMIT orders
+    limitOffsetCents: 10,
+    // More granular profit targets for small increments capturing
     profitTargets: [
       { targetCents: 5, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
-      { targetCents: 20, percentToClose: 40 },
+      { targetCents: 15, percentToClose: 20 },
+      { targetCents: 20, percentToClose: 20 },
+      { targetCents: 30, percentToClose: 20 },
+      { targetCents: 40, percentToClose: 10 },
     ],
     dynamicStops: [
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
-      { profitTargetsHit: 4, stopCents: 20 },
-      { profitTargetsHit: 5, stopCents: 30 },
+      { profitTargetsHit: 5, stopCents: 20 },
     ],
     pyramidLevels: [
       { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 2 },
-      { priceIncreaseCents: 12, percentToAdd: 20, offsetCents: 2 },
-      // Add more levels as needed
+      { priceIncreaseCents: 6, percentToAdd: 20, offsetCents: 2 },
+      { priceIncreaseCents: 10, percentToAdd: 20, offsetCents: 2 },
     ],
   },
   orderTimeouts: {
-    limit: 4000, // Timeout for LIMIT orders in milliseconds
+    limit: 4000,
     pyramid: 4000,
     close: 4000,
     entry: 4000,
   },
   pollingIntervals: {
-    orderStatus: 3000, // Increased to 3 seconds
-    positionRefresh: 5000, // Increased to 5 seconds
-    watchlistRefresh: 15000, // 15 seconds
+    orderStatus: 3000,
+    positionRefresh: 5000,
+    watchlistRefresh: 15000,
   },
   statePersistence: {
-    saveInterval: 60000, // Save state every 60 seconds
-    stateFilePath: 'systemState.json', // Path to the state file
+    saveInterval: 60000,
+    stateFilePath: 'systemState.json',
   },
   logging: {
     level: 'info',
@@ -75,7 +78,7 @@ module.exports = {
   },
   timeZone: 'America/New_York',
 
+  // You can dynamically override symbols at runtime via dynamicConfig.json
   overrideAddSymbols: [],
-
   overrideRemoveSymbols: [],
 };
