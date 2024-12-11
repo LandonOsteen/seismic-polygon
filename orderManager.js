@@ -182,6 +182,7 @@ class OrderManager {
           hasPosition: !!this.positions[symbol],
           hasPendingEntryOrder: false,
           isHODFrozen: false, // For freezing HOD during pending entry
+          pyramidLevelsHit: 0, // Track pyramid levels hit
         };
         this.polygon.subscribeQuote(symbol); // Subscribe to quote data
         this.dashboard.logInfo(
@@ -280,7 +281,8 @@ class OrderManager {
           lastEntryTime: null,
           hasPosition: !!this.positions[symbol],
           hasPendingEntryOrder: false,
-          isHODFrozen: false,
+          isHODFrozen: false, // For freezing HOD during pending entry
+          pyramidLevelsHit: 0, // Initialize pyramid levels hit
         };
         this.polygon.subscribeQuote(symbol); // Subscribe to quote data
       } else {
@@ -289,6 +291,7 @@ class OrderManager {
         if (this.watchlist[symbol].hasPendingEntryOrder === undefined) {
           this.watchlist[symbol].hasPendingEntryOrder = false;
           this.watchlist[symbol].isHODFrozen = false;
+          this.watchlist[symbol].pyramidLevelsHit = 0; // Initialize if undefined
         }
       }
       this.dashboard.updateWatchlist(this.watchlist);
@@ -348,7 +351,9 @@ class OrderManager {
       const dynamicStop = dynamicStops[0];
       const stopCents = dynamicStop.stopCents;
       const stopPrice =
-        avgEntryPrice + (stopCents / 100) * (side === 'buy' ? 1 : -1);
+        side === 'buy'
+          ? avgEntryPrice - stopCents / 100
+          : avgEntryPrice + stopCents / 100;
       return { stopPrice, stopCents };
     } else {
       return null;
@@ -383,11 +388,11 @@ class OrderManager {
       stopCents,
       stopDescription: dynamicStop
         ? `Stop ${stopCents}¢ ${
-            stopCents > 0 ? 'above' : stopCents < 0 ? 'below' : 'at'
+            stopCents > 0 ? 'below' : stopCents < 0 ? 'above' : 'at'
           } avg price`
         : 'N/A',
       stopTriggered: false,
-      pyramidLevelsHit: 0,
+      pyramidLevelsHit: 0, // Initialize pyramid levels hit
       totalPyramidLevels: config.orderSettings.pyramidLevels.length,
       trailingStopActive: false,
       trailingStopPrice: null,
@@ -632,7 +637,7 @@ class OrderManager {
         this.dashboard.logInfo(targetMessage);
 
         let qtyToClose = Math.floor(pos.qty * (target.percentToClose / 100));
-        qtyToClose = Math.min(qtyToClose, pos.qty);
+        qtyToClose = Math.min(qtyToClose, pos.qty); // Ensure not exceeding available shares
 
         if (qtyToClose > 0) {
           await this.placeIOCOrder(
@@ -642,6 +647,7 @@ class OrderManager {
           );
           pos.profitTargetsHit += 1;
 
+          // Calculate and update dynamic stop
           const dynamicStop = this.calculateDynamicStopPrice(
             pos.profitTargetsHit,
             pos.avgEntryPrice,
@@ -651,17 +657,20 @@ class OrderManager {
             pos.stopPrice = dynamicStop.stopPrice;
             pos.stopCents = dynamicStop.stopCents;
             pos.stopDescription = `Stop ${pos.stopCents}¢ ${
-              pos.stopCents > 0 ? 'above' : pos.stopCents < 0 ? 'below' : 'at'
+              pos.stopCents > 0 ? 'below' : pos.stopCents < 0 ? 'above' : 'at'
             } avg price`;
             const stopPriceMessage = `Adjusted stop price for ${symbol} to $${pos.stopPrice.toFixed(
               2
             )} after hitting ${pos.profitTargetsHit} profit targets.`;
             this.dashboard.logInfo(stopPriceMessage);
           }
-        }
 
-        pos.isProcessing = false;
-        this.dashboard.updatePositions(Object.values(this.positions));
+          // Handle Pyramiding
+          await this.handlePyramiding(pos, symbol);
+
+          pos.isProcessing = false;
+          this.dashboard.updatePositions(Object.values(this.positions));
+        }
       }
     }
 
@@ -692,6 +701,32 @@ class OrderManager {
     // If trailing stop is active, update it
     if (pos.trailingStopActive && pos.qty > 0) {
       this.updateTrailingStop(pos, symbol, currentPrice);
+    }
+  }
+
+  async handlePyramiding(pos, symbol) {
+    const pyramidLevels = config.orderSettings.pyramidLevels;
+    if (pos.pyramidLevelsHit < pyramidLevels.length) {
+      const currentLevel = pos.pyramidLevelsHit;
+      const pyramidConfig = pyramidLevels[currentLevel];
+
+      // Calculate target price for pyramid
+      let targetPrice;
+      if (pos.side === 'buy') {
+        targetPrice = pos.currentPrice + pyramidConfig.addInCents / 100;
+      } else {
+        targetPrice = pos.currentPrice - pyramidConfig.addInCents / 100;
+      }
+
+      const qtyToAdd = Math.floor(
+        (pos.initialQty * pyramidConfig.percentToAdd) / 100
+      );
+
+      if (qtyToAdd > 0) {
+        await this.placePyramidOrder(pos, qtyToAdd, pyramidConfig.offsetCents);
+        pos.pyramidLevelsHit += 1;
+        this.dashboard.updatePositions(Object.values(this.positions));
+      }
     }
   }
 
@@ -760,6 +795,16 @@ class OrderManager {
       limitPrice = targetPrice - entryLimitOffsetCents / 100;
     }
 
+    // Ensure that limitPrice is positive
+    if (limitPrice <= 0 || isNaN(limitPrice)) {
+      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+      if (this.watchlist[symbol])
+        this.watchlist[symbol].hasPendingEntryOrder = false;
+      return;
+    }
+
     const order = {
       symbol,
       qty: qty.toFixed(0),
@@ -804,7 +849,9 @@ class OrderManager {
     } catch (err) {
       if (this.watchlist[symbol])
         this.watchlist[symbol].hasPendingEntryOrder = false;
-      const errorMsg = `Error placing entry order for ${symbol}: ${err.message}`;
+      const errorMsg = `Error placing entry order for ${symbol}: ${
+        err.response ? JSON.stringify(err.response.data) : err.message
+      }`;
       logger.error(errorMsg);
       this.dashboard.logError(errorMsg);
     }
@@ -819,6 +866,14 @@ class OrderManager {
       limitPrice = pos.currentAsk + offsetCents / 100;
     } else {
       limitPrice = pos.currentBid - offsetCents / 100;
+    }
+
+    // Ensure that limitPrice is positive
+    if (limitPrice <= 0 || isNaN(limitPrice)) {
+      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
+      logger.error(errorMessage);
+      this.dashboard.logError(errorMessage);
+      return;
     }
 
     const order = {
@@ -868,6 +923,17 @@ class OrderManager {
     qty = Math.abs(qty);
     const pos = this.positions[symbol];
 
+    // Prevent selling more than available shares
+    if (qty > pos.qty) {
+      qty = pos.qty;
+      logger.warn(
+        `Adjusted IOC order quantity for ${symbol} to ${qty} to prevent short selling.`
+      );
+      this.dashboard.logWarning(
+        `Adjusted IOC order quantity for ${symbol} to ${qty} to prevent short selling.`
+      );
+    }
+
     const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
     let limitPrice;
 
@@ -877,6 +943,7 @@ class OrderManager {
       limitPrice = pos.currentBid - limitOffsetCents / 100;
     }
 
+    // Ensure that limitPrice is positive
     if (limitPrice <= 0 || isNaN(limitPrice)) {
       const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
       logger.error(errorMessage);
@@ -889,13 +956,13 @@ class OrderManager {
       qty: qty.toFixed(0),
       side,
       type: 'limit',
-      time_in_force: 'day',
+      time_in_force: 'ioc',
       limit_price: limitPrice.toFixed(2),
       extended_hours: true,
-      client_order_id: this.generateClientOrderId('LIMIT'),
+      client_order_id: this.generateClientOrderId('IOC'),
     };
 
-    const orderMessage = `Attempting to place limit order: ${JSON.stringify(
+    const orderMessage = `Attempting to place IOC order: ${JSON.stringify(
       order
     )}`;
     logger.info(orderMessage);
@@ -905,7 +972,7 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Placed limit order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
+      const successMessage = `Placed IOC order for ${qty} shares of ${symbol}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
@@ -920,7 +987,7 @@ class OrderManager {
 
       await this.refreshPositions();
     } catch (err) {
-      const errorMessage = `Error placing limit order for ${symbol}: ${
+      const errorMessage = `Error placing IOC order for ${symbol}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMessage);
@@ -1003,6 +1070,7 @@ class OrderManager {
           if (pos && filledQty > 0) {
             if (trackedOrder.type === 'ioc' || trackedOrder.type === 'close') {
               pos.qty -= filledQty;
+              pos.qty = Math.max(pos.qty, 0); // Ensure non-negative
               const fillMessage = `Order ${order.id} filled ${filledQty} qty for ${trackedOrder.symbol}. Remaining qty: ${pos.qty}`;
               logger.info(fillMessage);
               this.dashboard.logInfo(fillMessage);
@@ -1106,6 +1174,7 @@ class OrderManager {
       limitPrice = pos.currentBid - limitOffsetCents / 100;
     }
 
+    // Ensure that limitPrice is positive
     if (limitPrice <= 0 || isNaN(limitPrice)) {
       const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
       logger.error(errorMessage);
@@ -1239,18 +1308,27 @@ class OrderManager {
     } catch (err) {
       if (retries <= 0) throw err;
       if (
-        err.response &&
-        (err.response.status === 429 ||
-          (err.response.status >= 500 && err.response.status < 600))
+        err.code === 'ENOTFOUND' || // Handle DNS errors
+        (err.response &&
+          (err.response.status === 429 ||
+            (err.response.status >= 500 && err.response.status < 600)))
       ) {
-        // Retry on 429 and 5xx errors
+        // Retry on 429 and 5xx errors or DNS errors
         const jitter = Math.random() * 1000;
         const totalDelay = delay + jitter;
         let message = '';
 
-        if (err.response.status === 429) {
+        if (err.code === 'ENOTFOUND') {
+          message = `DNS resolution failed. Retrying in ${totalDelay.toFixed(
+            0
+          )}ms...`;
+        } else if (err.response && err.response.status === 429) {
           message = `Rate limit hit. Retrying in ${totalDelay.toFixed(0)}ms...`;
-        } else {
+        } else if (
+          err.response &&
+          err.response.status >= 500 &&
+          err.response.status < 600
+        ) {
           message = `Server error ${
             err.response.status
           }. Retrying in ${totalDelay.toFixed(0)}ms...`;

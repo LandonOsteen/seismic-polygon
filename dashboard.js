@@ -30,7 +30,7 @@ class Dashboard {
       height: '100%',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      columnWidth: [8, 6, 6, 10, 10, 10, 9, 20, 16, 16],
+      columnWidth: [8, 6, 6, 10, 10, 10, 9, 20, 16, 16, 25],
       style: {
         header: { fg: 'cyan', bold: true },
         cell: { fg: 'white' },
@@ -49,6 +49,7 @@ class Dashboard {
         'STOP PRICE',
         'TARGETS HIT',
         'PYRAMIDS HIT',
+        'NEXT PYRAMID LEVEL',
       ],
       data: [],
     });
@@ -191,6 +192,14 @@ class Dashboard {
         ? `${pos.pyramidLevelsHit}/${pos.totalPyramidLevels}`
         : `0/${pos.totalPyramidLevels}`;
 
+      // Calculate next pyramid level
+      let nextPyramidLevel = 'N/A';
+      if (pos.pyramidLevelsHit < pos.totalPyramidLevels) {
+        const nextLevel =
+          config.orderSettings.pyramidLevels[pos.pyramidLevelsHit];
+        nextPyramidLevel = `Add ${nextLevel.percentToAdd}% at +${nextLevel.addInCents}¢`;
+      }
+
       return [
         pos.symbol,
         pos.side.toUpperCase(),
@@ -202,6 +211,7 @@ class Dashboard {
         displayedStop, // shows TRAILSTOP info if active
         profitTargetsHit,
         pyramidLevelsHit,
+        nextPyramidLevel, // New column for next pyramid level
       ];
     });
 
@@ -217,6 +227,7 @@ class Dashboard {
         'STOP PRICE',
         'TARGETS HIT',
         'PYRAMIDS HIT',
+        'NEXT PYRAMID LEVEL',
       ],
       data: tableData,
     });

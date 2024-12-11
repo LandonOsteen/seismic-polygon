@@ -17,12 +17,12 @@ module.exports = {
   },
   strategySettings: {
     baseVolumeRequirement: 50000,
-    morningVolumeRequirement: 50000,
+    morningVolumeRequirement: 60000,
     gapPercentageRequirement: 30,
-    priceRange: { min: 3, max: 12 },
+    priceRange: { min: 3, max: 10 },
     initialEntryOffsetCents: 0, // HOD breakout offset
-    entryLimitOffsetCents: 10, // Additional limit offset for entry orders
-    initialShareSize: 3000,
+    entryLimitOffsetCents: 35, // Additional limit offset for entry orders
+    initialShareSize: 5000,
     trailingStopIncrementCents: 1,
     initialTrailingStopOffsetCents: 25,
     openingOrderCooldownSeconds: 5,
@@ -41,10 +41,12 @@ module.exports = {
       { profitTargetsHit: 0, stopCents: -10 },
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
+      { profitTargetsHit: 4, stopCents: 20 },
+      { profitTargetsHit: 5, stopCents: 30 },
     ],
     pyramidLevels: [
-      { addInCents: 3, percentToAdd: 40, offsetCents: 10 },
-      { addInCents: 12, percentToAdd: 20, offsetCents: 6 },
+      { addInCents: 3, percentToAdd: 40, offsetCents: 20 },
+      { addInCents: 12, percentToAdd: 20, offsetCents: 20 },
     ],
   },
   orderTimeouts: {
