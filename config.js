@@ -17,28 +17,26 @@ module.exports = {
   },
   strategySettings: {
     baseVolumeRequirement: 50000,
-    morningVolumeRequirement: 60000,
-    gapPercentageRequirement: 30,
-    priceRange: { min: 3, max: 10 },
+    morningVolumeRequirement: 50000,
+    gapPercentageRequirement: 25,
+    priceRange: { min: 2, max: 10 },
     initialEntryOffsetCents: 0, // HOD breakout offset
     entryLimitOffsetCents: 35, // Additional limit offset for entry orders
     initialShareSize: 5000,
-    trailingStopIncrementCents: 1,
-    initialTrailingStopOffsetCents: 25,
+    trailingStopIncrementCents: 2,
+    initialTrailingStopOffsetCents: 12,
     openingOrderCooldownSeconds: 5,
     tradeProximityCents: 15,
   },
   orderSettings: {
-    limitOffsetCents: 40,
+    limitOffsetCents: 10,
     profitTargets: [
-      { targetCents: 8, percentToClose: 10 },
+      { targetCents: 5, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
       { targetCents: 20, percentToClose: 40 },
-      { targetCents: 30, percentToClose: 50 },
-      { targetCents: 50, percentToClose: 50 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -10 },
+      { profitTargetsHit: 0, stopCents: 6 },
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
       { profitTargetsHit: 4, stopCents: 20 },
@@ -50,10 +48,10 @@ module.exports = {
     ],
   },
   orderTimeouts: {
-    pyramid: 3000,
-    close: 3000,
-    ioc: 3000,
-    entry: 3000, // New timeout for entry orders
+    pyramid: 4000,
+    close: 4000,
+    ioc: 4000,
+    entry: 4000, // New timeout for entry orders
   },
   pollingIntervals: {
     orderStatus: 1000,

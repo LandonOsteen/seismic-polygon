@@ -22977,3 +22977,1538 @@
 2024-12-11T14:10:55.870Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-11T14:11:10.870Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-11T14:11:25.868Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:11:40.872Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:11:55.870Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:12:10.873Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:12:25.878Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:12:31.861Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:12:31.871Z [INFO]: Started polling for order statuses.
+2024-12-11T14:12:32.047Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:12:32.048Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:12:32.100Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:12:46.875Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:12:46.875Z [INFO]: Subscribed to RGTI quote data.
+2024-12-11T14:12:46.882Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T14:13:01.873Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:13:16.873Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:13:31.877Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:13:46.874Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:14:01.879Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:14:14.369Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:14:14.380Z [INFO]: Started polling for order statuses.
+2024-12-11T14:14:14.543Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:14:14.544Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:14:14.601Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:14:29.375Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:14:37.864Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:14:37.873Z [INFO]: Started polling for order statuses.
+2024-12-11T14:14:38.039Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:14:38.041Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:14:38.088Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:14:38.480Z [INFO]: Subscribed to RGTI quote data.
+2024-12-11T14:14:55.522Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:14:55.532Z [INFO]: Started polling for order statuses.
+2024-12-11T14:14:55.698Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:14:55.699Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:14:55.745Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:14:56.127Z [INFO]: Subscribed to RGTI quote data.
+2024-12-11T14:15:10.534Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:15:10.702Z [INFO]: Unsubscribed from RGTI trade data.
+2024-12-11T14:15:25.535Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:15:40.536Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:15:55.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:16:10.539Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:16:25.539Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:16:40.555Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:16:55.536Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:17:10.541Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:17:25.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:17:40.547Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:17:55.544Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:18:10.543Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:18:25.544Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:18:40.546Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:18:55.543Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:19:10.551Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:19:25.550Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:19:40.553Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:19:55.552Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:20:10.552Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:20:25.556Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:20:40.557Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:20:55.555Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:21:10.558Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:21:25.556Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:21:40.561Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:21:55.555Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:22:10.562Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:22:25.564Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:22:40.566Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:22:55.567Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:23:08.866Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:23:08.876Z [INFO]: Started polling for order statuses.
+2024-12-11T14:23:09.046Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:23:09.048Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:23:09.099Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:23:23.874Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:23:38.882Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:23:53.884Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:24:08.886Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:24:23.881Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:24:38.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:24:53.890Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:25:08.887Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:25:23.888Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:25:24.500Z [INFO]: Subscribed to RGTI quote data.
+2024-12-11T14:25:38.889Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:25:53.890Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:25:54.065Z [INFO]: Unsubscribed from RGTI trade data.
+2024-12-11T14:26:08.036Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:26:08.046Z [INFO]: Started polling for order statuses.
+2024-12-11T14:26:08.211Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:26:08.212Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:26:08.259Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:26:08.627Z [INFO]: Subscribed to RGTI quote data.
+2024-12-11T14:26:23.048Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:26:38.049Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:26:53.046Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:26:53.206Z [INFO]: Unsubscribed from RGTI trade data.
+2024-12-11T14:27:08.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:27:23.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:27:38.055Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:27:53.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:28:08.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:28:23.055Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:28:38.059Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:28:53.054Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:29:08.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:29:23.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:29:38.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:29:53.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:30:08.064Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:30:23.066Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:30:38.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:30:53.066Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:31:08.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:31:08.440Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T14:31:08.645Z [INFO]: Subscribed to RGTIW quote data.
+2024-12-11T14:31:08.737Z [ERROR]: Error placing entry order for SFIX: Cannot read properties of undefined (reading 'push')
+2024-12-11T14:31:10.037Z [INFO]: Subscribed to SPWH quote data.
+2024-12-11T14:31:10.231Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T14:31:11.109Z [ERROR]: Error placing entry order for SPWH: Cannot read properties of undefined (reading 'push')
+2024-12-11T14:31:16.133Z [ERROR]: Error placing entry order for SPWH: Cannot read properties of undefined (reading 'push')
+2024-12-11T14:31:21.422Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T14:31:21.433Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T14:31:21.439Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T14:31:21.446Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T14:31:23.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:31:23.387Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T14:31:24.768Z [INFO]: Subscribed to YJ quote data.
+2024-12-11T14:31:29.951Z [ERROR]: Error placing entry order for SPWH: Cannot read properties of undefined (reading 'push')
+2024-12-11T14:31:37.682Z [ERROR]: Error placing entry order for SPWH: Cannot read properties of undefined (reading 'push')
+2024-12-11T14:31:38.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:31:39.150Z [INFO]: Unsubscribed from YJ trade data.
+2024-12-11T14:31:40.775Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T14:31:44.553Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T14:31:45.060Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T14:31:47.337Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T14:31:53.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:32:08.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:32:23.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:32:38.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:32:53.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:32:59.967Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:32:59.978Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:33:08.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:33:10.061Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T14:33:16.315Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:33:16.324Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:33:16.327Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:33:16.617Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:33:21.210Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:33:22.408Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T14:33:22.495Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:33:23.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:33:23.923Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T14:33:26.050Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:33:26.612Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:33:26.624Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:33:26.630Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:33:28.325Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:33:38.077Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:33:53.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:34:23.574Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:34:23.582Z [INFO]: Started polling for order statuses.
+2024-12-11T14:34:23.750Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:34:23.751Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:34:23.802Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:34:24.267Z [INFO]: Subscribed to RZLV quote data.
+2024-12-11T14:34:38.590Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:34:53.580Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:34:54.463Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T14:35:08.580Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:35:23.583Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:35:24.225Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T14:35:38.587Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:35:53.600Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:36:08.605Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:36:23.599Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:36:38.601Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:36:53.600Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:37:08.602Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:37:09.853Z [INFO]: Subscribed to SPWH quote data.
+2024-12-11T14:37:18.262Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:37:23.605Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:37:38.603Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:37:53.603Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:37:57.922Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:38:00.042Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:38:00.049Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:38:08.607Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:38:23.605Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:38:27.746Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:38:38.605Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:38:53.603Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:39:04.251Z [INFO]: Subscribed to SPWH trade data.
+2024-12-11T14:39:07.122Z [INFO]: Unsubscribed from SPWH trade data.
+2024-12-11T14:39:08.605Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:39:23.605Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:39:38.605Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:39:53.607Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:40:08.607Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:40:23.606Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:40:38.607Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:40:39.523Z [INFO]: Subscribed to RGTIW quote data.
+2024-12-11T14:40:53.608Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:40:54.244Z [INFO]: Unsubscribed from RGTIW trade data.
+2024-12-11T14:41:08.609Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:41:09.698Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T14:41:23.608Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:41:24.578Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T14:41:38.609Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:41:39.399Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T14:41:53.610Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:42:08.609Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:42:23.609Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:42:38.612Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:42:53.613Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:43:08.613Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:43:23.616Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:43:38.616Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:43:48.797Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:48.843Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:49.299Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:49.309Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:49.315Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:50.305Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:50.351Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:53.618Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:43:54.437Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:54.496Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:54.503Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:55.262Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:55.270Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:55.766Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:55.778Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:55.784Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:55.790Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:43:57.269Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:43:57.277Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:44:08.618Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:44:23.619Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:44:38.621Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:44:53.623Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:45:08.624Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:45:23.625Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:45:38.627Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:45:39.584Z [INFO]: Subscribed to GXAI quote data.
+2024-12-11T14:45:43.146Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:45:53.629Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:45:54.582Z [INFO]: Unsubscribed from GXAI trade data.
+2024-12-11T14:46:06.868Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:06.878Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:06.883Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:07.365Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:07.870Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:08.375Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:08.385Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:08.626Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:46:13.404Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:13.857Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:13.865Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:13.869Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:13.873Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:13.877Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:13.880Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:13.883Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:14.366Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:14.373Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:14.855Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:17.867Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:17.873Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:23.627Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:46:24.864Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:24.870Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:25.082Z [INFO]: Subscribed to GXAI quote data.
+2024-12-11T14:46:30.276Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:30.283Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:30.287Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:30.291Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:30.296Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:30.784Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:32.290Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:32.296Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:32.300Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:32.304Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:33.794Z [INFO]: Subscribed to RZLV trade data.
+2024-12-11T14:46:33.803Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T14:46:38.631Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:46:39.537Z [INFO]: Unsubscribed from GXAI trade data.
+2024-12-11T14:46:53.633Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:47:08.630Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:47:23.635Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:47:38.632Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:47:53.636Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:48:08.634Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:48:23.634Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:48:38.641Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:48:53.639Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:49:08.640Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:49:09.027Z [INFO]: Subscribed to WKEY quote data.
+2024-12-11T14:49:23.639Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:49:38.642Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:49:53.642Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:49:54.158Z [INFO]: Subscribed to LDTC quote data.
+2024-12-11T14:49:54.373Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"LDTC","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.45","extended_hours":true,"client_order_id":"ENTRY-c069999e2f77e8a7"}
+2024-12-11T14:49:54.576Z [INFO]: Entry order placed for 5000 shares of LDTC at $2.45. Order ID: b6426bf1-db39-41c2-a6e6-47df3a68c4f5
+2024-12-11T14:49:56.229Z [INFO]: Position added: LDTC | Qty: 5000 | Avg Entry: $2.13
+2024-12-11T14:49:56.384Z [INFO]: Stop condition met for LDTC. Closing position.
+2024-12-11T14:49:56.389Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.72","extended_hours":true,"client_order_id":"CLOSE-7e0b2c2ab662d705"}
+2024-12-11T14:49:56.589Z [INFO]: Limit order placed to close position in LDTC. Order ID: a74ee16e-dd32-4965-99c3-226a7ad3992f
+2024-12-11T14:49:57.028Z [INFO]: Order a74ee16e-dd32-4965-99c3-226a7ad3992f filled 3689 qty for LDTC. Remaining qty: 1311
+2024-12-11T14:49:57.287Z [INFO]: Position removed: LDTC
+2024-12-11T14:49:59.631Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"LDTC","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.47","extended_hours":true,"client_order_id":"ENTRY-405a202a713c7980"}
+2024-12-11T14:49:59.941Z [INFO]: Entry order placed for 5000 shares of LDTC at $2.47. Order ID: ae67177c-f622-4f9f-9ddd-ed5cb027c939
+2024-12-11T14:50:02.231Z [INFO]: Position added: LDTC | Qty: 5000 | Avg Entry: $2.13
+2024-12-11T14:50:02.426Z [INFO]: Stop condition met for LDTC. Closing position.
+2024-12-11T14:50:02.432Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.72","extended_hours":true,"client_order_id":"CLOSE-9f17978bda636a4c"}
+2024-12-11T14:50:02.739Z [INFO]: Limit order placed to close position in LDTC. Order ID: c2fe5325-fe4e-49ae-b3d9-9392a6e1a8d4
+2024-12-11T14:50:03.233Z [INFO]: Order c2fe5325-fe4e-49ae-b3d9-9392a6e1a8d4 filled 2850 qty for LDTC. Remaining qty: 2150
+2024-12-11T14:50:03.908Z [INFO]: Order c2fe5325-fe4e-49ae-b3d9-9392a6e1a8d4 filled 4526 qty for LDTC. Remaining qty: 0
+2024-12-11T14:50:03.914Z [INFO]: Position removed: LDTC
+2024-12-11T14:50:06.036Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"LDTC","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.47","extended_hours":true,"client_order_id":"ENTRY-39993abd61f79ef5"}
+2024-12-11T14:50:06.241Z [INFO]: Entry order placed for 5000 shares of LDTC at $2.47. Order ID: 1b693a72-3214-4993-829d-87f44c285aef
+2024-12-11T14:50:06.594Z [INFO]: Position added: LDTC | Qty: 5000 | Avg Entry: $2.13
+2024-12-11T14:50:07.044Z [INFO]: Stop condition met for LDTC. Closing position.
+2024-12-11T14:50:07.050Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.72","extended_hours":true,"client_order_id":"CLOSE-5174904c988a675d"}
+2024-12-11T14:50:07.309Z [INFO]: Limit order placed to close position in LDTC. Order ID: 70b60a78-481c-467b-8c53-71d84155ce07
+2024-12-11T14:50:08.372Z [INFO]: Position removed: LDTC
+2024-12-11T14:50:08.640Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:50:11.034Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"LDTC","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.47","extended_hours":true,"client_order_id":"ENTRY-5e48cc4cadc11405"}
+2024-12-11T14:50:11.246Z [INFO]: Entry order placed for 5000 shares of LDTC at $2.47. Order ID: 3b4ae634-f6d4-4a52-a6d5-950401251daf
+2024-12-11T14:50:12.262Z [INFO]: Position added: LDTC | Qty: 5000 | Avg Entry: $2.13
+2024-12-11T14:50:12.305Z [INFO]: Stop condition met for LDTC. Closing position.
+2024-12-11T14:50:12.309Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.72","extended_hours":true,"client_order_id":"CLOSE-bc58167e0816c7db"}
+2024-12-11T14:50:12.618Z [INFO]: Limit order placed to close position in LDTC. Order ID: c6337e79-cd7a-4ed8-bdc5-c093c4e45d93
+2024-12-11T14:50:12.969Z [INFO]: Position removed: LDTC
+2024-12-11T14:50:16.036Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"LDTC","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.47","extended_hours":true,"client_order_id":"ENTRY-eeb42a8d20cc8de0"}
+2024-12-11T14:50:16.251Z [INFO]: Entry order placed for 5000 shares of LDTC at $2.47. Order ID: 82668872-7301-4daa-96de-e1fd9f6ffb61
+2024-12-11T14:50:16.601Z [INFO]: Position added: LDTC | Qty: 3044 | Avg Entry: $2.13
+2024-12-11T14:50:16.847Z [INFO]: Stop condition met for LDTC. Closing position.
+2024-12-11T14:50:16.851Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"3044","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.72","extended_hours":true,"client_order_id":"CLOSE-419a361c49e76e34"}
+2024-12-11T14:50:16.978Z [INFO]: Order 82668872-7301-4daa-96de-e1fd9f6ffb61 filled 4259 qty for LDTC. New qty: 7303, New Avg Entry Price: $2.33
+2024-12-11T14:50:17.295Z [ERROR]: Error placing limit order to close position for LDTC: {"buy_limit_price":"2.47","code":40310000,"existing_order_id":"82668872-7301-4daa-96de-e1fd9f6ffb61","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"1.72"}
+2024-12-11T14:50:23.641Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:50:38.643Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:50:53.645Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:50:55.217Z [INFO]: Unsubscribed from WKEY trade data.
+2024-12-11T14:51:08.644Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:51:23.647Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:51:38.647Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:51:53.656Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:52:08.651Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:52:23.654Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:52:25.166Z [INFO]: Subscribed to RZLV quote data.
+2024-12-11T14:52:38.654Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:52:53.655Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:53:08.653Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:53:23.654Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:53:38.654Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:53:53.655Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:54:08.658Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:54:23.659Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:54:38.664Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:54:45.236Z [INFO]: Profit target hit for LDTC: +7.00¢ >= +5¢
+2024-12-11T14:54:45.241Z [INFO]: Attempting to place IOC order: {"symbol":"LDTC","qty":"500","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"1.80","extended_hours":true,"client_order_id":"IOC-b603387ad1ffa20a"}
+2024-12-11T14:54:45.519Z [ERROR]: Error placing IOC order for LDTC: {"code":42210000,"message":"extended hours order must be DAY limit orders"}
+2024-12-11T14:54:45.532Z [INFO]: Attempting to place pyramid order: {"symbol":"LDTC","qty":"1217","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.40","extended_hours":true,"client_order_id":"PYRAMID-3320f8cc442d5050"}
+2024-12-11T14:54:45.855Z [INFO]: Pyramid order placed for 1217 shares of LDTC. Order ID: 6f0b38d2-167b-429e-b423-cb69e6b0e865
+2024-12-11T14:54:46.551Z [INFO]: Order 6f0b38d2-167b-429e-b423-cb69e6b0e865 filled 1206 qty for LDTC. New qty: 7412, New Avg Entry Price: $2.17
+2024-12-11T14:54:47.157Z [INFO]: Order 6f0b38d2-167b-429e-b423-cb69e6b0e865 filled 1211 qty for LDTC. New qty: 8623, New Avg Entry Price: $2.21
+2024-12-11T14:54:53.663Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:55:08.665Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:55:20.451Z [INFO]: Profit target hit for LDTC: +11.00¢ >= +10¢
+2024-12-11T14:55:20.459Z [INFO]: Attempting to place IOC order: {"symbol":"LDTC","qty":"1243","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"1.84","extended_hours":true,"client_order_id":"IOC-e474a4084b1e81a6"}
+2024-12-11T14:55:20.883Z [ERROR]: Error placing IOC order for LDTC: {"code":42210000,"message":"extended hours order must be DAY limit orders"}
+2024-12-11T14:55:20.894Z [INFO]: Attempting to place pyramid order: {"symbol":"LDTC","qty":"608","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.33","extended_hours":true,"client_order_id":"PYRAMID-b1e2cfdae6627234"}
+2024-12-11T14:55:21.228Z [INFO]: Pyramid order placed for 608 shares of LDTC. Order ID: 4cea3775-467b-4f4a-bd53-92a8cd42bb0c
+2024-12-11T14:55:23.662Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:55:27.343Z [INFO]: Profit target hit for LDTC: +20.00¢ >= +20¢
+2024-12-11T14:55:27.346Z [INFO]: Attempting to place IOC order: {"symbol":"LDTC","qty":"2730","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"1.94","extended_hours":true,"client_order_id":"IOC-bd4c85c08a20345d"}
+2024-12-11T14:55:29.219Z [ERROR]: Error placing IOC order for LDTC: {"code":42210000,"message":"extended hours order must be DAY limit orders"}
+2024-12-11T14:55:29.227Z [INFO]: Trailing stop activated for LDTC at $2.14. Monitoring for price drops below this level.
+2024-12-11T14:55:29.396Z [INFO]: Trailing stop for LDTC raised to $2.15. Current Price: $2.35
+2024-12-11T14:55:29.406Z [INFO]: Trailing stop for LDTC raised to $2.16. Current Price: $2.36
+2024-12-11T14:55:29.845Z [INFO]: Trailing stop for LDTC raised to $2.17. Current Price: $2.37
+2024-12-11T14:55:38.665Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:55:40.107Z [INFO]: Trailing stop for LDTC raised to $2.18. Current Price: $2.38
+2024-12-11T14:55:53.750Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:56:08.753Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:56:12.797Z [INFO]: Trailing stop for LDTC raised to $2.19. Current Price: $2.39
+2024-12-11T14:56:12.904Z [INFO]: Trailing stop for LDTC raised to $2.20. Current Price: $2.40
+2024-12-11T14:56:13.157Z [INFO]: Trailing stop for LDTC raised to $2.21. Current Price: $2.41
+2024-12-11T14:56:13.180Z [INFO]: Trailing stop for LDTC raised to $2.22. Current Price: $2.42
+2024-12-11T14:56:13.772Z [INFO]: Trailing stop for LDTC raised to $2.23. Current Price: $2.43
+2024-12-11T14:56:13.914Z [INFO]: Trailing stop for LDTC raised to $2.24. Current Price: $2.44
+2024-12-11T14:56:15.145Z [INFO]: Trailing stop for LDTC raised to $2.25. Current Price: $2.45
+2024-12-11T14:56:15.520Z [INFO]: Trailing stop for LDTC raised to $2.26. Current Price: $2.46
+2024-12-11T14:56:15.548Z [INFO]: Trailing stop for LDTC raised to $2.27. Current Price: $2.47
+2024-12-11T14:56:20.694Z [INFO]: Trailing stop for LDTC raised to $2.28. Current Price: $2.48
+2024-12-11T14:56:23.756Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:56:31.790Z [INFO]: Trailing stop for LDTC raised to $2.29. Current Price: $2.49
+2024-12-11T14:56:38.756Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:56:43.482Z [INFO]: Trailing stop for LDTC raised to $2.30. Current Price: $2.50
+2024-12-11T14:56:43.590Z [INFO]: Trailing stop for LDTC raised to $2.31. Current Price: $2.51
+2024-12-11T14:56:43.614Z [INFO]: Trailing stop for LDTC raised to $2.32. Current Price: $2.52
+2024-12-11T14:56:43.642Z [INFO]: Trailing stop for LDTC raised to $2.33. Current Price: $2.53
+2024-12-11T14:56:43.657Z [INFO]: Trailing stop for LDTC raised to $2.34. Current Price: $2.54
+2024-12-11T14:56:43.669Z [INFO]: Trailing stop for LDTC raised to $2.35. Current Price: $2.55
+2024-12-11T14:56:43.695Z [INFO]: Trailing stop for LDTC raised to $2.37. Current Price: $2.57
+2024-12-11T14:56:43.784Z [INFO]: Trailing stop for LDTC raised to $2.38. Current Price: $2.58
+2024-12-11T14:56:43.913Z [INFO]: Trailing stop for LDTC raised to $2.39. Current Price: $2.59
+2024-12-11T14:56:53.755Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:57:02.993Z [INFO]: Trailing stop for LDTC raised to $2.40. Current Price: $2.60
+2024-12-11T14:57:03.007Z [INFO]: Trailing stop for LDTC raised to $2.41. Current Price: $2.61
+2024-12-11T14:57:03.047Z [INFO]: Trailing stop for LDTC raised to $2.43. Current Price: $2.63
+2024-12-11T14:57:03.062Z [INFO]: Trailing stop for LDTC raised to $2.44. Current Price: $2.64
+2024-12-11T14:57:04.784Z [INFO]: Trailing stop for LDTC raised to $2.45. Current Price: $2.65
+2024-12-11T14:57:08.755Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:57:23.755Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:57:38.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:57:53.794Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:58:03.450Z [INFO]: Trailing stop for LDTC raised to $2.46. Current Price: $2.66
+2024-12-11T14:58:03.476Z [INFO]: Trailing stop for LDTC raised to $2.47. Current Price: $2.67
+2024-12-11T14:58:03.501Z [INFO]: Trailing stop for LDTC raised to $2.48. Current Price: $2.68
+2024-12-11T14:58:03.523Z [INFO]: Trailing stop for LDTC raised to $2.49. Current Price: $2.69
+2024-12-11T14:58:08.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:58:14.064Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.068Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-4472c1389abcaca5"}
+2024-12-11T14:58:14.074Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.078Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-9473203d2dba9333"}
+2024-12-11T14:58:14.081Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:14.088Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.091Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-38cb40a3a71716fd"}
+2024-12-11T14:58:14.098Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.102Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-f6262ac8821b719d"}
+2024-12-11T14:58:14.109Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.112Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-a7aef443f9212d2f"}
+2024-12-11T14:58:14.119Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.122Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-22aad0b69802babb"}
+2024-12-11T14:58:14.129Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.133Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-478ae5ceabc0984b"}
+2024-12-11T14:58:14.140Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.143Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-2eae866eccd9efc7"}
+2024-12-11T14:58:14.151Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.154Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-6b3c267ac7b9fe3f"}
+2024-12-11T14:58:14.161Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.165Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-720185351e062193"}
+2024-12-11T14:58:14.168Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:14.176Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.179Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-90147e39f4928913"}
+2024-12-11T14:58:14.187Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.191Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-fe3701ac3a93f9e9"}
+2024-12-11T14:58:14.198Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.202Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-29fa5a2a48a97203"}
+2024-12-11T14:58:14.209Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.213Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-3c6fdf79a5c999e6"}
+2024-12-11T14:58:14.220Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.224Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-593a7a25e59bdaa2"}
+2024-12-11T14:58:14.228Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:14.235Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.239Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-4156969a79b90204"}
+2024-12-11T14:58:14.246Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.250Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-d5c05f6bf26ce048"}
+2024-12-11T14:58:14.257Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.261Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-37a9e78a8e906ff2"}
+2024-12-11T14:58:14.269Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.272Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-59f4efab94f84a16"}
+2024-12-11T14:58:14.280Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.283Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-bcc4b489251404e3"}
+2024-12-11T14:58:14.292Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.295Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-ce6c9abe9f00b067"}
+2024-12-11T14:58:14.302Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.306Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-31a2907f2a1d2767"}
+2024-12-11T14:58:14.314Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.318Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-941f39a2463b6d3a"}
+2024-12-11T14:58:14.326Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.330Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-793241a37d520376"}
+2024-12-11T14:58:14.338Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.341Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-af5247eee8eab487"}
+2024-12-11T14:58:14.349Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.353Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-d7923b2d47acf8bd"}
+2024-12-11T14:58:14.361Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.364Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-f459ab12c4539bdd"}
+2024-12-11T14:58:14.372Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.376Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-dc08b9f4707e0d9b"}
+2024-12-11T14:58:14.383Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.387Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-aa5667e64b0ee07d"}
+2024-12-11T14:58:14.395Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.398Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-506df226e420a3cb"}
+2024-12-11T14:58:14.406Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.409Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-b90f4f6b4e3da6dd"}
+2024-12-11T14:58:14.417Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.421Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-049364d0d8e16391"}
+2024-12-11T14:58:14.429Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.433Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-0ff206ee262d49ab"}
+2024-12-11T14:58:14.440Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.444Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-e2c8a5a2ac7b79e0"}
+2024-12-11T14:58:14.451Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.455Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-1cf45b6cda2edc4c"}
+2024-12-11T14:58:14.462Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.466Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-6840acfdfc02e1ce"}
+2024-12-11T14:58:14.473Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.476Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-f86d1a3012c476cb"}
+2024-12-11T14:58:14.484Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.487Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-de740d10e3d4dac3"}
+2024-12-11T14:58:14.491Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:14.498Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.502Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-cf2b1151a469cd72"}
+2024-12-11T14:58:14.509Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.513Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-f70244c0c7a53492"}
+2024-12-11T14:58:14.521Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.525Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-cb350718b280623d"}
+2024-12-11T14:58:14.532Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.536Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-7ced60eb4f831813"}
+2024-12-11T14:58:14.544Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.547Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-8715fce37b342c67"}
+2024-12-11T14:58:14.556Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.560Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-0492f2e316a327b4"}
+2024-12-11T14:58:14.567Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.571Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-9d5c7de83f44da65"}
+2024-12-11T14:58:14.578Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.582Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-5f57522d11d76109"}
+2024-12-11T14:58:14.625Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.629Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-42703844c066d4dd"}
+2024-12-11T14:58:14.636Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.640Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-91f2875948eb2c00"}
+2024-12-11T14:58:14.648Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.651Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-65439964899c5204"}
+2024-12-11T14:58:14.659Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.663Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-07f6db68120c15b5"}
+2024-12-11T14:58:14.670Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.674Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-255be4931e19100c"}
+2024-12-11T14:58:14.681Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.685Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-fc29efff539d1b3b"}
+2024-12-11T14:58:14.693Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.697Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-ad6ed5eb14b1a978"}
+2024-12-11T14:58:14.704Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.707Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-c79e8b05390f63ec"}
+2024-12-11T14:58:14.715Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.718Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-8d504d519e7eab55"}
+2024-12-11T14:58:14.725Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.729Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-dae84148b5dc1c20"}
+2024-12-11T14:58:14.736Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.740Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-291168b105571755"}
+2024-12-11T14:58:14.748Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.751Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-1d0c1111812553c7"}
+2024-12-11T14:58:14.759Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.762Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-7ffd38d2f60583af"}
+2024-12-11T14:58:14.770Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.773Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-491352371b2538a8"}
+2024-12-11T14:58:14.814Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:14.817Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-f3e6452ce5de2d28"}
+2024-12-11T14:58:14.829Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:14.833Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:15.464Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.469Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-98f2c3ace1f5b2db"}
+2024-12-11T14:58:15.478Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.483Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-fcfd9cb3a37e812a"}
+2024-12-11T14:58:15.487Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:15.495Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.499Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-41f1f7512d2748c4"}
+2024-12-11T14:58:15.507Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.510Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-2bd24bd2e09d6b32"}
+2024-12-11T14:58:15.517Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.521Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-70033cdb12610b0a"}
+2024-12-11T14:58:15.729Z [INFO]: Limit order placed to close position in LDTC. Order ID: 5cc4b3fe-4dde-450c-9008-147c62f8a7c7
+2024-12-11T14:58:15.929Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.936Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-d9f97bcce7062242"}
+2024-12-11T14:58:15.948Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.953Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-79599061af0b556b"}
+2024-12-11T14:58:15.963Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.968Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-17f865732a3e1cf2"}
+2024-12-11T14:58:15.977Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.981Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-4e5023b294e343cf"}
+2024-12-11T14:58:15.989Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:15.993Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-da59228388ab10bb"}
+2024-12-11T14:58:16.001Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.004Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-f99c5d0dbb39475b"}
+2024-12-11T14:58:16.012Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.015Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-906e9726d379fa82"}
+2024-12-11T14:58:16.022Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.026Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-b5b5cdb24f114224"}
+2024-12-11T14:58:16.130Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:16.384Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:16.425Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.432Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-87b9ac9b20c5a22c"}
+2024-12-11T14:58:16.444Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.449Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-24f857fa05108658"}
+2024-12-11T14:58:16.459Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.464Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-70a42c356ae99834"}
+2024-12-11T14:58:16.473Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.478Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-ca19469cfb3d8a69"}
+2024-12-11T14:58:16.487Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.491Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-4a8d55e63a06fb70"}
+2024-12-11T14:58:16.499Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.502Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-30de6b2e76e44a37"}
+2024-12-11T14:58:16.510Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.514Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-427640a21e6d176e"}
+2024-12-11T14:58:16.521Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.525Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-ade9b57cf3d8e8e5"}
+2024-12-11T14:58:16.533Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.537Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-8c72d791cf6ee07c"}
+2024-12-11T14:58:16.544Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.548Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-1569a1c07eef53ec"}
+2024-12-11T14:58:16.556Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.559Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-b5340e7c9a52cddd"}
+2024-12-11T14:58:16.568Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.572Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-7ef294ea3e4317f8"}
+2024-12-11T14:58:16.730Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:16.933Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.940Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-0e725d860207ab04"}
+2024-12-11T14:58:16.954Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.959Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-a4fdf6a166632ac7"}
+2024-12-11T14:58:16.969Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.974Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-4bf32a032f41c79f"}
+2024-12-11T14:58:16.983Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:16.987Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-0539f9625c12bbcd"}
+2024-12-11T14:58:16.996Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.000Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-ccce4203c30277c1"}
+2024-12-11T14:58:17.009Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.013Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-7be5c4089d7b9170"}
+2024-12-11T14:58:17.021Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.025Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-5d3ad69760c65be7"}
+2024-12-11T14:58:17.034Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.037Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-7986f0d951c6eb70"}
+2024-12-11T14:58:17.046Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.050Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-80561cac0874dbd2"}
+2024-12-11T14:58:17.058Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.062Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-58245e43462ea94b"}
+2024-12-11T14:58:17.071Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.075Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-1a111072e2fedb91"}
+2024-12-11T14:58:17.083Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.087Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-6dc22b5d14cbb440"}
+2024-12-11T14:58:17.096Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.099Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-22fdf3924cf4a057"}
+2024-12-11T14:58:17.107Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.111Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-649fa57458cdfe5a"}
+2024-12-11T14:58:17.119Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.123Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-62518063e3346141"}
+2024-12-11T14:58:17.130Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.134Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-b66c20320538fc22"}
+2024-12-11T14:58:17.142Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.146Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-f6e350e36e23b50c"}
+2024-12-11T14:58:17.153Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.157Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-42bbe9bd90a06e7f"}
+2024-12-11T14:58:17.165Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.168Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-1314adbb156b4864"}
+2024-12-11T14:58:17.176Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.179Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-44329294efc9a308"}
+2024-12-11T14:58:17.187Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.191Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-4b6fbee9494f2f0e"}
+2024-12-11T14:58:17.200Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.204Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-fe8b5e7c5a54029c"}
+2024-12-11T14:58:17.216Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.219Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-dde556f4577a09fd"}
+2024-12-11T14:58:17.227Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.231Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-9a2dfe3499ebc99e"}
+2024-12-11T14:58:17.239Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.243Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-ee728d143620377a"}
+2024-12-11T14:58:17.251Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.255Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-8ad8d7ae0aa8c0c4"}
+2024-12-11T14:58:17.262Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.266Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-2077679c0fad5fe1"}
+2024-12-11T14:58:17.274Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.277Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-8b0cc50d5cea9686"}
+2024-12-11T14:58:17.285Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.289Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-dc5d24ca6470e98b"}
+2024-12-11T14:58:17.296Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.300Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-5eabee6a119366e1"}
+2024-12-11T14:58:17.434Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.438Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-a0d68f5dfffd78f9"}
+2024-12-11T14:58:17.447Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.452Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-69d1a801469f4fb6"}
+2024-12-11T14:58:17.460Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.464Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-2243381aea6a7801"}
+2024-12-11T14:58:17.472Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.476Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-bbe3470bca0c2c2e"}
+2024-12-11T14:58:17.484Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.488Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-63c269716907f849"}
+2024-12-11T14:58:17.496Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.499Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-f1aa2ec3eebd6f6e"}
+2024-12-11T14:58:17.507Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.511Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-0d49b0fddac558e5"}
+2024-12-11T14:58:17.519Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.522Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-7874cdbc20c168bb"}
+2024-12-11T14:58:17.530Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.534Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-672882c88d3cf2d4"}
+2024-12-11T14:58:17.542Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.546Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-3ab38458ff54a0ca"}
+2024-12-11T14:58:17.553Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.557Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-1ab7881acea4c5bc"}
+2024-12-11T14:58:17.565Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.569Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-711f2d488cfc2c17"}
+2024-12-11T14:58:17.577Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.580Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-1f76862fa7659a2b"}
+2024-12-11T14:58:17.588Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.592Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-68313b25cbfa5366"}
+2024-12-11T14:58:17.599Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.603Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-526bbd8c6aca0abe"}
+2024-12-11T14:58:17.610Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.614Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-38ce01e495146cb6"}
+2024-12-11T14:58:17.622Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.625Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-f53d21cd32277535"}
+2024-12-11T14:58:17.633Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.637Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-32e4f1d11e4370ca"}
+2024-12-11T14:58:17.644Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.648Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-82909a5c689999fd"}
+2024-12-11T14:58:17.656Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.659Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-3004bbe3804f1c01"}
+2024-12-11T14:58:17.667Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.671Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-00634827e652a76c"}
+2024-12-11T14:58:17.679Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:17.831Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:17.938Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.942Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-37d3c90dbbfa2dde"}
+2024-12-11T14:58:17.952Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.957Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-5006f19d1be20c45"}
+2024-12-11T14:58:17.967Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.972Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-1d7584767b5d09b3"}
+2024-12-11T14:58:17.982Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.986Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-e1837a8f7e96c381"}
+2024-12-11T14:58:17.995Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:17.999Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-0e26ef0ae64b7c30"}
+2024-12-11T14:58:18.007Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.011Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-d366953711b47c08"}
+2024-12-11T14:58:18.018Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.022Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-c14c7ecd45d19385"}
+2024-12-11T14:58:18.030Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.034Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-8a3319a893d4608a"}
+2024-12-11T14:58:18.042Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.046Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-c5cbc53c48010923"}
+2024-12-11T14:58:18.055Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.058Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-9d31f97f2c064f6d"}
+2024-12-11T14:58:18.066Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.070Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-bbd293e3ba59cabc"}
+2024-12-11T14:58:18.079Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.083Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-4ca56034e15f6834"}
+2024-12-11T14:58:18.090Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.094Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-4b9db89b8677d69e"}
+2024-12-11T14:58:18.102Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.105Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-97e64e4acde66de0"}
+2024-12-11T14:58:18.113Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.117Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-332b36d24124a12c"}
+2024-12-11T14:58:18.124Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.128Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-53f1a926b70d96a4"}
+2024-12-11T14:58:18.135Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.139Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-251988db7ebb6bc7"}
+2024-12-11T14:58:18.146Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.150Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-5a1ef3c9dd2d4f65"}
+2024-12-11T14:58:18.158Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.162Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-9fd01926125745ab"}
+2024-12-11T14:58:18.169Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.173Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-4c020688a0c651dd"}
+2024-12-11T14:58:18.181Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.185Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-4108b99fb354d0dc"}
+2024-12-11T14:58:18.192Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.196Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-d554d9a634450d21"}
+2024-12-11T14:58:18.205Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.208Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-a89360011e074b61"}
+2024-12-11T14:58:18.216Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.220Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-1824b4f347a6adcc"}
+2024-12-11T14:58:18.228Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.231Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-ec19e28c65ac8059"}
+2024-12-11T14:58:18.239Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.242Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-41f2b917ac07cb4b"}
+2024-12-11T14:58:18.250Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.254Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-7729b76ea252862f"}
+2024-12-11T14:58:18.262Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.266Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-e3e676a3360382e4"}
+2024-12-11T14:58:18.274Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.278Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-819093dbe664d7e4"}
+2024-12-11T14:58:18.286Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.290Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-95334957549d9575"}
+2024-12-11T14:58:18.298Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.302Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-e42d86364e6db585"}
+2024-12-11T14:58:18.310Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.314Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"CLOSE-6b50fd0edced8371"}
+2024-12-11T14:58:18.322Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.326Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-b8087fbcfb5451aa"}
+2024-12-11T14:58:18.348Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.352Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-868fb7fe61455848"}
+2024-12-11T14:58:18.443Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.447Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-a26e24670401d494"}
+2024-12-11T14:58:18.456Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.460Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-3510e672fbe8ddcb"}
+2024-12-11T14:58:18.468Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.472Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-8e95cec6eb2f89af"}
+2024-12-11T14:58:18.480Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.484Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-ee5157be49761299"}
+2024-12-11T14:58:18.492Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.496Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-1640421d47d769b0"}
+2024-12-11T14:58:18.503Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.507Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-4e294210cfc2cf16"}
+2024-12-11T14:58:18.515Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.519Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-f0f22320ddb85832"}
+2024-12-11T14:58:18.526Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.530Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-76881d8783a15fb7"}
+2024-12-11T14:58:18.538Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.542Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-846ea912b9620e65"}
+2024-12-11T14:58:18.549Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.553Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-fba1ed0d459f5d87"}
+2024-12-11T14:58:18.560Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.565Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-40c2f5f910068cfc"}
+2024-12-11T14:58:18.570Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:18.578Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.582Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-ebaf7df69673b709"}
+2024-12-11T14:58:18.590Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.594Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-ba2cbf75e753ab64"}
+2024-12-11T14:58:18.602Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.605Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-2f7a2056ffdcb606"}
+2024-12-11T14:58:18.613Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.617Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-84f3b536596dacec"}
+2024-12-11T14:58:18.625Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.629Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-9088524aa75cd9a9"}
+2024-12-11T14:58:18.642Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.656Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-ff93585d00fe8069"}
+2024-12-11T14:58:18.664Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.668Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-6e4111128ba918ab"}
+2024-12-11T14:58:18.676Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.679Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-d43f869b238fe449"}
+2024-12-11T14:58:18.687Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.691Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-917e0ae33adb68bb"}
+2024-12-11T14:58:18.698Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.702Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-41785dc34ede7ea7"}
+2024-12-11T14:58:18.711Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.714Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-919dde2e81865c3a"}
+2024-12-11T14:58:18.748Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.752Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-eb77b8a0c52f9b1a"}
+2024-12-11T14:58:18.759Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.763Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-d348f1017b1cc437"}
+2024-12-11T14:58:18.770Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.774Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-2edadbd6daeb173a"}
+2024-12-11T14:58:18.781Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.785Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-99083c56322fb16c"}
+2024-12-11T14:58:18.793Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.796Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-e281775f07503305"}
+2024-12-11T14:58:18.804Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.807Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-42e9f38cc3d327e2"}
+2024-12-11T14:58:18.815Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.818Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-58926837c295b843"}
+2024-12-11T14:58:18.826Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.830Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-447fbec2af7a7ea5"}
+2024-12-11T14:58:18.838Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.842Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-e4bfbd9efc928e71"}
+2024-12-11T14:58:18.846Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:18.849Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:18.853Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:18.860Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.864Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-8336b891f917f739"}
+2024-12-11T14:58:18.871Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.875Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-df5158286014255d"}
+2024-12-11T14:58:18.882Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.886Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.06","extended_hours":true,"client_order_id":"CLOSE-3663ecded8cc32c4"}
+2024-12-11T14:58:18.894Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.897Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-bb25fbf8572f33ce"}
+2024-12-11T14:58:18.905Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.909Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-c1b431c538b75749"}
+2024-12-11T14:58:18.912Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:18.916Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:18.924Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.927Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-055f03a6416fa06f"}
+2024-12-11T14:58:18.947Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.951Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-75e371d25ec894fd"}
+2024-12-11T14:58:18.958Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.962Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-565669a853a01087"}
+2024-12-11T14:58:18.969Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.973Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-1b67801002d36d23"}
+2024-12-11T14:58:18.982Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:18.986Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-dd67c9e3176fa025"}
+2024-12-11T14:58:18.998Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.002Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-4c6a33b67004871d"}
+2024-12-11T14:58:19.006Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:19.014Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.017Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-119696c703343f54"}
+2024-12-11T14:58:19.025Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.029Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-43276fc245d99788"}
+2024-12-11T14:58:19.036Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.040Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-7f5234a9c031b0b0"}
+2024-12-11T14:58:19.048Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.051Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-089fa03f9956cb0e"}
+2024-12-11T14:58:19.059Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.063Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-3bf3e76e53f8c33f"}
+2024-12-11T14:58:19.135Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.139Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-cadc77a4f18cd82c"}
+2024-12-11T14:58:19.146Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.150Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-6cc6112efb9d235a"}
+2024-12-11T14:58:19.157Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.161Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.07","extended_hours":true,"client_order_id":"CLOSE-23d709b0b08a59c7"}
+2024-12-11T14:58:19.222Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:19.402Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:19.463Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.467Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-6ac79794ab4c634e"}
+2024-12-11T14:58:19.476Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.480Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-0e443027d2727556"}
+2024-12-11T14:58:19.489Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.493Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-1acc9986e9a3bfc9"}
+2024-12-11T14:58:19.501Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.506Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-8e8f874883057b10"}
+2024-12-11T14:58:19.514Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.517Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-5043e0b8fcc9386e"}
+2024-12-11T14:58:19.526Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.530Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-5d8df934ab3a37d0"}
+2024-12-11T14:58:19.537Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.541Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-3685ee4f7b0398fe"}
+2024-12-11T14:58:19.549Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.553Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-7d9ae9578cefdfa7"}
+2024-12-11T14:58:19.561Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.578Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-dda9b19c9a073b87"}
+2024-12-11T14:58:19.587Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.591Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-32d918918bd29a07"}
+2024-12-11T14:58:19.595Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:19.738Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:19.966Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.974Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-3ef10866da7a1186"}
+2024-12-11T14:58:19.981Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:19.993Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:19.998Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-9d9bce13142a15e8"}
+2024-12-11T14:58:20.008Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:20.013Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-333c8740bc241606"}
+2024-12-11T14:58:20.021Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:20.026Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-6c1366124053d993"}
+2024-12-11T14:58:20.123Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:20.416Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:20.463Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:20.471Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-2da3078a7d0a6d34"}
+2024-12-11T14:58:20.479Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:20.485Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-37c73c4487ff5937"}
+2024-12-11T14:58:20.496Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:20.501Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-62bced68b2cc1416"}
+2024-12-11T14:58:20.510Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:20.515Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-c538e897daa2bd93"}
+2024-12-11T14:58:20.775Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:21.124Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:21.557Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:21.823Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:22.165Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:22.474Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.482Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-b7215241ac831467"}
+2024-12-11T14:58:22.496Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.502Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-80b1d2bac493c073"}
+2024-12-11T14:58:22.512Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.517Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-b7afcbf81d79e137"}
+2024-12-11T14:58:22.526Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.531Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-1746d5db3ba7df9e"}
+2024-12-11T14:58:22.540Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.544Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-3a39ae0c00ac7473"}
+2024-12-11T14:58:22.548Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:22.556Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.560Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-431581247397d45f"}
+2024-12-11T14:58:22.568Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.572Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-3259c9951c4fde8f"}
+2024-12-11T14:58:22.580Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.584Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-04e843148bd92882"}
+2024-12-11T14:58:22.592Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.596Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-f1dee03bfe840e5d"}
+2024-12-11T14:58:22.651Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:22.872Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:22.973Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.980Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-c2558a081795a5cd"}
+2024-12-11T14:58:22.992Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:22.998Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-aa3dcdb530fc8383"}
+2024-12-11T14:58:23.009Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:23.014Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-6bc936806498c78e"}
+2024-12-11T14:58:23.023Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:23.028Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-aaa5d8bca26ff3e8"}
+2024-12-11T14:58:23.037Z [INFO]: Trailing stop hit for LDTC at $2.49. Closing remaining position.
+2024-12-11T14:58:23.041Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"6825","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.08","extended_hours":true,"client_order_id":"CLOSE-bc9fa69b1a728a56"}
+2024-12-11T14:58:23.064Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T14:58:23.223Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:23.673Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:23.794Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:58:23.923Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:24.264Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:24.720Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:25.001Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:25.339Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:25.697Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:26.085Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T14:58:28.325Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:58:28.335Z [INFO]: Started polling for order statuses.
+2024-12-11T14:58:28.534Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T14:58:28.535Z [INFO]: Polygon WebSocket connected.
+2024-12-11T14:58:28.589Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T14:58:28.744Z [INFO]: Subscribed to LDTC quote data.
+2024-12-11T14:58:29.222Z [INFO]: Subscribed to RZLV quote data.
+2024-12-11T14:58:43.341Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:58:44.480Z [INFO]: Subscribed to GXAI quote data.
+2024-12-11T14:58:46.650Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T14:58:58.335Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:59:13.338Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:59:28.337Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:59:43.341Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T14:59:58.343Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:00:13.345Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:00:13.932Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T15:00:14.449Z [INFO]: Unsubscribed from GXAI trade data.
+2024-12-11T15:00:28.345Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:00:43.346Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:00:58.349Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:01:13.343Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:01:15.203Z [INFO]: Subscribed to GXAI quote data.
+2024-12-11T15:01:28.347Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:01:29.421Z [INFO]: Unsubscribed from GXAI trade data.
+2024-12-11T15:01:43.350Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:01:45.103Z [INFO]: Subscribed to GXAI quote data.
+2024-12-11T15:01:52.112Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:01:52.120Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:01:52.125Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:01:52.613Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:01:52.621Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:01:53.116Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:01:53.129Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:01:53.137Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:01:58.348Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:02:00.753Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:02:01.263Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:02:01.588Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:02:03.506Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:02:04.008Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:02:04.510Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:02:04.517Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:02:04.523Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:02:08.045Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:02:10.302Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:02:10.312Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:02:13.348Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:02:13.984Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T15:02:14.697Z [INFO]: Unsubscribed from GXAI trade data.
+2024-12-11T15:02:16.809Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:02:17.324Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:02:28.348Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:02:30.595Z [INFO]: Subscribed to GXAI quote data.
+2024-12-11T15:02:43.350Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:02:44.919Z [INFO]: Unsubscribed from GXAI trade data.
+2024-12-11T15:02:58.356Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:03:13.351Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:03:14.776Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T15:03:26.837Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:03:26.844Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T15:03:28.354Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:03:29.758Z [INFO]: Subscribed to RZLV quote data.
+2024-12-11T15:03:32.701Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:03:43.183Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T15:03:43.355Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:03:49.282Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:03:49.787Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T15:03:57.385Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:03:57.578Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"LDTC","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.05","extended_hours":true,"client_order_id":"ENTRY-81c49d6540689995"}
+2024-12-11T15:03:57.732Z [INFO]: Entry order placed for 5000 shares of LDTC at $3.05. Order ID: 66b7034e-3ffd-4eae-9b06-e4e2e5890d96
+2024-12-11T15:03:58.359Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:03:58.403Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T15:03:58.410Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:03:58.415Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T15:03:58.420Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:03:58.631Z [INFO]: Position added: LDTC | Qty: 5000 | Avg Entry: $2.696538
+2024-12-11T15:03:58.836Z [INFO]: Stop condition met for LDTC. Closing position.
+2024-12-11T15:03:58.844Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.31","extended_hours":true,"client_order_id":"CLOSE-21653086c61b1be0"}
+2024-12-11T15:03:59.361Z [INFO]: Limit order placed to close position in LDTC. Order ID: de153cce-d5de-4d78-a3b5-406a8c7ed8bb
+2024-12-11T15:04:00.127Z [INFO]: Order de153cce-d5de-4d78-a3b5-406a8c7ed8bb filled 4755 qty for LDTC. Remaining qty: 245
+2024-12-11T15:04:01.136Z [INFO]: Order de153cce-d5de-4d78-a3b5-406a8c7ed8bb filled 4830 qty for LDTC. Remaining qty: 0
+2024-12-11T15:04:01.141Z [INFO]: Position removed: LDTC
+2024-12-11T15:04:13.357Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:04:28.359Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:04:43.358Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:04:58.361Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:05:08.620Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:05:13.358Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:05:13.996Z [INFO]: Subscribed to YJ quote data.
+2024-12-11T15:05:18.699Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:05:27.139Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"LDTC","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.10","extended_hours":true,"client_order_id":"ENTRY-220282326724c383"}
+2024-12-11T15:05:27.355Z [INFO]: Entry order placed for 5000 shares of LDTC at $3.10. Order ID: b5826c26-c95b-42b2-a960-84a7549c730c
+2024-12-11T15:05:28.361Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:05:28.671Z [INFO]: Position added: LDTC | Qty: 5000 | Avg Entry: $2.75
+2024-12-11T15:05:28.997Z [INFO]: Stop condition met for LDTC. Closing position.
+2024-12-11T15:05:29.003Z [INFO]: Closing position with limit order: {"symbol":"LDTC","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.31","extended_hours":true,"client_order_id":"CLOSE-9183b382b093ce10"}
+2024-12-11T15:05:29.393Z [INFO]: Limit order placed to close position in LDTC. Order ID: 82ce7a21-b16d-41ef-ad68-6d03e78e49d3
+2024-12-11T15:05:30.085Z [INFO]: Order 82ce7a21-b16d-41ef-ad68-6d03e78e49d3 filled 2095 qty for LDTC. Remaining qty: 2767
+2024-12-11T15:05:30.695Z [INFO]: Position removed: LDTC
+2024-12-11T15:05:43.360Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:05:58.360Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:06:13.361Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:06:14.078Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T15:06:15.493Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:06:15.504Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:06:21.513Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:06:22.014Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:06:22.020Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:06:24.019Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:06:24.520Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:06:24.526Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:06:25.028Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:06:25.035Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:06:25.536Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:06:25.903Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:06:28.362Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:06:30.441Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:06:31.362Z [INFO]: Subscribed to RZLV quote data.
+2024-12-11T15:06:43.370Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:06:58.366Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:07:13.362Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:07:28.369Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:07:38.657Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:38.665Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:07:39.150Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:42.164Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:07:43.171Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:43.364Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:07:43.672Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:07:43.681Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:44.668Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T15:07:44.688Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:07:48.702Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:48.711Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:07:49.205Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:53.240Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:07:53.746Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:54.249Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:07:55.253Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:07:58.365Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:07:59.632Z [INFO]: Subscribed to RZLV quote data.
+2024-12-11T15:08:03.841Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:08:05.855Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:08:06.357Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:08:06.366Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:08:09.875Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:08:10.374Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:08:10.387Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:08:10.875Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:08:10.882Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:08:11.884Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:08:11.895Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:08:12.385Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:08:13.376Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:08:14.119Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T15:08:28.375Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:08:29.611Z [INFO]: Subscribed to RZLV quote data.
+2024-12-11T15:08:43.369Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:08:58.371Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:08:59.668Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:09:01.681Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:09:02.690Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:09:02.700Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:09:02.708Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:09:02.713Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:09:02.718Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:09:02.722Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:09:02.727Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:09:02.731Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:09:02.736Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:09:02.741Z [INFO]: Subscribed to LDTC trade data.
+2024-12-11T15:09:13.372Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:09:28.377Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:09:43.377Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:09:48.840Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-11T15:09:58.376Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:10:13.378Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:10:28.379Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:10:43.382Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:10:58.383Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:10:59.231Z [INFO]: Unsubscribed from RZLV trade data.
+2024-12-11T15:11:13.365Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:11:28.356Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:11:43.352Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:11:58.347Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:12:13.346Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:12:28.349Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:12:43.349Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:12:58.351Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:13:13.351Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:13:28.350Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:13:43.353Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:13:58.357Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:14:13.352Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:14:28.355Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:14:43.359Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:14:44.219Z [INFO]: Subscribed to ZONE quote data.
+2024-12-11T15:14:58.365Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:14:59.088Z [INFO]: Unsubscribed from ZONE trade data.
+2024-12-11T15:15:13.355Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:15:28.361Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:15:43.358Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:15:58.364Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:16:13.362Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:16:28.361Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:16:32.030Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:16:32.536Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:16:43.367Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:16:58.366Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:17:13.367Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:17:28.370Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:17:43.372Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:17:54.649Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:17:54.656Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:17:58.372Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:18:00.645Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:00.651Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:08.176Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.192Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.203Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.209Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.215Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.220Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.226Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.231Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.235Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.367Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:18:13.694Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.703Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.707Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.710Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.713Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.716Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.720Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.724Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.727Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.731Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.734Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.738Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.741Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.745Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.748Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:13.752Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:18:13.756Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:18:28.369Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:18:43.373Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:18:58.373Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:19:13.375Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:19:28.377Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:19:43.379Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:19:58.377Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:20:13.371Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:20:28.377Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:20:43.375Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:20:55.083Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T15:20:58.379Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:21:13.385Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:21:22.380Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:21:23.393Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T15:21:28.381Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:21:33.014Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T15:21:43.384Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:21:58.378Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:22:13.394Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:22:28.380Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:22:43.380Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:22:58.384Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:23:13.386Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:23:28.385Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:23:43.387Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:23:58.384Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:24:11.963Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:11.973Z [INFO]: Started polling for order statuses.
+2024-12-11T15:24:12.321Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T15:24:12.322Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:12.410Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T15:24:12.439Z [INFO]: Subscribed to LDTC quote data.
+2024-12-11T15:24:26.976Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:24:28.499Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:28.513Z [INFO]: Started polling for order statuses.
+2024-12-11T15:24:28.675Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T15:24:28.676Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:28.726Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T15:24:28.973Z [INFO]: Subscribed to LDTC quote data.
+2024-12-11T15:24:35.138Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:35.152Z [INFO]: Started polling for order statuses.
+2024-12-11T15:24:35.335Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T15:24:35.336Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:35.382Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T15:24:36.011Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T15:24:36.308Z [INFO]: Subscribed to LDTC quote data.
+2024-12-11T15:24:48.028Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:48.038Z [INFO]: Started polling for order statuses.
+2024-12-11T15:24:48.199Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T15:24:48.200Z [INFO]: Polygon WebSocket connected.
+2024-12-11T15:24:48.251Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T15:24:48.532Z [INFO]: Subscribed to LDTC quote data.
+2024-12-11T15:25:03.040Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:25:03.846Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T15:25:04.275Z [INFO]: Subscribed to SLXN quote data.
+2024-12-11T15:25:18.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:25:33.040Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:25:48.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:25:48.877Z [INFO]: Unsubscribed from SLXN trade data.
+2024-12-11T15:26:03.042Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:26:18.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:26:33.059Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:26:48.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:27:03.050Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:27:18.045Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:27:33.048Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:27:48.049Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:28:03.051Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:28:18.055Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:28:33.052Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:28:48.050Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:29:03.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:29:18.054Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:29:33.054Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:29:48.059Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:30:03.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:30:13.064Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:30:17.259Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:30:18.054Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:30:33.059Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:30:39.290Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:30:39.301Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:30:48.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:31:03.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:31:18.064Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:31:33.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:31:48.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:32:03.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:32:18.066Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:32:33.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:32:48.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:32:50.531Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:32:50.544Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:32:50.551Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:32:57.057Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:32:57.070Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:32:57.078Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:32:57.084Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:33:00.374Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:33:03.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:33:15.918Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:33:18.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:33:18.868Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T15:33:18.926Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:33:19.458Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:19.464Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:19.469Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:19.959Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:20.460Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:20.465Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:20.471Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:20.476Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:20.481Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:20.486Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:20.490Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:20.495Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:20.931Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:33:20.940Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:33:22.940Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:33:22.949Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:33:22.972Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:22.977Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:22.981Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:23.474Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:23.482Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:23.486Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:23.489Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:23.493Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:23.496Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:23.501Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:23.983Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:23.991Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:23.997Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:24.002Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:33:24.007Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:33:24.863Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T15:33:33.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:33:41.814Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T15:33:48.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:34:03.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:34:03.972Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T15:34:07.476Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"MIND","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.24","extended_hours":true,"client_order_id":"ENTRY-0dcdad282f01e4b8"}
+2024-12-11T15:34:07.636Z [INFO]: Entry order placed for 5000 shares of MIND at $6.24. Order ID: 10806340-a442-43ca-a5ab-cd330ae4a5f1
+2024-12-11T15:34:08.413Z [INFO]: Position added: MIND | Qty: 5000 | Avg Entry: $5.88
+2024-12-11T15:34:08.474Z [INFO]: Stop condition met for MIND. Closing position.
+2024-12-11T15:34:08.477Z [INFO]: Closing position with limit order: {"symbol":"MIND","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.44","extended_hours":true,"client_order_id":"CLOSE-c79e9879b7183581"}
+2024-12-11T15:34:08.767Z [INFO]: Limit order placed to close position in MIND. Order ID: 53ac13a1-b356-4ae3-97ab-2721e0eb7b5d
+2024-12-11T15:34:09.118Z [INFO]: Order 53ac13a1-b356-4ae3-97ab-2721e0eb7b5d filled 3785 qty for MIND. Remaining qty: 1215
+2024-12-11T15:34:09.822Z [INFO]: Order 53ac13a1-b356-4ae3-97ab-2721e0eb7b5d filled 4966 qty for MIND. Remaining qty: 0
+2024-12-11T15:34:09.828Z [INFO]: Position removed: MIND
+2024-12-11T15:34:14.551Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"MIND","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.24","extended_hours":true,"client_order_id":"ENTRY-106bc6ad47882432"}
+2024-12-11T15:34:15.122Z [INFO]: Entry order placed for 5000 shares of MIND at $6.24. Order ID: 2f3a1a43-fbfc-4448-8f5b-6958957f10a4
+2024-12-11T15:34:16.414Z [INFO]: Position added: MIND | Qty: 5000 | Avg Entry: $5.880676
+2024-12-11T15:34:17.074Z [INFO]: Stop condition met for MIND. Closing position.
+2024-12-11T15:34:17.081Z [INFO]: Closing position with limit order: {"symbol":"MIND","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.43","extended_hours":true,"client_order_id":"CLOSE-08bb0dd2fdbf94cb"}
+2024-12-11T15:34:17.244Z [INFO]: Limit order placed to close position in MIND. Order ID: 1ecc2f5d-59d0-41e7-b148-0f58ed1d61af
+2024-12-11T15:34:17.610Z [INFO]: Position removed: MIND
+2024-12-11T15:34:18.072Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:34:33.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:34:45.289Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"MIND","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.24","extended_hours":true,"client_order_id":"ENTRY-822200341c54deef"}
+2024-12-11T15:34:45.443Z [INFO]: Entry order placed for 5000 shares of MIND at $6.24. Order ID: 2ff59f96-9196-4f8c-ae07-c98ccea73019
+2024-12-11T15:34:46.424Z [INFO]: Position added: MIND | Qty: 5000 | Avg Entry: $5.89
+2024-12-11T15:34:48.071Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T15:34:48.752Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T15:34:48.824Z [INFO]: Stop condition met for MIND. Closing position.
+2024-12-11T15:34:48.827Z [INFO]: Closing position with limit order: {"symbol":"MIND","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.43","extended_hours":true,"client_order_id":"CLOSE-e2dde9c4d03b7106"}
+2024-12-11T15:34:49.132Z [INFO]: Limit order placed to close position in MIND. Order ID: 5df99da6-b8a6-42fc-b69a-1dc33809fa9a
+2024-12-11T15:34:49.906Z [INFO]: Order 5df99da6-b8a6-42fc-b69a-1dc33809fa9a filled 2821 qty for MIND. Remaining qty: 0
+2024-12-11T15:34:49.911Z [INFO]: Position removed: MIND
+2024-12-11T15:34:52.348Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"MIND","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.24","extended_hours":true,"client_order_id":"ENTRY-63e41d373cb96164"}
+2024-12-11T15:34:52.792Z [INFO]: Entry order placed for 5000 shares of MIND at $6.24. Order ID: 4595e492-f6a6-49ab-98c7-1f74d3835bf2
+2024-12-11T15:34:54.428Z [INFO]: Position added: MIND | Qty: 5000 | Avg Entry: $5.87102
+2024-12-11T15:34:55.347Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T15:34:55.352Z [INFO]: Subscribed to AMPG trade data.
+2024-12-11T15:34:59.938Z [INFO]: Stop condition met for MIND. Closing position.
+2024-12-11T15:34:59.945Z [INFO]: Closing position with limit order: {"symbol":"MIND","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.44","extended_hours":true,"client_order_id":"CLOSE-72d2218a011a315b"}
+2024-12-11T15:35:00.118Z [INFO]: Limit order placed to close position in MIND. Order ID: 19397f56-4dd8-4563-b7c2-357d3b45f9fe
+2024-12-11T15:35:00.811Z [INFO]: Order 19397f56-4dd8-4563-b7c2-357d3b45f9fe filled 3543 qty for MIND. Remaining qty: 1457
+2024-12-11T15:35:02.438Z [INFO]: Position removed: MIND
+2024-12-11T15:35:03.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:21:10.046Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:21:10.056Z [INFO]: Started polling for order statuses.
+2024-12-11T16:21:10.386Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:21:10.388Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:21:10.439Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:21:10.891Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:21:11.268Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T16:21:22.152Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:22.156Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:21:22.161Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:22.166Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:21:23.642Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:23.651Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:21:23.656Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:23.661Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:21:23.664Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:25.058Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:21:27.652Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:21:27.662Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:27.679Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:21:40.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:21:41.683Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:41.692Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:21:41.698Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:21:55.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:22:10.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:22:16.690Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:22:16.699Z [INFO]: Started polling for order statuses.
+2024-12-11T16:22:16.868Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:22:16.869Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:22:16.999Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:22:17.420Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:22:17.736Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T16:22:31.705Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:22:46.702Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:22:47.178Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:23:01.702Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:23:02.311Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:23:16.705Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:23:18.856Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:23:18.883Z [INFO]: Started polling for order statuses.
+2024-12-11T16:23:19.078Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:23:19.080Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:23:19.132Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:23:19.598Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:23:19.942Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T16:23:33.849Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:23:34.486Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:23:48.850Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:24:03.854Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:24:18.862Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:24:25.423Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:24:25.433Z [INFO]: Started polling for order statuses.
+2024-12-11T16:24:25.605Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:24:25.606Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:24:25.663Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:24:26.042Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:24:26.368Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T16:24:40.436Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:24:55.433Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:24:55.908Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:25:10.445Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:25:11.588Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:25:25.439Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:25:40.442Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:25:55.441Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:26:10.444Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:26:10.612Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:26:25.443Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:26:40.441Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:26:55.443Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:27:10.444Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:27:25.446Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:27:33.778Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:27:33.789Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:27:33.796Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:27:40.451Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:27:55.451Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:28:10.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:28:12.325Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:28:12.369Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:28:15.337Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:28:16.344Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:28:16.354Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:28:16.360Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:28:25.455Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:28:40.455Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:28:52.667Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:28:52.673Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:28:52.677Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:28:55.456Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:28:58.691Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:29:00.910Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:29:10.458Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:29:17.986Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:29:25.459Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:29:26.511Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T16:29:31.536Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T16:29:40.460Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:29:55.463Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:30:10.462Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:30:25.461Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:30:40.462Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:30:57.242Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:30:57.255Z [INFO]: Started polling for order statuses.
+2024-12-11T16:30:57.433Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:30:57.434Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:30:57.485Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:31:13.574Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:31:13.584Z [INFO]: Started polling for order statuses.
+2024-12-11T16:31:13.736Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:31:13.736Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:31:13.782Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:31:29.792Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:31:29.802Z [INFO]: Started polling for order statuses.
+2024-12-11T16:31:29.965Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:31:29.966Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:31:30.015Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:31:44.804Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:31:59.805Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:32:05.978Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:32:05.990Z [INFO]: Started polling for order statuses.
+2024-12-11T16:32:06.152Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T16:32:06.153Z [INFO]: Polygon WebSocket connected.
+2024-12-11T16:32:06.206Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T16:32:06.964Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T16:32:20.989Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:32:35.996Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:32:50.994Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:33:05.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:33:20.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:33:35.994Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:33:50.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
