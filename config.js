@@ -29,6 +29,10 @@ module.exports = {
     initialTrailingStopOffsetCents: 12,
     openingOrderCooldownSeconds: 5,
     tradeProximityCents: 15,
+
+    // Added Settings for Dynamic Initial Stop Based on HOD
+    initialStopOffsetCents: 2, // Number of cents below HOD for initial stop
+    dynamicStopThresholdCents: 1, // Minimum profit targets hit before dynamic stop adjustment
   },
   orderSettings: {
     limitOffsetCents: 10, // Offset for placing LIMIT orders
@@ -38,7 +42,6 @@ module.exports = {
       { targetCents: 20, percentToClose: 40 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: 6 },
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
       { profitTargetsHit: 4, stopCents: 20 },
@@ -57,9 +60,13 @@ module.exports = {
     entry: 4000,
   },
   pollingIntervals: {
-    orderStatus: 1000, // 1 second
-    positionRefresh: 2000, // 2 seconds
+    orderStatus: 3000, // Increased to 3 seconds
+    positionRefresh: 5000, // Increased to 5 seconds
     watchlistRefresh: 15000, // 15 seconds
+  },
+  statePersistence: {
+    saveInterval: 60000, // Save state every 60 seconds
+    stateFilePath: 'systemState.json', // Path to the state file
   },
   logging: {
     level: 'info',

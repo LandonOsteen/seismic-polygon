@@ -24938,3 +24938,357 @@
 2024-12-11T17:45:00.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-11T17:45:15.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-11T17:45:30.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:45:45.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:46:00.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:46:15.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:46:16.755Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T17:46:30.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:46:45.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:47:00.066Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:47:01.241Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T17:47:15.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:47:16.141Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T17:47:30.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:47:45.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:48:00.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:48:15.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:48:30.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:48:45.071Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:49:00.071Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:49:15.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:49:30.074Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:49:45.072Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:50:00.077Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:50:15.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:50:30.074Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:50:45.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:51:00.074Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:51:15.074Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:51:30.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:51:45.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:52:00.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:52:15.078Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:52:30.082Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:52:45.085Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:53:00.080Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:53:15.083Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:53:30.085Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:53:45.084Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:54:00.085Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:54:15.082Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:54:30.094Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:54:45.091Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:55:00.091Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:55:00.867Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T17:55:16.228Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:55:16.239Z [INFO]: Started polling for order statuses.
+2024-12-11T17:55:16.560Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T17:55:16.562Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:55:16.614Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T17:55:16.995Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T17:55:31.234Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:55:46.234Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:56:01.259Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:56:16.245Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:56:31.260Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:56:46.249Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:56:53.383Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:56:53.394Z [INFO]: Started polling for order statuses.
+2024-12-11T17:56:53.634Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T17:56:53.636Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:56:53.686Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T17:57:08.394Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:57:08.394Z [INFO]: Subscribed to RPTX quote data.
+2024-12-11T17:57:09.156Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T17:57:23.401Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:57:38.396Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:57:53.400Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:57:54.167Z [INFO]: Unsubscribed from RPTX trade data.
+2024-12-11T17:58:08.404Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:58:23.398Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:58:38.400Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:58:53.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:59:08.402Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:59:09.727Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T17:59:23.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:59:38.404Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:59:53.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:00:08.410Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:00:23.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:00:38.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:00:53.414Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:01:08.410Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:01:23.414Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:01:38.412Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:01:53.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:02:08.414Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:02:23.417Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:02:38.414Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:02:53.416Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:03:08.415Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:03:23.416Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:03:38.420Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:03:53.421Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:04:08.421Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:04:23.423Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:04:38.423Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:04:53.425Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:05:08.425Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:05:23.426Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:05:38.432Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:05:53.429Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:06:08.436Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:06:23.437Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:06:38.438Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:06:53.441Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:07:08.442Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T18:07:23.440Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:08:54.611Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:08:54.621Z [INFO]: Started polling for order statuses.
+2024-12-11T19:08:54.780Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:08:54.782Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:08:54.828Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:08:55.454Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T19:09:09.622Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:09:09.622Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T19:09:24.623Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:09:39.624Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:09:54.625Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:10:09.165Z [ERROR]: Error polling order statuses: read ETIMEDOUT
+2024-12-11T19:10:09.627Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:11:48.991Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:11:49.001Z [INFO]: Started polling for order statuses.
+2024-12-11T19:11:49.164Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:11:49.165Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:11:49.213Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:11:49.790Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T19:12:03.998Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:12:03.999Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T19:12:19.084Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:12:34.087Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:12:49.085Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:13:04.085Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:13:19.102Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:13:34.088Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:13:49.089Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:14:04.087Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:14:04.088Z [INFO]: Subscribed to OKLO quote data.
+2024-12-11T19:14:14.796Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"OKLO","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"19.82","extended_hours":true,"client_order_id":"ENTRY-fbe801862929ca15"}
+2024-12-11T19:14:14.922Z [INFO]: Entry order placed for 5000 shares of OKLO at $19.82. Order ID: 32dbbd4b-d131-433d-9278-d7f8ceab0d64
+2024-12-11T19:14:15.281Z [INFO]: Position added: OKLO | Qty: 4 | Avg Entry: $19.48 | Initial Stop: $19.45
+2024-12-11T19:14:15.629Z [INFO]: Order 32dbbd4b-d131-433d-9278-d7f8ceab0d64 filled 1447 qty for OKLO. New qty: 1451, New Avg Entry Price: $19.82
+2024-12-11T19:14:16.312Z [INFO]: Order 32dbbd4b-d131-433d-9278-d7f8ceab0d64 filled 1447 qty for OKLO. New qty: 2898, New Avg Entry Price: $19.82
+2024-12-11T19:14:19.090Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:14:34.090Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:14:49.090Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:15:04.095Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:15:19.094Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:15:34.104Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:15:49.095Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:16:04.096Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:16:19.096Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:16:34.096Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:16:49.099Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:17:04.099Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:17:19.099Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:17:23.811Z [ERROR]: Error fetching account info: read ETIMEDOUT
+2024-12-11T19:17:34.103Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:17:49.104Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:18:04.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:18:19.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:18:34.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:18:49.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:19:04.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:19:19.111Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:19:34.111Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:19:49.110Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:19:56.715Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:19:56.724Z [INFO]: Started polling for order statuses.
+2024-12-11T19:19:56.866Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:19:56.903Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:19:56.903Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:19:56.949Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:19:57.551Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T19:19:58.853Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:20:00.858Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:20:02.850Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:20:04.864Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:20:06.859Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:20:08.850Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:20:10.867Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:20:11.732Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:20:11.733Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T19:20:11.743Z [INFO]: Subscribed to OKLO quote data.
+2024-12-11T19:20:12.861Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.60
+2024-12-11T19:20:13.102Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T19:20:26.732Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:20:41.733Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:20:46.220Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T19:20:49.726Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T19:21:02.143Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:21:02.153Z [INFO]: Started polling for order statuses.
+2024-12-11T19:21:02.307Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:02.321Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:21:02.321Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:21:02.367Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:21:02.944Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T19:21:04.269Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:06.273Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:08.291Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:10.276Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:12.270Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:14.272Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:16.278Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:21:17.149Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:21:17.149Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T19:21:17.152Z [INFO]: Subscribed to OKLO quote data.
+2024-12-11T19:21:18.266Z [WARN]: High of Day missing for OKLO while adding position.
+2024-12-11T19:21:20.286Z [WARN]: High of Day missing for OKLO while adding position.
+2024-12-11T19:21:22.276Z [WARN]: High of Day missing for OKLO while adding position.
+2024-12-11T19:21:24.282Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.56
+2024-12-11T19:21:32.148Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:21:47.158Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:22:02.177Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:22:17.159Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:22:32.159Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:22:47.162Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:23:02.163Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:23:17.160Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:23:32.164Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:23:47.163Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:24:02.163Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:24:17.164Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:24:25.110Z [ERROR]: Error fetching account info: read ETIMEDOUT
+2024-12-11T19:24:32.169Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:24:47.166Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:25:02.166Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:25:17.169Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:25:32.167Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:25:36.771Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:25:36.781Z [INFO]: Started polling for order statuses.
+2024-12-11T19:25:36.931Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:36.946Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:25:36.947Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:25:36.991Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:25:37.617Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T19:25:38.891Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:40.901Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:42.895Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:44.895Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:46.896Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:48.897Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:50.908Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:25:51.778Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:25:51.778Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T19:25:51.781Z [INFO]: Subscribed to OKLO quote data.
+2024-12-11T19:25:52.896Z [WARN]: High of Day missing for OKLO while adding position.
+2024-12-11T19:25:55.898Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.56
+2024-12-11T19:26:06.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:26:21.782Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:26:36.791Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:26:48.225Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T19:26:48.231Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T19:26:48.727Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T19:26:49.733Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T19:26:49.738Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T19:26:49.741Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T19:26:49.745Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T19:26:50.738Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T19:26:51.783Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:27:06.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:27:21.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:27:36.788Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:27:51.790Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:28:06.792Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:28:21.792Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:28:36.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:28:46.827Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T19:28:46.835Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T19:28:47.336Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T19:28:51.794Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:29:06.793Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:29:21.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:29:36.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:29:51.797Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:30:00.220Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T19:30:06.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:30:21.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:30:36.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:30:51.798Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:30:53.672Z [INFO]: Unsubscribed from OKLO trade data.
+2024-12-11T19:31:06.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:31:21.799Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:31:30.009Z [INFO]: Subscribed to OKLO trade data.
+2024-12-11T19:31:30.017Z [INFO]: Unsubscribed from OKLO trade data.
+2024-12-11T19:31:30.021Z [INFO]: Subscribed to OKLO trade data.
+2024-12-11T19:31:36.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:31:51.802Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:32:06.805Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:32:21.809Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:32:36.810Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:32:51.809Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:33:06.810Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:33:21.810Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:33:36.813Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:33:48.000Z [INFO]: Unsubscribed from MIND trade data.
+2024-12-11T19:33:51.813Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:34:06.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:34:21.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:34:31.777Z [INFO]: Subscribed to MIND trade data.
+2024-12-11T19:34:36.816Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:34:51.813Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:34:59.870Z [INFO]: No persisted state found. Starting with a fresh state.
+2024-12-11T19:34:59.910Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:34:59.919Z [INFO]: Started polling for order statuses.
+2024-12-11T19:35:00.052Z [ERROR]: Error initializing existing positions: Cannot read properties of undefined (reading 'getIntradayHigh')
+2024-12-11T19:35:00.089Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:35:00.090Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:35:00.142Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:35:05.035Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'getIntradayHigh')
+2024-12-11T19:35:10.046Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'getIntradayHigh')
+2024-12-11T19:36:24.141Z [INFO]: No persisted state found. Starting with a fresh state.
+2024-12-11T19:36:24.181Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:36:24.191Z [INFO]: Started polling for order statuses.
+2024-12-11T19:36:24.333Z [ERROR]: Error initializing existing positions: Cannot read properties of undefined (reading 'getIntradayHigh')
+2024-12-11T19:36:24.349Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:36:24.350Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:36:24.396Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:36:29.314Z [ERROR]: Unhandled Rejection: TypeError: Cannot read properties of undefined (reading 'getIntradayHigh')
+2024-12-11T19:37:00.259Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:37:00.269Z [INFO]: Started polling for order statuses.
+2024-12-11T19:37:00.413Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:37:00.426Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T19:37:00.426Z [INFO]: Polygon WebSocket connected.
+2024-12-11T19:37:00.466Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T19:37:01.092Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T19:37:05.387Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:37:10.391Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T19:37:15.269Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:37:15.270Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T19:37:15.277Z [INFO]: Subscribed to OKLO quote data.
+2024-12-11T19:37:15.412Z [WARN]: High of Day missing for OKLO while adding position.
+2024-12-11T19:37:20.422Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.56
+2024-12-11T19:37:30.265Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:37:45.269Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:37:53.125Z [ERROR]: Error fetching account info: read ETIMEDOUT
+2024-12-11T19:38:00.265Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:38:15.279Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:38:30.273Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:38:44.158Z [ERROR]: Error polling order statuses: read ETIMEDOUT
+2024-12-11T19:38:45.269Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T19:38:46.686Z [ERROR]: Error fetching account info: read ETIMEDOUT
+2024-12-11T20:21:38.423Z [INFO]: Polygon WebSocket connected.
+2024-12-11T20:21:38.433Z [INFO]: Started polling for order statuses.
+2024-12-11T20:21:38.583Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T20:21:38.584Z [INFO]: Polygon WebSocket connected.
+2024-12-11T20:21:38.625Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T20:21:38.643Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T20:21:39.084Z [INFO]: Subscribed to LDTC quote data.
+2024-12-11T20:21:39.568Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T20:21:43.559Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T20:21:48.553Z [WARN]: Watchlist entry missing for OKLO while adding position.
+2024-12-11T20:21:53.434Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T20:21:53.434Z [INFO]: Subscribed to MIND quote data.
+2024-12-11T20:21:53.438Z [INFO]: Subscribed to OKLO quote data.
+2024-12-11T20:21:53.583Z [WARN]: High of Day missing for OKLO while adding position.
+2024-12-11T20:21:54.053Z [INFO]: Unsubscribed from LDTC trade data.
