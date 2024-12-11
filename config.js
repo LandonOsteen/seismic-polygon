@@ -1,3 +1,5 @@
+// config.js
+
 require('dotenv').config();
 
 const paperTrading = process.env.PAPER_TRADING === 'true';
@@ -17,8 +19,8 @@ module.exports = {
   },
   strategySettings: {
     baseVolumeRequirement: 50000,
-    morningVolumeRequirement: 50000,
-    gapPercentageRequirement: 25,
+    morningVolumeRequirement: 80000,
+    gapPercentageRequirement: 30,
     priceRange: { min: 2, max: 10 },
     initialEntryOffsetCents: 0, // HOD breakout offset
     entryLimitOffsetCents: 35, // Additional limit offset for entry orders
@@ -29,7 +31,7 @@ module.exports = {
     tradeProximityCents: 15,
   },
   orderSettings: {
-    limitOffsetCents: 10,
+    limitOffsetCents: 10, // Offset for placing LIMIT orders
     profitTargets: [
       { targetCents: 5, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
@@ -43,20 +45,21 @@ module.exports = {
       { profitTargetsHit: 5, stopCents: 30 },
     ],
     pyramidLevels: [
-      { addInCents: 3, percentToAdd: 40, offsetCents: 20 },
-      { addInCents: 12, percentToAdd: 20, offsetCents: 20 },
+      { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 2 },
+      { priceIncreaseCents: 12, percentToAdd: 20, offsetCents: 2 },
+      // Add more levels as needed
     ],
   },
   orderTimeouts: {
+    limit: 4000, // Timeout for LIMIT orders in milliseconds
     pyramid: 4000,
     close: 4000,
-    ioc: 4000,
-    entry: 4000, // New timeout for entry orders
+    entry: 4000,
   },
   pollingIntervals: {
-    orderStatus: 1000,
-    positionRefresh: 2000,
-    watchlistRefresh: 15000,
+    orderStatus: 1000, // 1 second
+    positionRefresh: 2000, // 2 seconds
+    watchlistRefresh: 15000, // 15 seconds
   },
   logging: {
     level: 'info',

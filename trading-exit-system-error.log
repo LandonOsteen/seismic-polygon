@@ -33,3 +33,5 @@
 2024-12-11T14:58:25.339Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
 2024-12-11T14:58:25.697Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
 2024-12-11T14:58:26.085Z [ERROR]: Error placing limit order to close position for LDTC: {"code":42210000,"message":"asset \"LDTC\" cannot be sold short"}
+2024-12-11T17:00:11.062Z [ERROR]: Error placing IOC order for SFIX: {"code":42210000,"message":"extended hours order must be DAY limit orders"}
+2024-12-11T17:01:15.054Z [ERROR]: Error placing IOC order for SFIX: {"code":42210000,"message":"extended hours order must be DAY limit orders"}

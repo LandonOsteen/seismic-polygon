@@ -24512,3 +24512,429 @@
 2024-12-11T16:33:20.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-11T16:33:35.994Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-11T16:33:50.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:34:05.995Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:34:05.995Z [INFO]: Subscribed to VRAR quote data.
+2024-12-11T16:34:06.540Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"VRAR","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.05","extended_hours":true,"client_order_id":"ENTRY-fbd872ff7c7ffd90"}
+2024-12-11T16:34:06.908Z [INFO]: Entry order placed for 5000 shares of VRAR at $2.05. Order ID: 588fca03-6225-4787-b4d0-22265584104f
+2024-12-11T16:34:08.201Z [INFO]: Position added: VRAR | Qty: 5000 | Avg Entry: $1.73
+2024-12-11T16:34:20.995Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:34:35.424Z [INFO]: Stop condition met for VRAR. Closing position.
+2024-12-11T16:34:35.428Z [INFO]: Closing position with limit order: {"symbol":"VRAR","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.57","extended_hours":true,"client_order_id":"CLOSE-271ff960c4f1351b"}
+2024-12-11T16:34:35.611Z [INFO]: Limit order placed to close position in VRAR. Order ID: f45da2d0-1368-4c98-98d2-7901dea392d7
+2024-12-11T16:34:35.994Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:34:36.655Z [INFO]: Order f45da2d0-1368-4c98-98d2-7901dea392d7 filled 4788 qty for VRAR. Remaining qty: 0
+2024-12-11T16:34:36.680Z [INFO]: Position removed: VRAR
+2024-12-11T16:34:51.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:35:06.003Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:35:21.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:35:36.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:35:51.006Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:36:06.007Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:36:21.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:36:36.009Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:36:51.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:36:55.177Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:36:55.186Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:36:55.190Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:37:02.688Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:37:03.170Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:37:06.009Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:37:21.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:37:36.009Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:37:51.011Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:37:51.562Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:38:06.010Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:38:06.564Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:38:21.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:38:21.629Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:38:36.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:38:51.009Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:38:51.536Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:38:59.869Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:39:06.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:39:16.966Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:39:21.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:39:21.638Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:39:36.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:39:46.704Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:39:46.711Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:39:46.716Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:39:46.720Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:39:46.726Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:39:48.721Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:39:49.222Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:39:51.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:40:06.019Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:40:21.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:40:36.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:40:51.020Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:41:06.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:41:06.715Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T16:41:21.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:41:36.029Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:41:51.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:42:06.028Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:42:21.027Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:42:36.024Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:42:51.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:43:06.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:43:21.030Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:43:36.033Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:43:51.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:44:06.030Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:44:21.035Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:44:36.037Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:44:41.832Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:41.843Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:41.851Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:41.858Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:41.865Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:41.870Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:41.875Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:41.880Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:41.885Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:46.860Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:48.872Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:48.882Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:48.889Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:48.896Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:48.902Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:51.036Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:44:51.372Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:51.383Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:44:51.392Z [INFO]: Subscribed to VRAR trade data.
+2024-12-11T16:44:54.896Z [INFO]: Unsubscribed from VRAR trade data.
+2024-12-11T16:45:06.044Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:45:21.042Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:45:36.041Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:45:51.038Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:46:06.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:46:21.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:46:36.045Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:46:51.044Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:47:06.047Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:47:21.050Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:47:36.048Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:47:51.050Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:48:06.054Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:48:21.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:48:36.055Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:48:36.748Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:48:51.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:49:06.055Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:49:06.977Z [INFO]: Subscribed to NRGV quote data.
+2024-12-11T16:49:21.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:49:36.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:49:51.055Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:49:53.132Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"NRGV","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.48","extended_hours":true,"client_order_id":"ENTRY-708c73396bb067b0"}
+2024-12-11T16:49:53.389Z [INFO]: Entry order placed for 5000 shares of NRGV at $2.48. Order ID: e341b1af-df07-425a-8069-4e36db8fe5e1
+2024-12-11T16:49:54.607Z [INFO]: Position added: NRGV | Qty: 5000 | Avg Entry: $2.13
+2024-12-11T16:50:06.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:50:06.794Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:50:21.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:50:36.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:50:51.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:51:06.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:51:07.059Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:51:21.066Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:51:36.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:51:36.713Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:51:51.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:52:06.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:52:21.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:52:36.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:52:51.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:53:06.066Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:53:21.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:53:36.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:53:46.401Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"SFIX","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"7.08","extended_hours":true,"client_order_id":"ENTRY-66e1047162bd6269"}
+2024-12-11T16:53:46.846Z [INFO]: Entry order placed for 5000 shares of SFIX at $7.08. Order ID: f168a888-35b9-4b8d-af18-d54dba5c8beb
+2024-12-11T16:53:47.181Z [INFO]: Position added: SFIX | Qty: 1007 | Avg Entry: $6.73
+2024-12-11T16:53:47.548Z [INFO]: Order f168a888-35b9-4b8d-af18-d54dba5c8beb filled 1669 qty for SFIX. New qty: 2676, New Avg Entry Price: $6.95
+2024-12-11T16:53:48.497Z [INFO]: Order f168a888-35b9-4b8d-af18-d54dba5c8beb filled 1669 qty for SFIX. New qty: 4345, New Avg Entry Price: $7.00
+2024-12-11T16:53:51.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:54:06.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:54:21.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:54:22.093Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-11T16:54:36.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:54:36.967Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T16:54:51.298Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:55:06.366Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:55:21.377Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:55:36.379Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:55:51.378Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:56:06.376Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:56:21.415Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:56:36.444Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:56:51.449Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:57:06.448Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:57:21.451Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:57:36.457Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:57:51.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:58:06.458Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:58:21.455Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:58:36.456Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:58:51.456Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:59:06.457Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:59:21.458Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:59:36.457Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T16:59:51.456Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:00:06.461Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:00:09.678Z [INFO]: Profit target hit for SFIX: +5.00¢ >= +5¢
+2024-12-11T17:00:09.682Z [INFO]: Attempting to place IOC order: {"symbol":"SFIX","qty":"500","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"6.68","extended_hours":true,"client_order_id":"IOC-c4ec00c152eb3a07"}
+2024-12-11T17:00:11.062Z [ERROR]: Error placing IOC order for SFIX: {"code":42210000,"message":"extended hours order must be DAY limit orders"}
+2024-12-11T17:00:11.072Z [INFO]: Attempting to place pyramid order: {"symbol":"SFIX","qty":"402","side":"buy","type":"limit","time_in_force":"day","limit_price":"7.00","extended_hours":true,"client_order_id":"PYRAMID-b3487c7846147097"}
+2024-12-11T17:00:12.035Z [INFO]: Pyramid order placed for 402 shares of SFIX. Order ID: fda59990-fb22-418f-8428-6dde45a79929
+2024-12-11T17:00:12.685Z [INFO]: Order fda59990-fb22-418f-8428-6dde45a79929 filled 379 qty for SFIX. New qty: 5709, New Avg Entry Price: $6.75
+2024-12-11T17:00:12.982Z [INFO]: Order fda59990-fb22-418f-8428-6dde45a79929 filled 379 qty for SFIX. New qty: 6088, New Avg Entry Price: $6.77
+2024-12-11T17:00:14.216Z [INFO]: Order fda59990-fb22-418f-8428-6dde45a79929 filled 401 qty for SFIX. New qty: 5801, New Avg Entry Price: $6.75
+2024-12-11T17:00:14.972Z [INFO]: Order fda59990-fb22-418f-8428-6dde45a79929 filled 401 qty for SFIX. New qty: 6202, New Avg Entry Price: $6.77
+2024-12-11T17:00:21.481Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:00:36.488Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:00:51.501Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:01:06.508Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:01:14.749Z [INFO]: Profit target hit for SFIX: +10.48¢ >= +10¢
+2024-12-11T17:01:14.753Z [INFO]: Attempting to place IOC order: {"symbol":"SFIX","qty":"1080","side":"sell","type":"limit","time_in_force":"ioc","limit_price":"6.74","extended_hours":true,"client_order_id":"IOC-de3b5d73c714c113"}
+2024-12-11T17:01:15.054Z [ERROR]: Error placing IOC order for SFIX: {"code":42210000,"message":"extended hours order must be DAY limit orders"}
+2024-12-11T17:01:15.066Z [INFO]: Attempting to place pyramid order: {"symbol":"SFIX","qty":"201","side":"buy","type":"limit","time_in_force":"day","limit_price":"7.04","extended_hours":true,"client_order_id":"PYRAMID-17688e6b2ff1c34b"}
+2024-12-11T17:01:15.750Z [INFO]: Pyramid order placed for 201 shares of SFIX. Order ID: dad1486e-9787-4c0f-a791-8674ee997011
+2024-12-11T17:01:16.461Z [INFO]: Order dad1486e-9787-4c0f-a791-8674ee997011 filled 181 qty for SFIX. New qty: 5759, New Avg Entry Price: $6.75
+2024-12-11T17:01:17.167Z [INFO]: Order dad1486e-9787-4c0f-a791-8674ee997011 filled 196 qty for SFIX. New qty: 5955, New Avg Entry Price: $6.76
+2024-12-11T17:01:21.507Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:01:36.505Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:01:51.508Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:02:06.507Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:02:21.505Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:02:36.506Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:02:51.508Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:03:06.510Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:03:21.510Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:03:36.511Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:03:51.510Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:03:53.741Z [INFO]: Stop condition met for NRGV. Closing position.
+2024-12-11T17:03:53.746Z [INFO]: Closing position with limit order: {"symbol":"NRGV","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.97","extended_hours":true,"client_order_id":"CLOSE-9d2df790aff2d952"}
+2024-12-11T17:03:53.950Z [INFO]: Limit order placed to close position in NRGV. Order ID: e72446b8-23ab-4dfd-aeac-b30c7d4c9a41
+2024-12-11T17:03:54.664Z [INFO]: Order e72446b8-23ab-4dfd-aeac-b30c7d4c9a41 filled 2486 qty for NRGV. Remaining qty: 2514
+2024-12-11T17:03:55.550Z [INFO]: Order e72446b8-23ab-4dfd-aeac-b30c7d4c9a41 filled 3866 qty for NRGV. Remaining qty: 0
+2024-12-11T17:03:55.557Z [INFO]: Position removed: NRGV
+2024-12-11T17:03:56.375Z [INFO]: Position added: NRGV | Qty: 15 | Avg Entry: $2.13
+2024-12-11T17:03:56.736Z [INFO]: Order e72446b8-23ab-4dfd-aeac-b30c7d4c9a41 filled 4924 qty for NRGV. Remaining qty: 0
+2024-12-11T17:03:56.744Z [INFO]: Position removed: NRGV
+2024-12-11T17:04:06.512Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:04:10.229Z [INFO]: Unsubscribed from NRGV trade data.
+2024-12-11T17:04:21.513Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:04:36.512Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:04:51.521Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:05:06.515Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:05:20.418Z [INFO]: Stop condition met for SFIX. Closing position.
+2024-12-11T17:05:20.424Z [INFO]: Closing position with limit order: {"symbol":"SFIX","qty":"5603","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.63","extended_hours":true,"client_order_id":"CLOSE-fbfed64e289720ba"}
+2024-12-11T17:05:21.034Z [INFO]: Limit order placed to close position in SFIX. Order ID: 60b8386f-d3d4-417d-a801-91e6c2d6b334
+2024-12-11T17:05:21.868Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:05:21.940Z [INFO]: Position removed: SFIX
+2024-12-11T17:05:36.875Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:05:51.875Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:06:06.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:06:21.884Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:06:36.882Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:06:51.881Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:07:00.577Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"SFIX","qty":"5000","side":"buy","type":"limit","time_in_force":"day","limit_price":"7.20","extended_hours":true,"client_order_id":"ENTRY-8fae8a268e7b8cba"}
+2024-12-11T17:07:00.728Z [INFO]: Entry order placed for 5000 shares of SFIX at $7.20. Order ID: 59db2667-653f-4f2b-a4f8-f987367f6ffc
+2024-12-11T17:07:03.087Z [INFO]: Position added: SFIX | Qty: 5000 | Avg Entry: $6.85
+2024-12-11T17:07:06.881Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:07:21.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:07:34.086Z [INFO]: Stop condition met for SFIX. Closing position.
+2024-12-11T17:07:34.091Z [INFO]: Closing position with limit order: {"symbol":"SFIX","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.69","extended_hours":true,"client_order_id":"CLOSE-e8fa1c67c6ff5b12"}
+2024-12-11T17:07:34.544Z [INFO]: Limit order placed to close position in SFIX. Order ID: 48d9e5de-7cf9-4152-a34c-921a9d0461d7
+2024-12-11T17:07:34.893Z [INFO]: Order 48d9e5de-7cf9-4152-a34c-921a9d0461d7 filled 3181 qty for SFIX. Remaining qty: 1819
+2024-12-11T17:07:35.289Z [INFO]: Position removed: SFIX
+2024-12-11T17:07:36.882Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:07:51.884Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:08:06.884Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:08:21.884Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:08:36.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:08:51.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:09:06.888Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:09:21.887Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:09:36.886Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:09:51.889Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:10:06.891Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:10:21.894Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:10:36.896Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:10:51.892Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:10:56.092Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:10:56.104Z [INFO]: Started polling for order statuses.
+2024-12-11T17:10:56.488Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T17:10:56.489Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:10:56.542Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T17:10:57.277Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T17:10:57.833Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T17:10:58.171Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T17:11:11.104Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:11:26.105Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:11:41.104Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:11:56.104Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:12:11.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:12:26.110Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:12:41.115Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:12:56.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:13:11.108Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:13:26.108Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:13:30.779Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:13:30.789Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:13:32.241Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:13:33.746Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:13:34.245Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:13:41.110Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:13:46.279Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:13:56.111Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:13:56.295Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:14:02.315Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:14:02.319Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:14:09.340Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:14:11.111Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:14:26.113Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:14:41.115Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:14:56.117Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:15:11.116Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:15:26.118Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:15:41.116Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:15:56.118Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:16:11.121Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:16:26.120Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:16:41.122Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:16:56.122Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:17:11.123Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:17:26.123Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:17:41.124Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:17:56.124Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:18:11.126Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:18:26.126Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:18:41.128Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:18:56.129Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:19:11.132Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:19:26.134Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:19:41.131Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:19:56.134Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:20:11.147Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:20:26.134Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:20:41.136Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:20:56.138Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:21:11.145Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:21:26.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:21:41.144Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:21:56.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:22:11.144Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:22:26.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:22:41.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:22:56.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:23:11.145Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:23:26.147Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:23:41.147Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:23:56.857Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:23:56.868Z [INFO]: Started polling for order statuses.
+2024-12-11T17:23:57.028Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T17:23:57.029Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:23:57.079Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T17:23:57.546Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T17:23:58.160Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T17:24:11.866Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:24:26.872Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:24:41.872Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:24:56.874Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:25:11.870Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:25:12.985Z [INFO]: Subscribed to SFIX quote data.
+2024-12-11T17:25:26.875Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:25:41.886Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:25:56.878Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:26:11.884Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:26:26.879Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:26:41.881Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:26:56.881Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:27:11.879Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:27:26.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:27:41.882Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:27:56.887Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:28:11.886Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:28:26.890Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:28:41.891Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:28:56.892Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:29:11.890Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:29:26.889Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:29:41.896Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:29:56.894Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:30:11.894Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:30:26.890Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:30:41.898Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:30:56.894Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:31:11.900Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:31:26.904Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:31:41.901Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:31:56.900Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:32:11.900Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:32:26.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:32:41.904Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:32:56.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:33:11.904Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:33:26.904Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:33:41.904Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:33:56.908Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:34:11.906Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:34:17.263Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:34:17.272Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:34:17.280Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:34:17.286Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:34:17.293Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:34:17.299Z [INFO]: Subscribed to SFIX trade data.
+2024-12-11T17:34:26.905Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:34:41.912Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:34:56.914Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:35:11.913Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:35:21.397Z [INFO]: Unsubscribed from SFIX trade data.
+2024-12-11T17:35:26.915Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:35:41.916Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:35:56.916Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:36:11.921Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:36:26.922Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:36:41.916Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:36:56.922Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:37:11.922Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:37:26.922Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:37:41.924Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:37:56.926Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:38:11.922Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:38:26.927Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:38:41.924Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:38:56.927Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:39:11.926Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:39:26.930Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:39:41.931Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:39:56.931Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:40:11.910Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:40:26.909Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:40:41.905Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:40:56.906Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:41:11.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:41:26.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:41:41.905Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:41:56.907Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:42:11.908Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:42:26.911Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:42:41.914Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:42:56.912Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:43:11.912Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:43:26.913Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:43:41.912Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:43:56.908Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:44:00.043Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:44:00.055Z [INFO]: Started polling for order statuses.
+2024-12-11T17:44:00.232Z [INFO]: Polygon WebSocket connection opened.
+2024-12-11T17:44:00.233Z [INFO]: Polygon WebSocket connected.
+2024-12-11T17:44:00.291Z [INFO]: Polygon WebSocket authenticated.
+2024-12-11T17:44:00.860Z [INFO]: Subscribed to AMPG quote data.
+2024-12-11T17:44:01.524Z [INFO]: Subscribed to CADL quote data.
+2024-12-11T17:44:15.052Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:44:30.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:44:45.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:45:00.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:45:15.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-11T17:45:30.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
