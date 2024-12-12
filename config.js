@@ -16,26 +16,17 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    // Removed redundant volume requirements not used
     gapPercentageRequirement: 30,
     priceRange: { min: 1, max: 15 },
-    // Removed unused cooldown settings
     startTime: '06:45',
     endTime: '18:00',
     useSecondsTrailingStop: true,
-
-    // Default initial share size if not found in tier
     initialShareSize: 1000,
-
-    // Hour-based volume requirements:
-    // 06:00-08:00
     volumeRequirementsInterval1: 800000,
-    // 08:00-09:30
     volumeRequirementsInterval2: 2000000,
-    // 09:30-11:00
     volumeRequirementsInterval3: 3000000,
-    // 11:00 onward
     volumeRequirementsInterval4: 4000000,
+    minOneMinuteRange: 0.05,
   },
 
   priceTiers: [

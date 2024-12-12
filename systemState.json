@@ -1,55 +1,65 @@
 {
-  "positions": {},
-  "watchlist": {
-    "PALI": {
-      "highOfDay": 3.6,
-      "lastEntryTime": null,
-      "hasPosition": false,
-      "hasPendingEntryOrder": false,
-      "isHODFrozen": false,
+  "positions": {
+    "CADL": {
+      "symbol": "CADL",
+      "qty": 1000,
+      "initialQty": 1000,
+      "side": "buy",
+      "avgEntryPrice": 9.98,
+      "currentPrice": 10.0382,
+      "profitCents": 0,
+      "profitTargetsHit": 0,
+      "totalProfitTargets": 3,
+      "isActive": true,
+      "isProcessing": false,
+      "attemptHOD": 9.95,
+      "stopPrice": 9.93,
+      "stopCents": 2,
+      "stopDescription": "Initial Stop @ $9.93 (2¢ below HOD)",
+      "stopTriggered": false,
       "executedPyramidLevels": [],
-      "isSubscribedToTrade": false,
-      "isHalted": false,
-      "lastHaltTime": null,
-      "tierIndex": 1,
-      "plannedEntryPrice": null
-    },
-    "TRVI": {
-      "highOfDay": 4.9,
-      "lastEntryTime": null,
-      "hasPosition": false,
-      "hasPendingEntryOrder": false,
-      "isHODFrozen": false,
-      "executedPyramidLevels": [],
-      "isSubscribedToTrade": false,
-      "isHalted": false,
-      "lastHaltTime": null,
+      "totalPyramidLevels": 2,
+      "trailingStopActive": false,
       "tierIndex": null,
-      "plannedEntryPrice": null
-    },
-    "LAES": {
-      "highOfDay": 1.95,
-      "lastEntryTime": 1734010571514,
-      "hasPosition": false,
+      "pyramidLevels": [
+        {
+          "priceIncreaseCents": 3,
+          "percentToAdd": 40,
+          "offsetCents": 15
+        },
+        {
+          "priceIncreaseCents": 6,
+          "percentToAdd": 40,
+          "offsetCents": 15
+        }
+      ],
+      "profitTargets": [
+        {
+          "targetCents": 10,
+          "percentToClose": 20
+        },
+        {
+          "targetCents": 15,
+          "percentToClose": 20
+        },
+        {
+          "targetCents": 20,
+          "percentToClose": 20
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "CADL": {
+      "highOfDay": 9.95,
+      "lastEntryTime": 1734031503950,
+      "hasPosition": true,
       "hasPendingEntryOrder": false,
       "isHODFrozen": false,
       "executedPyramidLevels": [],
+      "tierIndex": null,
+      "plannedEntryPrice": 10.08,
       "isSubscribedToTrade": true,
-      "isHalted": false,
-      "lastHaltTime": null,
-      "tierIndex": 0,
-      "plannedEntryPrice": 1.56
-    },
-    "WKEY": {
-      "highOfDay": 3.89,
-      "lastEntryTime": null,
-      "hasPosition": false,
-      "hasPendingEntryOrder": false,
-      "isHODFrozen": false,
-      "executedPyramidLevels": [],
-      "tierIndex": 1,
-      "plannedEntryPrice": null,
-      "isSubscribedToTrade": false,
       "isQuoteSubscribed": true
     },
     "ZENA": {

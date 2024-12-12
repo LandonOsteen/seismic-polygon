@@ -1,5 +1,6 @@
 const { alpaca } = require('./alpaca');
 const config = require('./config');
+// We'll still import logger for file logging if needed, but won't log to console
 const logger = require('./logger');
 const crypto = require('crypto');
 const Bottleneck = require('bottleneck');
@@ -61,7 +62,6 @@ class OrderManager {
     this.isPolling = false;
     this.orderQueue = new OrderQueue();
 
-    // For seconds-based trailing stop
     this.trailingData = {};
 
     this.hodOverrides = this.loadHODOverrides();
@@ -100,7 +100,6 @@ class OrderManager {
         return data.HODOverrides || {};
       } catch (err) {
         const msg = `Error loading HOD overrides: ${err.message}`;
-        logger.error(msg);
         this.dashboard.logError(msg);
         return {};
       }
@@ -118,10 +117,8 @@ class OrderManager {
         this.watchlist = data.watchlist || {};
         this.orderTracking = data.orderTracking || {};
         this.dashboard.logInfo('Loaded previous state from disk.');
-        logger.info('Loaded previous state from disk.');
       } catch (err) {
         const msg = `Error loading system state: ${err.message}`;
-        logger.error(msg);
         this.dashboard.logError(msg);
       }
     }
@@ -139,10 +136,8 @@ class OrderManager {
         JSON.stringify(state, null, 2)
       );
       this.dashboard.logInfo('Saved current state to disk.');
-      logger.info('Saved current state to disk.');
     } catch (err) {
       const msg = `Error saving system state: ${err.message}`;
-      logger.error(msg);
       this.dashboard.logError(msg);
     }
   }
@@ -159,7 +154,6 @@ class OrderManager {
       this.dashboard.updatePositions(Object.values(this.positions));
     } catch (err) {
       const message = `Error initializing existing positions: ${err.message}`;
-      logger.error(message);
       this.dashboard.logError(message);
     }
   }
@@ -176,7 +170,6 @@ class OrderManager {
         const successMessage = `Order placed [${order.client_order_id}] for ${
           order.symbol
         }: ${JSON.stringify(order)}`;
-        logger.info(successMessage);
         this.dashboard.logInfo(successMessage);
 
         this.orderTracking[result.id] = {
@@ -207,7 +200,6 @@ class OrderManager {
         }] for ${order.symbol}: ${
           err.response ? JSON.stringify(err.response.data) : err.message
         }`;
-        logger.error(errorMessage);
         this.dashboard.logError(errorMessage);
       }
     }
@@ -239,12 +231,10 @@ class OrderManager {
         this.dashboard.logInfo(
           'Dynamic config reloaded. Updated override add/remove symbols.'
         );
-        logger.info('Dynamic config reloaded. Updated override symbols.');
         this.applyOverridesToWatchlist();
       }
     } catch (err) {
       const msg = `Error reloading dynamic config: ${err.message}`;
-      logger.error(msg);
       this.dashboard.logError(msg);
     }
   }
@@ -295,21 +285,25 @@ class OrderManager {
     const hour = now.hour();
     const minute = now.minute();
 
-    if (hour < 8 || (hour === 8 && minute === 0)) {
-      return config.strategySettings.volumeRequirementsInterval1;
-    } else if ((hour === 8 && minute > 0) || (hour === 9 && minute < 30)) {
-      return config.strategySettings.volumeRequirementsInterval2;
-    } else if (
-      (hour === 9 && minute >= 30) ||
-      hour === 10 ||
-      (hour === 11 && minute === 0)
-    ) {
-      return config.strategySettings.volumeRequirementsInterval3;
-    } else if (hour > 11 || (hour === 11 && minute > 0)) {
-      return config.strategySettings.volumeRequirementsInterval4;
+    let chosenInterval;
+    if (hour < 8) {
+      chosenInterval = config.strategySettings.volumeRequirementsInterval1;
+    } else if (hour < 9 || (hour === 9 && minute < 30)) {
+      chosenInterval = config.strategySettings.volumeRequirementsInterval2;
+    } else if (hour < 11 || (hour === 11 && minute === 0)) {
+      chosenInterval = config.strategySettings.volumeRequirementsInterval3;
+    } else {
+      chosenInterval = config.strategySettings.volumeRequirementsInterval4;
     }
 
-    return config.strategySettings.volumeRequirementsInterval1;
+    if (typeof chosenInterval !== 'number') {
+      chosenInterval = config.strategySettings.volumeRequirementsInterval4;
+    }
+
+    this.dashboard.logInfo(
+      `getCurrentVolumeRequirement: ${chosenInterval} at ${hour}:${minute}`
+    );
+    return chosenInterval;
   }
 
   async initializeWatchlist() {
@@ -320,6 +314,7 @@ class OrderManager {
       );
       const currentVolumeRequirement = this.getCurrentVolumeRequirement();
       const topGainers = {};
+      const minOneMinuteRange = config.strategySettings.minOneMinuteRange || 0;
 
       for (const g of gainers) {
         const symbol = g.ticker.toUpperCase();
@@ -337,6 +332,25 @@ class OrderManager {
           continue;
 
         const volume = g.min.av || 0;
+
+        const lastMinHigh = g.min.h;
+        const lastMinLow = g.min.l;
+        if (lastMinHigh === undefined || lastMinLow === undefined) {
+          this.dashboard.logInfo(
+            `Symbol ${symbol} skipped due to missing 1-minute data.`
+          );
+          continue;
+        }
+        const oneMinuteRange = lastMinHigh - lastMinLow;
+        if (oneMinuteRange < minOneMinuteRange) {
+          this.dashboard.logInfo(
+            `Symbol ${symbol} skipped. 1-min range ${oneMinuteRange.toFixed(
+              2
+            )} < ${minOneMinuteRange}`
+          );
+          continue;
+        }
+
         topGainers[symbol] = {
           symbol,
           dayClose: currentPrice,
@@ -366,7 +380,6 @@ class OrderManager {
       this.refreshTradeSubscriptions();
     } catch (err) {
       const msg = `Error updating watchlist: ${err.message}`;
-      logger.error(msg);
       this.dashboard.logError(msg);
     }
   }
@@ -422,7 +435,6 @@ class OrderManager {
       this.refreshTradeSubscriptions();
     } catch (err) {
       const errorMsg = `Error adding symbol ${symbol} to watchlist: ${err.message}`;
-      logger.error(errorMsg);
       this.dashboard.logError(errorMsg);
     }
   }
@@ -505,7 +517,6 @@ class OrderManager {
     const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice.toFixed(
       2
     )} | Stop: $${initialStopPrice.toFixed(2)} (HOD:${hod.toFixed(2)})`;
-    logger.info(message);
     this.dashboard.logInfo(message);
   }
 
@@ -520,7 +531,9 @@ class OrderManager {
       });
       return bars[symbol] || [];
     } catch (err) {
-      logger.error(`Error fetching bars for ${symbol}: ${err.message}`);
+      this.dashboard.logError(
+        `Error fetching bars for ${symbol}: ${err.message}`
+      );
       return [];
     }
   }
@@ -602,7 +615,6 @@ class OrderManager {
           }
         } catch (err) {
           const errorMsg = `Error updating HOD for ${symbol}: ${err.message}`;
-          logger.error(errorMsg);
           this.dashboard.logError(errorMsg);
         }
       }
@@ -628,7 +640,7 @@ class OrderManager {
     const pos = this.positions[symbol];
     if (pos && bidPrice && !isNaN(bidPrice)) {
       await this.checkStopCondition(pos, symbol);
-      this.updateSecondsTrailingStop(pos, symbol, bidPrice);
+      await this.updateSecondsTrailingStop(pos, symbol, bidPrice);
     }
   }
 
@@ -664,10 +676,8 @@ class OrderManager {
       const askPrice = this.latestQuotes[symbol]?.askPrice;
       let limitPrice;
       if (!askPrice || isNaN(askPrice)) {
-        // Fallback if no askPrice available
         limitPrice = triggerPrice + entryLimitOffsetCents / 100;
       } else {
-        // For a buy: place above ask
         limitPrice = askPrice + entryLimitOffsetCents / 100;
       }
 
@@ -689,7 +699,6 @@ class OrderManager {
   }
 
   async placeEntryOrder(symbol, qty, side, targetPrice) {
-    // Validate qty
     if (typeof qty !== 'number' || isNaN(qty) || qty <= 0) {
       this.dashboard.logError(
         `Invalid qty in placeEntryOrder for ${symbol}: ${qty}`
@@ -701,7 +710,6 @@ class OrderManager {
       return;
     }
 
-    // Validate targetPrice
     if (typeof targetPrice !== 'number' || isNaN(targetPrice)) {
       this.dashboard.logError(
         `Invalid targetPrice in placeEntryOrder for ${symbol}: ${targetPrice}`
@@ -787,7 +795,6 @@ class OrderManager {
       this.dashboard.updatePositions(Object.values(this.positions));
     } catch (err) {
       const errorMessage = `Error refreshing positions: ${err.message}`;
-      logger.error(errorMessage);
       this.dashboard.logError(errorMessage);
     } finally {
       this.isRefreshing = false;
@@ -845,14 +852,11 @@ class OrderManager {
     const bidPrice = this.latestQuotes[symbol]?.bidPrice;
     if (!bidPrice || isNaN(bidPrice)) return;
 
-    // If pos.profitTargetsHit < 1, stop may still reference HOD-based initial stop.
-    // Otherwise, it should rely on dynamic stops or trailing logic already set in pos.stopPrice.
     if (pos.side === 'buy' && bidPrice <= pos.stopPrice && !pos.stopTriggered) {
       pos.stopTriggered = true;
       const stopMsg = `Stop condition met for ${symbol}. Closing position at bid $${bidPrice.toFixed(
         2
       )} <= stopPrice $${pos.stopPrice.toFixed(2)}.`;
-      logger.info(stopMsg);
       this.dashboard.logWarning(stopMsg);
       await this.closePositionMarketOrder(symbol);
     }
@@ -861,14 +865,12 @@ class OrderManager {
   async cancelOrder(orderId, symbol) {
     try {
       await this.retryOperation(() => this.limitedCancelOrder(orderId));
-      logger.info(`Order ${orderId} canceled for ${symbol}.`);
       this.dashboard.logInfo(`Order ${orderId} canceled for ${symbol}.`);
       delete this.orderTracking[orderId];
     } catch (err) {
       const errorMsg = `Error canceling order ${orderId} for ${symbol}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
-      logger.error(errorMsg);
       this.dashboard.logError(errorMsg);
     }
   }
@@ -877,16 +879,17 @@ class OrderManager {
     const pos = this.positions[symbol];
     if (!pos || pos.qty <= 0) return;
 
+    // Cancel any open buy orders to avoid wash trades
+    await this.cancelOpenBuyOrders(symbol);
+
     const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
     const bidPrice = this.latestQuotes[symbol]?.bidPrice;
 
     let limitPrice;
     if (!bidPrice || isNaN(bidPrice)) {
-      // fallback if no bidPrice
       const fallbackPrice = pos.currentPrice || 0;
       limitPrice = fallbackPrice - limitOffsetCents / 100;
     } else {
-      // For sells, place below the bid
       limitPrice = bidPrice - limitOffsetCents / 100;
     }
 
@@ -913,6 +916,25 @@ class OrderManager {
     };
 
     this.enqueueOrder(order, 1);
+  }
+
+  async cancelOpenBuyOrders(symbol) {
+    try {
+      const openOrders = await this.retryOperation(() =>
+        this.limitedGetOrders({ status: 'open' })
+      );
+      for (const o of openOrders) {
+        if (
+          o.symbol.toUpperCase() === symbol.toUpperCase() &&
+          o.side === 'buy'
+        ) {
+          await this.cancelOrder(o.id, symbol);
+        }
+      }
+    } catch (err) {
+      const errorMsg = `Error canceling open buy orders for ${symbol}: ${err.message}`;
+      this.dashboard.logError(errorMsg);
+    }
   }
 
   async pollOrderStatuses() {
@@ -1009,7 +1031,6 @@ class OrderManager {
       }
     } catch (err) {
       const errorMessage = `Error polling order statuses: ${err.message}`;
-      logger.error(errorMessage);
       this.dashboard.logError(errorMessage);
     } finally {
       this.isPolling = false;
@@ -1049,7 +1070,6 @@ class OrderManager {
           (pos.initialQty * level.percentToAdd) / 100
         );
         if (qtyToAdd > 0) {
-          // For buy (pyramid) orders: place above ask
           const limitPrice = askPrice + level.offsetCents / 100;
           await this.placePyramidOrder(pos, qtyToAdd, limitPrice, i);
           pos.executedPyramidLevels.push(i);
@@ -1088,7 +1108,7 @@ class OrderManager {
     this.enqueueOrder(order, 2);
   }
 
-  updateSecondsTrailingStop(pos, symbol, currentRefPrice) {
+  async updateSecondsTrailingStop(pos, symbol, currentRefPrice) {
     if (!config.strategySettings.useSecondsTrailingStop) return;
     if (pos.profitTargetsHit < pos.totalProfitTargets) return;
 
@@ -1127,8 +1147,7 @@ class OrderManager {
             2
           )}.`
         );
-        logger.info(`Seconds-based trailing stop triggered for ${symbol}`);
-        this.closePositionMarketOrder(symbol);
+        await this.closePositionMarketOrder(symbol);
       }
     }
   }
@@ -1147,7 +1166,6 @@ class OrderManager {
         const jitter = Math.random() * 1000;
         const totalDelay = delay + jitter;
         let message = `Retrying in ${totalDelay.toFixed(0)}ms...`;
-        logger.warn(message);
         this.dashboard.logWarning(message);
         await this.sleep(totalDelay);
         return this.retryOperation(operation, retries - 1, delay * 2);
@@ -1169,7 +1187,6 @@ class OrderManager {
       delete this.positions[symbol];
       if (this.trailingData[symbol]) delete this.trailingData[symbol];
       const message = `Position removed: ${symbol}`;
-      logger.info(message);
       this.dashboard.logInfo(message);
 
       if (!this.watchlist[symbol]) {
@@ -1183,6 +1200,42 @@ class OrderManager {
         this.watchlist[symbol].hasPosition = false;
         this.dashboard.updateWatchlist(this.watchlist);
       }
+    }
+  }
+
+  async refreshAllSubscriptions() {
+    for (const symbol in this.positions) {
+      if (!this.watchlist[symbol]) {
+        this.watchlist[symbol] = {
+          highOfDay: this.positions[symbol].attemptHOD || null,
+          lastEntryTime: null,
+          hasPosition: true,
+          hasPendingEntryOrder: false,
+          isHODFrozen: false,
+          executedPyramidLevels:
+            this.positions[symbol].executedPyramidLevels || [],
+          tierIndex: this.positions[symbol].tierIndex,
+          plannedEntryPrice: null,
+          isSubscribedToTrade: false,
+          isQuoteSubscribed: false,
+        };
+      }
+      this.subscribeToSymbol(symbol);
+    }
+
+    for (const symbol in this.watchlist) {
+      this.subscribeToSymbol(symbol);
+    }
+
+    this.refreshTradeSubscriptions();
+  }
+
+  subscribeToSymbol(symbol) {
+    if (!this.watchlist[symbol]) return;
+    if (!this.watchlist[symbol].isQuoteSubscribed) {
+      this.polygon.subscribeQuote(symbol);
+      this.watchlist[symbol].isQuoteSubscribed = true;
+      this.dashboard.logInfo(`Quote subscription ensured for ${symbol}`);
     }
   }
 }

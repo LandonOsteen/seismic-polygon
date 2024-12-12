@@ -1,7 +1,6 @@
 const { alpaca } = require('./alpaca');
 const Dashboard = require('./dashboard');
 const OrderManager = require('./orderManager');
-const logger = require('./logger');
 const config = require('./config');
 const Bottleneck = require('bottleneck');
 const PolygonClient = require('./polygon');
@@ -19,7 +18,6 @@ const limitedGetAccount = limiter.wrap(alpaca.getAccount.bind(alpaca));
 const limitedGetPositions = limiter.wrap(alpaca.getPositions.bind(alpaca));
 
 process.on('SIGINT', async () => {
-  logger.info('Gracefully shutting down...');
   dashboard.logInfo('Gracefully shutting down...');
   await orderManager.saveSystemState();
   process.exit(0);
@@ -38,10 +36,9 @@ process.on('SIGINT', async () => {
     };
 
     polygon.connect();
-    logger.info('Polygon WebSocket connected.');
     dashboard.logInfo('Polygon WebSocket connected.');
 
-    logger.info('Started polling for order statuses.');
+    await orderManager.refreshAllSubscriptions();
     dashboard.logInfo('Started polling for order statuses.');
 
     setInterval(async () => {
@@ -55,9 +52,9 @@ process.on('SIGINT', async () => {
         const pnlPercentage = ((pnl / lastEquity) * 100).toFixed(2);
 
         let unrealizedPL = 0;
-        positions.forEach((position) => {
+        for (const position of positions) {
           unrealizedPL += parseFloat(position.unrealized_pl);
-        });
+        }
 
         const accountSummary = {
           equity: equity.toFixed(2),
@@ -67,14 +64,21 @@ process.on('SIGINT', async () => {
           unrealized_pl: unrealizedPL.toFixed(2),
         };
 
-        dashboard.updateAccountSummary(accountSummary);
+        const currentVolumeRequirement =
+          orderManager.getCurrentVolumeRequirement();
+        dashboard.logInfo(
+          `Current Volume Requirement: ${currentVolumeRequirement}`
+        );
+
+        dashboard.updateAccountSummary(
+          accountSummary,
+          currentVolumeRequirement
+        );
       } catch (err) {
-        logger.error(`Error fetching account info: ${err.message}`);
         dashboard.logError(`Error fetching account info: ${err.message}`);
       }
     }, 1500);
   } catch (err) {
-    logger.error(`Error in main: ${err.message}`);
     dashboard.logError(`Error in main: ${err.message}`);
   }
 })();

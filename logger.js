@@ -1,21 +1,19 @@
-const winston = require('winston');
+const { createLogger, format, transports } = require('winston');
+const config = require('./config');
 
-const logger = winston.createLogger({
-  level: 'info',
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.printf(
-      ({ timestamp, level, message }) =>
-        `${timestamp} [${level.toUpperCase()}]: ${message}`
-    )
-  ),
+const logger = createLogger({
+  level: config.logging.level,
+  format: format.combine(format.timestamp(), format.json()),
   transports: [
-    new winston.transports.File({
+    // All logs at 'info' and below go to trading-exit-system-combined.log
+    new transports.File({
+      filename: 'trading-exit-system-combined.log',
+      level: 'info',
+    }),
+    // All errors go to trading-exit-system-error.log as well
+    new transports.File({
       filename: 'trading-exit-system-error.log',
       level: 'error',
-    }),
-    new winston.transports.File({
-      filename: 'trading-exit-system-combined.log',
     }),
   ],
 });
