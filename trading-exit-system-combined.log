@@ -1495,3 +1495,202 @@
 2024-12-12T13:38:55.963Z [INFO]: Polygon WebSocket authenticated.
 2024-12-12T13:39:00.972Z [INFO]: Position removed: LAES
 2024-12-12T13:39:10.709Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:41:52.648Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:41:52.680Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:41:52.682Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:41:52.688Z [INFO]: Started polling for order statuses.
+2024-12-12T16:41:52.856Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T16:41:52.857Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:41:52.902Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T16:41:54.018Z [INFO]: Subscribed to CADL quote data.
+2024-12-12T16:41:54.289Z [INFO]: Subscribed to HIMX quote data.
+2024-12-12T16:41:57.829Z [INFO]: Position removed: LAES
+2024-12-12T16:41:57.841Z [INFO]: Subscribed to CADL quote data.
+2024-12-12T16:41:57.842Z [INFO]: Position added: CADL | Qty: 5000 | Avg Entry: $10.65 | Stop: $10.72 (HOD:10.82)
+2024-12-12T16:41:57.846Z [INFO]: Subscribed to HIMX quote data.
+2024-12-12T16:41:57.848Z [INFO]: Position added: HIMX | Qty: 5000 | Avg Entry: $8.46 | Stop: $8.51 (HOD:8.58)
+2024-12-12T16:41:57.865Z [INFO]: Stop condition met for CADL. Closing position at $9.94 <= stopPrice $10.72.
+2024-12-12T16:41:57.872Z [INFO]: Stop condition met for HIMX. Closing position at $8.40 <= stopPrice $8.51.
+2024-12-12T16:41:58.165Z [INFO]: Order placed [CLOSE-2e1cfc5173ecad4d] for CADL: {"symbol":"CADL","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.85","extended_hours":true,"client_order_id":"CLOSE-2e1cfc5173ecad4d"}
+2024-12-12T16:41:58.864Z [INFO]: Order placed [CLOSE-596f87dfba54ed85] for HIMX: {"symbol":"HIMX","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.29","extended_hours":true,"client_order_id":"CLOSE-596f87dfba54ed85"}
+2024-12-12T16:41:59.572Z [INFO]: Position removed: CADL
+2024-12-12T16:42:02.827Z [INFO]: Position removed: HIMX
+2024-12-12T16:42:02.905Z [INFO]: Subscribed to HIMX trade data.
+2024-12-12T16:42:07.679Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:42:22.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:42:37.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:42:52.683Z [INFO]: Saved current state to disk.
+2024-12-12T16:42:52.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:43:07.695Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:43:22.696Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:43:37.697Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:47:06.997Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:47:07.028Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:47:07.031Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:47:07.037Z [INFO]: Started polling for order statuses.
+2024-12-12T16:47:07.246Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T16:47:07.247Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:47:07.297Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T16:47:22.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:47:37.029Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:47:41.154Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:47:41.186Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:47:41.189Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:47:41.195Z [INFO]: Started polling for order statuses.
+2024-12-12T16:47:41.351Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T16:47:41.353Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:47:41.398Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T16:47:57.577Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:47:57.608Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:47:57.611Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:47:57.617Z [INFO]: Started polling for order statuses.
+2024-12-12T16:47:57.774Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T16:47:57.775Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:47:57.824Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T16:48:12.619Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:48:27.615Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:48:40.525Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:48:40.557Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:48:40.560Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:48:40.566Z [INFO]: Started polling for order statuses.
+2024-12-12T16:48:40.754Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T16:48:40.756Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:48:40.808Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T16:48:55.559Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:49:10.562Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:49:25.559Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:49:40.563Z [INFO]: Saved current state to disk.
+2024-12-12T16:49:40.572Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:49:55.580Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:50:10.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:50:25.577Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:50:40.560Z [INFO]: Saved current state to disk.
+2024-12-12T16:50:40.575Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:50:55.578Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:51:10.581Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:51:25.581Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:51:40.560Z [INFO]: Saved current state to disk.
+2024-12-12T16:51:40.580Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:51:55.589Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:52:10.585Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:52:25.586Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:52:40.559Z [INFO]: Saved current state to disk.
+2024-12-12T16:52:40.584Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:52:55.587Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:53:10.588Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:53:25.590Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:53:40.560Z [INFO]: Saved current state to disk.
+2024-12-12T16:53:40.588Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:53:55.593Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:54:10.594Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:54:25.595Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:54:40.563Z [INFO]: Saved current state to disk.
+2024-12-12T16:54:40.592Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:54:57.321Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:54:57.356Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:54:57.359Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:54:57.366Z [INFO]: Started polling for order statuses.
+2024-12-12T16:54:57.548Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T16:54:57.550Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:54:57.604Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T16:55:12.359Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:55:26.486Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:55:26.520Z [INFO]: Loaded previous state from disk.
+2024-12-12T16:55:26.523Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:55:26.530Z [INFO]: Started polling for order statuses.
+2024-12-12T16:55:26.690Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T16:55:26.691Z [INFO]: Polygon WebSocket connected.
+2024-12-12T16:55:26.738Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T16:55:41.525Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:55:56.526Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:56:11.526Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:56:26.521Z [INFO]: Saved current state to disk.
+2024-12-12T16:56:26.529Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:56:41.535Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:56:56.533Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:57:11.540Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:57:26.520Z [INFO]: Saved current state to disk.
+2024-12-12T16:57:26.534Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:57:41.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T16:57:56.535Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:33:50.140Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:33:50.165Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:33:50.168Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:33:50.169Z [INFO]: Started polling for order statuses.
+2024-12-12T18:33:50.407Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T18:33:50.409Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:33:50.472Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T18:43:59.076Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:43:59.110Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:43:59.113Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:43:59.118Z [INFO]: Started polling for order statuses.
+2024-12-12T18:43:59.289Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T18:43:59.291Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:43:59.342Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T18:44:01.429Z [INFO]: Subscribed to WKEY quote data.
+2024-12-12T18:44:01.866Z [INFO]: Subscribed to ZENA quote data.
+2024-12-12T18:44:21.741Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:44:21.775Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:44:21.778Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:44:21.783Z [INFO]: Started polling for order statuses.
+2024-12-12T18:44:21.936Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T18:44:21.938Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:44:21.986Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T18:44:24.058Z [INFO]: Subscribed to WKEY quote data.
+2024-12-12T18:44:24.498Z [INFO]: Subscribed to ZENA quote data.
+2024-12-12T18:44:36.771Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:44:51.772Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:45:06.779Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:45:21.775Z [INFO]: Saved current state to disk.
+2024-12-12T18:45:21.782Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:45:36.793Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:45:51.792Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:45:53.839Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:45:53.872Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:45:53.875Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:45:53.881Z [INFO]: Started polling for order statuses.
+2024-12-12T18:45:54.060Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T18:45:54.061Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:45:54.118Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T18:46:08.874Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:46:23.878Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:46:38.878Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:46:53.874Z [INFO]: Saved current state to disk.
+2024-12-12T18:46:53.881Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:47:08.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:47:23.890Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:47:38.888Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:47:53.877Z [INFO]: Saved current state to disk.
+2024-12-12T18:47:53.886Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:47:57.079Z [INFO]: Subscribed to CADL quote data.
+2024-12-12T18:48:04.724Z [INFO]: Subscribed to CADL trade data.
+2024-12-12T18:48:08.889Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T18:57:42.371Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:57:42.402Z [INFO]: Loaded previous state from disk.
+2024-12-12T18:57:42.404Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:57:42.410Z [INFO]: Started polling for order statuses.
+2024-12-12T18:57:42.598Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T18:57:42.599Z [INFO]: Polygon WebSocket connected.
+2024-12-12T18:57:42.664Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T18:57:45.575Z [INFO]: Subscribed to HIMX quote data.
+2024-12-12T18:57:46.338Z [INFO]: Subscribed to HIMX trade data.
+2024-12-12T18:57:46.827Z [INFO]: Order placed [ENTRY-9fa534c319f2b6e0] for HIMX: {"symbol":"HIMX","qty":"1000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.86","extended_hours":true,"client_order_id":"ENTRY-9fa534c319f2b6e0"}
+2024-12-12T18:57:47.168Z [INFO]: Position added: HIMX | Qty: 720 | Avg Entry: $8.76 | Stop: $8.73 (HOD:8.75)
+2024-12-12T18:57:57.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T19:00:59.147Z [INFO]: Loaded previous state from disk.
+2024-12-12T19:00:59.179Z [INFO]: Loaded previous state from disk.
+2024-12-12T19:00:59.181Z [INFO]: Polygon WebSocket connected.
+2024-12-12T19:00:59.187Z [INFO]: Started polling for order statuses.
+2024-12-12T19:00:59.392Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T19:00:59.394Z [INFO]: Polygon WebSocket connected.
+2024-12-12T19:00:59.447Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T19:01:02.538Z [INFO]: Subscribed to HIMX quote data.
+2024-12-12T19:01:02.620Z [INFO]: Subscribed to HIMX trade data.
+2024-12-12T19:01:04.329Z [INFO]: Position added: HIMX | Qty: 1000 | Avg Entry: $8.76 | Stop: $8.75 (HOD:8.77)
+2024-12-12T19:01:04.356Z [INFO]: Stop condition met for HIMX. Closing position at bid $8.70 <= stopPrice $8.75.
+2024-12-12T19:01:04.668Z [INFO]: Order placed [CLOSE-73e6a6aa0ab11b77] for HIMX: {"symbol":"HIMX","qty":"1000","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.60","extended_hours":true,"client_order_id":"CLOSE-73e6a6aa0ab11b77"}
+2024-12-12T19:01:05.385Z [INFO]: Position removed: HIMX
+2024-12-12T19:01:14.181Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T19:01:17.145Z [INFO]: Unsubscribed from HIMX trade data.
+2024-12-12T19:01:17.145Z [INFO]: Unsubscribed from HIMX quote data.
+2024-12-12T19:01:29.178Z [INFO]: Dynamic config reloaded. Updated override symbols.

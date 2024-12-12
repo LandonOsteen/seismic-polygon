@@ -2,23 +2,21 @@ const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
 const config = require('./config');
+const moment = require('moment-timezone');
 
 class Dashboard {
   constructor() {
-    // Initialize the screen
     this.screen = blessed.screen({
       smartCSR: true,
       title: 'Trading Exit System Dashboard',
     });
 
-    // Create a grid layout for panels
     this.grid = new contrib.grid({
       rows: 16,
       cols: 12,
       screen: this.screen,
     });
 
-    // Positions Table: Shows open positions and stats
     this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
       keys: true,
       fg: 'white',
@@ -52,14 +50,12 @@ class Dashboard {
       data: [],
     });
 
-    // Account Summary Box: High-level account info
     this.accountSummaryBox = this.grid.set(0, 7, 4, 5, contrib.markdown, {
       label: ' ACCOUNT SUMMARY ',
       border: { type: 'line', fg: 'cyan' },
       style: { fg: 'white' },
     });
 
-    // Info Box: General informational logs
     this.infoBox = this.grid.set(4, 0, 4, 5, contrib.log, {
       fg: 'green',
       label: ' INFO ',
@@ -70,7 +66,6 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Orders Table: Shows active and recent orders
     this.ordersTable = this.grid.set(4, 5, 4, 7, contrib.table, {
       keys: true,
       fg: 'magenta',
@@ -91,7 +86,6 @@ class Dashboard {
       data: [],
     });
 
-    // Error Box: Logs errors in red
     this.errorBox = this.grid.set(8, 0, 4, 5, contrib.log, {
       fg: 'red',
       label: ' ERRORS ',
@@ -102,7 +96,6 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Warning Box: Logs warnings in yellow
     this.warningBox = this.grid.set(8, 5, 4, 7, contrib.log, {
       fg: 'yellow',
       label: ' WARNINGS ',
@@ -113,16 +106,13 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Watchlist & HOD Table:
-    // Reordered to show TIER and ENTRY PRICE prominently right after SYMBOL.
     this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
       label: ' WATCHLIST (Tiers & Targets) ',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      // New order: SYMBOL, TIER, ENTRY PRICE, HOD
-      columnWidth: [10, 8, 12, 10],
+      columnWidth: [10, 8, 12, 10, 10, 10],
       style: {
         header: { fg: 'cyan', bold: true },
         cell: { fg: 'white' },
@@ -130,11 +120,17 @@ class Dashboard {
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'TIER', 'ENTRY PRICE', 'HOD'],
+      headers: [
+        'SYMBOL',
+        'TIER',
+        'ENTRY PRICE',
+        'HOD',
+        'QUOTE_SUB',
+        'TRADE_SUB',
+      ],
       data: [],
     });
 
-    // Keybindings to exit
     this.screen.key(['escape', 'q', 'C-c'], () => {
       return process.exit(0);
     });
@@ -142,7 +138,6 @@ class Dashboard {
     this.screen.render();
   }
 
-  // Logging methods
   logInfo(message) {
     if (this.shouldDisplayMessage(message)) {
       const timestamp = new Date().toISOString();
@@ -170,7 +165,6 @@ class Dashboard {
     );
   }
 
-  // Update positions table data
   updatePositions(positions) {
     const tableData = positions.map((pos) => {
       const profitCents = parseFloat(pos.profitCents);
@@ -278,21 +272,25 @@ class Dashboard {
     });
   }
 
-  updateAccountSummary(accountSummary) {
+  updateAccountSummary(accountSummary, currentVolumeRequirement) {
+    const now = moment().tz(config.timeZone);
+    const currentET = now.format('YYYY-MM-DD HH:mm:ss z');
     const content = `### Account Summary
-
-- **Equity**: $${parseFloat(accountSummary.equity).toFixed(2)}
-- **Cash**: $${parseFloat(accountSummary.cash).toFixed(2)}
-- **Day's P&L**: $${parseFloat(accountSummary.pnl).toFixed(2)} (${parseFloat(
+  
+  - **Equity**: $${parseFloat(accountSummary.equity).toFixed(2)}
+  - **Cash**: $${parseFloat(accountSummary.cash).toFixed(2)}
+  - **Day's P&L**: $${parseFloat(accountSummary.pnl).toFixed(2)} (${parseFloat(
       accountSummary.pnl_percentage
     ).toFixed(2)}%)
-- **Open P&L**: $${parseFloat(accountSummary.unrealized_pl).toFixed(2)}
-`;
+  - **Open P&L**: $${parseFloat(accountSummary.unrealized_pl).toFixed(2)}
+  
+  **Current ET Time**: ${currentET}
+  **Current Volume Requirement**: ${currentVolumeRequirement}
+  `;
     this.accountSummaryBox.setMarkdown(content);
     this.screen.render();
   }
 
-  // Updates the watchlist with tier and entry price prominently displayed
   updateWatchlist(watchlist) {
     const data = Object.keys(watchlist).map((symbol) => {
       const w = watchlist[symbol];
@@ -303,16 +301,28 @@ class Dashboard {
         ? `$${w.plannedEntryPrice.toFixed(2)}`
         : 'N/A';
 
+      const quoteSub = w.isQuoteSubscribed ? 'Y' : 'N';
+      const tradeSub = w.isSubscribedToTrade ? 'Y' : 'N';
+
       return [
         symbol,
         tierName,
         entryPrice,
-        hod !== null ? `$${hod.toFixed(2)}` : 'N/A',
+        hod !== null && hod !== undefined ? `$${hod.toFixed(2)}` : 'N/A',
+        quoteSub,
+        tradeSub,
       ];
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'TIER', 'ENTRY PRICE', 'HOD'],
+      headers: [
+        'SYMBOL',
+        'TIER',
+        'ENTRY PRICE',
+        'HOD',
+        'QUOTE_SUB',
+        'TRADE_SUB',
+      ],
       data: data,
     });
     this.screen.render();
