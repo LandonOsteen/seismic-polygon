@@ -19,41 +19,38 @@ module.exports = {
     baseVolumeRequirement: 50000,
     morningVolumeRequirement: 80000,
     gapPercentageRequirement: 30,
-    priceRange: { min: 2, max: 20 }, // Extended to 20 to allow >$10 stocks
-    initialEntryOffsetCents: 0,
-    entryLimitOffsetCents: 35,
+    priceRange: { min: 2, max: 10 }, // Extended to 20 to allow >$10 stocks
+    initialEntryOffsetCents: 1,
+    entryLimitOffsetCents: 30,
     initialShareSize: 5000,
-    trailingStopIncrementCents: 2,
+    trailingStopIncrementCents: 1,
     initialTrailingStopOffsetCents: 12,
     openingOrderCooldownSeconds: 5,
     tradeProximityCents: 15,
-    initialStopOffsetCents: 2,
+    initialStopOffsetCents: 5,
     dynamicStopThresholdCents: 1,
     // Additional parameters for volatility adjustments
     highPriceVolatilityThreshold: 0.2, // min 5-min range for >$10 stock
     lowPriceVolatilityThreshold: 0.05, // min 5-min range for small caps
-    allowedAfterHaltCooldownSeconds: 60, // Wait after halt resume before new entry
+    allowedAfterHaltCooldownSeconds: 2, // Wait after halt resume before new entry
   },
   orderSettings: {
     limitOffsetCents: 10,
     // More granular profit targets for small increments capturing
     profitTargets: [
-      { targetCents: 5, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
       { targetCents: 15, percentToClose: 20 },
       { targetCents: 20, percentToClose: 20 },
       { targetCents: 30, percentToClose: 20 },
-      { targetCents: 40, percentToClose: 10 },
     ],
     dynamicStops: [
       { profitTargetsHit: 1, stopCents: 0 },
-      { profitTargetsHit: 3, stopCents: 10 },
-      { profitTargetsHit: 5, stopCents: 20 },
+      { profitTargetsHit: 4, stopCents: 10 },
     ],
     pyramidLevels: [
-      { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 2 },
-      { priceIncreaseCents: 6, percentToAdd: 20, offsetCents: 2 },
-      { priceIncreaseCents: 10, percentToAdd: 20, offsetCents: 2 },
+      { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 15 },
+      { priceIncreaseCents: 6, percentToAdd: 40, offsetCents: 15 },
+      { priceIncreaseCents: 10, percentToAdd: 20, offsetCents: 15 },
     ],
   },
   orderTimeouts: {
