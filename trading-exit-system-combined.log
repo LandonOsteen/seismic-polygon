@@ -25292,3 +25292,78 @@
 2024-12-11T20:21:53.438Z [INFO]: Subscribed to OKLO quote data.
 2024-12-11T20:21:53.583Z [WARN]: High of Day missing for OKLO while adding position.
 2024-12-11T20:21:54.053Z [INFO]: Unsubscribed from LDTC trade data.
+2024-12-12T13:39:57.419Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:39:57.430Z [INFO]: Started polling for order statuses.
+2024-12-12T13:39:57.605Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:39:57.607Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:39:57.654Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:39:57.882Z [INFO]: Subscribed to TRVI quote data.
+2024-12-12T13:40:10.714Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:40:10.729Z [INFO]: Started polling for order statuses.
+2024-12-12T13:40:10.889Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:40:10.890Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:40:10.939Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:40:11.176Z [INFO]: Subscribed to TRVI quote data.
+2024-12-12T13:40:11.745Z [INFO]: Subscribed to AMPG quote data.
+2024-12-12T13:40:19.839Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:40:19.857Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:40:25.728Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:40:25.728Z [INFO]: Subscribed to MIND quote data.
+2024-12-12T13:40:25.737Z [INFO]: Subscribed to OKLO quote data.
+2024-12-12T13:40:26.177Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T13:40:40.723Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:40:55.723Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:40:56.478Z [INFO]: Subscribed to AMPG quote data.
+2024-12-12T13:41:01.911Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:41:04.416Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:41:04.426Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:41:05.918Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:41:10.007Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:41:10.017Z [INFO]: Started polling for order statuses.
+2024-12-12T13:41:10.192Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:41:10.193Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:41:10.245Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:41:10.456Z [INFO]: Subscribed to TRVI quote data.
+2024-12-12T13:41:25.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:41:25.013Z [INFO]: Subscribed to MIND quote data.
+2024-12-12T13:41:25.017Z [INFO]: Subscribed to OKLO quote data.
+2024-12-12T13:41:40.020Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:41:50.659Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:41:50.669Z [INFO]: Started polling for order statuses.
+2024-12-12T13:41:50.847Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:41:50.848Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:41:50.907Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:41:51.110Z [INFO]: Subscribed to TRVI quote data.
+2024-12-12T13:42:04.295Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:42:04.306Z [INFO]: Started polling for order statuses.
+2024-12-12T13:42:04.483Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:42:04.484Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:42:04.531Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:42:04.748Z [INFO]: Subscribed to TRVI quote data.
+2024-12-12T13:42:19.307Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:42:34.311Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:42:44.980Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:42:48.989Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:42:48.993Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:42:49.306Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:43:00.282Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:43:00.292Z [INFO]: Started polling for order statuses.
+2024-12-12T13:43:00.451Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:43:00.452Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:43:00.505Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:43:00.733Z [INFO]: Subscribed to TRVI quote data.
+2024-12-12T13:43:15.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:43:30.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:43:45.299Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:43:50.182Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:43:51.679Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:43:51.687Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:43:54.185Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:43:54.690Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:43:55.688Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:43:56.190Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:43:56.200Z [INFO]: Subscribed to TRVI trade data.
+2024-12-12T13:43:56.207Z [INFO]: Unsubscribed from TRVI trade data.
+2024-12-12T13:44:00.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:44:15.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:44:30.295Z [INFO]: Dynamic config reloaded. Updated override symbols.

@@ -18,9 +18,9 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    baseVolumeRequirement: 50000,
+    baseVolumeRequirement: 60000,
     morningVolumeRequirement: 80000,
-    gapPercentageRequirement: 30,
+    gapPercentageRequirement: 20,
     priceRange: { min: 2, max: 10 },
     initialEntryOffsetCents: 0, // HOD breakout offset
     entryLimitOffsetCents: 35, // Additional limit offset for entry orders
@@ -44,8 +44,6 @@ module.exports = {
     dynamicStops: [
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
-      { profitTargetsHit: 4, stopCents: 20 },
-      { profitTargetsHit: 5, stopCents: 30 },
     ],
     pyramidLevels: [
       { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 2 },
