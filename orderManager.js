@@ -437,7 +437,7 @@ class OrderManager {
       totalProfitTargets: profitTargets.length,
       isActive: true,
       isProcessing: false,
-      attemptHOD: hod, // Store attemptHOD for reference
+      attemptHOD: hod,
       stopPrice: initialStopPrice,
       stopCents: initialStopOffsetCents,
       stopDescription: `Initial Stop @ $${initialStopPrice.toFixed(
@@ -470,6 +470,11 @@ class OrderManager {
   }
 
   async updateHaltStatus(symbol) {
+    // Ensure symbol exists in watchlist
+    if (!this.watchlist[symbol]) {
+      return; // Symbol not in watchlist, skip halt checks
+    }
+
     const snapshot = await this.restClient.getTickerDetails(symbol);
     if (snapshot && snapshot.market_status === 'halted') {
       if (!this.watchlist[symbol].isHalted) {
@@ -598,7 +603,6 @@ class OrderManager {
       await this.checkStopCondition(pos, symbol);
       this.updateSecondsTrailingStop(pos, symbol, currentPrice);
     }
-    // Entry now triggered on trade updates, not quotes.
   }
 
   async onTradeUpdate(symbol, price, size, timestamp) {
@@ -614,24 +618,40 @@ class OrderManager {
     const tier = tierIndex !== undefined ? config.priceTiers[tierIndex] : null;
     const hodTriggerOffsetCents = tier ? tier.hodTriggerOffsetCents : 0;
 
+    if (w.highOfDay === undefined || w.highOfDay === null) {
+      this.dashboard.logError(
+        `Missing HOD for ${symbol}, cannot determine trigger price.`
+      );
+      return;
+    }
+
     const triggerPrice = w.highOfDay + hodTriggerOffsetCents / 100;
+    if (typeof triggerPrice !== 'number' || isNaN(triggerPrice)) {
+      this.dashboard.logError(
+        `Invalid triggerPrice for ${symbol}: ${triggerPrice}`
+      );
+      return;
+    }
 
     let triggerConditionMet = price >= triggerPrice;
-
     if (!triggerConditionMet) return;
 
-    // Attempt entry
     w.lastEntryTime = Date.now();
     w.hasPendingEntryOrder = true;
     w.isHODFrozen = true;
 
-    const initialShareSize = tier
-      ? tier.initialShareSize
-      : config.strategySettings.initialShareSize;
-    const entryLimitOffsetCents = tier
-      ? tier.entryLimitOffsetCents
-      : config.strategySettings.entryLimitOffsetCents;
+    const entryLimitOffsetCents =
+      tier?.entryLimitOffsetCents ?? config.orderSettings.limitOffsetCents;
     const limitPrice = triggerPrice + entryLimitOffsetCents / 100;
+
+    if (typeof limitPrice !== 'number' || isNaN(limitPrice)) {
+      this.dashboard.logError(
+        `Invalid limitPrice for ${symbol}: ${limitPrice}`
+      );
+      w.hasPendingEntryOrder = false;
+      w.isHODFrozen = false;
+      return;
+    }
 
     w.plannedEntryPrice = limitPrice;
     this.dashboard.updateWatchlist(this.watchlist);
@@ -641,18 +661,39 @@ class OrderManager {
       )}, limitPrice=$${limitPrice.toFixed(2)}`
     );
 
-    await this.placeEntryOrder(symbol, initialShareSize, 'buy', limitPrice);
+    await this.placeEntryOrder(
+      symbol,
+      tier?.initialShareSize ?? config.strategySettings.initialShareSize,
+      'buy',
+      limitPrice
+    );
   }
 
   async placeEntryOrder(symbol, qty, side, targetPrice) {
     if (this.positions[symbol]) {
-      if (this.watchlist[symbol])
+      if (this.watchlist[symbol]) {
         this.watchlist[symbol].hasPendingEntryOrder = false;
+        this.watchlist[symbol].isHODFrozen = false;
+      }
       return;
     }
     if (this.hasPendingOpeningOrder(symbol)) {
-      if (this.watchlist[symbol])
+      if (this.watchlist[symbol]) {
         this.watchlist[symbol].hasPendingEntryOrder = false;
+        this.watchlist[symbol].isHODFrozen = false;
+      }
+      return;
+    }
+
+    // Ensure targetPrice is a valid number before using toFixed
+    if (typeof targetPrice !== 'number' || isNaN(targetPrice)) {
+      this.dashboard.logError(
+        `Invalid targetPrice in placeEntryOrder for ${symbol}: ${targetPrice}`
+      );
+      if (this.watchlist[symbol]) {
+        this.watchlist[symbol].hasPendingEntryOrder = false;
+        this.watchlist[symbol].isHODFrozen = false;
+      }
       return;
     }
 
@@ -721,7 +762,7 @@ class OrderManager {
             100
           ).toFixed(2);
 
-          this.syncProfitTargetsOnStartup(pos); // Ensure we pick up missed targets
+          this.syncProfitTargetsOnStartup(pos);
 
           if (latestQty === 0) {
             this.removePosition(upperSymbol);
@@ -756,7 +797,6 @@ class OrderManager {
   }
 
   syncProfitTargetsOnStartup(pos) {
-    // Check if the current profit surpasses any profit targets that were not marked as hit
     const targets = pos.profitTargets;
     const currentProfitCents = parseFloat(pos.profitCents);
 
@@ -776,14 +816,12 @@ class OrderManager {
         `Position ${pos.symbol}: Found ${diff} previously unhit profit targets hit on restart or fast move. Now at ${pos.profitTargetsHit}/${pos.totalProfitTargets}.`
       );
 
-      // If all targets hit and seconds trailing stop is on, activate it
       if (
         pos.profitTargetsHit >= pos.totalProfitTargets &&
         !pos.trailingStopActive &&
         config.strategySettings.useSecondsTrailingStop
       ) {
         pos.trailingStopActive = true;
-        // We'll rely on updateSecondsTrailingStop to handle triggering
         pos.stopDescription = `Seconds-TrailingStop Active`;
       }
     }
@@ -840,15 +878,24 @@ class OrderManager {
     const pos = this.positions[symbol];
     if (!pos || pos.qty <= 0) return;
 
-    const side = 'sell';
     const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
-    let limitPrice = pos.currentBid - limitOffsetCents / 100;
-    if (limitPrice <= 0 || isNaN(limitPrice)) return;
+    const limitPrice = pos.currentBid - limitOffsetCents / 100;
+
+    if (
+      typeof limitPrice !== 'number' ||
+      isNaN(limitPrice) ||
+      limitPrice <= 0
+    ) {
+      this.dashboard.logError(
+        `Invalid limitPrice for closing ${symbol}: ${limitPrice}`
+      );
+      return;
+    }
 
     const order = {
       symbol,
       qty: pos.qty.toFixed(0),
-      side,
+      side: 'sell',
       type: 'limit',
       time_in_force: 'day',
       limit_price: limitPrice.toFixed(2),
@@ -1012,7 +1059,17 @@ class OrderManager {
     const symbol = pos.symbol;
     const side = 'buy';
     let limitPrice = targetPrice + offsetCents / 100;
-    if (limitPrice <= 0 || isNaN(limitPrice)) return;
+
+    if (
+      typeof limitPrice !== 'number' ||
+      isNaN(limitPrice) ||
+      limitPrice <= 0
+    ) {
+      this.dashboard.logError(
+        `Invalid pyramid limitPrice for ${symbol}: ${limitPrice}`
+      );
+      return;
+    }
 
     const order = {
       symbol,
@@ -1031,7 +1088,6 @@ class OrderManager {
 
   updateSecondsTrailingStop(pos, symbol, currentPrice) {
     if (!config.strategySettings.useSecondsTrailingStop) return;
-
     if (pos.profitTargetsHit < pos.totalProfitTargets) return;
 
     const tierIndex = pos.tierIndex;
@@ -1064,7 +1120,6 @@ class OrderManager {
         pos.stopDescription = `Seconds-TrailingStop Updated Low @ $${minPrice.toFixed(
           2
         )}`;
-        // Trigger stop as soon as we set a new low
         this.dashboard.logInfo(
           `Seconds-based trailing stop triggered for ${symbol} at $${minPrice.toFixed(
             2
@@ -1105,6 +1160,28 @@ class OrderManager {
 
   generateClientOrderId(prefix = 'MY_SYSTEM') {
     return `${prefix}-${crypto.randomBytes(8).toString('hex')}`;
+  }
+
+  removePosition(symbol) {
+    if (this.positions[symbol]) {
+      delete this.positions[symbol];
+      if (this.trailingData[symbol]) delete this.trailingData[symbol];
+      const message = `Position removed: ${symbol}`;
+      logger.info(message);
+      this.dashboard.logInfo(message);
+
+      if (!this.watchlist[symbol]) {
+        this.polygon.unsubscribeTrade(symbol);
+        this.polygon.unsubscribeQuote(symbol);
+      }
+
+      this.dashboard.updatePositions(Object.values(this.positions));
+
+      if (this.watchlist[symbol]) {
+        this.watchlist[symbol].hasPosition = false;
+        this.dashboard.updateWatchlist(this.watchlist);
+      }
+    }
   }
 }
 

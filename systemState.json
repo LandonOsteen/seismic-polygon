@@ -1,19 +1,57 @@
 {
-  "positions": {},
-  "watchlist": {
-    "DBVT": {
-      "highOfDay": 5.6,
-      "lastEntryTime": null,
-      "hasPosition": false,
-      "hasPendingEntryOrder": false,
-      "isHODFrozen": false,
+  "positions": {
+    "LAES": {
+      "symbol": "LAES",
+      "qty": 8000,
+      "initialQty": 8000,
+      "side": "buy",
+      "avgEntryPrice": 1.46,
+      "currentBid": 1.46,
+      "currentAsk": 1.48,
+      "currentPrice": 1.47,
+      "profitCents": "1.00",
+      "profitTargetsHit": 0,
+      "totalProfitTargets": 3,
+      "isActive": true,
+      "isProcessing": false,
+      "attemptHOD": 1.45,
+      "stopPrice": 1.43,
+      "stopCents": 2,
+      "stopDescription": "Initial Stop @ $1.43 (2¢ below HOD)",
+      "stopTriggered": false,
       "executedPyramidLevels": [],
-      "isSubscribedToTrade": false,
-      "isHalted": false,
-      "lastHaltTime": null,
-      "tierIndex": 2,
-      "plannedEntryPrice": null
-    },
+      "totalPyramidLevels": 2,
+      "trailingStopActive": false,
+      "tierIndex": 0,
+      "pyramidLevels": [
+        {
+          "priceIncreaseCents": 3,
+          "percentToAdd": 40,
+          "offsetCents": 10
+        },
+        {
+          "priceIncreaseCents": 6,
+          "percentToAdd": 40,
+          "offsetCents": 10
+        }
+      ],
+      "profitTargets": [
+        {
+          "targetCents": 6,
+          "percentToClose": 20
+        },
+        {
+          "targetCents": 10,
+          "percentToClose": 20
+        },
+        {
+          "targetCents": 15,
+          "percentToClose": 40
+        }
+      ]
+    }
+  },
+  "watchlist": {
     "PALI": {
       "highOfDay": 3.6,
       "lastEntryTime": null,
@@ -26,6 +64,32 @@
       "lastHaltTime": null,
       "tierIndex": 1,
       "plannedEntryPrice": null
+    },
+    "TRVI": {
+      "highOfDay": 4.9,
+      "lastEntryTime": null,
+      "hasPosition": false,
+      "hasPendingEntryOrder": false,
+      "isHODFrozen": false,
+      "executedPyramidLevels": [],
+      "isSubscribedToTrade": false,
+      "isHalted": false,
+      "lastHaltTime": null,
+      "tierIndex": null,
+      "plannedEntryPrice": null
+    },
+    "LAES": {
+      "highOfDay": 1.47,
+      "lastEntryTime": 1734010571514,
+      "hasPosition": true,
+      "hasPendingEntryOrder": false,
+      "isHODFrozen": false,
+      "executedPyramidLevels": [],
+      "isSubscribedToTrade": true,
+      "isHalted": false,
+      "lastHaltTime": null,
+      "tierIndex": 0,
+      "plannedEntryPrice": 1.56
     }
   },
   "orderTracking": {}

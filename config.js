@@ -22,7 +22,7 @@ module.exports = {
     baseVolumeRequirement: 40000,
     morningVolumeRequirement: 40000,
     // Minimum gap percentage to consider a ticker for the watchlist
-    gapPercentageRequirement: 20,
+    gapPercentageRequirement: 25,
     // Price range filter for watchlist candidates
     priceRange: { min: 1, max: 15 },
     // Cooldown after placing an opening order to avoid immediate re-entries
