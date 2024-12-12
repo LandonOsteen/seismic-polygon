@@ -41,3 +41,1332 @@
 2024-12-12T04:04:54.821Z [INFO]: Subscribed to LAES quote data.
 2024-12-12T04:05:08.860Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-12T04:05:23.850Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:18:23.127Z [INFO]: Loaded previous state from disk.
+2024-12-12T05:18:23.158Z [INFO]: Loaded previous state from disk.
+2024-12-12T05:18:23.160Z [INFO]: Polygon WebSocket connected.
+2024-12-12T05:18:23.167Z [INFO]: Started polling for order statuses.
+2024-12-12T05:18:23.350Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T05:18:23.351Z [INFO]: Polygon WebSocket connected.
+2024-12-12T05:18:23.405Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T05:18:23.528Z [INFO]: Subscribed to LAES quote data.
+2024-12-12T05:18:38.159Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:18:53.162Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:19:08.162Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:19:23.163Z [INFO]: Saved current state to disk.
+2024-12-12T05:19:23.173Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:19:38.181Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:19:53.178Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:20:08.178Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:20:23.181Z [INFO]: Saved current state to disk.
+2024-12-12T05:20:23.199Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:20:38.195Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:20:53.193Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:21:08.198Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:21:23.166Z [INFO]: Saved current state to disk.
+2024-12-12T05:21:23.196Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:21:38.200Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:21:53.206Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:22:08.203Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:22:23.167Z [INFO]: Saved current state to disk.
+2024-12-12T05:22:23.202Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:22:38.206Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:22:53.204Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:23:08.205Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:23:23.166Z [INFO]: Saved current state to disk.
+2024-12-12T05:23:23.205Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:23:38.210Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:23:53.206Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:24:08.212Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:24:23.172Z [INFO]: Saved current state to disk.
+2024-12-12T05:24:23.210Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:24:38.214Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:24:53.217Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:25:08.224Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:25:23.173Z [INFO]: Saved current state to disk.
+2024-12-12T05:25:23.221Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:25:38.223Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:25:53.220Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:26:08.226Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:26:23.174Z [INFO]: Saved current state to disk.
+2024-12-12T05:26:23.226Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:26:38.233Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:26:53.232Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:27:08.236Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:27:23.178Z [INFO]: Saved current state to disk.
+2024-12-12T05:27:23.237Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:27:38.242Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:27:53.244Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:28:08.243Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:28:23.181Z [INFO]: Saved current state to disk.
+2024-12-12T05:28:23.246Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:28:38.251Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:28:53.226Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:29:08.216Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:29:23.146Z [INFO]: Saved current state to disk.
+2024-12-12T05:29:23.213Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:29:38.218Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:29:53.217Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:30:08.220Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:30:23.146Z [INFO]: Saved current state to disk.
+2024-12-12T05:30:23.223Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:30:38.224Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:30:53.226Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:31:08.228Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:31:23.146Z [INFO]: Saved current state to disk.
+2024-12-12T05:31:23.231Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:31:38.233Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:31:53.232Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:32:08.238Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:32:23.147Z [INFO]: Saved current state to disk.
+2024-12-12T05:32:23.240Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:32:38.239Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:32:53.241Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:33:08.241Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:33:23.150Z [INFO]: Saved current state to disk.
+2024-12-12T05:33:23.240Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:33:38.242Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:33:53.242Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:34:08.243Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:34:23.148Z [INFO]: Saved current state to disk.
+2024-12-12T05:34:23.246Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:34:38.248Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:34:53.252Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:35:08.251Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:35:23.152Z [INFO]: Saved current state to disk.
+2024-12-12T05:35:23.257Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:35:38.254Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:35:53.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:36:08.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:36:23.157Z [INFO]: Saved current state to disk.
+2024-12-12T05:36:23.264Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:36:38.260Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:36:53.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:37:08.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:37:23.157Z [INFO]: Saved current state to disk.
+2024-12-12T05:37:23.271Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:37:38.267Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:37:53.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:38:08.276Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:38:23.157Z [INFO]: Saved current state to disk.
+2024-12-12T05:38:23.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:38:38.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:38:53.280Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:39:08.281Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:39:23.159Z [INFO]: Saved current state to disk.
+2024-12-12T05:39:23.279Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:39:38.285Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:39:53.286Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:40:08.288Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:40:23.158Z [INFO]: Saved current state to disk.
+2024-12-12T05:40:23.290Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:40:38.288Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:40:53.293Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:41:08.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:41:23.161Z [INFO]: Saved current state to disk.
+2024-12-12T05:41:23.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:41:38.299Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:41:53.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:42:08.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:42:23.168Z [INFO]: Saved current state to disk.
+2024-12-12T05:42:23.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:42:38.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:42:53.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:43:08.306Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:43:23.168Z [INFO]: Saved current state to disk.
+2024-12-12T05:43:23.308Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:43:38.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:43:53.313Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:44:08.317Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:44:23.170Z [INFO]: Saved current state to disk.
+2024-12-12T05:44:23.314Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:44:38.316Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:44:53.317Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:45:08.320Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:45:23.169Z [INFO]: Saved current state to disk.
+2024-12-12T05:45:23.316Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:45:38.318Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:45:53.321Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:46:08.322Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:46:23.174Z [INFO]: Saved current state to disk.
+2024-12-12T05:46:23.324Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:46:38.329Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:46:53.331Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:47:08.335Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:47:23.166Z [INFO]: Saved current state to disk.
+2024-12-12T05:47:23.334Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:47:38.336Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:47:53.337Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:48:08.337Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:48:23.175Z [INFO]: Saved current state to disk.
+2024-12-12T05:48:23.337Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:48:38.336Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:48:53.336Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:49:08.340Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:49:23.177Z [INFO]: Saved current state to disk.
+2024-12-12T05:49:23.341Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:49:38.342Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:49:53.331Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:50:08.323Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:50:23.161Z [INFO]: Saved current state to disk.
+2024-12-12T05:50:23.324Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:50:38.322Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:50:53.332Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:51:08.328Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:51:23.162Z [INFO]: Saved current state to disk.
+2024-12-12T05:51:23.329Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:51:38.337Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:51:53.335Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:52:08.338Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:52:23.164Z [INFO]: Saved current state to disk.
+2024-12-12T05:52:23.338Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:52:38.340Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:52:53.341Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:53:08.343Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:53:23.162Z [INFO]: Saved current state to disk.
+2024-12-12T05:53:23.344Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:53:38.344Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:53:53.346Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:54:08.347Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:54:23.159Z [INFO]: Saved current state to disk.
+2024-12-12T05:54:23.348Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:54:38.347Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:54:53.352Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:55:08.353Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:55:23.162Z [INFO]: Saved current state to disk.
+2024-12-12T05:55:23.353Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:55:38.355Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:55:53.358Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:56:08.361Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:56:23.163Z [INFO]: Saved current state to disk.
+2024-12-12T05:56:23.364Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:56:38.363Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:56:53.367Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:57:08.364Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:57:23.170Z [INFO]: Saved current state to disk.
+2024-12-12T05:57:23.369Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:57:38.371Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:57:53.369Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:58:08.372Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:58:23.168Z [INFO]: Saved current state to disk.
+2024-12-12T05:58:23.371Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:58:38.378Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:58:53.375Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:59:08.381Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:59:23.170Z [INFO]: Saved current state to disk.
+2024-12-12T05:59:23.380Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:59:38.380Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T05:59:53.385Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:00:08.388Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:00:23.168Z [INFO]: Saved current state to disk.
+2024-12-12T06:00:23.385Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:00:38.384Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:00:53.386Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:01:08.384Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:01:23.165Z [INFO]: Saved current state to disk.
+2024-12-12T06:01:23.386Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:01:38.394Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:01:53.395Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:02:08.399Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:02:23.171Z [INFO]: Saved current state to disk.
+2024-12-12T06:02:23.401Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:02:38.400Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:02:53.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:03:08.402Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:03:23.171Z [INFO]: Saved current state to disk.
+2024-12-12T06:03:23.403Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:03:38.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:03:53.408Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:04:08.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:04:23.173Z [INFO]: Saved current state to disk.
+2024-12-12T06:04:23.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:04:38.412Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:04:53.416Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:05:08.417Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:05:23.176Z [INFO]: Saved current state to disk.
+2024-12-12T06:05:23.417Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:05:38.419Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:05:53.419Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:06:08.420Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:06:23.179Z [INFO]: Saved current state to disk.
+2024-12-12T06:06:23.422Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:06:38.422Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:06:53.423Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:07:08.427Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:07:23.179Z [INFO]: Saved current state to disk.
+2024-12-12T06:07:23.428Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:07:38.425Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:07:53.427Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:08:08.431Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:08:23.181Z [INFO]: Saved current state to disk.
+2024-12-12T06:08:23.432Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:08:38.435Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:08:53.432Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:09:08.433Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:09:23.186Z [INFO]: Saved current state to disk.
+2024-12-12T06:09:23.437Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:09:38.442Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:09:53.442Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:10:08.444Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:10:23.184Z [INFO]: Saved current state to disk.
+2024-12-12T06:10:23.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:10:38.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:10:53.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:11:08.448Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:11:23.184Z [INFO]: Saved current state to disk.
+2024-12-12T06:11:23.452Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:11:38.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:11:53.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:12:08.454Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:12:23.185Z [INFO]: Saved current state to disk.
+2024-12-12T06:12:23.451Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:12:38.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:12:53.456Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:13:08.457Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:13:23.179Z [INFO]: Saved current state to disk.
+2024-12-12T06:13:23.459Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:13:38.461Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:13:53.467Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:14:08.468Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:14:23.189Z [INFO]: Saved current state to disk.
+2024-12-12T06:14:23.467Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:14:38.474Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:14:53.485Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:15:08.474Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:15:23.187Z [INFO]: Saved current state to disk.
+2024-12-12T06:15:23.478Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:15:38.478Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:15:53.484Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:16:08.483Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:16:23.188Z [INFO]: Saved current state to disk.
+2024-12-12T06:16:23.480Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:16:38.485Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:16:53.487Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:17:08.485Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:17:23.190Z [INFO]: Saved current state to disk.
+2024-12-12T06:17:23.492Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:17:38.489Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:17:53.495Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:18:08.491Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:18:23.194Z [INFO]: Saved current state to disk.
+2024-12-12T06:18:23.494Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:18:38.498Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:18:53.496Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:19:08.494Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:19:23.142Z [INFO]: Saved current state to disk.
+2024-12-12T06:19:23.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:19:38.446Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:19:53.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:20:08.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:37:23.876Z [INFO]: Saved current state to disk.
+2024-12-12T06:37:23.984Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:37:39.042Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:37:54.049Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:38:09.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:38:23.781Z [INFO]: Saved current state to disk.
+2024-12-12T06:38:24.050Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:55:15.203Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:55:15.211Z [INFO]: Saved current state to disk.
+2024-12-12T06:55:15.211Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-12T06:55:30.201Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:55:45.208Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:56:00.210Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:56:15.210Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T06:56:15.246Z [INFO]: Saved current state to disk.
+2024-12-12T07:12:05.618Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:12:05.625Z [INFO]: Saved current state to disk.
+2024-12-12T07:12:20.619Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:12:35.610Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:12:50.613Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:13:05.613Z [INFO]: Saved current state to disk.
+2024-12-12T07:13:05.623Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:28:10.963Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:28:10.969Z [INFO]: Saved current state to disk.
+2024-12-12T07:28:25.984Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:28:40.989Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:28:56.000Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:29:10.991Z [INFO]: Saved current state to disk.
+2024-12-12T07:29:10.999Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:29:26.009Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:29:41.003Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:29:56.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:30:10.996Z [INFO]: Saved current state to disk.
+2024-12-12T07:30:11.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:30:26.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:30:41.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:30:56.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:31:11.005Z [INFO]: Saved current state to disk.
+2024-12-12T07:31:11.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:31:26.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:31:41.021Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:31:56.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:32:11.004Z [INFO]: Saved current state to disk.
+2024-12-12T07:32:11.021Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:32:26.027Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:32:41.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:32:56.033Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:33:11.006Z [INFO]: Saved current state to disk.
+2024-12-12T07:33:11.030Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:33:26.032Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:33:41.035Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:33:56.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:34:11.011Z [INFO]: Saved current state to disk.
+2024-12-12T07:34:11.037Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:34:26.035Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:34:41.049Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:34:56.050Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:35:11.011Z [INFO]: Saved current state to disk.
+2024-12-12T07:35:11.047Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:35:26.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:35:41.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:51:10.573Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:51:10.579Z [INFO]: Saved current state to disk.
+2024-12-12T07:51:25.573Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:51:40.563Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:51:55.569Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T07:52:10.567Z [INFO]: Saved current state to disk.
+2024-12-12T07:52:10.574Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:07:50.832Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:07:50.962Z [INFO]: Saved current state to disk.
+2024-12-12T08:08:05.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:08:20.822Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:08:35.837Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:08:50.825Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:08:50.862Z [INFO]: Saved current state to disk.
+2024-12-12T08:25:32.405Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:25:32.411Z [INFO]: Saved current state to disk.
+2024-12-12T08:25:32.412Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-12T08:25:47.415Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:26:02.412Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:26:17.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:26:32.415Z [INFO]: Saved current state to disk.
+2024-12-12T08:26:32.424Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:29:11.832Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:29:12.000Z [INFO]: Saved current state to disk.
+2024-12-12T08:29:26.833Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:29:41.831Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:29:56.834Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:30:11.833Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:30:11.841Z [INFO]: Saved current state to disk.
+2024-12-12T08:30:12.002Z [INFO]: Unsubscribed from LAES quote data.
+2024-12-12T08:30:12.051Z [WARN]: Polygon WebSocket closed. Code: 1006, Reason: 
+2024-12-12T08:46:03.243Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:46:03.264Z [INFO]: Saved current state to disk.
+2024-12-12T08:46:03.269Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-12T08:46:03.660Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T08:46:03.661Z [INFO]: Polygon WebSocket connected.
+2024-12-12T08:46:03.706Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T08:46:18.253Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:46:33.248Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:46:48.252Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:47:03.252Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:47:03.258Z [INFO]: Saved current state to disk.
+2024-12-12T08:47:18.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:47:33.259Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:47:48.260Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:48:03.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:48:03.272Z [INFO]: Saved current state to disk.
+2024-12-12T08:48:18.263Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:48:33.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:48:48.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:49:03.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:49:03.272Z [INFO]: Saved current state to disk.
+2024-12-12T08:49:18.267Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:49:33.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:49:48.269Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:50:03.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:50:03.284Z [INFO]: Saved current state to disk.
+2024-12-12T08:50:18.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:50:33.267Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T08:50:48.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:07:29.125Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:07:29.133Z [INFO]: Saved current state to disk.
+2024-12-12T09:07:29.509Z [INFO]: Subscribed to DBVT quote data.
+2024-12-12T09:07:44.094Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:07:59.084Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:08:14.084Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:08:14.306Z [INFO]: Subscribed to PALI quote data.
+2024-12-12T09:08:14.357Z [WARN]: Polygon WebSocket closed. Code: 1006, Reason: 
+2024-12-12T09:08:24.540Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T09:08:24.541Z [INFO]: Polygon WebSocket connected.
+2024-12-12T09:08:24.595Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T09:08:24.596Z [INFO]: Resubscribed to: Q.DBVT,Q.PALI
+2024-12-12T09:08:29.079Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:08:29.092Z [INFO]: Saved current state to disk.
+2024-12-12T09:26:17.820Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:26:17.968Z [INFO]: Saved current state to disk.
+2024-12-12T09:26:32.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:26:47.812Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:27:02.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:27:17.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:27:17.822Z [INFO]: Saved current state to disk.
+2024-12-12T09:27:32.820Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:27:47.820Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:28:02.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:28:17.822Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:28:17.832Z [INFO]: Saved current state to disk.
+2024-12-12T09:28:32.824Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:28:47.825Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:29:02.827Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:29:17.830Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:29:17.839Z [INFO]: Saved current state to disk.
+2024-12-12T09:29:32.835Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:29:47.833Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:30:02.839Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:30:17.837Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:30:17.844Z [INFO]: Saved current state to disk.
+2024-12-12T09:30:32.839Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:30:47.840Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:31:02.844Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:31:17.842Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:31:17.853Z [INFO]: Saved current state to disk.
+2024-12-12T09:46:49.773Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:46:49.951Z [INFO]: Saved current state to disk.
+2024-12-12T09:46:50.208Z [ERROR]: Error adding symbol PALI to watchlist: read ECONNRESET
+2024-12-12T09:47:04.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:47:19.783Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:47:34.783Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:47:49.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:47:49.791Z [INFO]: Saved current state to disk.
+2024-12-12T09:48:04.787Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:48:19.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:48:34.788Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:48:49.788Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:48:49.798Z [INFO]: Saved current state to disk.
+2024-12-12T09:49:04.786Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:49:19.790Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:49:34.794Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:49:49.794Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:49:49.804Z [INFO]: Saved current state to disk.
+2024-12-12T09:50:04.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:50:19.795Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:50:34.798Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:50:49.795Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T09:50:49.804Z [INFO]: Saved current state to disk.
+2024-12-12T09:51:04.801Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:08:34.224Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:08:34.231Z [INFO]: Saved current state to disk.
+2024-12-12T10:08:34.923Z [INFO]: Subscribed to AMPG quote data.
+2024-12-12T10:08:34.974Z [WARN]: Polygon WebSocket closed. Code: 1006, Reason: 
+2024-12-12T10:08:45.307Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T10:08:45.308Z [INFO]: Polygon WebSocket connected.
+2024-12-12T10:08:45.360Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T10:08:45.361Z [INFO]: Resubscribed to: Q.DBVT,Q.PALI,Q.AMPG
+2024-12-12T10:08:46.401Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:08:49.290Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:09:04.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:09:19.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:09:34.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:09:34.302Z [INFO]: Saved current state to disk.
+2024-12-12T10:09:49.291Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:10:04.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:10:19.337Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:10:34.309Z [INFO]: Saved current state to disk.
+2024-12-12T10:10:34.335Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:10:49.397Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:11:04.382Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:11:19.380Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:11:34.310Z [INFO]: Saved current state to disk.
+2024-12-12T10:11:34.385Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:11:49.388Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:12:04.388Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:12:19.383Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:12:34.307Z [INFO]: Saved current state to disk.
+2024-12-12T10:12:34.390Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:12:49.387Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:13:04.392Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:13:19.386Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:13:34.307Z [INFO]: Saved current state to disk.
+2024-12-12T10:13:34.388Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:13:49.389Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:24:04.852Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:24:05.022Z [INFO]: Saved current state to disk.
+2024-12-12T10:24:20.787Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:24:25.376Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.379Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.384Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.387Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.390Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.393Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.397Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.400Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.403Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.406Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.409Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.412Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.415Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.418Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.421Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.424Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.427Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.430Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.433Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.437Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.440Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.443Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.446Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.449Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.452Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.458Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.461Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.464Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.467Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.470Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.474Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.477Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.480Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.483Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.486Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.489Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.492Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.495Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.498Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.501Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.504Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.508Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.511Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.514Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.517Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.520Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.523Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.526Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.529Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.532Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.535Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.538Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.541Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.544Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.547Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.550Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.553Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.556Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.559Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.689Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.710Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:25.714Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:25.717Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.227Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.246Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.250Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.422Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.426Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.435Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.438Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.441Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.444Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.448Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.451Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.454Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.457Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.460Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.466Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.469Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.472Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.476Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.479Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.482Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.485Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.488Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.491Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.495Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.498Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.501Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.504Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.508Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.511Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.514Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.517Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.520Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.523Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.526Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.530Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.533Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.536Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.539Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.542Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.545Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.548Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.551Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.558Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.561Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.564Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.567Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.570Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.573Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.576Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.580Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.712Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.716Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.719Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.723Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.728Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.732Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.735Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.738Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.742Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.746Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.750Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.753Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.757Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.761Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.764Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.770Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.773Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.776Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.779Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.782Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.786Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.789Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.792Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.795Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.799Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.802Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.805Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.809Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.812Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.815Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.819Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.822Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.825Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.828Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.832Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.835Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.838Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.845Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.848Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.852Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.855Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.858Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.865Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.868Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.883Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.888Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.891Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.895Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:26.898Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:26.901Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.002Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.018Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.021Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.024Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.027Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.030Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.033Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.037Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.040Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.043Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.046Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.049Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.052Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.058Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.061Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.064Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.067Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.070Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.073Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.076Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.080Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.083Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.086Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.089Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.092Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.095Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.098Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.101Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.104Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.108Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.111Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.114Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.117Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.120Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.123Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.126Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.131Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.138Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.141Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.144Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.147Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.150Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.155Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.158Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.254Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.263Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.267Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.271Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.275Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.279Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.288Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.292Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.297Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.301Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.306Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.312Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.316Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.327Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.331Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.334Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.338Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.341Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.345Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.348Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.352Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.355Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.360Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.363Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.367Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.370Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.373Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.376Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.380Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.383Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.387Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.390Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.393Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.396Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.400Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.403Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.406Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.409Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.413Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.416Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.420Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.426Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.429Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.432Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.435Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.438Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.442Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.445Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.448Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.451Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.454Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.457Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.460Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.463Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.466Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.469Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.472Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.475Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.478Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.482Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.485Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.488Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.491Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.495Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.498Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.501Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.505Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.508Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.511Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.515Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.518Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.522Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.525Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.529Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.535Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.538Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.541Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.544Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.548Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.551Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.555Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.558Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.561Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.564Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.567Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.570Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.573Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.577Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.628Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.633Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.637Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.640Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.643Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.647Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.650Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.653Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.657Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.660Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.663Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.666Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.669Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.675Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.678Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.681Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:27.737Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:27.741Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.267Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.271Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.279Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.289Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.293Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.395Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.401Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.412Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.416Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.419Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.423Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.426Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.429Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.432Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.439Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.585Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.589Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.592Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.596Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.611Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.615Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.618Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.621Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.625Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.628Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.631Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.634Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.637Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.640Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.643Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.646Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.649Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.652Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.655Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.658Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.661Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.664Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.667Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.670Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.673Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.676Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.679Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.682Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.686Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.689Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.692Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.695Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.700Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.705Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.709Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.713Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.716Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.719Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.723Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.726Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.730Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.734Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.737Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.741Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.744Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.747Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.750Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.754Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.758Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.767Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.770Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.774Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.777Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.781Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.785Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.789Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.793Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.797Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.801Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.804Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.809Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.812Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.817Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.821Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.824Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.829Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.832Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.836Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.839Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.843Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.847Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.879Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.883Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.886Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.889Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.893Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.896Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.899Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.902Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.905Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.908Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.911Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.914Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.917Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.920Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.923Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:28.927Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:28.934Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.004Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.007Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.176Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.204Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.208Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.213Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.217Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.221Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.225Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.229Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.233Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.240Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.259Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.309Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.348Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.355Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.505Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.518Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.746Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.849Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.854Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.865Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.875Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.957Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.962Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.966Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.971Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.975Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.979Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.983Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.987Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.990Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:29.994Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:29.998Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.002Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.006Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.012Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.016Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.020Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.025Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.028Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.032Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.048Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.055Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.059Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.063Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.069Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.075Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.080Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.085Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.101Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.107Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.134Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.139Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.147Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.160Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.163Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.169Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.172Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.177Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.181Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.185Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.188Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.192Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.195Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.199Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.248Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.257Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.261Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.266Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.270Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.275Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.343Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.348Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:30.354Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:30.814Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:31.380Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:32.623Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:32.632Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:32.639Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:32.983Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:34.889Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:35.787Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:24:36.055Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:36.214Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:36.585Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:36.594Z [INFO]: Subscribed to AMPG trade data.
+2024-12-12T10:24:38.074Z [INFO]: Unsubscribed from AMPG trade data.
+2024-12-12T10:24:50.790Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:25:04.841Z [INFO]: Saved current state to disk.
+2024-12-12T10:25:05.788Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:30:11.805Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:30:11.974Z [INFO]: Saved current state to disk.
+2024-12-12T10:30:26.809Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:30:41.808Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:30:56.809Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:31:11.804Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:31:11.815Z [INFO]: Saved current state to disk.
+2024-12-12T10:46:30.816Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:46:30.977Z [INFO]: Saved current state to disk.
+2024-12-12T10:46:45.809Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:47:00.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:47:15.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:47:30.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:47:30.838Z [INFO]: Saved current state to disk.
+2024-12-12T10:47:45.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:48:00.820Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:48:15.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:48:30.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:48:30.841Z [INFO]: Saved current state to disk.
+2024-12-12T10:48:45.824Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:49:00.825Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:49:15.826Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:49:30.829Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:49:30.845Z [INFO]: Saved current state to disk.
+2024-12-12T10:49:45.829Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:50:00.832Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:50:15.831Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:50:30.831Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:50:30.842Z [INFO]: Saved current state to disk.
+2024-12-12T10:50:45.836Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T10:51:00.839Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:08:14.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:08:15.061Z [INFO]: Saved current state to disk.
+2024-12-12T11:08:15.600Z [INFO]: Unsubscribed from AMPG quote data.
+2024-12-12T11:08:15.649Z [WARN]: Polygon WebSocket closed. Code: 1006, Reason: 
+2024-12-12T11:08:25.896Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T11:08:25.897Z [INFO]: Polygon WebSocket connected.
+2024-12-12T11:08:25.948Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T11:08:25.949Z [INFO]: Resubscribed to: Q.DBVT,Q.PALI
+2024-12-12T11:08:29.843Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:08:44.847Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:08:59.853Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:09:14.852Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:09:14.864Z [INFO]: Saved current state to disk.
+2024-12-12T11:09:29.855Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:09:44.856Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:09:59.858Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:10:14.856Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:10:14.867Z [INFO]: Saved current state to disk.
+2024-12-12T11:10:29.860Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:10:44.862Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:10:59.860Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:11:14.865Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:11:14.876Z [INFO]: Saved current state to disk.
+2024-12-12T11:11:29.864Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:11:44.866Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:11:59.872Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:12:14.868Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:12:14.874Z [INFO]: Saved current state to disk.
+2024-12-12T11:12:29.874Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:12:44.876Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:12:59.878Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:13:14.880Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:13:14.889Z [INFO]: Saved current state to disk.
+2024-12-12T11:29:02.926Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:29:03.125Z [INFO]: Saved current state to disk.
+2024-12-12T11:29:17.921Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:29:32.905Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:29:47.909Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:30:02.905Z [INFO]: Saved current state to disk.
+2024-12-12T11:30:02.916Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:30:17.918Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:30:32.918Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:30:47.917Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:31:02.911Z [INFO]: Saved current state to disk.
+2024-12-12T11:31:02.918Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:31:17.925Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:31:32.927Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:31:47.926Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:32:02.913Z [INFO]: Saved current state to disk.
+2024-12-12T11:32:02.927Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:32:17.932Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:32:32.936Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:32:47.940Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:33:02.914Z [INFO]: Saved current state to disk.
+2024-12-12T11:33:02.937Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:33:17.935Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:33:32.939Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:33:47.946Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:34:02.919Z [INFO]: Saved current state to disk.
+2024-12-12T11:34:02.942Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:34:17.949Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:35:36.141Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:35:36.253Z [INFO]: Saved current state to disk.
+2024-12-12T11:35:51.141Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:36:06.144Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:36:06.975Z [INFO]: Subscribed to AMPG quote data.
+2024-12-12T11:36:07.025Z [WARN]: Polygon WebSocket closed. Code: 1006, Reason: 
+2024-12-12T11:36:17.253Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T11:36:17.254Z [INFO]: Polygon WebSocket connected.
+2024-12-12T11:36:17.345Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T11:36:17.346Z [INFO]: Resubscribed to: Q.DBVT,Q.PALI,Q.AMPG
+2024-12-12T11:36:21.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:36:36.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:36:36.150Z [INFO]: Saved current state to disk.
+2024-12-12T11:51:39.221Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:51:39.232Z [INFO]: Saved current state to disk.
+2024-12-12T11:51:39.232Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-12T11:51:54.239Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:52:09.242Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:52:24.251Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:52:39.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:52:39.268Z [INFO]: Saved current state to disk.
+2024-12-12T11:52:54.257Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:53:09.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:53:24.263Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:53:39.265Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:53:39.276Z [INFO]: Saved current state to disk.
+2024-12-12T11:53:54.270Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:54:09.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:54:09.751Z [INFO]: Unsubscribed from AMPG quote data.
+2024-12-12T11:54:09.797Z [WARN]: Polygon WebSocket closed. Code: 1006, Reason: 
+2024-12-12T11:54:20.010Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T11:54:20.011Z [INFO]: Polygon WebSocket connected.
+2024-12-12T11:54:20.065Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T11:54:20.066Z [INFO]: Resubscribed to: Q.DBVT,Q.PALI
+2024-12-12T11:54:24.267Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:54:39.267Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:54:39.275Z [INFO]: Saved current state to disk.
+2024-12-12T11:54:54.274Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:55:09.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:55:24.278Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:55:39.274Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:55:39.282Z [INFO]: Saved current state to disk.
+2024-12-12T11:55:54.283Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:56:09.285Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:56:24.285Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:56:39.283Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:56:39.291Z [INFO]: Saved current state to disk.
+2024-12-12T11:56:54.291Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:57:09.285Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:57:24.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:57:39.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:57:39.305Z [INFO]: Saved current state to disk.
+2024-12-12T11:57:54.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:58:09.293Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:58:24.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:58:39.298Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:58:39.308Z [INFO]: Saved current state to disk.
+2024-12-12T11:58:54.303Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:59:09.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:59:24.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:59:39.306Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T11:59:39.372Z [INFO]: Saved current state to disk.
+2024-12-12T11:59:54.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:00:09.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:00:24.306Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:00:29.469Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.474Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.491Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.496Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.500Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.503Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.507Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.510Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.514Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.517Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.520Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.524Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.527Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.530Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.533Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.537Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.540Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.543Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.546Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.549Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.552Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.555Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.558Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.561Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.564Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.567Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.570Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.574Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.577Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.580Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.583Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.588Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.591Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.594Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.597Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.600Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.603Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.606Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.609Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.612Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.620Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.623Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.626Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.629Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.633Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.636Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.639Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.642Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.645Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.648Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.651Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.654Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.657Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.661Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.664Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.667Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.670Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.676Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.680Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.683Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.686Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.689Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.692Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.696Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.699Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.702Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.705Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.708Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.711Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.905Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.910Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.913Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.916Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.925Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.928Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.931Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.934Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.937Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.940Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.945Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.949Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.952Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.956Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.959Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.962Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.966Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.969Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.972Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.975Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.978Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:29.981Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:29.984Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:30.001Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:30.004Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:30.133Z [INFO]: Subscribed to PALI trade data.
+2024-12-12T12:00:30.408Z [INFO]: Unsubscribed from PALI trade data.
+2024-12-12T12:00:39.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:00:39.321Z [INFO]: Saved current state to disk.
+2024-12-12T12:00:54.307Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:01:09.306Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:01:24.340Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:01:39.342Z [INFO]: Saved current state to disk.
+2024-12-12T12:01:39.349Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:01:54.349Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:02:09.359Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T12:02:09.997Z [INFO]: Subscribed to TRNR quote data.
+2024-12-12T12:02:10.478Z [INFO]: Subscribed to TRNR trade data.
+2024-12-12T13:14:23.461Z [INFO]: Loaded previous state from disk.
+2024-12-12T13:14:23.494Z [INFO]: Loaded previous state from disk.
+2024-12-12T13:14:23.496Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:14:23.502Z [INFO]: Started polling for order statuses.
+2024-12-12T13:14:23.855Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:14:23.856Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:14:23.905Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:14:38.495Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:14:53.501Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T13:15:09.371Z [INFO]: Loaded previous state from disk.
+2024-12-12T13:15:09.401Z [INFO]: Loaded previous state from disk.
+2024-12-12T13:15:09.404Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:15:09.410Z [INFO]: Started polling for order statuses.
+2024-12-12T13:15:09.567Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T13:15:09.568Z [INFO]: Polygon WebSocket connected.
+2024-12-12T13:15:09.611Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T13:15:10.187Z [INFO]: Subscribed to TRVI quote data.
+2024-12-12T13:15:24.404Z [INFO]: Dynamic config reloaded. Updated override symbols.

@@ -1,8 +1,8 @@
 {
   "positions": {},
   "watchlist": {
-    "SFIX": {
-      "highOfDay": 6.985,
+    "DBVT": {
+      "highOfDay": 5.6,
       "lastEntryTime": null,
       "hasPosition": false,
       "hasPendingEntryOrder": false,
@@ -10,10 +10,12 @@
       "executedPyramidLevels": [],
       "isSubscribedToTrade": false,
       "isHalted": false,
-      "lastHaltTime": null
+      "lastHaltTime": null,
+      "tierIndex": 2,
+      "plannedEntryPrice": null
     },
-    "CADL": {
-      "highOfDay": 14.6,
+    "PALI": {
+      "highOfDay": 3.6,
       "lastEntryTime": null,
       "hasPosition": false,
       "hasPendingEntryOrder": false,
@@ -21,18 +23,9 @@
       "executedPyramidLevels": [],
       "isSubscribedToTrade": false,
       "isHalted": false,
-      "lastHaltTime": null
-    },
-    "AMPG": {
-      "highOfDay": 3.07,
-      "lastEntryTime": null,
-      "hasPosition": false,
-      "hasPendingEntryOrder": false,
-      "isHODFrozen": false,
-      "executedPyramidLevels": [],
-      "isSubscribedToTrade": false,
-      "isHalted": false,
-      "lastHaltTime": null
+      "lastHaltTime": null,
+      "tierIndex": 1,
+      "plannedEntryPrice": null
     }
   },
   "orderTracking": {}

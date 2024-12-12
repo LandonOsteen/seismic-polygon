@@ -19,10 +19,10 @@ module.exports = {
   },
   strategySettings: {
     // Minimum volume requirements to filter watchlist candidates
-    baseVolumeRequirement: 60000,
-    morningVolumeRequirement: 80000,
+    baseVolumeRequirement: 40000,
+    morningVolumeRequirement: 40000,
     // Minimum gap percentage to consider a ticker for the watchlist
-    gapPercentageRequirement: 30,
+    gapPercentageRequirement: 20,
     // Price range filter for watchlist candidates
     priceRange: { min: 1, max: 15 },
     // Cooldown after placing an opening order to avoid immediate re-entries
@@ -54,7 +54,7 @@ module.exports = {
         { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 10 },
         { priceIncreaseCents: 6, percentToAdd: 40, offsetCents: 10 },
       ],
-      secondsTrailingStopInterval: 5,
+      secondsTrailingStopInterval: 10,
     },
     {
       min: 2,
@@ -72,7 +72,7 @@ module.exports = {
         { priceIncreaseCents: 4, percentToAdd: 30, offsetCents: 12 },
         { priceIncreaseCents: 10, percentToAdd: 30, offsetCents: 12 },
       ],
-      secondsTrailingStopInterval: 5,
+      secondsTrailingStopInterval: 10,
     },
     {
       min: 5,
@@ -90,7 +90,7 @@ module.exports = {
         { priceIncreaseCents: 4, percentToAdd: 40, offsetCents: 15 },
         { priceIncreaseCents: 12, percentToAdd: 20, offsetCents: 15 },
       ],
-      secondsTrailingStopInterval: 5,
+      secondsTrailingStopInterval: 10,
     },
     {
       min: 7,
@@ -108,7 +108,7 @@ module.exports = {
         { priceIncreaseCents: 4, percentToAdd: 25, offsetCents: 15 },
         { priceIncreaseCents: 8, percentToAdd: 25, offsetCents: 15 },
       ],
-      secondsTrailingStopInterval: 5,
+      secondsTrailingStopInterval: 10,
     },
     {
       min: 10,
@@ -120,13 +120,13 @@ module.exports = {
       profitTargets: [
         { targetCents: 13, percentToClose: 20 },
         { targetCents: 20, percentToClose: 20 },
-        { targetCents: 28, percentToClose: 20 },
+        { targetCents: 35, percentToClose: 20 },
       ],
       pyramidLevels: [
         { priceIncreaseCents: 5, percentToAdd: 50, offsetCents: 20 },
         { priceIncreaseCents: 16, percentToAdd: 30, offsetCents: 20 },
       ],
-      secondsTrailingStopInterval: 8,
+      secondsTrailingStopInterval: 10,
     },
     {
       min: 12,
@@ -138,13 +138,13 @@ module.exports = {
       profitTargets: [
         { targetCents: 15, percentToClose: 20 },
         { targetCents: 22, percentToClose: 20 },
-        { targetCents: 30, percentToClose: 20 },
+        { targetCents: 35, percentToClose: 20 },
       ],
       pyramidLevels: [
         { priceIncreaseCents: 10, percentToAdd: 30, offsetCents: 25 },
         { priceIncreaseCents: 25, percentToAdd: 30, offsetCents: 25 },
       ],
-      secondsTrailingStopInterval: 8,
+      secondsTrailingStopInterval: 10,
     },
   ],
 
@@ -156,18 +156,16 @@ module.exports = {
       { targetCents: 10, percentToClose: 20 },
       { targetCents: 15, percentToClose: 20 },
       { targetCents: 20, percentToClose: 20 },
-      { targetCents: 30, percentToClose: 20 },
     ],
     // Dynamic stops based on profit targets hit
     dynamicStops: [
       { profitTargetsHit: 1, stopCents: 0 },
-      { profitTargetsHit: 4, stopCents: 10 },
+      { profitTargetsHit: 3, stopCents: 10 },
     ],
     // Fallback pyramid levels if tier doesn't define them
     pyramidLevels: [
       { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 15 },
       { priceIncreaseCents: 6, percentToAdd: 40, offsetCents: 15 },
-      { priceIncreaseCents: 10, percentToAdd: 20, offsetCents: 15 },
     ],
   },
   orderTimeouts: {
