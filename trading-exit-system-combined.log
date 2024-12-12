@@ -13452,3 +13452,982 @@
 2024-12-10T18:59:33.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-10T18:59:48.291Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-10T19:00:03.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:49:04.578Z [INFO]: Polygon WebSocket connected.
+2024-12-12T20:49:04.595Z [INFO]: Started polling for order statuses.
+2024-12-12T20:49:04.761Z [INFO]: Position added: CADL | Qty: 1000 | Avg Entry: $9.98
+2024-12-12T20:49:04.770Z [INFO]: Position added: PALI | Qty: 6000 | Avg Entry: $2.55029
+2024-12-12T20:49:04.779Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T20:49:04.779Z [INFO]: Polygon WebSocket connected.
+2024-12-12T20:49:04.825Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T20:49:05.209Z [INFO]: Subscribed to HIMX quotes.
+2024-12-12T20:49:05.299Z [INFO]: Stop condition met for PALI. Closing position.
+2024-12-12T20:49:05.303Z [INFO]: Closing position with limit order: {"symbol":"PALI","qty":"6000","side":"sell","type":"limit","time_in_force":"day","limit_price":"1.99","extended_hours":true,"client_order_id":"CLOSE-5a67bd4b44ef5aac"}
+2024-12-12T20:49:05.480Z [INFO]: Limit order placed to close position in PALI. Order ID: 14dd1fcb-ca6c-4e18-8961-5e496aef4bc4
+2024-12-12T20:49:05.886Z [INFO]: Position removed: PALI
+2024-12-12T20:49:05.890Z [INFO]: Unsubscribed from PALI quotes.
+2024-12-12T20:49:08.140Z [INFO]: Stop condition met for CADL. Closing position.
+2024-12-12T20:49:08.145Z [INFO]: Closing position with limit order: {"symbol":"CADL","qty":"1000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.40","extended_hours":true,"client_order_id":"CLOSE-0924e045710e3e61"}
+2024-12-12T20:49:08.293Z [INFO]: Limit order placed to close position in CADL. Order ID: 4088984b-0be7-436d-bfd0-eb3ab73658dc
+2024-12-12T20:49:08.672Z [INFO]: Position removed: CADL
+2024-12-12T20:49:08.682Z [INFO]: Unsubscribed from CADL quotes.
+2024-12-12T20:49:19.590Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:49:34.588Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:49:49.588Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:50:04.591Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:50:05.533Z [INFO]: Subscribed to TRVI quotes.
+2024-12-12T20:50:19.594Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:50:34.596Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:50:45.754Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"HIMX","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"9.61","extended_hours":true,"client_order_id":"ENTRY-2f26c0bbb5df21ed"}
+2024-12-12T20:50:46.188Z [INFO]: Entry order placed for 3000 shares of HIMX at $9.61. Order ID: dde2bc9b-ae2c-4069-ab89-0662fa3a4ac6
+2024-12-12T20:50:46.805Z [INFO]: Position added: HIMX | Qty: 770 | Avg Entry: $9.56
+2024-12-12T20:50:47.171Z [INFO]: Order dde2bc9b-ae2c-4069-ab89-0662fa3a4ac6 filled 1400 qty for HIMX. New qty: 2170, New Avg Entry Price: $9.59
+2024-12-12T20:50:47.850Z [INFO]: Order dde2bc9b-ae2c-4069-ab89-0662fa3a4ac6 filled 2560 qty for HIMX. New qty: 4730, New Avg Entry Price: $9.60
+2024-12-12T20:50:49.151Z [INFO]: Order dde2bc9b-ae2c-4069-ab89-0662fa3a4ac6 filled 2922 qty for HIMX. New qty: 5922, New Avg Entry Price: $9.58
+2024-12-12T20:50:49.667Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:51:04.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:51:19.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:51:34.694Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:51:49.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:52:04.704Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:52:11.858Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.866Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.871Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.877Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.882Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.887Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.892Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.897Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.902Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.907Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.912Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:11.916Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.048Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.054Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.059Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.065Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.070Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.075Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.081Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.087Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.092Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.101Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.110Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.116Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.122Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.127Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:13.132Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.022Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.030Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.037Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.044Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.050Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.055Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.061Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.066Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.071Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.076Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.082Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.087Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.092Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.098Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.103Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.109Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.114Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.119Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.124Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.130Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.135Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.140Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.147Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.152Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:14.157Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:15.155Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.165Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.174Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.181Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.188Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.194Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.201Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.207Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.213Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.218Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.604Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.612Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.620Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.626Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.632Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.639Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.645Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.652Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.657Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.663Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.672Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.678Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.683Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.689Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.694Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.699Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.704Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.709Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.714Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.719Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.733Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.742Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.748Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.755Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.760Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.766Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.772Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.778Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.784Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.790Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.795Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.808Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.823Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.830Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.836Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.841Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.847Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.852Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.857Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.862Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.867Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.872Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.888Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.900Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.905Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.910Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.915Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.921Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.927Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.932Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.938Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.943Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.948Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.953Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.958Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.964Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.969Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.974Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.979Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.984Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:15.998Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.012Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.018Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.023Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.028Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.034Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.039Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.046Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.052Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.058Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.063Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.068Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.073Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.079Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.084Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.089Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.094Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.099Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.118Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.129Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.134Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.139Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.145Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.150Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.156Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.166Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.171Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.176Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.182Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.187Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.192Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.197Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.202Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.207Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.212Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.217Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.222Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.227Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.232Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.237Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.243Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.248Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.253Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.258Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.263Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.268Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.273Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.278Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.283Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.288Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.293Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.298Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.303Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.308Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.313Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.317Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.322Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.327Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.332Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.337Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.342Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.346Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:16.528Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.166Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.176Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.184Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.191Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.198Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.204Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.210Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.215Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.221Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.226Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.231Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.236Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.242Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.248Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.252Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.257Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.262Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.267Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.271Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.276Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.281Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.286Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.291Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.296Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.500Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.510Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.519Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.527Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.535Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.542Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.548Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.554Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.560Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.565Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.570Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.576Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.581Z [ERROR]: Error adding symbol HIMX to watchlist: Request failed with status code 502
+2024-12-12T20:52:17.587Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.592Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:17.598Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.603Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.608Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.613Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:17.618Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:18.591Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.597Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.602Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.607Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.612Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.617Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.622Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.626Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.631Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.637Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.642Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.647Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.652Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.657Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.662Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.667Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.673Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.677Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.682Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.687Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.692Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.697Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.702Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.707Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.711Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.716Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.721Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.726Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.731Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.738Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.744Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.751Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.756Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.761Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.766Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.771Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.776Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.781Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.786Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.791Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.796Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.801Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.806Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.811Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.815Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.821Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.825Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.831Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.836Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.841Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.846Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.851Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.856Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.861Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.866Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.871Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.876Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.882Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.886Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.891Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.896Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.901Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.906Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.911Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.916Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.921Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.926Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.931Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.936Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.941Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.947Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.952Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.957Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.962Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.966Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.971Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.976Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.981Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.986Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.991Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:18.996Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.001Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.006Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.011Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.016Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.021Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.025Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.030Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.035Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.040Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.045Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.050Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.055Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.060Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.065Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.070Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.075Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.080Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.105Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.110Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.114Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.120Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:19.704Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:52:19.991Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.007Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.016Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.024Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.031Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.038Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.044Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.051Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.057Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.063Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.069Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.074Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.079Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.085Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.090Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.095Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.100Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.105Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.111Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.116Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.121Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.126Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.131Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.136Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.141Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.146Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.151Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.156Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.161Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.167Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.171Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.177Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.182Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.187Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.193Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.198Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.203Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.208Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.213Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.218Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.223Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.228Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.234Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.238Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.244Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.248Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.254Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.259Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.264Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.269Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.274Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.279Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.284Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.290Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.295Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.300Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.306Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.311Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.316Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.321Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.326Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.331Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.336Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.341Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.346Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.352Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.357Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.362Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.367Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.373Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.378Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.383Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.388Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.393Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.398Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.403Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.408Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.413Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.418Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.423Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.428Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.433Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.438Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.443Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.448Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:20.453Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.117Z [ERROR]: Error adding symbol HIMX to watchlist: Request failed with status code 504
+2024-12-12T20:52:21.125Z [INFO]: Unsubscribed from TRVI quotes.
+2024-12-12T20:52:21.139Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.145Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.150Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.566Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.578Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.585Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.593Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.599Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.606Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.611Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.617Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:21.622Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.053Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.066Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.073Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.079Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.515Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.527Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.534Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:22.543Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.615Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.620Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.625Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.630Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.635Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.640Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.645Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.650Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.655Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.660Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.665Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.671Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.676Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.681Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.686Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.692Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.697Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.702Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.707Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.712Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.717Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.722Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.727Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.732Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.737Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.742Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.747Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.753Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.758Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.763Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.767Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.772Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.777Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.782Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.787Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.791Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.797Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.802Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.807Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.812Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.817Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.822Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.827Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.832Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.837Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.842Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.847Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.852Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.858Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.863Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.868Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.873Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.878Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.883Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.888Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.893Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.898Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.903Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.908Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.913Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.918Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.926Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.931Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.936Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:23.941Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.706Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.718Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.725Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.733Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.750Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.756Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.762Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.768Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.774Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.779Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.784Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.789Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.794Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.799Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.804Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.810Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.815Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.820Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.825Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.830Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.835Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.840Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.846Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.851Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.857Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.862Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.867Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.872Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.877Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.882Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.896Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.908Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.915Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.920Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.925Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.931Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.936Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.941Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.946Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.951Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 504
+2024-12-12T20:52:24.992Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:24.997Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.003Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.009Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.014Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.019Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.024Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.029Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.034Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.039Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.044Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.049Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.055Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.060Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.065Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.070Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.075Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.080Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.084Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.089Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.096Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.101Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.106Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.111Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.116Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.121Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.125Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.131Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.135Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.145Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.595Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.601Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.606Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.611Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.616Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.621Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.629Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.768Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.775Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.781Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:25.831Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.468Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.479Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.486Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.493Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.500Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.506Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.512Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.518Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.524Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.734Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.740Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.746Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.751Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:26.757Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.360Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.368Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.374Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.380Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.386Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.391Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.823Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.834Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.839Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.845Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.851Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.857Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.891Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.898Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.904Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.909Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.915Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.920Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.925Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.930Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.935Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:27.940Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.413Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.426Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.435Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.443Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.450Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.456Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.462Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.468Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.474Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.479Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.485Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.491Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.496Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.502Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.507Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.511Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.517Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.575Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.582Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.587Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.592Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.598Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.603Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.609Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.614Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.619Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:28.624Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.120Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.127Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.133Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.139Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.144Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.150Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.155Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.161Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.166Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.171Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.799Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.809Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.818Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.827Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.834Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.844Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.851Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.857Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.863Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.869Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.874Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.880Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.885Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.890Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.895Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:29.902Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:34.705Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:52:35.706Z [ERROR]: Error adding symbol HIMX to watchlist: Request failed with status code 504
+2024-12-12T20:52:35.977Z [INFO]: Subscribed to TRVI quotes.
+2024-12-12T20:52:39.080Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.087Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.094Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.367Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.448Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.453Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.458Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.463Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.468Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.473Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.479Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.484Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.489Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.496Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.501Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.507Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.512Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.517Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.522Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.527Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.533Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.538Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.543Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.548Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.552Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.558Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.563Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.568Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.575Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.580Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.596Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.604Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.610Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.615Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.620Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.625Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.630Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.635Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.640Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.646Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.651Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.658Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.663Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.669Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.674Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.680Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.684Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.691Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.696Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.701Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.706Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.711Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.716Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.721Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.726Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:39.733Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.263Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.269Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.275Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.280Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.286Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.292Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.298Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.303Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.308Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.313Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.318Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.323Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.328Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.336Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.341Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.345Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.351Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.357Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.366Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.372Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.377Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.382Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.387Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.394Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.399Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.404Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.409Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.414Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.420Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.425Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.431Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:40.436Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.176Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.183Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.189Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.195Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.203Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.209Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.215Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.221Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.227Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.232Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.237Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.243Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.249Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.276Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.440Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:41.692Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:49.708Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:52:50.384Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.394Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.400Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.405Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.410Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.416Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.421Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.427Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:50.440Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.124Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.170Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.178Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.184Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.190Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.196Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.202Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.208Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.214Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.220Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.226Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:52:51.233Z [ERROR]: Error updating HOD for HIMX: Request failed with status code 502
+2024-12-12T20:53:04.712Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:53:19.710Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:53:22.415Z [INFO]: Profit target hit for HIMX: +8.38¢ >= +8¢
+2024-12-12T20:53:22.420Z [INFO]: Attempting to place limit order: {"symbol":"HIMX","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.24","extended_hours":true,"client_order_id":"LIMIT-513f12f5c707871b"}
+2024-12-12T20:53:23.882Z [INFO]: Placed limit order for 300 shares of HIMX. Order ID: 2610494e-0d85-4ac9-8c23-147a3aef5a4d
+2024-12-12T20:53:24.574Z [INFO]: Order 2610494e-0d85-4ac9-8c23-147a3aef5a4d filled 185 qty for HIMX. Remaining qty: 2815
+2024-12-12T20:53:24.949Z [INFO]: Order 2610494e-0d85-4ac9-8c23-147a3aef5a4d filled 247 qty for HIMX. Remaining qty: 2568
+2024-12-12T20:53:26.236Z [INFO]: Order 2610494e-0d85-4ac9-8c23-147a3aef5a4d filled 267 qty for HIMX. Remaining qty: 2444
+2024-12-12T20:53:34.706Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:53:49.697Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:54:04.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:54:19.690Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:54:22.235Z [INFO]: Profit target hit for HIMX: +10.38¢ >= +10¢
+2024-12-12T20:54:22.241Z [INFO]: Attempting to place limit order: {"symbol":"HIMX","qty":"540","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.26","extended_hours":true,"client_order_id":"LIMIT-f451e51de3234c6f"}
+2024-12-12T20:54:23.273Z [INFO]: Placed limit order for 540 shares of HIMX. Order ID: 4d42733b-e3c1-44b9-8aad-42ee32ac9449
+2024-12-12T20:54:24.053Z [INFO]: Order 4d42733b-e3c1-44b9-8aad-42ee32ac9449 filled 508 qty for HIMX. Remaining qty: 2192
+2024-12-12T20:54:24.567Z [INFO]: Order 4d42733b-e3c1-44b9-8aad-42ee32ac9449 filled 531 qty for HIMX. Remaining qty: 1645
+2024-12-12T20:54:34.689Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:54:49.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:55:04.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:55:19.691Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:55:34.695Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:55:49.778Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:56:04.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:56:19.784Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:56:34.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:56:49.782Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:57:04.787Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:57:19.790Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:57:34.790Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:57:49.791Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:58:04.797Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:58:19.802Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:58:34.811Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:58:49.806Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:59:04.805Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:59:15.261Z [INFO]: Profit target hit for HIMX: +20.38¢ >= +20¢
+2024-12-12T20:59:15.267Z [INFO]: Attempting to place limit order: {"symbol":"HIMX","qty":"864","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.36","extended_hours":true,"client_order_id":"LIMIT-4ed851abe6ccc4d6"}
+2024-12-12T20:59:15.615Z [INFO]: Placed limit order for 864 shares of HIMX. Order ID: af1ccd86-73ef-47f6-b5ca-0ac09935c06c
+2024-12-12T20:59:16.683Z [INFO]: Order af1ccd86-73ef-47f6-b5ca-0ac09935c06c filled 503 qty for HIMX. Remaining qty: 1572
+2024-12-12T20:59:19.809Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:59:34.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T20:59:49.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:00:04.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:00:19.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:00:34.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:00:49.820Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:00:54.984Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:00:54.999Z [INFO]: Started polling for order statuses.
+2024-12-12T21:00:55.156Z [INFO]: Position added: HIMX | Qty: 1296 | Avg Entry: $9.55622
+2024-12-12T21:00:55.173Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T21:00:55.174Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:00:55.221Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T21:00:56.272Z [INFO]: Subscribed to TRVI quotes.
+2024-12-12T21:01:09.995Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:01:14.757Z [INFO]: Profit target hit for HIMX: +18.38¢ >= +8¢
+2024-12-12T21:01:14.763Z [INFO]: Attempting to place limit order: {"symbol":"HIMX","qty":"129","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.34","extended_hours":true,"client_order_id":"LIMIT-1e5e195e87ce5b3b"}
+2024-12-12T21:01:14.915Z [INFO]: Placed limit order for 129 shares of HIMX. Order ID: e3d19558-f9de-4f40-8f5e-318167498739
+2024-12-12T21:01:18.568Z [INFO]: Order e3d19558-f9de-4f40-8f5e-318167498739 canceled for HIMX.
+2024-12-12T21:01:19.271Z [INFO]: Profit target hit for HIMX: +15.38¢ >= +10¢
+2024-12-12T21:01:19.278Z [INFO]: Attempting to place limit order: {"symbol":"HIMX","qty":"259","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.31","extended_hours":true,"client_order_id":"LIMIT-46742db704f95d9f"}
+2024-12-12T21:01:19.864Z [INFO]: Placed limit order for 259 shares of HIMX. Order ID: 2d864ddb-a446-46e3-ab98-0a7ada2e655a
+2024-12-12T21:01:23.853Z [INFO]: Order 2d864ddb-a446-46e3-ab98-0a7ada2e655a canceled for HIMX.
+2024-12-12T21:01:24.997Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:01:40.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:01:55.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:02:10.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:02:25.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:02:40.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:02:55.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:03:10.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:03:25.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:03:38.498Z [INFO]: Stop condition met for HIMX. Closing position.
+2024-12-12T21:03:38.504Z [INFO]: Closing position with limit order: {"symbol":"HIMX","qty":"1296","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.15","extended_hours":true,"client_order_id":"CLOSE-26958c358e555b79"}
+2024-12-12T21:03:38.659Z [INFO]: Limit order placed to close position in HIMX. Order ID: 3a3f6fca-1604-4242-b729-e3d1923db9ac
+2024-12-12T21:03:39.013Z [INFO]: Position removed: HIMX
+2024-12-12T21:03:40.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:03:55.010Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:04:10.011Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:04:25.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:04:40.011Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:04:55.010Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:05:10.010Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:05:25.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:05:40.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:05:55.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:06:10.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:06:25.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:06:40.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:06:55.019Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:07:10.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:07:25.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:07:40.023Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:07:55.023Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:08:10.028Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:08:25.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:08:40.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:08:55.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:09:10.026Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:09:25.026Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:09:40.027Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:09:55.026Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:10:10.024Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:10:25.028Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:10:40.036Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:10:51.042Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:10:51.054Z [INFO]: Started polling for order statuses.
+2024-12-12T21:10:51.255Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T21:10:51.257Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:10:51.302Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T21:12:12.362Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:12:12.374Z [INFO]: Started polling for order statuses.
+2024-12-12T21:12:12.576Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T21:12:12.577Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:12:12.626Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T21:12:27.368Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:12:42.379Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:12:49.545Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:12:49.557Z [INFO]: Started polling for order statuses.
+2024-12-12T21:12:49.725Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T21:12:49.727Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:12:49.778Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T21:13:04.561Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:13:19.556Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:13:34.560Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:13:49.558Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:14:04.567Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:14:07.798Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:14:07.810Z [INFO]: Started polling for order statuses.
+2024-12-12T21:14:07.981Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T21:14:07.982Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:14:08.030Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T21:14:22.811Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T21:14:38.931Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:14:38.946Z [INFO]: Started polling for order statuses.
+2024-12-12T21:14:39.107Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T21:14:39.108Z [INFO]: Polygon WebSocket connected.
+2024-12-12T21:14:39.156Z [INFO]: Polygon WebSocket authenticated.

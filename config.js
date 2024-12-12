@@ -18,14 +18,18 @@ module.exports = {
   strategySettings: {
     baseVolumeRequirement: 50000,
     morningVolumeRequirement: 50000,
-    gapPercentageRequirement: 30,
+    gapPercentageRequirement: 20,
     priceRange: { min: 3, max: 12 },
-    initialEntryOffsetCents: 1, // HOD breakout offset
-    entryLimitOffsetCents: 10, // Additional limit offset for entry orders
+    initialEntryOffsetCents: 1,
+    entryLimitOffsetCents: 10,
     initialShareSize: 3000,
-    trailingStopIncrementCents: 1,
-    initialTrailingStopOffsetCents: 25,
     openingOrderCooldownSeconds: 5,
+    initialStopBelowHodCents: 3,
+    trailingStopIntervalSeconds: 5,
+
+    // New configurable parameters
+    minAccumulatedVolume: 50000, // Minimum accumulated volume requirement for av
+    minOneMinuteRange: 0.01, // Minimum 1-minute range required
   },
   orderSettings: {
     limitOffsetCents: 40,
@@ -37,7 +41,6 @@ module.exports = {
       { targetCents: 50, percentToClose: 50 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -10 },
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
     ],
@@ -50,7 +53,7 @@ module.exports = {
     pyramid: 3000,
     close: 3000,
     ioc: 3000,
-    entry: 3000, // New timeout for entry orders
+    entry: 3000,
   },
   pollingIntervals: {
     orderStatus: 1000,
@@ -65,6 +68,5 @@ module.exports = {
   timeZone: 'America/New_York',
 
   overrideAddSymbols: [],
-
   overrideRemoveSymbols: [],
 };

@@ -7,7 +7,9 @@ class PolygonClient {
     this.apiKey = config.polygon.apiKey;
     this.ws = null;
     this.subscribedSymbols = new Set();
+    this.subscribedTradeSymbols = new Set(); // Track trade subscriptions
     this.onQuote = null;
+    this.onTrade = null; // New callback
   }
 
   connect() {
@@ -31,12 +33,22 @@ class PolygonClient {
         if (msg.ev === 'status') {
           if (msg.status === 'auth_success') {
             logger.info('Polygon WebSocket authenticated.');
+            // Resubscribe to quotes
             if (this.subscribedSymbols.size > 0) {
               const symbols = Array.from(this.subscribedSymbols)
                 .map((sym) => `Q.${sym}`)
                 .join(',');
               this.ws.send(
                 JSON.stringify({ action: 'subscribe', params: symbols })
+              );
+            }
+            // Resubscribe to trades
+            if (this.subscribedTradeSymbols.size > 0) {
+              const tradeSymbols = Array.from(this.subscribedTradeSymbols)
+                .map((sym) => `T.${sym}`)
+                .join(',');
+              this.ws.send(
+                JSON.stringify({ action: 'subscribe', params: tradeSymbols })
               );
             }
           } else if (msg.status === 'auth_failed') {
@@ -50,6 +62,10 @@ class PolygonClient {
           const bidPrice = parseFloat(msg.bp);
           const askPrice = parseFloat(msg.ap);
           this.onQuote(symbol, bidPrice, askPrice);
+        } else if (msg.ev === 'T' && this.onTrade) {
+          const symbol = msg.sym;
+          const price = parseFloat(msg.p);
+          this.onTrade(symbol, price);
         }
       });
     });
@@ -84,6 +100,27 @@ class PolygonClient {
           JSON.stringify({ action: 'unsubscribe', params: `Q.${symbol}` })
         );
         logger.info(`Unsubscribed from ${symbol} quotes.`);
+      }
+    }
+    if (this.subscribedTradeSymbols.has(symbol)) {
+      this.subscribedTradeSymbols.delete(symbol);
+      if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+        this.ws.send(
+          JSON.stringify({ action: 'unsubscribe', params: `T.${symbol}` })
+        );
+        logger.info(`Unsubscribed from ${symbol} trades.`);
+      }
+    }
+  }
+
+  subscribeTrades(symbol) {
+    if (!this.subscribedTradeSymbols.has(symbol)) {
+      this.subscribedTradeSymbols.add(symbol);
+      if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+        this.ws.send(
+          JSON.stringify({ action: 'subscribe', params: `T.${symbol}` })
+        );
+        logger.info(`Subscribed to ${symbol} trades.`);
       }
     }
   }
