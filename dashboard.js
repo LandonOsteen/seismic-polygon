@@ -5,17 +5,20 @@ const config = require('./config');
 
 class Dashboard {
   constructor() {
+    // Initialize the screen
     this.screen = blessed.screen({
       smartCSR: true,
       title: 'Trading Exit System Dashboard',
     });
 
+    // Create a grid layout for panels
     this.grid = new contrib.grid({
       rows: 16,
       cols: 12,
       screen: this.screen,
     });
 
+    // Positions Table: Shows open positions and stats
     this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
       keys: true,
       fg: 'white',
@@ -23,8 +26,6 @@ class Dashboard {
       selectedBg: 'blue',
       interactive: true,
       label: ' POSITIONS ',
-      width: '100%',
-      height: '100%',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
       columnWidth: [8, 6, 6, 10, 10, 10, 9, 20, 16, 16, 25],
@@ -51,15 +52,16 @@ class Dashboard {
       data: [],
     });
 
+    // Account Summary Box: High-level account info
     this.accountSummaryBox = this.grid.set(0, 7, 4, 5, contrib.markdown, {
       label: ' ACCOUNT SUMMARY ',
       border: { type: 'line', fg: 'cyan' },
       style: { fg: 'white' },
     });
 
+    // Info Box: General informational logs
     this.infoBox = this.grid.set(4, 0, 4, 5, contrib.log, {
       fg: 'green',
-      selectedFg: 'green',
       label: ' INFO ',
       tags: true,
       keys: true,
@@ -68,6 +70,7 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
+    // Orders Table: Shows active and recent orders
     this.ordersTable = this.grid.set(4, 5, 4, 7, contrib.table, {
       keys: true,
       fg: 'magenta',
@@ -75,8 +78,6 @@ class Dashboard {
       selectedBg: 'blue',
       interactive: true,
       label: ' ORDERS ',
-      width: '100%',
-      height: '100%',
       border: { type: 'line', fg: 'magenta' },
       columnWidth: [8, 10, 6, 10, 10, 10, 12],
       style: {
@@ -90,9 +91,9 @@ class Dashboard {
       data: [],
     });
 
+    // Error Box: Logs errors in red
     this.errorBox = this.grid.set(8, 0, 4, 5, contrib.log, {
       fg: 'red',
-      selectedFg: 'red',
       label: ' ERRORS ',
       tags: true,
       keys: true,
@@ -101,9 +102,9 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
+    // Warning Box: Logs warnings in yellow
     this.warningBox = this.grid.set(8, 5, 4, 7, contrib.log, {
       fg: 'yellow',
-      selectedFg: 'yellow',
       label: ' WARNINGS ',
       tags: true,
       keys: true,
@@ -112,13 +113,16 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
+    // Watchlist & HOD Table:
+    // Reordered to show TIER and ENTRY PRICE prominently right after SYMBOL.
     this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
-      label: ' WATCHLIST & HOD ',
+      label: ' WATCHLIST (Tiers & Targets) ',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      columnWidth: [10, 10],
+      // New order: SYMBOL, TIER, ENTRY PRICE, HOD
+      columnWidth: [10, 8, 12, 10],
       style: {
         header: { fg: 'cyan', bold: true },
         cell: { fg: 'white' },
@@ -126,10 +130,11 @@ class Dashboard {
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
+      headers: ['SYMBOL', 'TIER', 'ENTRY PRICE', 'HOD'],
       data: [],
     });
 
+    // Keybindings to exit
     this.screen.key(['escape', 'q', 'C-c'], () => {
       return process.exit(0);
     });
@@ -137,6 +142,7 @@ class Dashboard {
     this.screen.render();
   }
 
+  // Logging methods
   logInfo(message) {
     if (this.shouldDisplayMessage(message)) {
       const timestamp = new Date().toISOString();
@@ -164,17 +170,16 @@ class Dashboard {
     );
   }
 
+  // Update positions table data
   updatePositions(positions) {
     const tableData = positions.map((pos) => {
       const profitCents = parseFloat(pos.profitCents);
       const profit = `${profitCents.toFixed(2)}¢`;
-
       const stopDescription = pos.stopDescription || 'N/A';
-      const displayedStop = stopDescription;
 
       const profitTargetsHit = pos.profitTargetsHit
         ? `${pos.profitTargetsHit}/${pos.totalProfitTargets}`
-        : `0/${pos.totalProfitTargets || 6}`;
+        : `0/${pos.totalProfitTargets || 4}`;
 
       const pyramidLevelsHit = pos.executedPyramidLevels
         ? `${pos.executedPyramidLevels.length}/${pos.totalPyramidLevels}`
@@ -186,10 +191,14 @@ class Dashboard {
         pos.executedPyramidLevels.length < pos.totalPyramidLevels
       ) {
         const nextIndex = pos.executedPyramidLevels.length;
-        const nextLevel = config.orderSettings.pyramidLevels[nextIndex];
-        nextPyramidLevel = nextLevel
-          ? `Add ${nextLevel.percentToAdd}% @ +${nextLevel.priceIncreaseCents}¢`
-          : 'N/A';
+        const nextLevel =
+          pos.pyramidLevels && pos.pyramidLevels[nextIndex]
+            ? pos.pyramidLevels[nextIndex]
+            : null;
+
+        if (nextLevel) {
+          nextPyramidLevel = `Add ${nextLevel.percentToAdd}% @ +${nextLevel.priceIncreaseCents}¢`;
+        }
       }
 
       return [
@@ -200,7 +209,7 @@ class Dashboard {
         pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
         pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
         profit,
-        displayedStop,
+        stopDescription,
         profitTargetsHit,
         pyramidLevelsHit,
         nextPyramidLevel,
@@ -283,14 +292,27 @@ class Dashboard {
     this.screen.render();
   }
 
+  // Updates the watchlist with tier and entry price prominently displayed
   updateWatchlist(watchlist) {
     const data = Object.keys(watchlist).map((symbol) => {
-      const hod = watchlist[symbol].highOfDay;
-      return [symbol, hod !== null ? `$${hod.toFixed(2)}` : 'N/A'];
+      const w = watchlist[symbol];
+      const hod = w.highOfDay;
+      const tierName =
+        w.tierIndex !== undefined ? `TIER ${w.tierIndex + 1}` : 'N/A';
+      const entryPrice = w.plannedEntryPrice
+        ? `$${w.plannedEntryPrice.toFixed(2)}`
+        : 'N/A';
+
+      return [
+        symbol,
+        tierName,
+        entryPrice,
+        hod !== null ? `$${hod.toFixed(2)}` : 'N/A',
+      ];
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
+      headers: ['SYMBOL', 'TIER', 'ENTRY PRICE', 'HOD'],
       data: data,
     });
     this.screen.render();

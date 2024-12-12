@@ -1,211 +1,43 @@
-2024-12-11T20:40:18.980Z [INFO]: Loaded previous state from disk.
-2024-12-11T20:40:18.982Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:40:18.990Z [INFO]: Started polling for order statuses.
-2024-12-11T20:40:19.136Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.57
-2024-12-11T20:40:19.161Z [INFO]: Polygon WebSocket connection opened.
-2024-12-11T20:40:19.162Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:40:19.207Z [INFO]: Polygon WebSocket authenticated.
-2024-12-11T20:40:19.207Z [INFO]: Resubscribed to: Q.OKLO
-2024-12-11T20:40:33.983Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:40:48.983Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:41:03.983Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:41:18.984Z [INFO]: Saved current state to disk.
-2024-12-11T20:41:18.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:41:33.997Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:41:49.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:42:03.999Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:42:18.985Z [INFO]: Saved current state to disk.
-2024-12-11T20:42:18.999Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:42:34.000Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:42:48.997Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:43:03.999Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:50:20.267Z [INFO]: Loaded previous state from disk.
-2024-12-11T20:50:20.270Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:50:20.278Z [INFO]: Started polling for order statuses.
-2024-12-11T20:50:20.433Z [INFO]: Polygon WebSocket connection opened.
-2024-12-11T20:50:20.434Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:50:20.446Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.57
-2024-12-11T20:50:20.455Z [INFO]: Subscribed to OKLO quote data.
-2024-12-11T20:50:20.550Z [INFO]: Polygon WebSocket authenticated.
-2024-12-11T20:50:20.550Z [INFO]: Resubscribed to: Q.OKLO
-2024-12-11T20:52:55.259Z [INFO]: Loaded previous state from disk.
-2024-12-11T20:52:55.261Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:52:55.270Z [INFO]: Started polling for order statuses.
-2024-12-11T20:52:55.406Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.57
-2024-12-11T20:52:55.432Z [INFO]: Polygon WebSocket connection opened.
-2024-12-11T20:52:55.433Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:52:55.477Z [INFO]: Polygon WebSocket authenticated.
-2024-12-11T20:52:55.478Z [INFO]: Resubscribed to: Q.OKLO
-2024-12-11T20:53:10.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:53:25.263Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:53:40.263Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:53:55.260Z [INFO]: Saved current state to disk.
-2024-12-11T20:53:55.266Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:54:10.276Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-11T20:56:35.222Z [INFO]: Loaded previous state from disk.
-2024-12-11T20:56:35.229Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:56:35.252Z [INFO]: Started polling for order statuses.
-2024-12-11T20:56:35.423Z [INFO]: Position added: OKLO | Qty: 5000 | Avg Entry: $19.48 | Initial Stop: $19.57
-2024-12-11T20:56:35.482Z [INFO]: Polygon WebSocket connection opened.
-2024-12-11T20:56:35.484Z [INFO]: Polygon WebSocket connected.
-2024-12-11T20:56:35.527Z [INFO]: Polygon WebSocket authenticated.
-2024-12-11T20:56:35.528Z [INFO]: Resubscribed to: Q.OKLO
-2024-12-11T20:56:40.345Z [INFO]: Stop condition met for OKLO. Closing position at $19.24 <= stopPrice $19.57.
-2024-12-11T20:56:40.772Z [INFO]: Order placed [CLOSE-a3d6601a0434516c] for OKLO: {"symbol":"OKLO","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"19.13","extended_hours":true,"client_order_id":"CLOSE-a3d6601a0434516c"}
-2024-12-11T20:56:45.323Z [INFO]: Position removed: OKLO
-2024-12-12T00:07:19.518Z [INFO]: Loaded previous state from disk.
-2024-12-12T00:07:19.520Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:07:19.525Z [INFO]: Started polling for order statuses.
-2024-12-12T00:07:19.671Z [INFO]: Polygon WebSocket connection opened.
-2024-12-12T00:07:19.672Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:07:19.717Z [INFO]: Polygon WebSocket authenticated.
-2024-12-12T00:07:24.657Z [INFO]: Position removed: OKLO
-2024-12-12T00:07:34.524Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:07:44.457Z [INFO]: Loaded previous state from disk.
-2024-12-12T00:07:44.460Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:07:44.465Z [INFO]: Started polling for order statuses.
-2024-12-12T00:07:44.618Z [INFO]: Polygon WebSocket connection opened.
-2024-12-12T00:07:44.619Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:07:44.667Z [INFO]: Polygon WebSocket authenticated.
-2024-12-12T00:07:49.606Z [INFO]: Position removed: OKLO
-2024-12-12T00:07:59.459Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:08:14.463Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:08:29.459Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:08:44.459Z [INFO]: Saved current state to disk.
-2024-12-12T00:08:44.468Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:08:48.348Z [INFO]: Loaded previous state from disk.
-2024-12-12T00:08:48.351Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:08:48.356Z [INFO]: Started polling for order statuses.
-2024-12-12T00:08:48.549Z [INFO]: Polygon WebSocket connection opened.
-2024-12-12T00:08:48.550Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:08:48.595Z [INFO]: Polygon WebSocket authenticated.
-2024-12-12T00:10:11.153Z [INFO]: Loaded previous state from disk.
-2024-12-12T00:10:11.156Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:10:11.161Z [INFO]: Started polling for order statuses.
-2024-12-12T00:10:11.387Z [INFO]: Polygon WebSocket connection opened.
-2024-12-12T00:10:11.389Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:10:11.436Z [INFO]: Polygon WebSocket authenticated.
-2024-12-12T00:19:44.757Z [INFO]: Loaded previous state from disk.
-2024-12-12T00:19:44.759Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:19:44.765Z [INFO]: Started polling for order statuses.
-2024-12-12T00:19:45.084Z [INFO]: Polygon WebSocket connection opened.
-2024-12-12T00:19:45.087Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:19:45.137Z [INFO]: Polygon WebSocket authenticated.
-2024-12-12T00:19:45.649Z [INFO]: Subscribed to AMPG quote data.
-2024-12-12T00:19:49.581Z [INFO]: Subscribed to AMPG trade data.
-2024-12-12T00:29:10.908Z [INFO]: Loaded previous state from disk.
-2024-12-12T00:29:10.910Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:29:10.915Z [INFO]: Started polling for order statuses.
-2024-12-12T00:29:11.097Z [INFO]: Polygon WebSocket connection opened.
-2024-12-12T00:29:11.099Z [INFO]: Polygon WebSocket connected.
-2024-12-12T00:29:11.150Z [INFO]: Polygon WebSocket authenticated.
-2024-12-12T00:29:25.913Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:29:25.914Z [INFO]: Subscribed to OKLO quote data.
-2024-12-12T00:29:40.916Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:29:41.080Z [INFO]: Unsubscribed from OKLO quote data.
-2024-12-12T00:29:55.915Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:30:10.913Z [INFO]: Saved current state to disk.
-2024-12-12T00:30:10.918Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:30:25.927Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:30:40.928Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:30:55.930Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:31:10.912Z [INFO]: Saved current state to disk.
-2024-12-12T00:31:10.925Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:31:25.932Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:31:40.932Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:31:55.932Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:32:10.918Z [INFO]: Saved current state to disk.
-2024-12-12T00:32:10.932Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:32:25.931Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:34:55.915Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:34:55.918Z [INFO]: Saved current state to disk.
-2024-12-12T00:35:13.113Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:35:34.575Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:35:49.577Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:39:21.297Z [INFO]: Saved current state to disk.
-2024-12-12T00:39:21.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:39:36.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:39:51.311Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:40:37.943Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:40:38.052Z [INFO]: Saved current state to disk.
-2024-12-12T00:41:17.964Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:41:18.900Z [INFO]: Subscribed to AMPG quote data.
-2024-12-12T00:44:10.841Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:44:10.947Z [INFO]: Saved current state to disk.
-2024-12-12T00:54:21.400Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:54:21.405Z [INFO]: Saved current state to disk.
-2024-12-12T00:56:33.287Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T00:56:33.294Z [INFO]: Saved current state to disk.
-2024-12-12T01:01:11.606Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:01:11.707Z [INFO]: Saved current state to disk.
-2024-12-12T01:05:55.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:05:55.040Z [INFO]: Saved current state to disk.
-2024-12-12T01:06:30.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:06:45.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:06:55.003Z [INFO]: Saved current state to disk.
-2024-12-12T01:07:00.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:07:15.677Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:07:30.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:07:45.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:07:55.006Z [INFO]: Saved current state to disk.
-2024-12-12T01:08:00.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:08:15.679Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:08:30.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:08:45.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:08:55.010Z [INFO]: Saved current state to disk.
-2024-12-12T01:09:00.679Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:09:15.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:09:30.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:09:45.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:09:55.011Z [INFO]: Saved current state to disk.
-2024-12-12T01:10:00.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:10:15.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:10:30.687Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:10:45.688Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:10:55.009Z [INFO]: Saved current state to disk.
-2024-12-12T01:11:00.691Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:11:15.690Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:11:30.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:11:45.694Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:11:55.010Z [INFO]: Saved current state to disk.
-2024-12-12T01:12:00.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:12:15.696Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:12:30.697Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:12:45.694Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:12:55.011Z [INFO]: Saved current state to disk.
-2024-12-12T01:13:00.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:13:15.698Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:13:30.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:13:45.698Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:13:55.012Z [INFO]: Saved current state to disk.
-2024-12-12T01:14:00.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:14:15.702Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:14:30.703Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:14:45.704Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:14:55.011Z [INFO]: Saved current state to disk.
-2024-12-12T01:15:00.703Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:15:15.706Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:15:30.707Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:15:45.705Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:15:55.014Z [INFO]: Saved current state to disk.
-2024-12-12T01:16:00.706Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:16:15.710Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:16:30.707Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:16:45.710Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:16:55.014Z [INFO]: Saved current state to disk.
-2024-12-12T01:17:00.711Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:17:15.711Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:17:30.715Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:17:45.715Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:17:55.013Z [INFO]: Saved current state to disk.
-2024-12-12T01:18:00.712Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:18:15.715Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:18:30.711Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:18:45.714Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:18:55.014Z [INFO]: Saved current state to disk.
-2024-12-12T01:19:00.719Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:19:15.717Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:19:30.720Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:19:45.715Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-12T01:19:55.020Z [INFO]: Saved current state to disk.
-2024-12-12T01:20:00.715Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T02:58:50.117Z [INFO]: Loaded previous state from disk.
+2024-12-12T02:58:50.143Z [INFO]: Loaded previous state from disk.
+2024-12-12T02:58:50.145Z [INFO]: Polygon WebSocket connected.
+2024-12-12T02:58:50.151Z [INFO]: Started polling for order statuses.
+2024-12-12T02:58:50.302Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T02:58:50.304Z [INFO]: Polygon WebSocket connected.
+2024-12-12T02:58:50.353Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T02:58:51.839Z [INFO]: Subscribed to LAES quote data.
+2024-12-12T02:59:16.336Z [INFO]: Loaded previous state from disk.
+2024-12-12T02:59:16.362Z [INFO]: Loaded previous state from disk.
+2024-12-12T02:59:16.365Z [INFO]: Polygon WebSocket connected.
+2024-12-12T02:59:16.370Z [INFO]: Started polling for order statuses.
+2024-12-12T02:59:16.514Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T02:59:16.515Z [INFO]: Polygon WebSocket connected.
+2024-12-12T02:59:16.561Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T02:59:18.054Z [INFO]: Subscribed to LAES quote data.
+2024-12-12T03:16:26.932Z [INFO]: Loaded previous state from disk.
+2024-12-12T03:16:26.958Z [INFO]: Loaded previous state from disk.
+2024-12-12T03:16:26.960Z [INFO]: Polygon WebSocket connected.
+2024-12-12T03:16:26.966Z [INFO]: Started polling for order statuses.
+2024-12-12T03:16:27.128Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T03:16:27.129Z [INFO]: Polygon WebSocket connected.
+2024-12-12T03:16:27.176Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T03:16:28.627Z [INFO]: Subscribed to LAES quote data.
+2024-12-12T03:20:29.273Z [INFO]: Loaded previous state from disk.
+2024-12-12T03:20:29.298Z [INFO]: Loaded previous state from disk.
+2024-12-12T03:20:29.301Z [INFO]: Polygon WebSocket connected.
+2024-12-12T03:20:29.306Z [INFO]: Started polling for order statuses.
+2024-12-12T03:20:29.619Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T03:20:29.622Z [INFO]: Polygon WebSocket connected.
+2024-12-12T03:20:29.669Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T03:20:30.302Z [INFO]: Subscribed to LAES quote data.
+2024-12-12T03:20:44.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T04:04:53.816Z [INFO]: Loaded previous state from disk.
+2024-12-12T04:04:53.842Z [INFO]: Loaded previous state from disk.
+2024-12-12T04:04:53.845Z [INFO]: Polygon WebSocket connected.
+2024-12-12T04:04:53.850Z [INFO]: Started polling for order statuses.
+2024-12-12T04:04:54.069Z [INFO]: Polygon WebSocket connection opened.
+2024-12-12T04:04:54.070Z [INFO]: Polygon WebSocket connected.
+2024-12-12T04:04:54.118Z [INFO]: Polygon WebSocket authenticated.
+2024-12-12T04:04:54.821Z [INFO]: Subscribed to LAES quote data.
+2024-12-12T04:05:08.860Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-12T04:05:23.850Z [INFO]: Dynamic config reloaded. Updated override symbols.

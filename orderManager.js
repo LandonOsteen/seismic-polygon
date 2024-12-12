@@ -43,13 +43,8 @@ class OrderManager {
       (config.overrideRemoveSymbols || []).map((sym) => sym.toUpperCase())
     );
 
-    // Store latest polygon quotes for stop checks
     this.latestQuotes = {};
-
-    this.limiter = new Bottleneck({
-      minTime: 350,
-      maxConcurrent: 1,
-    });
+    this.limiter = new Bottleneck({ minTime: 350, maxConcurrent: 1 });
 
     this.limitedGetPositions = this.limiter.wrap(
       alpaca.getPositions.bind(alpaca)
@@ -64,10 +59,12 @@ class OrderManager {
 
     this.isRefreshing = false;
     this.isPolling = false;
-
     this.orderQueue = new OrderQueue();
-    this.processingOrder = false;
 
+    // For seconds-based trailing stop
+    this.trailingData = {};
+
+    // Load existing state and initialize
     this.initializeExistingPositions();
     this.initializeWatchlist();
 
@@ -123,7 +120,7 @@ class OrderManager {
     if (this.processingOrder) return;
     this.processingOrder = true;
     while (!this.orderQueue.isEmpty()) {
-      const { order, priority } = this.orderQueue.getNextOrder();
+      const { order } = this.orderQueue.getNextOrder();
       try {
         const result = await this.retryOperation(() =>
           this.limitedCreateOrder(order)
@@ -231,6 +228,8 @@ class OrderManager {
           isSubscribedToTrade: false,
           isHalted: false,
           lastHaltTime: null,
+          tierIndex: undefined,
+          plannedEntryPrice: null,
         };
         this.polygon.subscribeQuote(symbol);
         this.dashboard.logInfo(
@@ -243,6 +242,7 @@ class OrderManager {
   }
 
   async initializeExistingPositions() {
+    await this.loadSystemState();
     try {
       const positions = await this.retryOperation(() =>
         this.limitedGetPositions()
@@ -291,7 +291,7 @@ class OrderManager {
         };
 
         if (volume >= currentVolumeRequirement) {
-          await this.addSymbolToWatchlist(symbol);
+          await this.addSymbolToWatchlist(symbol, currentPrice);
         }
       }
 
@@ -316,9 +316,22 @@ class OrderManager {
     }
   }
 
-  async addSymbolToWatchlist(symbol) {
+  findTierForPrice(price) {
+    const tiers = config.priceTiers;
+    for (let i = 0; i < tiers.length; i++) {
+      if (price >= tiers[i].min && price <= tiers[i].max) {
+        return i;
+      }
+    }
+    return null;
+  }
+
+  async addSymbolToWatchlist(symbol, refPrice) {
     try {
       const hod = await this.restClient.getIntradayHigh(symbol);
+      const assignedPrice = hod || refPrice;
+      const tierIndex = this.findTierForPrice(assignedPrice);
+
       if (!this.watchlist[symbol]) {
         this.watchlist[symbol] = {
           highOfDay: hod,
@@ -330,12 +343,18 @@ class OrderManager {
           isSubscribedToTrade: false,
           isHalted: false,
           lastHaltTime: null,
+          tierIndex,
+          plannedEntryPrice: null,
         };
         this.polygon.subscribeQuote(symbol);
       } else {
         this.watchlist[symbol].highOfDay = hod;
         this.watchlist[symbol].hasPosition = !!this.positions[symbol];
+        if (this.watchlist[symbol].tierIndex === undefined) {
+          this.watchlist[symbol].tierIndex = tierIndex;
+        }
       }
+
       this.dashboard.updateWatchlist(this.watchlist);
     } catch (err) {
       const errorMsg = `Error adding symbol ${symbol} to watchlist: ${err.message}`;
@@ -380,34 +399,28 @@ class OrderManager {
     return baseVolumeRequirement;
   }
 
-  /**
-   * Add a position. Before any profit targets are hit, the initial stop is set based on HOD.
-   * After hitting the first profit target, subsequent stops reference the avgEntryPrice.
-   */
   async addPosition(position) {
     const symbol = position.symbol.toUpperCase();
     const qty = Math.abs(parseFloat(position.qty));
-    const side = 'buy'; // Only long side supported
+    const side = 'buy';
     const avgEntryPrice = parseFloat(position.avg_entry_price);
 
     const w = this.watchlist[symbol];
-    if (!w) {
-      const msg = `Watchlist entry missing for ${symbol} while adding position.`;
-      logger.warn(msg);
-      this.dashboard.logWarning(msg);
-      return;
-    }
+    if (!w) return;
 
     const hod = w.highOfDay;
-    if (!hod) {
-      const msg = `High of Day missing for ${symbol} while adding position.`;
-      logger.warn(msg);
-      this.dashboard.logWarning(msg);
-      return;
-    }
+    if (!hod) return;
 
-    const initialStopOffsetCents =
-      config.strategySettings.initialStopOffsetCents;
+    const tierIndex = w.tierIndex;
+    const tier = tierIndex !== undefined ? config.priceTiers[tierIndex] : null;
+    const initialStopOffsetCents = tier ? tier.initialStopOffsetCents : 2;
+    const profitTargets = tier
+      ? tier.profitTargets
+      : config.orderSettings.profitTargets;
+    const pyramidLevels = tier
+      ? tier.pyramidLevels
+      : config.orderSettings.pyramidLevels;
+
     const initialStopPrice = hod - initialStopOffsetCents / 100;
 
     this.positions[symbol] = {
@@ -421,10 +434,10 @@ class OrderManager {
       currentPrice: parseFloat(position.current_price),
       profitCents: 0,
       profitTargetsHit: 0,
-      totalProfitTargets: config.orderSettings.profitTargets.length,
+      totalProfitTargets: profitTargets.length,
       isActive: true,
       isProcessing: false,
-      attemptHOD: hod,
+      attemptHOD: hod, // Store attemptHOD for reference
       stopPrice: initialStopPrice,
       stopCents: initialStopOffsetCents,
       stopDescription: `Initial Stop @ $${initialStopPrice.toFixed(
@@ -432,47 +445,28 @@ class OrderManager {
       )} (${initialStopOffsetCents}¢ below HOD)`,
       stopTriggered: false,
       executedPyramidLevels: [],
-      totalPyramidLevels: config.orderSettings.pyramidLevels.length,
+      totalPyramidLevels: pyramidLevels.length,
       trailingStopActive: false,
-      trailingStopPrice: null,
-      trailingStopMaxPrice: null,
-      trailingStopLastUpdatePrice: null,
+      tierIndex,
+      pyramidLevels,
+      profitTargets,
     };
 
-    const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice} | Initial Stop: $${initialStopPrice.toFixed(
-      2
-    )}`;
-    logger.info(message);
-    this.dashboard.logInfo(message);
-
-    this.polygon.subscribeQuote(symbol);
-    this.dashboard.updatePositions(Object.values(this.positions));
+    this.trailingData[symbol] = { prices: [] };
 
     if (this.watchlist[symbol]) {
       this.watchlist[symbol].hasPosition = true;
       this.dashboard.updateWatchlist(this.watchlist);
     }
-  }
 
-  removePosition(symbol) {
-    if (this.positions[symbol]) {
-      delete this.positions[symbol];
-      const message = `Position removed: ${symbol}`;
-      logger.info(message);
-      this.dashboard.logInfo(message);
+    this.polygon.subscribeQuote(symbol);
+    this.dashboard.updatePositions(Object.values(this.positions));
 
-      if (!this.watchlist[symbol]) {
-        this.polygon.unsubscribeTrade(symbol);
-        this.polygon.unsubscribeQuote(symbol);
-      }
-
-      this.dashboard.updatePositions(Object.values(this.positions));
-
-      if (this.watchlist[symbol]) {
-        this.watchlist[symbol].hasPosition = false;
-        this.dashboard.updateWatchlist(this.watchlist);
-      }
-    }
+    const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice.toFixed(
+      2
+    )} | Stop: $${initialStopPrice.toFixed(2)} (HOD:${hod.toFixed(2)})`;
+    logger.info(message);
+    this.dashboard.logInfo(message);
   }
 
   async updateHaltStatus(symbol) {
@@ -498,7 +492,7 @@ class OrderManager {
       const bars = await alpaca.getBars(timeframe, [symbol], {
         start: from,
         end: now,
-        limit: limit,
+        limit,
       });
       return bars[symbol] || [];
     } catch (err) {
@@ -531,23 +525,35 @@ class OrderManager {
     return true;
   }
 
-  onQuote = async (symbol, bidPrice, askPrice) => {
-    // Store the latest polygon quote for stop checks
-    this.latestQuotes[symbol] = { bidPrice, askPrice };
+  isWithinTradingWindow() {
+    const now = moment().tz(config.timeZone);
+    const startTimeParts = config.strategySettings.startTime.split(':');
+    const endTimeParts = config.strategySettings.endTime.split(':');
 
-    await this.onQuoteUpdate(symbol, bidPrice, askPrice);
-  };
+    const start = now
+      .clone()
+      .hour(parseInt(startTimeParts[0]))
+      .minute(parseInt(startTimeParts[1]))
+      .second(0);
+    const end = now
+      .clone()
+      .hour(parseInt(endTimeParts[0]))
+      .minute(parseInt(endTimeParts[1]))
+      .second(0);
+
+    return now.isBetween(start, end, null, '[]');
+  }
 
   async onQuoteUpdate(symbol, bidPrice, askPrice) {
     const w = this.watchlist[symbol];
     if (!w) return;
 
     await this.updateHaltStatus(symbol);
-    if (w.isHalted) {
-      return;
-    }
+    if (w.isHalted) return;
 
     const currentPrice = askPrice;
+    this.latestQuotes[symbol] = { bidPrice, askPrice };
+
     if (currentPrice > w.highOfDay && !w.isHODFrozen) {
       try {
         const newHod = await this.restClient.getIntradayHigh(symbol);
@@ -587,47 +593,84 @@ class OrderManager {
       return;
     }
 
-    // Check stops on each quote update using polygon's live bid/ask
     const pos = this.positions[symbol];
     if (pos) {
       await this.checkStopCondition(pos, symbol);
+      this.updateSecondsTrailingStop(pos, symbol, currentPrice);
     }
-
-    if (!w.hasPosition && currentPrice >= w.highOfDay) {
-      const now = Date.now();
-      const openingOrderCooldownMs =
-        config.strategySettings.openingOrderCooldownSeconds * 1000;
-      const canPlaceOrder =
-        (!w.lastEntryTime || now - w.lastEntryTime > openingOrderCooldownMs) &&
-        !this.positions[symbol] &&
-        !this.hasPendingOpeningOrder(symbol) &&
-        !w.hasPendingEntryOrder;
-
-      if (canPlaceOrder) {
-        const canEnter = await this.canEnterPosition(symbol, currentPrice);
-        if (!canEnter) return;
-
-        w.lastEntryTime = Date.now();
-        w.hasPendingEntryOrder = true;
-        w.isHODFrozen = true;
-        const targetPrice = w.highOfDay;
-        this.dashboard.logInfo(
-          `Anticipation entry for ${symbol}: targetPrice=$${targetPrice.toFixed(
-            2
-          )}, HOD=$${w.highOfDay.toFixed(2)}`
-        );
-        await this.placeEntryOrder(
-          symbol,
-          config.strategySettings.initialShareSize,
-          'buy',
-          targetPrice
-        );
-      }
-    }
+    // Entry now triggered on trade updates, not quotes.
   }
 
   async onTradeUpdate(symbol, price, size, timestamp) {
-    // Optional trade-level logic
+    const w = this.watchlist[symbol];
+    if (!w) return;
+    const pos = this.positions[symbol];
+
+    if (pos || w.hasPendingEntryOrder) return;
+    if (!this.isWithinTradingWindow()) return;
+    if (w.isHalted) return;
+
+    const tierIndex = w.tierIndex;
+    const tier = tierIndex !== undefined ? config.priceTiers[tierIndex] : null;
+    const hodTriggerOffsetCents = tier ? tier.hodTriggerOffsetCents : 0;
+
+    const triggerPrice = w.highOfDay + hodTriggerOffsetCents / 100;
+
+    let triggerConditionMet = price >= triggerPrice;
+
+    if (!triggerConditionMet) return;
+
+    // Attempt entry
+    w.lastEntryTime = Date.now();
+    w.hasPendingEntryOrder = true;
+    w.isHODFrozen = true;
+
+    const initialShareSize = tier
+      ? tier.initialShareSize
+      : config.strategySettings.initialShareSize;
+    const entryLimitOffsetCents = tier
+      ? tier.entryLimitOffsetCents
+      : config.strategySettings.entryLimitOffsetCents;
+    const limitPrice = triggerPrice + entryLimitOffsetCents / 100;
+
+    w.plannedEntryPrice = limitPrice;
+    this.dashboard.updateWatchlist(this.watchlist);
+    this.dashboard.logInfo(
+      `Entry triggered by trade for ${symbol}: triggerPrice=$${triggerPrice.toFixed(
+        2
+      )}, limitPrice=$${limitPrice.toFixed(2)}`
+    );
+
+    await this.placeEntryOrder(symbol, initialShareSize, 'buy', limitPrice);
+  }
+
+  async placeEntryOrder(symbol, qty, side, targetPrice) {
+    if (this.positions[symbol]) {
+      if (this.watchlist[symbol])
+        this.watchlist[symbol].hasPendingEntryOrder = false;
+      return;
+    }
+    if (this.hasPendingOpeningOrder(symbol)) {
+      if (this.watchlist[symbol])
+        this.watchlist[symbol].hasPendingEntryOrder = false;
+      return;
+    }
+
+    const order = {
+      symbol,
+      qty: qty.toFixed(0),
+      side,
+      type: 'limit',
+      time_in_force: 'day',
+      limit_price: targetPrice.toFixed(2),
+      extended_hours: true,
+      client_order_id: this.generateClientOrderId('ENTRY'),
+    };
+
+    if (this.watchlist[symbol])
+      this.watchlist[symbol].hasPendingEntryOrder = true;
+
+    this.enqueueOrder(order, 3);
   }
 
   hasPendingOpeningOrder(symbol) {
@@ -638,70 +681,6 @@ class OrderManager {
       }
     }
     return false;
-  }
-
-  syncProfitTargetsOnStartup(pos) {
-    const profitTargets = config.orderSettings.profitTargets;
-    const currentProfitCents = parseFloat(pos.profitCents);
-
-    let newlyHitTargets = 0;
-    for (let i = 0; i < profitTargets.length; i++) {
-      const target = profitTargets[i];
-      if (currentProfitCents >= target.targetCents) {
-        newlyHitTargets = i + 1;
-      } else {
-        break;
-      }
-    }
-
-    if (newlyHitTargets > pos.profitTargetsHit) {
-      this.dashboard.logInfo(
-        `Position ${
-          pos.symbol
-        }: Current profit ${currentProfitCents}¢ surpasses ${
-          newlyHitTargets - pos.profitTargetsHit
-        } previously unhit profit targets. Synchronizing state...`
-      );
-      pos.profitTargetsHit = newlyHitTargets;
-
-      const dynamicStop = this.calculateDynamicStopPrice(
-        pos.profitTargetsHit,
-        pos.avgEntryPrice
-      );
-      if (dynamicStop) {
-        pos.stopPrice = dynamicStop.stopPrice;
-        pos.stopCents = dynamicStop.stopCents;
-        pos.stopDescription = `Stop adjusted @ $${pos.stopPrice.toFixed(
-          2
-        )} after syncing profit targets`;
-        this.dashboard.logInfo(
-          `Adjusted stop price for ${pos.symbol} to $${pos.stopPrice.toFixed(
-            2
-          )} after syncing.`
-        );
-      }
-
-      const totalTargets = profitTargets.length;
-      if (
-        pos.profitTargetsHit >= totalTargets &&
-        pos.qty > 0 &&
-        !pos.trailingStopActive
-      ) {
-        pos.trailingStopActive = true;
-        pos.trailingStopMaxPrice = pos.currentPrice;
-        pos.trailingStopLastUpdatePrice = pos.currentPrice;
-        const offsetCents =
-          config.strategySettings.initialTrailingStopOffsetCents;
-        pos.trailingStopPrice = pos.trailingStopMaxPrice - offsetCents / 100;
-        pos.stopDescription = `TRAILSTOP @ $${pos.trailingStopPrice.toFixed(
-          2
-        )}`;
-        const initMsg = `Trailing stop activated for ${
-          pos.symbol
-        } at $${pos.trailingStopPrice.toFixed(2)} after syncing.`;
-        this.dashboard.logInfo(initMsg);
-      }
-    }
   }
 
   async refreshPositions() {
@@ -742,14 +721,7 @@ class OrderManager {
             100
           ).toFixed(2);
 
-          if (pos.trailingStopActive) {
-            pos.stopDescription = `TRAILSTOP @ $${pos.trailingStopPrice.toFixed(
-              2
-            )}`;
-          }
-
-          // Sync profit targets if price already surpassed some on restart
-          this.syncProfitTargetsOnStartup(pos);
+          this.syncProfitTargetsOnStartup(pos); // Ensure we pick up missed targets
 
           if (latestQty === 0) {
             this.removePosition(upperSymbol);
@@ -779,14 +751,44 @@ class OrderManager {
       }
       this.dashboard.updateWatchlist(this.watchlist);
 
-      // After refreshing, check stop conditions immediately
       await this.checkAllPositionsStops();
     }
   }
 
-  /**
-   * Checks stop conditions for all positions after refresh using the best available price data.
-   */
+  syncProfitTargetsOnStartup(pos) {
+    // Check if the current profit surpasses any profit targets that were not marked as hit
+    const targets = pos.profitTargets;
+    const currentProfitCents = parseFloat(pos.profitCents);
+
+    let newlyHitTargets = 0;
+    for (let i = 0; i < targets.length; i++) {
+      if (currentProfitCents >= targets[i].targetCents) {
+        newlyHitTargets = i + 1;
+      } else {
+        break;
+      }
+    }
+
+    if (newlyHitTargets > pos.profitTargetsHit) {
+      const diff = newlyHitTargets - pos.profitTargetsHit;
+      pos.profitTargetsHit = newlyHitTargets;
+      this.dashboard.logInfo(
+        `Position ${pos.symbol}: Found ${diff} previously unhit profit targets hit on restart or fast move. Now at ${pos.profitTargetsHit}/${pos.totalProfitTargets}.`
+      );
+
+      // If all targets hit and seconds trailing stop is on, activate it
+      if (
+        pos.profitTargetsHit >= pos.totalProfitTargets &&
+        !pos.trailingStopActive &&
+        config.strategySettings.useSecondsTrailingStop
+      ) {
+        pos.trailingStopActive = true;
+        // We'll rely on updateSecondsTrailingStop to handle triggering
+        pos.stopDescription = `Seconds-TrailingStop Active`;
+      }
+    }
+  }
+
   async checkAllPositionsStops() {
     for (const symbol in this.positions) {
       const pos = this.positions[symbol];
@@ -794,25 +796,16 @@ class OrderManager {
     }
   }
 
-  /**
-   * Checks if a position has breached its stop threshold and closes it immediately if so.
-   * Uses Polygon's live quotes if available; otherwise falls back to pos.currentPrice from Alpaca as a fallback at startup.
-   */
   async checkStopCondition(pos, symbol) {
     let evaluationPrice;
-
-    // Prefer polygon quotes if available
     if (this.latestQuotes[symbol]) {
-      // For longs, stop checks are typically done on the bid price to ensure we can execute a close at that price or better
       evaluationPrice = this.latestQuotes[symbol].bidPrice;
     } else {
-      // Fallback to Alpaca's last known currentPrice if no polygon quote is available yet (e.g., at startup)
       evaluationPrice = pos.currentPrice;
     }
 
     if (!evaluationPrice || isNaN(evaluationPrice)) return;
 
-    // If stop conditions are met, close position immediately
     if (
       pos.side === 'buy' &&
       evaluationPrice <= pos.stopPrice &&
@@ -885,13 +878,16 @@ class OrderManager {
         const trackedOrder = this.orderTracking[orderId];
 
         if (!openOrderIds.has(orderId)) {
+          // Order is filled or canceled
           if (trackedOrder.type === 'entry') {
-            if (this.watchlist[trackedOrder.symbol]) {
-              this.watchlist[trackedOrder.symbol].hasPendingEntryOrder = false;
-              this.watchlist[trackedOrder.symbol].isHODFrozen = false;
+            const sym = trackedOrder.symbol;
+            if (this.watchlist[sym]) {
+              this.watchlist[sym].hasPendingEntryOrder = false;
+              // Unfreeze HOD after entry attempt completes
+              this.watchlist[sym].isHODFrozen = false;
+              this.dashboard.updateWatchlist(this.watchlist);
             }
           }
-
           delete this.orderTracking[orderId];
           continue;
         }
@@ -905,9 +901,11 @@ class OrderManager {
             await this.closePositionMarketOrder(trackedOrder.symbol);
           }
           if (trackedOrder.type === 'entry') {
-            if (this.watchlist[trackedOrder.symbol]) {
-              this.watchlist[trackedOrder.symbol].hasPendingEntryOrder = false;
-              this.watchlist[trackedOrder.symbol].isHODFrozen = false;
+            const sym = trackedOrder.symbol;
+            if (this.watchlist[sym]) {
+              this.watchlist[sym].hasPendingEntryOrder = false;
+              this.watchlist[sym].isHODFrozen = false;
+              this.dashboard.updateWatchlist(this.watchlist);
             }
           }
         }
@@ -947,11 +945,11 @@ class OrderManager {
               this.dashboard.updatePositions(Object.values(this.positions));
 
               if (trackedOrder.type === 'entry') {
-                if (this.watchlist[trackedOrder.symbol]) {
-                  this.watchlist[
-                    trackedOrder.symbol
-                  ].hasPendingEntryOrder = false;
-                  this.watchlist[trackedOrder.symbol].isHODFrozen = false;
+                const sym = trackedOrder.symbol;
+                if (this.watchlist[sym]) {
+                  this.watchlist[sym].hasPendingEntryOrder = false;
+                  this.watchlist[sym].isHODFrozen = false;
+                  this.dashboard.updateWatchlist(this.watchlist);
                 }
               }
             }
@@ -983,7 +981,8 @@ class OrderManager {
   }
 
   async checkAndExecutePyramiding(pos, symbol, currentPrice) {
-    const pyramidLevels = config.orderSettings.pyramidLevels;
+    const pyramidLevels =
+      pos.pyramidLevels || config.orderSettings.pyramidLevels;
     for (let i = 0; i < pyramidLevels.length; i++) {
       const level = pyramidLevels[i];
       if (pos.executedPyramidLevels.includes(i)) continue;
@@ -1030,65 +1029,51 @@ class OrderManager {
     this.enqueueOrder(order, 2);
   }
 
-  async placeLimitOrder(symbol, qty, side) {
-    const pos = this.positions[symbol];
-    if (!pos) return;
-    const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
-    let limitPrice =
-      side === 'buy'
-        ? pos.currentAsk + limitOffsetCents / 100
-        : pos.currentBid - limitOffsetCents / 100;
+  updateSecondsTrailingStop(pos, symbol, currentPrice) {
+    if (!config.strategySettings.useSecondsTrailingStop) return;
 
-    if (limitPrice <= 0 || isNaN(limitPrice)) return;
+    if (pos.profitTargetsHit < pos.totalProfitTargets) return;
 
-    const order = {
-      symbol,
-      qty: qty.toFixed(0),
-      side,
-      type: 'limit',
-      time_in_force: 'day',
-      limit_price: limitPrice.toFixed(2),
-      extended_hours: true,
-      client_order_id: this.generateClientOrderId('LIMIT'),
-    };
+    const tierIndex = pos.tierIndex;
+    const tier = tierIndex !== undefined ? config.priceTiers[tierIndex] : null;
+    if (!tier) return;
 
-    this.enqueueOrder(order, 2);
-  }
+    const interval = tier.secondsTrailingStopInterval || 5;
+    const data = this.trailingData[symbol];
+    if (!data) return;
 
-  async placeEntryOrder(symbol, qty, side, targetPrice) {
-    if (this.positions[symbol]) {
-      if (this.watchlist[symbol])
-        this.watchlist[symbol].hasPendingEntryOrder = false;
-      return;
-    }
-    if (this.hasPendingOpeningOrder(symbol)) {
-      if (this.watchlist[symbol])
-        this.watchlist[symbol].hasPendingEntryOrder = false;
-      return;
+    const now = Date.now();
+    data.prices.push({ t: now, p: currentPrice });
+
+    const cutoff = now - interval * 1000;
+    data.prices = data.prices.filter((d) => d.t >= cutoff);
+
+    let minPrice = Infinity;
+    for (const p of data.prices) {
+      if (p.p < minPrice) minPrice = p.p;
     }
 
-    const entryLimitOffsetCents =
-      config.strategySettings.entryLimitOffsetCents || 0;
-    let limitPrice = targetPrice + entryLimitOffsetCents / 100;
-    if (limitPrice <= 0 || isNaN(limitPrice)) {
-      if (this.watchlist[symbol])
-        this.watchlist[symbol].hasPendingEntryOrder = false;
-      return;
+    if (pos.secondsTrailingStopLow === undefined) {
+      pos.secondsTrailingStopLow = minPrice;
+      pos.stopDescription = `Seconds-TrailingStop Low @ $${minPrice.toFixed(
+        2
+      )}`;
+    } else {
+      if (minPrice < pos.secondsTrailingStopLow) {
+        pos.secondsTrailingStopLow = minPrice;
+        pos.stopDescription = `Seconds-TrailingStop Updated Low @ $${minPrice.toFixed(
+          2
+        )}`;
+        // Trigger stop as soon as we set a new low
+        this.dashboard.logInfo(
+          `Seconds-based trailing stop triggered for ${symbol} at $${minPrice.toFixed(
+            2
+          )}.`
+        );
+        logger.info(`Seconds-based trailing stop triggered for ${symbol}`);
+        this.closePositionMarketOrder(symbol);
+      }
     }
-
-    const order = {
-      symbol,
-      qty: qty.toFixed(0),
-      side,
-      type: 'limit',
-      time_in_force: 'day',
-      limit_price: limitPrice.toFixed(2),
-      extended_hours: true,
-      client_order_id: this.generateClientOrderId('ENTRY'),
-    };
-
-    this.watchlist[symbol].hasPendingEntryOrder = true;
-    this.enqueueOrder(order, 3);
   }
 
   async retryOperation(operation, retries = 5, delay = 1000) {
