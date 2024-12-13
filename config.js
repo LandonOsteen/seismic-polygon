@@ -18,12 +18,12 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    baseVolumeRequirement: 60000,
-    morningVolumeRequirement: 80000,
+    baseVolumeRequirement: 1000000,
+    morningVolumeRequirement: 1500000,
     gapPercentageRequirement: 20,
     priceRange: { min: 2, max: 10 },
     initialEntryOffsetCents: 0, // HOD breakout offset
-    entryLimitOffsetCents: 35, // Additional limit offset for entry orders
+    entryLimitOffsetCents: 20, // Additional limit offset for entry orders
     initialShareSize: 5000,
     trailingStopIncrementCents: 2,
     initialTrailingStopOffsetCents: 12,

@@ -25367,3 +25367,29 @@
 2024-12-12T13:44:00.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-12T13:44:15.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-12T13:44:30.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:50:47.485Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:50:47.493Z [INFO]: Started polling for order statuses.
+2024-12-13T21:50:47.677Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T21:50:47.678Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:50:47.732Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T21:52:51.432Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:52:51.440Z [INFO]: Started polling for order statuses.
+2024-12-13T21:52:51.610Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T21:52:51.611Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:52:51.659Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T21:52:51.886Z [INFO]: Subscribed to AVR quote data.
+2024-12-13T21:52:52.422Z [INFO]: Subscribed to WKEY quote data.
+2024-12-13T21:52:52.810Z [INFO]: Subscribed to IPHA quote data.
+2024-12-13T21:52:53.105Z [INFO]: Subscribed to SNES quote data.
+2024-12-13T21:53:06.441Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:53:21.440Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:53:36.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:53:51.443Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:54:06.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:54:06.451Z [INFO]: Subscribed to UBXG quote data.
+2024-12-13T21:54:13.226Z [INFO]: Unsubscribed from UBXG trade data.
+2024-12-13T21:54:15.224Z [INFO]: Subscribed to UBXG trade data.
+2024-12-13T21:54:17.224Z [INFO]: Unsubscribed from UBXG trade data.
+2024-12-13T21:54:17.236Z [INFO]: Subscribed to UBXG trade data.
+2024-12-13T21:54:21.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:54:36.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
