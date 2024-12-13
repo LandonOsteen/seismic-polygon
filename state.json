@@ -1,0 +1,10 @@
+{
+  "positions": {
+    "WKEY": {
+      "profitTargetsHit": 2,
+      "pyramidLevelsHit": 3,
+      "stopTriggered": true,
+      "trailingStopActive": false
+    }
+  }
+}

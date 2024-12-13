@@ -111,15 +111,12 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Updated watchlist table columns:
-    // Symbol | HOD | B/O TRIG | Q_SUB | T_SUB
     this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
       label: ' WATCHLIST & HOD ',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      // Extra columns for breakout trigger, quote sub, trade sub
       columnWidth: [10, 10, 10, 7, 7],
       style: {
         header: { fg: 'cyan', bold: true },
@@ -182,9 +179,6 @@ class Dashboard {
         ? `${pos.pyramidLevelsHit}/${pos.totalPyramidLevels}`
         : `0/${pos.totalPyramidLevels}`;
 
-      // STOP PRICE column now can show "TRAILSTOP @ price" if trailing stop is active
-      // Already integrated in stopDescription.
-
       return [
         pos.symbol,
         pos.side.toUpperCase(),
@@ -193,7 +187,7 @@ class Dashboard {
         pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
         pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
         profit,
-        displayedStop, // shows TRAILSTOP info if active or other stop info
+        displayedStop,
         profitTargetsHit,
         pyramidLevelsHit,
       ];
@@ -275,13 +269,12 @@ class Dashboard {
   }
 
   updateWatchlist(watchlist) {
-    // watchlist is an object: symbol -> {highOfDay, breakoutTriggerPrice, quoteSubscribed, tradeSubscribed, ...}
     const data = Object.keys(watchlist).map((symbol) => {
       const w = watchlist[symbol];
       const hod = w.highOfDay !== null ? `$${w.highOfDay.toFixed(2)}` : 'N/A';
       const breakoutTrigger = w.breakoutTriggerPrice || 'N/A';
-      const qSub = w.quoteSubscribed || 'N'; // default N if undefined
-      const tSub = w.tradeSubscribed || 'N'; // default N if undefined
+      const qSub = w.quoteSubscribed || 'N';
+      const tSub = w.tradeSubscribed || 'N';
       return [symbol, hod, breakoutTrigger, qSub, tSub];
     });
 

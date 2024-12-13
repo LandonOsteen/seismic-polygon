@@ -7,7 +7,7 @@ class PolygonClient {
     this.apiKey = config.polygon.apiKey;
     this.ws = null;
     this.subscribedSymbols = new Set();
-    this.subscribedTradeSymbols = new Set(); // Track trade-level subscriptions
+    this.subscribedTradeSymbols = new Set();
     this.onQuote = null;
     this.onTrade = null;
   }
@@ -57,8 +57,8 @@ class PolygonClient {
           }
         } else if (msg.ev === 'Q' && this.onQuote) {
           const symbol = msg.sym;
-          const askPrice = parseFloat(msg.P); // P = ask
-          const bidPrice = parseFloat(msg.p); // p = bid
+          const askPrice = parseFloat(msg.P);
+          const bidPrice = parseFloat(msg.p);
           this.onQuote(symbol, bidPrice, askPrice);
         } else if (msg.ev === 'T' && this.onTrade) {
           const symbol = msg.sym;

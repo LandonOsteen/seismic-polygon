@@ -1,103 +1,1870 @@
-2024-12-13T14:11:58.688Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:11:58.701Z [INFO]: Started polling for order statuses.
-2024-12-13T14:11:58.865Z [INFO]: Position added: WHLR | Qty: 5000 | Avg Entry: $6.384624
-2024-12-13T14:11:58.886Z [INFO]: Polygon WebSocket connection opened.
-2024-12-13T14:11:58.887Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:11:58.934Z [INFO]: Polygon WebSocket authenticated.
-2024-12-13T14:11:59.341Z [INFO]: Subscribed to AMPG quotes.
-2024-12-13T14:12:00.210Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:00.217Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.664Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.678Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.687Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.696Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.702Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.707Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.712Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.717Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.721Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.726Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.730Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.735Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.739Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.743Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:14:16.542Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:14:16.556Z [INFO]: Started polling for order statuses.
-2024-12-13T14:14:16.730Z [INFO]: Polygon WebSocket connection opened.
-2024-12-13T14:14:16.731Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:14:16.750Z [INFO]: Position added: WHLR | Qty: 5000 | Avg Entry: $6.384624
-2024-12-13T14:14:16.756Z [INFO]: Subscribed to WHLR quotes.
-2024-12-13T14:14:16.784Z [INFO]: Polygon WebSocket authenticated.
-2024-12-13T14:14:17.630Z [INFO]: Subscribed to VCIG quotes.
-2024-12-13T14:14:21.551Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:14:26.558Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:14:31.555Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:14:36.555Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:14:41.560Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:14:46.558Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:14:51.559Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:14:56.559Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:01.572Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:02.196Z [INFO]: Subscribed to AMPG quotes.
-2024-12-13T14:15:02.202Z [INFO]: Unsubscribed from VCIG quotes.
-2024-12-13T14:15:06.562Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:11.564Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:16.566Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:21.564Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:26.571Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:31.574Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:36.568Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:41.572Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:46.575Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:51.572Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:15:56.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:01.575Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:02.055Z [INFO]: Subscribed to VCIG quotes.
-2024-12-13T14:16:06.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:11.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:16.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:21.577Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:26.579Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:31.580Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:36.580Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:41.581Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:46.581Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:48.918Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:16:48.932Z [INFO]: Started polling for order statuses.
-2024-12-13T14:16:49.087Z [INFO]: Position added: WHLR | Qty: 5000 | Avg Entry: $6.384624
-2024-12-13T14:16:49.103Z [INFO]: Polygon WebSocket connection opened.
-2024-12-13T14:16:49.103Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:16:49.153Z [INFO]: Polygon WebSocket authenticated.
-2024-12-13T14:16:49.439Z [INFO]: Subscribed to VCIG quotes.
-2024-12-13T14:16:49.920Z [INFO]: Subscribed to AMPG quotes.
-2024-12-13T14:16:53.932Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:16:58.931Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:17:03.934Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:17:04.623Z [INFO]: Unsubscribed from AMPG quotes.
-2024-12-13T14:17:08.932Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:17:13.940Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:17:18.937Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:19:52.565Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:19:52.578Z [INFO]: Started polling for order statuses.
-2024-12-13T14:19:52.750Z [INFO]: Position added: WHLR | Qty: 5000 | Avg Entry: $6.384624
-2024-12-13T14:19:52.768Z [INFO]: Startup check: Stop condition met for WHLR. Closing position. Price=$5.49 Stop=$6.32
-2024-12-13T14:19:52.773Z [INFO]: Enqueuing close position order for WHLR Qty: 5000 Side: sell Limit: $5.34
-2024-12-13T14:19:52.782Z [INFO]: Order enqueued: {"symbol":"WHLR","qty":"5000","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-fe65c6c7f4c5c8b5","limit_price":"5.34"} (stopPriority: true)
-2024-12-13T14:19:52.783Z [INFO]: Polygon WebSocket connection opened.
-2024-12-13T14:19:52.784Z [INFO]: Polygon WebSocket connected.
-2024-12-13T14:19:52.835Z [INFO]: Polygon WebSocket authenticated.
-2024-12-13T14:19:53.064Z [INFO]: Subscribed to AMPG quotes.
-2024-12-13T14:19:53.100Z [INFO]: Order placed: SELL 5000 WHLR at 5.34 | ID: 1f92db3e-642b-4de2-adda-c1b6f24e771a
-2024-12-13T14:19:53.283Z [WARN]: Invalid limit price while continuously trying to close WHLR. Will try again.
-2024-12-13T14:19:53.784Z [WARN]: Invalid limit price while continuously trying to close WHLR. Will try again.
-2024-12-13T14:19:54.285Z [WARN]: Invalid limit price while continuously trying to close WHLR. Will try again.
-2024-12-13T14:19:54.716Z [INFO]: Position removed: WHLR
-2024-12-13T14:19:54.738Z [INFO]: Unsubscribed from WHLR quotes.
-2024-12-13T14:19:57.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:20:02.579Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:20:02.756Z [INFO]: Unsubscribed from AMPG quotes.
-2024-12-13T14:20:07.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:20:12.575Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:20:17.576Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:20:22.580Z [INFO]: Dynamic config reloaded. Updated override symbols.
-2024-12-13T14:20:27.581Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:24:37.044Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:24:37.051Z [INFO]: Started polling for order statuses.
+2024-12-13T18:24:37.248Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:24:37.249Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:24:37.252Z [INFO]: Position added: BE | Qty: 5000 | Avg Entry: $25.67
+2024-12-13T18:24:37.259Z [INFO]: Subscribed to BE quotes.
+2024-12-13T18:24:37.307Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:24:37.637Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:24:40.517Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.526Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.533Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.539Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.543Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.545Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.547Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.549Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.551Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.553Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.555Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.558Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.564Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.572Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.579Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.586Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:42.051Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:24:42.051Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T18:24:42.526Z [INFO]: Subscribed to PTON trades.
+2024-12-13T18:24:43.021Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.026Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.029Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.031Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.963Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.969Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.477Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.483Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.486Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.488Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.491Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.493Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.970Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.977Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.981Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.984Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.988Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.991Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.995Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.999Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.003Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.006Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.010Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.013Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.970Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.977Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.980Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.984Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.988Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.991Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.996Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.999Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.054Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:24:47.977Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.984Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.986Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.989Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:51.483Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:51.491Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:24:52.984Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.991Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.996Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.999Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:53.987Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:53.993Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:55.993Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:56.001Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:57.059Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:24:59.977Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:59.987Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:01.988Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:01.996Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:01.999Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.003Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.006Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.010Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.013Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.016Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.019Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.023Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.026Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.030Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.033Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.036Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.039Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.042Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.045Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.048Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.051Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.054Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.057Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.060Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:02.334Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.340Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.343Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.346Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.349Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.352Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.354Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.357Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.360Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.363Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.366Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.369Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.372Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.375Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.378Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.381Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.384Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.387Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.389Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.392Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.395Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.398Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.400Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.403Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.405Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.409Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.411Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.414Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.417Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.420Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.422Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.425Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.516Z [INFO]: Subscribed to AVR quotes.
+2024-12-13T18:25:02.845Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.853Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.857Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.860Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.864Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.868Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.873Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.877Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:03.337Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:03.346Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.337Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.346Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.350Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.354Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.357Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.361Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.342Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.351Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.355Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.359Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.362Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.366Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.850Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.858Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.863Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.867Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.872Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.877Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.881Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.885Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.888Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.892Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.895Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.898Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.902Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.905Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.908Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.911Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.914Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.917Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.920Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.923Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.927Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.929Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.349Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.358Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.843Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.847Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.852Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.857Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.860Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.864Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.868Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.871Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.875Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.878Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.881Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.884Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.887Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.890Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.894Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.896Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.899Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.902Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.905Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.908Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.911Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.913Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.916Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.919Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.921Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.924Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.927Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.929Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:07.071Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:07.850Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:07.853Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.845Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.849Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.853Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.856Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:12.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:12.450Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:25:14.355Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:14.359Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:14.363Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:14.366Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:16.861Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:16.865Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:17.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:17.828Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:25:18.868Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:18.873Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.378Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.388Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.394Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.399Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:22.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:27.080Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:29.978Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:29.985Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:32.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:33.490Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.498Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.501Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.504Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.507Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.511Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.514Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.517Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.520Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.523Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.526Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.529Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.533Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.536Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.539Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.542Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.545Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.548Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.552Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.555Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.558Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.562Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.565Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.567Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.001Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.009Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.014Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.019Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.024Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.028Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.032Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.036Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.040Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.043Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.047Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.050Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.053Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.057Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.004Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.014Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.020Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.025Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.030Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.035Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.039Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.043Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.047Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.050Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.053Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.056Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.060Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.063Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.066Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.069Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.072Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.075Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.077Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.080Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.084Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.086Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.089Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.092Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:37.505Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.511Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.517Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.521Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:39.012Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:39.018Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.013Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.017Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.020Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.024Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.027Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.030Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.514Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.518Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:42.022Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:42.028Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:42.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:45.941Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:45.945Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:45.948Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:45.952Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:47.676Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:25:47.682Z [INFO]: Started polling for order statuses.
+2024-12-13T18:25:47.885Z [INFO]: Position added: BE | Qty: 5000 | Avg Entry: $25.67
+2024-12-13T18:25:47.906Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:25:47.908Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:25:47.983Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:25:48.134Z [INFO]: Subscribed to AVR quotes.
+2024-12-13T18:25:48.528Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:25:52.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:25:52.693Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T18:25:53.139Z [INFO]: Subscribed to PTON trades.
+2024-12-13T18:25:57.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:02.700Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:03.244Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:26:03.250Z [INFO]: Unsubscribed from AVR quotes.
+2024-12-13T18:26:03.256Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:26:07.687Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:08.244Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:26:12.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:17.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:22.690Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:23.095Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:26:27.695Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:32.695Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:33.417Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:26:37.695Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:42.698Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:47.699Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:50.247Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:26:50.255Z [INFO]: Started polling for order statuses.
+2024-12-13T18:26:50.407Z [INFO]: Position added: BE | Qty: 5000 | Avg Entry: $25.67
+2024-12-13T18:26:50.430Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:26:50.431Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:26:50.481Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:26:50.837Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:26:51.109Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:26:55.264Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:26:55.265Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T18:26:55.731Z [INFO]: Subscribed to PTON trades.
+2024-12-13T18:27:00.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:05.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:10.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:15.260Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:20.263Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:25.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:30.260Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:35.263Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:40.264Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:45.270Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:50.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:50.722Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:27:55.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:27:55.799Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:28:00.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:00.696Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:28:05.275Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:05.825Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:28:05.830Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:28:10.274Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:10.471Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:28:15.273Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:15.944Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:28:20.275Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:25.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:30.273Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:30.429Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:28:35.275Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:35.848Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:28:38.839Z [INFO]: Placing breakout entry order for PTON at $9.78
+2024-12-13T18:28:38.845Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"5000","side":"buy","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"ENTRY-4676d1372a19e36e","limit_price":"9.78"} (stopPriority: false)
+2024-12-13T18:28:39.222Z [INFO]: Order placed: BUY 5000 PTON at 9.78 | ID: e5f04a90-942e-4359-b97b-b0f01aab84ce
+2024-12-13T18:28:40.276Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:40.445Z [INFO]: Position added: PTON | Qty: 4649 | Avg Entry: $9.689525
+2024-12-13T18:28:40.809Z [INFO]: Order e5f04a90-942e-4359-b97b-b0f01aab84ce filled 4649 qty for PTON. New qty: 9298, New Avg Entry Price: $9.73
+2024-12-13T18:28:41.531Z [INFO]: Order e5f04a90-942e-4359-b97b-b0f01aab84ce filled 4714 qty for PTON. New qty: 14012, New Avg Entry Price: $9.75
+2024-12-13T18:28:45.276Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:50.278Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:28:55.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:00.273Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:05.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:05.711Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:29:05.717Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:29:10.276Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:10.947Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:29:15.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:15.719Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:29:20.279Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:25.280Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:30.280Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:30.838Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:29:35.281Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:40.282Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:45.286Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:50.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:29:55.287Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:00.286Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:05.286Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:05.861Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:30:10.284Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:15.288Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:20.288Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:25.288Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:30.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:30.476Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:30:35.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:40.293Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:41.010Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:30:45.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:50.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:50.466Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:30:55.298Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:30:55.880Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:31:00.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:05.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:05.665Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:31:10.299Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:15.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:16.031Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:31:20.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:20.488Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:31:25.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:25.900Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:31:30.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:30.703Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:31:35.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:36.084Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:31:40.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:45.307Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:50.307Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:55.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:31:55.498Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:32:00.308Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:05.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:05.941Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:32:10.310Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:15.312Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:20.312Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:25.315Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:30.315Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:35.317Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:40.319Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:45.319Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:50.319Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:32:55.320Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:33:00.324Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:33:05.327Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:33:06.233Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:33:06.241Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:37:55.463Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:37:56.648Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:38:00.475Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:38:05.484Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:38:06.154Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:38:54.156Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:38:59.162Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:39:04.160Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:08.056Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:08.579Z [INFO]: Startup check: Stop condition met for PTON. Closing position. Price=$9.61 Stop=$9.63
+2024-12-13T18:43:08.581Z [INFO]: Enqueuing close position order for PTON Qty: 5000 Side: sell Limit: $9.46
+2024-12-13T18:43:08.587Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"5000","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-b2c785e4bbd0a677","limit_price":"9.46"} (stopPriority: true)
+2024-12-13T18:43:09.090Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"5000","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-884ed916baedbf52","limit_price":"9.46"} (stopPriority: true)
+2024-12-13T18:43:09.183Z [INFO]: Order placed: SELL 5000 PTON at 9.46 | ID: c043b338-93c7-48ec-acd2-094d4f70dac9
+2024-12-13T18:43:09.569Z [INFO]: Order c043b338-93c7-48ec-acd2-094d4f70dac9 filled 1800 qty for PTON. Remaining qty: 3200
+2024-12-13T18:43:09.599Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"3200","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-1969338c3bfce504","limit_price":"9.46"} (stopPriority: true)
+2024-12-13T18:43:09.601Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:43:09.863Z [ERROR]: Error placing order for PTON: Request failed with status code 403
+2024-12-13T18:43:10.091Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"3200","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-185edd2a5d364f56","limit_price":"9.46"} (stopPriority: true)
+2024-12-13T18:43:10.333Z [ERROR]: Error placing order for PTON: Request failed with status code 403
+2024-12-13T18:43:10.599Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"820","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-8a342b7e3a766b4e","limit_price":"9.46"} (stopPriority: true)
+2024-12-13T18:43:10.868Z [INFO]: Order c043b338-93c7-48ec-acd2-094d4f70dac9 filled 4180 qty for PTON. Remaining qty: -3360
+2024-12-13T18:43:10.873Z [INFO]: Position removed: PTON
+2024-12-13T18:43:11.269Z [INFO]: Order placed: SELL 3200 PTON at 9.46 | ID: b8d41883-0621-47ff-a8a6-a845776bfbd6
+2024-12-13T18:43:11.890Z [INFO]: Order placed: SELL 820 PTON at 9.46 | ID: 7ef76a5b-7746-44d3-847e-96d06e342ef3
+2024-12-13T18:43:12.251Z [INFO]: Position added: PTON | Qty: 3811 | Avg Entry: $9.61
+2024-12-13T18:43:12.608Z [INFO]: Order 7ef76a5b-7746-44d3-847e-96d06e342ef3 filled 762 qty for PTON. Remaining qty: 3049
+2024-12-13T18:43:13.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:13.220Z [INFO]: Order 7ef76a5b-7746-44d3-847e-96d06e342ef3 filled 792 qty for PTON. Remaining qty: 2257
+2024-12-13T18:43:14.565Z [INFO]: Order 7ef76a5b-7746-44d3-847e-96d06e342ef3 filled 810 qty for PTON. Remaining qty: 3207
+2024-12-13T18:43:15.571Z [ERROR]: Error canceling order 7ef76a5b-7746-44d3-847e-96d06e342ef3 for PTON: {"code":42210000,"message":"order is already in \"filled\" state"}
+2024-12-13T18:43:15.579Z [INFO]: Enqueuing close position order for PTON Qty: 3207 Side: buy Limit: $9.78
+2024-12-13T18:43:15.588Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"3207","side":"buy","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-dc9c9b832f856b73","limit_price":"9.78"} (stopPriority: true)
+2024-12-13T18:43:15.588Z [INFO]: Order 7ef76a5b-7746-44d3-847e-96d06e342ef3 filled 819 qty for PTON. Remaining qty: 2388
+2024-12-13T18:43:15.916Z [INFO]: Order placed: BUY 3207 PTON at 9.78 | ID: 9a13e77c-f017-4b5e-8700-fb13643c2c39
+2024-12-13T18:43:16.622Z [INFO]: Order 9a13e77c-f017-4b5e-8700-fb13643c2c39 filled 2899 qty for PTON. Remaining qty: -1640
+2024-12-13T18:43:16.629Z [INFO]: Position removed: PTON
+2024-12-13T18:43:18.059Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:18.210Z [INFO]: Position added: PTON | Qty: 813 | Avg Entry: $9.61
+2024-12-13T18:43:23.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:28.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:33.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:38.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:43.069Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:48.069Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:53.069Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:43:58.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:44:03.072Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:44:03.248Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:44:03.253Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:44:08.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:44:41.010Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:44:41.017Z [INFO]: Started polling for order statuses.
+2024-12-13T18:44:41.200Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:44:41.200Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:44:41.202Z [INFO]: Position added: BE | Qty: 5000 | Avg Entry: $25.67
+2024-12-13T18:44:41.208Z [INFO]: Subscribed to BE quotes.
+2024-12-13T18:44:41.211Z [INFO]: Position added: PTON | Qty: 813 | Avg Entry: $9.61
+2024-12-13T18:44:41.217Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T18:44:41.252Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:44:46.019Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:44:51.020Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:44:56.024Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:01.020Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:01.479Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:45:06.021Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:06.186Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:45:11.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:11.490Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:45:16.023Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:21.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:26.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:31.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:36.026Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:41.027Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:46.028Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:51.030Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:45:56.030Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:01.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:01.207Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:46:06.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:11.033Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:16.034Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:21.035Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:26.036Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:31.036Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:36.038Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:41.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:46.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:51.041Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:46:56.040Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:01.042Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:01.661Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:47:06.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:11.045Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:16.045Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:21.044Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:26.047Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:31.045Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:36.045Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:41.049Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:46.051Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:51.051Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:47:56.054Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:01.052Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:05.264Z [INFO]: Startup check: Stop condition met for BE. Closing position. Price=$25.61 Stop=$25.61
+2024-12-13T18:48:05.267Z [INFO]: Enqueuing close position order for BE Qty: 5000 Side: sell Limit: $25.46
+2024-12-13T18:48:05.275Z [INFO]: Order enqueued: {"symbol":"BE","qty":"5000","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-bd9d25587ebade5e","limit_price":"25.46"} (stopPriority: true)
+2024-12-13T18:48:05.782Z [INFO]: Order enqueued: {"symbol":"BE","qty":"5000","side":"sell","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-96133f51c4eef4d3","limit_price":"25.46"} (stopPriority: true)
+2024-12-13T18:48:05.947Z [INFO]: Order placed: SELL 5000 BE at 25.46 | ID: f19b2492-b84e-4e80-ac46-a36c1fd3f8e6
+2024-12-13T18:48:07.044Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:48:07.050Z [INFO]: Started polling for order statuses.
+2024-12-13T18:48:07.201Z [INFO]: Position added: PTON | Qty: 813 | Avg Entry: $9.61
+2024-12-13T18:48:07.323Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:48:07.325Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:48:07.375Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:48:07.699Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:48:12.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:12.718Z [INFO]: Subscribed to BE quotes.
+2024-12-13T18:48:13.273Z [INFO]: Subscribed to BE trades.
+2024-12-13T18:48:17.059Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:17.212Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:48:22.058Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:22.698Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:48:27.058Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:32.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:37.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:37.063Z [INFO]: Subscribed to TSLL quotes.
+2024-12-13T18:48:37.647Z [INFO]: Unsubscribed from BE quotes.
+2024-12-13T18:48:37.647Z [INFO]: Unsubscribed from BE trades.
+2024-12-13T18:48:37.769Z [INFO]: Subscribed to TSLL trades.
+2024-12-13T18:48:42.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:47.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:52.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:48:57.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:02.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:07.066Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:12.072Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:17.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:22.069Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:27.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:32.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:37.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:42.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:47.079Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:52.078Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:49:57.078Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:02.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:02.968Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:50:07.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:08.605Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:50:08.613Z [INFO]: Started polling for order statuses.
+2024-12-13T18:50:08.770Z [INFO]: Position added: PTON | Qty: 813 | Avg Entry: $9.61
+2024-12-13T18:50:08.859Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:50:08.860Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:50:08.914Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:50:09.275Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:50:09.566Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:50:13.626Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:13.626Z [INFO]: Subscribed to TSLL quotes.
+2024-12-13T18:50:14.362Z [INFO]: Subscribed to TSLL trades.
+2024-12-13T18:50:18.628Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:23.628Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:28.619Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:29.102Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:50:33.621Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:34.191Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:50:38.620Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:39.106Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:50:43.624Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:44.262Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:50:48.623Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:54.648Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:50:54.654Z [INFO]: Started polling for order statuses.
+2024-12-13T18:50:54.819Z [INFO]: Position added: PTON | Qty: 813 | Avg Entry: $9.61
+2024-12-13T18:50:54.837Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:50:54.838Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:50:54.886Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:50:55.317Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:50:55.816Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:50:59.660Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:50:59.660Z [INFO]: Subscribed to TSLL quotes.
+2024-12-13T18:51:00.423Z [INFO]: Subscribed to TSLL trades.
+2024-12-13T18:51:01.050Z [INFO]: Placing breakout entry order for TSLL at $32.66
+2024-12-13T18:51:01.068Z [INFO]: Order enqueued: {"symbol":"TSLL","qty":"5000","side":"buy","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"ENTRY-a1990e306d66a5b9","limit_price":"32.66"} (stopPriority: false)
+2024-12-13T18:51:01.519Z [INFO]: Order placed: BUY 5000 TSLL at 32.66 | ID: 492c7f54-7de5-4d3a-b5ea-da1ebd4d2630
+2024-12-13T18:51:02.835Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T18:51:04.662Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:05.464Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:51:09.662Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:14.661Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:19.661Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:24.663Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:24.831Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:51:29.662Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:30.244Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:51:34.666Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:39.667Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:44.665Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:49.667Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:54.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:51:59.669Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:04.670Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:09.670Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:14.670Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:19.670Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:24.672Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:29.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:34.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:34.848Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:52:39.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:40.339Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:52:44.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:49.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:54.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:52:59.675Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:04.675Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:05.150Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:53:05.155Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:53:09.675Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:14.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:19.677Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:24.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:29.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:34.680Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:39.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:44.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:49.682Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:54.683Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:53:59.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:04.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:04.854Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:54:09.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:10.316Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:54:14.686Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:19.688Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:24.689Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:29.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:34.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:39.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:44.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:49.692Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:54.694Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:54:59.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:04.695Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:04.874Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:55:09.696Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:14.697Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:19.697Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:24.700Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:29.697Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:34.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:39.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:44.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:49.702Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:54.702Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:55:59.705Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:04.705Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:09.709Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:10.371Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:56:14.708Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:19.711Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:24.709Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:24.871Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:56:29.708Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:30.408Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:56:34.710Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:39.712Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:44.712Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:49.709Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:54.718Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:56:59.715Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:04.717Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:05.686Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T18:57:09.720Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:14.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:19.720Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:24.725Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:29.726Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:34.733Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:39.737Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:44.735Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:49.739Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:54.737Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:57:59.739Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:04.743Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:04.942Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:58:04.946Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T18:58:09.738Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:14.742Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:19.740Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:24.742Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:29.747Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:32.640Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:58:32.646Z [INFO]: Started polling for order statuses.
+2024-12-13T18:58:32.800Z [INFO]: Position added: PTON | Qty: 813 | Avg Entry: $9.61
+2024-12-13T18:58:32.812Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T18:58:32.834Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T18:58:32.835Z [INFO]: Polygon WebSocket connected.
+2024-12-13T18:58:32.886Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T18:58:37.654Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:42.652Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:47.657Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:52.653Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:58:57.652Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:02.657Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:03.275Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T18:59:07.655Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:12.654Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:17.657Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:22.659Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:27.659Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:32.661Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:37.662Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:42.664Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:47.664Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:47.924Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T18:59:52.666Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T18:59:57.667Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:02.669Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:07.668Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:08.276Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:00:12.670Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:17.669Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:17.846Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:00:22.672Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:27.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:28.493Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:00:32.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:37.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:42.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:47.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:52.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:00:57.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:02.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:07.680Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:12.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:17.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:22.683Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:27.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:32.686Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:37.686Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:42.687Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:47.690Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:52.689Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:01:57.690Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:02.690Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:07.691Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:12.694Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:17.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:22.695Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:27.694Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:32.697Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:37.699Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:42.698Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:47.747Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:52.740Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:02:57.741Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:02.742Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:07.741Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:12.742Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:17.739Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:22.745Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:27.747Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:32.748Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:37.747Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:42.746Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:47.750Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:52.754Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:03:57.753Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:02.754Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:07.755Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:12.754Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:17.759Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:22.759Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:27.758Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:32.761Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:37.761Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:42.762Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:47.763Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:52.764Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:04:57.764Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:02.763Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:07.767Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:12.765Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:17.766Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:22.768Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:27.767Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:32.769Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:37.770Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:42.770Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:42.959Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:05:47.770Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:52.772Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:57.773Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:05:58.395Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:06:02.775Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:03.745Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:06:07.776Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:08.259Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:06:12.779Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:13.387Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:06:17.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:22.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:23.277Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:06:27.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:28.359Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:06:32.780Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:33.369Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:06:37.783Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:38.408Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:06:42.786Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:47.788Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:52.789Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:06:57.789Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:02.790Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:07.786Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:12.791Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:17.789Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:18.274Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:07:22.790Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:23.446Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:07:27.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:32.797Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:37.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:42.799Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:47.801Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:52.803Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:07:57.806Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:02.803Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:03.642Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:08:07.806Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:12.807Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:17.802Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:22.806Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:27.808Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:32.810Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:37.808Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:42.811Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:42.986Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:08:47.812Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:48.407Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:08:52.811Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:57.815Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:08:57.992Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:09:02.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:07.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:08.462Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:09:12.818Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:12.994Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:09:17.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:18.616Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:09:22.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:22.991Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:09:27.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:28.420Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:09:32.822Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:37.823Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:38.034Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:09:42.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:48.945Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:09:48.951Z [INFO]: Started polling for order statuses.
+2024-12-13T19:09:49.127Z [INFO]: Position added: PTON | Qty: 813 | Avg Entry: $9.61
+2024-12-13T19:09:49.141Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:09:49.156Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:09:49.157Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:09:49.209Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:09:49.665Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:09:53.962Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:58.955Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:09:59.127Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:10:03.955Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:04.604Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:10:08.956Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:13.955Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:18.957Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:23.957Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:28.958Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:33.960Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:38.960Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:43.960Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:48.961Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:53.963Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:10:58.964Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:03.964Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:08.967Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:13.966Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:18.968Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:23.969Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:28.979Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:33.971Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:38.973Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:43.975Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:48.976Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:53.975Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:11:58.978Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:03.978Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:08.980Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:13.980Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:18.982Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:23.981Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:28.986Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:33.987Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:38.988Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:43.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:48.992Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:53.994Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:12:58.998Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:04.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:08.999Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:14.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:19.006Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:24.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:29.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:34.006Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:39.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:44.007Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:49.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:54.011Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:13:59.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:04.011Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:09.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:14.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:19.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:24.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:29.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:34.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:39.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:44.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:49.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:54.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:14:59.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:04.020Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:09.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:14.023Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:19.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:24.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:29.020Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:34.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:39.023Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:44.027Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:44.211Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:15:49.027Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:49.752Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:15:54.027Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:59.028Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:15:59.213Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:16:04.029Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:09.031Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:09.669Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:16:14.033Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:14.196Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:16:19.035Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:19.628Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:16:24.037Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:24.189Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:16:29.034Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:29.642Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:16:34.034Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:39.034Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:44.035Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:49.035Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:54.037Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:16:59.037Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:04.038Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:09.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:14.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:19.040Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:24.040Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:29.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:34.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:39.047Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:44.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:49.046Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:54.045Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:17:59.046Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:04.046Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:09.049Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:10.028Z [INFO]: Subscribed to NOTV quotes.
+2024-12-13T19:18:14.050Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:14.676Z [INFO]: Unsubscribed from NOTV quotes.
+2024-12-13T19:18:19.048Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:24.052Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:29.052Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:34.052Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:39.056Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:44.057Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:49.055Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:54.058Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:59.058Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:18:59.227Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:19:04.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:04.690Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:19:09.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:14.063Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:19.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:24.064Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:29.064Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:34.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:39.067Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:44.070Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:49.069Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:54.071Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:19:59.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:04.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:09.074Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:14.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:19.074Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:24.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:29.075Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:34.076Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:39.079Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:44.080Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:49.081Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:54.082Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:20:59.082Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:04.084Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:09.085Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:14.086Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:19.087Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:24.089Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:29.089Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:34.089Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:39.090Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:44.091Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:49.092Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:54.094Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:21:59.096Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:04.096Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:04.285Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:22:09.096Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:14.096Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:15.363Z [INFO]: Startup check: Stop condition met for PTON. Closing position. Price=$9.67 Stop=$9.67
+2024-12-13T19:22:15.366Z [INFO]: Enqueuing close position order for PTON Qty: 813 Side: buy Limit: $9.82
+2024-12-13T19:22:15.373Z [INFO]: Order enqueued: {"symbol":"PTON","qty":"813","side":"buy","type":"limit","time_in_force":"day","extended_hours":true,"client_order_id":"CLOSE-a5146086862ac4dd","limit_price":"9.82"} (stopPriority: true)
+2024-12-13T19:22:15.701Z [INFO]: Order placed: BUY 813 PTON at 9.82 | ID: 2f095b60-ce22-4705-b9df-233ff9e9f76d
+2024-12-13T19:22:15.875Z [WARN]: Invalid limit price while continuously trying to close PTON. Will try again.
+2024-12-13T19:22:16.064Z [INFO]: Order 2f095b60-ce22-4705-b9df-233ff9e9f76d filled 86 qty for PTON. Remaining qty: 727
+2024-12-13T19:22:16.376Z [WARN]: Invalid limit price while continuously trying to close PTON. Will try again.
+2024-12-13T19:22:16.703Z [INFO]: Order 2f095b60-ce22-4705-b9df-233ff9e9f76d filled 86 qty for PTON. Remaining qty: 641
+2024-12-13T19:22:16.877Z [WARN]: Invalid limit price while continuously trying to close PTON. Will try again.
+2024-12-13T19:22:17.352Z [INFO]: Position removed: PTON
+2024-12-13T19:22:18.998Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:23.997Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:28.997Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:33.998Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:38.999Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:43.999Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:49.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:54.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:22:59.000Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:04.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:04.592Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:23:09.002Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:09.166Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:23:14.003Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:14.615Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:23:19.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:19.171Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:23:24.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:24.648Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:23:29.007Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:34.007Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:39.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:44.007Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:49.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:54.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:23:59.010Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:04.011Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:09.011Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:14.010Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:19.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:24.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:29.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:34.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:39.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:44.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:49.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:54.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:24:59.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:04.019Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:04.481Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:25:04.486Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:25:09.021Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:14.023Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:19.023Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:24.021Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:29.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:34.026Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:39.025Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:44.022Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:49.021Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:25:54.026Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:00.085Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:26:00.093Z [INFO]: Started polling for order statuses.
+2024-12-13T19:26:00.271Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:26:00.293Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:26:00.294Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:26:00.343Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:26:00.610Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:26:05.105Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:05.344Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T19:26:05.351Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:26:05.831Z [INFO]: Subscribed to PTON trades.
+2024-12-13T19:26:06.326Z [INFO]: Placing breakout entry order for PTON at $9.69
+2024-12-13T19:26:06.951Z [INFO]: Entry order placed for 5000 shares of PTON at $9.69. Order ID: 88763679-f2f2-4b71-80e3-52cfc1d4793b
+2024-12-13T19:26:08.308Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:26:10.100Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:15.098Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:20.099Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:25.130Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:30.133Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:35.137Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:40.139Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:45.136Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:50.136Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:55.137Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:26:59.056Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:26:59.062Z [INFO]: Started polling for order statuses.
+2024-12-13T19:26:59.225Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:26:59.237Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:26:59.251Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:26:59.252Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:26:59.295Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:27:04.073Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:27:09.062Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:27:14.068Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:27:19.065Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:27:24.069Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:36:37.169Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:36:37.175Z [INFO]: Started polling for order statuses.
+2024-12-13T19:36:37.356Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:36:37.356Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:36:37.365Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:36:37.371Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T19:36:37.374Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:36:37.379Z [INFO]: Subscribed to TSLL quotes.
+2024-12-13T19:36:37.419Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:36:37.869Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:36:38.199Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:36:42.177Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:36:47.173Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:36:52.178Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:36:57.180Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:02.180Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:07.177Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:12.183Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:12.845Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:37:17.182Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:17.828Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:37:17.832Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:37:22.183Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:23.614Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:37:27.183Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:32.182Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:37.184Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:42.187Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:47.184Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:52.189Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:52.874Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:37:57.188Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:37:57.344Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:38:02.189Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:02.693Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:38:07.189Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:07.360Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:38:12.193Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:13.334Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:38:17.193Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:17.819Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:38:22.192Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:22.797Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:38:27.188Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:28.121Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:38:32.230Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:37.236Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:42.234Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:43.008Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:38:47.240Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:48.162Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:38:52.237Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:38:57.241Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:02.245Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:07.246Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:12.246Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:17.248Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:22.244Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:23.071Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:39:27.250Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:28.309Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:39:32.251Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:37.250Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:42.254Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:47.253Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:52.254Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:39:57.254Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:02.258Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:03.530Z [INFO]: Subscribed to SNES quotes.
+2024-12-13T19:40:07.257Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:12.258Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:17.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:22.257Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:27.258Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:32.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:37.257Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:42.258Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:47.279Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:48.049Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:40:52.285Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:40:52.925Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:40:57.282Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:02.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:03.490Z [INFO]: Unsubscribed from SNES quotes.
+2024-12-13T19:41:07.285Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:12.285Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:17.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:22.288Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:27.291Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:32.291Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:37.290Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:38.010Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:41:42.293Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:43.228Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:41:47.317Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:52.312Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:41:57.312Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:02.318Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:07.326Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:12.318Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:17.339Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:22.340Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:27.364Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:27.824Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:42:32.365Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:33.018Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:42:37.417Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:42.591Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:47.597Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:52.650Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:42:53.129Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:42:57.652Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:02.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:07.723Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:08.469Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:43:12.725Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:17.726Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:22.727Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:23.309Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:43:27.727Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:28.473Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:43:32.729Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:37.729Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:38.217Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:43:42.730Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:43.382Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:43:47.774Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:48.271Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:43:52.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:43:53.538Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:43:57.784Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:02.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:07.782Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:12.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:17.793Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:18.325Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:44:22.794Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:23.474Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:44:27.794Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:28.263Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:44:32.799Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:33.483Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:44:37.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:42.799Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:47.802Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:52.799Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:44:57.803Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:02.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:03.437Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:45:07.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:08.419Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:45:12.814Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:13.685Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:45:17.819Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:18.528Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:45:22.817Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:27.816Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:32.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:37.822Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:42.823Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:47.824Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:52.890Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:45:57.908Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:02.901Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:03.533Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:46:07.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:08.145Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:46:12.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:17.905Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:22.906Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:23.625Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:46:27.905Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:32.907Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:33.078Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-13T19:46:37.909Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:42.916Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:47.922Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:53.397Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:46:53.403Z [INFO]: Started polling for order statuses.
+2024-12-13T19:46:53.564Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:46:53.573Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:46:53.586Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:46:53.586Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:46:53.637Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:46:58.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:46:59.112Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:47:03.410Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:04.995Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:47:08.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:12.995Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:47:13.002Z [INFO]: Started polling for order statuses.
+2024-12-13T19:47:13.161Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:47:13.162Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:47:13.165Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:47:13.174Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T19:47:13.177Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:47:13.185Z [INFO]: Subscribed to TSLL quotes.
+2024-12-13T19:47:13.210Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:47:13.673Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:47:14.020Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:47:18.093Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:23.091Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:28.188Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:33.196Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:38.197Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:43.198Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:48.199Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:53.195Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:47:58.617Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:47:58.623Z [INFO]: Started polling for order statuses.
+2024-12-13T19:47:58.785Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:47:58.795Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:47:58.808Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:47:58.809Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:47:58.858Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:47:59.280Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:47:59.575Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:48:03.630Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:48:04.398Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:48:08.626Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:48:13.639Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:48:18.642Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:48:26.468Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:48:26.475Z [INFO]: Started polling for order statuses.
+2024-12-13T19:48:26.634Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:48:26.647Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:48:26.662Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:48:26.663Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:48:26.710Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:48:27.304Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:48:31.535Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:48:36.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:48:41.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:48:46.541Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:03.426Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:49:03.432Z [INFO]: Started polling for order statuses.
+2024-12-13T19:49:03.591Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:49:03.592Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:49:03.614Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:49:03.624Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T19:49:03.628Z [INFO]: Position added: TSLL | Qty: 5000 | Avg Entry: $32.61
+2024-12-13T19:49:03.637Z [INFO]: Subscribed to TSLL quotes.
+2024-12-13T19:49:03.645Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:49:03.748Z [INFO]: Profit target hit for TSLL: +13.00¢ >= +6¢
+2024-12-13T19:49:03.751Z [INFO]: Attempting to place partial close limit order: {"symbol":"TSLL","qty":"500","side":"sell","type":"limit","time_in_force":"day","limit_price":"32.59","extended_hours":true,"client_order_id":"LIMIT-c91565ad6e1c7c5a"}
+2024-12-13T19:49:03.758Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"2500","side":"buy","type":"limit","time_in_force":"day","limit_price":"32.85","extended_hours":true,"client_order_id":"PYRAMID-c35b09d3b579ef12"}
+2024-12-13T19:49:03.962Z [INFO]: Partial close limit order placed for 500 shares of TSLL. Order ID: bee47bd2-6c1a-4ba5-a250-d129c8d9b8ed
+2024-12-13T19:49:04.171Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:49:04.336Z [INFO]: Pyramid order placed for 2500 shares of TSLL. Order ID: 266b8b7a-b071-41cd-b66f-236623918711
+2024-12-13T19:49:04.678Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"984","side":"buy","type":"limit","time_in_force":"day","limit_price":"32.85","extended_hours":true,"client_order_id":"PYRAMID-8cd0308318083bbd"}
+2024-12-13T19:49:04.752Z [INFO]: Profit target hit for TSLL: +11.80¢ >= +10¢
+2024-12-13T19:49:04.755Z [INFO]: Attempting to place partial close limit order: {"symbol":"TSLL","qty":"984","side":"sell","type":"limit","time_in_force":"day","limit_price":"32.59","extended_hours":true,"client_order_id":"LIMIT-83fd739375bcc67d"}
+2024-12-13T19:49:05.427Z [INFO]: Pyramid order placed for 984 shares of TSLL. Order ID: 1ad73a36-d4c2-41cd-a548-1aadc7469ca6
+2024-12-13T19:49:05.721Z [ERROR]: Error placing partial close limit order for TSLL: {"buy_limit_price":"32.85","code":40310000,"existing_order_id":"1ad73a36-d4c2-41cd-a548-1aadc7469ca6","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"32.59"}
+2024-12-13T19:49:08.432Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:13.439Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:18.440Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:22.741Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"1596","side":"buy","type":"limit","time_in_force":"day","limit_price":"32.90","extended_hours":true,"client_order_id":"PYRAMID-afc793313822d29a"}
+2024-12-13T19:49:23.232Z [INFO]: Pyramid order placed for 1596 shares of TSLL. Order ID: aeca282e-ae8f-429d-9976-a9643980a08d
+2024-12-13T19:49:23.461Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:28.465Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:33.474Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:38.623Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:43.626Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:48.626Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:53.629Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:49:58.634Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:03.636Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:04.581Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:50:08.634Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:13.635Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:18.636Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:23.635Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:28.636Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:33.635Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:38.637Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:43.638Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:48.641Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:53.644Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:50:58.640Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:03.640Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:08.648Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:13.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:18.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:23.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:28.679Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:33.682Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:38.680Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:43.688Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:51:57.863Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:51:57.870Z [INFO]: Started polling for order statuses.
+2024-12-13T19:51:58.024Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:51:58.032Z [INFO]: Position added: TSLL | Qty: 9580 | Avg Entry: $32.699176
+2024-12-13T19:51:58.043Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:51:58.043Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:51:58.090Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:51:58.479Z [INFO]: Profit target hit for TSLL: +21.08¢ >= +6¢
+2024-12-13T19:51:58.481Z [INFO]: Attempting to place partial close limit order: {"symbol":"TSLL","qty":"958","side":"sell","type":"limit","time_in_force":"day","limit_price":"32.76","extended_hours":true,"client_order_id":"LIMIT-f1c80e9a237bf028"}
+2024-12-13T19:51:58.485Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"4790","side":"buy","type":"limit","time_in_force":"day","limit_price":"33.02","extended_hours":true,"client_order_id":"PYRAMID-db9dc59a7a46fdba"}
+2024-12-13T19:51:58.656Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:51:58.738Z [INFO]: Partial close limit order placed for 958 shares of TSLL. Order ID: 2dd4359c-20fe-4531-8528-293742839755
+2024-12-13T19:51:58.995Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:51:59.078Z [INFO]: Pyramid order placed for 4790 shares of TSLL. Order ID: 56b6621b-f49d-420e-b34b-461ea51886fd
+2024-12-13T19:51:59.438Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"1731","side":"buy","type":"limit","time_in_force":"day","limit_price":"33.02","extended_hours":true,"client_order_id":"PYRAMID-f4c4880d1a4525b3"}
+2024-12-13T19:51:59.484Z [INFO]: Profit target hit for TSLL: +20.00¢ >= +10¢
+2024-12-13T19:51:59.486Z [INFO]: Attempting to place partial close limit order: {"symbol":"TSLL","qty":"1731","side":"sell","type":"limit","time_in_force":"day","limit_price":"32.75","extended_hours":true,"client_order_id":"LIMIT-8668860d735916a7"}
+2024-12-13T19:52:00.182Z [INFO]: Pyramid order placed for 1731 shares of TSLL. Order ID: 5fff90cd-e2cd-4cc5-ad8e-8ced16ca59c9
+2024-12-13T19:52:00.478Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"1731","side":"buy","type":"limit","time_in_force":"day","limit_price":"33.01","extended_hours":true,"client_order_id":"PYRAMID-19c38e1f0685a27b"}
+2024-12-13T19:52:00.485Z [ERROR]: Error placing partial close limit order for TSLL: {"buy_limit_price":"33.02","code":40310000,"existing_order_id":"5fff90cd-e2cd-4cc5-ad8e-8ced16ca59c9","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"32.75"}
+2024-12-13T19:52:01.551Z [INFO]: Pyramid order placed for 1731 shares of TSLL. Order ID: fae3e989-d9a7-4e9a-83df-1b3360417c6e
+2024-12-13T19:52:02.868Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:07.868Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:12.949Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:17.951Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:23.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:28.109Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:33.110Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:38.115Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:43.116Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:48.119Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:53.114Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:52:58.115Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:03.116Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:08.115Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:13.119Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:18.118Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:23.121Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:28.121Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:33.125Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:38.152Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:43.207Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:48.215Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:53.261Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:53:58.264Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:03.264Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:03.941Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T19:54:08.270Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:13.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:18.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:23.384Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:28.410Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:33.411Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:38.413Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:43.418Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:48.418Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:53.415Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:54:58.415Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:03.422Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:04.416Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:55:08.422Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:13.422Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:18.446Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:23.455Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:28.454Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:33.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:38.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:43.456Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:48.457Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:53.461Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:55:58.458Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:03.459Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:08.459Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:13.460Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:18.458Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:23.461Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:28.464Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:33.464Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:38.465Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:43.466Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:48.462Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:53.467Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:56:58.467Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:03.464Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:08.465Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:13.503Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:25.346Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:57:25.352Z [INFO]: Started polling for order statuses.
+2024-12-13T19:57:25.519Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:57:25.529Z [INFO]: Subscribed to trades for PTON.
+2024-12-13T19:57:25.540Z [INFO]: Position added: TSLL | Qty: 16874 | Avg Entry: $32.801251
+2024-12-13T19:57:25.546Z [INFO]: Subscribed to trades for TSLL.
+2024-12-13T19:57:25.552Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:57:25.553Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:57:25.603Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:57:26.083Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:57:26.083Z [INFO]: Subscribed to WKEY trades.
+2024-12-13T19:57:26.083Z [INFO]: Subscribed to trades for WKEY.
+2024-12-13T19:57:26.401Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:57:26.401Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T19:57:26.401Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T19:57:30.354Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:35.356Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:40.354Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:45.358Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:50.360Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:57:55.362Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:00.361Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:02.890Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:58:02.896Z [INFO]: Started polling for order statuses.
+2024-12-13T19:58:03.046Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T19:58:03.047Z [INFO]: Polygon WebSocket connected.
+2024-12-13T19:58:03.053Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T19:58:03.060Z [INFO]: Subscribed to PTON quotes.
+2024-12-13T19:58:03.060Z [INFO]: Subscribed to PTON trades.
+2024-12-13T19:58:03.060Z [INFO]: Subscribed to trades for PTON.
+2024-12-13T19:58:03.069Z [INFO]: Position added: TSLL | Qty: 16874 | Avg Entry: $32.801251
+2024-12-13T19:58:03.075Z [INFO]: Subscribed to TSLL quotes.
+2024-12-13T19:58:03.075Z [INFO]: Subscribed to TSLL trades.
+2024-12-13T19:58:03.075Z [INFO]: Subscribed to trades for TSLL.
+2024-12-13T19:58:03.095Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T19:58:03.577Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T19:58:03.577Z [INFO]: Subscribed to WKEY trades.
+2024-12-13T19:58:03.577Z [INFO]: Subscribed to trades for WKEY.
+2024-12-13T19:58:03.876Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T19:58:03.876Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T19:58:03.876Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T19:58:07.901Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:12.902Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:17.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:22.903Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:27.904Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:32.906Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:37.906Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:42.959Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:45.829Z [INFO]: Stop condition met for TSLL. Closing position.
+2024-12-13T19:58:45.832Z [INFO]: Closing position with limit order: {"symbol":"TSLL","qty":"16874","side":"sell","type":"limit","time_in_force":"day","limit_price":"32.59","extended_hours":true,"client_order_id":"CLOSE-ea6132f75215801d"}
+2024-12-13T19:58:46.181Z [INFO]: Limit order placed to close position in TSLL. Order ID: d3f5e91e-ab53-4542-8051-f14095d5db2f
+2024-12-13T19:58:46.939Z [INFO]: Position removed: TSLL
+2024-12-13T19:58:47.960Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:52.960Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:58:57.978Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:02.963Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:07.963Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:12.961Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:17.963Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:22.965Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:27.967Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:32.964Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:37.963Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:42.964Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:47.961Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:52.967Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T19:59:58.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:03.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:03.733Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T20:00:03.733Z [INFO]: Unsubscribed from IPHA trades.
+2024-12-13T20:00:08.006Z [ERROR]: Error reloading dynamic config: Unexpected token : in JSON at position 57
+2024-12-13T20:00:13.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:13.665Z [INFO]: Unsubscribed from TSLL quotes.
+2024-12-13T20:00:13.666Z [INFO]: Unsubscribed from TSLL trades.
+2024-12-13T20:00:18.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:23.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:28.015Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:33.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:38.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:43.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:48.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:53.013Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:00:58.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:03.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:08.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:13.014Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:18.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:23.016Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:28.018Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:33.017Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:38.019Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:43.036Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:48.032Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:53.037Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:01:58.037Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:03.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:04.055Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:02:04.056Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T20:02:04.056Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T20:02:08.040Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:13.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:18.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:23.041Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:28.038Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:33.061Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:38.039Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:43.044Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:47.279Z [INFO]: Position added: WKEY | Qty: 2000 | Avg Entry: $8.07047
+2024-12-13T20:02:47.407Z [INFO]: Stop condition met for WKEY. Closing position.
+2024-12-13T20:02:47.410Z [INFO]: Closing position with limit order: {"symbol":"WKEY","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"7.85","extended_hours":true,"client_order_id":"CLOSE-65d19b76fdea73df"}
+2024-12-13T20:02:47.999Z [INFO]: Limit order placed to close position in WKEY. Order ID: 4de9c242-cfc2-4246-ac37-e6ccd523b42b
+2024-12-13T20:02:48.043Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:49.279Z [INFO]: Position removed: WKEY
+2024-12-13T20:02:51.299Z [INFO]: Position added: WKEY | Qty: 1000 | Avg Entry: $8.05
+2024-12-13T20:02:53.046Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:02:56.441Z [INFO]: Stop condition met for WKEY. Closing position.
+2024-12-13T20:02:56.444Z [INFO]: Closing position with limit order: {"symbol":"WKEY","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"7.84","extended_hours":true,"client_order_id":"CLOSE-ab849bf5cc3c033a"}
+2024-12-13T20:02:56.822Z [ERROR]: Error placing limit order to close position for WKEY: {"buy_limit_price":"8.14","code":40310000,"existing_order_id":"622534e4-bb47-40ff-9318-cb1b25c4108e","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"7.84"}
+2024-12-13T20:02:58.042Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:04.141Z [INFO]: Attempting to place pyramid order: {"symbol":"WKEY","qty":"2000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.20","extended_hours":true,"client_order_id":"PYRAMID-0f4549bd5f1856ac"}
+2024-12-13T20:03:04.232Z [INFO]: Profit target hit for WKEY: +6.46¢ >= +6¢
+2024-12-13T20:03:04.234Z [INFO]: Attempting to place partial close limit order: {"symbol":"WKEY","qty":"400","side":"sell","type":"limit","time_in_force":"day","limit_price":"7.95","extended_hours":true,"client_order_id":"LIMIT-c9f0be2cdcb500a7"}
+2024-12-13T20:03:04.400Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:04.553Z [INFO]: Pyramid order placed for 2000 shares of WKEY. Order ID: 31f1360c-453f-4f79-90cf-a0813d50043c
+2024-12-13T20:03:04.900Z [INFO]: Partial close limit order placed for 400 shares of WKEY. Order ID: f801f484-8021-4ec4-95f6-6d4e17473942
+2024-12-13T20:03:05.093Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T20:03:05.093Z [INFO]: Unsubscribed from IPHA trades.
+2024-12-13T20:03:07.699Z [INFO]: Attempting to place pyramid order: {"symbol":"WKEY","qty":"1120","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.30","extended_hours":true,"client_order_id":"PYRAMID-b4076569c41a76b5"}
+2024-12-13T20:03:07.716Z [INFO]: Profit target hit for WKEY: +10.64¢ >= +10¢
+2024-12-13T20:03:07.718Z [INFO]: Attempting to place partial close limit order: {"symbol":"WKEY","qty":"1120","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.03","extended_hours":true,"client_order_id":"LIMIT-b76b62c7ddd15e99"}
+2024-12-13T20:03:08.062Z [INFO]: Pyramid order placed for 1120 shares of WKEY. Order ID: 14c397a0-c46a-4c6a-9177-9ec55523609a
+2024-12-13T20:03:08.404Z [ERROR]: Error placing partial close limit order for WKEY: {"buy_limit_price":"8.3","code":40310000,"existing_order_id":"14c397a0-c46a-4c6a-9177-9ec55523609a","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"8.03"}
+2024-12-13T20:03:09.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:09.635Z [INFO]: Attempting to place pyramid order: {"symbol":"WKEY","qty":"1120","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.48","extended_hours":true,"client_order_id":"PYRAMID-35d408a0de77be7a"}
+2024-12-13T20:03:09.910Z [INFO]: Pyramid order placed for 1120 shares of WKEY. Order ID: df50003e-abc8-48a2-b526-c54645ded578
+2024-12-13T20:03:11.909Z [INFO]: Order 14c397a0-c46a-4c6a-9177-9ec55523609a canceled for WKEY.
+2024-12-13T20:03:14.402Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:19.405Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:24.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:29.402Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:34.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:39.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:44.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:49.408Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:54.408Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:03:59.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:04.405Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:09.406Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:14.412Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:19.412Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:24.442Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:29.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:34.445Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:39.446Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:44.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:49.452Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:54.450Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:04:59.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:04.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:05.492Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:05:05.492Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T20:05:05.492Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T20:05:09.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:14.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:17.097Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:05:17.103Z [INFO]: Started polling for order statuses.
+2024-12-13T20:05:17.261Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T20:05:17.267Z [INFO]: Subscribed to trades for PTON.
+2024-12-13T20:05:17.275Z [INFO]: Position added: WKEY | Qty: 6720 | Avg Entry: $8.121287
+2024-12-13T20:05:17.280Z [INFO]: Subscribed to trades for WKEY.
+2024-12-13T20:05:17.287Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T20:05:17.288Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:05:17.346Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T20:05:18.126Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:05:18.126Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T20:05:18.127Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T20:05:22.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:27.107Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:32.106Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:37.111Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:42.114Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:47.117Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:52.118Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:05:57.116Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:02.119Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:02.819Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T20:06:02.819Z [INFO]: Unsubscribed from IPHA trades.
+2024-12-13T20:06:07.121Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:12.121Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:17.122Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:22.121Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:27.123Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:32.126Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:37.126Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:42.127Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:47.128Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:52.126Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:06:57.128Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:02.130Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:03.149Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:07:03.149Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T20:07:03.149Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T20:07:07.133Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:12.137Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:17.138Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:22.136Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:27.134Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:32.132Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:37.135Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:42.137Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:47.133Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:52.133Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:07:57.136Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:02.143Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:02.871Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T20:08:02.871Z [INFO]: Unsubscribed from IPHA trades.
+2024-12-13T20:08:07.147Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:12.146Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:17.150Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:22.151Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:27.152Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:32.153Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:37.154Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:42.153Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:47.152Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:52.165Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:57.157Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:08:58.991Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:08:58.997Z [INFO]: Started polling for order statuses.
+2024-12-13T20:08:59.158Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T20:08:59.165Z [INFO]: Subscribed to trades for PTON.
+2024-12-13T20:08:59.176Z [INFO]: Position added: WKEY | Qty: 6720 | Avg Entry: $8.121287
+2024-12-13T20:08:59.183Z [INFO]: Subscribed to trades for WKEY.
+2024-12-13T20:08:59.189Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T20:08:59.190Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:08:59.242Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T20:09:04.000Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:05.097Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:09:05.098Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T20:09:05.098Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T20:09:09.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:14.001Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:19.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:24.004Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:29.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:34.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:39.007Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:44.005Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:49.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:54.008Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:09:59.006Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:04.009Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:09.012Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:13.631Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:10:13.639Z [INFO]: Started polling for order statuses.
+2024-12-13T20:10:13.800Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T20:10:13.810Z [INFO]: Subscribed to trades for PTON.
+2024-12-13T20:10:13.825Z [INFO]: Position added: WKEY | Qty: 6720 | Avg Entry: $8.121287
+2024-12-13T20:10:13.828Z [INFO]: Subscribed to trades for WKEY.
+2024-12-13T20:10:13.834Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T20:10:13.835Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:10:13.887Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T20:10:14.716Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:10:14.716Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T20:10:14.716Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T20:10:18.642Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:23.643Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:28.645Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:33.645Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:38.704Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:43.718Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:48.715Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:53.718Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:10:58.718Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:03.723Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:04.423Z [INFO]: Unsubscribed from IPHA quotes.
+2024-12-13T20:11:04.423Z [INFO]: Unsubscribed from IPHA trades.
+2024-12-13T20:11:08.720Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:13.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:18.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:23.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:28.719Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:33.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:38.725Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:43.725Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:48.726Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:53.728Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:11:58.730Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:12:03.728Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:12:04.757Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:12:04.758Z [INFO]: Subscribed to IPHA trades.
+2024-12-13T20:12:04.758Z [INFO]: Subscribed to trades for IPHA.
+2024-12-13T20:12:08.729Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:12:13.730Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:12:18.725Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:12:23.730Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:12:28.730Z [INFO]: Dynamic config reloaded. Updated override symbols.

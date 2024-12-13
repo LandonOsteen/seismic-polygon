@@ -10,7 +10,6 @@ class PolygonRestClient {
 
   async getIntradayHigh(symbol) {
     const { start, end } = this._getIntradayTimeRange();
-    // Using 5-second bars instead of 10-second bars
     const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/5/second/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
     const response = await axios.get(url);
     const data = response.data;
@@ -30,7 +29,6 @@ class PolygonRestClient {
 
   async getIntradayVolume(symbol) {
     const { start, end } = this._getIntradayTimeRange();
-    // 1-minute bars remain for volume aggregation
     const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/1/minute/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
     const response = await axios.get(url);
     const data = response.data;
@@ -45,13 +43,10 @@ class PolygonRestClient {
   }
 
   _getIntradayTimeRange() {
-    // Ensure times are in Eastern Time
     const now = moment().tz(config.timeZone);
     const yyyy = now.format('YYYY');
     const mm = now.format('MM');
     const dd = now.format('DD');
-
-    // Start from midnight Eastern
     const startOfDayET = moment.tz(
       `${yyyy}-${mm}-${dd}T00:00:00`,
       config.timeZone
@@ -72,6 +67,20 @@ class PolygonRestClient {
     const url = `${this.baseUrl}/v2/snapshot/locale/us/markets/stocks/${direction}?apiKey=${this.apiKey}&include_otc=${includeOtc}`;
     const response = await axios.get(url);
     return response.data.tickers || [];
+  }
+
+  async getCurrentQuote(symbol) {
+    const url = `${this.baseUrl}/v3/quotes/${symbol}?limit=1&sort=desc&apiKey=${this.apiKey}`;
+    const response = await axios.get(url);
+    const data = response.data;
+    if (data.results && data.results.length > 0) {
+      const quote = data.results[0];
+      const bidPrice = quote.bid_price || quote.bp || 0;
+      const askPrice = quote.ask_price || quote.ap || 0;
+      return { bidPrice, askPrice };
+    } else {
+      throw new Error(`No quote results returned for ${symbol}`);
+    }
   }
 
   async getTickerDetails(symbol) {

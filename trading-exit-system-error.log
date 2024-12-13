@@ -1,16 +1,302 @@
-2024-12-13T14:12:00.210Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:00.217Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.664Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.678Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.687Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.696Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.702Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.707Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.712Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.717Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.721Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.726Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.730Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.735Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.739Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
-2024-12-13T14:12:02.743Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.517Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.526Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.533Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.539Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.543Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.545Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.547Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.549Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.551Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.553Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.555Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.558Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.564Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.572Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.579Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:40.586Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.021Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.026Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.029Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.031Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.963Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:43.969Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.477Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.483Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.486Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.488Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.491Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.493Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.970Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.977Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.981Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.984Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.988Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.991Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.995Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:44.999Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.003Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.006Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.010Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.013Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.970Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.977Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.980Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.984Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.988Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.991Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.996Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:45.999Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.977Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.984Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.986Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:47.989Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:51.483Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:51.491Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.984Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.991Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.996Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:52.999Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:53.987Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:53.993Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:55.993Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:56.001Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:59.977Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:24:59.987Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:01.988Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:01.996Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:01.999Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.003Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.006Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.010Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.013Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.016Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.019Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.023Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.026Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.030Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.033Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.036Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.039Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.042Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.045Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.048Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.051Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.054Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.057Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.060Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.334Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.340Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.343Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.346Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.349Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.352Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.354Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.357Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.360Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.363Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.366Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.369Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.372Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.375Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.378Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.381Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.384Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.387Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.389Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.392Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.395Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.398Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.400Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.403Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.405Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.409Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.411Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.414Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.417Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.420Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.422Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.425Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.845Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.853Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.857Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.860Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.864Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.868Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.873Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:02.877Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:03.337Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:03.346Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.337Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.346Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.350Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.354Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.357Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:04.361Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.342Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.351Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.355Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.359Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.362Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.366Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.850Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.858Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.863Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.867Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.872Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.877Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.881Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.885Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.888Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.892Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.895Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.898Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.902Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.905Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.908Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.911Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.914Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.917Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.920Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.923Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.927Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:05.929Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.349Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.358Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.843Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.847Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.852Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.857Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.860Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.864Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.868Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.871Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.875Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.878Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.881Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.884Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.887Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.890Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.894Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.896Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.899Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.902Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.905Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.908Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.911Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.913Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.916Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.919Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.921Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.924Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.927Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:06.929Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:07.850Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:07.853Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.845Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.849Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.853Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:09.856Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:14.355Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:14.359Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:14.363Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:14.366Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:16.861Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:16.865Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:18.868Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:18.873Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.378Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.388Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.394Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:21.399Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:29.978Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:29.985Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.490Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.498Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.501Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.504Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.507Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.511Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.514Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.517Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.520Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.523Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.526Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.529Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.533Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.536Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.539Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.542Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.545Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.548Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.552Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.555Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.558Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.562Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.565Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:33.567Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.001Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.009Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.014Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.019Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.024Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.028Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.032Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.036Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.040Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.043Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.047Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.050Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.053Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:35.057Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.004Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.014Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.020Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.025Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.030Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.035Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.039Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.043Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.047Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.050Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.053Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.056Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.060Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.063Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.066Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.069Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.072Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.075Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.077Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.080Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.084Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.086Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.089Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:36.092Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.505Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.511Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.517Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:37.521Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:39.012Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:39.018Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.013Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.017Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.020Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.024Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.027Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.030Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.514Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:40.518Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:42.022Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:42.028Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:45.941Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:45.945Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:45.948Z [ERROR]: Unhandled Rejection at: [object Promise], reason: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:25:45.952Z [ERROR]: Unhandled Rejection: TypeError: this.updatePositionPricesFromQuote is not a function
+2024-12-13T18:43:09.863Z [ERROR]: Error placing order for PTON: Request failed with status code 403
+2024-12-13T18:43:10.333Z [ERROR]: Error placing order for PTON: Request failed with status code 403
+2024-12-13T18:43:15.571Z [ERROR]: Error canceling order 7ef76a5b-7746-44d3-847e-96d06e342ef3 for PTON: {"code":42210000,"message":"order is already in \"filled\" state"}
+2024-12-13T19:49:05.721Z [ERROR]: Error placing partial close limit order for TSLL: {"buy_limit_price":"32.85","code":40310000,"existing_order_id":"1ad73a36-d4c2-41cd-a548-1aadc7469ca6","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"32.59"}
+2024-12-13T19:52:00.485Z [ERROR]: Error placing partial close limit order for TSLL: {"buy_limit_price":"33.02","code":40310000,"existing_order_id":"5fff90cd-e2cd-4cc5-ad8e-8ced16ca59c9","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"32.75"}
+2024-12-13T20:00:08.006Z [ERROR]: Error reloading dynamic config: Unexpected token : in JSON at position 57
+2024-12-13T20:02:56.822Z [ERROR]: Error placing limit order to close position for WKEY: {"buy_limit_price":"8.14","code":40310000,"existing_order_id":"622534e4-bb47-40ff-9318-cb1b25c4108e","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"7.84"}
+2024-12-13T20:03:08.404Z [ERROR]: Error placing partial close limit order for WKEY: {"buy_limit_price":"8.3","code":40310000,"existing_order_id":"14c397a0-c46a-4c6a-9177-9ec55523609a","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"8.03"}

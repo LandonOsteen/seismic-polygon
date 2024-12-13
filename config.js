@@ -18,9 +18,9 @@ module.exports = {
   strategySettings: {
     baseVolumeRequirement: 20000,
     morningVolumeRequirement: 20000,
-    gapPercentageRequirement: 10,
+    gapPercentageRequirement: 20,
     priceRange: { min: 1.5, max: 15 },
-    initialEntryOffsetCents: 1,
+    initialEntryOffsetCents: -20,
     entryLimitOffsetCents: 10,
     initialShareSize: 5000,
     openingOrderCooldownSeconds: 4,
@@ -28,15 +28,15 @@ module.exports = {
     trailingStopIntervalSeconds: 5,
 
     minAccumulatedVolume: 1500000, // Minimum accumulated volume requirement
-    minOneMinuteRange: 0.03, // Minimum 1-minute range required
-    maxSpreadCents: 5, // Maximum allowed spread in cents (e.g., 10 = $0.10)
+    minOneMinuteRange: 0.06, // Minimum 1-minute range required
+    maxSpreadCents: 15, // Maximum allowed spread in cents (e.g., 10 = $0.10)
   },
   orderSettings: {
     limitOffsetCents: 15,
     profitTargets: [
       { targetCents: 6, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
-      { targetCents: 20, percentToClose: 40 },
+      { targetCents: 22, percentToClose: 40 },
       { targetCents: 30, percentToClose: 50 },
     ],
     dynamicStops: [
