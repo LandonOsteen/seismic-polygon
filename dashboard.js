@@ -1,295 +1,295 @@
 // dashboard.js
+
 const blessed = require('blessed');
-const contrib = require('blessed-contrib');
-const logger = require('./logger');
-const config = require('./config');
 
 class Dashboard {
   constructor() {
     this.screen = blessed.screen({
       smartCSR: true,
-      title: 'Trading Exit System Dashboard',
+      title: 'Trading Dashboard',
     });
 
-    // Updated grid to have 16 rows to accommodate the Watchlist
-    this.grid = new contrib.grid({
-      rows: 16,
-      cols: 12,
-      screen: this.screen,
-    });
-
-    // Positions Table
-    this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
-      keys: true,
+    // Existing Watchlist Table Setup
+    this.watchlistTable = blessed.listtable({
+      parent: this.screen,
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '50%',
+      align: 'center',
       fg: 'white',
       selectedFg: 'white',
       selectedBg: 'blue',
-      interactive: true,
-      label: ' POSITIONS ',
-      width: '100%',
-      height: '100%',
-      border: { type: 'line', fg: 'cyan' },
-      columnSpacing: 2,
-      columnWidth: [8, 6, 6, 10, 10, 10, 9, 20, 16, 16],
-      style: {
-        header: { fg: 'cyan', bold: true },
-        cell: { fg: 'white' },
+      keys: true,
+      vi: true,
+      mouse: true,
+      border: {
+        type: 'line',
       },
-    });
-
-    this.positionsTable.setData({
-      headers: [
-        'SYMBOL',
-        'SIDE',
-        'QTY',
-        'AVG ENTRY',
-        'BID',
-        'ASK',
-        'PROFIT',
-        'STOP PRICE',
-        'TARGETS HIT',
-        'PYRAMIDS HIT',
+      style: {
+        header: {
+          fg: 'cyan',
+          bold: true,
+        },
+        cell: {
+          fg: 'white',
+          selected: {
+            bg: 'blue',
+          },
+        },
+      },
+      data: [
+        [
+          'SYMBOL',
+          'HOD',
+          'Trade Subscribed',
+          'Quote Subscribed',
+          'Entry Trigger Price',
+          'Bid Price', // New column
+          'Ask Price', // New column
+          'Last Trade Price', // New column
+        ],
+        // Existing data rows can be dynamically populated
       ],
-      data: [],
     });
 
-    // Account Summary
-    this.accountSummaryBox = this.grid.set(0, 7, 4, 5, contrib.markdown, {
-      label: ' ACCOUNT SUMMARY ',
-      border: { type: 'line', fg: 'cyan' },
-      style: { fg: 'white' },
-    });
-
-    // Info Box
-    this.infoBox = this.grid.set(4, 0, 4, 5, contrib.log, {
-      fg: 'green',
-      selectedFg: 'green',
-      label: ' INFO ',
-      tags: true,
-      keys: true,
-      vi: true,
-      mouse: true,
-      scrollbar: { fg: 'blue', ch: ' ' },
-    });
-
-    // Orders Table
-    this.ordersTable = this.grid.set(4, 5, 4, 7, contrib.table, {
-      keys: true,
-      fg: 'magenta',
+    // Existing Orders Table Setup (if any)
+    this.ordersTable = blessed.listtable({
+      parent: this.screen,
+      top: '55%',
+      left: 0,
+      width: '100%',
+      height: '45%',
+      align: 'center',
+      fg: 'white',
       selectedFg: 'white',
       selectedBg: 'blue',
-      interactive: true,
-      label: ' ORDERS ',
+      keys: true,
+      vi: true,
+      mouse: true,
+      border: {
+        type: 'line',
+      },
+      style: {
+        header: {
+          fg: 'cyan',
+          bold: true,
+        },
+        cell: {
+          fg: 'white',
+          selected: {
+            bg: 'blue',
+          },
+        },
+      },
+      data: [
+        [
+          'ORDER ID',
+          'SYMBOL',
+          'TYPE',
+          'SIDE',
+          'QTY',
+          'FILLED',
+          'PRICE',
+          'STATUS',
+        ],
+        // Existing data rows can be dynamically populated
+      ],
+    });
+
+    // Logs Box Setup
+    this.logsBox = blessed.log({
+      parent: this.screen,
+      bottom: 0,
+      left: 0,
       width: '100%',
-      height: '100%',
-      border: { type: 'line', fg: 'magenta' },
-      columnWidth: [8, 10, 6, 10, 10, 10, 12],
+      height: '10%',
+      label: 'Logs',
+      border: {
+        type: 'line',
+      },
       style: {
-        header: { fg: 'magenta', bold: true },
-        cell: { fg: 'white' },
+        fg: 'green',
+        border: {
+          fg: '#f0f0f0',
+        },
+      },
+      scrollable: true,
+      alwaysScroll: true,
+      scrollbar: {
+        bg: 'blue',
       },
     });
 
-    this.ordersTable.setData({
-      headers: ['ID', 'SYMBOL', 'SIDE', 'TYPE', 'QTY', 'PRICE', 'STATUS'],
-      data: [],
-    });
-
-    // Errors Box
-    this.errorBox = this.grid.set(8, 0, 4, 5, contrib.log, {
-      fg: 'red',
-      selectedFg: 'red',
-      label: ' ERRORS ',
-      tags: true,
-      keys: true,
-      vi: true,
-      mouse: true,
-      scrollbar: { fg: 'blue', ch: ' ' },
-    });
-
-    // Warnings Box
-    this.warningBox = this.grid.set(8, 5, 4, 7, contrib.log, {
-      fg: 'yellow',
-      selectedFg: 'yellow',
-      label: ' WARNINGS ',
-      tags: true,
-      keys: true,
-      vi: true,
-      mouse: true,
-      scrollbar: { fg: 'blue', ch: ' ' },
-    });
-
-    // Watchlist Table
-    this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
-      keys: true,
-      fg: 'white',
-      label: ' WATCHLIST & HOD ',
-      border: { type: 'line', fg: 'cyan' },
-      columnSpacing: 2,
-      columnWidth: [10, 10],
-      style: {
-        header: { fg: 'cyan', bold: true },
-        cell: { fg: 'white' },
-      },
-    });
-
-    this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
-      data: [],
-    });
-
-    // Exit Keys
-    this.screen.key(['escape', 'q', 'C-c'], () => {
+    // Key bindings to exit the dashboard
+    this.screen.key(['escape', 'q', 'C-c'], function (ch, key) {
       return process.exit(0);
     });
 
     this.screen.render();
   }
 
+  // Existing methods for updating watchlist, orders, etc.
+
+  // **New Logging Methods**
+
+  /**
+   * Logs informational messages.
+   * @param {string} message - The message to log.
+   */
   logInfo(message) {
-    if (this.shouldDisplayMessage(message)) {
-      const timestamp = new Date().toISOString();
-      this.infoBox.log(`[${timestamp}] INFO: ${message}`);
-      this.screen.render();
-    }
+    this.logsBox.log(`[INFO] ${message}`);
+    this.screen.render();
   }
 
+  /**
+   * Logs warning messages with yellow color.
+   * @param {string} message - The warning message to log.
+   */
   logWarning(message) {
-    const timestamp = new Date().toISOString();
-    this.warningBox.log(`[${timestamp}] WARNING: ${message}`);
+    this.logsBox.log(`{yellow-fg}[WARNING]{/yellow-fg} ${message}`);
     this.screen.render();
   }
 
+  /**
+   * Logs error messages with red color.
+   * @param {string} message - The error message to log.
+   */
   logError(message) {
-    const timestamp = new Date().toISOString();
-    this.errorBox.log(`[${timestamp}] ERROR: ${message}`);
+    this.logsBox.log(`{red-fg}[ERROR]{/red-fg} ${message}`);
     this.screen.render();
   }
 
-  shouldDisplayMessage(message) {
-    const excludedMessages = config.logging.excludedMessages || [];
-    return !excludedMessages.some((excludedMsg) =>
-      message.includes(excludedMsg)
-    );
-  }
-
-  updatePositions(positions) {
-    const tableData = positions.map((pos) => {
-      const profitCents = parseFloat(pos.profitCents);
-      const profit = `${profitCents.toFixed(2)}¢`;
-
-      const stopDescription = pos.stopDescription || 'N/A';
-
-      // Instead of just showing stopPrice, we show stopDescription which may reflect TRAILSTOP
-      const displayedStop = stopDescription;
-
-      const profitTargetsHit = pos.profitTargetsHit
-        ? `${pos.profitTargetsHit}/${pos.totalProfitTargets}`
-        : `0/${pos.totalProfitTargets}`;
-
-      const pyramidLevelsHit = pos.pyramidLevelsHit
-        ? `${pos.pyramidLevelsHit}/${pos.totalPyramidLevels}`
-        : `0/${pos.totalPyramidLevels}`;
-
-      return [
-        pos.symbol,
-        pos.side.toUpperCase(),
-        pos.qty,
-        `$${pos.avgEntryPrice.toFixed(2)}`,
-        pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
-        pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
-        profit,
-        displayedStop, // shows TRAILSTOP info if active
-        profitTargetsHit,
-        pyramidLevelsHit,
-      ];
-    });
-
-    this.positionsTable.setData({
-      headers: [
-        'SYMBOL',
-        'SIDE',
-        'QTY',
-        'AVG ENTRY',
-        'BID',
-        'ASK',
-        'PROFIT',
-        'STOP PRICE',
-        'TARGETS HIT',
-        'PYRAMIDS HIT',
-      ],
-      data: tableData,
-    });
-
-    this.applyRowColors(positions);
-    this.screen.render();
-  }
-
-  updateOrders(orders) {
-    const tableData = orders.map((order) => {
-      const limitPrice = order.limit_price
-        ? `$${parseFloat(order.limit_price).toFixed(2)}`
-        : order.trail_price
-        ? `$${parseFloat(order.trail_price).toFixed(2)}`
-        : 'Market';
-
-      return [
-        order.id,
-        order.symbol,
-        order.side.toUpperCase(),
-        order.type.toUpperCase(),
-        order.qty,
-        limitPrice,
-        order.status.toUpperCase(),
-      ];
-    });
-
-    this.ordersTable.setData({
-      headers: ['ID', 'SYMBOL', 'SIDE', 'TYPE', 'QTY', 'PRICE', 'STATUS'],
-      data: tableData,
-    });
-
-    this.screen.render();
-  }
-
-  applyRowColors(positions) {
-    const rows = this.positionsTable.rows;
-    positions.forEach((pos, index) => {
-      const profitCents = parseFloat(pos.profitCents);
-      if (profitCents > 0) {
-        rows.items[index].style = { fg: 'green' };
-      } else if (profitCents < 0) {
-        rows.items[index].style = { fg: 'red' };
-      } else {
-        rows.items[index].style = { fg: 'yellow' };
-      }
-    });
-  }
-
-  updateAccountSummary(accountSummary) {
-    const content = `### Account Summary
-
-- **Equity**: $${parseFloat(accountSummary.equity).toFixed(2)}
-- **Cash**: $${parseFloat(accountSummary.cash).toFixed(2)}
-- **Day's P&L**: $${parseFloat(accountSummary.pnl).toFixed(2)} (${parseFloat(
-      accountSummary.pnl_percentage
-    ).toFixed(2)}%)
-- **Open P&L**: $${parseFloat(accountSummary.unrealized_pl).toFixed(2)}
-`;
-    this.accountSummaryBox.setMarkdown(content);
-    this.screen.render();
-  }
-
+  /**
+   * Updates the Watchlist Table with Bid, Ask, and Last Trade Prices.
+   * @param {Object} watchlist - The current watchlist data.
+   */
   updateWatchlist(watchlist) {
     const data = Object.keys(watchlist).map((symbol) => {
       const hod = watchlist[symbol].highOfDay;
-      return [symbol, hod !== null ? `$${hod.toFixed(2)}` : 'N/A'];
+      const tradeSubscribed = watchlist[symbol].tradeSubscribed ? 'Y' : 'N';
+      const quoteSubscribed = watchlist[symbol].quoteSubscribed ? 'Y' : 'N';
+      const entryTriggerPrice =
+        watchlist[symbol].entryTriggerPrice !== null
+          ? `$${parseFloat(watchlist[symbol].entryTriggerPrice).toFixed(2)}`
+          : 'N/A';
+      const bidPrice =
+        watchlist[symbol].bidPrice !== null
+          ? `$${parseFloat(watchlist[symbol].bidPrice).toFixed(2)}`
+          : 'N/A';
+      const askPrice =
+        watchlist[symbol].askPrice !== null
+          ? `$${parseFloat(watchlist[symbol].askPrice).toFixed(2)}`
+          : 'N/A';
+      const lastTradePrice =
+        watchlist[symbol].lastTradePrice !== null
+          ? `$${parseFloat(watchlist[symbol].lastTradePrice).toFixed(2)}`
+          : 'N/A';
+      return [
+        symbol,
+        hod !== null ? `$${hod.toFixed(2)}` : 'N/A',
+        tradeSubscribed,
+        quoteSubscribed,
+        entryTriggerPrice,
+        bidPrice, // New data point
+        askPrice, // New data point
+        lastTradePrice, // New data point
+      ];
     });
 
-    this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
-      data: data,
-    });
+    // Prepend header row
+    const tableData = [
+      [
+        'SYMBOL',
+        'HOD',
+        'Trade Subscribed',
+        'Quote Subscribed',
+        'Entry Trigger Price',
+        'Bid Price', // New header
+        'Ask Price', // New header
+        'Last Trade Price', // New header
+      ],
+      ...data,
+    ];
+
+    this.watchlistTable.setData(tableData);
+    this.screen.render();
+  }
+
+  /**
+   * Updates the Orders Table.
+   * @param {Array} orders - The list of current orders.
+   */
+  updateOrders(orders) {
+    const data = orders.map((order) => [
+      order.id,
+      order.symbol,
+      order.type,
+      order.side,
+      order.qty,
+      order.filled_qty || '0',
+      order.limit_price || 'Market',
+      order.status,
+    ]);
+
+    // Prepend header row
+    const tableData = [
+      [
+        'ORDER ID',
+        'SYMBOL',
+        'TYPE',
+        'SIDE',
+        'QTY',
+        'FILLED',
+        'PRICE',
+        'STATUS',
+      ],
+      ...data,
+    ];
+
+    this.ordersTable.setData(tableData);
+    this.screen.render();
+  }
+
+  /**
+   * Updates the Positions Table.
+   * @param {Array} positions - The list of current positions.
+   */
+  updatePositions(positions) {
+    const data = positions.map((pos) => [
+      pos.symbol,
+      pos.qty,
+      `$${parseFloat(pos.avgEntryPrice).toFixed(2)}`,
+      `$${parseFloat(pos.currentPrice).toFixed(2)}`,
+      `${pos.profitCents}¢`,
+      pos.stopDescription,
+      pos.isActive ? 'Active' : 'Closed',
+    ]);
+
+    // Prepend header row
+    const tableData = [
+      [
+        'SYMBOL',
+        'QTY',
+        'AVG ENTRY',
+        'CURRENT PRICE',
+        'PROFIT',
+        'STOP',
+        'STATUS',
+      ],
+      ...data,
+    ];
+
+    this.positionsTable.setData(tableData);
+    this.screen.render();
+  }
+
+  /**
+   * Logs messages to the Logs Box.
+   * @param {string} message - The message to log.
+   */
+  log(message) {
+    this.logsBox.log(message);
     this.screen.render();
   }
 }

@@ -1,3 +1,5 @@
+// index.js
+
 const PolygonClient = require('./polygon');
 const { alpaca } = require('./alpaca');
 const Dashboard = require('./dashboard');
@@ -6,64 +8,29 @@ const logger = require('./logger');
 const config = require('./config');
 const Bottleneck = require('bottleneck');
 
-const polygon = new PolygonClient();
+// Initialize Dashboard
 const dashboard = new Dashboard();
+
+// Initialize Polygon WebSocket Client
+const polygon = new PolygonClient();
+
+// Initialize Order Manager with Dashboard and Polygon Client
 const orderManager = new OrderManager(dashboard, polygon);
 
+// Setup Rate Limiter (if needed elsewhere)
 const limiter = new Bottleneck({
   minTime: 350,
   maxConcurrent: 1,
 });
 
+// Wrap Alpaca API calls with rate limiter (already handled in OrderManager)
 const limitedGetAccount = limiter.wrap(alpaca.getAccount.bind(alpaca));
 const limitedGetPositions = limiter.wrap(alpaca.getPositions.bind(alpaca));
 
-setInterval(async () => {
+// Async Initialization Function
+async function initialize() {
   try {
-    const accountInfo = await limitedGetAccount();
-    const positions = await limitedGetPositions();
-
-    const equity = parseFloat(accountInfo.equity);
-    const lastEquity = parseFloat(accountInfo.last_equity);
-    const pnl = equity - lastEquity;
-    const pnlPercentage = ((pnl / lastEquity) * 100).toFixed(2);
-
-    let unrealizedPL = 0;
-    positions.forEach((position) => {
-      unrealizedPL += parseFloat(position.unrealized_pl);
-    });
-
-    const accountSummary = {
-      equity: equity.toFixed(2),
-      cash: parseFloat(accountInfo.cash).toFixed(2),
-      pnl: pnl.toFixed(2),
-      pnl_percentage: pnlPercentage,
-      unrealized_pl: unrealizedPL.toFixed(2),
-    };
-
-    dashboard.updateAccountSummary(accountSummary);
-  } catch (err) {
-    logger.error(`Error fetching account info: ${err.message}`);
-    dashboard.logError(`Error fetching account info: ${err.message}`);
-  }
-}, 1500);
-
-process.on('uncaughtException', (err) => {
-  logger.error(`Uncaught Exception: ${err.message}\n${err.stack}`);
-  dashboard.logError(`Uncaught Exception: ${err.message}`);
-});
-
-process.on('unhandledRejection', (reason) => {
-  logger.error(`Unhandled Rejection: ${reason}`);
-  dashboard.logError(`Unhandled Rejection: ${reason}`);
-});
-
-async function main() {
-  try {
-    polygon.onQuote = async (symbol, bidPrice, askPrice) => {
-      await orderManager.onQuoteUpdate(symbol, bidPrice, askPrice);
-    };
-
+    // Connect to Polygon WebSocket
     polygon.connect();
 
     logger.info('Polygon WebSocket connected.');
@@ -72,6 +39,18 @@ async function main() {
     logger.info('Started polling for order statuses.');
     dashboard.logInfo('Started polling for order statuses.');
 
+    // Set Callbacks for Polygon Client
+    polygon.onQuote = async (symbol, bidPrice, askPrice) => {
+      // All exit logic uses quote data (bid for calculations)
+      await orderManager.onQuoteUpdate(symbol, bidPrice, askPrice);
+    };
+
+    polygon.onTrade = async (symbol, tradePrice) => {
+      // Entry logic uses trade data to detect if a trade prints above HOD + offset
+      await orderManager.onTradeUpdate(symbol, tradePrice);
+    };
+
+    // Handle graceful shutdown
     process.on('SIGINT', async () => {
       logger.info('Gracefully shutting down...');
       dashboard.logInfo('Gracefully shutting down...');
@@ -87,7 +66,8 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  logger.error(`Error in main: ${err.message}`);
-  dashboard.logError(`Error in main: ${err.message}`);
+// Invoke Initialization
+initialize().catch((err) => {
+  logger.error(`Error in main initialization: ${err.message}`);
+  dashboard.logError(`Error in main initialization: ${err.message}`);
 });
