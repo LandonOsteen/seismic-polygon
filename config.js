@@ -16,11 +16,11 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    baseVolumeRequirement: 50000,
-    morningVolumeRequirement: 50000,
-    gapPercentageRequirement: 30,
+    baseVolumeRequirement: 800000,
+    morningVolumeRequirement: 1000000,
+    gapPercentageRequirement: 25,
     priceRange: { min: 3, max: 12 },
-    initialEntryOffsetCents: -1, // HOD breakout offset
+    initialEntryOffsetCents: 0, // HOD breakout offset
     entryLimitOffsetCents: 10, // Additional limit offset for entry orders
     initialShareSize: 3000,
     trailingStopIncrementCents: 1,
@@ -28,7 +28,7 @@ module.exports = {
     openingOrderCooldownSeconds: 5,
   },
   orderSettings: {
-    limitOffsetCents: 40,
+    limitOffsetCents: 10,
     profitTargets: [
       { targetCents: 8, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
@@ -37,7 +37,7 @@ module.exports = {
       { targetCents: 50, percentToClose: 50 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -5 },
+      { profitTargetsHit: 0, stopCents: -6 },
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
     ],
@@ -55,7 +55,7 @@ module.exports = {
   pollingIntervals: {
     orderStatus: 1000,
     positionRefresh: 2000,
-    watchlistRefresh: 15000,
+    watchlistRefresh: 10000,
   },
   logging: {
     level: 'info',

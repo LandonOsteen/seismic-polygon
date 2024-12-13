@@ -13501,3 +13501,27 @@
 2024-12-13T20:27:32.668Z [INFO]: Unsubscribed from PTON quotes.
 2024-12-13T20:27:45.160Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-13T20:28:00.163Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:45:03.078Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:45:03.088Z [INFO]: Started polling for order statuses.
+2024-12-13T21:45:03.273Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T21:45:03.274Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:45:03.324Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T21:46:17.943Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:46:17.951Z [INFO]: Started polling for order statuses.
+2024-12-13T21:46:18.117Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T21:46:18.118Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:46:18.169Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T21:46:18.372Z [INFO]: Subscribed to AVR quotes.
+2024-12-13T21:46:18.972Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T21:46:19.374Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T21:46:19.636Z [INFO]: Subscribed to SNES quotes.
+2024-12-13T21:46:27.957Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T21:47:47.075Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:47:47.085Z [INFO]: Started polling for order statuses.
+2024-12-13T21:47:47.268Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T21:47:47.269Z [INFO]: Polygon WebSocket connected.
+2024-12-13T21:47:47.320Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T21:47:47.574Z [INFO]: Subscribed to AVR quotes.
+2024-12-13T21:47:48.114Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T21:47:48.495Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T21:47:48.796Z [INFO]: Subscribed to SNES quotes.

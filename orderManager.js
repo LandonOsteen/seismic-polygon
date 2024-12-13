@@ -235,7 +235,7 @@ class OrderManager {
           continue;
 
         // Use min.v as the volume requirement
-        const volume = gainer.min.v || 0;
+        const volume = gainer.min.av || 0;
         this.topGainers[symbol] = {
           symbol,
           dayClose: currentPrice,
