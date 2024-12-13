@@ -13452,3 +13452,52 @@
 2024-12-10T18:59:33.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-10T18:59:48.291Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-10T19:00:03.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:24:56.957Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:24:56.960Z [INFO]: Started polling for order statuses.
+2024-12-13T20:24:57.127Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T20:24:57.136Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T20:24:57.138Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:24:57.192Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T20:24:58.096Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T20:25:11.974Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:25:13.039Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:25:13.849Z [INFO]: Attempting to place breakout anticipation entry order: {"symbol":"IPHA","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.14","extended_hours":true,"client_order_id":"ENTRY-f1378648069f9e2e"}
+2024-12-13T20:25:14.027Z [INFO]: Entry order placed for 3000 shares of IPHA at $3.14. Order ID: 61d87d9c-3568-4286-8570-ceaf5e362748
+2024-12-13T20:25:15.125Z [INFO]: Position added: IPHA | Qty: 3000 | Avg Entry: $3.06
+2024-12-13T20:25:26.965Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:25:31.051Z [INFO]: Stop condition met for IPHA. Closing position.
+2024-12-13T20:25:31.054Z [INFO]: Closing position with limit order: {"symbol":"IPHA","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.56","extended_hours":true,"client_order_id":"CLOSE-9ef2e3c7dccab8c5"}
+2024-12-13T20:25:31.848Z [INFO]: Limit order placed to close position in IPHA. Order ID: 8aa87edb-28c9-453e-8017-ca166ff27c84
+2024-12-13T20:25:32.203Z [INFO]: Position removed: IPHA
+2024-12-13T20:25:41.969Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:25:56.971Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:26:11.971Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:26:26.971Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:26:41.974Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:26:56.976Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:27:03.253Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:27:03.258Z [INFO]: Started polling for order statuses.
+2024-12-13T20:27:03.419Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T20:27:03.434Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T20:27:03.435Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:27:03.484Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T20:27:03.957Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T20:27:04.307Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:27:18.257Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:27:30.149Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:27:30.157Z [INFO]: Started polling for order statuses.
+2024-12-13T20:27:30.317Z [INFO]: Position added: PTON | Qty: 5000 | Avg Entry: $9.69
+2024-12-13T20:27:30.335Z [INFO]: Polygon WebSocket connection opened.
+2024-12-13T20:27:30.336Z [INFO]: Polygon WebSocket connected.
+2024-12-13T20:27:30.379Z [INFO]: Polygon WebSocket authenticated.
+2024-12-13T20:27:30.847Z [INFO]: Subscribed to WKEY quotes.
+2024-12-13T20:27:30.867Z [INFO]: Stop condition met for PTON. Closing position.
+2024-12-13T20:27:30.871Z [INFO]: Closing position with limit order: {"symbol":"PTON","qty":"5000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.21","extended_hours":true,"client_order_id":"CLOSE-085f1f0e0d2e69be"}
+2024-12-13T20:27:31.037Z [INFO]: Limit order placed to close position in PTON. Order ID: 8d10006c-f4a9-44e2-b237-e1c5d4ea15f3
+2024-12-13T20:27:31.173Z [INFO]: Subscribed to IPHA quotes.
+2024-12-13T20:27:31.741Z [INFO]: Order 8d10006c-f4a9-44e2-b237-e1c5d4ea15f3 filled 4727 qty for PTON. Remaining qty: 273
+2024-12-13T20:27:32.657Z [INFO]: Order 8d10006c-f4a9-44e2-b237-e1c5d4ea15f3 filled 4891 qty for PTON. Remaining qty: -4782
+2024-12-13T20:27:32.664Z [INFO]: Position removed: PTON
+2024-12-13T20:27:32.668Z [INFO]: Unsubscribed from PTON quotes.
+2024-12-13T20:27:45.160Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-13T20:28:00.163Z [INFO]: Dynamic config reloaded. Updated override symbols.

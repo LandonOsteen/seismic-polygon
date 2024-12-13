@@ -20,7 +20,7 @@ module.exports = {
     morningVolumeRequirement: 50000,
     gapPercentageRequirement: 30,
     priceRange: { min: 3, max: 12 },
-    initialEntryOffsetCents: 1, // HOD breakout offset
+    initialEntryOffsetCents: -1, // HOD breakout offset
     entryLimitOffsetCents: 10, // Additional limit offset for entry orders
     initialShareSize: 3000,
     trailingStopIncrementCents: 1,
@@ -37,7 +37,7 @@ module.exports = {
       { targetCents: 50, percentToClose: 50 },
     ],
     dynamicStops: [
-      { profitTargetsHit: 0, stopCents: -10 },
+      { profitTargetsHit: 0, stopCents: -5 },
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
     ],
