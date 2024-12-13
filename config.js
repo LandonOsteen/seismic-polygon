@@ -16,37 +16,40 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    baseVolumeRequirement: 50000,
-    morningVolumeRequirement: 50000,
-    gapPercentageRequirement: 20,
-    priceRange: { min: 3, max: 12 },
+    baseVolumeRequirement: 20000,
+    morningVolumeRequirement: 20000,
+    gapPercentageRequirement: 10,
+    priceRange: { min: 1.5, max: 15 },
     initialEntryOffsetCents: 1,
     entryLimitOffsetCents: 10,
-    initialShareSize: 3000,
-    openingOrderCooldownSeconds: 5,
+    initialShareSize: 5000,
+    openingOrderCooldownSeconds: 4,
     initialStopBelowHodCents: 3,
     trailingStopIntervalSeconds: 5,
 
-    // New configurable parameters
-    minAccumulatedVolume: 50000, // Minimum accumulated volume requirement for av
-    minOneMinuteRange: 0.01, // Minimum 1-minute range required
+    minAccumulatedVolume: 1500000, // Minimum accumulated volume requirement
+    minOneMinuteRange: 0.03, // Minimum 1-minute range required
+    maxSpreadCents: 5, // Maximum allowed spread in cents (e.g., 10 = $0.10)
   },
   orderSettings: {
-    limitOffsetCents: 40,
+    limitOffsetCents: 15,
     profitTargets: [
-      { targetCents: 8, percentToClose: 10 },
+      { targetCents: 6, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
       { targetCents: 20, percentToClose: 40 },
       { targetCents: 30, percentToClose: 50 },
-      { targetCents: 50, percentToClose: 50 },
     ],
     dynamicStops: [
+      { profitTargetsHit: 0, stopCents: -6 },
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
+      { profitTargetsHit: 4, stopCents: 20 },
     ],
     pyramidLevels: [
-      { addInCents: 3, percentToAdd: 40, offsetCents: 10 },
-      { addInCents: 12, percentToAdd: 20, offsetCents: 6 },
+      { addInCents: 3, percentToAdd: 50, offsetCents: 10 },
+      { addInCents: 8, percentToAdd: 20, offsetCents: 10 },
+      { addInCents: 12, percentToAdd: 20, offsetCents: 10 },
+      { addInCents: 25, percentToAdd: 20, offsetCents: 10 },
     ],
   },
   orderTimeouts: {
@@ -58,7 +61,7 @@ module.exports = {
   pollingIntervals: {
     orderStatus: 1000,
     positionRefresh: 2000,
-    watchlistRefresh: 15000,
+    watchlistRefresh: 5000,
   },
   logging: {
     level: 'info',

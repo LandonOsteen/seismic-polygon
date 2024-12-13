@@ -1,11 +1,10 @@
-const PolygonClient = require('./polygon');
 const { alpaca } = require('./alpaca');
+const config = require('./config');
 const Dashboard = require('./dashboard');
 const OrderManager = require('./orderManager');
+const PolygonClient = require('./polygon');
 const logger = require('./logger');
-const config = require('./config');
 const Bottleneck = require('bottleneck');
-
 const polygon = new PolygonClient();
 const dashboard = new Dashboard();
 const orderManager = new OrderManager(dashboard, polygon);
@@ -15,7 +14,48 @@ const limiter = new Bottleneck({
   maxConcurrent: 1,
 });
 
-const limitedGetAccount = limiter.wrap(alpaca.getAccount.bind(alpaca));
+async function retryOperation(operation, retries = 5, delay = 1000) {
+  try {
+    return await operation();
+  } catch (err) {
+    if (retries <= 0) throw err;
+    if (
+      err.code === 'ECONNRESET' ||
+      (err.response &&
+        (err.response.status === 429 ||
+          (err.response.status >= 500 && err.response.status < 600)))
+    ) {
+      const jitter = Math.random() * 1000;
+      const totalDelay = delay + jitter;
+      let message = '';
+
+      if (err.code === 'ECONNRESET') {
+        message = `ECONNRESET encountered. Retrying in ${totalDelay.toFixed(
+          0
+        )}ms...`;
+      } else if (err.response && err.response.status === 429) {
+        message = `Rate limit hit. Retrying in ${totalDelay.toFixed(0)}ms...`;
+      } else if (
+        err.response &&
+        err.response.status >= 500 &&
+        err.response.status < 600
+      ) {
+        message = `Server error ${
+          err.response.status
+        }. Retrying in ${totalDelay.toFixed(0)}ms...`;
+      }
+
+      logger.warn(message);
+      dashboard.logWarning(message);
+      await new Promise((res) => setTimeout(res, totalDelay));
+      return retryOperation(operation, retries - 1, delay * 2);
+    }
+    throw err;
+  }
+}
+
+const limitedGetAccount = async () =>
+  retryOperation(() => limiter.schedule(() => alpaca.getAccount()));
 const limitedGetPositions = limiter.wrap(alpaca.getPositions.bind(alpaca));
 
 setInterval(async () => {
@@ -60,10 +100,6 @@ process.on('unhandledRejection', (reason) => {
 
 async function main() {
   try {
-    polygon.onQuote = async (symbol, bidPrice, askPrice) => {
-      await orderManager.onQuoteUpdate(symbol, bidPrice, askPrice);
-    };
-
     polygon.connect();
 
     logger.info('Polygon WebSocket connected.');

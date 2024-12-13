@@ -1,4 +1,3 @@
-// dashboard.js
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -11,14 +10,12 @@ class Dashboard {
       title: 'Trading Exit System Dashboard',
     });
 
-    // Updated grid to have 16 rows to accommodate the Watchlist
     this.grid = new contrib.grid({
       rows: 16,
       cols: 12,
       screen: this.screen,
     });
 
-    // Positions Table
     this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
       keys: true,
       fg: 'white',
@@ -53,14 +50,12 @@ class Dashboard {
       data: [],
     });
 
-    // Account Summary
     this.accountSummaryBox = this.grid.set(0, 7, 4, 5, contrib.markdown, {
       label: ' ACCOUNT SUMMARY ',
       border: { type: 'line', fg: 'cyan' },
       style: { fg: 'white' },
     });
 
-    // Info Box
     this.infoBox = this.grid.set(4, 0, 4, 5, contrib.log, {
       fg: 'green',
       selectedFg: 'green',
@@ -72,7 +67,6 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Orders Table
     this.ordersTable = this.grid.set(4, 5, 4, 7, contrib.table, {
       keys: true,
       fg: 'magenta',
@@ -95,7 +89,6 @@ class Dashboard {
       data: [],
     });
 
-    // Errors Box
     this.errorBox = this.grid.set(8, 0, 4, 5, contrib.log, {
       fg: 'red',
       selectedFg: 'red',
@@ -107,7 +100,6 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Warnings Box
     this.warningBox = this.grid.set(8, 5, 4, 7, contrib.log, {
       fg: 'yellow',
       selectedFg: 'yellow',
@@ -119,14 +111,16 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Watchlist Table
+    // Updated watchlist table columns:
+    // Symbol | HOD | B/O TRIG | Q_SUB | T_SUB
     this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
       label: ' WATCHLIST & HOD ',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      columnWidth: [10, 10],
+      // Extra columns for breakout trigger, quote sub, trade sub
+      columnWidth: [10, 10, 10, 7, 7],
       style: {
         header: { fg: 'cyan', bold: true },
         cell: { fg: 'white' },
@@ -134,11 +128,10 @@ class Dashboard {
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
+      headers: ['SYMBOL', 'HOD', 'B/O TRIG', 'Q_SUB', 'T_SUB'],
       data: [],
     });
 
-    // Exit Keys
     this.screen.key(['escape', 'q', 'C-c'], () => {
       return process.exit(0);
     });
@@ -177,10 +170,8 @@ class Dashboard {
     const tableData = positions.map((pos) => {
       const profitCents = parseFloat(pos.profitCents);
       const profit = `${profitCents.toFixed(2)}¢`;
-
       const stopDescription = pos.stopDescription || 'N/A';
 
-      // Instead of just showing stopPrice, we show stopDescription which may reflect TRAILSTOP
       const displayedStop = stopDescription;
 
       const profitTargetsHit = pos.profitTargetsHit
@@ -191,6 +182,9 @@ class Dashboard {
         ? `${pos.pyramidLevelsHit}/${pos.totalPyramidLevels}`
         : `0/${pos.totalPyramidLevels}`;
 
+      // STOP PRICE column now can show "TRAILSTOP @ price" if trailing stop is active
+      // Already integrated in stopDescription.
+
       return [
         pos.symbol,
         pos.side.toUpperCase(),
@@ -199,7 +193,7 @@ class Dashboard {
         pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
         pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
         profit,
-        displayedStop, // shows TRAILSTOP info if active
+        displayedStop, // shows TRAILSTOP info if active or other stop info
         profitTargetsHit,
         pyramidLevelsHit,
       ];
@@ -281,13 +275,18 @@ class Dashboard {
   }
 
   updateWatchlist(watchlist) {
+    // watchlist is an object: symbol -> {highOfDay, breakoutTriggerPrice, quoteSubscribed, tradeSubscribed, ...}
     const data = Object.keys(watchlist).map((symbol) => {
-      const hod = watchlist[symbol].highOfDay;
-      return [symbol, hod !== null ? `$${hod.toFixed(2)}` : 'N/A'];
+      const w = watchlist[symbol];
+      const hod = w.highOfDay !== null ? `$${w.highOfDay.toFixed(2)}` : 'N/A';
+      const breakoutTrigger = w.breakoutTriggerPrice || 'N/A';
+      const qSub = w.quoteSubscribed || 'N'; // default N if undefined
+      const tSub = w.tradeSubscribed || 'N'; // default N if undefined
+      return [symbol, hod, breakoutTrigger, qSub, tSub];
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
+      headers: ['SYMBOL', 'HOD', 'B/O TRIG', 'Q_SUB', 'T_SUB'],
       data: data,
     });
     this.screen.render();

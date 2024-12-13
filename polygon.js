@@ -7,9 +7,9 @@ class PolygonClient {
     this.apiKey = config.polygon.apiKey;
     this.ws = null;
     this.subscribedSymbols = new Set();
-    this.subscribedTradeSymbols = new Set(); // Track trade subscriptions
+    this.subscribedTradeSymbols = new Set(); // Track trade-level subscriptions
     this.onQuote = null;
-    this.onTrade = null; // New callback
+    this.onTrade = null;
   }
 
   connect() {
@@ -33,7 +33,6 @@ class PolygonClient {
         if (msg.ev === 'status') {
           if (msg.status === 'auth_success') {
             logger.info('Polygon WebSocket authenticated.');
-            // Resubscribe to quotes
             if (this.subscribedSymbols.size > 0) {
               const symbols = Array.from(this.subscribedSymbols)
                 .map((sym) => `Q.${sym}`)
@@ -42,7 +41,6 @@ class PolygonClient {
                 JSON.stringify({ action: 'subscribe', params: symbols })
               );
             }
-            // Resubscribe to trades
             if (this.subscribedTradeSymbols.size > 0) {
               const tradeSymbols = Array.from(this.subscribedTradeSymbols)
                 .map((sym) => `T.${sym}`)
@@ -59,8 +57,8 @@ class PolygonClient {
           }
         } else if (msg.ev === 'Q' && this.onQuote) {
           const symbol = msg.sym;
-          const bidPrice = parseFloat(msg.bp);
-          const askPrice = parseFloat(msg.ap);
+          const askPrice = parseFloat(msg.P); // P = ask
+          const bidPrice = parseFloat(msg.p); // p = bid
           this.onQuote(symbol, bidPrice, askPrice);
         } else if (msg.ev === 'T' && this.onTrade) {
           const symbol = msg.sym;
@@ -92,6 +90,18 @@ class PolygonClient {
     }
   }
 
+  subscribeTrades(symbol) {
+    if (!this.subscribedTradeSymbols.has(symbol)) {
+      this.subscribedTradeSymbols.add(symbol);
+      if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+        this.ws.send(
+          JSON.stringify({ action: 'subscribe', params: `T.${symbol}` })
+        );
+        logger.info(`Subscribed to ${symbol} trades.`);
+      }
+    }
+  }
+
   unsubscribe(symbol) {
     if (this.subscribedSymbols.has(symbol)) {
       this.subscribedSymbols.delete(symbol);
@@ -109,18 +119,6 @@ class PolygonClient {
           JSON.stringify({ action: 'unsubscribe', params: `T.${symbol}` })
         );
         logger.info(`Unsubscribed from ${symbol} trades.`);
-      }
-    }
-  }
-
-  subscribeTrades(symbol) {
-    if (!this.subscribedTradeSymbols.has(symbol)) {
-      this.subscribedTradeSymbols.add(symbol);
-      if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-        this.ws.send(
-          JSON.stringify({ action: 'subscribe', params: `T.${symbol}` })
-        );
-        logger.info(`Subscribed to ${symbol} trades.`);
       }
     }
   }
