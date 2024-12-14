@@ -46,3 +46,9 @@
 2024-12-11T19:37:53.125Z [ERROR]: Error fetching account info: read ETIMEDOUT
 2024-12-11T19:38:44.158Z [ERROR]: Error polling order statuses: read ETIMEDOUT
 2024-12-11T19:38:46.686Z [ERROR]: Error fetching account info: read ETIMEDOUT
+2024-12-13T22:19:11.060Z [ERROR]: Error initializing existing positions: this.polygon.subscribe is not a function
+2024-12-13T22:19:11.337Z [ERROR]: Error adding symbol AVR to watchlist: this.polygon.subscribe is not a function
+2024-12-13T22:19:11.856Z [ERROR]: Error adding symbol WKEY to watchlist: this.polygon.subscribe is not a function
+2024-12-13T22:19:12.238Z [ERROR]: Error adding symbol IPHA to watchlist: this.polygon.subscribe is not a function
+2024-12-13T22:19:12.426Z [ERROR]: Error adding symbol UBXG to watchlist: this.polygon.subscribe is not a function
+2024-12-13T22:19:12.704Z [ERROR]: Error adding symbol SNES to watchlist: this.polygon.subscribe is not a function
