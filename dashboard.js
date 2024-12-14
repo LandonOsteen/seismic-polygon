@@ -11,7 +11,6 @@ class Dashboard {
       title: 'Trading Exit System Dashboard',
     });
 
-    // Updated grid to have 16 rows to accommodate the Watchlist
     this.grid = new contrib.grid({
       rows: 16,
       cols: 12,
@@ -19,6 +18,8 @@ class Dashboard {
     });
 
     // Positions Table
+    // We remove the extra columns related to targets and pyramids
+    // New columns: SYMBOL, SIDE, QTY, AVG ENTRY, BID, ASK, PROFIT, STOP PRICE
     this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
       keys: true,
       fg: 'white',
@@ -30,7 +31,8 @@ class Dashboard {
       height: '100%',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      columnWidth: [8, 6, 6, 10, 10, 10, 9, 20, 16, 16, 25],
+      // Adjust columnWidth to match reduced columns
+      columnWidth: [8, 6, 6, 10, 10, 10, 9, 20],
       style: {
         header: { fg: 'cyan', bold: true },
         cell: { fg: 'white' },
@@ -47,21 +49,16 @@ class Dashboard {
         'ASK',
         'PROFIT',
         'STOP PRICE',
-        'TARGETS HIT',
-        'PYRAMIDS HIT',
-        'NEXT PYRAMID LEVEL',
       ],
       data: [],
     });
 
-    // Account Summary
     this.accountSummaryBox = this.grid.set(0, 7, 4, 5, contrib.markdown, {
       label: ' ACCOUNT SUMMARY ',
       border: { type: 'line', fg: 'cyan' },
       style: { fg: 'white' },
     });
 
-    // Info Box
     this.infoBox = this.grid.set(4, 0, 4, 5, contrib.log, {
       fg: 'green',
       selectedFg: 'green',
@@ -73,7 +70,6 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Orders Table
     this.ordersTable = this.grid.set(4, 5, 4, 7, contrib.table, {
       keys: true,
       fg: 'magenta',
@@ -96,7 +92,6 @@ class Dashboard {
       data: [],
     });
 
-    // Errors Box
     this.errorBox = this.grid.set(8, 0, 4, 5, contrib.log, {
       fg: 'red',
       selectedFg: 'red',
@@ -108,7 +103,6 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Warnings Box
     this.warningBox = this.grid.set(8, 5, 4, 7, contrib.log, {
       fg: 'yellow',
       selectedFg: 'yellow',
@@ -120,7 +114,7 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Watchlist Table
+    // Watchlist remains unchanged
     this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
@@ -139,7 +133,6 @@ class Dashboard {
       data: [],
     });
 
-    // Exit Keys
     this.screen.key(['escape', 'q', 'C-c'], () => {
       return process.exit(0);
     });
@@ -181,25 +174,6 @@ class Dashboard {
 
       const stopDescription = pos.stopDescription || 'N/A';
 
-      // Instead of just showing stopPrice, we show stopDescription which may reflect TRAILSTOP
-      const displayedStop = stopDescription;
-
-      const profitTargetsHit = pos.profitTargetsHit
-        ? `${pos.profitTargetsHit}/${pos.totalProfitTargets}`
-        : `0/${pos.totalProfitTargets}`;
-
-      const pyramidLevelsHit = pos.pyramidLevelsHit
-        ? `${pos.pyramidLevelsHit}/${pos.totalPyramidLevels}`
-        : `0/${pos.totalPyramidLevels}`;
-
-      // Calculate next pyramid level
-      let nextPyramidLevel = 'N/A';
-      if (pos.pyramidLevelsHit < pos.totalPyramidLevels) {
-        const nextLevel =
-          config.orderSettings.pyramidLevels[pos.pyramidLevelsHit];
-        nextPyramidLevel = `Add ${nextLevel.percentToAdd}% at +${nextLevel.addInCents}¢`;
-      }
-
       return [
         pos.symbol,
         pos.side.toUpperCase(),
@@ -208,10 +182,7 @@ class Dashboard {
         pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
         pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
         profit,
-        displayedStop, // shows TRAILSTOP info if active
-        profitTargetsHit,
-        pyramidLevelsHit,
-        nextPyramidLevel, // New column for next pyramid level
+        stopDescription,
       ];
     });
 
@@ -225,9 +196,6 @@ class Dashboard {
         'ASK',
         'PROFIT',
         'STOP PRICE',
-        'TARGETS HIT',
-        'PYRAMIDS HIT',
-        'NEXT PYRAMID LEVEL',
       ],
       data: tableData,
     });

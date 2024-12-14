@@ -25420,3 +25420,9 @@
 2024-12-14T16:06:24.955Z [INFO]: Polygon WebSocket authenticated.
 2024-12-14T16:06:25.080Z [INFO]: Subscribed to WKEY quote data.
 2024-12-14T16:06:25.258Z [INFO]: Subscribed to UBXG quote data.
+2024-12-14T17:12:30.149Z [INFO]: Polygon WebSocket connected.
+2024-12-14T17:12:30.152Z [INFO]: Started polling for order statuses.
+2024-12-14T17:12:30.339Z [INFO]: Polygon WebSocket connection opened.
+2024-12-14T17:12:30.341Z [INFO]: Polygon WebSocket connected.
+2024-12-14T17:12:30.389Z [INFO]: Polygon WebSocket authenticated.
+2024-12-14T17:12:30.532Z [INFO]: Subscribed to WKEY quote data.
