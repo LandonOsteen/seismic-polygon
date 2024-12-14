@@ -1,5 +1,3 @@
-// config.js
-
 require('dotenv').config();
 
 const paperTrading = process.env.PAPER_TRADING === 'true';
@@ -21,21 +19,19 @@ module.exports = {
     baseVolumeRequirement: 1000000,
     morningVolumeRequirement: 1500000,
     gapPercentageRequirement: 20,
-    priceRange: { min: 2, max: 10 },
+    priceRange: { min: 2, max: 12 },
     initialEntryOffsetCents: 0, // HOD breakout offset
     entryLimitOffsetCents: 20, // Additional limit offset for entry orders
     initialShareSize: 5000,
     trailingStopIncrementCents: 2,
     initialTrailingStopOffsetCents: 12,
     openingOrderCooldownSeconds: 5,
-    tradeProximityCents: 15,
-
-    // Added Settings for Dynamic Initial Stop Based on HOD
+    tradeProximityCents: 15, // Distance from HOD to start trade-level subscriptions
     initialStopOffsetCents: 2, // Number of cents below HOD for initial stop
     dynamicStopThresholdCents: 1, // Minimum profit targets hit before dynamic stop adjustment
   },
   orderSettings: {
-    limitOffsetCents: 10, // Offset for placing LIMIT orders
+    limitOffsetCents: 5, // Offset for placing LIMIT orders
     profitTargets: [
       { targetCents: 5, percentToClose: 10 },
       { targetCents: 10, percentToClose: 20 },
@@ -48,23 +44,26 @@ module.exports = {
     pyramidLevels: [
       { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 2 },
       { priceIncreaseCents: 12, percentToAdd: 20, offsetCents: 2 },
-      // Add more levels as needed
     ],
   },
+  watchlistFilters: {
+    maxSpreadCents: 6, // Maximum allowed spread in cents
+    minCandleRangeCents: 5, // Minimum required candle range in cents
+  },
   orderTimeouts: {
-    limit: 4000, // Timeout for LIMIT orders in milliseconds
+    limit: 4000,
     pyramid: 4000,
     close: 4000,
     entry: 4000,
   },
   pollingIntervals: {
-    orderStatus: 3000, // Increased to 3 seconds
-    positionRefresh: 5000, // Increased to 5 seconds
-    watchlistRefresh: 15000, // 15 seconds
+    orderStatus: 3000,
+    positionRefresh: 5000,
+    watchlistRefresh: 15000,
   },
   statePersistence: {
-    saveInterval: 60000, // Save state every 60 seconds
-    stateFilePath: 'systemState.json', // Path to the state file
+    saveInterval: 60000,
+    stateFilePath: 'systemState.json',
   },
   logging: {
     level: 'info',
@@ -74,6 +73,5 @@ module.exports = {
   timeZone: 'America/New_York',
 
   overrideAddSymbols: [],
-
   overrideRemoveSymbols: [],
 };

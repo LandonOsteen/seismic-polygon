@@ -1,5 +1,3 @@
-// OrderManager.js
-
 const { alpaca } = require('./alpaca');
 const config = require('./config');
 const logger = require('./logger');
@@ -85,8 +83,6 @@ class OrderManager {
       const errorMsg = `Unhandled Rejection at: ${promise}, reason: ${reason}`;
       logger.error(errorMsg);
       this.dashboard.logError(errorMsg);
-      // Optionally, you can decide to exit the process or attempt recovery
-      // process.exit(1);
     });
   }
 
@@ -163,8 +159,8 @@ class OrderManager {
     for (const symbol of this.overrideRemoveList) {
       if (this.watchlist[symbol]) {
         if (!this.positions[symbol]) {
-          this.polygon.unsubscribeTrade(symbol); // Unsubscribe from trade-level data
-          this.polygon.unsubscribeQuote(symbol); // Unsubscribe from quote data if subscribed
+          this.polygon.unsubscribeTrade(symbol);
+          this.polygon.unsubscribeQuote(symbol);
         }
         delete this.watchlist[symbol];
         this.dashboard.logInfo(
@@ -182,11 +178,11 @@ class OrderManager {
           lastEntryTime: null,
           hasPosition: !!this.positions[symbol],
           hasPendingEntryOrder: false,
-          isHODFrozen: false, // For freezing HOD during pending entry
-          executedPyramidLevels: [], // Track executed pyramid levels
-          isSubscribedToTrade: false, // Track subscription status
+          isHODFrozen: false,
+          executedPyramidLevels: [],
+          isSubscribedToTrade: false,
         };
-        this.polygon.subscribeQuote(symbol); // Subscribe to quote data
+        this.polygon.subscribeQuote(symbol);
         this.dashboard.logInfo(
           `Symbol ${symbol} added to watchlist due to override add list.`
         );
@@ -221,17 +217,16 @@ class OrderManager {
       this.topGainers = {};
 
       const currentVolumeRequirement = this.getCurrentVolumeRequirement();
+      const { maxSpreadCents, minCandleRangeCents } = config.watchlistFilters;
 
       for (const gainer of gainers) {
         const symbol = gainer.ticker.toUpperCase();
         if (symbol.includes('.')) continue;
 
-        // Use todaysChangePerc as gapPercentageRequirement
         const gapPerc = gainer.todaysChangePerc;
         if (gapPerc < config.strategySettings.gapPercentageRequirement)
           continue;
 
-        // Use lastQuote.P as the price reference point
         const currentPrice = gainer.lastQuote.P || 0;
         if (
           currentPrice < config.strategySettings.priceRange.min ||
@@ -239,8 +234,21 @@ class OrderManager {
         )
           continue;
 
-        // Use min.v as the volume requirement
-        const volume = gainer.min.av || 0;
+        const askPrice = gainer.lastQuote.P;
+        const bidPrice = gainer.lastQuote.p;
+        if (askPrice === undefined || bidPrice === undefined) continue;
+
+        const spread = askPrice - bidPrice;
+        if (spread > maxSpreadCents / 100) continue;
+
+        const minData = gainer.min;
+        if (!minData || minData.h === undefined || minData.l === undefined)
+          continue;
+
+        const candleRange = minData.h - minData.l;
+        if (candleRange < minCandleRangeCents / 100) continue;
+
+        const volume = minData.av || 0;
         this.topGainers[symbol] = {
           symbol,
           dayClose: currentPrice,
@@ -283,18 +291,18 @@ class OrderManager {
           lastEntryTime: null,
           hasPosition: !!this.positions[symbol],
           hasPendingEntryOrder: false,
-          isHODFrozen: false, // For freezing HOD during pending entry
-          executedPyramidLevels: [], // Track executed pyramid levels
-          isSubscribedToTrade: false, // Track subscription status
+          isHODFrozen: false,
+          executedPyramidLevels: [],
+          isSubscribedToTrade: false,
         };
-        this.polygon.subscribeQuote(symbol); // Subscribe to quote data
+        this.polygon.subscribeQuote(symbol);
       } else {
         this.watchlist[symbol].highOfDay = hod;
         this.watchlist[symbol].hasPosition = !!this.positions[symbol];
         if (this.watchlist[symbol].hasPendingEntryOrder === undefined) {
           this.watchlist[symbol].hasPendingEntryOrder = false;
           this.watchlist[symbol].isHODFrozen = false;
-          this.watchlist[symbol].executedPyramidLevels = []; // Initialize if undefined
+          this.watchlist[symbol].executedPyramidLevels = [];
         }
       }
       this.dashboard.updateWatchlist(this.watchlist);
@@ -307,8 +315,8 @@ class OrderManager {
 
   removeSymbolFromWatchlist(symbol) {
     if (this.watchlist[symbol] && !this.positions[symbol]) {
-      this.polygon.unsubscribeTrade(symbol); // Unsubscribe from trade-level data
-      this.polygon.unsubscribeQuote(symbol); // Unsubscribe from quote data
+      this.polygon.unsubscribeTrade(symbol);
+      this.polygon.unsubscribeQuote(symbol);
       delete this.watchlist[symbol];
       this.dashboard.logInfo(`Symbol ${symbol} removed from watchlist.`);
       this.dashboard.updateWatchlist(this.watchlist);
@@ -323,12 +331,10 @@ class OrderManager {
     const { baseVolumeRequirement, morningVolumeRequirement } =
       config.strategySettings;
 
-    // Pre-market: before 9:30 AM
     if (hour < 9 || (hour === 9 && minute < 30)) {
       return baseVolumeRequirement;
     }
 
-    // From 9:30 AM to 11:00 AM
     if (
       (hour === 9 && minute >= 30) ||
       hour === 10 ||
@@ -337,7 +343,6 @@ class OrderManager {
       return morningVolumeRequirement;
     }
 
-    // After 11:00 AM
     if (hour > 11 || (hour === 11 && minute > 0)) {
       return baseVolumeRequirement;
     }
@@ -345,121 +350,10 @@ class OrderManager {
     return baseVolumeRequirement;
   }
 
-  calculateDynamicStopPrice(profitTargetsHit, avgEntryPrice, side) {
-    const dynamicStops = config.orderSettings.dynamicStops
-      .filter((ds) => ds.profitTargetsHit <= profitTargetsHit)
-      .sort((a, b) => b.profitTargetsHit - a.profitTargetsHit);
-
-    if (dynamicStops.length > 0) {
-      const dynamicStop = dynamicStops[0];
-      const stopCents = dynamicStop.stopCents;
-      const stopPrice =
-        side === 'buy'
-          ? avgEntryPrice - stopCents / 100
-          : avgEntryPrice + stopCents / 100;
-      return { stopPrice, stopCents };
-    } else {
-      return null;
-    }
-  }
-
-  async addPosition(position) {
-    const symbol = position.symbol.toUpperCase();
-    const qty = Math.abs(parseFloat(position.qty));
-    const side = position.side === 'long' ? 'buy' : 'sell';
-    const avgEntryPrice = parseFloat(position.avg_entry_price);
-
-    const w = this.watchlist[symbol];
-    if (!w) {
-      const msg = `Watchlist entry missing for ${symbol} while adding position.`;
-      logger.warn(msg);
-      this.dashboard.logWarning(msg);
-      return;
-    }
-
-    // Retrieve HOD from watchlist
-    const hod = w.highOfDay;
-    if (!hod) {
-      const msg = `High of Day missing for ${symbol} while adding position.`;
-      logger.warn(msg);
-      this.dashboard.logWarning(msg);
-      return;
-    }
-
-    // Calculate initial stop based on HOD minus offset cents
-    const initialStopOffsetCents =
-      config.strategySettings.initialStopOffsetCents;
-    const initialStopPrice = hod - initialStopOffsetCents / 100;
-
-    this.positions[symbol] = {
-      symbol,
-      qty,
-      initialQty: qty,
-      side,
-      avgEntryPrice,
-      currentBid: parseFloat(position.current_price) - 0.01,
-      currentAsk: parseFloat(position.current_price) + 0.01,
-      currentPrice: parseFloat(position.current_price),
-      profitCents: 0,
-      profitTargetsHit: 0,
-      totalProfitTargets: config.orderSettings.profitTargets.length,
-      isActive: true,
-      isProcessing: false,
-      initialHOD: hod, // Store initial HOD for stop calculation
-      stopPrice: initialStopPrice, // Set initial stop price based on HOD
-      stopCents: initialStopOffsetCents,
-      stopDescription: `Initial Stop @ $${initialStopPrice.toFixed(
-        2
-      )} (${initialStopOffsetCents}¢ below HOD)`,
-      stopTriggered: false,
-      executedPyramidLevels: [], // Initialize executed pyramid levels
-      totalPyramidLevels: config.orderSettings.pyramidLevels.length,
-      trailingStopActive: false,
-      trailingStopPrice: null,
-      trailingStopMaxPrice: null,
-      trailingStopLastUpdatePrice: null,
-    };
-
-    const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice} | Initial Stop: $${initialStopPrice.toFixed(
-      2
-    )}`;
-    logger.info(message);
-    this.dashboard.logInfo(message);
-
-    this.polygon.subscribeQuote(symbol);
-    this.dashboard.updatePositions(Object.values(this.positions));
-
-    if (this.watchlist[symbol]) {
-      this.watchlist[symbol].hasPosition = true;
-      this.dashboard.updateWatchlist(this.watchlist);
-    }
-  }
-
-  removePosition(symbol) {
-    if (this.positions[symbol]) {
-      delete this.positions[symbol];
-      const message = `Position removed: ${symbol}`;
-      logger.info(message);
-      this.dashboard.logInfo(message);
-
-      if (!this.watchlist[symbol]) {
-        this.polygon.unsubscribeTrade(symbol); // Ensure trade-level data is unsubscribed
-        this.polygon.unsubscribeQuote(symbol);
-      }
-
-      this.dashboard.updatePositions(Object.values(this.positions));
-
-      if (this.watchlist[symbol]) {
-        this.watchlist[symbol].hasPosition = false;
-        this.dashboard.updateWatchlist(this.watchlist);
-      }
-    }
-  }
-
   async onQuoteUpdate(symbol, bidPrice, askPrice) {
     const upperSymbol = symbol.toUpperCase();
-    const pos = this.positions[upperSymbol];
     const w = this.watchlist[upperSymbol];
+    const pos = this.positions[upperSymbol];
 
     if (pos && pos.isActive) {
       await this.handlePositionQuoteUpdate(
@@ -470,14 +364,13 @@ class OrderManager {
       );
     }
 
-    // Check if symbol can be added to watchlist if volume threshold is met
     if (
       this.topGainers[upperSymbol] &&
       !this.watchlist[upperSymbol] &&
       !this.positions[upperSymbol]
     ) {
       const currentVolumeRequirement = this.getCurrentVolumeRequirement();
-      const volume = this.topGainers[upperSymbol].volume; // Using min.v from gainers response
+      const volume = this.topGainers[upperSymbol].volume;
       if (volume >= currentVolumeRequirement) {
         await this.addSymbolToWatchlist(upperSymbol);
         this.dashboard.logInfo(
@@ -492,10 +385,12 @@ class OrderManager {
         initialEntryOffsetCents,
         initialShareSize,
         openingOrderCooldownSeconds,
+        tradeProximityCents,
       } = config.strategySettings;
-      const openingOrderCooldownMs = openingOrderCooldownSeconds * 1000;
 
+      const openingOrderCooldownMs = openingOrderCooldownSeconds * 1000;
       const currentPrice = askPrice;
+
       // Update HOD if currentPrice exceeds known HOD and HOD is not frozen
       if (currentPrice > w.highOfDay && !w.isHODFrozen) {
         try {
@@ -514,19 +409,22 @@ class OrderManager {
         }
       }
 
-      // Manage Trade-Level Subscription based on proximity to HOD
+      // Manage Trade-Level Subscription using tradeProximityCents
       const distanceToHODCents = (w.highOfDay - currentPrice) * 100;
-      if (distanceToHODCents <= 20 && !w.isSubscribedToTrade) {
+      if (distanceToHODCents <= tradeProximityCents && !w.isSubscribedToTrade) {
         this.polygon.subscribeTrade(upperSymbol);
         w.isSubscribedToTrade = true;
         this.dashboard.logInfo(
-          `Subscribed to trade-level data for ${upperSymbol} (within 20 cents of HOD).`
+          `Subscribed to trade-level data for ${upperSymbol} (within ${tradeProximityCents} cents of HOD).`
         );
-      } else if (distanceToHODCents > 20 && w.isSubscribedToTrade) {
+      } else if (
+        distanceToHODCents > tradeProximityCents &&
+        w.isSubscribedToTrade
+      ) {
         this.polygon.unsubscribeTrade(upperSymbol);
         w.isSubscribedToTrade = false;
         this.dashboard.logInfo(
-          `Unsubscribed from trade-level data for ${upperSymbol} (moved beyond 20 cents of HOD).`
+          `Unsubscribed from trade-level data for ${upperSymbol} (moved beyond ${tradeProximityCents} cents of HOD).`
         );
       }
 
@@ -590,7 +488,7 @@ class OrderManager {
         upperSymbol,
         config.strategySettings.initialShareSize,
         'buy',
-        price // Immediate limit order based on strategy
+        price
       );
 
       // After placing the entry order, unsubscribe from trade-level data

@@ -25393,3 +25393,30 @@
 2024-12-13T21:54:17.236Z [INFO]: Subscribed to UBXG trade data.
 2024-12-13T21:54:21.447Z [INFO]: Dynamic config reloaded. Updated override symbols.
 2024-12-13T21:54:36.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-14T15:49:58.908Z [INFO]: Polygon WebSocket connected.
+2024-12-14T15:49:58.916Z [INFO]: Started polling for order statuses.
+2024-12-14T15:49:59.111Z [INFO]: Polygon WebSocket connection opened.
+2024-12-14T15:49:59.112Z [INFO]: Polygon WebSocket connected.
+2024-12-14T15:49:59.169Z [INFO]: Polygon WebSocket authenticated.
+2024-12-14T15:49:59.267Z [INFO]: Subscribed to AVR quote data.
+2024-12-14T15:49:59.437Z [INFO]: Subscribed to WKEY quote data.
+2024-12-14T15:49:59.626Z [INFO]: Subscribed to IPHA quote data.
+2024-12-14T15:49:59.791Z [INFO]: Subscribed to UBXG quote data.
+2024-12-14T15:49:59.946Z [INFO]: Subscribed to SNES quote data.
+2024-12-14T16:04:49.818Z [INFO]: Polygon WebSocket connected.
+2024-12-14T16:04:49.826Z [INFO]: Started polling for order statuses.
+2024-12-14T16:04:50.218Z [INFO]: Polygon WebSocket connection opened.
+2024-12-14T16:04:50.219Z [INFO]: Polygon WebSocket connected.
+2024-12-14T16:04:50.226Z [INFO]: Subscribed to AVR quote data.
+2024-12-14T16:04:50.269Z [INFO]: Polygon WebSocket authenticated.
+2024-12-14T16:04:50.391Z [INFO]: Subscribed to WKEY quote data.
+2024-12-14T16:04:50.561Z [INFO]: Subscribed to IPHA quote data.
+2024-12-14T16:04:50.728Z [INFO]: Subscribed to UBXG quote data.
+2024-12-14T16:04:50.880Z [INFO]: Subscribed to SNES quote data.
+2024-12-14T16:06:24.514Z [INFO]: Polygon WebSocket connected.
+2024-12-14T16:06:24.522Z [INFO]: Started polling for order statuses.
+2024-12-14T16:06:24.880Z [INFO]: Polygon WebSocket connection opened.
+2024-12-14T16:06:24.882Z [INFO]: Polygon WebSocket connected.
+2024-12-14T16:06:24.955Z [INFO]: Polygon WebSocket authenticated.
+2024-12-14T16:06:25.080Z [INFO]: Subscribed to WKEY quote data.
+2024-12-14T16:06:25.258Z [INFO]: Subscribed to UBXG quote data.
