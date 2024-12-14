@@ -16,14 +16,14 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    baseVolumeRequirement: 1000000,
-    morningVolumeRequirement: 1500000,
+    baseVolumeRequirement: 2000000,
+    morningVolumeRequirement: 2000000,
     gapPercentageRequirement: 20,
     priceRange: { min: 2, max: 12 },
     initialEntryOffsetCents: 0, // HOD breakout offset
-    entryLimitOffsetCents: 20, // Additional limit offset for entry orders
-    initialShareSize: 5000,
-    trailingStopIncrementCents: 2,
+    entryLimitOffsetCents: 15, // Additional limit offset for entry orders
+    initialShareSize: 3000,
+    trailingStopIncrementCents: 1,
     initialTrailingStopOffsetCents: 12,
     openingOrderCooldownSeconds: 5,
     tradeProximityCents: 15, // Distance from HOD to start trade-level subscriptions
@@ -31,19 +31,20 @@ module.exports = {
     dynamicStopThresholdCents: 1, // Minimum profit targets hit before dynamic stop adjustment
   },
   orderSettings: {
-    limitOffsetCents: 5, // Offset for placing LIMIT orders
+    limitOffsetCents: 6, // Offset for placing LIMIT orders
     profitTargets: [
-      { targetCents: 5, percentToClose: 10 },
+      { targetCents: 5, percentToClose: 20 },
       { targetCents: 10, percentToClose: 20 },
-      { targetCents: 20, percentToClose: 40 },
+      { targetCents: 20, percentToClose: 30 },
     ],
     dynamicStops: [
       { profitTargetsHit: 1, stopCents: 0 },
       { profitTargetsHit: 3, stopCents: 10 },
     ],
     pyramidLevels: [
-      { priceIncreaseCents: 3, percentToAdd: 40, offsetCents: 2 },
-      { priceIncreaseCents: 12, percentToAdd: 20, offsetCents: 2 },
+      { priceIncreaseCents: 3, percentToAdd: 30, offsetCents: 5 },
+      { priceIncreaseCents: 7, percentToAdd: 30, offsetCents: 5 },
+      { priceIncreaseCents: 12, percentToAdd: 20, offsetCents: 5 },
     ],
   },
   watchlistFilters: {
