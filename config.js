@@ -18,8 +18,8 @@ module.exports = {
   strategySettings: {
     baseVolumeRequirement: 2000000,
     morningVolumeRequirement: 3000000,
-    gapPercentageRequirement: 10,
-    priceRange: { min: 1.5, max: 10 },
+    gapPercentageRequirement: 5,
+    priceRange: { min: 1.5, max: 40 },
     initialEntryOffsetCents: 2, // Offset above HOD to trigger entry
     entryLimitOffsetCents: 15, // Additional offset for entry orders
     initialShareSize: 3000,
