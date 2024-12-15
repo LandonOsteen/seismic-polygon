@@ -10,14 +10,15 @@ const path = require('path');
 
 class OrderManager {
   constructor(dashboard, polygon) {
-    this.positions = {};
+    this.positions = {}; // Active positions
     this.dashboard = dashboard;
     this.polygon = polygon;
-    this.orderTracking = {};
+    this.orderTracking = {}; // Tracking open orders
 
     this.isRefreshing = false;
     this.isPolling = false;
 
+    // Override lists (if used)
     this.overrideAddList = new Set(
       (config.overrideAddSymbols || []).map((sym) => sym.toUpperCase())
     );
@@ -25,11 +26,13 @@ class OrderManager {
       (config.overrideRemoveSymbols || []).map((sym) => sym.toUpperCase())
     );
 
+    // Initialize rate limiter
     this.limiter = new Bottleneck({
       minTime: 350,
       maxConcurrent: 1,
     });
 
+    // Wrap Alpaca API methods with limiter
     this.limitedGetPositions = this.limiter.wrap(
       alpaca.getPositions.bind(alpaca)
     );
@@ -42,15 +45,17 @@ class OrderManager {
     );
 
     this.restClient = new PolygonRestClient();
-    this.watchlist = {};
-    this.topGainers = {};
+    this.watchlist = this.loadManualWatchlist(); // Load initial watchlist from JSON
 
-    // Rolling window data storage { symbol: { trades: [] } }
-    this.rollingData = {};
+    this.rollingData = {}; // For trailing stops
 
+    // Initialize watchlist symbols (fetch initial HOD/LOD)
+    this.initializeWatchlistSymbols();
+
+    // Initialize existing positions
     this.initializeExistingPositions();
-    this.initializeWatchlist();
 
+    // Set intervals
     setInterval(
       () => this.pollOrderStatuses(),
       config.pollingIntervals.orderStatus
@@ -60,29 +65,28 @@ class OrderManager {
       config.pollingIntervals.positionRefresh
     );
     setInterval(
-      () => this.initializeWatchlist(),
-      config.pollingIntervals.watchlistRefresh
-    );
-    setInterval(
-      () => this.reloadDynamicOverrides(),
+      () => this.reloadManualWatchlist(),
       config.pollingIntervals.watchlistRefresh
     );
 
+    // HOD verification for long positions
     if (
-      config.strategySettings.enableHodVerification &&
-      config.strategySettings.hodVerificationIntervalMs > 0
+      config.longStrategy.enableHodVerification &&
+      config.longStrategy.hodVerificationIntervalMs > 0
     ) {
       setInterval(
         () => this.verifyAllHODs(),
-        config.strategySettings.hodVerificationIntervalMs
+        config.longStrategy.hodVerificationIntervalMs
       );
     }
 
+    // Rolling stop checks
     setInterval(
       () => this.checkRollingStops(),
-      config.strategySettings.rollingStopCheckIntervalMs
+      config.longStrategy.rollingStopCheckIntervalMs
     );
 
+    // Setup WebSocket callbacks
     if (
       this.dashboard &&
       typeof this.dashboard.setOrderTracking === 'function'
@@ -98,146 +102,234 @@ class OrderManager {
     };
   }
 
-  async verifyAllHODs() {
-    for (const symbol in this.watchlist) {
-      await this.verifyHOD(symbol);
+  // Load watchlist from manualWatchlist.json
+  loadManualWatchlist() {
+    const filePath = path.join(__dirname, 'manualWatchlist.json');
+    if (!fs.existsSync(filePath)) {
+      logger.error('manualWatchlist.json not found. Please provide it.');
+      return {};
+    }
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+      const watchlist = {};
+      if (Array.isArray(data.longSymbols)) {
+        data.longSymbols.forEach((sym) => {
+          watchlist[sym.toUpperCase()] = {
+            side: 'long',
+            highOfDay: null,
+            lowOfDay: null,
+            candidateHOD: null,
+            candidateLOD: null,
+            lastEntryTime: null,
+            hasPosition: false,
+            hasPendingEntryOrder: false,
+            isHODFrozen: false,
+            executedPyramidLevels: [],
+            isSubscribedToTrade: false,
+          };
+        });
+      }
+      if (Array.isArray(data.shortSymbols)) {
+        data.shortSymbols.forEach((sym) => {
+          watchlist[sym.toUpperCase()] = {
+            side: 'short',
+            highOfDay: null,
+            lowOfDay: null,
+            candidateHOD: null,
+            candidateLOD: null,
+            lastEntryTime: null,
+            hasPosition: false,
+            hasPendingEntryOrder: false,
+            isHODFrozen: false,
+            executedPyramidLevels: [],
+            isSubscribedToTrade: false,
+          };
+        });
+      }
+      return watchlist;
+    } catch (err) {
+      logger.error(`Error parsing manualWatchlist.json: ${err.message}`);
+      return {};
     }
   }
 
-  async verifyHOD(symbol) {
-    const w = this.watchlist[symbol];
-    if (!w) return;
-    const unit = config.strategySettings.initialAggBarTimeframe.unit;
-    const amount = config.strategySettings.initialAggBarTimeframe.amount;
+  // Reload watchlist from manualWatchlist.json periodically
+  reloadManualWatchlist() {
+    const filePath = path.join(__dirname, 'manualWatchlist.json');
+    if (!fs.existsSync(filePath)) return; // No change if file doesn't exist
     try {
-      const aggHod = await this.restClient.getIntradayHighFromAgg(
-        symbol,
-        unit,
-        amount
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+      const newLongSymbols = new Set(
+        (data.longSymbols || []).map((s) => s.toUpperCase())
       );
-      if (aggHod && aggHod > (w.highOfDay || 0)) {
-        const oldHod = w.highOfDay;
-        w.highOfDay = aggHod;
-        logger.info(
-          `HOD for ${symbol} verified and updated: ${oldHod} -> ${aggHod}`
-        );
+      const newShortSymbols = new Set(
+        (data.shortSymbols || []).map((s) => s.toUpperCase())
+      );
+
+      // Add new long symbols
+      newLongSymbols.forEach((sym) => {
+        if (!this.watchlist[sym]) {
+          this.watchlist[sym] = {
+            side: 'long',
+            highOfDay: null,
+            lowOfDay: null,
+            candidateHOD: null,
+            candidateLOD: null,
+            lastEntryTime: null,
+            hasPosition: false,
+            hasPendingEntryOrder: false,
+            isHODFrozen: false,
+            executedPyramidLevels: [],
+            isSubscribedToTrade: false,
+          };
+          logger.info(`Added new long symbol ${sym} from updated watchlist.`);
+          this.dashboard.logInfo(
+            `Added new long symbol ${sym} from updated watchlist.`
+          );
+          this.polygon.subscribeQuote(sym);
+        }
+      });
+
+      // Add new short symbols
+      newShortSymbols.forEach((sym) => {
+        if (!this.watchlist[sym]) {
+          this.watchlist[sym] = {
+            side: 'short',
+            highOfDay: null,
+            lowOfDay: null,
+            candidateHOD: null,
+            candidateLOD: null,
+            lastEntryTime: null,
+            hasPosition: false,
+            hasPendingEntryOrder: false,
+            isHODFrozen: false,
+            executedPyramidLevels: [],
+            isSubscribedToTrade: false,
+          };
+          logger.info(`Added new short symbol ${sym} from updated watchlist.`);
+          this.dashboard.logInfo(
+            `Added new short symbol ${sym} from updated watchlist.`
+          );
+          this.polygon.subscribeQuote(sym);
+        }
+      });
+
+      // Remove symbols no longer in watchlist if they have no open position
+      for (const sym in this.watchlist) {
+        const isLong = this.watchlist[sym].side === 'long';
+        if (isLong && !newLongSymbols.has(sym) && !this.positions[sym]) {
+          this.removeSymbolFromWatchlist(sym);
+        } else if (
+          !isLong &&
+          !newShortSymbols.has(sym) &&
+          !this.positions[sym]
+        ) {
+          this.removeSymbolFromWatchlist(sym);
+        }
+      }
+
+      this.dashboard.updateWatchlist(this.watchlist);
+    } catch (err) {
+      logger.error(`Error reloading manualWatchlist.json: ${err.message}`);
+      this.dashboard.logError(
+        `Error reloading manualWatchlist.json: ${err.message}`
+      );
+    }
+  }
+
+  // Initialize watchlist symbols by fetching initial HOD/LOD
+  async initializeWatchlistSymbols() {
+    for (const sym in this.watchlist) {
+      const entry = this.watchlist[sym];
+      if (entry.side === 'long') {
+        try {
+          const hod = await this.restClient.getIntradayHighFromAgg(
+            sym,
+            config.longStrategy.initialAggBarTimeframe.unit,
+            config.longStrategy.initialAggBarTimeframe.amount
+          );
+          if (hod !== null) {
+            entry.highOfDay = hod;
+            entry.candidateHOD = hod;
+            logger.info(`Initialized HOD for ${sym}: $${hod.toFixed(2)}`);
+            this.dashboard.logInfo(
+              `Initialized HOD for ${sym}: $${hod.toFixed(2)}`
+            );
+          }
+        } catch (err) {
+          logger.error(`Error initializing HOD for ${sym}: ${err.message}`);
+          this.dashboard.logError(
+            `Error initializing HOD for ${sym}: ${err.message}`
+          );
+        }
+      } else if (entry.side === 'short') {
+        try {
+          const lod = await this.restClient.getIntradayLowFromAgg(
+            sym,
+            config.shortStrategy.initialAggBarTimeframe.unit,
+            config.shortStrategy.initialAggBarTimeframe.amount
+          );
+          if (lod !== null) {
+            entry.lowOfDay = lod;
+            entry.candidateLOD = lod;
+            logger.info(`Initialized LOD for ${sym}: $${lod.toFixed(2)}`);
+            this.dashboard.logInfo(
+              `Initialized LOD for ${sym}: $${lod.toFixed(2)}`
+            );
+          }
+        } catch (err) {
+          logger.error(`Error initializing LOD for ${sym}: ${err.message}`);
+          this.dashboard.logError(
+            `Error initializing LOD for ${sym}: ${err.message}`
+          );
+        }
+      }
+    }
+
+    // Update watchlist in dashboard
+    this.dashboard.updateWatchlist(this.watchlist);
+  }
+
+  // Verify HODs for all long symbols
+  async verifyAllHODs() {
+    for (const sym in this.watchlist) {
+      const entry = this.watchlist[sym];
+      if (entry.side === 'long') {
+        await this.verifyHOD(sym);
+      }
+    }
+  }
+
+  // Verify and update HOD for a single symbol
+  async verifyHOD(sym) {
+    const entry = this.watchlist[sym];
+    if (!entry || entry.side !== 'long') return;
+
+    try {
+      const hod = await this.restClient.getIntradayHighFromAgg(
+        sym,
+        config.longStrategy.initialAggBarTimeframe.unit,
+        config.longStrategy.initialAggBarTimeframe.amount
+      );
+      if (hod !== null && hod > (entry.highOfDay || 0)) {
+        const oldHod = entry.highOfDay;
+        entry.highOfDay = hod;
+        if (entry.candidateHOD === null) {
+          entry.candidateHOD = hod;
+        }
+        logger.info(`HOD for ${sym} verified and updated: ${oldHod} -> ${hod}`);
         this.dashboard.logInfo(
-          `HOD for ${symbol} verified: ${oldHod} -> ${aggHod}`
+          `HOD for ${sym} verified and updated: ${oldHod} -> ${hod}`
         );
         this.dashboard.updateWatchlist(this.watchlist);
       }
     } catch (err) {
-      const msg = `Error verifying HOD for ${symbol}: ${err.message}`;
-      logger.error(msg);
-      this.dashboard.logError(msg);
+      logger.error(`Error verifying HOD for ${sym}: ${err.message}`);
+      this.dashboard.logError(`Error verifying HOD for ${sym}: ${err.message}`);
     }
   }
 
-  reloadDynamicOverrides() {
-    const dynamicConfigPath = path.join(__dirname, 'dynamicConfig.json');
-    try {
-      if (fs.existsSync(dynamicConfigPath)) {
-        const data = fs.readFileSync(dynamicConfigPath, 'utf-8');
-        const dynamicConfig = JSON.parse(data);
-
-        const newAddSymbols = (dynamicConfig.overrideAddSymbols || []).map(
-          (s) => s.toUpperCase()
-        );
-        const newRemoveSymbols = (
-          dynamicConfig.overrideRemoveSymbols || []
-        ).map((s) => s.toUpperCase());
-
-        this.overrideAddList = new Set(newAddSymbols);
-        this.overrideRemoveList = new Set(newRemoveSymbols);
-
-        this.dashboard.logInfo(
-          'Dynamic config reloaded. Updated override add/remove symbols.'
-        );
-        logger.info('Dynamic config reloaded. Updated override symbols.');
-        this.applyOverridesToWatchlist();
-      }
-    } catch (err) {
-      const msg = `Error reloading dynamic config: ${err.message}`;
-      logger.error(msg);
-      this.dashboard.logError(msg);
-    }
-  }
-
-  overrideAddSymbol(symbol) {
-    const upperSymbol = symbol.toUpperCase();
-    this.overrideAddList.add(upperSymbol);
-    logger.info(`Symbol ${upperSymbol} added to override add list.`);
-    this.dashboard.logInfo(`Symbol ${upperSymbol} added to override add list.`);
-    this.applyOverridesToWatchlist();
-  }
-
-  clearOverrideAddSymbol(symbol) {
-    const upperSymbol = symbol.toUpperCase();
-    this.overrideAddList.delete(upperSymbol);
-    logger.info(`Symbol ${upperSymbol} removed from override add list.`);
-    this.dashboard.logInfo(
-      `Symbol ${upperSymbol} removed from override add list.`
-    );
-    this.applyOverridesToWatchlist();
-  }
-
-  overrideRemoveSymbol(symbol) {
-    const upperSymbol = symbol.toUpperCase();
-    this.overrideRemoveList.add(upperSymbol);
-    logger.info(`Symbol ${upperSymbol} added to override remove list.`);
-    this.dashboard.logInfo(
-      `Symbol ${upperSymbol} added to override remove list.`
-    );
-    this.applyOverridesToWatchlist();
-  }
-
-  clearOverrideRemoveSymbol(symbol) {
-    const upperSymbol = symbol.toUpperCase();
-    this.overrideRemoveList.delete(upperSymbol);
-    logger.info(`Symbol ${upperSymbol} removed from override remove list.`);
-    this.dashboard.logInfo(
-      `Symbol ${upperSymbol} removed from override remove list.`
-    );
-    this.applyOverridesToWatchlist();
-  }
-
-  applyOverridesToWatchlist() {
-    for (const symbol of this.overrideRemoveList) {
-      if (this.watchlist[symbol]) {
-        if (!this.positions[symbol]) {
-          this.polygon.unsubscribeTrade(symbol);
-          this.polygon.unsubscribeQuote(symbol);
-        }
-        delete this.watchlist[symbol];
-        this.dashboard.logInfo(
-          `Symbol ${symbol} removed from watchlist due to override remove list.`
-        );
-      }
-    }
-
-    for (const symbol of this.overrideAddList) {
-      if (!this.watchlist[symbol]) {
-        const hod = null;
-        this.watchlist[symbol] = {
-          highOfDay: hod,
-          candidateHOD: null, // Add candidateHOD here
-          lastEntryTime: null,
-          hasPosition: !!this.positions[symbol],
-          hasPendingEntryOrder: false,
-          isHODFrozen: false,
-          executedPyramidLevels: [],
-          isSubscribedToTrade: false,
-        };
-        this.polygon.subscribeQuote(symbol);
-        this.dashboard.logInfo(
-          `Symbol ${symbol} added to watchlist due to override add list.`
-        );
-      }
-    }
-
-    this.dashboard.updateWatchlist(this.watchlist);
-  }
-
+  // Initialize existing positions from Alpaca
   async initializeExistingPositions() {
     try {
       const positions = await this.retryOperation(() =>
@@ -254,426 +346,499 @@ class OrderManager {
     }
   }
 
-  async initializeWatchlist() {
-    try {
-      const gainers = await this.restClient.getGainersOrLosers(
-        'gainers',
-        false
-      );
-      this.topGainers = {};
+  // Add a new position to the system
+  async addPosition(position) {
+    const sym = position.symbol.toUpperCase();
+    const posQty = Math.abs(parseFloat(position.qty));
+    const side = position.side === 'long' ? 'buy' : 'sell';
+    const avgEntryPrice = parseFloat(position.avg_entry_price);
 
-      const currentVolumeRequirement = this.getCurrentVolumeRequirement();
-      const { maxSpreadCents, minCandleRangeCents } = config.watchlistFilters;
-
-      for (const gainer of gainers) {
-        const symbol = gainer.ticker.toUpperCase();
-        if (symbol.includes('.')) continue;
-
-        const gapPerc = gainer.todaysChangePerc;
-        if (gapPerc < config.strategySettings.gapPercentageRequirement)
-          continue;
-
-        const currentPrice = gainer.lastQuote.P || 0;
-        if (
-          currentPrice < config.strategySettings.priceRange.min ||
-          currentPrice > config.strategySettings.priceRange.max
-        )
-          continue;
-
-        const askPrice = gainer.lastQuote.P;
-        const bidPrice = gainer.lastQuote.p;
-        if (askPrice === undefined || bidPrice === undefined) continue;
-
-        const spread = askPrice - bidPrice;
-        if (spread > maxSpreadCents / 100) continue;
-
-        const minData = gainer.min;
-        if (!minData || minData.h === undefined || minData.l === undefined)
-          continue;
-
-        const candleRange = minData.h - minData.l;
-        if (candleRange < minCandleRangeCents / 100) continue;
-
-        const volume = minData.av || 0;
-        this.topGainers[symbol] = {
-          symbol,
-          dayClose: currentPrice,
-          gapPerc,
-          volume,
-        };
-
-        if (volume >= currentVolumeRequirement) {
-          await this.addSymbolToWatchlist(symbol);
-        }
-      }
-
-      this.applyOverridesToWatchlist();
-
-      for (const symbol in this.watchlist) {
-        if (!this.topGainers[symbol] && !this.overrideAddList.has(symbol)) {
-          this.removeSymbolFromWatchlist(symbol);
-        }
-      }
-
-      this.dashboard.updateWatchlist(this.watchlist);
-      this.dashboard.logInfo(
-        `Watchlist updated. Monitoring ${
-          Object.keys(this.watchlist).length
-        } symbols.`
-      );
-    } catch (err) {
-      const msg = `Error updating watchlist: ${err.message}`;
-      logger.error(msg);
-      this.dashboard.logError(msg);
+    const entry = this.watchlist[sym];
+    if (!entry) {
+      const msg = `Watchlist entry missing for ${sym} while adding position.`;
+      logger.warn(msg);
+      this.dashboard.logWarning(msg);
+      return;
     }
-  }
 
-  async addSymbolToWatchlist(symbol) {
-    try {
-      const unit = config.strategySettings.initialAggBarTimeframe.unit;
-      const amount = config.strategySettings.initialAggBarTimeframe.amount;
-      const hod = await this.restClient.getIntradayHighFromAgg(
-        symbol,
-        unit,
-        amount
-      );
-
-      if (!this.watchlist[symbol]) {
-        this.watchlist[symbol] = {
-          highOfDay: hod,
-          candidateHOD: null, // Initialize candidateHOD
-          lastEntryTime: null,
-          hasPosition: !!this.positions[symbol],
-          hasPendingEntryOrder: false,
-          isHODFrozen: false,
-          executedPyramidLevels: [],
-          isSubscribedToTrade: false,
-        };
-        this.polygon.subscribeQuote(symbol);
-      } else {
-        if (hod && hod > (this.watchlist[symbol].highOfDay || 0)) {
-          this.watchlist[symbol].highOfDay = hod;
-        }
-        this.watchlist[symbol].hasPosition = !!this.positions[symbol];
+    let initialStopPrice;
+    let stopDescription;
+    if (entry.side === 'long') {
+      if (entry.highOfDay === null) {
+        const msg = `High of Day missing for ${sym} (long) while adding position.`;
+        logger.warn(msg);
+        this.dashboard.logWarning(msg);
+        return;
       }
-
-      this.dashboard.updateWatchlist(this.watchlist);
-    } catch (err) {
-      const errorMsg = `Error adding symbol ${symbol} to watchlist: ${err.message}`;
-      logger.error(errorMsg);
-      this.dashboard.logError(errorMsg);
+      const offset = config.longStrategy.initialStopOffsetCents;
+      initialStopPrice = entry.highOfDay - offset / 100;
+      stopDescription = `Initial Stop @ $${initialStopPrice.toFixed(
+        2
+      )} (${offset}¢ below HOD)`;
+    } else {
+      if (entry.lowOfDay === null) {
+        const msg = `Low of Day missing for ${sym} (short) while adding position.`;
+        logger.warn(msg);
+        this.dashboard.logWarning(msg);
+        return;
+      }
+      const offset = config.shortStrategy.initialStopOffsetCents;
+      initialStopPrice = entry.lowOfDay + offset / 100;
+      stopDescription = `Initial Stop @ $${initialStopPrice.toFixed(
+        2
+      )} (${offset}¢ above LOD)`;
     }
-  }
 
-  removeSymbolFromWatchlist(symbol) {
-    if (this.watchlist[symbol] && !this.positions[symbol]) {
-      this.polygon.unsubscribeTrade(symbol);
-      this.polygon.unsubscribeQuote(symbol);
-      delete this.watchlist[symbol];
-      this.dashboard.logInfo(`Symbol ${symbol} removed from watchlist.`);
+    this.positions[sym] = {
+      symbol: sym,
+      qty: posQty,
+      initialQty: posQty,
+      side,
+      avgEntryPrice,
+      currentBid: parseFloat(position.current_price) - 0.01,
+      currentAsk: parseFloat(position.current_price) + 0.01,
+      currentPrice: parseFloat(position.current_price),
+      profitCents: 0,
+      isActive: true,
+      stopPrice: initialStopPrice,
+      stopCents:
+        entry.side === 'long'
+          ? config.longStrategy.initialStopOffsetCents
+          : config.shortStrategy.initialStopOffsetCents,
+      stopDescription: stopDescription,
+      stopTriggered: false,
+      trailingStopActive: false,
+      trailingStopPrice: null,
+      trailingStopMaxPrice: null,
+      trailingStopLastUpdatePrice: null,
+      executedPyramidLevels: [],
+      totalPyramidLevels: (entry.side === 'long'
+        ? config.longStrategy
+        : config.shortStrategy
+      ).pyramidLevels.length,
+      isProcessing: false,
+    };
+
+    const message = `Position added: ${sym} | Qty: ${posQty} | Avg Entry: $${avgEntryPrice.toFixed(
+      2
+    )} | Initial Stop: $${initialStopPrice.toFixed(2)}`;
+    logger.info(message);
+    this.dashboard.logInfo(message);
+
+    this.polygon.subscribeQuote(sym);
+    this.dashboard.updatePositions(Object.values(this.positions));
+
+    if (entry) {
+      entry.hasPosition = true;
       this.dashboard.updateWatchlist(this.watchlist);
     }
   }
 
-  getCurrentVolumeRequirement() {
-    const now = moment().tz(config.timeZone);
-    const hour = now.hour();
-    const minute = now.minute();
+  // Remove a position from the system
+  removePosition(sym) {
+    if (this.positions[sym]) {
+      delete this.positions[sym];
+      const message = `Position for ${sym} removed.`;
+      logger.info(message);
+      this.dashboard.logInfo(message);
 
-    const { baseVolumeRequirement, morningVolumeRequirement } =
-      config.strategySettings;
+      if (this.watchlist[sym]) {
+        // Reset candidate references after position is fully closed
+        this.watchlist[sym].candidateHOD = null;
+        this.watchlist[sym].candidateLOD = null;
+        this.watchlist[sym].hasPosition = false;
+        this.dashboard.updateWatchlist(this.watchlist);
+      }
 
-    if (hour < 9 || (hour === 9 && minute < 30)) {
-      return baseVolumeRequirement;
+      this.dashboard.updatePositions(Object.values(this.positions));
     }
-
-    if (
-      (hour === 9 && minute >= 30) ||
-      hour === 10 ||
-      (hour === 11 && minute === 0)
-    ) {
-      return morningVolumeRequirement;
-    }
-
-    if (hour > 11 || (hour === 11 && minute > 0)) {
-      return baseVolumeRequirement;
-    }
-
-    return baseVolumeRequirement;
   }
 
-  async onQuoteUpdate(symbol, bidPrice, askPrice) {
-    const upperSymbol = symbol.toUpperCase();
-    const w = this.watchlist[upperSymbol];
-    const pos = this.positions[upperSymbol];
+  // Handle quote updates
+  async onQuoteUpdate(sym, bidPrice, askPrice) {
+    const upperSym = sym.toUpperCase();
+    const entry = this.watchlist[upperSym];
+    if (!entry) return;
 
-    if (pos && pos.isActive) {
-      await this.handlePositionQuoteUpdate(
-        pos,
-        upperSymbol,
-        bidPrice,
-        askPrice
-      );
-    }
+    const side = entry.side; // 'long' or 'short'
+    const strat = side === 'long' ? config.longStrategy : config.shortStrategy;
 
-    if (
-      this.topGainers[upperSymbol] &&
-      !this.watchlist[upperSymbol] &&
-      !this.positions[upperSymbol]
-    ) {
-      const currentVolumeRequirement = this.getCurrentVolumeRequirement();
-      const volume = this.topGainers[upperSymbol].volume;
-      if (volume >= currentVolumeRequirement) {
-        await this.addSymbolToWatchlist(upperSymbol);
+    // Update HOD or LOD based on side
+    if (side === 'long') {
+      if (askPrice > (entry.highOfDay || 0)) {
+        const oldHod = entry.highOfDay;
+        entry.highOfDay = askPrice;
         this.dashboard.logInfo(
-          `Symbol ${upperSymbol} volume now meets threshold, added to watchlist.`
+          `HOD updated for ${upperSym}: ${oldHod} -> ${entry.highOfDay}`
         );
+        if (entry.candidateHOD === null) {
+          entry.candidateHOD = entry.highOfDay;
+        }
+        this.dashboard.updateWatchlist(this.watchlist);
+      }
+    } else if (side === 'short') {
+      if (bidPrice < (entry.lowOfDay || Infinity)) {
+        const oldLod = entry.lowOfDay;
+        entry.lowOfDay = bidPrice;
+        this.dashboard.logInfo(
+          `LOD updated for ${upperSym}: ${oldLod} -> ${entry.lowOfDay}`
+        );
+        if (entry.candidateLOD === null) {
+          entry.candidateLOD = entry.lowOfDay;
+        }
         this.dashboard.updateWatchlist(this.watchlist);
       }
     }
 
-    if (w) {
-      const {
-        initialEntryOffsetCents,
-        initialShareSize,
-        openingOrderCooldownSeconds,
-        tradeProximityCents,
-      } = config.strategySettings;
+    // Manage trade proximity subscription
+    let referencePrice;
+    if (side === 'long') {
+      referencePrice = entry.highOfDay;
+    } else {
+      referencePrice = entry.lowOfDay;
+    }
 
-      const openingOrderCooldownMs = openingOrderCooldownSeconds * 1000;
-      const currentPrice = askPrice;
+    if (referencePrice !== null) {
+      const distanceCents =
+        side === 'long'
+          ? (referencePrice - askPrice) * 100
+          : (bidPrice - referencePrice) * 100;
 
-      // Check if we have a candidateHOD; if not set, we set it the first time a new HOD is detected.
-      if (currentPrice > (w.highOfDay || 0)) {
-        // Update displayed HOD
-        const oldHod = w.highOfDay;
-        w.highOfDay = currentPrice;
+      if (
+        Math.abs(distanceCents) <= strat.tradeProximityCents &&
+        !entry.isSubscribedToTrade
+      ) {
+        this.polygon.subscribeTrade(upperSym);
+        entry.isSubscribedToTrade = true;
         this.dashboard.logInfo(
-          `HOD updated for ${upperSymbol}: ${oldHod} -> ${w.highOfDay}`
-        );
-
-        // If candidateHOD is not set yet, set it now (snapshot HOD)
-        if (w.candidateHOD === null) {
-          w.candidateHOD = w.highOfDay;
-          // We don't immediately freeze isHODFrozen here; we freeze once we commit to an entry attempt
-          // But if you'd like to freeze now, you can set isHODFrozen = true.
-        }
-
-        this.dashboard.updateWatchlist(this.watchlist);
-      }
-
-      const distanceToHODCents = (w.highOfDay - currentPrice) * 100;
-      if (distanceToHODCents <= tradeProximityCents && !w.isSubscribedToTrade) {
-        this.polygon.subscribeTrade(upperSymbol);
-        w.isSubscribedToTrade = true;
-        this.dashboard.logInfo(
-          `Subscribed to trade-level data for ${upperSymbol} (within ${tradeProximityCents} cents of HOD).`
+          `Subscribed to trade-level data for ${upperSym} (within ${strat.tradeProximityCents} cents).`
         );
       } else if (
-        distanceToHODCents > tradeProximityCents &&
-        w.isSubscribedToTrade
+        Math.abs(distanceCents) > strat.tradeProximityCents &&
+        entry.isSubscribedToTrade
       ) {
-        this.polygon.unsubscribeTrade(upperSymbol);
-        w.isSubscribedToTrade = false;
+        this.polygon.unsubscribeTrade(upperSym);
+        entry.isSubscribedToTrade = false;
         this.dashboard.logInfo(
-          `Unsubscribed from trade-level data for ${upperSymbol} (beyond ${tradeProximityCents} cents of HOD).`
+          `Unsubscribed from trade-level data for ${upperSym} (beyond ${strat.tradeProximityCents} cents).`
         );
       }
+    }
 
-      // Entry logic now depends on candidateHOD
+    // Check entry conditions
+    let entryConditionMet = false;
+    let targetPrice;
+    if (side === 'long' && entry.candidateHOD !== null) {
       if (
-        w.candidateHOD !== null && // we must have a candidateHOD set
-        !w.hasPosition &&
-        currentPrice >= w.candidateHOD + initialEntryOffsetCents / 100
+        askPrice >=
+        entry.candidateHOD + strat.initialEntryOffsetCents / 100
       ) {
-        const now = Date.now();
-        const canPlaceOrder =
-          (!w.lastEntryTime ||
-            now - w.lastEntryTime > openingOrderCooldownMs) &&
-          !this.positions[upperSymbol] &&
-          !this.hasPendingOpeningOrder(upperSymbol) &&
-          !w.hasPendingEntryOrder;
+        entryConditionMet = true;
+        targetPrice = entry.candidateHOD + strat.initialEntryOffsetCents / 100;
+      }
+    } else if (side === 'short' && entry.candidateLOD !== null) {
+      if (
+        bidPrice <=
+        entry.candidateLOD - strat.initialEntryOffsetCents / 100
+      ) {
+        entryConditionMet = true;
+        targetPrice = entry.candidateLOD - strat.initialEntryOffsetCents / 100;
+      }
+    }
 
-        if (canPlaceOrder) {
-          w.lastEntryTime = Date.now();
-          w.hasPendingEntryOrder = true;
-          // Now that we are about to place entry, we freeze the HOD effectively by isHODFrozen if needed
-          w.isHODFrozen = true;
+    if (
+      entryConditionMet &&
+      !entry.hasPosition &&
+      !entry.hasPendingEntryOrder
+    ) {
+      const now = Date.now();
+      const canPlaceOrder =
+        (!entry.lastEntryTime ||
+          now - entry.lastEntryTime >
+            strat.openingOrderCooldownSeconds * 1000) &&
+        !this.positions[upperSym] &&
+        !this.hasPendingOpeningOrder(upperSym);
 
-          const targetPrice = w.candidateHOD + initialEntryOffsetCents / 100;
+      if (canPlaceOrder) {
+        entry.lastEntryTime = now;
+        entry.hasPendingEntryOrder = true;
+        entry.isHODFrozen = true; // Prevent further HOD/LOD updates during order placement
 
-          this.dashboard.logInfo(
-            `Anticipation entry for ${upperSymbol}: targetPrice=$${targetPrice.toFixed(
-              2
-            )}, candidateHOD=$${w.candidateHOD.toFixed(2)}`
+        this.dashboard.logInfo(
+          `Anticipation entry for ${upperSym}: targetPrice=$${targetPrice.toFixed(
+            2
+          )} (${side})`
+        );
+
+        try {
+          const orderSide = side === 'long' ? 'buy' : 'sell';
+          await this.placeEntryOrder(
+            upperSym,
+            strat.initialShareSize,
+            orderSide,
+            targetPrice
           );
-
-          try {
-            await this.placeEntryOrder(
-              upperSymbol,
-              initialShareSize,
-              'buy',
-              targetPrice
-            );
-          } catch (err) {
-            w.hasPendingEntryOrder = false;
-            w.isHODFrozen = false;
-            const errorMsg = `Error placing entry order for ${upperSymbol}: ${err.message}`;
-            logger.error(errorMsg);
-            this.dashboard.logError(errorMsg);
-          }
+        } catch (err) {
+          entry.hasPendingEntryOrder = false;
+          entry.isHODFrozen = false;
+          const errorMsg = `Error placing entry order for ${upperSym}: ${err.message}`;
+          logger.error(errorMsg);
+          this.dashboard.logError(errorMsg);
         }
       }
     }
   }
 
-  handleTradeUpdate(symbol, price, timestamp) {
-    const upperSymbol = symbol.toUpperCase();
-    const w = this.watchlist[upperSymbol];
-    if (!w) return;
+  // Handle trade updates
+  handleTradeUpdate(sym, price, timestamp) {
+    const upperSym = sym.toUpperCase();
+    const entry = this.watchlist[upperSym];
+    if (!entry) return;
 
-    // If we get a trade above old HOD
-    if (price > (w.highOfDay || 0)) {
-      const oldHod = w.highOfDay;
-      w.highOfDay = price;
-      this.dashboard.logInfo(
-        `Trade breakout detected for ${upperSymbol}: ${oldHod} -> ${w.highOfDay}`
-      );
+    const side = entry.side; // 'long' or 'short'
+    const strat = side === 'long' ? config.longStrategy : config.shortStrategy;
 
-      // If no candidateHOD set, set it now
-      if (w.candidateHOD === null) {
-        w.candidateHOD = w.highOfDay;
+    // For longs: if a trade breaks above HOD + offset, handle similarly to quote update
+    // For shorts: if a trade breaks below LOD - offset, handle similarly
+    let entryConditionMet = false;
+    let targetPrice;
+
+    if (side === 'long') {
+      if (price >= entry.highOfDay + strat.initialEntryOffsetCents / 100) {
+        entryConditionMet = true;
+        targetPrice = entry.highOfDay + strat.initialEntryOffsetCents / 100;
       }
-
-      this.placeEntryOrder(
-        upperSymbol,
-        config.strategySettings.initialShareSize,
-        'buy',
-        price
-      );
-
-      this.polygon.unsubscribeTrade(upperSymbol);
-      w.isSubscribedToTrade = false;
-      this.dashboard.logInfo(
-        `Unsubscribed from trade-level data for ${upperSymbol} after breakout.`
-      );
+    } else if (side === 'short') {
+      if (price <= entry.lowOfDay - strat.initialEntryOffsetCents / 100) {
+        entryConditionMet = true;
+        targetPrice = entry.lowOfDay - strat.initialEntryOffsetCents / 100;
+      }
     }
 
-    if (!this.rollingData[upperSymbol]) {
-      this.rollingData[upperSymbol] = { trades: [] };
+    if (
+      entryConditionMet &&
+      !entry.hasPosition &&
+      !entry.hasPendingEntryOrder
+    ) {
+      const now = Date.now();
+      const canPlaceOrder =
+        (!entry.lastEntryTime ||
+          now - entry.lastEntryTime >
+            strat.openingOrderCooldownSeconds * 1000) &&
+        !this.positions[upperSym] &&
+        !this.hasPendingOpeningOrder(upperSym);
+
+      if (canPlaceOrder) {
+        entry.lastEntryTime = now;
+        entry.hasPendingEntryOrder = true;
+        entry.isHODFrozen = true; // Prevent further HOD/LOD updates during order placement
+
+        this.dashboard.logInfo(
+          `Anticipation entry for ${upperSym}: targetPrice=$${targetPrice.toFixed(
+            2
+          )} (${side})`
+        );
+
+        try {
+          const orderSide = side === 'long' ? 'buy' : 'sell';
+          this.placeEntryOrder(
+            upperSym,
+            strat.initialShareSize,
+            orderSide,
+            targetPrice
+          );
+        } catch (err) {
+          entry.hasPendingEntryOrder = false;
+          entry.isHODFrozen = false;
+          const errorMsg = `Error placing entry order for ${upperSym}: ${err.message}`;
+          logger.error(errorMsg);
+          this.dashboard.logError(errorMsg);
+        }
+      }
     }
-    this.rollingData[upperSymbol].trades.push({ price, timestamp: Date.now() });
+
+    // Update rolling data
+    if (!this.rollingData[upperSym]) {
+      this.rollingData[upperSym] = { trades: [] };
+    }
+    this.rollingData[upperSym].trades.push({ price, timestamp: Date.now() });
   }
 
+  // Check and update trailing stops
   checkRollingStops() {
-    // (unchanged)
-    const windowSec = config.strategySettings.rollingStopWindowSeconds;
     const now = Date.now();
 
-    for (const symbol in this.positions) {
-      const pos = this.positions[symbol];
+    for (const sym in this.positions) {
+      const pos = this.positions[sym];
       if (!pos.isActive || pos.qty <= 0) continue;
-      if (!this.rollingData[symbol] || !this.rollingData[symbol].trades)
-        continue;
 
-      const cutoff = now - windowSec * 1000;
-      this.rollingData[symbol].trades = this.rollingData[symbol].trades.filter(
+      const side = pos.side === 'buy' ? 'long' : 'short';
+      const strat =
+        side === 'long' ? config.longStrategy : config.shortStrategy;
+
+      if (!this.rollingData[sym] || !this.rollingData[sym].trades) continue;
+
+      const cutoff = now - strat.rollingStopWindowSeconds * 1000;
+      this.rollingData[sym].trades = this.rollingData[sym].trades.filter(
         (t) => t.timestamp >= cutoff
       );
-      if (this.rollingData[symbol].trades.length === 0) continue;
 
-      const lowestTrade = this.rollingData[symbol].trades.reduce(
-        (min, t) => (t.price < min ? t.price : min),
-        Infinity
-      );
-      const offsetCents =
-        config.strategySettings.initialTrailingStopOffsetCents;
-      const trailingStopPrice = lowestTrade - offsetCents / 100;
+      if (this.rollingData[sym].trades.length === 0) continue;
 
-      const fallbackStopPrice =
-        pos.avgEntryPrice - config.strategySettings.fallbackStopCents / 100;
-      const finalStopPrice = Math.min(trailingStopPrice, fallbackStopPrice);
-
-      if (pos.stopPrice === null || finalStopPrice < pos.stopPrice) {
-        pos.stopPrice = finalStopPrice;
-        pos.stopDescription = `ROLLING STOP @ $${finalStopPrice.toFixed(2)}`;
-        logger.info(
-          `Updated rolling stop for ${symbol}: $${finalStopPrice.toFixed(2)}`
+      let referencePrice;
+      if (side === 'long') {
+        // For longs, trailing stop is based on the lowest trade in the window
+        referencePrice = this.rollingData[sym].trades.reduce(
+          (min, t) => Math.min(min, t.price),
+          Infinity
         );
-        this.dashboard.logInfo(
-          `Updated rolling stop for ${symbol}: $${finalStopPrice.toFixed(2)}`
-        );
-        this.dashboard.updatePositions(Object.values(this.positions));
-      }
+        const trailingStopPrice =
+          referencePrice - strat.initialTrailingStopOffsetCents / 100;
+        const fallbackStopPrice =
+          pos.avgEntryPrice - strat.fallbackStopCents / 100;
+        const finalStopPrice = Math.min(trailingStopPrice, fallbackStopPrice);
 
-      if (pos.side === 'buy' && pos.currentBid <= finalStopPrice) {
-        const stopMsg = `Rolling stop hit for ${symbol} at $${finalStopPrice.toFixed(
-          2
-        )}. Closing position.`;
-        logger.info(stopMsg);
-        this.dashboard.logWarning(stopMsg);
-        this.closePositionMarketOrder(symbol);
+        if (pos.stopPrice === null || finalStopPrice < pos.stopPrice) {
+          pos.stopPrice = finalStopPrice;
+          pos.stopDescription = `ROLLING STOP @ $${finalStopPrice.toFixed(2)}`;
+          logger.info(
+            `Updated rolling stop for ${sym}: $${finalStopPrice.toFixed(2)}`
+          );
+          this.dashboard.logInfo(
+            `Updated rolling stop for ${sym}: $${finalStopPrice.toFixed(2)}`
+          );
+          this.dashboard.updatePositions(Object.values(this.positions));
+        }
+
+        if (pos.currentBid <= finalStopPrice) {
+          const stopMsg = `Rolling stop hit for ${sym} at $${finalStopPrice.toFixed(
+            2
+          )}. Closing position.`;
+          logger.info(stopMsg);
+          this.dashboard.logWarning(stopMsg);
+          this.closePositionMarketOrder(sym);
+        }
+      } else {
+        // For shorts, trailing stop is based on the highest trade in the window
+        referencePrice = this.rollingData[sym].trades.reduce(
+          (max, t) => Math.max(max, t.price),
+          -Infinity
+        );
+        const trailingStopPrice =
+          referencePrice + strat.initialTrailingStopOffsetCents / 100;
+        const fallbackStopPrice =
+          pos.avgEntryPrice + strat.fallbackStopCents / 100;
+        const finalStopPrice = Math.max(trailingStopPrice, fallbackStopPrice);
+
+        if (pos.stopPrice === null || finalStopPrice > pos.stopPrice) {
+          pos.stopPrice = finalStopPrice;
+          pos.stopDescription = `ROLLING STOP @ $${finalStopPrice.toFixed(2)}`;
+          logger.info(
+            `Updated rolling stop for ${sym}: $${finalStopPrice.toFixed(2)}`
+          );
+          this.dashboard.logInfo(
+            `Updated rolling stop for ${sym}: $${finalStopPrice.toFixed(2)}`
+          );
+          this.dashboard.updatePositions(Object.values(this.positions));
+        }
+
+        if (pos.currentAsk >= finalStopPrice) {
+          const stopMsg = `Rolling stop hit for ${sym} at $${finalStopPrice.toFixed(
+            2
+          )} (short). Closing position.`;
+          logger.info(stopMsg);
+          this.dashboard.logWarning(stopMsg);
+          this.closePositionMarketOrder(sym);
+        }
       }
     }
   }
 
-  hasPendingOpeningOrder(symbol) {
+  // Check if there is a pending opening order for a symbol
+  hasPendingOpeningOrder(sym) {
     for (const orderId in this.orderTracking) {
       const o = this.orderTracking[orderId];
-      if (o.symbol === symbol && o.type === 'entry') {
+      if (o.symbol === sym && o.type === 'entry') {
         return true;
       }
     }
     return false;
   }
 
-  async handlePositionQuoteUpdate(pos, symbol, bidPrice, askPrice) {
-    const side = pos.side;
+  // Handle updates to active positions based on quote data
+  async handlePositionQuoteUpdate(pos, sym, bidPrice, askPrice) {
+    const side = pos.side; // 'buy' or 'sell'
     const currentPrice = side === 'buy' ? bidPrice : askPrice;
     pos.currentBid = bidPrice;
     pos.currentAsk = askPrice;
     pos.currentPrice = currentPrice;
+
     pos.profitCents = (
       (currentPrice - pos.avgEntryPrice) *
       100 *
       (side === 'buy' ? 1 : -1)
     ).toFixed(2);
 
-    const message = `Symbol: ${symbol} | Profit: ${
+    const message = `Symbol: ${sym} | Profit: ${
       pos.profitCents
     }¢ | Current Price: $${currentPrice.toFixed(2)}`;
     this.dashboard.logInfo(message);
 
+    // Check if stop is triggered
     if (!pos.stopTriggered && pos.stopPrice !== null) {
-      const stopTriggered =
-        (side === 'buy' && bidPrice <= pos.stopPrice) ||
-        (side === 'sell' && askPrice >= pos.stopPrice);
+      let stopTriggered = false;
+      if (side === 'buy') {
+        stopTriggered = bidPrice <= pos.stopPrice;
+      } else {
+        stopTriggered = askPrice >= pos.stopPrice;
+      }
+
       if (stopTriggered) {
         pos.stopTriggered = true;
-        const stopMsg = `Stop condition met for ${symbol}. Closing position immediately.`;
+        const stopMsg = `Stop condition met for ${sym}. Closing position immediately.`;
         logger.info(stopMsg);
         this.dashboard.logWarning(stopMsg);
         pos.isProcessing = false;
-        await this.closePositionMarketOrder(symbol);
+        await this.closePositionMarketOrder(sym);
         return;
       }
     }
 
-    if (!pos.isProcessing && pos.qty > 0 && pos.side === 'buy') {
-      await this.checkAndExecutePyramiding(pos, symbol, currentPrice);
+    // Check pyramiding conditions
+    if (!pos.isProcessing && pos.qty > 0) {
+      await this.checkAndExecutePyramiding(pos, sym, currentPrice);
     }
+
+    // Update dashboard
+    this.dashboard.updatePositions(Object.values(this.positions));
   }
 
-  async checkAndExecutePyramiding(pos, symbol, currentPrice) {
-    const pyramidLevels = config.orderSettings.pyramidLevels;
+  // Check and execute pyramiding orders
+  async checkAndExecutePyramiding(pos, sym, currentPrice) {
+    const side = pos.side === 'buy' ? 'long' : 'short';
+    const strat = side === 'long' ? config.longStrategy : config.shortStrategy;
+    const pyramidLevels = strat.pyramidLevels;
+
     for (let i = 0; i < pyramidLevels.length; i++) {
       const level = pyramidLevels[i];
       if (pos.executedPyramidLevels.includes(i)) continue;
 
-      const requiredPriceIncrease = level.priceIncreaseCents / 100;
-      const targetPrice = pos.avgEntryPrice + requiredPriceIncrease;
+      let conditionMet = false;
+      let targetPrice;
 
-      if (pos.side === 'buy' && currentPrice >= targetPrice) {
+      if (side === 'long') {
+        targetPrice = pos.avgEntryPrice + level.priceIncreaseCents / 100;
+        if (currentPrice >= targetPrice) {
+          conditionMet = true;
+        }
+      } else {
+        targetPrice = pos.avgEntryPrice - level.priceIncreaseCents / 100;
+        if (currentPrice <= targetPrice) {
+          conditionMet = true;
+        }
+      }
+
+      if (conditionMet) {
         pos.isProcessing = true;
         const qtyToAdd = Math.floor(
           (pos.initialQty * level.percentToAdd) / 100
@@ -681,7 +846,7 @@ class OrderManager {
         if (qtyToAdd > 0) {
           await this.placePyramidOrder(
             pos,
-            symbol,
+            sym,
             qtyToAdd,
             level.offsetCents,
             targetPrice,
@@ -694,46 +859,57 @@ class OrderManager {
     }
   }
 
-  async placeEntryOrder(symbol, qty, side, targetPrice) {
-    if (this.positions[symbol]) {
-      const msg = `Cannot place entry order for ${symbol} - position already exists.`;
+  // Place an entry order
+  async placeEntryOrder(sym, qty, side, targetPrice) {
+    const entry = this.watchlist[sym];
+    if (!entry) return;
+
+    if (this.positions[sym]) {
+      const msg = `Cannot place entry order for ${sym} - position already exists.`;
       this.dashboard.logInfo(msg);
       logger.info(msg);
-      if (this.watchlist[symbol]) {
-        this.watchlist[symbol].hasPendingEntryOrder = false;
-        // Reset candidateHOD since this attempt is invalid now
-        this.watchlist[symbol].candidateHOD = null;
-      }
-      return;
-    }
-    if (this.hasPendingOpeningOrder(symbol)) {
-      const msg = `Cannot place entry order for ${symbol} - pending opening order exists.`;
-      this.dashboard.logInfo(msg);
-      logger.info(msg);
-      if (this.watchlist[symbol]) {
-        this.watchlist[symbol].hasPendingEntryOrder = false;
-        // Reset candidateHOD since attempt didn't proceed
-        this.watchlist[symbol].candidateHOD = null;
+      if (entry) {
+        entry.hasPendingEntryOrder = false;
+        entry.candidateHOD = null;
+        entry.candidateLOD = null;
       }
       return;
     }
 
-    const entryLimitOffsetCents =
-      config.strategySettings.entryLimitOffsetCents || 0;
-    const limitPrice = targetPrice + entryLimitOffsetCents / 100;
+    if (this.hasPendingOpeningOrder(sym)) {
+      const msg = `Cannot place entry order for ${sym} - pending opening order exists.`;
+      this.dashboard.logInfo(msg);
+      logger.info(msg);
+      if (entry) {
+        entry.hasPendingEntryOrder = false;
+        entry.candidateHOD = null;
+        entry.candidateLOD = null;
+      }
+      return;
+    }
+
+    const strat =
+      entry.side === 'long' ? config.longStrategy : config.shortStrategy;
+    const entryLimitOffsetCents = strat.entryLimitOffsetCents || 0;
+    const limitPrice =
+      entry.side === 'long'
+        ? targetPrice + entryLimitOffsetCents / 100
+        : targetPrice - entryLimitOffsetCents / 100;
+
     if (limitPrice <= 0 || isNaN(limitPrice)) {
-      const errorMessage = `Invalid limit price for ${symbol}. Cannot place entry order.`;
+      const errorMessage = `Invalid limit price for ${sym}. Cannot place entry order.`;
       logger.error(errorMessage);
       this.dashboard.logError(errorMessage);
-      if (this.watchlist[symbol]) {
-        this.watchlist[symbol].hasPendingEntryOrder = false;
-        this.watchlist[symbol].candidateHOD = null;
+      if (entry) {
+        entry.hasPendingEntryOrder = false;
+        entry.candidateHOD = null;
+        entry.candidateLOD = null;
       }
       return;
     }
 
     const order = {
-      symbol,
+      symbol: sym,
       qty: qty.toFixed(0),
       side,
       type: 'limit',
@@ -751,14 +927,14 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Entry order placed for ${qty} shares of ${symbol} at $${limitPrice.toFixed(
+      const successMessage = `Entry order placed for ${qty} shares of ${sym} at $${limitPrice.toFixed(
         2
       )}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
       this.orderTracking[result.id] = {
-        symbol,
+        symbol: sym,
         type: 'entry',
         qty: parseFloat(order.qty),
         side: order.side,
@@ -767,39 +943,48 @@ class OrderManager {
         triggerPrice: targetPrice,
         entryOffsetUsed: entryLimitOffsetCents,
       };
-
-      this.polygon.subscribeTrade(symbol);
-      if (this.watchlist[symbol])
-        this.watchlist[symbol].isSubscribedToTrade = true;
     } catch (err) {
-      if (this.watchlist[symbol]) {
-        this.watchlist[symbol].hasPendingEntryOrder = false;
-        // If order fails, reset candidateHOD so we can try again
-        this.watchlist[symbol].candidateHOD = null;
+      if (entry.side === 'short') {
+        // For shorts, if entry order fails, remove symbol from watchlist
+        this.removeSymbolFromWatchlist(sym);
+        const errorMsg = `Short entry order failed for ${sym}. Symbol removed from watchlist. Error: ${
+          err.response ? JSON.stringify(err.response.data) : err.message
+        }`;
+        logger.error(errorMsg);
+        this.dashboard.logError(errorMsg);
+      } else {
+        if (entry) {
+          entry.hasPendingEntryOrder = false;
+          entry.candidateHOD = null;
+          entry.candidateLOD = null;
+        }
+        const errorMsg = `Error placing entry order for ${sym}: ${
+          err.response ? JSON.stringify(err.response.data) : err.message
+        }`;
+        logger.error(errorMsg);
+        this.dashboard.logError(errorMsg);
       }
-      const errorMsg = `Error placing entry order for ${symbol}: ${
-        err.response ? JSON.stringify(err.response.data) : err.message
-      }`;
-      logger.error(errorMsg);
-      this.dashboard.logError(errorMsg);
     }
   }
 
+  // Place a pyramiding order
   async placePyramidOrder(
     pos,
-    symbol,
+    sym,
     qtyToAdd,
     offsetCents,
     targetPrice,
     levelIndex
   ) {
     const side = pos.side;
-    let limitPrice =
+    const strat = side === 'buy' ? config.longStrategy : config.shortStrategy;
+    const limitPrice =
       side === 'buy'
         ? targetPrice + offsetCents / 100
         : targetPrice - offsetCents / 100;
+
     if (limitPrice <= 0 || isNaN(limitPrice)) {
-      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} pyramid order.`;
+      const errorMessage = `Invalid limit price for ${sym}. Cannot place ${side} pyramid order.`;
       logger.error(errorMessage);
       this.dashboard.logError(errorMessage);
       pos.isProcessing = false;
@@ -807,7 +992,7 @@ class OrderManager {
     }
 
     const order = {
-      symbol,
+      symbol: sym,
       qty: qtyToAdd.toFixed(0),
       side,
       type: 'limit',
@@ -819,7 +1004,7 @@ class OrderManager {
 
     const orderMessage = `Placing pyramid order: ${JSON.stringify(
       order
-    )} for ${symbol}`;
+    )} for ${sym}`;
     logger.info(orderMessage);
     this.dashboard.logInfo(orderMessage);
 
@@ -827,14 +1012,14 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Pyramid order placed for ${qtyToAdd} shares of ${symbol} at $${limitPrice.toFixed(
+      const successMessage = `Pyramid order placed for ${qtyToAdd} shares of ${sym} at $${limitPrice.toFixed(
         2
       )}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
       this.orderTracking[result.id] = {
-        symbol,
+        symbol: sym,
         type: 'pyramid',
         qty: parseFloat(order.qty),
         side: order.side,
@@ -842,8 +1027,10 @@ class OrderManager {
         placedAt: Date.now(),
         pyramidLevel: levelIndex,
       };
+
+      pos.executedPyramidLevels.push(levelIndex);
     } catch (err) {
-      const errorMessage = `Error placing pyramid order for ${symbol}: ${
+      const errorMessage = `Error placing pyramid order for ${sym}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMessage);
@@ -853,10 +1040,11 @@ class OrderManager {
     }
   }
 
-  async closePositionMarketOrder(symbol) {
-    const pos = this.positions[symbol];
+  // Close a position with a market order (implemented as limit order for control)
+  async closePositionMarketOrder(sym) {
+    const pos = this.positions[sym];
     if (!pos) {
-      const warnMessage = `No position found for ${symbol} when attempting to close.`;
+      const warnMessage = `No position found for ${sym} when attempting to close.`;
       logger.warn(warnMessage);
       this.dashboard.logWarning(warnMessage);
       return;
@@ -864,28 +1052,35 @@ class OrderManager {
 
     const qty = pos.qty;
     if (qty <= 0) {
-      const warnMessage = `Position qty ${qty} for ${symbol}, nothing to close.`;
+      const warnMessage = `Position qty ${qty} for ${sym}, nothing to close.`;
       logger.warn(warnMessage);
       this.dashboard.logWarning(warnMessage);
       return;
     }
 
     const side = pos.side === 'buy' ? 'sell' : 'buy';
-    const limitOffsetCents = config.orderSettings.limitOffsetCents || 0;
-    let limitPrice =
-      side === 'sell'
-        ? pos.currentBid - limitOffsetCents / 100
-        : pos.currentAsk + limitOffsetCents / 100;
+    const strat =
+      pos.side === 'buy' ? config.longStrategy : config.shortStrategy;
+    const limitOffsetCents = strat.limitOffsetCents || 0;
+
+    let limitPrice;
+    if (pos.side === 'buy') {
+      // Long close: use currentBid - offset
+      limitPrice = pos.currentBid - limitOffsetCents / 100;
+    } else {
+      // Short close: use currentAsk + offset
+      limitPrice = pos.currentAsk + limitOffsetCents / 100;
+    }
 
     if (limitPrice <= 0 || isNaN(limitPrice)) {
-      const errorMessage = `Invalid limit price for ${symbol}. Cannot place ${side} order.`;
+      const errorMessage = `Invalid limit price for ${sym}. Cannot place ${side} close order.`;
       logger.error(errorMessage);
       this.dashboard.logError(errorMessage);
       return;
     }
 
     const order = {
-      symbol,
+      symbol: sym,
       qty: qty.toFixed(0),
       side,
       type: 'limit',
@@ -905,22 +1100,20 @@ class OrderManager {
       const result = await this.retryOperation(() =>
         this.limitedCreateOrder(order)
       );
-      const successMessage = `Limit order placed to close position in ${symbol}. Order ID: ${result.id}`;
+      const successMessage = `Limit order placed to close position in ${sym}. Order ID: ${result.id}`;
       logger.info(successMessage);
       this.dashboard.logInfo(successMessage);
 
       this.orderTracking[result.id] = {
-        symbol,
+        symbol: sym,
         type: 'close',
         qty: parseFloat(order.qty),
         side: order.side,
         filledQty: 0,
         placedAt: Date.now(),
       };
-
-      await this.refreshPositions();
     } catch (err) {
-      const errorMessage = `Error placing close order for ${symbol}: ${
+      const errorMessage = `Error placing close order for ${sym}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMessage);
@@ -928,6 +1121,7 @@ class OrderManager {
     }
   }
 
+  // Poll and update order statuses
   async pollOrderStatuses() {
     if (this.isPolling) return;
     this.isPolling = true;
@@ -946,126 +1140,136 @@ class OrderManager {
         const trackedOrder = this.orderTracking[orderId];
 
         if (!openOrderIds.has(orderId)) {
+          // Order is no longer open
           delete this.orderTracking[orderId];
           if (trackedOrder.type === 'entry') {
-            // Reset candidateHOD after entry attempt ends
-            if (this.watchlist[trackedOrder.symbol]) {
-              this.watchlist[trackedOrder.symbol].hasPendingEntryOrder = false;
-              this.watchlist[trackedOrder.symbol].isHODFrozen = false;
-              this.watchlist[trackedOrder.symbol].candidateHOD = null;
+            const entry = this.watchlist[trackedOrder.symbol];
+            if (entry) {
+              entry.hasPendingEntryOrder = false;
+              entry.isHODFrozen = false;
+              entry.candidateHOD = null;
+              entry.candidateLOD = null;
             }
           }
           continue;
         }
 
         const elapsed = now - trackedOrder.placedAt;
-        let timeoutMs = null;
-
-        if (trackedOrder.type === 'limit') {
-          timeoutMs = orderTimeouts.limit;
-        } else if (trackedOrder.type === 'pyramid') {
-          timeoutMs = orderTimeouts.pyramid;
-        } else if (trackedOrder.type === 'close') {
-          timeoutMs = orderTimeouts.close;
-        } else if (trackedOrder.type === 'entry') {
-          timeoutMs = orderTimeouts.entry;
-        }
+        let timeoutMs = orderTimeouts[trackedOrder.type];
+        if (!timeoutMs) timeoutMs = 4000; // Default timeout
 
         if (timeoutMs && elapsed > timeoutMs) {
+          // Cancel the order due to timeout
           await this.cancelOrder(orderId, trackedOrder.symbol);
+
           if (trackedOrder.type === 'close') {
             await this.closePositionMarketOrder(trackedOrder.symbol);
           }
 
           if (trackedOrder.type === 'entry') {
-            if (this.watchlist[trackedOrder.symbol]) {
-              this.watchlist[trackedOrder.symbol].hasPendingEntryOrder = false;
-              this.watchlist[trackedOrder.symbol].isHODFrozen = false;
-              this.watchlist[trackedOrder.symbol].candidateHOD = null;
+            const entry = this.watchlist[trackedOrder.symbol];
+            if (entry) {
+              entry.hasPendingEntryOrder = false;
+              entry.isHODFrozen = false;
+              entry.candidateHOD = null;
+              entry.candidateLOD = null;
+
+              // If it's a short entry, remove symbol from watchlist on failure
+              if (entry.side === 'short') {
+                this.removeSymbolFromWatchlist(trackedOrder.symbol);
+              }
             }
           }
         }
       }
 
-      // Update partial fills
+      // Handle partial fills
       for (const order of openOrders) {
         const trackedOrder = this.orderTracking[order.id];
         if (!trackedOrder) continue;
 
         const filledQty = parseFloat(order.filled_qty || '0');
-        trackedOrder.filledQty = filledQty;
+        if (filledQty > 0) {
+          trackedOrder.filledQty = filledQty;
 
-        const pos = this.positions[trackedOrder.symbol];
-        if (pos && filledQty > 0) {
-          if (trackedOrder.type === 'limit' || trackedOrder.type === 'close') {
-            pos.qty -= filledQty;
-            pos.qty = Math.max(pos.qty, 0);
-            const fillMessage = `Order ${order.id} filled ${filledQty} qty for ${trackedOrder.symbol}. Remaining: ${pos.qty}`;
-            logger.info(fillMessage);
-            this.dashboard.logInfo(fillMessage);
+          const pos = this.positions[trackedOrder.symbol];
+          if (pos) {
+            if (
+              trackedOrder.type === 'limit' ||
+              trackedOrder.type === 'close'
+            ) {
+              pos.qty -= filledQty;
+              pos.qty = Math.max(pos.qty, 0);
+              const fillMsg = `Order ${order.id} filled ${filledQty} qty for ${trackedOrder.symbol}. Remaining: ${pos.qty}`;
+              logger.info(fillMsg);
+              this.dashboard.logInfo(fillMsg);
 
-            pos.profitCents = (
-              (pos.currentPrice - pos.avgEntryPrice) *
-              100 *
-              (pos.side === 'buy' ? 1 : -1)
-            ).toFixed(2);
-            this.dashboard.updatePositions(Object.values(this.positions));
-            if (pos.qty <= 0) this.removePosition(trackedOrder.symbol);
-          } else if (trackedOrder.type === 'pyramid') {
-            const oldQty = pos.qty;
-            pos.qty = oldQty + filledQty;
-            const totalCost =
-              pos.avgEntryPrice * oldQty +
-              filledQty * parseFloat(order.limit_price || pos.currentPrice);
-            pos.avgEntryPrice = totalCost / pos.qty;
+              pos.profitCents = (
+                (pos.currentPrice - pos.avgEntryPrice) *
+                100 *
+                (pos.side === 'buy' ? 1 : -1)
+              ).toFixed(2);
+              this.dashboard.updatePositions(Object.values(this.positions));
 
-            const fillMessage = `Pyramid order ${
-              order.id
-            } filled ${filledQty} qty for ${trackedOrder.symbol}. New qty: ${
-              pos.qty
-            }, Avg Entry: $${pos.avgEntryPrice.toFixed(2)}`;
-            logger.info(fillMessage);
-            this.dashboard.logInfo(fillMessage);
+              if (pos.qty <= 0) {
+                this.removePosition(trackedOrder.symbol);
+              }
+            } else if (trackedOrder.type === 'pyramid') {
+              pos.qty += filledQty;
+              const newAvg =
+                (pos.avgEntryPrice * pos.initialQty +
+                  filledQty * parseFloat(order.limit_price)) /
+                (pos.initialQty + filledQty);
+              pos.avgEntryPrice = newAvg;
 
-            pos.profitCents = (
-              (pos.currentPrice - pos.avgEntryPrice) *
-              100 *
-              (pos.side === 'buy' ? 1 : -1)
-            ).toFixed(2);
-            this.dashboard.updatePositions(Object.values(this.positions));
+              const fillMsg = `Pyramid order ${
+                order.id
+              } filled ${filledQty} qty for ${trackedOrder.symbol}. New qty: ${
+                pos.qty
+              }, Avg Entry: $${pos.avgEntryPrice.toFixed(2)}`;
+              logger.info(fillMsg);
+              this.dashboard.logInfo(fillMsg);
 
-            if (trackedOrder.pyramidLevel !== undefined) {
-              pos.executedPyramidLevels.push(trackedOrder.pyramidLevel);
-            }
-            pos.isProcessing = false;
-          } else if (trackedOrder.type === 'entry') {
-            const oldQty = pos.qty;
-            pos.qty = oldQty + filledQty;
-            const totalCost =
-              pos.avgEntryPrice * oldQty +
-              filledQty * parseFloat(order.limit_price || pos.currentPrice);
-            pos.avgEntryPrice = totalCost / pos.qty;
+              pos.profitCents = (
+                (pos.currentPrice - pos.avgEntryPrice) *
+                100 *
+                (pos.side === 'buy' ? 1 : -1)
+              ).toFixed(2);
+              this.dashboard.updatePositions(Object.values(this.positions));
 
-            const fillMessage = `Entry order ${
-              order.id
-            } filled ${filledQty} qty for ${trackedOrder.symbol}. New qty: ${
-              pos.qty
-            }, Avg Entry: $${pos.avgEntryPrice.toFixed(2)}`;
-            logger.info(fillMessage);
-            this.dashboard.logInfo(fillMessage);
+              if (trackedOrder.pyramidLevel !== undefined) {
+                pos.executedPyramidLevels.push(trackedOrder.pyramidLevel);
+              }
+              pos.isProcessing = false;
+            } else if (trackedOrder.type === 'entry') {
+              pos.qty += filledQty;
+              const newAvg =
+                (pos.avgEntryPrice * pos.initialQty +
+                  filledQty * parseFloat(order.limit_price)) /
+                (pos.initialQty + filledQty);
+              pos.avgEntryPrice = newAvg;
 
-            pos.profitCents = (
-              (pos.currentPrice - pos.avgEntryPrice) *
-              100 *
-              (pos.side === 'buy' ? 1 : -1)
-            ).toFixed(2);
-            this.dashboard.updatePositions(Object.values(this.positions));
+              const fillMsg = `Entry order ${
+                order.id
+              } filled ${filledQty} qty for ${trackedOrder.symbol}. New qty: ${
+                pos.qty
+              }, Avg Entry: $${pos.avgEntryPrice.toFixed(2)}`;
+              logger.info(fillMsg);
+              this.dashboard.logInfo(fillMsg);
 
-            if (this.watchlist[trackedOrder.symbol]) {
-              this.watchlist[trackedOrder.symbol].hasPendingEntryOrder = false;
-              this.watchlist[trackedOrder.symbol].isHODFrozen = false;
-              // After a successful entry fill, we keep candidateHOD for that attempt (if you prefer to reset it to allow a new attempt after closing the position, do so upon position removal)
-              // If you'd like to reset candidateHOD once fully closed or after certain conditions, you can do that here or in position removal logic.
+              pos.profitCents = (
+                (pos.currentPrice - pos.avgEntryPrice) *
+                100 *
+                (pos.side === 'buy' ? 1 : -1)
+              ).toFixed(2);
+              this.dashboard.updatePositions(Object.values(this.positions));
+
+              const entry = this.watchlist[trackedOrder.symbol];
+              if (entry) {
+                entry.hasPendingEntryOrder = false;
+                entry.isHODFrozen = false;
+                // Do not reset candidateHOD/LOD here to allow for pyramiding or future entries
+              }
             }
           }
         }
@@ -1079,14 +1283,15 @@ class OrderManager {
     }
   }
 
-  async cancelOrder(orderId, symbol) {
+  // Cancel an order
+  async cancelOrder(orderId, sym) {
     try {
       await this.retryOperation(() => this.limitedCancelOrder(orderId));
-      logger.info(`Order ${orderId} canceled for ${symbol}.`);
-      this.dashboard.logInfo(`Order ${orderId} canceled for ${symbol}.`);
+      logger.info(`Order ${orderId} canceled for ${sym}.`);
+      this.dashboard.logInfo(`Order ${orderId} canceled for ${sym}.`);
       delete this.orderTracking[orderId];
     } catch (err) {
-      const errorMsg = `Error canceling order ${orderId} for ${symbol}: ${
+      const errorMsg = `Error canceling order ${orderId} for ${sym}: ${
         err.response ? JSON.stringify(err.response.data) : err.message
       }`;
       logger.error(errorMsg);
@@ -1094,6 +1299,7 @@ class OrderManager {
     }
   }
 
+  // Refresh positions from Alpaca and sync with internal state
   async refreshPositions() {
     if (this.isRefreshing) return;
     this.isRefreshing = true;
@@ -1107,25 +1313,25 @@ class OrderManager {
         latestPositionMap[position.symbol.toUpperCase()] = position;
       });
 
-      for (const symbol in this.positions) {
-        const upperSymbol = symbol.toUpperCase();
-        if (latestPositionMap[upperSymbol]) {
+      for (const sym in this.positions) {
+        const upperSym = sym.toUpperCase();
+        if (latestPositionMap[upperSym]) {
           const latestQty = Math.abs(
-            parseFloat(latestPositionMap[upperSymbol].qty)
+            parseFloat(latestPositionMap[upperSym].qty)
           );
           const latestAvgEntryPrice = parseFloat(
-            latestPositionMap[upperSymbol].avg_entry_price
+            latestPositionMap[upperSym].avg_entry_price
           );
-          const pos = this.positions[upperSymbol];
+          const pos = this.positions[upperSym];
 
           pos.qty = latestQty;
           pos.avgEntryPrice = latestAvgEntryPrice;
           pos.currentBid =
-            parseFloat(latestPositionMap[upperSymbol].current_price) - 0.01;
+            parseFloat(latestPositionMap[upperSym].current_price) - 0.01;
           pos.currentAsk =
-            parseFloat(latestPositionMap[upperSymbol].current_price) + 0.01;
+            parseFloat(latestPositionMap[upperSym].current_price) + 0.01;
           pos.currentPrice = parseFloat(
-            latestPositionMap[upperSymbol].current_price
+            latestPositionMap[upperSym].current_price
           );
           pos.profitCents = (
             (pos.currentPrice - pos.avgEntryPrice) *
@@ -1134,23 +1340,26 @@ class OrderManager {
           ).toFixed(2);
 
           if (latestQty === 0) {
-            this.removePosition(upperSymbol);
-            // When position is removed, we can reset candidateHOD to allow a new attempt later.
-            if (this.watchlist[upperSymbol]) {
-              this.watchlist[upperSymbol].candidateHOD = null;
+            this.removePosition(upperSym);
+            if (this.watchlist[upperSym]) {
+              this.watchlist[upperSym].candidateHOD = null;
+              this.watchlist[upperSym].candidateLOD = null;
             }
           }
         } else {
-          this.removePosition(symbol);
-          if (this.watchlist[symbol]) {
-            this.watchlist[symbol].candidateHOD = null;
+          // Position no longer exists
+          this.removePosition(sym);
+          if (this.watchlist[sym]) {
+            this.watchlist[sym].candidateHOD = null;
+            this.watchlist[sym].candidateLOD = null;
           }
         }
       }
 
+      // Add any new positions that weren't previously tracked
       latestPositions.forEach((position) => {
-        const symbol = position.symbol.toUpperCase();
-        if (!this.positions[symbol]) {
+        const sym = position.symbol.toUpperCase();
+        if (!this.positions[sym]) {
           this.addPosition(position);
         }
       });
@@ -1163,13 +1372,15 @@ class OrderManager {
     } finally {
       this.isRefreshing = false;
 
-      for (const symbol in this.watchlist) {
-        this.watchlist[symbol].hasPosition = !!this.positions[symbol];
+      // Update watchlist's hasPosition flags
+      for (const sym in this.watchlist) {
+        this.watchlist[sym].hasPosition = !!this.positions[sym];
       }
       this.dashboard.updateWatchlist(this.watchlist);
     }
   }
 
+  // Retry mechanism with exponential backoff
   async retryOperation(operation, retries = 5, delay = 1000) {
     try {
       return await operation();
@@ -1210,91 +1421,28 @@ class OrderManager {
     }
   }
 
+  // Sleep helper
   sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
+  // Generate unique client order ID
   generateClientOrderId(prefix = 'MY_SYSTEM') {
     return `${prefix}-${crypto.randomBytes(8).toString('hex')}`;
   }
 
-  async addPosition(position) {
-    const symbol = position.symbol.toUpperCase();
-    const qty = Math.abs(parseFloat(position.qty));
-    const side = position.side === 'long' ? 'buy' : 'sell';
-    const avgEntryPrice = parseFloat(position.avg_entry_price);
-
-    const w = this.watchlist[symbol];
-    if (!w) {
-      const msg = `Watchlist entry missing for ${symbol} while adding position.`;
-      logger.warn(msg);
-      this.dashboard.logWarning(msg);
-      return;
-    }
-
-    const hod = w.highOfDay;
-    if (!hod) {
-      const msg = `High of Day missing for ${symbol} while adding position.`;
-      logger.warn(msg);
-      this.dashboard.logWarning(msg);
-      return;
-    }
-
-    const initialStopOffsetCents =
-      config.strategySettings.initialStopOffsetCents;
-    const initialStopPrice = hod - initialStopOffsetCents / 100;
-
-    this.positions[symbol] = {
-      symbol,
-      qty,
-      initialQty: qty,
-      side,
-      avgEntryPrice,
-      currentBid: parseFloat(position.current_price) - 0.01,
-      currentAsk: parseFloat(position.current_price) + 0.01,
-      currentPrice: parseFloat(position.current_price),
-      profitCents: 0,
-      isActive: true,
-      stopPrice: initialStopPrice,
-      stopCents: initialStopOffsetCents,
-      stopDescription: `Initial Stop @ $${initialStopPrice.toFixed(
-        2
-      )} (${initialStopOffsetCents}¢ below HOD)`,
-      stopTriggered: false,
-      trailingStopActive: false,
-      trailingStopPrice: null,
-      trailingStopMaxPrice: null,
-      trailingStopLastUpdatePrice: null,
-      executedPyramidLevels: [],
-      totalPyramidLevels: config.orderSettings.pyramidLevels.length,
-      isProcessing: false,
-    };
-
-    const message = `Position added: ${symbol} | Qty: ${qty} | Avg Entry: $${avgEntryPrice} | Initial Stop: $${initialStopPrice.toFixed(
-      2
-    )}`;
-    logger.info(message);
-    this.dashboard.logInfo(message);
-
-    this.polygon.subscribeQuote(symbol);
-    this.dashboard.updatePositions(Object.values(this.positions));
-
-    if (this.watchlist[symbol]) {
-      this.watchlist[symbol].hasPosition = true;
-      // candidateHOD remains what it was. If no candidateHOD was set yet, future attempts will set it.
+  // Remove a symbol from the watchlist
+  removeSymbolFromWatchlist(sym) {
+    const entry = this.watchlist[sym];
+    if (!entry) return;
+    if (!this.positions[sym]) {
+      if (entry.isSubscribedToTrade) this.polygon.unsubscribeTrade(sym);
+      this.polygon.unsubscribeQuote(sym);
+      delete this.watchlist[sym];
+      const message = `Symbol ${sym} removed from watchlist.`;
+      logger.info(message);
+      this.dashboard.logInfo(message);
       this.dashboard.updateWatchlist(this.watchlist);
-    }
-  }
-
-  removePosition(symbol) {
-    if (this.positions[symbol]) {
-      delete this.positions[symbol];
-      this.dashboard.logInfo(`Position for ${symbol} removed.`);
-      this.dashboard.updatePositions(Object.values(this.positions));
-      // Reset candidateHOD after position is fully closed out
-      if (this.watchlist[symbol]) {
-        this.watchlist[symbol].candidateHOD = null;
-      }
     }
   }
 }

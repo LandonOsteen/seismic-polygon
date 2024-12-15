@@ -22,3 +22,43 @@
 2024-12-15T15:48:43.630Z [INFO]: Polygon WebSocket connected.
 2024-12-15T15:48:43.678Z [INFO]: Polygon WebSocket authenticated.
 2024-12-15T15:48:43.789Z [INFO]: Subscribed to WKEY quote data.
+2024-12-15T19:00:04.825Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:00:04.831Z [INFO]: Started polling for order statuses.
+2024-12-15T19:00:05.012Z [INFO]: Polygon WebSocket connection opened.
+2024-12-15T19:00:05.013Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:00:05.070Z [INFO]: Polygon WebSocket authenticated.
+2024-12-15T19:00:45.557Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:00:45.564Z [INFO]: Started polling for order statuses.
+2024-12-15T19:00:45.727Z [INFO]: Polygon WebSocket connection opened.
+2024-12-15T19:00:45.728Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:00:45.776Z [INFO]: Polygon WebSocket authenticated.
+2024-12-15T19:01:37.814Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:01:37.821Z [INFO]: Started polling for order statuses.
+2024-12-15T19:01:38.005Z [INFO]: Polygon WebSocket connection opened.
+2024-12-15T19:01:38.005Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:01:38.061Z [INFO]: Polygon WebSocket authenticated.
+2024-12-15T19:06:37.977Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:06:37.984Z [INFO]: Started polling for order statuses.
+2024-12-15T19:06:38.164Z [INFO]: Polygon WebSocket connection opened.
+2024-12-15T19:06:38.165Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:06:38.246Z [INFO]: Polygon WebSocket authenticated.
+2024-12-15T19:06:38.413Z [ERROR]: Error initializing LOD for SPY: this.restClient.getIntradayLowFromAgg is not a function
+2024-12-15T19:06:38.421Z [ERROR]: Error initializing LOD for QQQ: this.restClient.getIntradayLowFromAgg is not a function
+2024-12-15T19:07:44.286Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:07:44.292Z [INFO]: Started polling for order statuses.
+2024-12-15T19:07:44.454Z [INFO]: Polygon WebSocket connection opened.
+2024-12-15T19:07:44.455Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:07:44.504Z [INFO]: Polygon WebSocket authenticated.
+2024-12-15T19:09:36.940Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:09:36.947Z [INFO]: Started polling for order statuses.
+2024-12-15T19:09:37.123Z [INFO]: Polygon WebSocket connection opened.
+2024-12-15T19:09:37.124Z [INFO]: Polygon WebSocket connected.
+2024-12-15T19:09:37.180Z [INFO]: Polygon WebSocket authenticated.
+2024-12-15T19:09:51.943Z [INFO]: Added new long symbol SMCI from updated watchlist.
+2024-12-15T19:09:51.952Z [INFO]: Subscribed to SMCI quote data.
+2024-12-15T19:09:51.952Z [INFO]: Symbol AAPL removed from watchlist.
+2024-12-15T19:09:51.959Z [INFO]: Symbol TSLA removed from watchlist.
+2024-12-15T19:10:06.943Z [INFO]: Added new short symbol MARA from updated watchlist.
+2024-12-15T19:10:06.953Z [INFO]: Subscribed to MARA quote data.
+2024-12-15T19:10:06.953Z [INFO]: Symbol SPY removed from watchlist.
+2024-12-15T19:10:06.959Z [INFO]: Symbol QQQ removed from watchlist.

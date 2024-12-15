@@ -1,4 +1,3 @@
-// polygonClient.js
 const WebSocket = require('ws');
 const config = require('./config');
 const logger = require('./logger');
@@ -8,8 +7,8 @@ class PolygonClient {
     this.apiKey = config.polygon.apiKey;
     this.ws = null;
     this.subscribedSymbols = new Set();
-    this.onTrade = null; // Callback for trade events
-    this.onQuote = null; // Callback for quote events
+    this.onTrade = null;
+    this.onQuote = null;
   }
 
   connect() {
@@ -106,7 +105,6 @@ class PolygonClient {
         logger.info(`Subscribed to ${symbol} trade data.`);
       }
     } else {
-      // If already subscribed to quotes, add trade subscription
       const currentSubscriptions = Array.from(this.subscribedSymbols);
       if (!currentSubscriptions.includes(symbol)) {
         this.ws.send(

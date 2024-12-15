@@ -1,1 +1,3 @@
 2024-12-14T19:20:34.531Z [ERROR]: Error adding symbol WKEY to watchlist: this.restClient.getIntradayHighFromAgg is not a function
+2024-12-15T19:06:38.413Z [ERROR]: Error initializing LOD for SPY: this.restClient.getIntradayLowFromAgg is not a function
+2024-12-15T19:06:38.421Z [ERROR]: Error initializing LOD for QQQ: this.restClient.getIntradayLowFromAgg is not a function

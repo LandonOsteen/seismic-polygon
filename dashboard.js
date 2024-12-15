@@ -1,4 +1,3 @@
-// dashboard.js
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -18,8 +17,6 @@ class Dashboard {
     });
 
     // Positions Table
-    // We remove the extra columns related to targets and pyramids
-    // New columns: SYMBOL, SIDE, QTY, AVG ENTRY, BID, ASK, PROFIT, STOP PRICE
     this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
       keys: true,
       fg: 'white',
@@ -27,11 +24,8 @@ class Dashboard {
       selectedBg: 'blue',
       interactive: true,
       label: ' POSITIONS ',
-      width: '100%',
-      height: '100%',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      // Adjust columnWidth to match reduced columns
       columnWidth: [8, 6, 6, 10, 10, 10, 9, 20],
       style: {
         header: { fg: 'cyan', bold: true },
@@ -61,7 +55,6 @@ class Dashboard {
 
     this.infoBox = this.grid.set(4, 0, 4, 5, contrib.log, {
       fg: 'green',
-      selectedFg: 'green',
       label: ' INFO ',
       tags: true,
       keys: true,
@@ -77,8 +70,6 @@ class Dashboard {
       selectedBg: 'blue',
       interactive: true,
       label: ' ORDERS ',
-      width: '100%',
-      height: '100%',
       border: { type: 'line', fg: 'magenta' },
       columnWidth: [8, 10, 6, 10, 10, 10, 12],
       style: {
@@ -94,7 +85,6 @@ class Dashboard {
 
     this.errorBox = this.grid.set(8, 0, 4, 5, contrib.log, {
       fg: 'red',
-      selectedFg: 'red',
       label: ' ERRORS ',
       tags: true,
       keys: true,
@@ -105,7 +95,6 @@ class Dashboard {
 
     this.warningBox = this.grid.set(8, 5, 4, 7, contrib.log, {
       fg: 'yellow',
-      selectedFg: 'yellow',
       label: ' WARNINGS ',
       tags: true,
       keys: true,
@@ -114,14 +103,15 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Watchlist remains unchanged
+    // Watchlist Table: now shows if symbol is long(HOD) or short(LOD)
     this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
-      label: ' WATCHLIST & HOD ',
+      label: ' WATCHLIST ',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      columnWidth: [10, 10],
+      // Add a column to indicate if it's a LONG(HOD) or SHORT(LOD)
+      columnWidth: [10, 10, 5],
       style: {
         header: { fg: 'cyan', bold: true },
         cell: { fg: 'white' },
@@ -129,7 +119,7 @@ class Dashboard {
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
+      headers: ['SYMBOL', 'PRICE_LEVEL', 'SIDE'],
       data: [],
     });
 
@@ -141,11 +131,9 @@ class Dashboard {
   }
 
   logInfo(message) {
-    if (this.shouldDisplayMessage(message)) {
-      const timestamp = new Date().toISOString();
-      this.infoBox.log(`[${timestamp}] INFO: ${message}`);
-      this.screen.render();
-    }
+    const timestamp = new Date().toISOString();
+    this.infoBox.log(`[${timestamp}] INFO: ${message}`);
+    this.screen.render();
   }
 
   logWarning(message) {
@@ -171,9 +159,7 @@ class Dashboard {
     const tableData = positions.map((pos) => {
       const profitCents = parseFloat(pos.profitCents);
       const profit = `${profitCents.toFixed(2)}¢`;
-
       const stopDescription = pos.stopDescription || 'N/A';
-
       return [
         pos.symbol,
         pos.side.toUpperCase(),
@@ -260,13 +246,22 @@ class Dashboard {
   }
 
   updateWatchlist(watchlist) {
+    // watchlist[symbol] will have a flag or property: side = 'long' or 'short'
+    // If long: show "HOD", if short: show "LOD"
     const data = Object.keys(watchlist).map((symbol) => {
-      const hod = watchlist[symbol].highOfDay;
-      return [symbol, hod !== null ? `$${hod.toFixed(2)}` : 'N/A'];
+      const entry = watchlist[symbol];
+      const reference =
+        entry.side === 'long'
+          ? entry.highOfDay || 'N/A'
+          : entry.lowOfDay || 'N/A';
+      const priceLevel =
+        reference !== 'N/A' ? `$${reference.toFixed(2)}` : 'N/A';
+      const sideLabel = entry.side.toUpperCase();
+      return [symbol, priceLevel, sideLabel];
     });
 
     this.watchlistTable.setData({
-      headers: ['SYMBOL', 'HOD'],
+      headers: ['SYMBOL', 'PRICE_LEVEL', 'SIDE'],
       data: data,
     });
     this.screen.render();
