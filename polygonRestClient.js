@@ -10,7 +10,7 @@ class PolygonRestClient {
 
   async getIntradayHigh(symbol) {
     const { start, end } = this._getIntradayTimeRange();
-    // Using 5-second bars instead of 10-second bars
+    // Using 5-second bars as an example
     const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/5/second/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
     const response = await axios.get(url);
     const data = response.data;
@@ -23,6 +23,28 @@ class PolygonRestClient {
         }
       }
       return maxHigh;
+    } else {
+      return null;
+    }
+  }
+
+  // New method: getIntradayHighFromAgg
+  // Allows specifying the aggregation unit and amount (e.g., 10-second bars)
+  async getIntradayHighFromAgg(symbol, unit, amount) {
+    const { start, end } = this._getIntradayTimeRange();
+    // Example: unit='second', amount=10 for 10-second bars
+    const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/${amount}/${unit}/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
+    const response = await axios.get(url);
+    const data = response.data;
+
+    if (data.results && data.results.length > 0) {
+      let maxHigh = Number.NEGATIVE_INFINITY;
+      for (const bar of data.results) {
+        if (bar.h > maxHigh) {
+          maxHigh = bar.h;
+        }
+      }
+      return maxHigh === Number.NEGATIVE_INFINITY ? null : maxHigh;
     } else {
       return null;
     }
@@ -45,7 +67,6 @@ class PolygonRestClient {
   }
 
   _getIntradayTimeRange() {
-    // Ensure times are in Eastern Time
     const now = moment().tz(config.timeZone);
     const yyyy = now.format('YYYY');
     const mm = now.format('MM');
