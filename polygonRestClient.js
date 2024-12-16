@@ -8,78 +8,43 @@ class PolygonRestClient {
     this.baseUrl = 'https://api.polygon.io';
   }
 
-  async getIntradayHigh(symbol) {
-    const { start, end } = this._getIntradayTimeRange();
-    // Using 5-second bars as an example
-    const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/5/second/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
-    const response = await axios.get(url);
-    const data = response.data;
-
-    if (data.results && data.results.length > 0) {
-      let maxHigh = Number.NEGATIVE_INFINITY;
-      for (const bar of data.results) {
-        if (bar.h > maxHigh) {
-          maxHigh = bar.h;
-        }
-      }
-      return maxHigh;
-    } else {
-      return null;
-    }
-  }
-
-  // New method: getIntradayHighFromAgg
-  // Allows specifying the aggregation unit and amount (e.g., 10-second bars)
-  async getIntradayHighFromAgg(symbol, unit, amount) {
-    const { start, end } = this._getIntradayTimeRange();
-    // Example: unit='second', amount=10 for 10-second bars
-    const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/${amount}/${unit}/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
-    const response = await axios.get(url);
-    const data = response.data;
-
-    if (data.results && data.results.length > 0) {
-      let maxHigh = Number.NEGATIVE_INFINITY;
-      for (const bar of data.results) {
-        if (bar.h > maxHigh) {
-          maxHigh = bar.h;
-        }
-      }
-      return maxHigh === Number.NEGATIVE_INFINITY ? null : maxHigh;
-    } else {
-      return null;
-    }
-  }
-
-  async getIntradayVolume(symbol) {
-    const { start, end } = this._getIntradayTimeRange();
-    // 1-minute bars remain for volume aggregation
-    const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/1/minute/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
-    const response = await axios.get(url);
-    const data = response.data;
-
-    let totalVolume = 0;
-    if (data.results && data.results.length > 0) {
-      for (const bar of data.results) {
-        totalVolume += bar.v;
-      }
-    }
-    return totalVolume;
-  }
-
-  _getIntradayTimeRange() {
+  async getIntradayHighFromAgg(symbol) {
+    // Get current Eastern time
     const now = moment().tz(config.timeZone);
-    const yyyy = now.format('YYYY');
-    const mm = now.format('MM');
-    const dd = now.format('DD');
 
-    // Start from midnight Eastern
+    // Set start to midnight Eastern of the same day
     const startOfDayET = moment.tz(
-      `${yyyy}-${mm}-${dd}T00:00:00`,
+      `${now.format('YYYY-MM-DD')}T00:00:00`,
       config.timeZone
     );
+
     const start = startOfDayET.valueOf();
     const end = now.valueOf();
-    return { start, end };
+
+    // Use 1-minute bars from midnight ET to now
+    const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/1/minute/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
+
+    try {
+      const response = await axios.get(url);
+      const data = response.data;
+
+      if (data.results && data.results.length > 0) {
+        let maxHigh = Number.NEGATIVE_INFINITY;
+        for (const bar of data.results) {
+          if (bar.h > maxHigh) {
+            maxHigh = bar.h;
+          }
+        }
+        return maxHigh === Number.NEGATIVE_INFINITY ? null : maxHigh;
+      } else {
+        return null; // No data available
+      }
+    } catch (err) {
+      console.error(
+        `Error fetching intraday high for ${symbol}: ${err.message}`
+      );
+      return null;
+    }
   }
 
   async getGainersOrLosers(direction = 'gainers', includeOtc = false) {
@@ -95,17 +60,19 @@ class PolygonRestClient {
     return response.data.tickers || [];
   }
 
-  async getTickerDetails(symbol) {
-    const url = `${this.baseUrl}/v3/reference/tickers/${symbol}?apiKey=${this.apiKey}`;
-    try {
-      const response = await axios.get(url);
-      return response.data.results || null;
-    } catch (err) {
-      console.error(
-        `Error fetching ticker details for ${symbol}: ${err.message}`
-      );
-      return null;
-    }
+  _getIntradayTimeRange() {
+    const now = moment().tz(config.timeZone);
+    const yyyy = now.format('YYYY');
+    const mm = now.format('MM');
+    const dd = now.format('DD');
+
+    const startOfDayET = moment.tz(
+      `${yyyy}-${mm}-${dd}T00:00:00`,
+      config.timeZone
+    );
+    const start = startOfDayET.valueOf();
+    const end = now.valueOf();
+    return { start, end };
   }
 }
 

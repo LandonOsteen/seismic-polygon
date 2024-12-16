@@ -2890,3 +2890,1607 @@
 2024-12-16T14:55:43.008Z [INFO]: Subscribed to GRRR trade data.
 2024-12-16T14:55:43.017Z [INFO]: Unsubscribed from GRRR trade data.
 2024-12-16T14:55:43.020Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:31:49.865Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:31:49.873Z [INFO]: Started polling for order statuses.
+2024-12-16T15:31:50.118Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T15:31:50.119Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:31:50.171Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T15:31:50.616Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:31:59.871Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:31:59.872Z [INFO]: Subscribed to GRRR quote data.
+2024-12-16T15:31:59.876Z [INFO]: Subscribed to UAVS quote data.
+2024-12-16T15:31:59.879Z [INFO]: Subscribed to WKEY quote data.
+2024-12-16T15:32:00.038Z [INFO]: Subscribed to UAVS trade data.
+2024-12-16T15:32:00.274Z [INFO]: Subscribed to WKEY trade data.
+2024-12-16T15:32:09.877Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:32:11.014Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T15:32:13.948Z [INFO]: Placing entry order: {"symbol":"UAVS","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.70","extended_hours":true,"client_order_id":"ENTRY-75ae0ec8ccca5a67"}
+2024-12-16T15:32:13.954Z [INFO]: Unsubscribed from UAVS trade data.
+2024-12-16T15:32:14.043Z [INFO]: Subscribed to UAVS trade data.
+2024-12-16T15:32:14.380Z [INFO]: Entry order placed for 3000 shares of UAVS at $6.70. Order ID: f1b309f3-6825-4e86-be17-7fdf3d439d15
+2024-12-16T15:32:14.391Z [INFO]: Subscribed to UAVS trade data.
+2024-12-16T15:32:14.588Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:32:14.616Z [INFO]: Placing entry order: {"symbol":"GRRR","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"9.73","extended_hours":true,"client_order_id":"ENTRY-dd5f20dc0eb2f8c4"}
+2024-12-16T15:32:14.770Z [INFO]: Entry order placed for 3000 shares of GRRR at $9.73. Order ID: d3acb066-a00c-411d-bdf7-ffff347b0e2c
+2024-12-16T15:32:14.773Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:32:15.137Z [INFO]: Position added: UAVS | Qty: 3000 | Avg Entry: $6.58 | Initial Stop: $6.45
+2024-12-16T15:32:15.900Z [INFO]: Updated rolling stop for UAVS: $6.43
+2024-12-16T15:32:16.265Z [INFO]: Unsubscribed from UAVS trade data.
+2024-12-16T15:32:16.594Z [INFO]: Subscribed to UAVS trade data.
+2024-12-16T15:32:19.880Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:32:20.408Z [INFO]: Position added: GRRR | Qty: 3000 | Avg Entry: $9.6 | Initial Stop: $9.53
+2024-12-16T15:32:20.905Z [INFO]: Updated rolling stop for GRRR: $9.45
+2024-12-16T15:32:31.647Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:32:31.654Z [INFO]: Started polling for order statuses.
+2024-12-16T15:32:31.808Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:32:31.817Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:32:31.830Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T15:32:31.831Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:32:31.877Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T15:32:32.465Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:32:32.909Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T15:32:36.816Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:32:36.824Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:32:41.655Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:32:41.810Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:32:41.817Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:32:47.143Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:32:47.147Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:32:51.656Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:32:51.814Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:32:51.822Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:32:56.818Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:32:56.823Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:01.660Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:33:01.660Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T15:33:02.180Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:02.189Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:02.359Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:33:03.263Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:33:06.840Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:06.850Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:11.661Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:33:11.816Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:11.826Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:12.285Z [INFO]: Placing entry order: {"symbol":"SGMT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.15","extended_hours":true,"client_order_id":"ENTRY-038d606332125604"}
+2024-12-16T15:33:12.446Z [INFO]: Entry order placed for 3000 shares of SGMT at $6.15. Order ID: 7efeb64c-593e-428d-9fc9-9a588fc51ba8
+2024-12-16T15:33:12.455Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:33:16.825Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:16.834Z [INFO]: Position added: SGMT | Qty: 3000 | Avg Entry: $5.99 | Initial Stop: $5.90
+2024-12-16T15:33:16.841Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:17.679Z [INFO]: Updated rolling stop for SGMT: $5.84
+2024-12-16T15:33:21.661Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:33:21.828Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:21.838Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:26.811Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:26.815Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:31.662Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:33:31.823Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:31.833Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:36.964Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:36.967Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:41.663Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:33:41.925Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:41.934Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:47.193Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:47.201Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:51.662Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:33:51.941Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:51.948Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:33:56.924Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:33:56.933Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:01.663Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:34:02.229Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:02.233Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:02.743Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:34:06.929Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:06.937Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:11.667Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:34:11.921Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:11.929Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:17.212Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:17.224Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:21.665Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:34:21.937Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:21.947Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:26.927Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:26.932Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:31.667Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:34:32.217Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:32.226Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:36.951Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:36.960Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:41.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:34:41.963Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:41.971Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:47.251Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:47.254Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:51.669Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:34:51.960Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:51.968Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:34:57.118Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:34:57.124Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:01.675Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:35:02.265Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:02.268Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:06.974Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:06.977Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:11.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:35:11.967Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:11.973Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:17.216Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:17.225Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:21.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:35:21.966Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:21.975Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:26.967Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:26.973Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:31.675Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:35:32.229Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:32.237Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:36.968Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:36.976Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:35:41.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:35:41.969Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:35:41.977Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:02.660Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:36:02.667Z [INFO]: Started polling for order statuses.
+2024-12-16T15:36:02.842Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:02.849Z [WARN]: Watchlist entry missing for SGMT while adding position.
+2024-12-16T15:36:02.856Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:02.863Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T15:36:02.864Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:36:02.920Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T15:36:03.552Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:36:07.807Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:07.816Z [WARN]: Watchlist entry missing for SGMT while adding position.
+2024-12-16T15:36:07.821Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:12.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:36:12.673Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T15:36:12.838Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:12.846Z [WARN]: High of Day missing for SGMT while adding position.
+2024-12-16T15:36:12.853Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:13.253Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:36:18.163Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:18.171Z [INFO]: Position added: SGMT | Qty: 3000 | Avg Entry: $5.99 | Initial Stop: $5.97
+2024-12-16T15:36:18.182Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:22.670Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:36:22.884Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:22.887Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:27.840Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:27.848Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:32.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:36:33.168Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:33.172Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:33.325Z [INFO]: Stop condition met for SGMT. Closing position immediately.
+2024-12-16T15:36:33.329Z [INFO]: Closing position with limit order: {"symbol":"SGMT","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.89","extended_hours":true,"client_order_id":"CLOSE-c609815e11082630"}
+2024-12-16T15:36:33.560Z [INFO]: Limit order placed to close position in SGMT. Order ID: 79c3f08e-345c-47fc-8eb0-5fc6113f8004
+2024-12-16T15:36:33.916Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:33.919Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:37.837Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:37.844Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:42.672Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:36:42.850Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:42.858Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:43.695Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T15:36:45.066Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:36:48.149Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:48.153Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:48.928Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:36:49.875Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:36:49.883Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:36:49.887Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:36:49.890Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:36:52.673Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:36:52.831Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:52.835Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:57.834Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:36:57.837Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:36:58.230Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:36:58.234Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:37:02.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:37:03.154Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:03.158Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:03.412Z [INFO]: HOD for SGMT verified and updated: 6.07 -> 6.1
+2024-12-16T15:37:03.442Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:37:07.857Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:07.865Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:08.750Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T15:37:12.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:37:12.842Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:12.850Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:14.774Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:37:18.188Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:18.194Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:22.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:37:22.823Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:22.832Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:27.045Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:37:27.050Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:37:27.055Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:37:27.359Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T15:37:27.856Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:27.865Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:32.374Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:37:32.679Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:37:33.183Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:33.187Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:37.847Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:37.855Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:42.677Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:37:42.840Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:42.850Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:43.697Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T15:37:44.574Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:37:46.230Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:37:48.183Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:48.191Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:52.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:37:52.835Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:52.839Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:37:55.392Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:37:57.844Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:37:57.852Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:38:02.672Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:38:03.159Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:38:03.163Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:38:03.978Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T15:38:07.838Z [WARN]: Watchlist entry missing for GRRR while adding position.
+2024-12-16T15:38:07.842Z [WARN]: Watchlist entry missing for UAVS while adding position.
+2024-12-16T15:38:08.833Z [INFO]: Placing entry order: {"symbol":"SGMO","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.79","extended_hours":true,"client_order_id":"ENTRY-d94a90deae2df13a"}
+2024-12-16T15:38:08.836Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:38:09.164Z [INFO]: Entry order placed for 3000 shares of SGMO at $2.79. Order ID: 12cf7724-d4f8-45e1-9f1d-490ffd9c15f4
+2024-12-16T15:38:09.168Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:38:12.677Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:38:12.677Z [INFO]: Subscribed to GRRR quote data.
+2024-12-16T15:38:12.682Z [INFO]: Subscribed to UAVS quote data.
+2024-12-16T15:38:12.839Z [WARN]: High of Day missing for GRRR while adding position.
+2024-12-16T15:38:12.846Z [INFO]: Position added: SGMO | Qty: 3000 | Avg Entry: $2.64 | Initial Stop: $2.54
+2024-12-16T15:38:12.853Z [WARN]: High of Day missing for UAVS while adding position.
+2024-12-16T15:38:19.208Z [WARN]: High of Day missing for GRRR while adding position.
+2024-12-16T15:38:19.212Z [WARN]: High of Day missing for UAVS while adding position.
+2024-12-16T15:38:21.534Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:38:21.546Z [INFO]: Placing entry order: {"symbol":"GRRR","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"9.77","extended_hours":true,"client_order_id":"ENTRY-c470dbd6924e3f02"}
+2024-12-16T15:38:21.699Z [INFO]: Entry order placed for 3000 shares of GRRR at $9.77. Order ID: 8e54497f-497a-4c65-b1d9-22bd4e11eb9f
+2024-12-16T15:38:21.702Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:38:22.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:38:22.842Z [INFO]: Position added: GRRR | Qty: 6000 | Avg Entry: $9.625 | Initial Stop: $9.55
+2024-12-16T15:38:22.851Z [WARN]: High of Day missing for UAVS while adding position.
+2024-12-16T15:38:27.835Z [WARN]: High of Day missing for UAVS while adding position.
+2024-12-16T15:38:29.970Z [INFO]: Subscribed to UAVS trade data.
+2024-12-16T15:38:32.561Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:38:32.674Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:38:32.846Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:38:33.173Z [INFO]: Position added: UAVS | Qty: 3000 | Avg Entry: $6.58 | Initial Stop: $6.50
+2024-12-16T15:38:37.974Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:38:38.276Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:38:42.677Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:38:46.115Z [INFO]: Unsubscribed from GRRR trade data.
+2024-12-16T15:38:46.598Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:38:47.184Z [INFO]: Stop condition met for UAVS. Closing position immediately.
+2024-12-16T15:38:47.187Z [INFO]: Closing position with limit order: {"symbol":"UAVS","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"6.39","extended_hours":true,"client_order_id":"CLOSE-f08de15c94e248f6"}
+2024-12-16T15:38:47.414Z [INFO]: Limit order placed to close position in UAVS. Order ID: 80fe64e3-85c1-464c-af7e-e03ccc492ee3
+2024-12-16T15:38:48.093Z [INFO]: Order 80fe64e3-85c1-464c-af7e-e03ccc492ee3 filled 2029 qty for UAVS. Remaining: 0
+2024-12-16T15:38:52.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:38:57.367Z [INFO]: Stop condition met for GRRR. Closing position immediately.
+2024-12-16T15:38:57.370Z [INFO]: Closing position with limit order: {"symbol":"GRRR","qty":"6000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.52","extended_hours":true,"client_order_id":"CLOSE-3ec3b25d9a0977c2"}
+2024-12-16T15:38:57.534Z [INFO]: Limit order placed to close position in GRRR. Order ID: 5cb962c9-9a76-4313-bd70-5b538687111c
+2024-12-16T15:39:02.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:39:04.473Z [INFO]: HOD for GRRR verified and updated: 9.68 -> 10.1693
+2024-12-16T15:39:04.671Z [INFO]: HOD for UAVS verified and updated: 6.6 -> 6.68
+2024-12-16T15:39:07.720Z [INFO]: Unsubscribed from GRRR trade data.
+2024-12-16T15:39:12.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:39:22.677Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:39:32.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:39:39.464Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:39:39.471Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:39:39.474Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:39:39.508Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:39:39.512Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:39:39.516Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:39:39.519Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:39:39.523Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:39:39.964Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:39:41.884Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:39:42.643Z [INFO]: Unsubscribed from UAVS trade data.
+2024-12-16T15:39:42.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:39:51.907Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:39:52.679Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:40:02.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:40:09.510Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:40:12.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:40:22.682Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:40:32.677Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:40:42.682Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:40:52.681Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:41:02.053Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:41:02.154Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:41:02.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:41:03.678Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:41:03.685Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:41:04.686Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:41:04.694Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:41:13.122Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:41:23.125Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:41:33.123Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:41:43.124Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:41:53.125Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:42:03.122Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:42:13.127Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:42:23.115Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:42:33.114Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:42:38.856Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:42:38.864Z [INFO]: Started polling for order statuses.
+2024-12-16T15:42:39.045Z [WARN]: Watchlist entry missing for SGMO while adding position.
+2024-12-16T15:42:39.121Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T15:42:39.122Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:42:39.173Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T15:42:39.624Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:42:40.092Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T15:42:40.298Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T15:42:40.788Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:42:43.999Z [INFO]: Position added: SGMO | Qty: 3000 | Avg Entry: $2.64 | Initial Stop: $2.58
+2024-12-16T15:42:48.862Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:42:48.863Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T15:42:48.865Z [INFO]: Subscribed to GRRR quote data.
+2024-12-16T15:42:48.868Z [INFO]: Subscribed to UAVS quote data.
+2024-12-16T15:42:49.471Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:42:51.262Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:42:58.487Z [INFO]: Subscribed to UAVS trade data.
+2024-12-16T15:42:58.885Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:43:05.215Z [INFO]: Placing entry order: {"symbol":"SGMT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.24","extended_hours":true,"client_order_id":"ENTRY-0b1d2447e2581790"}
+2024-12-16T15:43:05.375Z [INFO]: Entry order placed for 3000 shares of SGMT at $6.24. Order ID: d5f2c54f-ebbc-47b0-b7af-32206c344277
+2024-12-16T15:43:05.379Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:43:08.877Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:43:09.399Z [INFO]: Position added: SGMT | Qty: 3000 | Avg Entry: $6.09 | Initial Stop: $5.99
+2024-12-16T15:43:10.085Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T15:43:18.880Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:43:27.276Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:43:27.443Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:43:28.391Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:43:28.420Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:43:28.877Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:43:38.878Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:43:39.786Z [INFO]: HOD for SGMT verified and updated: 6.09 -> 6.1
+2024-12-16T15:43:39.993Z [INFO]: HOD for GRRR verified and updated: 9.57 -> 10.1693
+2024-12-16T15:43:40.192Z [INFO]: HOD for UAVS verified and updated: 6.5 -> 6.68
+2024-12-16T15:43:40.355Z [INFO]: Unsubscribed from GRRR trade data.
+2024-12-16T15:43:41.275Z [INFO]: Unsubscribed from UAVS trade data.
+2024-12-16T15:43:41.339Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:46.563Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:46.570Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:46.573Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:48.879Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:43:50.521Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:50.528Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:50.533Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:50.537Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:50.540Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:56.057Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:56.060Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:56.062Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:56.065Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:56.068Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:56.079Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:56.095Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:43:56.103Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:43:58.740Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:43:58.751Z [INFO]: Started polling for order statuses.
+2024-12-16T15:43:58.971Z [WARN]: Watchlist entry missing for SGMO while adding position.
+2024-12-16T15:43:58.982Z [WARN]: Watchlist entry missing for SGMT while adding position.
+2024-12-16T15:43:58.994Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T15:43:58.995Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:43:59.044Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T15:43:59.573Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:43:59.783Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T15:43:59.971Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:44:01.063Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:44:03.921Z [INFO]: Position added: SGMO | Qty: 3000 | Avg Entry: $2.64 | Initial Stop: $2.60
+2024-12-16T15:44:03.932Z [WARN]: Watchlist entry missing for SGMT while adding position.
+2024-12-16T15:44:06.994Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:44:08.003Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:44:08.749Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:44:08.750Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T15:44:08.753Z [INFO]: Subscribed to GRRR quote data.
+2024-12-16T15:44:08.757Z [INFO]: Subscribed to UAVS quote data.
+2024-12-16T15:44:08.939Z [WARN]: High of Day missing for SGMT while adding position.
+2024-12-16T15:44:10.163Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T15:44:11.045Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:44:13.307Z [INFO]: Subscribed to UAVS trade data.
+2024-12-16T15:44:14.124Z [INFO]: Subscribed to GRRR trade data.
+2024-12-16T15:44:14.260Z [INFO]: Position added: SGMT | Qty: 3000 | Avg Entry: $6.09 | Initial Stop: $5.97
+2024-12-16T15:44:18.747Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:44:23.982Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:44:23.990Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:44:28.754Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:44:38.755Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:44:48.774Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:44:58.780Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:44:58.780Z [INFO]: Subscribed to AI quote data.
+2024-12-16T15:44:59.202Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:44:59.719Z [INFO]: HOD for SGMT verified and updated: 6.07 -> 6.1
+2024-12-16T15:45:00.141Z [INFO]: HOD for GRRR verified and updated: 9.54 -> 10.1693
+2024-12-16T15:45:00.352Z [INFO]: HOD for UAVS verified and updated: 6.38 -> 6.68
+2024-12-16T15:45:00.464Z [INFO]: Unsubscribed from UAVS trade data.
+2024-12-16T15:45:04.169Z [INFO]: Unsubscribed from GRRR trade data.
+2024-12-16T15:45:08.780Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:45:09.939Z [INFO]: Placing entry order: {"symbol":"AI","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"41.81","extended_hours":true,"client_order_id":"ENTRY-1fcf7badfe30a39d"}
+2024-12-16T15:45:09.944Z [INFO]: Unsubscribed from AI trade data.
+2024-12-16T15:45:09.992Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:45:10.004Z [INFO]: Placing entry order: {"symbol":"AI","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"41.82","extended_hours":true,"client_order_id":"ENTRY-7d345bfb0f9aa9c5"}
+2024-12-16T15:45:10.130Z [INFO]: Entry order placed for 3000 shares of AI at $41.81. Order ID: fee12865-1810-4b89-8df9-dedf7d1032b1
+2024-12-16T15:45:10.137Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:45:10.242Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T15:45:10.446Z [INFO]: Entry order placed for 3000 shares of AI at $41.82. Order ID: f2f849e1-24a1-498b-b6f1-91492039094d
+2024-12-16T15:45:10.455Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:45:13.955Z [INFO]: Position added: AI | Qty: 6000 | Avg Entry: $41.67 | Initial Stop: $41.59
+2024-12-16T15:45:18.636Z [INFO]: Unsubscribed from AI trade data.
+2024-12-16T15:45:18.781Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:45:19.144Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:45:19.631Z [INFO]: Unsubscribed from AI trade data.
+2024-12-16T15:45:20.063Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:45:20.678Z [INFO]: Unsubscribed from AI trade data.
+2024-12-16T15:45:21.305Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:45:28.784Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:45:38.785Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:45:48.783Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:45:58.786Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:46:01.622Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:46:08.787Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:46:10.188Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T15:46:10.280Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:46:13.866Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:46:13.875Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:46:18.783Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:46:22.204Z [INFO]: Stop condition met for AI. Closing position immediately.
+2024-12-16T15:46:22.209Z [INFO]: Closing position with limit order: {"symbol":"AI","qty":"6000","side":"sell","type":"limit","time_in_force":"day","limit_price":"41.49","extended_hours":true,"client_order_id":"CLOSE-56c850e2bf049669"}
+2024-12-16T15:46:22.386Z [INFO]: Limit order placed to close position in AI. Order ID: bc80f5d9-deb4-441f-9f62-a00dbd57f86f
+2024-12-16T15:46:23.534Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:46:28.788Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:46:29.371Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:46:29.382Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:46:29.388Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:46:31.879Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:46:31.891Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:46:38.791Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:46:48.793Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:46:48.793Z [INFO]: Subscribed to APLD quote data.
+2024-12-16T15:46:49.039Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:46:58.796Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:47:08.795Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:47:14.543Z [INFO]: Placing entry order: {"symbol":"AI","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"41.92","extended_hours":true,"client_order_id":"ENTRY-cfecf651a67968ff"}
+2024-12-16T15:47:14.547Z [INFO]: Unsubscribed from AI trade data.
+2024-12-16T15:47:14.556Z [INFO]: Placing entry order: {"symbol":"AI","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"41.93","extended_hours":true,"client_order_id":"ENTRY-f720bc34a0f13671"}
+2024-12-16T15:47:14.567Z [INFO]: Placing entry order: {"symbol":"AI","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"41.94","extended_hours":true,"client_order_id":"ENTRY-59ac2ecb7f66cdc2"}
+2024-12-16T15:47:14.579Z [INFO]: Placing entry order: {"symbol":"AI","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"41.95","extended_hours":true,"client_order_id":"ENTRY-c67f81f923c86518"}
+2024-12-16T15:47:14.682Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:47:14.694Z [INFO]: Placing entry order: {"symbol":"AI","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"41.93","extended_hours":true,"client_order_id":"ENTRY-c6f20ed4652f19cf"}
+2024-12-16T15:47:14.750Z [INFO]: Entry order placed for 3000 shares of AI at $41.92. Order ID: bf7a1b8e-f225-4c6e-a6a2-4f4118c94f56
+2024-12-16T15:47:14.755Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:47:14.782Z [INFO]: Unsubscribed from AI trade data.
+2024-12-16T15:47:15.112Z [INFO]: Entry order placed for 3000 shares of AI at $41.93. Order ID: 46550df4-bb6c-41d7-84cf-8ee363accd63
+2024-12-16T15:47:15.120Z [INFO]: Subscribed to AI trade data.
+2024-12-16T15:47:15.429Z [ERROR]: Error placing entry order for AI: {"buying_power":"96991.81","code":40310000,"cost_basis":"125820","message":"insufficient buying power"}
+2024-12-16T15:47:15.808Z [ERROR]: Error placing entry order for AI: {"buying_power":"97179.21","code":40310000,"cost_basis":"125850","message":"insufficient buying power"}
+2024-12-16T15:47:16.492Z [ERROR]: Error placing entry order for AI: {"buying_power":"97315.3","code":40310000,"cost_basis":"125790","message":"insufficient buying power"}
+2024-12-16T15:47:18.800Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:47:19.109Z [INFO]: Position added: AI | Qty: 6000 | Avg Entry: $41.836523 | Initial Stop: $41.75
+2024-12-16T15:47:19.209Z [INFO]: Stop condition met for AI. Closing position immediately.
+2024-12-16T15:47:19.213Z [INFO]: Closing position with limit order: {"symbol":"AI","qty":"6000","side":"sell","type":"limit","time_in_force":"day","limit_price":"41.66","extended_hours":true,"client_order_id":"CLOSE-3a82df3e2ab90346"}
+2024-12-16T15:47:19.546Z [INFO]: Limit order placed to close position in AI. Order ID: 3cf99dcc-1767-46a6-bdeb-bd4b3fbf651a
+2024-12-16T15:47:28.801Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:47:30.757Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:47:38.802Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:47:41.287Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:47:48.807Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:47:57.896Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:47:58.809Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:48:08.821Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:48:18.824Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:48:20.430Z [INFO]: Unsubscribed from AI trade data.
+2024-12-16T15:48:28.823Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:48:38.934Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:48:41.396Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T15:48:41.811Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:48:48.940Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:48:58.938Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:49:08.941Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:49:09.106Z [INFO]: Placing entry order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.29","extended_hours":true,"client_order_id":"ENTRY-3ce0072c25fbf65e"}
+2024-12-16T15:49:09.112Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:49:09.165Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:49:09.473Z [INFO]: Entry order placed for 3000 shares of APLD at $10.29. Order ID: 50ebcb97-79c1-4d71-ba13-8caf52cf8adc
+2024-12-16T15:49:09.479Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:49:14.124Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $10.13 | Initial Stop: $10.05
+2024-12-16T15:49:17.888Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:49:18.202Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:49:18.943Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:49:28.942Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:49:38.946Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:49:48.945Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:49:49.572Z [INFO]: Stop condition met for APLD. Closing position immediately.
+2024-12-16T15:49:49.583Z [INFO]: Closing position with limit order: {"symbol":"APLD","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.97","extended_hours":true,"client_order_id":"CLOSE-6531ec6ca8abeff9"}
+2024-12-16T15:49:49.879Z [INFO]: Limit order placed to close position in APLD. Order ID: 92644bd9-1417-436e-b2c5-4d0f8c2a8215
+2024-12-16T15:49:58.948Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:50:08.945Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:50:18.952Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:50:28.951Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:50:38.952Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:50:48.955Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:50:59.148Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:51:09.156Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:51:19.155Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:51:29.155Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:51:39.156Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:51:49.158Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:51:59.157Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:52:09.160Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:52:09.160Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T15:52:09.410Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:52:19.159Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:52:29.159Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:52:39.188Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:52:43.740Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.66","extended_hours":true,"client_order_id":"ENTRY-b8bb479ee6feade5"}
+2024-12-16T15:52:43.747Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T15:52:43.908Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.66. Order ID: e410c71e-252c-45d5-ba3e-9b8fd763408f
+2024-12-16T15:52:43.916Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:52:44.359Z [INFO]: Position added: QUBT | Qty: 37 | Avg Entry: $8.43 | Initial Stop: $8.41
+2024-12-16T15:52:46.158Z [INFO]: Stop condition met for QUBT. Closing position immediately.
+2024-12-16T15:52:46.162Z [INFO]: Closing position with limit order: {"symbol":"QUBT","qty":"37","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.32","extended_hours":true,"client_order_id":"CLOSE-a29e6a4df952e95e"}
+2024-12-16T15:52:46.320Z [INFO]: Limit order placed to close position in QUBT. Order ID: 26d3af61-7bfd-48c8-8d5f-27f82c402dfc
+2024-12-16T15:52:49.203Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:52:59.231Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:53:00.252Z [INFO]: HOD for QUBT verified and updated: 8.5053 -> 8.5874
+2024-12-16T15:53:00.538Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T15:53:02.880Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:53:02.897Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:53:03.021Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-f46b6ec373ec552f"}
+2024-12-16T15:53:03.032Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-76af8c59d4850467"}
+2024-12-16T15:53:03.042Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-7fe0ecc1b3d3011d"}
+2024-12-16T15:53:03.053Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-a620374d83344295"}
+2024-12-16T15:53:03.063Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-63814f307ce098f9"}
+2024-12-16T15:53:03.088Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-f9c52d32e859ab19"}
+2024-12-16T15:53:03.099Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-2a1cce8d1317c063"}
+2024-12-16T15:53:03.110Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-26b18848f7d9772e"}
+2024-12-16T15:53:03.121Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-a33f7f507a3371e5"}
+2024-12-16T15:53:03.131Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-1be3e219092952cc"}
+2024-12-16T15:53:03.142Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-8ccaaebc7891f6de"}
+2024-12-16T15:53:03.153Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-f4f1741eb1acd0b5"}
+2024-12-16T15:53:03.164Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-11f6f19c24ec99af"}
+2024-12-16T15:53:03.176Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-c2425aa61cdca1d3"}
+2024-12-16T15:53:03.187Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-56b116c7c85fa512"}
+2024-12-16T15:53:03.197Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-07eedec8dbe95959"}
+2024-12-16T15:53:03.209Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-6cdb6ee9a47b27da"}
+2024-12-16T15:53:03.220Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-fda21fe46f1f7e09"}
+2024-12-16T15:53:03.231Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-cfd5c96947f308a6"}
+2024-12-16T15:53:03.242Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-604e91276781fc6d"}
+2024-12-16T15:53:03.409Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-b547d03a2c1c11a0"}
+2024-12-16T15:53:03.423Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-7b1ea17ca4b6c1e8"}
+2024-12-16T15:53:03.435Z [INFO]: Placing take-profit order: {"symbol":"SGMO","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.70","extended_hours":true,"client_order_id":"TAKE_PROFIT-16abe75863037596"}
+2024-12-16T15:53:03.461Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 954ce430-bb98-4a91-8832-a2626cca9d4d
+2024-12-16T15:53:03.471Z [INFO]: Placing pyramid order: {"symbol":"SGMO","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.75","extended_hours":true,"client_order_id":"PYRAMID-f8e09f2f3d065d26"} for SGMO
+2024-12-16T15:53:03.777Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: db70f3cb-401b-4cb8-8a5e-88cb1d0f71fc
+2024-12-16T15:53:04.138Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 1ff0ea05-f13e-4bf7-b419-ac552126f614
+2024-12-16T15:53:04.649Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 472b0f57-a8fa-46e9-b6c9-27932f59b0c7
+2024-12-16T15:53:04.920Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 5753c6a7-1ed8-4856-b256-8c877bb5530b
+2024-12-16T15:53:05.291Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 986327c1-1aab-4461-86d4-bae2e551cf7a
+2024-12-16T15:53:05.610Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: ef716bb9-15e7-4a66-a2de-0edfb85ae5ab
+2024-12-16T15:53:06.005Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 1fab26cf-f78b-4f0b-9352-74146e1872c7
+2024-12-16T15:53:06.342Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: fbd4dca2-d1fa-4e1d-84ea-cd86e0b01429
+2024-12-16T15:53:06.640Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: a61c9a72-896b-44ea-8c0b-f38bc9e06043
+2024-12-16T15:53:06.943Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:07.363Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:07.622Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:08.031Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:53:08.122Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:08.345Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 3585853d-4968-4a1d-8e13-787ac19fa51e
+2024-12-16T15:53:08.832Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 3b4a8d92-3dba-4f40-bca9-b19ef45756b5
+2024-12-16T15:53:09.045Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 5ea03145-c45d-49d1-a5eb-8c9fd8ca8988
+2024-12-16T15:53:09.233Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:53:09.382Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 7d3bee86-841b-46c8-8c9f-c917c0440090
+2024-12-16T15:53:09.749Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 504208af-070d-4b2f-9f74-1125af13d4e2
+2024-12-16T15:53:10.122Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: e88329a5-1d6f-4210-9852-adcb58c5cf49
+2024-12-16T15:53:10.157Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:53:10.488Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 9a2375c7-f1f1-4e49-8957-0cffdebbde3b
+2024-12-16T15:53:10.793Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: 1591f8ec-4384-449f-99f1-21f02b088b54
+2024-12-16T15:53:11.152Z [INFO]: Take-profit order placed for 300 shares of SGMO at $2.70. Order ID: eedc8133-59a7-4740-99dd-ede8ebb35b8e
+2024-12-16T15:53:11.483Z [ERROR]: Error placing pyramid order for SGMO: {"buy_limit_price":"2.75","code":40310000,"existing_order_id":"1591f8ec-4384-449f-99f1-21f02b088b54","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"2.7"}
+2024-12-16T15:53:11.861Z [INFO]: Order eedc8133-59a7-4740-99dd-ede8ebb35b8e filled 164 qty for SGMO. Remaining: 2836
+2024-12-16T15:53:11.869Z [INFO]: Order 1591f8ec-4384-449f-99f1-21f02b088b54 filled 299 qty for SGMO. Remaining: 2537
+2024-12-16T15:53:11.929Z [INFO]: Placing pyramid order: {"symbol":"SGMO","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.75","extended_hours":true,"client_order_id":"PYRAMID-8ae29e58bfd3c01f"} for SGMO
+2024-12-16T15:53:12.576Z [ERROR]: Error placing pyramid order for SGMO: {"available":"2700","code":40310000,"existing_qty":"2700","held_for_orders":"0","message":"insufficient qty available for order (requested: 3000, available: 2700)","related_orders":["1591f8ec-4384-449f-99f1-21f02b088b54","eedc8133-59a7-4740-99dd-ede8ebb35b8e"],"symbol":"SGMO"}
+2024-12-16T15:53:19.238Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:53:24.768Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-b2949d0427fa654a"}
+2024-12-16T15:53:24.779Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-d1c23bb3b2bf2705"}
+2024-12-16T15:53:24.796Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-e0b3cfbb1ca0039e"}
+2024-12-16T15:53:24.808Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-be400af2db6ad2b3"}
+2024-12-16T15:53:24.820Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-747421d7becefb50"}
+2024-12-16T15:53:24.840Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-a0b2e2fd09af02ba"}
+2024-12-16T15:53:24.852Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-419ed90798155a2d"}
+2024-12-16T15:53:24.864Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-ad4f83d7e09c4a65"}
+2024-12-16T15:53:24.876Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-0ae326f592a777f7"}
+2024-12-16T15:53:24.888Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-817985fbb7defa0d"}
+2024-12-16T15:53:24.901Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-2997df13b442db3d"}
+2024-12-16T15:53:24.912Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-400d25b66149f15f"}
+2024-12-16T15:53:24.924Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-b4c55af60a1b8bd2"}
+2024-12-16T15:53:24.936Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-62116a6964a51672"}
+2024-12-16T15:53:24.948Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-b21b32dca3f98ae6"}
+2024-12-16T15:53:24.960Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-32bfee155d46bf04"}
+2024-12-16T15:53:24.973Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-7e422c671a44d6dc"}
+2024-12-16T15:53:24.985Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.50","extended_hours":true,"client_order_id":"TAKE_PROFIT-0f90ca2ecfe73dc9"}
+2024-12-16T15:53:24.997Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-131fced15ead3ba8"}
+2024-12-16T15:53:25.008Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.50","extended_hours":true,"client_order_id":"TAKE_PROFIT-95f6f89c501c8043"}
+2024-12-16T15:53:25.020Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.50","extended_hours":true,"client_order_id":"TAKE_PROFIT-9a0b0f4ae3fca28b"}
+2024-12-16T15:53:25.032Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-cd350c530257dc01"}
+2024-12-16T15:53:25.044Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-c6cc296ba1b6780a"}
+2024-12-16T15:53:25.056Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-0f54e6ec6ffd6867"}
+2024-12-16T15:53:25.067Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.50","extended_hours":true,"client_order_id":"TAKE_PROFIT-a70e544306abcbd4"}
+2024-12-16T15:53:25.079Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-7421051a12727220"}
+2024-12-16T15:53:25.090Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"296","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"TAKE_PROFIT-67b91505e3b48785"}
+2024-12-16T15:53:25.277Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: e4684962-96b8-457a-9eb0-328614a403b7
+2024-12-16T15:53:25.290Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"37","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.54","extended_hours":true,"client_order_id":"PYRAMID-b462ef1cb7c236b3"} for QUBT
+2024-12-16T15:53:25.651Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: 8021118e-9fb0-459f-8306-16fbd2adf0d1
+2024-12-16T15:53:25.972Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: 67e17d91-df02-4007-9c6f-e8c8b57c5241
+2024-12-16T15:53:26.447Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: 31ea9042-3225-42d3-b036-ba85149e2cec
+2024-12-16T15:53:26.653Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: 25128616-1e22-4923-996b-997719e183fe
+2024-12-16T15:53:27.058Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: ec19f058-18b5-4949-a053-a3e9649750a5
+2024-12-16T15:53:27.846Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: d4fc0d65-3b67-418b-bee7-f098879b4961
+2024-12-16T15:53:27.996Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: 18c0dd6b-4110-4b21-be18-5df92e3557b6
+2024-12-16T15:53:28.600Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: b701894e-816f-4591-9269-640e44968efc
+2024-12-16T15:53:28.810Z [INFO]: Take-profit order placed for 296 shares of QUBT at $8.49. Order ID: 1b6a47a5-1211-4fb5-b2cf-5407794d01f8
+2024-12-16T15:53:29.123Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:29.237Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:53:29.516Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:29.827Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:30.172Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:30.500Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.039Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.221Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.566Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.924Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:32.289Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:32.615Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:32.958Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:33.562Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:33.737Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:34.104Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:34.497Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:34.773Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:35.465Z [ERROR]: Error placing pyramid order for QUBT: {"buy_limit_price":"8.54","code":40310000,"existing_order_id":"b701894e-816f-4591-9269-640e44968efc","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"8.49"}
+2024-12-16T15:53:36.235Z [INFO]: Order b701894e-816f-4591-9269-640e44968efc canceled for QUBT.
+2024-12-16T15:53:36.244Z [INFO]: Closing position with limit order: {"symbol":"QUBT","qty":"4","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.39","extended_hours":true,"client_order_id":"CLOSE-2d42d5b76a6923ea"}
+2024-12-16T15:53:36.535Z [INFO]: Limit order placed to close position in QUBT. Order ID: d7b0f5b3-4611-4c55-9156-a346988c521e
+2024-12-16T15:53:37.274Z [INFO]: Order d7b0f5b3-4611-4c55-9156-a346988c521e filled 3 qty for QUBT. Remaining: 0
+2024-12-16T15:53:39.247Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:53:40.743Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:53:40.752Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:54:49.683Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:54:49.694Z [INFO]: Started polling for order statuses.
+2024-12-16T15:54:49.876Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T15:54:49.877Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:54:49.928Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T15:54:50.095Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T15:54:50.112Z [INFO]: Position added: SGMO | Qty: 2700 | Avg Entry: $2.71
+2024-12-16T15:54:50.195Z [INFO]: Stop condition met for SGMO. Closing position immediately.
+2024-12-16T15:54:50.200Z [INFO]: Closing position with limit order: {"symbol":"SGMO","qty":"2700","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.83","extended_hours":true,"client_order_id":"CLOSE-39e8d92f592de300"}
+2024-12-16T15:54:50.331Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T15:54:50.344Z [INFO]: Position added: SGMT | Qty: 3000 | Avg Entry: $6.09
+2024-12-16T15:54:50.365Z [INFO]: Limit order placed to close position in SGMO. Order ID: 6988b3b6-cd30-416c-b9a9-2d8e3fd89f99
+2024-12-16T15:54:50.703Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:54:50.956Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:54:51.429Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T15:54:51.928Z [INFO]: Stop condition met for SGMT. Closing position immediately.
+2024-12-16T15:54:51.932Z [INFO]: Closing position with limit order: {"symbol":"SGMT","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.90","extended_hours":true,"client_order_id":"CLOSE-79a0b302e6759782"}
+2024-12-16T15:54:51.938Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:54:52.106Z [INFO]: Limit order placed to close position in SGMT. Order ID: 2abe6d42-d483-4bd7-94cf-8bc63aa725ab
+2024-12-16T15:54:59.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:54:59.694Z [INFO]: Subscribed to APLD quote data.
+2024-12-16T15:54:59.698Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T15:55:01.825Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:55:02.355Z [INFO]: Placing entry order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.21","extended_hours":true,"client_order_id":"ENTRY-c34f7f595b3e75b1"}
+2024-12-16T15:55:02.359Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:55:02.519Z [INFO]: Entry order placed for 3000 shares of APLD at $10.21. Order ID: d67e8aa9-30c3-4712-81e0-f849b4a49420
+2024-12-16T15:55:02.525Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:55:04.507Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T15:55:04.881Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:55:05.183Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $10.01
+2024-12-16T15:55:09.699Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:55:15.601Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T15:55:17.837Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.70","extended_hours":true,"client_order_id":"ENTRY-7385f843482aad35"}
+2024-12-16T15:55:17.842Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T15:55:17.948Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:55:17.963Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.71","extended_hours":true,"client_order_id":"ENTRY-07bc2d63710d8b51"}
+2024-12-16T15:55:18.000Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.70. Order ID: b9004b7a-db23-4403-b7b3-0bc0be6ee589
+2024-12-16T15:55:18.014Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:55:18.369Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.71. Order ID: 70f01ca9-06f5-49ce-a9a7-cb0537693e8b
+2024-12-16T15:55:18.374Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:55:19.703Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:55:20.318Z [INFO]: Position added: QUBT | Qty: 6000 | Avg Entry: $8.56
+2024-12-16T15:55:23.746Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T15:55:23.868Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:55:25.322Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T15:55:29.703Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:55:32.053Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-d73c3033dc0e19e4"}
+2024-12-16T15:55:32.067Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-49072945cf3f2c19"}
+2024-12-16T15:55:32.080Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-95590258fe7db385"}
+2024-12-16T15:55:32.104Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-cbcd0caead0f50a9"}
+2024-12-16T15:55:32.116Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-d5c2455c71ff0913"}
+2024-12-16T15:55:32.129Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-d7123fef7afc405d"}
+2024-12-16T15:55:32.142Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-ddf0d602d93d788d"}
+2024-12-16T15:55:32.155Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-1680bbdc0a538ccd"}
+2024-12-16T15:55:32.168Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-03b774bc25baa7dc"}
+2024-12-16T15:55:32.180Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-b25e7c219eec42c9"}
+2024-12-16T15:55:32.193Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-6c4e1794f6bb9339"}
+2024-12-16T15:55:32.205Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-37e541211afe65c1"}
+2024-12-16T15:55:32.220Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:55:32.425Z [INFO]: Placing take-profit order: {"symbol":"APLD","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"10.07","extended_hours":true,"client_order_id":"TAKE_PROFIT-7ed44f7e6526189d"}
+2024-12-16T15:55:32.600Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: 17d68834-68f6-4157-b6ba-24b31440b149
+2024-12-16T15:55:32.610Z [INFO]: Placing pyramid order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.12","extended_hours":true,"client_order_id":"PYRAMID-af2993339214d18c"} for APLD
+2024-12-16T15:55:32.911Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: f5e0c56e-f85e-48d6-b3d0-c98e0a5958cd
+2024-12-16T15:55:32.920Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:55:33.389Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: 3ef1ca92-5f54-401a-84b4-9d72ee63318d
+2024-12-16T15:55:33.729Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: 68ffbcb8-fb17-4375-b93c-2ef63165ad2b
+2024-12-16T15:55:33.961Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: fa99f8cc-cdeb-438b-b5be-163b36cc1436
+2024-12-16T15:55:34.121Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:55:34.349Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: 5e011135-fc4e-43fc-99b8-96df6fe0e15e
+2024-12-16T15:55:34.368Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:55:34.664Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: 8c16853d-d356-4bf2-b508-dee01a4e8e71
+2024-12-16T15:55:35.014Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: 8a0c2fa4-c8b0-401a-bc62-a7dc2ee1e159
+2024-12-16T15:55:35.385Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: cbcd5038-29ce-4811-b153-6679a3ef3bc2
+2024-12-16T15:55:35.751Z [INFO]: Take-profit order placed for 300 shares of APLD at $10.07. Order ID: d9de75fa-99a5-4044-b544-a4be0830ee93
+2024-12-16T15:55:36.117Z [ERROR]: Error placing take-profit order for APLD: Request failed with status code 403
+2024-12-16T15:55:36.421Z [ERROR]: Error placing take-profit order for APLD: Request failed with status code 403
+2024-12-16T15:55:36.767Z [ERROR]: Error placing take-profit order for APLD: Request failed with status code 403
+2024-12-16T15:55:37.108Z [ERROR]: Error placing pyramid order for APLD: {"buy_limit_price":"10.12","code":40310000,"existing_order_id":"8a0c2fa4-c8b0-401a-bc62-a7dc2ee1e159","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"10.07"}
+2024-12-16T15:55:37.815Z [INFO]: Order 8a0c2fa4-c8b0-401a-bc62-a7dc2ee1e159 filled 198 qty for APLD. Remaining: 204
+2024-12-16T15:55:39.031Z [INFO]: Placing pyramid order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.12","extended_hours":true,"client_order_id":"PYRAMID-6c0fb10eb769e051"} for APLD
+2024-12-16T15:55:39.373Z [ERROR]: Error placing pyramid order for APLD: {"buy_limit_price":"10.12","code":40310000,"existing_order_id":"8a0c2fa4-c8b0-401a-bc62-a7dc2ee1e159","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"10.07"}
+2024-12-16T15:55:39.560Z [INFO]: Placing entry order: {"symbol":"SGMO","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"ENTRY-66745e6e569fe5e1"}
+2024-12-16T15:55:39.565Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:55:39.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:55:39.753Z [INFO]: Entry order placed for 3000 shares of SGMO at $2.90. Order ID: 831b676e-4446-405e-bc72-ac408005bbcb
+2024-12-16T15:55:39.758Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:55:39.954Z [INFO]: Placing pyramid order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.12","extended_hours":true,"client_order_id":"PYRAMID-025ad7663f5d630a"} for APLD
+2024-12-16T15:55:40.166Z [INFO]: Position added: SGMO | Qty: 94 | Avg Entry: $2.76
+2024-12-16T15:55:40.458Z [INFO]: Pyramid order placed for 3000 shares of APLD at $10.12. Order ID: a884f588-2116-4604-af95-70ac88d382cf
+2024-12-16T15:55:44.857Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $10.080653
+2024-12-16T15:55:49.703Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:55:51.437Z [INFO]: HOD for APLD verified and updated: 10.09 -> 10.16
+2024-12-16T15:55:59.707Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:56:09.673Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T15:56:09.701Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:56:10.279Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:56:11.308Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T15:56:19.709Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:56:29.708Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:56:39.706Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:56:49.706Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:56:59.708Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:57:09.702Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:57:19.703Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:57:21.452Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:57:21.456Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:57:21.460Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:57:21.540Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:57:21.544Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:57:21.584Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:57:29.711Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:57:39.705Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:57:44.634Z [INFO]: Stop condition met for SGMO. Closing position immediately.
+2024-12-16T15:57:44.638Z [INFO]: Closing position with limit order: {"symbol":"SGMO","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.57","extended_hours":true,"client_order_id":"CLOSE-2ccac6ed13ddc303"}
+2024-12-16T15:57:44.890Z [INFO]: Limit order placed to close position in SGMO. Order ID: ad1de23c-65cd-4c63-8e35-1a1ce976f94a
+2024-12-16T15:57:45.237Z [INFO]: Order ad1de23c-65cd-4c63-8e35-1a1ce976f94a filled 622 qty for SGMO. Remaining: 2378
+2024-12-16T15:57:49.709Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:57:59.518Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:57:59.709Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:58:03.033Z [INFO]: Stop condition met for APLD. Closing position immediately.
+2024-12-16T15:58:03.037Z [INFO]: Closing position with limit order: {"symbol":"APLD","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.91","extended_hours":true,"client_order_id":"CLOSE-752e95f936ed51e5"}
+2024-12-16T15:58:04.532Z [INFO]: Limit order placed to close position in APLD. Order ID: cb2a6e48-a848-452e-9bdb-e9eda8967637
+2024-12-16T15:58:09.713Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:58:10.482Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T15:58:19.711Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:58:29.721Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:58:39.714Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:58:48.777Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:58:48.787Z [INFO]: Started polling for order statuses.
+2024-12-16T15:58:49.107Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T15:58:49.110Z [INFO]: Polygon WebSocket connected.
+2024-12-16T15:58:49.200Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T15:58:49.290Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T15:58:49.311Z [INFO]: Position added: QUBT | Qty: 6000 | Avg Entry: $8.56
+2024-12-16T15:58:49.573Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T15:58:49.747Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:58:58.793Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:58:58.794Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T15:58:58.801Z [INFO]: Subscribed to APLD quote data.
+2024-12-16T15:58:59.170Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:59:01.475Z [INFO]: Placing entry order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.19","extended_hours":true,"client_order_id":"ENTRY-7e52438e5a466042"}
+2024-12-16T15:59:01.480Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:59:01.659Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:59:01.673Z [INFO]: Entry order placed for 3000 shares of APLD at $10.19. Order ID: 58deca4f-648a-495a-836e-a380090c88eb
+2024-12-16T15:59:01.682Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:59:03.974Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $10.01
+2024-12-16T15:59:08.793Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:59:08.947Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:59:09.961Z [INFO]: Placing entry order: {"symbol":"SGMT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"6.05","extended_hours":true,"client_order_id":"ENTRY-6a37623426d70ace"}
+2024-12-16T15:59:09.983Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T15:59:10.310Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T15:59:10.403Z [INFO]: Entry order placed for 3000 shares of SGMT at $6.05. Order ID: f1a578ef-6892-4b55-8d93-bc0c57d7d7da
+2024-12-16T15:59:10.411Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:59:13.953Z [INFO]: Position added: SGMT | Qty: 3000 | Avg Entry: $5.88
+2024-12-16T15:59:18.797Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:59:19.182Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T15:59:20.335Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T15:59:27.727Z [INFO]: Stop condition met for QUBT. Closing position immediately.
+2024-12-16T15:59:27.731Z [INFO]: Closing position with limit order: {"symbol":"QUBT","qty":"6000","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.42","extended_hours":true,"client_order_id":"CLOSE-8b6edb55d5a6d805"}
+2024-12-16T15:59:27.914Z [INFO]: Limit order placed to close position in QUBT. Order ID: dd8e3db1-3f85-4ff2-bfe8-af7aaae9b43c
+2024-12-16T15:59:28.952Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:59:33.695Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T15:59:36.103Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T15:59:38.959Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:59:44.841Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T15:59:48.956Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T15:59:50.445Z [INFO]: HOD for SGMT verified and updated: 5.9339 -> 6.13
+2024-12-16T15:59:50.649Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:59:50.658Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T15:59:50.663Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T15:59:50.675Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T15:59:50.721Z [INFO]: HOD for APLD verified and updated: 10.0534 -> 10.16
+2024-12-16T15:59:58.993Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:00:08.995Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:00:09.506Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:09.510Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:09.513Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:09.517Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:09.520Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:09.524Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:09.528Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:09.531Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:09.535Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:09.623Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:09.627Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:09.631Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:10.632Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:00:10.862Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:11.352Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:11.356Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:11.360Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:11.468Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:11.472Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:11.476Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:11.479Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:11.483Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:11.524Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:14.318Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:18.384Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:18.388Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:00:19.000Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:00:29.053Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:00:36.557Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.76","extended_hours":true,"client_order_id":"ENTRY-deea3b8e95ef5823"}
+2024-12-16T16:00:36.562Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:00:36.572Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.77","extended_hours":true,"client_order_id":"ENTRY-7ce5726d0369ccac"}
+2024-12-16T16:00:36.584Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.78","extended_hours":true,"client_order_id":"ENTRY-8f1dd07e36d516eb"}
+2024-12-16T16:00:36.621Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:00:36.632Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.78","extended_hours":true,"client_order_id":"ENTRY-694293a648f47cbb"}
+2024-12-16T16:00:37.017Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.76. Order ID: 6fc7e2af-8925-4472-aaa1-48dc8e1a5494
+2024-12-16T16:00:37.023Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:00:37.221Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.77. Order ID: 603c6af7-12f3-4887-a11e-c6246203b9b6
+2024-12-16T16:00:37.228Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:00:37.549Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:00:37.602Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:00:37.609Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.78. Order ID: da3acd45-1471-40cd-ba3e-c6ba83d19040
+2024-12-16T16:00:37.614Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:00:37.883Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.78. Order ID: 557bbb83-af57-409d-af69-3f97d5604779
+2024-12-16T16:00:37.894Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:00:39.060Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:00:39.251Z [INFO]: Position added: QUBT | Qty: 12000 | Avg Entry: $8.658952
+2024-12-16T16:00:40.349Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T16:00:45.813Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:00:46.062Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:00:49.188Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:00:49.228Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:00:51.402Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T16:00:59.231Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:01:00.043Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T16:01:05.621Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:01:06.065Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:01:09.231Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:01:19.238Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:01:21.654Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:01:22.815Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T16:01:29.232Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:01:39.241Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:01:39.655Z [INFO]: Stop condition met for APLD. Closing position immediately.
+2024-12-16T16:01:39.658Z [INFO]: Closing position with limit order: {"symbol":"APLD","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.85","extended_hours":true,"client_order_id":"CLOSE-c9fc5625372b1d9d"}
+2024-12-16T16:01:41.374Z [INFO]: Limit order placed to close position in APLD. Order ID: 7b7b4f37-b084-456f-bdc4-0d1f7e3509ca
+2024-12-16T16:01:42.635Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T16:01:48.063Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T16:01:49.244Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:01:59.242Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:02:09.244Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:02:11.271Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T16:02:19.246Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:02:28.286Z [INFO]: Stop condition met for QUBT. Closing position immediately.
+2024-12-16T16:02:28.290Z [INFO]: Closing position with limit order: {"symbol":"QUBT","qty":"12000","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.49","extended_hours":true,"client_order_id":"CLOSE-654a6056099f96f5"}
+2024-12-16T16:02:28.472Z [INFO]: Limit order placed to close position in QUBT. Order ID: 48857fce-e587-472d-8acb-6bd93705d91c
+2024-12-16T16:02:29.244Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:02:36.094Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:36.107Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:36.115Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:36.122Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:36.128Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:36.133Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:36.559Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:36.572Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:36.580Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:36.587Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:37.067Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:37.502Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:39.245Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:02:39.508Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:39.519Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:49.262Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:02:50.742Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:50.751Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:02:50.759Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:02:59.272Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:03:04.207Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:05.213Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:05.218Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:07.119Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:07.128Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:07.133Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:07.139Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:08.130Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:08.629Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:08.639Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:09.278Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:03:09.635Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:09.645Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:09.649Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:11.047Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:03:11.054Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T16:03:11.155Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:11.162Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:11.167Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:11.172Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:12.305Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:12.316Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:12.320Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:12.325Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:03:14.823Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:03:19.286Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:03:29.289Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:03:39.286Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:03:49.293Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:03:59.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:04:09.294Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:04:09.722Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T16:04:09.733Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:04:09.743Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T16:04:18.309Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T16:04:19.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:04:29.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:04:39.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:04:49.297Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:04:59.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:05:09.298Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:05:10.040Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:05:10.589Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:05:10.593Z [INFO]: Unsubscribed from SGMO trade data.
+2024-12-16T16:05:19.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:05:29.298Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:05:39.306Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:05:49.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:05:59.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:06:02.683Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:06:02.698Z [INFO]: Started polling for order statuses.
+2024-12-16T16:06:02.898Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:06:02.899Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:06:02.948Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:06:03.047Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:06:03.055Z [INFO]: Position added: SGMT | Qty: 3000 | Avg Entry: $5.88
+2024-12-16T16:06:05.144Z [INFO]: Stop condition met for SGMT. Closing position immediately.
+2024-12-16T16:06:05.150Z [INFO]: Closing position with limit order: {"symbol":"SGMT","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.77","extended_hours":true,"client_order_id":"CLOSE-44a83102d4e7416e"}
+2024-12-16T16:06:05.339Z [INFO]: Limit order placed to close position in SGMT. Order ID: d7d8cce3-18b8-484b-b971-eb933252d74c
+2024-12-16T16:06:06.008Z [INFO]: Order d7d8cce3-18b8-484b-b971-eb933252d74c filled 2802 qty for SGMT. Remaining: 198
+2024-12-16T16:06:12.693Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:06:12.693Z [INFO]: Subscribed to APLD quote data.
+2024-12-16T16:06:12.698Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:06:12.914Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:06:12.926Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:06:14.713Z [INFO]: Placing entry order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.03","extended_hours":true,"client_order_id":"ENTRY-e146ef33c48b2865"}
+2024-12-16T16:06:14.733Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:06:14.909Z [INFO]: Entry order placed for 3000 shares of APLD at $10.03. Order ID: b8c1aefc-aca9-4d37-9b64-5506f7d62c47
+2024-12-16T16:06:14.919Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:06:15.476Z [INFO]: Placing entry order: {"symbol":"QUBT","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.57","extended_hours":true,"client_order_id":"ENTRY-1b2195544b4c67a9"}
+2024-12-16T16:06:15.483Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:06:15.647Z [INFO]: Entry order placed for 3000 shares of QUBT at $8.57. Order ID: de4b3b59-7619-4fb9-a07f-9a9931c9a277
+2024-12-16T16:06:15.662Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:06:17.880Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $9.82
+2024-12-16T16:06:17.898Z [INFO]: Position added: QUBT | Qty: 3000 | Avg Entry: $8.413327
+2024-12-16T16:06:22.691Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:06:24.336Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:06:24.588Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:06:32.886Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:06:42.888Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:08:15.325Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:08:15.336Z [INFO]: Started polling for order statuses.
+2024-12-16T16:08:15.540Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:08:15.541Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:08:15.594Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:08:15.773Z [INFO]: Subscribed to APLD quote data.
+2024-12-16T16:08:15.798Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $9.82
+2024-12-16T16:08:15.817Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:08:15.995Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:08:16.015Z [INFO]: Position added: QUBT | Qty: 3000 | Avg Entry: $8.413327
+2024-12-16T16:08:16.029Z [INFO]: Stop condition met for APLD. Closing position immediately.
+2024-12-16T16:08:16.033Z [INFO]: Closing position with limit order: {"symbol":"APLD","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.70","extended_hours":true,"client_order_id":"CLOSE-3544f19e1c5cdb2b"}
+2024-12-16T16:08:16.040Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:08:16.240Z [INFO]: Limit order placed to close position in APLD. Order ID: aa46120f-6f29-4fce-bce7-5409689addce
+2024-12-16T16:08:16.321Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.44","extended_hours":true,"client_order_id":"TAKE_PROFIT-6091849a4361c370"}
+2024-12-16T16:08:16.828Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.44","extended_hours":true,"client_order_id":"TAKE_PROFIT-b55416355ba40ed8"}
+2024-12-16T16:08:16.843Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.44","extended_hours":true,"client_order_id":"TAKE_PROFIT-8e9133e0bee05bf8"}
+2024-12-16T16:08:16.884Z [INFO]: Placing take-profit order: {"symbol":"QUBT","qty":"300","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.44","extended_hours":true,"client_order_id":"TAKE_PROFIT-5995406c98809cb9"}
+2024-12-16T16:08:16.941Z [INFO]: Take-profit order placed for 300 shares of QUBT at $8.44. Order ID: 390a4172-8db9-4a9a-8509-ec2f8b0549b2
+2024-12-16T16:08:16.951Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.52","extended_hours":true,"client_order_id":"PYRAMID-33d44e161c43a90a"} for QUBT
+2024-12-16T16:08:17.270Z [INFO]: Take-profit order placed for 300 shares of QUBT at $8.44. Order ID: 17d7bcea-ea4e-4ae3-92d4-fe852db1edf9
+2024-12-16T16:08:17.582Z [INFO]: Take-profit order placed for 300 shares of QUBT at $8.44. Order ID: cd4917e3-01b5-4101-bcda-f8382d76f328
+2024-12-16T16:08:17.990Z [INFO]: Take-profit order placed for 300 shares of QUBT at $8.44. Order ID: 1f1c2281-826e-40ac-aa4e-bb06078bf968
+2024-12-16T16:08:18.300Z [ERROR]: Error placing pyramid order for QUBT: {"buy_limit_price":"8.52","code":40310000,"existing_order_id":"17d7bcea-ea4e-4ae3-92d4-fe852db1edf9","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"8.44"}
+2024-12-16T16:08:18.337Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.52","extended_hours":true,"client_order_id":"PYRAMID-8a4052e07d77a1e7"} for QUBT
+2024-12-16T16:08:18.658Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.52. Order ID: 1a08ddfa-6dda-4be0-baa0-a48cb47e59f6
+2024-12-16T16:08:18.831Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.52","extended_hours":true,"client_order_id":"PYRAMID-362aee0ba222b926"} for QUBT
+2024-12-16T16:08:19.032Z [INFO]: Order cd4917e3-01b5-4101-bcda-f8382d76f328 filled 153 qty for QUBT. Remaining: 2847
+2024-12-16T16:08:19.057Z [INFO]: Order 17d7bcea-ea4e-4ae3-92d4-fe852db1edf9 filled 294 qty for QUBT. Remaining: 2553
+2024-12-16T16:08:19.068Z [INFO]: Order aa46120f-6f29-4fce-bce7-5409689addce filled 2990 qty for APLD. Remaining: 10
+2024-12-16T16:08:19.404Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.52. Order ID: 5b31da63-17d4-4230-af46-2079eb3b6d02
+2024-12-16T16:08:19.906Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.52","extended_hours":true,"client_order_id":"PYRAMID-1dfca9249cdddb39"} for QUBT
+2024-12-16T16:08:20.091Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.52. Order ID: 9ebcc035-5171-4618-9f9e-4f9e3bbee3ad
+2024-12-16T16:08:25.363Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:08:25.363Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:08:26.909Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:08:34.300Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.58","extended_hours":true,"client_order_id":"PYRAMID-8aed818dbfe06fe9"} for QUBT
+2024-12-16T16:08:34.473Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:08:34.477Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:08:34.481Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:08:34.684Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.58. Order ID: 19fc87ae-8245-4703-83b6-b4de27f2a4e6
+2024-12-16T16:08:34.693Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:08:34.782Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.58","extended_hours":true,"client_order_id":"PYRAMID-16cf78c190b563ca"} for QUBT
+2024-12-16T16:08:34.811Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:08:35.333Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.58. Order ID: ab46d3a8-9581-4912-b59f-b84fd2a45789
+2024-12-16T16:08:35.363Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:08:38.384Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.58","extended_hours":true,"client_order_id":"PYRAMID-b769be128f272fee"} for QUBT
+2024-12-16T16:08:38.538Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.58. Order ID: 63cb0ddd-4eb6-49b0-b2fd-03fbd886dc08
+2024-12-16T16:08:38.548Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"900","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.62","extended_hours":true,"client_order_id":"PYRAMID-175144b9c09dc0af"} for QUBT
+2024-12-16T16:08:38.903Z [INFO]: Pyramid order placed for 900 shares of QUBT at $8.62. Order ID: e18d0b72-757c-4f71-8aa6-28ddc2e335a5
+2024-12-16T16:08:39.234Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.58","extended_hours":true,"client_order_id":"PYRAMID-140f0dbaace0af8a"} for QUBT
+2024-12-16T16:08:39.493Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.58. Order ID: 2dc81ffb-68e6-42bb-b46a-4d948b3ff958
+2024-12-16T16:08:39.498Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"900","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.62","extended_hours":true,"client_order_id":"PYRAMID-5c275875369ad4b0"} for QUBT
+2024-12-16T16:08:40.292Z [INFO]: Pyramid order placed for 900 shares of QUBT at $8.62. Order ID: d382ab7a-c651-4436-a01f-0b23465e47fd
+2024-12-16T16:08:40.549Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.58","extended_hours":true,"client_order_id":"PYRAMID-68c814b63e143e14"} for QUBT
+2024-12-16T16:08:40.556Z [INFO]: Order 19fc87ae-8245-4703-83b6-b4de27f2a4e6 canceled for QUBT.
+2024-12-16T16:08:41.292Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.58. Order ID: db966cfe-e514-4ebc-a059-889ea2c16414
+2024-12-16T16:08:41.582Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.61","extended_hours":true,"client_order_id":"PYRAMID-52112e49432952b8"} for QUBT
+2024-12-16T16:08:41.598Z [INFO]: Order ab46d3a8-9581-4912-b59f-b84fd2a45789 canceled for QUBT.
+2024-12-16T16:08:41.940Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.61. Order ID: d9cf1ebd-2435-4b01-b70c-a26cbfd66706
+2024-12-16T16:08:42.093Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.61","extended_hours":true,"client_order_id":"PYRAMID-5eb66c7a6420755e"} for QUBT
+2024-12-16T16:08:42.398Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.61. Order ID: c84db119-2e7d-449a-a309-ff86fb06c3b9
+2024-12-16T16:08:42.588Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.61","extended_hours":true,"client_order_id":"PYRAMID-a2ec9f1e2dced0f9"} for QUBT
+2024-12-16T16:08:43.083Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.61. Order ID: 9d42f741-8a02-4489-a821-7eff4ebd5b5e
+2024-12-16T16:08:43.090Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"900","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.65","extended_hours":true,"client_order_id":"PYRAMID-ab11e8baab8c013f"} for QUBT
+2024-12-16T16:08:43.438Z [INFO]: Order 63cb0ddd-4eb6-49b0-b2fd-03fbd886dc08 canceled for QUBT.
+2024-12-16T16:08:43.451Z [INFO]: Pyramid order d382ab7a-c651-4436-a01f-0b23465e47fd filled 895 qty for QUBT. New qty: 8854, Avg Entry: $8.51
+2024-12-16T16:08:43.550Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.62","extended_hours":true,"client_order_id":"PYRAMID-6d18e15e68d79e32"} for QUBT
+2024-12-16T16:08:43.872Z [INFO]: Pyramid order placed for 900 shares of QUBT at $8.65. Order ID: d6baa28b-7cb2-46ea-846a-10f1d7a1a662
+2024-12-16T16:08:44.135Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.62. Order ID: 48569c3e-32af-415e-89dd-055ce508ef89
+2024-12-16T16:08:44.564Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.62","extended_hours":true,"client_order_id":"PYRAMID-de823d3e1c839a96"} for QUBT
+2024-12-16T16:08:44.897Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.62. Order ID: 2216f3b3-859d-46f9-be98-2a01465d63f7
+2024-12-16T16:08:45.061Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.62","extended_hours":true,"client_order_id":"PYRAMID-7ae684131d92a121"} for QUBT
+2024-12-16T16:08:45.235Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.62. Order ID: 695c0837-cb77-4aef-accc-c50c7c49042a
+2024-12-16T16:08:45.367Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:08:45.600Z [INFO]: Placing pyramid order: {"symbol":"QUBT","qty":"1500","side":"buy","type":"limit","time_in_force":"day","limit_price":"8.62","extended_hours":true,"client_order_id":"PYRAMID-ba2801a40ec9ed05"} for QUBT
+2024-12-16T16:08:46.292Z [INFO]: Pyramid order placed for 1500 shares of QUBT at $8.62. Order ID: c2081380-0aa2-41f1-b995-d450668036c6
+2024-12-16T16:08:46.679Z [INFO]: Order 2dc81ffb-68e6-42bb-b46a-4d948b3ff958 canceled for QUBT.
+2024-12-16T16:08:46.991Z [INFO]: Order db966cfe-e514-4ebc-a059-889ea2c16414 canceled for QUBT.
+2024-12-16T16:08:47.002Z [INFO]: Pyramid order 695c0837-cb77-4aef-accc-c50c7c49042a filled 1327 qty for QUBT. New qty: 19154, Avg Entry: $8.56
+2024-12-16T16:09:45.441Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:09:45.451Z [INFO]: Started polling for order statuses.
+2024-12-16T16:09:45.666Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:09:45.667Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:09:45.751Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:09:45.886Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:09:45.895Z [INFO]: Position added: QUBT | Qty: 19500 | Avg Entry: $8.565097
+2024-12-16T16:09:46.438Z [INFO]: Stop condition met for QUBT. Closing position immediately.
+2024-12-16T16:09:46.444Z [INFO]: Closing position with limit order: {"symbol":"QUBT","qty":"19500","side":"sell","type":"limit","time_in_force":"day","limit_price":"8.50","extended_hours":true,"client_order_id":"CLOSE-fca8abd3a9971e47"}
+2024-12-16T16:09:46.451Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:09:46.625Z [INFO]: Limit order placed to close position in QUBT. Order ID: 891a497f-ab4b-49a3-8f04-24a92d2892d9
+2024-12-16T16:09:48.449Z [WARN]: DNS resolution failed. Retrying in 1940ms...
+2024-12-16T16:09:55.451Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:09:55.451Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:09:55.456Z [INFO]: Subscribed to APLD quote data.
+2024-12-16T16:09:56.121Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:09:56.776Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:10:05.463Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:10:05.852Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:10:15.474Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:10:23.868Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:25.453Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:10:25.872Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:25.914Z [INFO]: Placing entry order: {"symbol":"APLD","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"10.04","extended_hours":true,"client_order_id":"ENTRY-bde02013a161bf1c"}
+2024-12-16T16:10:25.921Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:10:26.102Z [INFO]: Entry order placed for 3000 shares of APLD at $10.04. Order ID: b1ec0e75-6426-4abf-bd69-e23c830e2450
+2024-12-16T16:10:26.112Z [INFO]: Subscribed to APLD trade data.
+2024-12-16T16:10:29.731Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:29.741Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:30.677Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $9.855447
+2024-12-16T16:10:32.583Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:32.593Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:32.601Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:32.607Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:32.613Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:32.619Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:32.707Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:32.713Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:33.492Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:33.501Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:33.508Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:33.514Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:35.463Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:10:35.955Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:39.898Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:43.948Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:43.953Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:43.957Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:43.962Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:10:45.467Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:10:45.945Z [INFO]: HOD for SGMT verified and updated: 5.93 -> 6.13
+2024-12-16T16:10:46.021Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:10:48.270Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:10:48.285Z [INFO]: Started polling for order statuses.
+2024-12-16T16:10:48.469Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:10:48.470Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:10:48.524Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:10:48.638Z [INFO]: Subscribed to APLD quote data.
+2024-12-16T16:10:48.648Z [INFO]: Position added: APLD | Qty: 3000 | Avg Entry: $9.855447
+2024-12-16T16:10:48.666Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:10:48.809Z [INFO]: Stop condition met for APLD. Closing position immediately.
+2024-12-16T16:10:48.814Z [INFO]: Closing position with limit order: {"symbol":"APLD","qty":"3000","side":"sell","type":"limit","time_in_force":"day","limit_price":"9.77","extended_hours":true,"client_order_id":"CLOSE-0443ad379919ac8d"}
+2024-12-16T16:10:49.012Z [INFO]: Limit order placed to close position in APLD. Order ID: 130b7a86-78bd-49b6-84eb-b3ef3305cbd3
+2024-12-16T16:10:51.432Z [INFO]: Order 130b7a86-78bd-49b6-84eb-b3ef3305cbd3 filled 2998 qty for APLD. Remaining: 0
+2024-12-16T16:10:58.282Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:10:58.657Z [INFO]: Unsubscribed from APLD trade data.
+2024-12-16T16:11:08.283Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:11:08.881Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:11:08.888Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:11:18.283Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:11:28.287Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:11:38.284Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:11:48.286Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:11:58.290Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:12:08.288Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:12:08.764Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:12:08.772Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T16:12:18.290Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:12:28.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:12:38.295Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:12:48.293Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:12:58.292Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:13:08.296Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:13:18.302Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:13:28.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:13:38.304Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:13:38.840Z [INFO]: Subscribed to AHG quote data.
+2024-12-16T16:13:48.301Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:13:58.298Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:14:08.300Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:14:08.834Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:14:08.841Z [INFO]: Unsubscribed from AHG trade data.
+2024-12-16T16:14:18.302Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:14:28.302Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:14:38.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:14:48.305Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:14:58.311Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:15:08.307Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:15:08.895Z [INFO]: Subscribed to AHG quote data.
+2024-12-16T16:15:18.309Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:15:28.315Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:15:38.316Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:15:40.784Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:42.737Z [INFO]: Placing entry order: {"symbol":"SIDU","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.86","extended_hours":true,"client_order_id":"ENTRY-bfc2c76903c1bb20"}
+2024-12-16T16:15:42.772Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:42.824Z [INFO]: Placing entry order: {"symbol":"SIDU","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.87","extended_hours":true,"client_order_id":"ENTRY-01395c032d33bce5"}
+2024-12-16T16:15:42.865Z [INFO]: Placing entry order: {"symbol":"SIDU","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.88","extended_hours":true,"client_order_id":"ENTRY-0b734ee094726432"}
+2024-12-16T16:15:42.903Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:42.947Z [INFO]: Placing entry order: {"symbol":"SIDU","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.88","extended_hours":true,"client_order_id":"ENTRY-0842a2ccdd77e1cf"}
+2024-12-16T16:15:42.963Z [INFO]: Placing entry order: {"symbol":"SIDU","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"ENTRY-9a915776854a2ec1"}
+2024-12-16T16:15:42.970Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:42.982Z [INFO]: Placing entry order: {"symbol":"SIDU","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"ENTRY-9413443e0327a5bc"}
+2024-12-16T16:15:43.001Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:43.061Z [INFO]: Placing entry order: {"symbol":"SIDU","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.95","extended_hours":true,"client_order_id":"ENTRY-e8d4ff38b6bd4e9c"}
+2024-12-16T16:15:43.069Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:43.200Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:43.230Z [INFO]: Entry order placed for 3000 shares of SIDU at $2.86. Order ID: dc301ab0-98be-4c00-b3d7-7120d8495c62
+2024-12-16T16:15:43.236Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:43.261Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:43.461Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:43.496Z [INFO]: Entry order placed for 3000 shares of SIDU at $2.87. Order ID: 4a9f1776-539d-40ad-b113-63fe1238486e
+2024-12-16T16:15:43.504Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:43.711Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:43.721Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:43.742Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:43.886Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:43.904Z [INFO]: Entry order placed for 3000 shares of SIDU at $2.88. Order ID: bd6c4fcd-1fe2-49e1-898c-3089a97d7ebe
+2024-12-16T16:15:43.911Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:44.210Z [INFO]: Entry order placed for 3000 shares of SIDU at $2.88. Order ID: 43098e58-605d-4f56-a8e3-07ca34fd12a8
+2024-12-16T16:15:44.219Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:44.549Z [INFO]: Entry order placed for 3000 shares of SIDU at $2.89. Order ID: 2b140282-3e9e-411b-9065-1ec6249ba5ef
+2024-12-16T16:15:44.555Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:44.897Z [INFO]: Entry order placed for 3000 shares of SIDU at $2.90. Order ID: bcab768e-828b-4718-9495-fda6551558ec
+2024-12-16T16:15:44.910Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:45.256Z [INFO]: Entry order placed for 3000 shares of SIDU at $2.95. Order ID: 4241bd6b-d83d-493f-94b1-6df3ce0cd368
+2024-12-16T16:15:45.266Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:45.588Z [INFO]: Position added: SIDU | Qty: 18736 | Avg Entry: $2.868116
+2024-12-16T16:15:48.329Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:48.356Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:48.691Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:15:50.495Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:50.577Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:51.698Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:51.712Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:51.803Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:51.896Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:52.030Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-1db04004dedcde48"}
+2024-12-16T16:15:52.043Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-53358211b18b29f4"}
+2024-12-16T16:15:52.155Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-fa838e93bebccf14"}
+2024-12-16T16:15:52.170Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-ab890b144381bdbc"}
+2024-12-16T16:15:52.185Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-0d331495c1cec8be"}
+2024-12-16T16:15:52.203Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-09b16b8380e7770d"}
+2024-12-16T16:15:52.221Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-636b0608817ef6e9"}
+2024-12-16T16:15:52.236Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-1b3b6d9d30dcdb6a"}
+2024-12-16T16:15:52.251Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-29d7cd981e3d89f5"}
+2024-12-16T16:15:52.265Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-d456177d693c34d2"}
+2024-12-16T16:15:52.279Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-72bbabefbadf868d"}
+2024-12-16T16:15:52.293Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-29145326367357df"}
+2024-12-16T16:15:52.307Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-e8ecb72d865f897c"}
+2024-12-16T16:15:52.321Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-3ac36f1c2c22f707"}
+2024-12-16T16:15:52.335Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-cf745c0655cbe698"}
+2024-12-16T16:15:52.350Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-a247eb2f86e8d83d"}
+2024-12-16T16:15:52.364Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-d1a35fae89c68fa9"}
+2024-12-16T16:15:52.378Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-99645b32b488db43"}
+2024-12-16T16:15:52.392Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-57617b7549b98c36"}
+2024-12-16T16:15:52.407Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-a2dad4b1ae737034"}
+2024-12-16T16:15:52.421Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-0d0655411aad3a23"}
+2024-12-16T16:15:52.435Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-79ec905d8dea4247"}
+2024-12-16T16:15:52.449Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-bde5067880dc050b"}
+2024-12-16T16:15:52.463Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-c3cda025d3142323"}
+2024-12-16T16:15:52.477Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-96b288cb4a92f617"}
+2024-12-16T16:15:52.491Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-7c99ef65c21e2473"}
+2024-12-16T16:15:52.505Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-638f4bffbd313f9e"}
+2024-12-16T16:15:52.520Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-a35e2bc615cff2cf"}
+2024-12-16T16:15:52.535Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-e00264b2931dd67f"}
+2024-12-16T16:15:52.550Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-8ebf63c6e4663b32"}
+2024-12-16T16:15:52.565Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-f5296d9a5dc285c8"}
+2024-12-16T16:15:52.582Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-07d0fda623b94222"}
+2024-12-16T16:15:52.597Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-5b2e4ed95495d412"}
+2024-12-16T16:15:52.613Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:15:52.650Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-2322e19415714e9b"}
+2024-12-16T16:15:52.692Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-e7040d48630c6042"}
+2024-12-16T16:15:52.727Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-af4a6c862ff1d353"}
+2024-12-16T16:15:52.752Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-87a2b5a22dd78c4d"}
+2024-12-16T16:15:52.768Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-1db71b056a13295d"}
+2024-12-16T16:15:52.788Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-61e3112a57fefb17"}
+2024-12-16T16:15:52.803Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-395e0bdcb0c63d0b"}
+2024-12-16T16:15:52.819Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-00cea0431b5311f1"}
+2024-12-16T16:15:52.834Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-3b0e319a2a38f197"}
+2024-12-16T16:15:52.849Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-ede3ea5cf936d600"}
+2024-12-16T16:15:52.864Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-62a2cecfd2b0d242"}
+2024-12-16T16:15:52.878Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-9d9674de8091b734"}
+2024-12-16T16:15:52.894Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-421b35f990929960"}
+2024-12-16T16:15:52.909Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-55bf4c28f95110ad"}
+2024-12-16T16:15:52.925Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-52b94a6de5924769"}
+2024-12-16T16:15:52.941Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-fb7b8f207daed0c2"}
+2024-12-16T16:15:52.955Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-5e47a61cfc976bd3"}
+2024-12-16T16:15:52.970Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-ea2a9c00e1ce76ad"}
+2024-12-16T16:15:52.986Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-b75f911d97b69c75"}
+2024-12-16T16:15:53.003Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-aace38cc044d4efe"}
+2024-12-16T16:15:53.023Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-ace0e9725971228b"}
+2024-12-16T16:15:53.038Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-9f06ba9f8d3bdd43"}
+2024-12-16T16:15:53.054Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-d7b4be4367e5312e"}
+2024-12-16T16:15:53.068Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-51181d89511ec9e6"}
+2024-12-16T16:15:53.083Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-de75b61a02df0838"}
+2024-12-16T16:15:53.097Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-6231f08c3b335ba8"}
+2024-12-16T16:15:53.111Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-0ef20ec04914cd58"}
+2024-12-16T16:15:53.125Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-1e2dedb64401dc00"}
+2024-12-16T16:15:53.139Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-7ad1a3f4a51dbfa8"}
+2024-12-16T16:15:53.153Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-703572c198028b74"}
+2024-12-16T16:15:53.169Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-c1125908c89e3498"}
+2024-12-16T16:15:53.186Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-e2f742798b307171"}
+2024-12-16T16:15:53.202Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-0192f56cb591d3ac"}
+2024-12-16T16:15:53.216Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-a19d93abe4c13d92"}
+2024-12-16T16:15:53.232Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-1b18b3294f2d1730"}
+2024-12-16T16:15:53.247Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-a64e900bd292103c"}
+2024-12-16T16:15:53.261Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-6eae8c69b6496f4e"}
+2024-12-16T16:15:53.276Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-9542ab41abd55e7f"}
+2024-12-16T16:15:53.291Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-b47bad1f06a8c81f"}
+2024-12-16T16:15:53.305Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-0b1f8a2fccdde564"}
+2024-12-16T16:15:53.319Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-b6aca2b348c50dec"}
+2024-12-16T16:15:53.333Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-23eac6a6fa22507d"}
+2024-12-16T16:15:53.347Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-508d792d33d54571"}
+2024-12-16T16:15:53.361Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-1a1e065f78517cff"}
+2024-12-16T16:15:53.376Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-bb871180bd127060"}
+2024-12-16T16:15:53.390Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-9eeadbd1c84fcdf2"}
+2024-12-16T16:15:53.406Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-b7940d6d193e037b"}
+2024-12-16T16:15:53.419Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-8f917c547e90a96d"}
+2024-12-16T16:15:53.433Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-0e60793ddc49bb8d"}
+2024-12-16T16:15:53.447Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-f0f7f7e5e47721e1"}
+2024-12-16T16:15:53.461Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-a19d904deb6bcaa4"}
+2024-12-16T16:15:53.475Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-ad4701305329142e"}
+2024-12-16T16:15:53.489Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-1bac6d52c3e06532"}
+2024-12-16T16:15:53.503Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-fa4c2fbf45159794"}
+2024-12-16T16:15:53.517Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-1fcaafdf269c6f6c"}
+2024-12-16T16:15:53.531Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-52fd7be66098092c"}
+2024-12-16T16:15:53.544Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-aee5fd36175319f8"}
+2024-12-16T16:15:53.559Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-38d7180bc61b06ff"}
+2024-12-16T16:15:53.573Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-1c1dc4aff31778bb"}
+2024-12-16T16:15:53.587Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-7e683f27a72b2ce5"}
+2024-12-16T16:15:53.602Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-d1ab6bf74b6da6f0"}
+2024-12-16T16:15:53.619Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-7708401884a3f38c"}
+2024-12-16T16:15:53.634Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-249219d2e787e4d2"}
+2024-12-16T16:15:53.648Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-abeebfccda2e4c93"}
+2024-12-16T16:15:53.662Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-8dea4c0e5358e1cc"}
+2024-12-16T16:15:53.675Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-f65a2285b7be3968"}
+2024-12-16T16:15:53.689Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-0bf073a589fca830"}
+2024-12-16T16:15:53.703Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-6e40a3d5e96bdfd7"}
+2024-12-16T16:15:53.717Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-96ffcd90b6ea32f5"}
+2024-12-16T16:15:53.733Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-a98ee013a62fbbeb"}
+2024-12-16T16:15:53.747Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-584843334a64f853"}
+2024-12-16T16:15:53.762Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-1180a434916b5a0e"}
+2024-12-16T16:15:53.775Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-32affdb2cb26fc36"}
+2024-12-16T16:15:53.789Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-538015386968906b"}
+2024-12-16T16:15:53.803Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-e1addd35b8d867dd"}
+2024-12-16T16:15:53.817Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-0985f4cfeb144f19"}
+2024-12-16T16:15:53.831Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"TAKE_PROFIT-140e2d3a6c1eb07b"}
+2024-12-16T16:15:53.845Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-6da6abd7a1edbeec"}
+2024-12-16T16:15:53.859Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-24588e46d94dcb35"}
+2024-12-16T16:15:53.873Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-fb36732f335b2dca"}
+2024-12-16T16:15:53.888Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-19e96b2df164eb8d"}
+2024-12-16T16:15:53.904Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-fd618faf48d4a14c"}
+2024-12-16T16:15:53.918Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-844dfcfd4739fc9e"}
+2024-12-16T16:15:53.932Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.91","extended_hours":true,"client_order_id":"TAKE_PROFIT-cf93479e307f7389"}
+2024-12-16T16:15:53.945Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-024ed3cdc2dcd5e5"}
+2024-12-16T16:15:53.959Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-97ffb3b6dab48f36"}
+2024-12-16T16:15:53.973Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-158cada7e40532a2"}
+2024-12-16T16:15:53.987Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-7c0e9efd61648420"}
+2024-12-16T16:15:54.003Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-a9a6fd873bb9c4b6"}
+2024-12-16T16:15:54.018Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-bfae3c586f49dcaf"}
+2024-12-16T16:15:54.035Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-6501575834018a18"}
+2024-12-16T16:15:54.051Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-842fe83d4050f25b"}
+2024-12-16T16:15:54.067Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-1750be9e9ff27159"}
+2024-12-16T16:15:54.084Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-aebad18547bc2b37"}
+2024-12-16T16:15:54.099Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-0f2e57ad347c83af"}
+2024-12-16T16:15:54.114Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-ed3e6cc9a5d4bc9e"}
+2024-12-16T16:15:54.129Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-ceb15f7b5c1914a0"}
+2024-12-16T16:15:54.148Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-7b3fc509644f6a70"}
+2024-12-16T16:15:54.170Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-73ef61428bdcbe14"}
+2024-12-16T16:15:54.197Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-c88064a2cce79c79"}
+2024-12-16T16:15:54.214Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-01211f2aa53d1cc9"}
+2024-12-16T16:15:54.230Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-766166ea0ec30503"}
+2024-12-16T16:15:54.246Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-ba9a5bc259ac6458"}
+2024-12-16T16:15:54.262Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-b015ab1620418677"}
+2024-12-16T16:15:54.277Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-4743946810ce21dd"}
+2024-12-16T16:15:54.293Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-4b8f4ad5d7ba62ec"}
+2024-12-16T16:15:54.308Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-7f70ac877f0ba56c"}
+2024-12-16T16:15:54.327Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-023ed6786d3d42ae"}
+2024-12-16T16:15:54.343Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-ae8da259075749e2"}
+2024-12-16T16:15:54.358Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-cc2b21e0961beb63"}
+2024-12-16T16:15:54.372Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-14c385400de93147"}
+2024-12-16T16:15:54.385Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-125cad68768f83c7"}
+2024-12-16T16:15:54.399Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-2f7f6a0f8450dcb8"}
+2024-12-16T16:15:54.413Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-046b13f4ea42c242"}
+2024-12-16T16:15:54.421Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:15:54.436Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-31442602290de024"}
+2024-12-16T16:15:54.449Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-0ff2ed833cc7d828"}
+2024-12-16T16:15:54.465Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-46ae3f3165ed0d70"}
+2024-12-16T16:15:54.479Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-570dd9c1785c1a1f"}
+2024-12-16T16:15:54.494Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-ab410959cbd683aa"}
+2024-12-16T16:15:54.516Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-3bffc1b5dee8ee3b"}
+2024-12-16T16:15:54.535Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-0941fde0197ef28d"}
+2024-12-16T16:15:54.553Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-01accc185bacbd36"}
+2024-12-16T16:15:54.573Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-962490063423131d"}
+2024-12-16T16:15:54.597Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-a95d4d9c395bc6fe"}
+2024-12-16T16:15:54.616Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-5c8b708cee5200ea"}
+2024-12-16T16:15:54.630Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-30166c17bd3f043c"}
+2024-12-16T16:15:54.645Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-2b3533d77f8f1ad1"}
+2024-12-16T16:15:54.660Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-db0409f8c2c66173"}
+2024-12-16T16:15:54.673Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-f836e3117c2f5e1a"}
+2024-12-16T16:15:54.687Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-12e88448b2c96736"}
+2024-12-16T16:15:54.702Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-21ba2526d3253930"}
+2024-12-16T16:15:54.716Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-035cc975055d966a"}
+2024-12-16T16:15:54.730Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-ede6f413e12512d9"}
+2024-12-16T16:15:54.751Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-1bf8e32171fdaedf"}
+2024-12-16T16:15:54.773Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-cbeb7008f8d5b9e4"}
+2024-12-16T16:15:54.787Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-8dfa5b0d8891f316"}
+2024-12-16T16:15:54.800Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-a929853f837b4339"}
+2024-12-16T16:15:54.898Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-d279dfca02c3a9d6"}
+2024-12-16T16:15:54.914Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-74225ae9b0648c1b"}
+2024-12-16T16:15:54.939Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-4928641b7210a73a"}
+2024-12-16T16:15:54.971Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-4b69031333166a9e"}
+2024-12-16T16:15:54.986Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-ac08f17f87095b2a"}
+2024-12-16T16:15:55.001Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-0ed34f997d6a7f62"}
+2024-12-16T16:15:55.017Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-094d1eb5cb41e865"}
+2024-12-16T16:15:55.032Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-f089069bda926b44"}
+2024-12-16T16:15:55.048Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-bfac002f1a0e9138"}
+2024-12-16T16:15:55.063Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-07ead07372cfdf01"}
+2024-12-16T16:15:55.077Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-d7d34c467b5be4f4"}
+2024-12-16T16:15:55.091Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-a02649833a476a47"}
+2024-12-16T16:15:55.105Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-d01967cdec54ba5e"}
+2024-12-16T16:15:55.120Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-ce33bd99e3abf065"}
+2024-12-16T16:15:55.134Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-110b0fd03b047f16"}
+2024-12-16T16:15:55.148Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-da8645eea6b3470b"}
+2024-12-16T16:15:55.162Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-b24ca8d7e1576019"}
+2024-12-16T16:15:55.176Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-faab7b45a4919303"}
+2024-12-16T16:15:55.190Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-a857be0d5545bb40"}
+2024-12-16T16:15:55.205Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-3ae711d2448e3b67"}
+2024-12-16T16:15:55.220Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-e235e74123c2b4f7"}
+2024-12-16T16:15:55.234Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-95e72594af46d092"}
+2024-12-16T16:15:55.248Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-b1a155a9ffe712c8"}
+2024-12-16T16:15:55.262Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.90","extended_hours":true,"client_order_id":"TAKE_PROFIT-251dddf8d2b49b36"}
+2024-12-16T16:15:55.280Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-8024ef5fced248ce"}
+2024-12-16T16:15:55.377Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-ab2eed05d4b7f046"}
+2024-12-16T16:15:55.391Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-18f25ae1e230c507"}
+2024-12-16T16:15:55.406Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-736ac228a559b817"}
+2024-12-16T16:15:55.420Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-8f8b71465ed6c2f1"}
+2024-12-16T16:15:55.468Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-6ee503dcef797488"}
+2024-12-16T16:15:55.530Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-096c86647896ac32"}
+2024-12-16T16:15:55.544Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-badd626c3ff8cbbd"}
+2024-12-16T16:15:55.558Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-846d16ac572e3e82"}
+2024-12-16T16:15:55.572Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-7ead8d4f9a36e7dd"}
+2024-12-16T16:15:55.586Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-49e0bd67dbefffb0"}
+2024-12-16T16:16:03.694Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:03.699Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:03.824Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:03.836Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:03.857Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:03.934Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:05.392Z [INFO]: Stop condition met for SIDU. Closing position immediately.
+2024-12-16T16:16:05.397Z [INFO]: Closing position with limit order: {"symbol":"SIDU","qty":"18736","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.72","extended_hours":true,"client_order_id":"CLOSE-81b0aac57f771124"}
+2024-12-16T16:16:05.450Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:06.214Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:06.704Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:07.281Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:07.342Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:07.408Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:07.420Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:07.479Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:07.484Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:07.542Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:09.256Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:16:12.942Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-a998cfb07a56b4fa"}
+2024-12-16T16:16:12.956Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-1572e804500f3ded"}
+2024-12-16T16:16:12.976Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-a2642cb7cf6b3ec3"}
+2024-12-16T16:16:12.991Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-06d6b1b0394eb4eb"}
+2024-12-16T16:16:13.005Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-0ef459ab00388505"}
+2024-12-16T16:16:13.020Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-6066728fa74058db"}
+2024-12-16T16:16:13.034Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-937961513fc396b4"}
+2024-12-16T16:16:13.058Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-5024d74b25394d9f"}
+2024-12-16T16:16:13.078Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-3bb0d994d16c8eb9"}
+2024-12-16T16:16:13.092Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-c64acc9755ca5017"}
+2024-12-16T16:16:13.107Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-75e5d4cde279e0e3"}
+2024-12-16T16:16:13.122Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-69a6660560d42fc2"}
+2024-12-16T16:16:13.141Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-8a4a15ec3f35c853"}
+2024-12-16T16:16:13.156Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-8c66b6bf5a475e59"}
+2024-12-16T16:16:13.171Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-7b1a26db6965e455"}
+2024-12-16T16:16:13.185Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-f1b165807359c405"}
+2024-12-16T16:16:13.199Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-77adcc25cc8a3017"}
+2024-12-16T16:16:13.214Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-e3d62e99bd34a914"}
+2024-12-16T16:16:13.228Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-20471c19363eba86"}
+2024-12-16T16:16:13.244Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-721cd5b1d2a76db0"}
+2024-12-16T16:16:13.259Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-c775629c672f1b04"}
+2024-12-16T16:16:13.274Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-44d3875f46dca216"}
+2024-12-16T16:16:13.288Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-05ff4bb90ca3b1be"}
+2024-12-16T16:16:13.303Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-baeab2a203b8eb04"}
+2024-12-16T16:16:17.095Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-52c1f58571f7e76c"}
+2024-12-16T16:16:17.095Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-8ad33c62d7d34029"}
+2024-12-16T16:16:17.095Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-26592a862d84ca8c"}
+2024-12-16T16:16:17.095Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-2355d6023bdd66d9"}
+2024-12-16T16:16:17.095Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-14e5c590b7e5ae0e"}
+2024-12-16T16:16:17.095Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-c3485ec1ab9fb380"}
+2024-12-16T16:16:17.095Z [INFO]: Placing take-profit order: {"symbol":"SIDU","qty":"1873","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.89","extended_hours":true,"client_order_id":"TAKE_PROFIT-42be2f38e8babd44"}
+2024-12-16T16:16:17.820Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T16:16:17.843Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: 95a5179b-f201-42a3-a6bb-ecbf71a0b51e
+2024-12-16T16:16:17.855Z [INFO]: Placing pyramid order: {"symbol":"SIDU","qty":"9368","side":"buy","type":"limit","time_in_force":"day","limit_price":"2.98","extended_hours":true,"client_order_id":"PYRAMID-2d8a2b354d0bb3a1"} for SIDU
+2024-12-16T16:16:18.088Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: 87c8aead-aa4c-4a5e-b0a1-0a9395352b1c
+2024-12-16T16:16:18.410Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: 90b5cad2-c835-4c4c-bc2d-975cef00a115
+2024-12-16T16:16:18.877Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: 8ac79f3f-12f9-4d06-9c7f-2d878ca32e51
+2024-12-16T16:16:19.528Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:16:19.533Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: adc090da-636d-410c-9e20-585ca9a23253
+2024-12-16T16:16:20.067Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: 52438a0b-2c8d-4db4-9c55-ecad9f4995ab
+2024-12-16T16:16:20.410Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: b2462f74-6025-469f-920c-84d48cc5f4d4
+2024-12-16T16:16:22.562Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:23.271Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: ab4b7b46-b615-409f-a1ec-757276a74feb
+2024-12-16T16:16:23.281Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:23.340Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:24.116Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: 92faba95-e080-400b-8eff-612b045e12f5
+2024-12-16T16:16:24.124Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:24.176Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:24.356Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: d6371941-2fa6-46c1-84d7-370c3062fc77
+2024-12-16T16:16:24.366Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:24.755Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:24.944Z [INFO]: Take-profit order placed for 1873 shares of SIDU at $2.89. Order ID: f4e3a8cf-c961-4d12-b5a9-783ce0b4c2b2
+2024-12-16T16:16:24.952Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:25.113Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:25.119Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:25.163Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:25.633Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:25.640Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:25.942Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:25.948Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:26.507Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:26.512Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:26.787Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:26.792Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:27.017Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:27.027Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:27.365Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:27.377Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.083Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.090Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.214Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:28.322Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.328Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.589Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.606Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.817Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:28.983Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.989Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:29.364Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:29.599Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:16:29.853Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:29.861Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:30.011Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:30.019Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:30.539Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:30.546Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:30.722Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:30.730Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:31.079Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:31.088Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:31.425Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:31.436Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:31.785Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:31.796Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:32.159Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:32.165Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:32.514Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:32.526Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:32.689Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:32.876Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:32.882Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:33.140Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:34.477Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:34.511Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:16:34.516Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:16:36.990Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:36.996Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:37.160Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:37.168Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:37.510Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:37.521Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:38.132Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:38.139Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:38.345Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:38.351Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:38.643Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:38.654Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:39.006Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:39.017Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:39.349Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:39.360Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:39.613Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:16:39.859Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:39.864Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:40.053Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:40.086Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:40.143Z [INFO]: Unsubscribed from AHG trade data.
+2024-12-16T16:16:40.962Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:40.969Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403

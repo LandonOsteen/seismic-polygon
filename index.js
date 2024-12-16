@@ -1,4 +1,4 @@
-const PolygonClient = require('./polygon');
+const PolygonClient = require('./polygonClient');
 const { alpaca } = require('./alpaca');
 const Dashboard = require('./dashboard');
 const OrderManager = require('./orderManager');

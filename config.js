@@ -20,27 +20,37 @@ module.exports = {
     morningVolumeRequirement: 3000000,
     gapPercentageRequirement: 15,
     priceRange: { min: 1.5, max: 10 },
-    initialEntryOffsetCents: 2, // Offset above HOD to trigger entry
-    entryLimitOffsetCents: 15, // Additional offset for entry orders
+    initialEntryOffsetCents: 2,
+    entryLimitOffsetCents: 15,
     initialShareSize: 3000,
-    rollingStopWindowSeconds: 3, // Rolling window duration in seconds for trailing stop
-    rollingStopCheckIntervalMs: 1000, // Check trailing stop every 1 second
-    initialTrailingStopOffsetCents: 5, // Offset from the rolling low
-    fallbackStopCents: 15, // Fallback stop: x cents below avg entry
+    // Removed rolling stop parameters
+    fallbackStopCents: 15,
     openingOrderCooldownSeconds: 5,
     tradeProximityCents: 15,
-    initialStopOffsetCents: 10, // Initial offset below HOD for initial stop
+    profitTargetOffsetCents: 4,
+    initialStopOffsetCents: 10,
     enableHodVerification: true,
-    hodVerificationIntervalMs: 60000, // Verify HOD every 60 seconds
-    initialAggBarTimeframe: {
-      unit: 'second',
-      amount: 30, // Use 30-second bars to determine initial intraday high
-    },
+    hodVerificationIntervalMs: 60000,
+    initialAggBarTimeframe: { unit: 'second', amount: 30 },
+
+    // Trailing stop offset used AFTER all profit targets hit
+    trailingStopOffsetCents: 15,
+
+    // Profit targets and dynamic stops
+    profitTargets: [
+      { targetCents: 6, percentToClose: 10 },
+      { targetCents: 10, percentToClose: 30 },
+      { targetCents: 20, percentToClose: 30 },
+    ],
+    dynamicStops: [
+      { profitTargetsHit: 1, stopCents: 0 },
+      { profitTargetsHit: 3, stopCents: 10 },
+    ],
   },
   orderSettings: {
     limitOffsetCents: 8,
     pyramidLevels: [
-      { priceIncreaseCents: 6, percentToAdd: 100, offsetCents: 5 },
+      { priceIncreaseCents: 6, percentToAdd: 50, offsetCents: 5 },
       { priceIncreaseCents: 10, percentToAdd: 30, offsetCents: 5 },
     ],
   },
@@ -52,7 +62,6 @@ module.exports = {
     limit: 4000,
     close: 4000,
     entry: 4000,
-    // pyramid included in the general scheme; add if needed:
     pyramid: 4000,
   },
   pollingIntervals: {

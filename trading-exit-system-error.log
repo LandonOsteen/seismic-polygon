@@ -7,3 +7,100 @@
 2024-12-16T14:54:06.954Z [ERROR]: Error placing close order for GRRR: {"available":"0","code":40310000,"existing_qty":"21","held_for_orders":"21","message":"insufficient qty available for order (requested: 50, available: 0)","related_orders":["f36130a7-b7bf-42c4-a834-bc5ad66ab9b3"],"symbol":"GRRR"}
 2024-12-16T14:55:02.595Z [ERROR]: Error placing pyramid order for WKEY: {"buying_power":"26582.6","code":40310000,"cost_basis":"74460","message":"insufficient buying power"}
 2024-12-16T14:55:03.298Z [ERROR]: Error placing pyramid order for WKEY: {"buying_power":"27177.44","code":40310000,"cost_basis":"74460","message":"insufficient buying power"}
+2024-12-16T15:47:15.429Z [ERROR]: Error placing entry order for AI: {"buying_power":"96991.81","code":40310000,"cost_basis":"125820","message":"insufficient buying power"}
+2024-12-16T15:47:15.808Z [ERROR]: Error placing entry order for AI: {"buying_power":"97179.21","code":40310000,"cost_basis":"125850","message":"insufficient buying power"}
+2024-12-16T15:47:16.492Z [ERROR]: Error placing entry order for AI: {"buying_power":"97315.3","code":40310000,"cost_basis":"125790","message":"insufficient buying power"}
+2024-12-16T15:53:06.943Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:07.363Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:07.622Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:08.122Z [ERROR]: Error placing take-profit order for SGMO: Request failed with status code 403
+2024-12-16T15:53:11.483Z [ERROR]: Error placing pyramid order for SGMO: {"buy_limit_price":"2.75","code":40310000,"existing_order_id":"1591f8ec-4384-449f-99f1-21f02b088b54","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"2.7"}
+2024-12-16T15:53:12.576Z [ERROR]: Error placing pyramid order for SGMO: {"available":"2700","code":40310000,"existing_qty":"2700","held_for_orders":"0","message":"insufficient qty available for order (requested: 3000, available: 2700)","related_orders":["1591f8ec-4384-449f-99f1-21f02b088b54","eedc8133-59a7-4740-99dd-ede8ebb35b8e"],"symbol":"SGMO"}
+2024-12-16T15:53:29.123Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:29.516Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:29.827Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:30.172Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:30.500Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.039Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.221Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.566Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:31.924Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:32.289Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:32.615Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:32.958Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:33.562Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:33.737Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:34.104Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:34.497Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:34.773Z [ERROR]: Error placing take-profit order for QUBT: Request failed with status code 403
+2024-12-16T15:53:35.465Z [ERROR]: Error placing pyramid order for QUBT: {"buy_limit_price":"8.54","code":40310000,"existing_order_id":"b701894e-816f-4591-9269-640e44968efc","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"8.49"}
+2024-12-16T15:55:36.117Z [ERROR]: Error placing take-profit order for APLD: Request failed with status code 403
+2024-12-16T15:55:36.421Z [ERROR]: Error placing take-profit order for APLD: Request failed with status code 403
+2024-12-16T15:55:36.767Z [ERROR]: Error placing take-profit order for APLD: Request failed with status code 403
+2024-12-16T15:55:37.108Z [ERROR]: Error placing pyramid order for APLD: {"buy_limit_price":"10.12","code":40310000,"existing_order_id":"8a0c2fa4-c8b0-401a-bc62-a7dc2ee1e159","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"10.07"}
+2024-12-16T15:55:39.373Z [ERROR]: Error placing pyramid order for APLD: {"buy_limit_price":"10.12","code":40310000,"existing_order_id":"8a0c2fa4-c8b0-401a-bc62-a7dc2ee1e159","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"10.07"}
+2024-12-16T16:08:18.300Z [ERROR]: Error placing pyramid order for QUBT: {"buy_limit_price":"8.52","code":40310000,"existing_order_id":"17d7bcea-ea4e-4ae3-92d4-fe852db1edf9","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"8.44"}
+2024-12-16T16:16:25.113Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:25.119Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:25.633Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:25.640Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:25.942Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:25.948Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:26.507Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:26.512Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:26.787Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:26.792Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:27.017Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:27.027Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:27.365Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:27.377Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.083Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.090Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.322Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.328Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.589Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.606Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:28.983Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:28.989Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:29.853Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:29.861Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:30.011Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:30.019Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:30.539Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:30.546Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:30.722Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:30.730Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:31.079Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:31.088Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:31.425Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:31.436Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:31.785Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:31.796Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:32.159Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:32.165Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:32.514Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:32.526Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:32.876Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:32.882Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:36.990Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:36.996Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:37.160Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:37.168Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:37.510Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:37.521Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:38.132Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:38.139Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:38.345Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:38.351Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:38.643Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:38.654Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:39.006Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:39.017Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:39.349Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:39.360Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:39.859Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:39.864Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:40.053Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:40.086Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:16:40.962Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
+2024-12-16T16:16:40.969Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403

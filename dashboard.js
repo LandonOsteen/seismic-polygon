@@ -1,4 +1,3 @@
-// dashboard.js
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -17,9 +16,8 @@ class Dashboard {
       screen: this.screen,
     });
 
-    // Positions Table
-    // We remove the extra columns related to targets and pyramids
-    // New columns: SYMBOL, SIDE, QTY, AVG ENTRY, BID, ASK, PROFIT, STOP PRICE
+    // Now we have one additional column: PT_HIT (Profit Targets Hit)
+    // Adjust column widths accordingly
     this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
       keys: true,
       fg: 'white',
@@ -31,14 +29,15 @@ class Dashboard {
       height: '100%',
       border: { type: 'line', fg: 'cyan' },
       columnSpacing: 2,
-      // Adjust columnWidth to match reduced columns
-      columnWidth: [8, 6, 6, 10, 10, 10, 9, 20],
+      // Updated column widths to accommodate PT_HIT column
+      columnWidth: [8, 6, 6, 10, 10, 10, 9, 7, 20],
       style: {
         header: { fg: 'cyan', bold: true },
         cell: { fg: 'white' },
       },
     });
 
+    // Updated headers to include PT_HIT after PROFIT and before STOP PRICE
     this.positionsTable.setData({
       headers: [
         'SYMBOL',
@@ -48,6 +47,7 @@ class Dashboard {
         'BID',
         'ASK',
         'PROFIT',
+        'PT_HIT',
         'STOP PRICE',
       ],
       data: [],
@@ -114,7 +114,6 @@ class Dashboard {
       scrollbar: { fg: 'blue', ch: ' ' },
     });
 
-    // Watchlist remains unchanged
     this.watchlistTable = this.grid.set(12, 0, 4, 12, contrib.table, {
       keys: true,
       fg: 'white',
@@ -171,8 +170,9 @@ class Dashboard {
     const tableData = positions.map((pos) => {
       const profitCents = parseFloat(pos.profitCents);
       const profit = `${profitCents.toFixed(2)}¢`;
-
       const stopDescription = pos.stopDescription || 'N/A';
+      const targetsHit =
+        pos.profitTargetsHit != null ? pos.profitTargetsHit.toString() : '0';
 
       return [
         pos.symbol,
@@ -182,6 +182,7 @@ class Dashboard {
         pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
         pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
         profit,
+        targetsHit,
         stopDescription,
       ];
     });
@@ -195,6 +196,7 @@ class Dashboard {
         'BID',
         'ASK',
         'PROFIT',
+        'PT_HIT',
         'STOP PRICE',
       ],
       data: tableData,
