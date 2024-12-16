@@ -17,6 +17,7 @@ module.exports = {
   },
   strategySettings: {
     baseVolumeRequirement: 3000000,
+    entryCooldownMs: 5000,
     morningVolumeRequirement: 3000000,
     gapPercentageRequirement: 15,
     priceRange: { min: 1.5, max: 10 },
