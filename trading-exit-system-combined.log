@@ -4494,3 +4494,180 @@
 2024-12-16T16:16:40.143Z [INFO]: Unsubscribed from AHG trade data.
 2024-12-16T16:16:40.962Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
 2024-12-16T16:16:40.969Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:25:41.713Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:25:41.724Z [INFO]: Started polling for order statuses.
+2024-12-16T16:25:41.905Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:25:41.906Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:25:41.982Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:25:42.111Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:25:42.298Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:25:42.634Z [INFO]: Position added: SIDU | Qty: 397 | Avg Entry: $2.869503
+2024-12-16T16:25:42.859Z [INFO]: Stop condition met for SIDU. Closing position immediately.
+2024-12-16T16:25:42.866Z [INFO]: Closing position with limit order: {"symbol":"SIDU","qty":"397","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.77","extended_hours":true,"client_order_id":"CLOSE-f2c4185df97e2d42"}
+2024-12-16T16:25:43.016Z [INFO]: Limit order placed to close position in SIDU. Order ID: 57282723-f2de-4387-bc92-f24dc04e77b1
+2024-12-16T16:25:44.932Z [INFO]: Order 57282723-f2de-4387-bc92-f24dc04e77b1 filled 359 qty for SIDU. Remaining: 0
+2024-12-16T16:25:45.002Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:25:51.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:26:01.722Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:26:02.306Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:26:11.728Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:26:12.507Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:26:14.007Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:26:19.520Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T16:26:20.018Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:26:21.725Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:26:23.744Z [WARN]: DNS resolution failed. Retrying in 1864ms...
+2024-12-16T16:26:31.724Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:26:32.300Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:26:32.310Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T16:26:41.724Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:26:42.454Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:26:42.584Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:26:42.622Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:26:43.105Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:26:51.727Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:26:52.494Z [INFO]: Unsubscribed from SGMT trade data.
+2024-12-16T16:27:01.672Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:27:02.266Z [INFO]: Subscribed to AHG quote data.
+2024-12-16T16:27:02.274Z [INFO]: Unsubscribed from LAES trade data.
+2024-12-16T16:27:02.281Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:27:11.671Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:27:12.238Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:27:12.498Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:27:12.502Z [INFO]: Unsubscribed from AHG trade data.
+2024-12-16T16:27:12.648Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:27:12.701Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:27:21.680Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:27:22.228Z [INFO]: Subscribed to AHG quote data.
+2024-12-16T16:27:31.676Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:27:33.722Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:27:33.733Z [INFO]: Started polling for order statuses.
+2024-12-16T16:27:33.925Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:27:33.926Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:27:33.980Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:27:34.219Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:27:34.384Z [INFO]: Subscribed to AHG quote data.
+2024-12-16T16:27:34.558Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:27:34.743Z [INFO]: Subscribed to WKEY quote data.
+2024-12-16T16:27:34.913Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:27:35.236Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:27:35.647Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:27:35.660Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:27:38.879Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:27:38.885Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:27:38.891Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:27:38.895Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:27:38.900Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:27:38.905Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:27:43.734Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:27:45.125Z [INFO]: Unsubscribed from QUBT trade data.
+2024-12-16T16:27:53.503Z [INFO]: Subscribed to AHG trade data.
+2024-12-16T16:27:53.735Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:28:03.735Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:28:07.554Z [INFO]: Unsubscribed from AHG trade data.
+2024-12-16T16:28:13.733Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:28:26.520Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:28:26.532Z [INFO]: Started polling for order statuses.
+2024-12-16T16:28:26.701Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:28:26.702Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:28:26.757Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:28:26.931Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:28:27.113Z [INFO]: Subscribed to AHG quote data.
+2024-12-16T16:28:27.294Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:28:27.472Z [INFO]: Subscribed to WKEY quote data.
+2024-12-16T16:28:27.567Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:28:27.659Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:28:27.932Z [INFO]: Subscribed to LAES trade data.
+2024-12-16T16:28:28.396Z [INFO]: Subscribed to AHG trade data.
+2024-12-16T16:28:33.880Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:28:35.853Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:28:36.534Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:28:36.854Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:28:36.864Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:28:36.870Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:28:36.876Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:28:36.882Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:28:37.357Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:28:37.366Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:28:37.370Z [INFO]: Unsubscribed from SIDU trade data.
+2024-12-16T16:28:37.860Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:28:46.550Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:28:56.530Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:29:06.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:29:16.535Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:29:26.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:29:36.538Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:29:36.538Z [INFO]: Subscribed to TSLL quote data.
+2024-12-16T16:29:36.599Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:29:36.718Z [INFO]: HOD for TSLL verified and updated: 36.66 -> 36.73
+2024-12-16T16:29:39.374Z [ERROR]: Error placing entry order for TSLL: this.placeEntryOrder is not a function
+2024-12-16T16:29:44.591Z [ERROR]: Error placing entry order for TSLL: this.placeEntryOrder is not a function
+2024-12-16T16:44:18.366Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:44:18.376Z [INFO]: Started polling for order statuses.
+2024-12-16T16:44:18.572Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:44:18.574Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:44:18.625Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:44:18.913Z [INFO]: Subscribed to SIDU quote data.
+2024-12-16T16:44:19.082Z [INFO]: Subscribed to WKEY quote data.
+2024-12-16T16:44:19.264Z [INFO]: Subscribed to LAES quote data.
+2024-12-16T16:44:19.372Z [INFO]: Subscribed to SIDU trade data.
+2024-12-16T16:44:19.444Z [INFO]: Subscribed to SGMT quote data.
+2024-12-16T16:44:19.631Z [INFO]: Subscribed to LAES trade data.
+2024-12-16T16:44:19.687Z [INFO]: Subscribed to WKEY trade data.
+2024-12-16T16:44:20.192Z [INFO]: Unsubscribed from WKEY trade data.
+2024-12-16T16:44:21.739Z [INFO]: Subscribed to SGMT trade data.
+2024-12-16T16:44:28.378Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:44:28.379Z [INFO]: Subscribed to TSLL quote data.
+2024-12-16T16:44:28.556Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:44:28.620Z [INFO]: HOD for TSLL verified and updated: 36.22 -> 36.74
+2024-12-16T16:44:29.009Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:44:36.389Z [INFO]: Placing entry order: {"symbol":"TSLL","qty":"3000","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.39","extended_hours":true,"client_order_id":"ENTRY-bf66466d34fab155"}
+2024-12-16T16:44:37.496Z [INFO]: Entry order placed for 3000 shares of TSLL at $36.39. Order ID: 4a56a6a0-5518-4cad-bba5-af35732ad730
+2024-12-16T16:44:37.501Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:44:37.797Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:44:38.432Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:44:38.572Z [INFO]: Position added: TSLL | Qty: 2992 | Avg Entry: $36.26389
+2024-12-16T16:44:38.576Z [INFO]: Subscribed to TSLL quote data.
+2024-12-16T16:44:38.843Z [INFO]: Stop condition met for TSLL. Closing position immediately.
+2024-12-16T16:44:38.847Z [INFO]: Closing position with limit order: {"symbol":"TSLL","qty":"2992","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.17","extended_hours":true,"client_order_id":"CLOSE-b4193434c101a491"}
+2024-12-16T16:44:41.022Z [INFO]: Limit order placed to close position in TSLL. Order ID: f3c04489-9c2e-49b4-ab06-9b4859ce8a93
+2024-12-16T16:44:48.444Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:44:48.445Z [INFO]: Subscribed to QUBT quote data.
+2024-12-16T16:44:49.162Z [INFO]: HOD for QUBT verified and updated: null -> 8.95
+2024-12-16T16:44:49.623Z [INFO]: Subscribed to QUBT trade data.
+2024-12-16T16:44:58.678Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:45:06.689Z [INFO]: Placing pyramid order: {"symbol":"TSLL","qty":"1496","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.37","extended_hours":true,"client_order_id":"PYRAMID-817b79da5dc1c441"} for TSLL
+2024-12-16T16:45:06.774Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:45:06.778Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:45:06.826Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:45:08.182Z [INFO]: Pyramid order placed for 1496 shares of TSLL at $36.37. Order ID: d3ea1158-0c24-4005-b50c-e76513af6beb
+2024-12-16T16:45:08.190Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:45:08.217Z [INFO]: Placing pyramid order: {"symbol":"TSLL","qty":"1496","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.37","extended_hours":true,"client_order_id":"PYRAMID-707a50609007d1ec"} for TSLL
+2024-12-16T16:45:08.255Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:45:08.614Z [INFO]: Pyramid order d3ea1158-0c24-4005-b50c-e76513af6beb filled 1041 qty for TSLL. New qty: 1049, Avg Entry: $36.37
+2024-12-16T16:45:08.680Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:45:09.001Z [INFO]: Pyramid order placed for 1496 shares of TSLL at $36.37. Order ID: ed69f43b-cd2d-4dc2-ae30-25ad3c3f89a8
+2024-12-16T16:45:18.685Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:45:28.684Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:45:38.682Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:45:39.480Z [INFO]: Subscribed to WKEY quote data.
+2024-12-16T16:45:42.598Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:45:43.673Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:45:45.542Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:45:46.086Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:45:48.943Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:45:59.106Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:46:09.270Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:46:19.275Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:46:29.277Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:46:39.275Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:46:49.409Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:46:59.494Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:47:01.607Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:47:02.582Z [INFO]: Subscribed to TSLL trade data.
+2024-12-16T16:47:02.670Z [INFO]: Unsubscribed from TSLL trade data.
+2024-12-16T16:47:09.495Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:47:13.481Z [INFO]: Subscribed to SGMO quote data.
+2024-12-16T16:47:14.935Z [INFO]: Subscribed to SGMO trade data.
+2024-12-16T16:47:19.502Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-16T16:47:29.672Z [INFO]: Dynamic config reloaded. Updated override symbols.

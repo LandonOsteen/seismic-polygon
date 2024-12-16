@@ -104,3 +104,5 @@
 2024-12-16T16:16:40.086Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
 2024-12-16T16:16:40.962Z [ERROR]: Error placing take-profit order for SIDU: Request failed with status code 403
 2024-12-16T16:16:40.969Z [ERROR]: Unhandled Rejection: Error: Request failed with status code 403
+2024-12-16T16:29:39.374Z [ERROR]: Error placing entry order for TSLL: this.placeEntryOrder is not a function
+2024-12-16T16:29:44.591Z [ERROR]: Error placing entry order for TSLL: this.placeEntryOrder is not a function
