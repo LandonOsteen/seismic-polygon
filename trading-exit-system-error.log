@@ -1,0 +1,72 @@
+2024-12-16T16:50:26.536Z [ERROR]: Error fetching account info: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-12-16T17:04:03.751Z [ERROR]: Error placing pyramid order for TSLL: {"buy_limit_price":"36.61","code":40310000,"existing_order_id":"ff136393-4fde-4775-a16c-2009497f1d86","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"36.32"}
+2024-12-16T17:07:22.802Z [ERROR]: Error placing pyramid order for TSLL: {"buy_limit_price":"36.78","code":40310000,"existing_order_id":"853b1179-651b-4fa6-af87-101548a6c1e7","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"36.49"}
+2024-12-16T17:07:24.108Z [ERROR]: Error placing limit order for TSLL: {"buy_limit_price":"36.8","code":40310000,"existing_order_id":"4c61b7e5-759f-4ab0-b747-90e78ca66a29","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"36.49"}
+2024-12-16T17:15:39.430Z [ERROR]: Unhandled Rejection: TypeError: updatedList is not iterable
+2024-12-16T17:15:44.431Z [ERROR]: Unhandled Rejection: TypeError: updatedList is not iterable
+2024-12-16T17:15:49.431Z [ERROR]: Unhandled Rejection: TypeError: updatedList is not iterable
+2024-12-16T17:25:35.961Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T17:25:35.965Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T17:25:40.961Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T17:25:40.966Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T18:45:40.993Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-12-16T18:45:46.993Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-12-16T18:55:06.521Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"637.39","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:06.867Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"704","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:07.208Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"621.36","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:07.553Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"616.69","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:08.288Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3994","message":"insufficient buying power"}
+2024-12-16T18:55:08.464Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:08.807Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:09.149Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3994","message":"insufficient buying power"}
+2024-12-16T18:55:09.733Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:09.909Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:10.313Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:10.581Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:10.951Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:11.304Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3997","message":"insufficient buying power"}
+2024-12-16T18:55:11.654Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:11.982Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:12.612Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"452.86","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:12.757Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:13.130Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:13.461Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:13.802Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3994","message":"insufficient buying power"}
+2024-12-16T18:55:14.156Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:14.515Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:14.859Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T19:02:22.408Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:22.699Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"24464.96","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:23.039Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:23.388Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22479.07","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:23.742Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22621.54","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:24.097Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:24.443Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:24.803Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:25.149Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:25.508Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:25.850Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:26.206Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:26.543Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23019.88","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:26.926Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23019.88","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:27.240Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22630.26","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:27.592Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22947.19","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:27.941Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22947.19","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:28.286Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22947.19","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:28.654Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:28.998Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:29.347Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:29.697Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:30.043Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:30.394Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:30.929Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23383.33","code":40310000,"cost_basis":"397812.99","message":"insufficient buying power"}
+2024-12-16T19:02:31.130Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23383.33","code":40310000,"cost_basis":"397912.81","message":"insufficient buying power"}
+2024-12-16T19:02:31.441Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"397812.99","message":"insufficient buying power"}
+2024-12-16T19:02:31.833Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23630.48","code":40310000,"cost_basis":"397912.81","message":"insufficient buying power"}
+2024-12-16T19:02:32.185Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23630.48","code":40310000,"cost_basis":"397912.81","message":"insufficient buying power"}
+2024-12-16T19:02:32.496Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23630.48","code":40310000,"cost_basis":"398012.64","message":"insufficient buying power"}
+2024-12-16T19:02:32.869Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:33.307Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23813.65","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:33.534Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23813.65","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:33.901Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23813.65","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:34.234Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23796.21","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}

@@ -1,0 +1,1493 @@
+2024-12-16T16:48:39.141Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:48:39.144Z [INFO]: Started polling for order statuses.
+2024-12-16T16:48:39.304Z [INFO]: Position added: SIDU | Qty: 3000 | Avg Entry: $3.57
+2024-12-16T16:48:39.310Z [INFO]: Position added: TSLL | Qty: 3000 | Avg Entry: $36.369717
+2024-12-16T16:48:39.316Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T16:48:39.317Z [INFO]: Polygon WebSocket connected.
+2024-12-16T16:48:39.363Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T16:48:39.868Z [INFO]: Profit target hit for SIDU: +13.00¢ >= +10¢
+2024-12-16T16:48:39.869Z [INFO]: Attempting to place limit order: {"symbol":"SIDU","qty":"90","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.45","extended_hours":true,"client_order_id":"LIMIT-015c8a4e20f0822f"}
+2024-12-16T16:48:40.088Z [INFO]: Placed limit order for 90 shares of SIDU. Order ID: 382f77c8-50a7-4b9b-bc72-3938982420e9
+2024-12-16T16:48:45.015Z [INFO]: Profit target hit for SIDU: +20.00¢ >= +20¢
+2024-12-16T16:48:45.017Z [INFO]: Attempting to place limit order: {"symbol":"SIDU","qty":"87","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.52","extended_hours":true,"client_order_id":"LIMIT-90daa38da9958429"}
+2024-12-16T16:48:45.265Z [INFO]: Placed limit order for 87 shares of SIDU. Order ID: 1afadbd9-f8a5-4c8c-9a6d-3e5d291eef2b
+2024-12-16T16:49:10.903Z [INFO]: Attempting to place pyramid order: {"symbol":"SIDU","qty":"28","side":"buy","type":"limit","time_in_force":"day","limit_price":"3.87","extended_hours":true,"client_order_id":"PYRAMID-8dc4ab19a6a5f134"}
+2024-12-16T16:49:11.285Z [INFO]: Placed pyramid order for 28 shares of SIDU. Order ID: 6e2dbbb3-ad48-4004-a4e7-28df37973407
+2024-12-16T16:50:26.536Z [ERROR]: Error fetching account info: getaddrinfo ENOTFOUND paper-api.alpaca.markets
+2024-12-16T16:59:16.525Z [INFO]: Profit target hit for TSLL: +10.03¢ >= +10¢
+2024-12-16T16:59:16.529Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"90","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.22","extended_hours":true,"client_order_id":"LIMIT-1bfdb66d4280516d"}
+2024-12-16T16:59:16.837Z [INFO]: Placed limit order for 90 shares of TSLL. Order ID: 5bc949cd-b442-4bb2-b65e-535452ba1b7f
+2024-12-16T17:00:39.882Z [INFO]: Stop condition met for SIDU. Initiating limit order to close position.
+2024-12-16T17:00:39.886Z [INFO]: Closing position with limit order: {"symbol":"SIDU","qty":"2851","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.32","extended_hours":true,"client_order_id":"CLOSE-cbac7f0c09e88fbc"}
+2024-12-16T17:00:40.200Z [INFO]: Limit order placed to close position in SIDU. Order ID: d06586a9-b4e9-4f1f-a556-0a7436156015
+2024-12-16T17:00:42.751Z [INFO]: Position removed: SIDU
+2024-12-16T17:00:42.755Z [INFO]: Unsubscribed from SIDU quotes.
+2024-12-16T17:02:17.440Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:02:17.447Z [INFO]: Started polling for order statuses.
+2024-12-16T17:02:17.624Z [INFO]: Position added: TSLL | Qty: 2910 | Avg Entry: $36.369717
+2024-12-16T17:02:17.640Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:02:17.641Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:02:17.691Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:03:15.348Z [INFO]: Profit target hit for TSLL: +10.03¢ >= +10¢
+2024-12-16T17:03:15.351Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"87","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.22","extended_hours":true,"client_order_id":"LIMIT-6f076fe9d2145ff6"}
+2024-12-16T17:03:15.572Z [INFO]: Placed limit order for 87 shares of TSLL. Order ID: c7053bd1-bbab-4922-8975-08b62b6c6b96
+2024-12-16T17:03:42.869Z [INFO]: Profit target hit for TSLL: +20.03¢ >= +20¢
+2024-12-16T17:03:42.872Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"84","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.32","extended_hours":true,"client_order_id":"LIMIT-6d34f046192ec3d8"}
+2024-12-16T17:03:43.742Z [INFO]: Placed limit order for 84 shares of TSLL. Order ID: 9ce1234d-7fc5-4173-9260-d929dd222e23
+2024-12-16T17:04:02.374Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:04:02.381Z [INFO]: Started polling for order statuses.
+2024-12-16T17:04:02.586Z [INFO]: Position added: TSLL | Qty: 2739 | Avg Entry: $36.369717
+2024-12-16T17:04:02.598Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:04:02.599Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:04:02.647Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:04:03.095Z [INFO]: Profit target hit for TSLL: +20.03¢ >= +10¢
+2024-12-16T17:04:03.099Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"82","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.32","extended_hours":true,"client_order_id":"LIMIT-936fc65df42c11e9"}
+2024-12-16T17:04:03.104Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"273","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.61","extended_hours":true,"client_order_id":"PYRAMID-cec147da4e834985"}
+2024-12-16T17:04:03.340Z [INFO]: Placed limit order for 82 shares of TSLL. Order ID: ff136393-4fde-4775-a16c-2009497f1d86
+2024-12-16T17:04:03.751Z [ERROR]: Error placing pyramid order for TSLL: {"buy_limit_price":"36.61","code":40310000,"existing_order_id":"ff136393-4fde-4775-a16c-2009497f1d86","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"36.32"}
+2024-12-16T17:04:04.054Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"535","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.60","extended_hours":true,"client_order_id":"PYRAMID-08cf7c376155ae69"}
+2024-12-16T17:04:04.762Z [INFO]: Placed pyramid order for 535 shares of TSLL. Order ID: 9e6702bf-7bcc-45c0-93e8-262c809711c0
+2024-12-16T17:04:05.523Z [INFO]: Pyramid order 9e6702bf-7bcc-45c0-93e8-262c809711c0 filled 514 qty for TSLL. New qty: 3657, New Avg Entry Price: $36.43
+2024-12-16T17:04:06.862Z [INFO]: Pyramid order 9e6702bf-7bcc-45c0-93e8-262c809711c0 filled 532 qty for TSLL. New qty: 3721, New Avg Entry Price: $36.43
+2024-12-16T17:04:16.998Z [INFO]: Profit target hit for TSLL: +20.67¢ >= +20¢
+2024-12-16T17:04:17.000Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"95","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.36","extended_hours":true,"client_order_id":"LIMIT-b410fb967fb7b41d"}
+2024-12-16T17:04:20.143Z [INFO]: Placed limit order for 95 shares of TSLL. Order ID: 9afa70fc-5384-4c2e-9554-4d63276ce047
+2024-12-16T17:04:20.644Z [INFO]: Order 9afa70fc-5384-4c2e-9554-4d63276ce047 filled 18 qty for TSLL. Remaining qty: 3174
+2024-12-16T17:06:38.305Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:06:38.312Z [INFO]: Started polling for order statuses.
+2024-12-16T17:06:38.477Z [INFO]: Position added: TSLL | Qty: 3097 | Avg Entry: $36.403286
+2024-12-16T17:06:38.648Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:06:38.649Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:06:38.702Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:06:38.767Z [INFO]: Profit target hit for TSLL: +21.67¢ >= +10¢
+2024-12-16T17:06:38.771Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"309","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.37","extended_hours":true,"client_order_id":"LIMIT-c5c9c38e6a9d0af1"}
+2024-12-16T17:06:38.779Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"309","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.67","extended_hours":true,"client_order_id":"PYRAMID-777eca9f48300a46"}
+2024-12-16T17:06:39.502Z [INFO]: Placed limit order for 309 shares of TSLL. Order ID: 6ff68076-7af3-491c-89e7-b6d497b89909
+2024-12-16T17:06:40.080Z [INFO]: Placed pyramid order for 309 shares of TSLL. Order ID: 5c41ad07-13c4-4c49-97bf-0532a5fbd5c9
+2024-12-16T17:06:40.240Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"619","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.69","extended_hours":true,"client_order_id":"PYRAMID-568c24cf7fa3f173"}
+2024-12-16T17:06:40.654Z [INFO]: Pyramid order 5c41ad07-13c4-4c49-97bf-0532a5fbd5c9 filled 298 qty for TSLL. New qty: 3395, New Avg Entry Price: $36.43
+2024-12-16T17:06:41.241Z [INFO]: Profit target hit for TSLL: +23.26¢ >= +20¢
+2024-12-16T17:06:41.246Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"308","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.41","extended_hours":true,"client_order_id":"LIMIT-8a685d1501cc5ba0"}
+2024-12-16T17:06:41.499Z [INFO]: Placed pyramid order for 619 shares of TSLL. Order ID: 9acdf6e3-6162-495e-bf43-11c617ab8ff3
+2024-12-16T17:06:41.662Z [INFO]: Placed limit order for 308 shares of TSLL. Order ID: e1f9cbca-d00b-442e-b11c-72c2ef749920
+2024-12-16T17:06:42.374Z [INFO]: Order e1f9cbca-d00b-442e-b11c-72c2ef749920 filled 275 qty for TSLL. Remaining qty: 3193
+2024-12-16T17:06:43.052Z [INFO]: Order e1f9cbca-d00b-442e-b11c-72c2ef749920 filled 283 qty for TSLL. Remaining qty: 3158
+2024-12-16T17:07:21.581Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:07:21.589Z [INFO]: Started polling for order statuses.
+2024-12-16T17:07:21.747Z [INFO]: Position added: TSLL | Qty: 3408 | Avg Entry: $36.468273
+2024-12-16T17:07:21.770Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:07:21.771Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:07:21.816Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:07:22.168Z [INFO]: Profit target hit for TSLL: +27.17¢ >= +10¢
+2024-12-16T17:07:22.172Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"340","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.49","extended_hours":true,"client_order_id":"LIMIT-6adc48ebb893e232"}
+2024-12-16T17:07:22.178Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"340","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.78","extended_hours":true,"client_order_id":"PYRAMID-8f77efdaf887367c"}
+2024-12-16T17:07:22.357Z [INFO]: Placed limit order for 340 shares of TSLL. Order ID: 853b1179-651b-4fa6-af87-101548a6c1e7
+2024-12-16T17:07:22.802Z [ERROR]: Error placing pyramid order for TSLL: {"buy_limit_price":"36.78","code":40310000,"existing_order_id":"853b1179-651b-4fa6-af87-101548a6c1e7","message":"potential wash trade detected. use complex orders","reject_reason":"sell order exists, buy limit price should be less than existing sell limit price","sell_limit_price":"36.49"}
+2024-12-16T17:07:23.077Z [INFO]: Attempting to place pyramid order: {"symbol":"TSLL","qty":"634","side":"buy","type":"limit","time_in_force":"day","limit_price":"36.80","extended_hours":true,"client_order_id":"PYRAMID-e93fc506fa6fed1b"}
+2024-12-16T17:07:23.174Z [INFO]: Profit target hit for TSLL: +27.17¢ >= +20¢
+2024-12-16T17:07:23.179Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"317","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.49","extended_hours":true,"client_order_id":"LIMIT-137386b7ca5f0d72"}
+2024-12-16T17:07:23.428Z [INFO]: Order 853b1179-651b-4fa6-af87-101548a6c1e7 filled 303 qty for TSLL. Remaining qty: 2870
+2024-12-16T17:07:23.818Z [INFO]: Placed pyramid order for 634 shares of TSLL. Order ID: 4c61b7e5-759f-4ab0-b747-90e78ca66a29
+2024-12-16T17:07:24.108Z [ERROR]: Error placing limit order for TSLL: {"buy_limit_price":"36.8","code":40310000,"existing_order_id":"4c61b7e5-759f-4ab0-b747-90e78ca66a29","message":"potential wash trade detected. use complex orders","reject_reason":"buy order exists, sell limit price should be greater than existing buy limit price","sell_limit_price":"36.49"}
+2024-12-16T17:07:24.834Z [INFO]: Pyramid order 4c61b7e5-759f-4ab0-b747-90e78ca66a29 filled 505 qty for TSLL. New qty: 3676, New Avg Entry Price: $36.52
+2024-12-16T17:08:32.479Z [INFO]: Profit target hit for TSLL: +30.18¢ >= +30¢
+2024-12-16T17:08:32.482Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"740","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.57","extended_hours":true,"client_order_id":"LIMIT-6615c5550df2e4c1"}
+2024-12-16T17:08:32.931Z [INFO]: Placed limit order for 740 shares of TSLL. Order ID: 8f3f58cd-88d9-45ff-b57c-8468ad9d82d7
+2024-12-16T17:08:47.924Z [INFO]: Position added: LC | Qty: 1972 | Avg Entry: $17.91
+2024-12-16T17:08:47.929Z [INFO]: Subscribed to LC quotes.
+2024-12-16T17:09:10.385Z [INFO]: Position added: WKEY | Qty: 2000 | Avg Entry: $13.87
+2024-12-16T17:09:10.394Z [INFO]: Subscribed to WKEY quotes.
+2024-12-16T17:09:33.418Z [INFO]: Profit target hit for TSLL: +40.18¢ >= +40¢
+2024-12-16T17:09:33.430Z [INFO]: Attempting to place limit order: {"symbol":"TSLL","qty":"888","side":"sell","type":"limit","time_in_force":"day","limit_price":"36.67","extended_hours":true,"client_order_id":"LIMIT-85987ffd42c1f5e4"}
+2024-12-16T17:09:38.843Z [INFO]: Stop condition met for LC. Initiating limit order to close position.
+2024-12-16T17:09:38.846Z [INFO]: Closing position with limit order: {"symbol":"LC","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"17.46","extended_hours":true,"client_order_id":"CLOSE-4218b6d82e631040"}
+2024-12-16T17:09:40.090Z [INFO]: Placed limit order for 888 shares of TSLL. Order ID: 9790aa3e-6580-4fe1-84b1-6870c856c9b8
+2024-12-16T17:09:40.242Z [INFO]: Limit order placed to close position in LC. Order ID: 1dfa07f3-3b4e-4d9c-b4dc-6f795ca0640b
+2024-12-16T17:09:41.244Z [INFO]: Order 1dfa07f3-3b4e-4d9c-b4dc-6f795ca0640b filled 616 qty for LC. Remaining qty: 768
+2024-12-16T17:09:41.398Z [INFO]: Position removed: LC
+2024-12-16T17:09:41.402Z [INFO]: Unsubscribed from LC quotes.
+2024-12-16T17:09:46.496Z [INFO]: Attempting to place pyramid order: {"symbol":"WKEY","qty":"600","side":"buy","type":"limit","time_in_force":"day","limit_price":"14.00","extended_hours":true,"client_order_id":"PYRAMID-b6c92b286dfa3b34"}
+2024-12-16T17:09:46.914Z [INFO]: Placed pyramid order for 600 shares of WKEY. Order ID: f2bb2f1e-ad66-4e26-ba26-f5c74f5e1d51
+2024-12-16T17:09:48.226Z [INFO]: Pyramid order f2bb2f1e-ad66-4e26-ba26-f5c74f5e1d51 filled 57 qty for WKEY. New qty: 6114, New Avg Entry Price: $13.88
+2024-12-16T17:10:12.998Z [INFO]: Stop condition met for WKEY. Initiating limit order to close position.
+2024-12-16T17:10:13.001Z [INFO]: Closing position with limit order: {"symbol":"WKEY","qty":"11600","side":"sell","type":"limit","time_in_force":"day","limit_price":"13.45","extended_hours":true,"client_order_id":"CLOSE-57e59111a9df623e"}
+2024-12-16T17:10:13.424Z [INFO]: Limit order placed to close position in WKEY. Order ID: 88f0769e-d77c-43e9-aa35-22f54f3ab90a
+2024-12-16T17:10:14.152Z [INFO]: Order 88f0769e-d77c-43e9-aa35-22f54f3ab90a filled 339 qty for WKEY. Remaining qty: 11241
+2024-12-16T17:10:15.556Z [INFO]: Position removed: WKEY
+2024-12-16T17:10:15.562Z [INFO]: Unsubscribed from WKEY quotes.
+2024-12-16T17:12:59.548Z [INFO]: Added AAPL to watchlist as long.
+2024-12-16T17:12:59.555Z [INFO]: Added TSLA to watchlist as short.
+2024-12-16T17:12:59.592Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:12:59.767Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:12:59.768Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:12:59.771Z [INFO]: Position added: TSLL | Qty: 2074 | Avg Entry: $36.518233
+2024-12-16T17:12:59.774Z [INFO]: Subscribed to TSLL quotes.
+2024-12-16T17:12:59.814Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:12:59.814Z [INFO]: Resubscribed to quotes: Q.AAPL,Q.TSLA,Q.TSLL
+2024-12-16T17:12:59.814Z [INFO]: Resubscribed to trades: T.AAPL,T.TSLA
+2024-12-16T17:13:00.114Z [INFO]: Profit target hit for TSLL: 18.18¢ >= 10¢
+2024-12-16T17:13:00.264Z [INFO]: IOC limit order placed: SELL TSLL 62 @ 36.45
+2024-12-16T17:13:20.870Z [INFO]: Profit target hit for TSLL: 20.18¢ >= 20¢
+2024-12-16T17:13:21.062Z [INFO]: IOC limit order placed: SELL TSLL 60 @ 36.47
+2024-12-16T17:13:52.417Z [INFO]: Pyramid order placed: BUY TSLL 19 @ 36.82
+2024-12-16T17:13:53.119Z [INFO]: Pyramid order b737c52d-6bad-4040-9425-bfc58bc5774b filled 5 for TSLL. New qty: 1962, Avg: 36.43
+2024-12-16T17:15:39.414Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:15:39.430Z [ERROR]: Unhandled Rejection: TypeError: updatedList is not iterable
+2024-12-16T17:15:39.594Z [INFO]: Position added: TSLL | Qty: 1971 | Avg Entry: $36.520757
+2024-12-16T17:15:39.631Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:15:39.632Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:15:39.698Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:15:39.698Z [INFO]: Resubscribed to quotes: Q.TSLL
+2024-12-16T17:15:40.034Z [INFO]: Profit target hit for TSLL: 22.92¢ >= 10¢
+2024-12-16T17:15:40.193Z [INFO]: IOC limit order placed: SELL TSLL 59 @ 36.5
+2024-12-16T17:15:40.904Z [INFO]: Order ead4fcd5-94c4-4133-8f50-d7804411eab5 filled 26 for TSLL. Remaining: 1935
+2024-12-16T17:15:41.036Z [INFO]: Profit target hit for TSLL: 22.92¢ >= 20¢
+2024-12-16T17:15:41.264Z [INFO]: IOC limit order placed: SELL TSLL 58 @ 36.5
+2024-12-16T17:15:44.431Z [ERROR]: Unhandled Rejection: TypeError: updatedList is not iterable
+2024-12-16T17:15:49.431Z [ERROR]: Unhandled Rejection: TypeError: updatedList is not iterable
+2024-12-16T17:21:59.798Z [INFO]: Added TSLL to watchlist as long.
+2024-12-16T17:21:59.806Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T17:21:59.842Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:22:00.071Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:22:00.072Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:22:00.074Z [INFO]: Position added: TSLL | Qty: 1854 | Avg Entry: $36.520757
+2024-12-16T17:22:00.126Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:22:00.126Z [INFO]: Resubscribed to quotes: Q.TSLL,Q.INTC
+2024-12-16T17:22:00.127Z [INFO]: Resubscribed to trades: T.TSLL,T.INTC
+2024-12-16T17:22:00.189Z [INFO]: Profit target hit for TSLL: 17.92¢ >= 10¢
+2024-12-16T17:22:00.415Z [INFO]: IOC limit order placed: SELL TSLL 55 @ 36.45
+2024-12-16T17:22:01.080Z [INFO]: Order c5b44878-de06-43cd-b9f4-2fcd1284db82 filled 42 qty for TSLL. Remaining qty: 1771
+2024-12-16T17:22:02.599Z [INFO]: Order c5b44878-de06-43cd-b9f4-2fcd1284db82 filled 54 qty for TSLL. Remaining qty: 1747
+2024-12-16T17:22:02.996Z [INFO]: Order c5b44878-de06-43cd-b9f4-2fcd1284db82 filled 54 qty for TSLL. Remaining qty: 1693
+2024-12-16T17:22:44.825Z [INFO]: Subscribed to SIDU quotes.
+2024-12-16T17:22:44.825Z [INFO]: Subscribed to SIDU trades.
+2024-12-16T17:22:44.825Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T17:25:35.961Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T17:25:35.965Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T17:25:40.961Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T17:25:40.966Z [ERROR]: Error refreshing watchlist: Unexpected token { in JSON at position 124
+2024-12-16T17:25:45.962Z [INFO]: Subscribed to NBIS quotes.
+2024-12-16T17:25:45.962Z [INFO]: Subscribed to NBIS trades.
+2024-12-16T17:25:45.962Z [INFO]: Added NBIS to watchlist as long.
+2024-12-16T17:26:01.538Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.13
+2024-12-16T17:26:02.000Z [INFO]: Position added: NBIS | Qty: 71 | Avg Entry: $32.95
+2024-12-16T17:26:02.250Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.13
+2024-12-16T17:26:02.535Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:02.902Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:03.313Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:03.606Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:03.939Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:04.323Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:04.662Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:04.999Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:05.364Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:05.727Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:06.400Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:06.685Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:06.894Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:07.247Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:07.656Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:08.224Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:08.382Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:08.731Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:09.188Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.15
+2024-12-16T17:26:09.435Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.16
+2024-12-16T17:26:09.777Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.14
+2024-12-16T17:26:10.240Z [INFO]: Entry order placed: BUY NBIS 100 @ 33.18
+2024-12-16T17:27:22.834Z [INFO]: Profit target hit for NBIS: 10¢ >= 10¢
+2024-12-16T17:27:23.277Z [INFO]: IOC limit order placed: SELL NBIS 72 @ 32.8
+2024-12-16T17:27:24.609Z [INFO]: Profit target hit for NBIS: 21¢ >= 20¢
+2024-12-16T17:27:25.480Z [INFO]: IOC limit order placed: SELL NBIS 69 @ 32.91
+2024-12-16T17:27:26.238Z [INFO]: Pyramid order placed: BUY NBIS 23 @ 33.29
+2024-12-16T17:40:05.493Z [INFO]: Added TSLL to watchlist as long.
+2024-12-16T17:40:05.528Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T17:40:05.537Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T17:40:05.546Z [INFO]: Added NBIS to watchlist as long.
+2024-12-16T17:40:05.554Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:40:05.721Z [INFO]: Position added: NBIS | Qty: 2282 | Avg Entry: $32.953024
+2024-12-16T17:40:05.728Z [INFO]: Position added: TSLL | Qty: 1799 | Avg Entry: $36.520757
+2024-12-16T17:40:05.813Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:40:05.813Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:40:05.868Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:40:05.869Z [INFO]: Resubscribed to quotes: Q.TSLL,Q.SIDU,Q.INTC,Q.NBIS
+2024-12-16T17:40:05.869Z [INFO]: Resubscribed to trades: T.TSLL,T.SIDU,T.INTC,T.NBIS
+2024-12-16T17:40:05.927Z [INFO]: HOD/LOD updated for NBIS: HOD=33.52, LOD=30.49
+2024-12-16T17:40:05.933Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T17:40:05.937Z [INFO]: HOD/LOD updated for TSLL: HOD=36.98, LOD=33.26
+2024-12-16T17:40:05.940Z [INFO]: HOD/LOD updated for SIDU: HOD=3.98, LOD=1.57
+2024-12-16T17:40:53.437Z [INFO]: Added TSLL to watchlist as long.
+2024-12-16T17:40:53.470Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T17:40:53.478Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T17:40:53.486Z [INFO]: Added NBIS to watchlist as long.
+2024-12-16T17:40:53.495Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:40:53.691Z [INFO]: Position added: NBIS | Qty: 2282 | Avg Entry: $32.953024
+2024-12-16T17:40:53.695Z [INFO]: Position added: TSLL | Qty: 1799 | Avg Entry: $36.520757
+2024-12-16T17:40:53.700Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:40:53.701Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:40:53.752Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:40:53.752Z [INFO]: Resubscribed to quotes: Q.TSLL,Q.SIDU,Q.INTC,Q.NBIS
+2024-12-16T17:40:53.752Z [INFO]: Resubscribed to trades: T.TSLL,T.SIDU,T.INTC,T.NBIS
+2024-12-16T17:40:54.010Z [INFO]: HOD/LOD updated for SIDU: HOD=3.98, LOD=1.57
+2024-12-16T17:40:54.013Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T17:40:54.016Z [INFO]: HOD/LOD updated for TSLL: HOD=36.98, LOD=33.26
+2024-12-16T17:40:54.019Z [INFO]: HOD/LOD updated for NBIS: HOD=33.6, LOD=30.49
+2024-12-16T17:40:54.720Z [INFO]: Profit target hit for NBIS: 62.7¢ >= 10¢
+2024-12-16T17:44:19.668Z [INFO]: Added TSLL to watchlist as long.
+2024-12-16T17:44:19.702Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T17:44:19.711Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T17:44:19.720Z [INFO]: Added NBIS to watchlist as long.
+2024-12-16T17:44:19.729Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:44:19.928Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T17:44:19.929Z [INFO]: Polygon WebSocket connected.
+2024-12-16T17:44:19.934Z [INFO]: Position added: NBIS | Qty: 2282 | Avg Entry: $32.953024
+2024-12-16T17:44:19.939Z [INFO]: Position added: TSLL | Qty: 1799 | Avg Entry: $36.520757
+2024-12-16T17:44:19.986Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T17:44:19.986Z [INFO]: Resubscribed to quotes: Q.TSLL,Q.SIDU,Q.INTC,Q.NBIS
+2024-12-16T17:44:19.986Z [INFO]: Resubscribed to trades: T.TSLL,T.SIDU,T.INTC,T.NBIS
+2024-12-16T17:44:20.141Z [INFO]: HOD/LOD updated for NBIS: HOD=33.67, LOD=30.49
+2024-12-16T17:44:20.145Z [INFO]: HOD/LOD updated for TSLL: HOD=36.98, LOD=33.26
+2024-12-16T17:44:20.150Z [INFO]: HOD/LOD updated for SIDU: HOD=3.98, LOD=1.57
+2024-12-16T17:44:20.867Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:13:40.805Z [INFO]: Added TSLL to watchlist as long.
+2024-12-16T18:13:40.838Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T18:13:40.850Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T18:13:40.859Z [INFO]: Added NBIS to watchlist as long.
+2024-12-16T18:13:40.868Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:13:41.103Z [INFO]: Position added: NBIS | Qty: 2282 | Avg Entry: $32.953024
+2024-12-16T18:13:41.110Z [INFO]: Position added: TSLL | Qty: 1799 | Avg Entry: $36.520757
+2024-12-16T18:13:41.195Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T18:13:41.197Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:13:41.246Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T18:13:41.247Z [INFO]: Resubscribed to quotes: Q.TSLL,Q.SIDU,Q.INTC,Q.NBIS
+2024-12-16T18:13:41.247Z [INFO]: Resubscribed to trades: T.TSLL,T.SIDU,T.INTC,T.NBIS
+2024-12-16T18:13:41.305Z [INFO]: HOD/LOD updated for NBIS: HOD=34.23, LOD=30.49
+2024-12-16T18:13:41.314Z [INFO]: HOD/LOD updated for SIDU: HOD=3.98, LOD=1.57
+2024-12-16T18:13:41.317Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:13:41.320Z [INFO]: HOD/LOD updated for TSLL: HOD=37.13, LOD=33.26
+2024-12-16T18:44:02.750Z [INFO]: Added TSLL to watchlist as long.
+2024-12-16T18:44:02.807Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T18:44:02.816Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T18:44:02.824Z [INFO]: Added NBIS to watchlist as long.
+2024-12-16T18:44:02.833Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:44:03.138Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T18:44:03.140Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:44:03.180Z [INFO]: HOD/LOD updated for NBIS: HOD=34.3, LOD=30.49
+2024-12-16T18:44:03.186Z [INFO]: HOD/LOD updated for TSLL: HOD=37.13, LOD=33.26
+2024-12-16T18:44:03.191Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:44:03.195Z [INFO]: HOD/LOD updated for TSLL: HOD=37.13, LOD=33.26
+2024-12-16T18:44:03.197Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T18:44:03.198Z [INFO]: Resubscribed to quotes: Q.TSLL,Q.SIDU,Q.INTC,Q.NBIS
+2024-12-16T18:44:03.198Z [INFO]: Resubscribed to trades: T.TSLL,T.SIDU,T.INTC,T.NBIS
+2024-12-16T18:44:03.307Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:44:03.511Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:44:03.842Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:44:04.184Z [INFO]: HOD/LOD updated for NBIS: HOD=34.3, LOD=30.49
+2024-12-16T18:44:24.266Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T18:44:24.298Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T18:44:24.307Z [INFO]: Added NBIS to watchlist as long.
+2024-12-16T18:44:24.319Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:44:24.494Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T18:44:24.495Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:44:24.543Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T18:44:24.543Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.NBIS
+2024-12-16T18:44:24.543Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.NBIS
+2024-12-16T18:44:24.670Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:44:24.675Z [INFO]: HOD/LOD updated for NBIS: HOD=34.3, LOD=30.49
+2024-12-16T18:44:24.681Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:44:24.688Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:44:25.001Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:44:25.323Z [INFO]: HOD/LOD updated for NBIS: HOD=34.3, LOD=30.49
+2024-12-16T18:44:49.321Z [INFO]: Subscribed to IONQ quotes.
+2024-12-16T18:44:49.321Z [INFO]: Subscribed to IONQ trades.
+2024-12-16T18:44:49.322Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T18:44:49.331Z [INFO]: Unsubscribed from NBIS quotes.
+2024-12-16T18:44:49.331Z [INFO]: Unsubscribed from NBIS trades.
+2024-12-16T18:44:49.331Z [INFO]: Removed NBIS from watchlist.
+2024-12-16T18:44:49.683Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:44:54.662Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:44:54.674Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:44:55.002Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:44:55.026Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:44:55.346Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:44:55.567Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:45:24.827Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:45:24.839Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:45:25.193Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:45:25.412Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:45:25.571Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:45:25.738Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:45:38.789Z [WARN]: Rate limit hit. Retrying in 1622ms...
+2024-12-16T18:45:40.993Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-12-16T18:45:44.809Z [WARN]: Rate limit hit. Retrying in 1282ms...
+2024-12-16T18:45:46.993Z [ERROR]: Error fetching account info: Request failed with status code 429
+2024-12-16T18:45:50.795Z [WARN]: Rate limit hit. Retrying in 1064ms...
+2024-12-16T18:45:52.010Z [WARN]: Rate limit hit. Retrying in 2532ms...
+2024-12-16T18:45:54.679Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:45:54.991Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:45:55.016Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:45:55.314Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:45:55.341Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:45:55.665Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:45:56.798Z [WARN]: Rate limit hit. Retrying in 1110ms...
+2024-12-16T18:45:58.062Z [WARN]: Rate limit hit. Retrying in 2627ms...
+2024-12-16T18:46:08.391Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T18:46:08.425Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T18:46:08.435Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T18:46:08.448Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:46:08.646Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T18:46:08.647Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:46:08.697Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T18:46:08.698Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ
+2024-12-16T18:46:08.698Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ
+2024-12-16T18:46:08.802Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:46:08.809Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:46:08.816Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:46:08.820Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:46:09.134Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:46:09.467Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:46:38.827Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:46:38.836Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:46:39.178Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:46:39.188Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:46:39.539Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:46:39.548Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:47:08.792Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:47:08.827Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:47:09.168Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:47:09.176Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:47:09.545Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:47:09.562Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:47:38.464Z [INFO]: Subscribed to AMPG quotes.
+2024-12-16T18:47:38.464Z [INFO]: Subscribed to AMPG trades.
+2024-12-16T18:47:38.464Z [INFO]: Added AMPG to watchlist as long.
+2024-12-16T18:47:38.864Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:47:38.884Z [INFO]: HOD/LOD updated for AMPG: HOD=2.82, LOD=2.03
+2024-12-16T18:47:38.902Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:47:39.237Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:47:39.245Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:47:39.588Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:47:39.594Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:47:39.943Z [INFO]: HOD/LOD updated for AMPG: HOD=2.82, LOD=2.03
+2024-12-16T18:48:03.465Z [INFO]: Subscribed to AVGX quotes.
+2024-12-16T18:48:03.466Z [INFO]: Subscribed to AVGX trades.
+2024-12-16T18:48:03.466Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T18:48:03.471Z [INFO]: Unsubscribed from AMPG quotes.
+2024-12-16T18:48:03.472Z [INFO]: Unsubscribed from AMPG trades.
+2024-12-16T18:48:03.472Z [INFO]: Removed AMPG from watchlist.
+2024-12-16T18:48:04.032Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:48:08.793Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:48:08.821Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:48:09.138Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:48:09.159Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:48:09.494Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:48:09.520Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:48:09.847Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:48:10.283Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:48:38.793Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:48:38.819Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:48:39.133Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:48:39.173Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:48:39.465Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:48:39.503Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:48:39.799Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:48:39.825Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:49:08.790Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:49:08.840Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:49:09.162Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:49:09.407Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:49:09.537Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:49:09.759Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:49:09.882Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:49:10.100Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:49:38.999Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:49:39.021Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:49:39.451Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:49:39.460Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:49:39.977Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:49:40.081Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:49:40.553Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:49:40.564Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:50:08.784Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:50:08.830Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:50:09.129Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:50:09.169Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:50:09.482Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:50:09.527Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:50:09.900Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:50:09.964Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:50:38.831Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:50:39.096Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:50:39.169Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:50:39.442Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:50:39.701Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:50:39.801Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:50:40.053Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:50:40.148Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:51:08.920Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:51:09.271Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:51:09.292Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:51:09.606Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:51:09.666Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:51:09.979Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:51:10.006Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:51:10.575Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:51:38.807Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:51:38.818Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:51:39.177Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:51:39.186Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:51:39.550Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:51:39.559Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:51:39.899Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:51:39.922Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:52:08.839Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:52:08.864Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:52:09.302Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:52:09.367Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:52:09.688Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:52:09.776Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:52:10.056Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:52:10.326Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:52:38.909Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:52:38.922Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:52:39.272Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:52:39.283Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:52:39.647Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:52:39.664Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:52:39.993Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:52:40.044Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:53:08.792Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:53:08.831Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:53:09.293Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:53:09.442Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:53:09.752Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:53:09.782Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:53:10.087Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:53:10.097Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:53:38.803Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:53:38.847Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:53:39.174Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:53:39.196Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:53:39.529Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:53:39.546Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:53:39.870Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:53:39.885Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:54:08.846Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:54:08.853Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:54:09.218Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:54:09.223Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:54:09.560Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:54:09.619Z [INFO]: HOD/LOD updated for IONQ: HOD=39.56, LOD=32.39
+2024-12-16T18:54:09.915Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:54:09.971Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:54:29.711Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:30.211Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:30.396Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:30.743Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:31.081Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:31.459Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:31.817Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:32.149Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:32.493Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:32.844Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:33.208Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:33.549Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:33.888Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:34.263Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:34.576Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:34.932Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:35.289Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:35.641Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:35.997Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:36.345Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:36.695Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:37.058Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:37.396Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:37.780Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:38.094Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:38.437Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:38.779Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:38.825Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:54:38.837Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:54:39.139Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:39.160Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:54:39.197Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:54:39.484Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:39.515Z [INFO]: HOD/LOD updated for IONQ: HOD=39.72, LOD=32.39
+2024-12-16T18:54:39.694Z [INFO]: HOD/LOD updated for IONQ: HOD=39.72, LOD=32.39
+2024-12-16T18:54:39.859Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:54:39.905Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:40.078Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:54:40.191Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:40.569Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:40.876Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:41.253Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:41.588Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:41.943Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:42.299Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:42.639Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:42.990Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:43.351Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:43.699Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:44.034Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:44.405Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:44.738Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:45.084Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:45.435Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:45.783Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:46.142Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:46.508Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:46.845Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:47.202Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:47.599Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:47.922Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:48.248Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:48.581Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:48.959Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:49.315Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:49.660Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:50.012Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:50.339Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:50.695Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:51.026Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:51.390Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:51.736Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:52.097Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.87
+2024-12-16T18:54:52.452Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.87
+2024-12-16T18:54:52.783Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:53.164Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.87
+2024-12-16T18:54:53.483Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:53.836Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:54.244Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:54.538Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:54.896Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:55.230Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:54:55.591Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:55.929Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:56.296Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:56.650Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:57.237Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:57.392Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:57.755Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:58.086Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:58.455Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:58.793Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:54:59.140Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:59.520Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:54:59.834Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:55:00.192Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:55:00.554Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:55:00.927Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:55:01.284Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:55:01.595Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:55:01.948Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.87
+2024-12-16T18:55:02.333Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.87
+2024-12-16T18:55:02.652Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.87
+2024-12-16T18:55:03.010Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:55:03.383Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.87
+2024-12-16T18:55:03.699Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.85
+2024-12-16T18:55:04.048Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.86
+2024-12-16T18:55:04.384Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.84
+2024-12-16T18:55:05.097Z [INFO]: Position added: IONQ | Qty: 6564 | Avg Entry: $39.720661
+2024-12-16T18:55:05.119Z [INFO]: Profit target hit for IONQ: 20.93¢ >= 10¢
+2024-12-16T18:55:05.463Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.92
+2024-12-16T18:55:05.824Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.93
+2024-12-16T18:55:06.162Z [INFO]: Entry order placed: BUY IONQ 100 @ 39.95
+2024-12-16T18:55:06.521Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"637.39","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:06.867Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"704","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:07.208Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"621.36","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:07.553Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"616.69","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:08.288Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3994","message":"insufficient buying power"}
+2024-12-16T18:55:08.464Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:08.807Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:08.820Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:55:08.828Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:55:09.149Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3994","message":"insufficient buying power"}
+2024-12-16T18:55:09.212Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:55:09.217Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:55:09.733Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:09.760Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:55:09.856Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:55:09.909Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:10.102Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:55:10.209Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:55:10.313Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:10.581Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:10.951Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:11.304Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3997","message":"insufficient buying power"}
+2024-12-16T18:55:11.654Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:11.982Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:12.612Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"452.86","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:12.757Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:13.130Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:13.461Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3995","message":"insufficient buying power"}
+2024-12-16T18:55:13.802Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3994","message":"insufficient buying power"}
+2024-12-16T18:55:14.156Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:14.515Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3996","message":"insufficient buying power"}
+2024-12-16T18:55:14.859Z [ERROR]: Error placing entry order for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"3993","message":"insufficient buying power"}
+2024-12-16T18:55:59.046Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T18:55:59.079Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T18:55:59.087Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T18:55:59.095Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T18:55:59.103Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:55:59.394Z [INFO]: Position added: IONQ | Qty: 10300 | Avg Entry: $39.753986
+2024-12-16T18:55:59.419Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T18:55:59.419Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:55:59.510Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T18:55:59.511Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX
+2024-12-16T18:55:59.511Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX
+2024-12-16T18:55:59.578Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:55:59.586Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:55:59.608Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:55:59.614Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:55:59.626Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:55:59.991Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:56:00.399Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:56:00.748Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:56:29.481Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:56:29.488Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:56:29.860Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:56:29.947Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:56:30.282Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:56:30.338Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:56:30.634Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:56:30.695Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:56:59.928Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:57:00.106Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:57:00.766Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:57:00.771Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:57:01.227Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:57:01.237Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:57:01.607Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:57:01.614Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:57:29.533Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:57:29.537Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:57:29.892Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:57:29.901Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:57:30.431Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:57:30.778Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:57:30.786Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:57:31.125Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:57:47.363Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T18:57:47.397Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T18:57:47.405Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T18:57:47.413Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T18:57:47.421Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:57:47.591Z [INFO]: Position added: IONQ | Qty: 10300 | Avg Entry: $39.753986
+2024-12-16T18:57:47.734Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T18:57:47.735Z [INFO]: Polygon WebSocket connected.
+2024-12-16T18:57:47.783Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:57:47.787Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T18:57:47.787Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX
+2024-12-16T18:57:47.787Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX
+2024-12-16T18:57:47.796Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:57:47.799Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:57:47.805Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:57:47.809Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:57:48.553Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:57:48.887Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:57:49.222Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:58:17.787Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:58:17.793Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:58:18.152Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:58:18.538Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:58:18.689Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:58:18.887Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:58:19.055Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:58:19.395Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:58:47.833Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:58:47.842Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:58:48.215Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:58:48.223Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:58:48.596Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:58:48.601Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:58:48.956Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:58:48.966Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:59:17.794Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:59:17.801Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:59:18.225Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:59:18.236Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:59:18.575Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:59:18.584Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:59:18.964Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:59:18.981Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:59:47.756Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:59:47.794Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T18:59:48.142Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:59:48.152Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T18:59:48.520Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:59:48.550Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T18:59:48.879Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T18:59:48.929Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:00:17.853Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:00:17.861Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:00:18.414Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:00:18.789Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:00:19.269Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:00:19.715Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:00:20.094Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:00:20.451Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:00:47.828Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:00:47.838Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:00:48.211Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:00:48.240Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:00:48.558Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:00:48.647Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:00:49.011Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:00:49.054Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:01:13.655Z [INFO]: Profit target hit for IONQ: 10.6¢ >= 10¢
+2024-12-16T19:01:13.977Z [INFO]: IOC limit order placed: SELL IONQ 309 @ 39.61
+2024-12-16T19:01:14.615Z [INFO]: Order f0c397ac-8201-4ab9-b3ca-5c4192904fd2 filled 81 qty for IONQ. Remaining qty: 10219
+2024-12-16T19:01:17.852Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:01:17.887Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:01:18.285Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:01:18.330Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:01:18.638Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:01:18.728Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:01:18.992Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:01:19.197Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:01:47.841Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:01:47.848Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:01:48.203Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:01:48.210Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:01:48.551Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:01:48.743Z [INFO]: HOD/LOD updated for IONQ: HOD=39.9699, LOD=32.39
+2024-12-16T19:01:48.982Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:01:49.101Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:02:08.691Z [INFO]: Profit target hit for IONQ: 20.6¢ >= 20¢
+2024-12-16T19:02:08.841Z [INFO]: IOC limit order placed: SELL IONQ 299 @ 39.71
+2024-12-16T19:02:09.299Z [INFO]: Trailing stop activated for IONQ at $39.87
+2024-12-16T19:02:17.794Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:02:17.882Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:02:18.145Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:02:18.256Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:02:18.533Z [INFO]: HOD/LOD updated for IONQ: HOD=39.97, LOD=32.39
+2024-12-16T19:02:18.631Z [INFO]: HOD/LOD updated for IONQ: HOD=39.97, LOD=32.39
+2024-12-16T19:02:19.119Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:02:19.170Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:02:20.660Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.663Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.62","extended_hours":true,"client_order_id":"CLOSE-2b209383d6783695"}
+2024-12-16T19:02:20.669Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.672Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.61","extended_hours":true,"client_order_id":"CLOSE-655abf95fb9a8b39"}
+2024-12-16T19:02:20.677Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.680Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.61","extended_hours":true,"client_order_id":"CLOSE-2b7b60b72373751d"}
+2024-12-16T19:02:20.686Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.689Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.61","extended_hours":true,"client_order_id":"CLOSE-1d2298bfca3348aa"}
+2024-12-16T19:02:20.694Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.697Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.61","extended_hours":true,"client_order_id":"CLOSE-77f22a9932f87d5f"}
+2024-12-16T19:02:20.703Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.706Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-21f8869592c4b290"}
+2024-12-16T19:02:20.712Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.715Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-6ceef50b0ac2c4cf"}
+2024-12-16T19:02:20.721Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.724Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-d0b86bb989025d30"}
+2024-12-16T19:02:20.731Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.734Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-9f5f9fc600efe107"}
+2024-12-16T19:02:20.740Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.743Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-3e0ceee118e9e228"}
+2024-12-16T19:02:20.750Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.752Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-facde70025f5ee3d"}
+2024-12-16T19:02:20.759Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.762Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-a4f818382ab332dc"}
+2024-12-16T19:02:20.769Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.772Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.61","extended_hours":true,"client_order_id":"CLOSE-8a06e43fdcbeb99a"}
+2024-12-16T19:02:20.779Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.799Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.61","extended_hours":true,"client_order_id":"CLOSE-8ff6a3ea0420dcee"}
+2024-12-16T19:02:20.830Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.838Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-6408e0b726cddbdd"}
+2024-12-16T19:02:20.846Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.850Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.59","extended_hours":true,"client_order_id":"CLOSE-1aafb4583d0f1784"}
+2024-12-16T19:02:20.859Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.863Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.59","extended_hours":true,"client_order_id":"CLOSE-90e48f87e0dc2719"}
+2024-12-16T19:02:20.870Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.874Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-a7145c9c7065d135"}
+2024-12-16T19:02:20.881Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.885Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-fa6206edf410b6d4"}
+2024-12-16T19:02:20.894Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.898Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-f116db1734f0717b"}
+2024-12-16T19:02:20.905Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.909Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-3d5aab4c9dfd1073"}
+2024-12-16T19:02:20.916Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.922Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-da31b82d86fc3e4f"}
+2024-12-16T19:02:20.934Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.937Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-b6804c2e39175dab"}
+2024-12-16T19:02:20.944Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.948Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-1c52223a41edf4d7"}
+2024-12-16T19:02:20.956Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.959Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-df0188e09c24a06f"}
+2024-12-16T19:02:20.967Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.971Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-8cab4787e7d95fc5"}
+2024-12-16T19:02:20.978Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.982Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-c26bd2cdf9641172"}
+2024-12-16T19:02:20.990Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:20.993Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-4190c303e651ded7"}
+2024-12-16T19:02:21.000Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.003Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-f3ca98995756680f"}
+2024-12-16T19:02:21.010Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.014Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-d03961916ef75491"}
+2024-12-16T19:02:21.022Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.026Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-5f3a0393f66dbdff"}
+2024-12-16T19:02:21.033Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.036Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-73e6031f7b7da0b2"}
+2024-12-16T19:02:21.044Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.048Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-9cd4c7290e7bb051"}
+2024-12-16T19:02:21.055Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.059Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-3e4ba93be2860d09"}
+2024-12-16T19:02:21.066Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.069Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-311eedfdd6e49eab"}
+2024-12-16T19:02:21.076Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.079Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-9def29623e7ae758"}
+2024-12-16T19:02:21.087Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.091Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-98d14520790d0d33"}
+2024-12-16T19:02:21.097Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.101Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-74920292de715596"}
+2024-12-16T19:02:21.152Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.157Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-3d70261c02b609f7"}
+2024-12-16T19:02:21.170Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.174Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-1cce65266a1ecb70"}
+2024-12-16T19:02:21.181Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.185Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-9326ebddc732ef48"}
+2024-12-16T19:02:21.193Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.197Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-ecc48e140e5044db"}
+2024-12-16T19:02:21.204Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.208Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-0e824cd4d195ada7"}
+2024-12-16T19:02:21.216Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.220Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-61a69aacee2bf5ca"}
+2024-12-16T19:02:21.227Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.231Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-7e4e584033efa212"}
+2024-12-16T19:02:21.239Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.242Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-fc79cac74e2540d0"}
+2024-12-16T19:02:21.250Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.253Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-5e7ddd8f9e534e22"}
+2024-12-16T19:02:21.261Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.264Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-eed5d92d2f646775"}
+2024-12-16T19:02:21.271Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.275Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-faf10a2f95488d95"}
+2024-12-16T19:02:21.283Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.286Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-9f3a31e96c9ad1ca"}
+2024-12-16T19:02:21.294Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.298Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-62dc204f0fc60fef"}
+2024-12-16T19:02:21.306Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.309Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-c7a0d1dbbe9d17e2"}
+2024-12-16T19:02:21.318Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.321Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-ca0b24962d7f9cdb"}
+2024-12-16T19:02:21.329Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.332Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-efdf84ee8afa86d3"}
+2024-12-16T19:02:21.340Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.344Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-94989d2417901e8e"}
+2024-12-16T19:02:21.351Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.354Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-872ba2af87c0821d"}
+2024-12-16T19:02:21.363Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.366Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-83dfb983bf532ccf"}
+2024-12-16T19:02:21.373Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.377Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-453b8c336d7e3209"}
+2024-12-16T19:02:21.384Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.388Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-4a165901051a5947"}
+2024-12-16T19:02:21.395Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.399Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-5832a8788a008de3"}
+2024-12-16T19:02:21.406Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.409Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-97e90e6bcf9258c2"}
+2024-12-16T19:02:21.417Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.420Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-a128e888b655b3eb"}
+2024-12-16T19:02:21.429Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.433Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-9f7d828fee8beb20"}
+2024-12-16T19:02:21.440Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.443Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-0b280aeb3a7d20b1"}
+2024-12-16T19:02:21.451Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.455Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.60","extended_hours":true,"client_order_id":"CLOSE-368a28f2400cd31f"}
+2024-12-16T19:02:21.463Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.466Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-45540296d0460eae"}
+2024-12-16T19:02:21.473Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.478Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-a2421687364e3f67"}
+2024-12-16T19:02:21.598Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.602Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-775dacc7307d1ba6"}
+2024-12-16T19:02:21.610Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:21.613Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-071e9406bd866ed0"}
+2024-12-16T19:02:21.655Z [INFO]: Limit order placed to close position in IONQ. Order ID: 5e960504-aefc-49d5-b872-4f30ae889892
+2024-12-16T19:02:22.040Z [INFO]: Limit order placed to close position in IONQ. Order ID: d0e9afa0-265d-4bf8-b86e-d3344dba62b3
+2024-12-16T19:02:22.408Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"0","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:22.699Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"24464.96","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:23.039Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:23.388Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22479.07","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:23.742Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22621.54","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:24.097Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:24.106Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:24.110Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-8367e35078e1821b"}
+2024-12-16T19:02:24.117Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:24.121Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-3f8677124360f8f8"}
+2024-12-16T19:02:24.443Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:24.803Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:25.149Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:25.508Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:25.850Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:26.114Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:26.118Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-2dc19574a6271291"}
+2024-12-16T19:02:26.126Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:26.130Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-a1c22191089042a2"}
+2024-12-16T19:02:26.138Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:26.142Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-892aa17d80a4854b"}
+2024-12-16T19:02:26.150Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:26.155Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-5aa8fa6933726704"}
+2024-12-16T19:02:26.206Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:26.543Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23019.88","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:26.614Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:26.619Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-7aa0d8e64003bc42"}
+2024-12-16T19:02:26.627Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:26.631Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-62bc5c568fd99fdc"}
+2024-12-16T19:02:26.640Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:26.644Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-cd7f7896e366e776"}
+2024-12-16T19:02:26.926Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23019.88","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:27.240Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22630.26","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:27.592Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22947.19","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:27.612Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:27.616Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-b86425fd251a2c86"}
+2024-12-16T19:02:27.941Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22947.19","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:28.118Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:28.122Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-910b27abede86f0f"}
+2024-12-16T19:02:28.286Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22947.19","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:28.654Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:28.998Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:29.347Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:29.697Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:30.043Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:30.082Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.087Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-a4d30595595ff40a"}
+2024-12-16T19:02:30.394Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23456.02","code":40310000,"cost_basis":"398212.3","message":"insufficient buying power"}
+2024-12-16T19:02:30.589Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.593Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-69aa050c41ecbeb7"}
+2024-12-16T19:02:30.602Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.606Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-35b8ad2483af67e6"}
+2024-12-16T19:02:30.614Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.618Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-3db23838b81ad490"}
+2024-12-16T19:02:30.627Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.631Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-e7b95be6eac2534d"}
+2024-12-16T19:02:30.640Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.644Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-aa266240eb54c731"}
+2024-12-16T19:02:30.652Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.657Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-ea2e22f2cd25c927"}
+2024-12-16T19:02:30.666Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.670Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-996064ccb0166d3c"}
+2024-12-16T19:02:30.679Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.682Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-853f3d622b9aff6f"}
+2024-12-16T19:02:30.692Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.696Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-4aa986d187c9aa5d"}
+2024-12-16T19:02:30.704Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.708Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-5de052fac183ea5f"}
+2024-12-16T19:02:30.716Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.720Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-e6532d757ad9603e"}
+2024-12-16T19:02:30.728Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.732Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-21c60208865eed24"}
+2024-12-16T19:02:30.741Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.745Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-ead790e895e47c9a"}
+2024-12-16T19:02:30.754Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.758Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-2b2ca65947ea7dc2"}
+2024-12-16T19:02:30.767Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:30.771Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-c0b28c2a0a7a3912"}
+2024-12-16T19:02:30.929Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23383.33","code":40310000,"cost_basis":"397812.99","message":"insufficient buying power"}
+2024-12-16T19:02:31.092Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:31.096Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-c8453346d4b3cf25"}
+2024-12-16T19:02:31.105Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:31.109Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-12d169742263e643"}
+2024-12-16T19:02:31.119Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:31.123Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-973c1d5a138b8650"}
+2024-12-16T19:02:31.130Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23383.33","code":40310000,"cost_basis":"397912.81","message":"insufficient buying power"}
+2024-12-16T19:02:31.441Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23601.4","code":40310000,"cost_basis":"397812.99","message":"insufficient buying power"}
+2024-12-16T19:02:31.595Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:31.600Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-f1aa52c3f13802e5"}
+2024-12-16T19:02:31.833Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23630.48","code":40310000,"cost_basis":"397912.81","message":"insufficient buying power"}
+2024-12-16T19:02:32.101Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.105Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-ad1060ca9b8ca7eb"}
+2024-12-16T19:02:32.185Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23630.48","code":40310000,"cost_basis":"397912.81","message":"insufficient buying power"}
+2024-12-16T19:02:32.496Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23630.48","code":40310000,"cost_basis":"398012.64","message":"insufficient buying power"}
+2024-12-16T19:02:32.603Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.608Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-94d82c63c6ff94f9"}
+2024-12-16T19:02:32.618Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.622Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-27c459026742ae79"}
+2024-12-16T19:02:32.633Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.638Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-b502b6958494e1b0"}
+2024-12-16T19:02:32.649Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.654Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-eca7d82b5f4d9192"}
+2024-12-16T19:02:32.663Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.667Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-6d2f0efd34165e79"}
+2024-12-16T19:02:32.677Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.681Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-b90b18212ffb6965"}
+2024-12-16T19:02:32.689Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.693Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-69ad83d30121ca8e"}
+2024-12-16T19:02:32.701Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.705Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-c853c736e8f177e8"}
+2024-12-16T19:02:32.713Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:32.717Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.56","extended_hours":true,"client_order_id":"CLOSE-8349222f3dd54273"}
+2024-12-16T19:02:32.869Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"22729.12","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:33.104Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.108Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-3fb1f6c5c7ea1cdc"}
+2024-12-16T19:02:33.117Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.121Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-270b45148ec157ea"}
+2024-12-16T19:02:33.131Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.136Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-9236f49bef918307"}
+2024-12-16T19:02:33.145Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.149Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-aa6484135de10ed7"}
+2024-12-16T19:02:33.157Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.162Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.58","extended_hours":true,"client_order_id":"CLOSE-733735526e1e232c"}
+2024-12-16T19:02:33.171Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.175Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-2b591f645c74b187"}
+2024-12-16T19:02:33.184Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.187Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-f6918a75fddd0d16"}
+2024-12-16T19:02:33.196Z [INFO]: Trailing stop triggered for IONQ. Closing position.
+2024-12-16T19:02:33.200Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"sell","type":"limit","time_in_force":"day","limit_price":"39.57","extended_hours":true,"client_order_id":"CLOSE-37094b326f0b7d7a"}
+2024-12-16T19:02:33.307Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23813.65","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:33.534Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23813.65","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:33.901Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23813.65","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:02:34.234Z [ERROR]: Error placing limit order to close position for IONQ: {"buying_power":"23796.21","code":40310000,"cost_basis":"398112.47","message":"insufficient buying power"}
+2024-12-16T19:05:00.667Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:05:00.702Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:05:00.712Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:05:00.721Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:05:00.730Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:05:00.928Z [INFO]: Position added: IONQ | Qty: 9692 | Avg Entry: $39.82
+2024-12-16T19:05:01.137Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:05:01.166Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:05:01.167Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:05:01.183Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:05:01.186Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:05:01.191Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:05:01.194Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:05:01.224Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:05:01.225Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX
+2024-12-16T19:05:01.225Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX
+2024-12-16T19:05:01.763Z [INFO]: HOD/LOD updated for INTC: HOD=20.64, LOD=20
+2024-12-16T19:05:02.155Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:05:02.601Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:05:31.132Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:05:31.142Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:05:31.523Z [INFO]: HOD/LOD updated for INTC: HOD=20.65, LOD=20
+2024-12-16T19:05:32.033Z [INFO]: HOD/LOD updated for INTC: HOD=20.65, LOD=20
+2024-12-16T19:05:32.106Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:05:32.514Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:05:32.519Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:05:32.852Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:06:01.254Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:06:01.259Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:06:01.625Z [INFO]: HOD/LOD updated for INTC: HOD=20.68, LOD=20
+2024-12-16T19:06:01.630Z [INFO]: HOD/LOD updated for INTC: HOD=20.68, LOD=20
+2024-12-16T19:06:01.979Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:06:01.984Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:06:02.362Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:06:02.539Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:06:31.153Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:06:31.166Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:06:31.617Z [INFO]: HOD/LOD updated for INTC: HOD=20.68, LOD=20
+2024-12-16T19:06:31.846Z [INFO]: HOD/LOD updated for INTC: HOD=20.68, LOD=20
+2024-12-16T19:06:31.990Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:06:32.203Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:06:32.342Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:06:32.588Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:07:01.302Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:07:01.307Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:07:01.761Z [INFO]: HOD/LOD updated for INTC: HOD=20.68, LOD=20
+2024-12-16T19:07:01.767Z [INFO]: HOD/LOD updated for INTC: HOD=20.68, LOD=20
+2024-12-16T19:07:02.147Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:07:02.220Z [INFO]: HOD/LOD updated for IONQ: HOD=40.16, LOD=32.39
+2024-12-16T19:07:02.528Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:07:02.582Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:07:31.179Z [INFO]: Stop condition met for IONQ. Initiating limit order to close position.
+2024-12-16T19:07:31.184Z [INFO]: Closing position with limit order: {"symbol":"IONQ","qty":"9692","side":"buy","type":"limit","time_in_force":"day","limit_price":"40.42","extended_hours":true,"client_order_id":"CLOSE-7904438a88c2fbf6"}
+2024-12-16T19:07:32.147Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:07:32.159Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:07:32.990Z [INFO]: HOD/LOD updated for INTC: HOD=20.71, LOD=20
+2024-12-16T19:07:32.994Z [INFO]: HOD/LOD updated for INTC: HOD=20.71, LOD=20
+2024-12-16T19:07:33.119Z [INFO]: Limit order placed to close position in IONQ. Order ID: cc143f7b-583b-4d1f-a35d-92083cb0de56
+2024-12-16T19:07:33.404Z [INFO]: HOD/LOD updated for IONQ: HOD=40.22, LOD=32.39
+2024-12-16T19:07:33.724Z [INFO]: HOD/LOD updated for IONQ: HOD=40.22, LOD=32.39
+2024-12-16T19:07:33.846Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:07:34.098Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:07:35.239Z [INFO]: Position removed: IONQ
+2024-12-16T19:07:35.248Z [INFO]: Unsubscribed from IONQ quotes.
+2024-12-16T19:08:01.514Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:08:01.524Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:08:01.892Z [INFO]: HOD/LOD updated for INTC: HOD=20.74, LOD=20
+2024-12-16T19:08:01.905Z [INFO]: HOD/LOD updated for INTC: HOD=20.74, LOD=20
+2024-12-16T19:08:02.299Z [INFO]: HOD/LOD updated for IONQ: HOD=40.4391, LOD=32.39
+2024-12-16T19:08:02.307Z [INFO]: HOD/LOD updated for IONQ: HOD=40.4391, LOD=32.39
+2024-12-16T19:08:02.668Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:08:03.231Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:08:31.439Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:08:31.488Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:08:31.809Z [INFO]: HOD/LOD updated for INTC: HOD=20.75, LOD=20
+2024-12-16T19:08:31.866Z [INFO]: HOD/LOD updated for INTC: HOD=20.75, LOD=20
+2024-12-16T19:08:32.176Z [INFO]: HOD/LOD updated for IONQ: HOD=40.5, LOD=32.39
+2024-12-16T19:08:32.201Z [INFO]: HOD/LOD updated for IONQ: HOD=40.5, LOD=32.39
+2024-12-16T19:08:32.556Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:08:32.576Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:08:49.076Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:08:49.111Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:08:49.119Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:08:49.128Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:08:49.137Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:08:49.442Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:08:49.442Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:08:49.555Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:08:49.556Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX
+2024-12-16T19:08:49.557Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX
+2024-12-16T19:08:49.671Z [INFO]: HOD/LOD updated for INTC: HOD=20.75, LOD=20
+2024-12-16T19:08:49.769Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:08:49.775Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:08:49.779Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:08:49.911Z [INFO]: HOD/LOD updated for IONQ: HOD=40.6499, LOD=32.39
+2024-12-16T19:08:50.391Z [INFO]: HOD/LOD updated for INTC: HOD=20.75, LOD=20
+2024-12-16T19:08:50.768Z [INFO]: HOD/LOD updated for IONQ: HOD=40.6499, LOD=32.39
+2024-12-16T19:08:51.130Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:09:19.671Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:09:19.675Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:09:20.010Z [INFO]: HOD/LOD updated for INTC: HOD=20.75, LOD=20
+2024-12-16T19:09:20.180Z [INFO]: HOD/LOD updated for INTC: HOD=20.75, LOD=20
+2024-12-16T19:09:20.445Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:09:20.555Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:09:20.824Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:09:20.912Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:09:49.469Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:09:49.506Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:09:49.834Z [INFO]: HOD/LOD updated for INTC: HOD=20.77, LOD=20
+2024-12-16T19:09:49.882Z [INFO]: HOD/LOD updated for INTC: HOD=20.77, LOD=20
+2024-12-16T19:09:50.196Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:09:50.554Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:09:50.758Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:09:51.137Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:10:19.501Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:10:19.900Z [INFO]: HOD/LOD updated for INTC: HOD=20.79, LOD=20
+2024-12-16T19:10:19.911Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:10:20.250Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:10:20.279Z [INFO]: HOD/LOD updated for INTC: HOD=20.79, LOD=20
+2024-12-16T19:10:20.633Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:10:20.670Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:10:21.056Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:10:49.512Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:10:49.642Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:10:49.871Z [INFO]: HOD/LOD updated for INTC: HOD=20.84, LOD=20
+2024-12-16T19:10:49.981Z [INFO]: HOD/LOD updated for INTC: HOD=20.84, LOD=20
+2024-12-16T19:10:50.214Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:10:50.342Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:10:50.570Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:10:50.679Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:11:19.664Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:11:19.669Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:11:20.059Z [INFO]: HOD/LOD updated for INTC: HOD=20.85, LOD=20
+2024-12-16T19:11:20.063Z [INFO]: HOD/LOD updated for INTC: HOD=20.85, LOD=20
+2024-12-16T19:11:20.413Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:11:20.417Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:11:20.743Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:11:20.750Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:11:37.541Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:11:37.573Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:11:37.582Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:11:37.591Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:11:37.599Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:11:37.936Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:11:37.938Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:11:37.973Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:11:37.982Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:11:37.995Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:11:38.012Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:11:38.012Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX
+2024-12-16T19:11:38.012Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX
+2024-12-16T19:11:38.014Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:11:38.023Z [INFO]: HOD/LOD updated for INTC: HOD=20.85, LOD=20
+2024-12-16T19:11:38.345Z [INFO]: HOD/LOD updated for INTC: HOD=20.85, LOD=20
+2024-12-16T19:11:38.711Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:11:39.233Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:12:08.285Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:12:08.403Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:12:08.670Z [INFO]: HOD/LOD updated for INTC: HOD=20.85, LOD=20
+2024-12-16T19:12:08.913Z [INFO]: HOD/LOD updated for INTC: HOD=20.85, LOD=20
+2024-12-16T19:12:09.091Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:12:09.452Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:12:09.521Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:12:09.858Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:12:38.494Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:12:38.540Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:12:38.853Z [INFO]: HOD/LOD updated for INTC: HOD=20.945, LOD=20
+2024-12-16T19:12:38.867Z [INFO]: HOD/LOD updated for INTC: HOD=20.945, LOD=20
+2024-12-16T19:12:39.195Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:12:39.227Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:12:39.543Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:12:40.189Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:13:07.983Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:13:08.061Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:13:08.325Z [INFO]: HOD/LOD updated for INTC: HOD=20.96, LOD=20
+2024-12-16T19:13:08.522Z [INFO]: HOD/LOD updated for INTC: HOD=20.96, LOD=20
+2024-12-16T19:13:08.657Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:13:08.877Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:13:09.134Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:13:09.216Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:13:38.015Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:13:38.049Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:13:38.058Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:13:38.066Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:13:38.075Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:13:38.324Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:13:38.325Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:13:38.379Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:13:38.379Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX
+2024-12-16T19:13:38.379Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX
+2024-12-16T19:13:38.515Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:13:38.535Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:13:38.552Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:13:38.718Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:13:38.807Z [INFO]: HOD/LOD updated for INTC: HOD=20.97, LOD=20
+2024-12-16T19:13:39.155Z [INFO]: HOD/LOD updated for INTC: HOD=20.97, LOD=20
+2024-12-16T19:13:39.510Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:13:39.888Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:14:08.448Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:14:08.457Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:14:08.817Z [INFO]: HOD/LOD updated for INTC: HOD=20.97, LOD=20
+2024-12-16T19:14:08.827Z [INFO]: HOD/LOD updated for INTC: HOD=20.97, LOD=20
+2024-12-16T19:14:09.227Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:14:09.236Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:14:09.588Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:14:09.633Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:14:28.083Z [INFO]: Subscribed to UAVS quotes.
+2024-12-16T19:14:28.083Z [INFO]: Subscribed to UAVS trades.
+2024-12-16T19:14:28.083Z [INFO]: Added UAVS to watchlist as long.
+2024-12-16T19:14:28.477Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:14:38.434Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:14:38.812Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:14:38.824Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:14:39.184Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:14:39.195Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:14:39.567Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:14:39.741Z [INFO]: HOD/LOD updated for IONQ: HOD=40.78, LOD=32.39
+2024-12-16T19:14:39.938Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:14:40.130Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:14:40.536Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:14:53.087Z [INFO]: Subscribed to RCAT quotes.
+2024-12-16T19:14:53.087Z [INFO]: Subscribed to RCAT trades.
+2024-12-16T19:14:53.087Z [INFO]: Added RCAT to watchlist as long.
+2024-12-16T19:14:53.496Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:15:08.432Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:15:08.667Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:15:08.776Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:15:09.037Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:15:09.139Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9, LOD=32.39
+2024-12-16T19:15:09.463Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9, LOD=32.39
+2024-12-16T19:15:09.532Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:15:09.820Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:15:09.894Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:15:10.189Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:15:10.321Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:15:10.589Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:15:38.426Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:15:38.460Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:15:40.491Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:15:40.530Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:15:40.542Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:15:40.550Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:15:40.554Z [INFO]: Added UAVS to watchlist as long.
+2024-12-16T19:15:40.558Z [INFO]: Added RCAT to watchlist as long.
+2024-12-16T19:15:40.567Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:15:40.794Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:15:40.795Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:15:40.853Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:15:40.854Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX,Q.UAVS,Q.RCAT
+2024-12-16T19:15:40.854Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX,T.UAVS,T.RCAT
+2024-12-16T19:15:41.015Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:15:41.021Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:15:41.028Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:15:41.032Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:15:41.036Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9, LOD=32.39
+2024-12-16T19:15:41.040Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:15:41.046Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:15:41.467Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:15:41.854Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9, LOD=32.39
+2024-12-16T19:15:42.218Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:15:42.559Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:15:42.899Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:16:10.946Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:16:10.955Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:16:11.309Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:16:11.670Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9825, LOD=32.39
+2024-12-16T19:16:11.696Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:16:12.076Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9825, LOD=32.39
+2024-12-16T19:16:12.409Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:16:12.698Z [INFO]: HOD/LOD updated for AVGX: HOD=38.49, LOD=31.8
+2024-12-16T19:16:12.942Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:16:13.028Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:16:13.294Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:16:13.371Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:16:40.958Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:16:41.198Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:16:41.346Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:16:41.623Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:16:42.049Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9825, LOD=32.39
+2024-12-16T19:16:42.141Z [INFO]: HOD/LOD updated for IONQ: HOD=40.9825, LOD=32.39
+2024-12-16T19:16:42.494Z [INFO]: HOD/LOD updated for AVGX: HOD=38.55, LOD=31.8
+2024-12-16T19:16:42.535Z [INFO]: HOD/LOD updated for AVGX: HOD=38.55, LOD=31.8
+2024-12-16T19:16:42.979Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:16:43.003Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:16:43.315Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:16:43.337Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:17:05.353Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:17:05.389Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:17:05.400Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:17:05.409Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:17:05.413Z [INFO]: Added UAVS to watchlist as long.
+2024-12-16T19:17:05.417Z [INFO]: Added RCAT to watchlist as long.
+2024-12-16T19:17:05.426Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:17:05.801Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:17:05.803Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:17:05.811Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:17:05.818Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:17:05.827Z [INFO]: HOD/LOD updated for IONQ: HOD=41, LOD=32.39
+2024-12-16T19:17:05.832Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:17:05.836Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:17:05.841Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:17:05.858Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:17:05.858Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX,Q.UAVS,Q.RCAT
+2024-12-16T19:17:05.858Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX,T.UAVS,T.RCAT
+2024-12-16T19:17:05.946Z [INFO]: HOD/LOD updated for AVGX: HOD=38.6396, LOD=31.8
+2024-12-16T19:17:06.190Z [INFO]: HOD/LOD updated for INTC: HOD=20.99, LOD=20
+2024-12-16T19:17:06.557Z [INFO]: HOD/LOD updated for IONQ: HOD=41, LOD=32.39
+2024-12-16T19:17:06.957Z [INFO]: HOD/LOD updated for AVGX: HOD=38.66, LOD=31.8
+2024-12-16T19:17:07.374Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:17:07.709Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:17:35.849Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:17:35.859Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:17:36.231Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:17:36.240Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:17:36.592Z [INFO]: HOD/LOD updated for IONQ: HOD=41, LOD=32.39
+2024-12-16T19:17:36.602Z [INFO]: HOD/LOD updated for IONQ: HOD=41, LOD=32.39
+2024-12-16T19:17:36.955Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:17:36.963Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:17:37.337Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:17:37.343Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:17:37.736Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:17:37.745Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:18:05.794Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:18:05.804Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:18:06.175Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:18:06.185Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:18:06.544Z [INFO]: HOD/LOD updated for IONQ: HOD=41.11, LOD=32.39
+2024-12-16T19:18:06.555Z [INFO]: HOD/LOD updated for IONQ: HOD=41.11, LOD=32.39
+2024-12-16T19:18:06.923Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:18:06.980Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:18:07.352Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:18:07.479Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:18:07.813Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:18:07.859Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8, LOD=8.48
+2024-12-16T19:18:35.847Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:18:35.872Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:18:36.229Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:18:36.298Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:18:36.575Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:18:36.791Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:18:36.938Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:18:37.157Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:18:37.304Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:18:37.520Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:18:37.666Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8595, LOD=8.48
+2024-12-16T19:18:37.909Z [INFO]: HOD/LOD updated for RCAT: HOD=10.8595, LOD=8.48
+2024-12-16T19:19:05.835Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:19:05.844Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:19:06.185Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:19:06.291Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:19:06.554Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:19:06.960Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:19:07.042Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:19:07.314Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:19:07.392Z [INFO]: HOD/LOD updated for AVGX: HOD=38.77, LOD=31.8
+2024-12-16T19:19:07.662Z [INFO]: HOD/LOD updated for RCAT: HOD=10.87, LOD=8.48
+2024-12-16T19:19:08.156Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:19:08.585Z [INFO]: HOD/LOD updated for RCAT: HOD=10.87, LOD=8.48
+2024-12-16T19:19:35.807Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:19:35.815Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:19:36.163Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:19:36.169Z [INFO]: HOD/LOD updated for INTC: HOD=21.03, LOD=20
+2024-12-16T19:19:36.549Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:19:36.554Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:19:36.899Z [INFO]: HOD/LOD updated for AVGX: HOD=38.8, LOD=31.8
+2024-12-16T19:19:36.906Z [INFO]: HOD/LOD updated for AVGX: HOD=38.8, LOD=31.8
+2024-12-16T19:19:37.242Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:19:37.249Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:19:37.669Z [INFO]: HOD/LOD updated for RCAT: HOD=10.89, LOD=8.48
+2024-12-16T19:19:38.014Z [INFO]: HOD/LOD updated for RCAT: HOD=10.89, LOD=8.48
+2024-12-16T19:20:05.838Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:20:05.845Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:20:06.198Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:20:06.225Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:20:06.579Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:20:06.597Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:20:06.925Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:20:06.969Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:20:07.666Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:20:07.681Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:20:08.006Z [INFO]: HOD/LOD updated for RCAT: HOD=10.9, LOD=8.48
+2024-12-16T19:20:08.014Z [INFO]: HOD/LOD updated for RCAT: HOD=10.9, LOD=8.48
+2024-12-16T19:20:35.802Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:20:35.813Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:20:36.118Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:20:36.158Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:20:36.444Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:20:36.507Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:20:36.802Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:20:36.863Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:20:37.124Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:20:37.191Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:20:37.450Z [INFO]: HOD/LOD updated for RCAT: HOD=10.91, LOD=8.48
+2024-12-16T19:20:37.527Z [INFO]: HOD/LOD updated for RCAT: HOD=10.91, LOD=8.48
+2024-12-16T19:20:53.723Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:20:53.756Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:20:53.764Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:20:53.772Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:20:53.776Z [INFO]: Added UAVS to watchlist as long.
+2024-12-16T19:20:53.780Z [INFO]: Added RCAT to watchlist as long.
+2024-12-16T19:20:53.787Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:20:53.966Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:20:53.967Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:20:54.019Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:20:54.020Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX,Q.UAVS,Q.RCAT
+2024-12-16T19:20:54.020Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX,T.UAVS,T.RCAT
+2024-12-16T19:20:54.128Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:20:54.137Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:20:54.141Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:20:54.149Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:20:54.154Z [INFO]: HOD/LOD updated for RCAT: HOD=10.94, LOD=8.48
+2024-12-16T19:20:54.158Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:20:54.164Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:20:54.487Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:20:54.814Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:20:55.151Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:20:55.485Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:20:55.918Z [INFO]: HOD/LOD updated for RCAT: HOD=10.94, LOD=8.48
+2024-12-16T19:22:49.327Z [INFO]: Added SIDU to watchlist as long.
+2024-12-16T19:22:49.360Z [INFO]: Added INTC to watchlist as short.
+2024-12-16T19:22:49.369Z [INFO]: Added IONQ to watchlist as long.
+2024-12-16T19:22:49.377Z [INFO]: Added AVGX to watchlist as long.
+2024-12-16T19:22:49.381Z [INFO]: Added UAVS to watchlist as long.
+2024-12-16T19:22:49.384Z [INFO]: Added RCAT to watchlist as long.
+2024-12-16T19:22:49.392Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:22:49.568Z [INFO]: Polygon WebSocket connection opened.
+2024-12-16T19:22:49.569Z [INFO]: Polygon WebSocket connected.
+2024-12-16T19:22:49.623Z [INFO]: Polygon WebSocket authenticated.
+2024-12-16T19:22:49.623Z [INFO]: Resubscribed to quotes: Q.SIDU,Q.INTC,Q.IONQ,Q.AVGX,Q.UAVS,Q.RCAT
+2024-12-16T19:22:49.623Z [INFO]: Resubscribed to trades: T.SIDU,T.INTC,T.IONQ,T.AVGX,T.UAVS,T.RCAT
+2024-12-16T19:22:49.735Z [INFO]: HOD/LOD updated for RCAT: HOD=10.964, LOD=8.48
+2024-12-16T19:22:49.741Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:22:49.746Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:22:49.750Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:22:49.758Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:22:49.762Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:22:49.766Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:22:50.196Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:22:50.538Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:22:51.002Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:22:51.424Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:22:51.772Z [INFO]: HOD/LOD updated for RCAT: HOD=10.964, LOD=8.48
+2024-12-16T19:23:19.749Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:23:19.918Z [INFO]: HOD/LOD updated for SIDU: HOD=4.93, LOD=1.57
+2024-12-16T19:23:20.260Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:23:20.460Z [INFO]: HOD/LOD updated for INTC: HOD=21.08, LOD=20
+2024-12-16T19:23:20.611Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:23:20.804Z [INFO]: HOD/LOD updated for IONQ: HOD=41.2, LOD=32.39
+2024-12-16T19:23:20.947Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:23:21.139Z [INFO]: HOD/LOD updated for AVGX: HOD=38.939, LOD=31.8
+2024-12-16T19:23:21.279Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:23:21.469Z [INFO]: HOD/LOD updated for UAVS: HOD=6.81, LOD=5.21
+2024-12-16T19:23:21.799Z [INFO]: HOD/LOD updated for RCAT: HOD=10.964, LOD=8.48
+2024-12-16T19:23:21.974Z [INFO]: HOD/LOD updated for RCAT: HOD=10.964, LOD=8.48

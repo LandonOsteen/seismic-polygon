@@ -1,0 +1,8 @@
+[
+  { "symbol": "SIDU", "side": "long" },
+  { "symbol": "INTC", "side": "short" },
+  { "symbol": "IONQ", "side": "long" },
+  { "symbol": "AVGX", "side": "long" },
+  { "symbol": "UAVS", "side": "long" },
+  { "symbol": "RCAT", "side": "long" }
+]
