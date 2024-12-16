@@ -22,3 +22,9 @@
 2024-12-15T15:48:43.630Z [INFO]: Polygon WebSocket connected.
 2024-12-15T15:48:43.678Z [INFO]: Polygon WebSocket authenticated.
 2024-12-15T15:48:43.789Z [INFO]: Subscribed to WKEY quote data.
+2024-12-15T23:14:36.467Z [INFO]: Polygon WebSocket connected.
+2024-12-15T23:14:36.477Z [INFO]: Started polling for order statuses.
+2024-12-15T23:14:36.646Z [INFO]: Polygon WebSocket connection opened.
+2024-12-15T23:14:36.647Z [INFO]: Polygon WebSocket connected.
+2024-12-15T23:14:36.701Z [INFO]: Polygon WebSocket authenticated.
+2024-12-15T23:14:36.835Z [INFO]: Subscribed to WKEY quote data.

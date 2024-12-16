@@ -31,7 +31,7 @@ module.exports = {
     tradeProximityCents: 15,
     initialStopOffsetCents: 4, // Initial offset below HOD for initial stop
     enableHodVerification: true,
-    hodVerificationIntervalMs: 120000, // Verify HOD every 2 minutes
+    hodVerificationIntervalMs: 60000, // Verify HOD every 60 seconds
     initialAggBarTimeframe: {
       unit: 'second',
       amount: 30, // Use 30-second bars to determine initial intraday high
@@ -45,7 +45,7 @@ module.exports = {
     ],
   },
   watchlistFilters: {
-    maxSpreadCents: 6,
+    maxSpreadCents: 5,
     minCandleRangeCents: 5,
   },
   orderTimeouts: {
