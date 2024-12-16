@@ -16,10 +16,10 @@ module.exports = {
     apiKey: process.env.POLYGON_API_KEY,
   },
   strategySettings: {
-    baseVolumeRequirement: 2000000,
+    baseVolumeRequirement: 3000000,
     morningVolumeRequirement: 3000000,
-    gapPercentageRequirement: 5,
-    priceRange: { min: 1.5, max: 40 },
+    gapPercentageRequirement: 15,
+    priceRange: { min: 1.5, max: 10 },
     initialEntryOffsetCents: 2, // Offset above HOD to trigger entry
     entryLimitOffsetCents: 15, // Additional offset for entry orders
     initialShareSize: 3000,
@@ -29,7 +29,7 @@ module.exports = {
     fallbackStopCents: 15, // Fallback stop: x cents below avg entry
     openingOrderCooldownSeconds: 5,
     tradeProximityCents: 15,
-    initialStopOffsetCents: 4, // Initial offset below HOD for initial stop
+    initialStopOffsetCents: 10, // Initial offset below HOD for initial stop
     enableHodVerification: true,
     hodVerificationIntervalMs: 60000, // Verify HOD every 60 seconds
     initialAggBarTimeframe: {
@@ -45,8 +45,8 @@ module.exports = {
     ],
   },
   watchlistFilters: {
-    maxSpreadCents: 5,
-    minCandleRangeCents: 5,
+    maxSpreadCents: 4,
+    minCandleRangeCents: 3,
   },
   orderTimeouts: {
     limit: 4000,

@@ -1,4 +1,4 @@
 {
-  "overrideAddSymbols": [],
+  "overrideAddSymbols": ["GRRR", "UAVS", "WKEY"],
   "overrideRemoveSymbols": []
 }

@@ -1,1 +1,9 @@
 2024-12-14T19:20:34.531Z [ERROR]: Error adding symbol WKEY to watchlist: this.restClient.getIntradayHighFromAgg is not a function
+2024-12-16T06:27:38.454Z [ERROR]: Error polling order statuses: read ECONNRESET
+2024-12-16T09:35:42.739Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-16T12:55:44.707Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-16T13:05:38.291Z [ERROR]: Error fetching account info: read ECONNRESET
+2024-12-16T13:10:08.739Z [ERROR]: Error placing close order for AEHR: {"available":"0","code":40310000,"existing_qty":"63","held_for_orders":"63","message":"insufficient qty available for order (requested: 3000, available: 0)","related_orders":["e3bab003-de3b-428f-81a0-e1322249dcf8"],"symbol":"AEHR"}
+2024-12-16T14:54:06.954Z [ERROR]: Error placing close order for GRRR: {"available":"0","code":40310000,"existing_qty":"21","held_for_orders":"21","message":"insufficient qty available for order (requested: 50, available: 0)","related_orders":["f36130a7-b7bf-42c4-a834-bc5ad66ab9b3"],"symbol":"GRRR"}
+2024-12-16T14:55:02.595Z [ERROR]: Error placing pyramid order for WKEY: {"buying_power":"26582.6","code":40310000,"cost_basis":"74460","message":"insufficient buying power"}
+2024-12-16T14:55:03.298Z [ERROR]: Error placing pyramid order for WKEY: {"buying_power":"27177.44","code":40310000,"cost_basis":"74460","message":"insufficient buying power"}
