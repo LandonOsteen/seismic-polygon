@@ -436,3 +436,123 @@
 2024-12-17T21:55:24.617Z [INFO]: Subscribed to OPTX trades.
 2024-12-17T21:55:24.854Z [INFO]: Subscribed to RZLV quotes.
 2024-12-17T21:55:24.855Z [INFO]: Subscribed to RZLV trades.
+2024-12-17T23:43:45.499Z [INFO]: Loaded 4 tiers.
+2024-12-17T23:43:45.536Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:43:45.542Z [INFO]: Started polling for order statuses.
+2024-12-17T23:43:45.718Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T23:43:45.720Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:43:45.779Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T23:43:45.953Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T23:43:45.954Z [INFO]: Subscribed to PRTG trades.
+2024-12-17T23:43:46.156Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T23:43:46.156Z [INFO]: Subscribed to OPTX trades.
+2024-12-17T23:43:46.507Z [INFO]: Subscribed to PRZO quotes.
+2024-12-17T23:43:46.507Z [INFO]: Subscribed to PRZO trades.
+2024-12-17T23:43:46.692Z [INFO]: Subscribed to RZLV quotes.
+2024-12-17T23:43:46.693Z [INFO]: Subscribed to RZLV trades.
+2024-12-17T23:43:46.939Z [INFO]: Subscribed to VRAR quotes.
+2024-12-17T23:43:46.940Z [INFO]: Subscribed to VRAR trades.
+2024-12-17T23:43:47.132Z [INFO]: Subscribed to RR quotes.
+2024-12-17T23:43:47.132Z [INFO]: Subscribed to RR trades.
+2024-12-17T23:44:29.943Z [INFO]: Loaded 4 tiers.
+2024-12-17T23:44:29.980Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:44:29.987Z [INFO]: Started polling for order statuses.
+2024-12-17T23:44:30.158Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T23:44:30.159Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:44:30.212Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T23:44:31.003Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T23:44:31.003Z [INFO]: Subscribed to PRTG trades.
+2024-12-17T23:44:31.656Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T23:44:31.656Z [INFO]: Subscribed to OPTX trades.
+2024-12-17T23:44:32.393Z [INFO]: Subscribed to PRZO quotes.
+2024-12-17T23:44:32.393Z [INFO]: Subscribed to PRZO trades.
+2024-12-17T23:44:32.703Z [INFO]: Subscribed to RZLV quotes.
+2024-12-17T23:44:32.703Z [INFO]: Subscribed to RZLV trades.
+2024-12-17T23:44:33.281Z [INFO]: Subscribed to VRAR quotes.
+2024-12-17T23:44:33.282Z [INFO]: Subscribed to VRAR trades.
+2024-12-17T23:44:33.597Z [INFO]: Subscribed to RR quotes.
+2024-12-17T23:44:33.598Z [INFO]: Subscribed to RR trades.
+2024-12-17T23:44:49.900Z [INFO]: Loaded 4 tiers.
+2024-12-17T23:44:49.937Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:44:49.943Z [INFO]: Started polling for order statuses.
+2024-12-17T23:44:50.111Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T23:44:50.112Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:44:50.160Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T23:44:51.185Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T23:44:51.185Z [INFO]: Subscribed to PRTG trades.
+2024-12-17T23:44:51.807Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T23:44:51.807Z [INFO]: Subscribed to OPTX trades.
+2024-12-17T23:44:52.628Z [INFO]: Subscribed to PRZO quotes.
+2024-12-17T23:44:52.628Z [INFO]: Subscribed to PRZO trades.
+2024-12-17T23:44:52.990Z [INFO]: Subscribed to RZLV quotes.
+2024-12-17T23:44:52.990Z [INFO]: Subscribed to RZLV trades.
+2024-12-17T23:44:53.661Z [INFO]: Subscribed to VRAR quotes.
+2024-12-17T23:44:53.662Z [INFO]: Subscribed to VRAR trades.
+2024-12-17T23:44:53.927Z [INFO]: Subscribed to RR quotes.
+2024-12-17T23:44:53.928Z [INFO]: Subscribed to RR trades.
+2024-12-17T23:45:19.937Z [INFO]: Unsubscribed from PRTG quotes.
+2024-12-17T23:45:19.937Z [INFO]: Unsubscribed from PRTG trades.
+2024-12-17T23:45:19.945Z [INFO]: Unsubscribed from OPTX quotes.
+2024-12-17T23:45:19.945Z [INFO]: Unsubscribed from OPTX trades.
+2024-12-17T23:45:19.950Z [INFO]: Unsubscribed from PRZO quotes.
+2024-12-17T23:45:19.950Z [INFO]: Unsubscribed from PRZO trades.
+2024-12-17T23:45:19.966Z [INFO]: Unsubscribed from RZLV quotes.
+2024-12-17T23:45:19.966Z [INFO]: Unsubscribed from RZLV trades.
+2024-12-17T23:45:19.979Z [INFO]: Unsubscribed from VRAR quotes.
+2024-12-17T23:45:19.979Z [INFO]: Unsubscribed from VRAR trades.
+2024-12-17T23:45:19.993Z [INFO]: Unsubscribed from RR quotes.
+2024-12-17T23:45:19.993Z [INFO]: Unsubscribed from RR trades.
+2024-12-17T23:45:20.503Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T23:45:20.504Z [INFO]: Subscribed to PRTG trades.
+2024-12-17T23:45:21.308Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T23:45:21.308Z [INFO]: Subscribed to OPTX trades.
+2024-12-17T23:45:22.121Z [INFO]: Subscribed to PRZO quotes.
+2024-12-17T23:45:22.121Z [INFO]: Subscribed to PRZO trades.
+2024-12-17T23:45:22.678Z [INFO]: Subscribed to RZLV quotes.
+2024-12-17T23:45:22.678Z [INFO]: Subscribed to RZLV trades.
+2024-12-17T23:45:23.355Z [INFO]: Subscribed to VRAR quotes.
+2024-12-17T23:45:23.355Z [INFO]: Subscribed to VRAR trades.
+2024-12-17T23:45:23.621Z [INFO]: Subscribed to RR quotes.
+2024-12-17T23:45:23.621Z [INFO]: Subscribed to RR trades.
+2024-12-17T23:45:49.939Z [INFO]: Unsubscribed from PRTG quotes.
+2024-12-17T23:45:49.939Z [INFO]: Unsubscribed from PRTG trades.
+2024-12-17T23:45:49.948Z [INFO]: Unsubscribed from OPTX quotes.
+2024-12-17T23:45:49.948Z [INFO]: Unsubscribed from OPTX trades.
+2024-12-17T23:45:49.954Z [INFO]: Unsubscribed from PRZO quotes.
+2024-12-17T23:45:49.954Z [INFO]: Unsubscribed from PRZO trades.
+2024-12-17T23:45:49.960Z [INFO]: Unsubscribed from RZLV quotes.
+2024-12-17T23:45:49.960Z [INFO]: Unsubscribed from RZLV trades.
+2024-12-17T23:45:49.965Z [INFO]: Unsubscribed from VRAR quotes.
+2024-12-17T23:45:49.965Z [INFO]: Unsubscribed from VRAR trades.
+2024-12-17T23:45:49.970Z [INFO]: Unsubscribed from RR quotes.
+2024-12-17T23:45:49.970Z [INFO]: Unsubscribed from RR trades.
+2024-12-17T23:45:50.144Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T23:45:50.144Z [INFO]: Subscribed to PRTG trades.
+2024-12-17T23:45:50.796Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T23:45:50.796Z [INFO]: Subscribed to OPTX trades.
+2024-12-17T23:45:51.626Z [INFO]: Subscribed to PRZO quotes.
+2024-12-17T23:45:51.626Z [INFO]: Subscribed to PRZO trades.
+2024-12-17T23:45:52.009Z [INFO]: Subscribed to RZLV quotes.
+2024-12-17T23:45:52.009Z [INFO]: Subscribed to RZLV trades.
+2024-12-17T23:45:52.860Z [INFO]: Subscribed to VRAR quotes.
+2024-12-17T23:45:52.860Z [INFO]: Subscribed to VRAR trades.
+2024-12-17T23:45:53.307Z [INFO]: Subscribed to RR quotes.
+2024-12-17T23:45:53.307Z [INFO]: Subscribed to RR trades.
+2024-12-17T23:46:02.953Z [INFO]: Loaded 4 tiers.
+2024-12-17T23:46:02.990Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:46:02.997Z [INFO]: Started polling for order statuses.
+2024-12-17T23:46:03.175Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T23:46:03.176Z [INFO]: Polygon WebSocket connected.
+2024-12-17T23:46:03.228Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T23:46:04.081Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T23:46:04.082Z [INFO]: Subscribed to PRTG trades.
+2024-12-17T23:46:04.668Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T23:46:04.669Z [INFO]: Subscribed to OPTX trades.
+2024-12-17T23:46:05.701Z [INFO]: Subscribed to PRZO quotes.
+2024-12-17T23:46:05.702Z [INFO]: Subscribed to PRZO trades.
+2024-12-17T23:46:06.094Z [INFO]: Subscribed to RZLV quotes.
+2024-12-17T23:46:06.094Z [INFO]: Subscribed to RZLV trades.
+2024-12-17T23:46:06.737Z [INFO]: Subscribed to VRAR quotes.
+2024-12-17T23:46:06.738Z [INFO]: Subscribed to VRAR trades.
+2024-12-17T23:46:07.018Z [INFO]: Subscribed to RR quotes.
+2024-12-17T23:46:07.018Z [INFO]: Subscribed to RR trades.

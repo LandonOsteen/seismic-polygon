@@ -17,7 +17,7 @@ class PolygonRestClient {
     const start = startOfDayET.valueOf();
     const end = now.valueOf();
 
-    const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/1/minute/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
+    const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/2/second/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
 
     const response = await axios.get(url);
     const data = response.data;
