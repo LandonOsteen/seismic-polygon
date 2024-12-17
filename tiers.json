@@ -7,7 +7,7 @@
       "initialEntryQty": 6000,
       "stopOffsetCents": 12,
       "pyramidOffsetCents": 3,
-      "trailingStopOffsetCents": 10,
+      "trailingStopOffsetCents": 8,
       "profitTargets": [
         { "targetCents": 5, "percentToClose": 10 },
         { "targetCents": 10, "percentToClose": 20 },
@@ -29,17 +29,17 @@
     {
       "range": [3.0, 5.9999],
       "hodOffsetCents": 3,
-      "entryLimitOffsetCents": 10,
+      "entryLimitOffsetCents": 12,
       "initialEntryQty": 5000,
-      "stopOffsetCents": 15,
-      "pyramidOffsetCents": 3,
-      "trailingStopOffsetCents": 15,
+      "stopOffsetCents": 20,
+      "pyramidOffsetCents": 4,
+      "trailingStopOffsetCents": 10,
       "profitTargets": [
         { "targetCents": 8, "percentToClose": 10 },
         { "targetCents": 10, "percentToClose": 20 },
         { "targetCents": 15, "percentToClose": 20 },
         { "targetCents": 20, "percentToClose": 20 },
-        { "targetCents": 30, "percentToClose": 50 }
+        { "targetCents": 30, "percentToClose": 20 }
       ],
       "dynamicStops": [
         { "profitTargetsHit": 0, "stopCents": -15 },
@@ -47,84 +47,72 @@
         { "profitTargetsHit": 2, "stopCents": 3 },
         { "profitTargetsHit": 3, "stopCents": 6 },
         { "profitTargetsHit": 4, "stopCents": 10 },
-        { "profitTargetsHit": 5, "stopCents": 15 },
-        { "profitTargetsHit": 6, "stopCents": 20 },
-        { "profitTargetsHit": 7, "stopCents": 30 },
-        { "profitTargetsHit": 8, "stopCents": 40 }
+        { "profitTargetsHit": 5, "stopCents": 15 }
       ],
       "pyramidLevels": [
         { "addInCents": 12, "percentToAdd": 50 },
-        { "addInCents": 22, "percentToAdd": 40 }
+        { "addInCents": 22, "percentToAdd": 20 }
       ]
     },
     {
       "range": [6, 9.9999],
-      "hodOffsetCents": 6,
+      "hodOffsetCents": 4,
       "entryLimitOffsetCents": 15,
       "initialEntryQty": 3000,
       "stopOffsetCents": 25,
       "pyramidOffsetCents": 8,
-      "trailingStopOffsetCents": 25,
+      "trailingStopOffsetCents": 20,
       "profitTargets": [
-        { "targetCents": 6, "percentToClose": 10 },
-        { "targetCents": 10, "percentToClose": 20 },
-        { "targetCents": 15, "percentToClose": 20 },
+        { "targetCents": 10, "percentToClose": 10 },
+        { "targetCents": 15, "percentToClose": 10 },
         { "targetCents": 20, "percentToClose": 20 },
-        { "targetCents": 25, "percentToClose": 20 },
-        { "targetCents": 30, "percentToClose": 50 },
-        { "targetCents": 40, "percentToClose": 50 },
-        { "targetCents": 50, "percentToClose": 100 }
+        { "targetCents": 30, "percentToClose": 20 },
+        { "targetCents": 50, "percentToClose": 30 }
       ],
       "dynamicStops": [
-        { "profitTargetsHit": 0, "stopCents": -20 },
-        { "profitTargetsHit": 1, "stopCents": -15 },
+        { "profitTargetsHit": 0, "stopCents": -18 },
+        { "profitTargetsHit": 1, "stopCents": -10 },
         { "profitTargetsHit": 2, "stopCents": 0 },
-        { "profitTargetsHit": 3, "stopCents": 6 },
-        { "profitTargetsHit": 4, "stopCents": 10 },
-        { "profitTargetsHit": 5, "stopCents": 15 },
-        { "profitTargetsHit": 6, "stopCents": 20 },
-        { "profitTargetsHit": 7, "stopCents": 30 },
-        { "profitTargetsHit": 8, "stopCents": 40 }
+        { "profitTargetsHit": 3, "stopCents": 5 },
+        { "profitTargetsHit": 4, "stopCents": 18 },
+        { "profitTargetsHit": 5, "stopCents": 30 }
       ],
       "pyramidLevels": [
         { "addInCents": 8, "percentToAdd": 100 },
-        { "addInCents": 18, "percentToAdd": 50 },
+        { "addInCents": 18, "percentToAdd": 30 },
         { "addInCents": 32, "percentToAdd": 30 }
       ]
     },
     {
       "range": [10, 60],
-      "hodOffsetCents": 8,
-      "entryLimitOffsetCents": 18,
+      "hodOffsetCents": 6,
+      "entryLimitOffsetCents": 20,
       "initialEntryQty": 2000,
       "stopOffsetCents": 35,
-      "pyramidOffsetCents": 15,
+      "pyramidOffsetCents": 10,
       "trailingStopOffsetCents": 35,
       "profitTargets": [
         { "targetCents": 20, "percentToClose": 20 },
-        { "targetCents": 25, "percentToClose": 20 },
         { "targetCents": 30, "percentToClose": 20 },
-        { "targetCents": 40, "percentToClose": 20 },
         { "targetCents": 50, "percentToClose": 20 },
         { "targetCents": 70, "percentToClose": 20 },
         { "targetCents": 85, "percentToClose": 20 },
-        { "targetCents": 100, "percentToClose": 100 }
+        { "targetCents": 100, "percentToClose": 30 }
       ],
       "dynamicStops": [
-        { "profitTargetsHit": 0, "stopCents": -30 },
-        { "profitTargetsHit": 1, "stopCents": -15 },
-        { "profitTargetsHit": 2, "stopCents": -10 },
-        { "profitTargetsHit": 3, "stopCents": 0 },
-        { "profitTargetsHit": 4, "stopCents": 5 },
-        { "profitTargetsHit": 5, "stopCents": 30 },
-        { "profitTargetsHit": 6, "stopCents": 40 },
-        { "profitTargetsHit": 7, "stopCents": 50 },
-        { "profitTargetsHit": 8, "stopCents": 70 }
+        { "profitTargetsHit": 0, "stopCents": -25 },
+        { "profitTargetsHit": 1, "stopCents": -10 },
+        { "profitTargetsHit": 2, "stopCents": 0 },
+        { "profitTargetsHit": 3, "stopCents": 20 },
+        { "profitTargetsHit": 4, "stopCents": 40 },
+        { "profitTargetsHit": 5, "stopCents": 60 },
+        { "profitTargetsHit": 6, "stopCents": 80 }
       ],
       "pyramidLevels": [
-        { "addInCents": 8, "percentToAdd": 20 },
-        { "addInCents": 35, "percentToAdd": 20 },
-        { "addInCents": 45, "percentToAdd": 10 }
+        { "addInCents": 25, "percentToAdd": 50 },
+        { "addInCents": 55, "percentToAdd": 20 },
+        { "addInCents": 105, "percentToAdd": 30 },
+        { "addInCents": 155, "percentToAdd": 30 }
       ]
     }
   ]
