@@ -18,13 +18,13 @@ module.exports = {
   strategySettings: {
     baseVolumeRequirement: 800000,
     morningVolumeRequirement: 1000000,
-    gapPercentageRequirement: 25,
+    gapPercentageRequirement: 10,
     priceRange: { min: 3, max: 12 },
     initialEntryOffsetCents: 0, // HOD breakout offset
     entryLimitOffsetCents: 10, // Additional limit offset for entry orders
     initialShareSize: 3000,
     trailingStopIncrementCents: 1,
-    initialTrailingStopOffsetCents: 25,
+    initialTrailingStopOffsetCents: 10,
     openingOrderCooldownSeconds: 5,
   },
   orderSettings: {

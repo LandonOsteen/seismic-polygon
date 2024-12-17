@@ -465,7 +465,10 @@ class OrderManager {
       // Update HOD if currentPrice exceeds known HOD
       if (currentPrice > w.highOfDay) {
         try {
-          const newHod = await this.restClient.getIntradayHigh(upperSymbol);
+          // Use retryOperation to handle transient errors (like 504) gracefully
+          const newHod = await this.retryOperation(() =>
+            this.restClient.getIntradayHigh(upperSymbol)
+          );
           if (newHod && newHod > w.highOfDay) {
             w.highOfDay = newHod;
             this.dashboard.logInfo(
@@ -480,7 +483,7 @@ class OrderManager {
         }
       }
 
-      // Attempt anticipation entry order if conditions met:
+      // Attempt anticipation entry order if conditions are met
       if (
         !w.hasPosition &&
         currentPrice >= w.highOfDay + initialEntryOffsetCents / 100
