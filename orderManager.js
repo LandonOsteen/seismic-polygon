@@ -41,6 +41,7 @@ class OrderManager {
       () => this.loadWatchlistFromFile(),
       config.pollingIntervals.watchlistRefresh
     );
+
     setInterval(
       () => this.pollOrderStatuses(),
       config.pollingIntervals.orderStatus
@@ -67,7 +68,7 @@ class OrderManager {
         this.dashboard.logInfo(`Loaded ${this.tiers.length} tiers.`);
       } else {
         logger.warn(
-          'tiers.json found, but "tiers" property is not an array. Using empty tiers.'
+          'tiers.json found but "tiers" property is not an array. Using empty tiers.'
         );
         this.dashboard.logWarning('Invalid tiers format, using empty tiers.');
         this.tiers = [];
@@ -88,6 +89,8 @@ class OrderManager {
       if (!fs.existsSync(watchlistPath)) {
         logger.warn(`No watchlist.json found.`);
         this.dashboard.logWarning(`No watchlist.json found.`);
+        // still do auto watchlist even if no manual watchlist
+        await this.updateAutoWatchlist();
         this.isUpdatingWatchlist = false;
         return;
       }
@@ -96,14 +99,14 @@ class OrderManager {
       const json = JSON.parse(data);
       const newSymbols = json.symbols.map((s) => s.symbol.toUpperCase());
 
-      // Remove old symbols not in new watchlist and without positions
+      // Remove old symbols not in new watchlist and no position
       for (const symbol in this.watchlist) {
         if (!newSymbols.includes(symbol) && !this.positions[symbol]) {
           this.removeSymbolFromWatchlist(symbol);
         }
       }
 
-      // Add or update new symbols
+      // Add or update new symbols from manual watchlist
       for (const symbol of newSymbols) {
         if (!this.watchlist[symbol]) {
           this.watchlist[symbol] = {
@@ -138,11 +141,123 @@ class OrderManager {
         }
       }
 
+      // After handling manual watchlist, handle auto watchlist
+      await this.updateAutoWatchlist();
+
       this.dashboard.updateWatchlist(this.watchlist);
     } catch (err) {
       this.dashboard.logError(`Error loading watchlist: ${err.message}`);
     } finally {
       this.isUpdatingWatchlist = false;
+    }
+  }
+
+  async updateAutoWatchlist() {
+    if (!config.autoWatchlist.enabled) {
+      // Automatic watchlist disabled
+      return;
+    }
+
+    try {
+      const gainers = await this.restClient.getGainersOrLosers(
+        'gainers',
+        false
+      );
+      const { priceRange, changePercMin, volumeMin } = config.autoWatchlist;
+
+      // Filter gainers by price (lastTrade.p), todaysChangePerc, and volume (min.av)
+      const filtered = gainers.filter((stock) => {
+        const price = stock.lastTrade?.p;
+        const changePerc = stock.todaysChangePerc;
+        const volume = stock.min?.av;
+
+        if (
+          price === undefined ||
+          changePerc === undefined ||
+          volume === undefined
+        ) {
+          return false; // Missing data
+        }
+
+        return (
+          price >= priceRange.min &&
+          price <= priceRange.max &&
+          changePerc >= changePercMin &&
+          volume >= volumeMin
+        );
+      });
+
+      const currentSymbols = new Set(Object.keys(this.watchlist));
+
+      // Add filtered gainers to watchlist if not present
+      for (const g of filtered) {
+        const symbol = g.ticker.toUpperCase();
+        if (!this.watchlist[symbol]) {
+          this.watchlist[symbol] = {
+            highOfDay: null,
+            candidateHOD: null,
+            tier: null,
+            lastEntryTime: null,
+            hasPosition: !!this.positions[symbol],
+            hasPendingEntryOrder: false,
+            isHODFrozen: false,
+            executedPyramidLevels: [],
+            isSubscribedToTrade: false,
+          };
+          this.polygon.subscribe(symbol);
+          this.polygon.subscribeTrade(symbol);
+
+          const hod = await this.restClient.getIntradayHighFromAgg(symbol);
+          if (hod) {
+            this.watchlist[symbol].highOfDay = hod;
+            this.assignTierToSymbol(symbol, hod);
+          }
+
+          this.dashboard.logInfo(
+            `Auto-added ${symbol} to watchlist from gainers.`
+          );
+        }
+      }
+
+      // Remove symbols from watchlist that no longer meet criteria, are not in manual list,
+      // have no position and were automatically added previously.
+      // Identify which stocks are from auto-watchlist by checking if they exist in watchlist.json.
+      // If the user wants to strictly remove those that no longer meet criteria:
+      // We'll remove any symbol that isn't in filtered and:
+      //  - not in manual watchlist.json,
+      //  - no position.
+
+      // First, load manual symbols again (if watchlist.json exists)
+      let manualSymbols = [];
+      const watchlistPath = path.join(__dirname, 'watchlist.json');
+      if (fs.existsSync(watchlistPath)) {
+        const data = fs.readFileSync(watchlistPath, 'utf-8');
+        const json = JSON.parse(data);
+        manualSymbols = json.symbols.map((s) => s.symbol.toUpperCase());
+      }
+
+      const filteredSymbols = new Set(
+        filtered.map((f) => f.ticker.toUpperCase())
+      );
+
+      for (const symbol of Object.keys(this.watchlist)) {
+        // If symbol not in manualSymbols, no position, and not in filtered, remove.
+        if (
+          !manualSymbols.includes(symbol) &&
+          !this.positions[symbol] &&
+          !filteredSymbols.has(symbol)
+        ) {
+          // This symbol was likely added automatically before but no longer meets criteria
+          this.removeSymbolFromWatchlist(symbol);
+          this.dashboard.logInfo(
+            `Auto-removed ${symbol} from watchlist, no longer meets gainers criteria.`
+          );
+        }
+      }
+
+      this.dashboard.updateWatchlist(this.watchlist);
+    } catch (err) {
+      this.dashboard.logError(`Error updating auto watchlist: ${err.message}`);
     }
   }
 
@@ -179,9 +294,7 @@ class OrderManager {
         )}. Using fallback tier (config defaults).`
       );
     } else {
-      // Ensure chosenTier has all the properties needed:
-      // If your tiers always have these properties, this might not be necessary,
-      // but it's good practice to ensure all fields are present.
+      // Ensure chosenTier has all properties or fallback to config if missing
       if (!chosenTier.hodOffsetCents)
         chosenTier.hodOffsetCents = config.orderSettings.hodOffsetCents;
       if (!chosenTier.entryLimitOffsetCents)
@@ -206,7 +319,6 @@ class OrderManager {
         chosenTier.initialEntryOffsetCents =
           config.orderSettings.initialEntryOffsetCents;
 
-      // Assign a name if not present
       if (!chosenTier.name)
         chosenTier.name = `Range [${chosenTier.range[0]}, ${chosenTier.range[1]}]`;
     }
@@ -280,7 +392,6 @@ class OrderManager {
   getTierSettingsForSymbol(symbol) {
     const w = this.watchlist[symbol];
     if (w && w.tier) return w.tier;
-    // fallback if no tier assigned yet
     return {
       hodOffsetCents: config.orderSettings.hodOffsetCents,
       entryLimitOffsetCents: config.orderSettings.entryLimitOffsetCents,
@@ -482,7 +593,6 @@ class OrderManager {
         w.isHODFrozen = true;
         w.candidateHOD = w.highOfDay;
 
-        // Use tier's initialEntryQty if available, else default to config
         const initialQty =
           tier.initialEntryQty || config.orderSettings.initialEntryQty;
         const targetPrice = w.candidateHOD + offset / 100;
@@ -504,7 +614,6 @@ class OrderManager {
       return;
     }
 
-    // Use tier's entryLimitOffsetCents if available
     const tier = this.getTierSettingsForSymbol(symbol);
     const limitOffsetCents =
       tier.entryLimitOffsetCents ||
@@ -640,10 +749,7 @@ class OrderManager {
     const pos = this.positions[symbol];
     if (!pos) return;
 
-    // Use tier's entryLimitOffsetCents if available for profit-taking offset if desired.
-    // If not specifically required, you can stick to config.
     const limitOffsetCents = config.orderSettings.entryLimitOffsetCents || 0;
-
     const oppositeSide = side === 'buy' ? 'sell' : 'buy';
     let limitPrice;
     if (oppositeSide === 'sell') {
@@ -809,12 +915,15 @@ class OrderManager {
     if (!pos || pos.qty <= 0) return;
 
     const side = pos.side === 'buy' ? 'sell' : 'buy';
-    const limitOffsetCents = config.orderSettings.entryLimitOffsetCents || 25;
+    // Use the new stopLimitOffsetCents parameter here
+    const stopLimitOffsetCents = config.orderSettings.stopLimitOffsetCents || 0;
     let limitPrice;
     if (side === 'sell') {
-      limitPrice = pos.currentBid - limitOffsetCents / 100;
+      // For a long position being closed, place the limit order below the bid
+      limitPrice = pos.currentBid - stopLimitOffsetCents / 100;
     } else {
-      limitPrice = pos.currentAsk + limitOffsetCents / 100;
+      // For a short position being closed, place the limit order above the ask
+      limitPrice = pos.currentAsk + stopLimitOffsetCents / 100;
     }
 
     if (limitPrice <= 0 || isNaN(limitPrice)) {
@@ -852,6 +961,64 @@ class OrderManager {
     } catch (err) {
       this.dashboard.logError(
         `Error placing close order for ${symbol}: ${err.message}`
+      );
+    }
+  }
+
+  // If you also want take-profit orders triggered by stops or targets to use the same logic, update placeTakeProfitOrder similarly:
+
+  async placeTakeProfitOrder(symbol, qty, side) {
+    const pos = this.positions[symbol];
+    if (!pos) return;
+
+    const oppositeSide = side === 'buy' ? 'sell' : 'buy';
+    // Use the same stopLimitOffsetCents for uniformity, or use a different param if you prefer.
+    const stopLimitOffsetCents = config.orderSettings.stopLimitOffsetCents || 0;
+    let limitPrice;
+    if (oppositeSide === 'sell') {
+      limitPrice = pos.currentBid - stopLimitOffsetCents / 100;
+    } else {
+      limitPrice = pos.currentAsk + stopLimitOffsetCents / 100;
+    }
+
+    if (limitPrice <= 0 || isNaN(limitPrice)) {
+      this.dashboard.logError(
+        `Invalid limit price for ${symbol} take-profit order.`
+      );
+      return;
+    }
+
+    const order = {
+      symbol,
+      qty: qty.toFixed(0),
+      side: oppositeSide,
+      type: 'limit',
+      time_in_force: 'day',
+      limit_price: limitPrice.toFixed(2),
+      extended_hours: true,
+      client_order_id: this.generateClientOrderId('TAKE_PROFIT'),
+    };
+
+    this.dashboard.logInfo(
+      `Placing take-profit order for ${symbol} at $${limitPrice}`
+    );
+    try {
+      const result = await this.retryOperation(() =>
+        this.limitedCreateOrder(order)
+      );
+      this.dashboard.logInfo(
+        `Take-profit order placed for ${symbol} at $${limitPrice}. Order ID: ${result.id}`
+      );
+      this.orderTracking[result.id] = {
+        symbol,
+        type: 'partial_close',
+        qty: parseFloat(order.qty),
+        side: order.side,
+        filledQty: 0,
+      };
+    } catch (err) {
+      this.dashboard.logError(
+        `Error placing take-profit order for ${symbol}: ${err.message}`
       );
     }
   }

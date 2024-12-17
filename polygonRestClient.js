@@ -18,6 +18,7 @@ class PolygonRestClient {
     const end = now.valueOf();
 
     const url = `${this.baseUrl}/v2/aggs/ticker/${symbol}/range/1/minute/${start}/${end}?adjusted=true&sort=asc&limit=50000&apiKey=${this.apiKey}`;
+
     const response = await axios.get(url);
     const data = response.data;
 
@@ -28,8 +29,27 @@ class PolygonRestClient {
       }
       return maxHigh === Number.NEGATIVE_INFINITY ? null : maxHigh;
     } else {
-      return null;
+      return null; // No data available
     }
+  }
+
+  /**
+   * Fetch top gainers or losers from Polygon snapshot endpoint.
+   * direction: 'gainers' or 'losers'
+   * includeOtc: boolean to include OTC securities or not
+   */
+  async getGainersOrLosers(direction = 'gainers', includeOtc = false) {
+    const validDirections = ['gainers', 'losers'];
+    if (!validDirections.includes(direction)) {
+      throw new Error(
+        `Invalid direction "${direction}". Must be 'gainers' or 'losers'.`
+      );
+    }
+
+    const url = `${this.baseUrl}/v2/snapshot/locale/us/markets/stocks/${direction}?apiKey=${this.apiKey}&include_otc=${includeOtc}`;
+    const response = await axios.get(url);
+    // response.data.tickers is the array of tickers
+    return response.data.tickers || [];
   }
 }
 
