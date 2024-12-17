@@ -21759,3 +21759,254 @@
 2024-12-16T23:51:34.873Z [INFO]: Polygon WebSocket connection opened.
 2024-12-16T23:51:34.873Z [INFO]: Polygon WebSocket connected.
 2024-12-16T23:51:34.923Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T15:40:05.181Z [INFO]: Polygon WebSocket connected.
+2024-12-17T15:40:05.188Z [INFO]: Started polling for order statuses.
+2024-12-17T15:40:05.345Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T15:40:05.346Z [INFO]: Polygon WebSocket connected.
+2024-12-17T15:40:05.350Z [INFO]: Position added: NUKK | Qty: 2700 | Avg Entry: $4.48
+2024-12-17T15:40:05.359Z [INFO]: Subscribed to NUKK quotes.
+2024-12-17T15:40:05.394Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T15:40:05.500Z [INFO]: Stop condition met for NUKK. Closing position.
+2024-12-17T15:40:05.510Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"2700","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.28","extended_hours":true,"client_order_id":"CLOSE-3e8bb745bccda691"}
+2024-12-17T15:40:05.788Z [ERROR]: Error placing limit order to close position for NUKK: {"available":"1800","code":40310000,"existing_qty":"2700","held_for_orders":"900","message":"insufficient qty available for order (requested: 2700, available: 1800)","related_orders":["4854ba52-5aca-4331-976d-49ff225c2d03"],"symbol":"NUKK"}
+2024-12-17T15:40:06.212Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T15:40:06.904Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T15:40:07.143Z [INFO]: Subscribed to EHTH quotes.
+2024-12-17T15:40:07.426Z [INFO]: Subscribed to GXAI quotes.
+2024-12-17T15:40:15.189Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:40:23.498Z [INFO]: Profit target hit for NUKK: +8.00¢ >= +8¢
+2024-12-17T15:40:23.503Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"270","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.46","extended_hours":true,"client_order_id":"LIMIT-630724ad3a2c8150"}
+2024-12-17T15:40:24.265Z [INFO]: Placed limit order for 270 shares of NUKK. Order ID: dc53f98a-ff4d-4505-9bd0-1590c59072c4
+2024-12-17T15:40:25.187Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:40:29.059Z [INFO]: Profit target hit for NUKK: +11.00¢ >= +10¢
+2024-12-17T15:40:29.062Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"306","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.49","extended_hours":true,"client_order_id":"LIMIT-7003f028bea3702e"}
+2024-12-17T15:40:30.766Z [INFO]: Placed limit order for 306 shares of NUKK. Order ID: 5efc6bff-cfba-4809-82af-0665120ea68d
+2024-12-17T15:40:31.276Z [INFO]: Order 5efc6bff-cfba-4809-82af-0665120ea68d filled 233 qty for NUKK. Remaining qty: 1297
+2024-12-17T15:40:31.388Z [INFO]: Profit target hit for NUKK: +20.00¢ >= +20¢
+2024-12-17T15:40:31.391Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"518","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.58","extended_hours":true,"client_order_id":"LIMIT-689e0c840346503f"}
+2024-12-17T15:40:31.968Z [INFO]: Placed limit order for 518 shares of NUKK. Order ID: ed2b81f9-8818-47e6-9348-b6d75dd48a1b
+2024-12-17T15:40:32.320Z [INFO]: Order ed2b81f9-8818-47e6-9348-b6d75dd48a1b filled 221 qty for NUKK. Remaining qty: 1003
+2024-12-17T15:40:33.442Z [INFO]: Profit target hit for NUKK: +30.00¢ >= +30¢
+2024-12-17T15:40:33.445Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"353","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.68","extended_hours":true,"client_order_id":"LIMIT-de82d3cf8fa886cc"}
+2024-12-17T15:40:33.804Z [INFO]: Placed limit order for 353 shares of NUKK. Order ID: 877ed534-a3ff-40eb-a34a-918db18482fa
+2024-12-17T15:40:34.157Z [INFO]: Order 877ed534-a3ff-40eb-a34a-918db18482fa filled 168 qty for NUKK. Remaining qty: 538
+2024-12-17T15:40:34.870Z [INFO]: Order 877ed534-a3ff-40eb-a34a-918db18482fa filled 339 qty for NUKK. Remaining qty: 77
+2024-12-17T15:40:35.188Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:40:45.192Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:40:55.192Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:41:01.072Z [WARN]: Server error 502. Retrying in 1732ms...
+2024-12-17T15:41:01.076Z [WARN]: Server error 502. Retrying in 1924ms...
+2024-12-17T15:41:01.078Z [WARN]: Server error 502. Retrying in 1573ms...
+2024-12-17T15:41:01.080Z [WARN]: Server error 502. Retrying in 1527ms...
+2024-12-17T15:41:01.084Z [WARN]: Server error 502. Retrying in 1452ms...
+2024-12-17T15:41:01.087Z [WARN]: Server error 502. Retrying in 1265ms...
+2024-12-17T15:41:01.089Z [WARN]: Server error 502. Retrying in 1652ms...
+2024-12-17T15:41:01.092Z [WARN]: Server error 502. Retrying in 1671ms...
+2024-12-17T15:41:01.095Z [WARN]: Server error 502. Retrying in 1772ms...
+2024-12-17T15:41:01.097Z [WARN]: Server error 502. Retrying in 1995ms...
+2024-12-17T15:41:01.100Z [WARN]: Server error 502. Retrying in 1507ms...
+2024-12-17T15:41:01.103Z [WARN]: Server error 502. Retrying in 1015ms...
+2024-12-17T15:41:01.106Z [WARN]: Server error 502. Retrying in 1198ms...
+2024-12-17T15:41:01.109Z [WARN]: Server error 502. Retrying in 1746ms...
+2024-12-17T15:41:05.191Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:43:07.264Z [INFO]: Polygon WebSocket connected.
+2024-12-17T15:43:07.270Z [INFO]: Started polling for order statuses.
+2024-12-17T15:43:07.454Z [INFO]: Position added: NUKK | Qty: 353 | Avg Entry: $4.48
+2024-12-17T15:43:07.517Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T15:43:07.519Z [INFO]: Polygon WebSocket connected.
+2024-12-17T15:43:07.575Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T15:43:08.029Z [INFO]: Profit target hit for NUKK: +57.00¢ >= +8¢
+2024-12-17T15:43:08.032Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"35","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.95","extended_hours":true,"client_order_id":"LIMIT-0fb28da831b4fd06"}
+2024-12-17T15:43:08.261Z [INFO]: Placed limit order for 35 shares of NUKK. Order ID: a415f4ad-a0e4-44a1-bb28-98367ddd56c4
+2024-12-17T15:43:08.283Z [INFO]: Subscribed to PRTG quotes.
+2024-12-17T15:43:08.959Z [INFO]: Order a415f4ad-a0e4-44a1-bb28-98367ddd56c4 filled 19 qty for NUKK. Remaining qty: 322
+2024-12-17T15:43:08.973Z [INFO]: Subscribed to OPTX quotes.
+2024-12-17T15:43:09.038Z [INFO]: Profit target hit for NUKK: +51.00¢ >= +10¢
+2024-12-17T15:43:09.042Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"64","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.89","extended_hours":true,"client_order_id":"LIMIT-6a6575b759894cdd"}
+2024-12-17T15:43:09.199Z [INFO]: Subscribed to EHTH quotes.
+2024-12-17T15:43:09.308Z [INFO]: Placed limit order for 64 shares of NUKK. Order ID: 6e15e61d-ad25-48a3-9e1f-b511f22d5122
+2024-12-17T15:43:09.549Z [INFO]: Profit target hit for NUKK: +51.00¢ >= +20¢
+2024-12-17T15:43:09.553Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"128","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.89","extended_hours":true,"client_order_id":"LIMIT-ce5ea3a0f887700d"}
+2024-12-17T15:43:10.019Z [INFO]: Order 6e15e61d-ad25-48a3-9e1f-b511f22d5122 filled 53 qty for NUKK. Remaining qty: 273
+2024-12-17T15:43:10.025Z [INFO]: Order a415f4ad-a0e4-44a1-bb28-98367ddd56c4 filled 27 qty for NUKK. Remaining qty: 246
+2024-12-17T15:43:10.360Z [INFO]: Placed limit order for 128 shares of NUKK. Order ID: ac15d3ee-a73f-40a6-a1d8-323a8ef08317
+2024-12-17T15:43:10.783Z [INFO]: Order ac15d3ee-a73f-40a6-a1d8-323a8ef08317 filled 115 qty for NUKK. Remaining qty: 131
+2024-12-17T15:43:10.786Z [INFO]: Order 6e15e61d-ad25-48a3-9e1f-b511f22d5122 filled 53 qty for NUKK. Remaining qty: 78
+2024-12-17T15:43:10.789Z [INFO]: Order a415f4ad-a0e4-44a1-bb28-98367ddd56c4 filled 27 qty for NUKK. Remaining qty: 51
+2024-12-17T15:43:11.562Z [INFO]: Profit target hit for NUKK: +53.00¢ >= +30¢
+2024-12-17T15:43:11.565Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.91","extended_hours":true,"client_order_id":"LIMIT-6a4fce2c8179a170"}
+2024-12-17T15:43:11.769Z [INFO]: Order ac15d3ee-a73f-40a6-a1d8-323a8ef08317 filled 115 qty for NUKK. Remaining qty: 11
+2024-12-17T15:43:12.114Z [INFO]: Placed limit order for 63 shares of NUKK. Order ID: d6fad1bd-864d-4e30-a541-f8e313fec56f
+2024-12-17T15:43:12.490Z [INFO]: Profit target hit for NUKK: +58.00¢ >= +50¢
+2024-12-17T15:43:12.493Z [INFO]: Attempting to place limit order: {"symbol":"NUKK","qty":"79","side":"sell","type":"limit","time_in_force":"day","limit_price":"4.96","extended_hours":true,"client_order_id":"LIMIT-c86531df29f8f8ee"}
+2024-12-17T15:43:13.160Z [INFO]: Order d6fad1bd-864d-4e30-a541-f8e313fec56f filled 61 qty for NUKK. Remaining qty: 18
+2024-12-17T15:43:13.328Z [ERROR]: Error placing limit order for NUKK: {"available":"63","code":40310000,"existing_qty":"65","held_for_orders":"2","message":"insufficient qty available for order (requested: 79, available: 63)","related_orders":["d6fad1bd-864d-4e30-a541-f8e313fec56f"],"symbol":"NUKK"}
+2024-12-17T15:43:13.339Z [INFO]: Trailing stop activated for NUKK at $4.96. Monitoring for price drops below this level.
+2024-12-17T15:43:14.528Z [INFO]: Trailing stop for NUKK raised to $4.97. Current Price: $5.07
+2024-12-17T15:43:14.580Z [INFO]: Trailing stop for NUKK raised to $4.98. Current Price: $5.08
+2024-12-17T15:43:14.596Z [INFO]: Trailing stop for NUKK raised to $4.99. Current Price: $5.09
+2024-12-17T15:43:17.269Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:43:19.379Z [INFO]: Subscribed to GXAI quotes.
+2024-12-17T15:43:19.626Z [INFO]: Trailing stop for NUKK raised to $5.00. Current Price: $5.10
+2024-12-17T15:43:19.631Z [INFO]: Trailing stop for NUKK raised to $5.01. Current Price: $5.11
+2024-12-17T15:43:20.593Z [INFO]: Trailing stop for NUKK raised to $5.05. Current Price: $5.15
+2024-12-17T15:43:22.090Z [INFO]: Trailing stop for NUKK raised to $5.06. Current Price: $5.16
+2024-12-17T15:43:22.594Z [INFO]: Trailing stop for NUKK raised to $5.07. Current Price: $5.17
+2024-12-17T15:43:23.095Z [INFO]: Trailing stop for NUKK raised to $5.09. Current Price: $5.19
+2024-12-17T15:43:25.622Z [INFO]: Trailing stop for NUKK raised to $5.11. Current Price: $5.21
+2024-12-17T15:43:26.657Z [INFO]: Trailing stop for NUKK raised to $5.12. Current Price: $5.22
+2024-12-17T15:43:27.142Z [INFO]: Trailing stop for NUKK raised to $5.13. Current Price: $5.23
+2024-12-17T15:43:27.268Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:43:27.656Z [INFO]: Trailing stop for NUKK raised to $5.14. Current Price: $5.24
+2024-12-17T15:43:27.678Z [INFO]: Trailing stop for NUKK raised to $5.15. Current Price: $5.25
+2024-12-17T15:43:34.801Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.806Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.04","extended_hours":true,"client_order_id":"CLOSE-3acea01661cf64ef"}
+2024-12-17T15:43:34.823Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.826Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.04","extended_hours":true,"client_order_id":"CLOSE-cf71e84467f1b0e9"}
+2024-12-17T15:43:34.832Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.834Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.04","extended_hours":true,"client_order_id":"CLOSE-1afe4162f70a5851"}
+2024-12-17T15:43:34.839Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.841Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-6fd03976f502e240"}
+2024-12-17T15:43:34.845Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.848Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-4b9974522e9098dd"}
+2024-12-17T15:43:34.852Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.855Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-bd2fe9adcad89bdb"}
+2024-12-17T15:43:34.860Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.862Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-95c05d6802e2e2b0"}
+2024-12-17T15:43:34.867Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.869Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-1c183003afa8d8fb"}
+2024-12-17T15:43:34.874Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.876Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-c0edadad3b438b1c"}
+2024-12-17T15:43:34.881Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.883Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-51e312bfb7339913"}
+2024-12-17T15:43:34.888Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:34.891Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-4daff0c67841c0d9"}
+2024-12-17T15:43:35.042Z [INFO]: Limit order placed to close position in NUKK. Order ID: 7d21fd8c-c50c-4799-a55a-304cdb6c08cd
+2024-12-17T15:43:35.224Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.230Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-fdea0f14904e09f1"}
+2024-12-17T15:43:35.249Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.252Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-f160de53306f560e"}
+2024-12-17T15:43:35.260Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.263Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-0f0fc43692066d19"}
+2024-12-17T15:43:35.270Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.273Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-7dd336b64b52d7d8"}
+2024-12-17T15:43:35.283Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.286Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-be8cb9f5805667fa"}
+2024-12-17T15:43:35.472Z [ERROR]: Error placing limit order to close position for NUKK: {"available":"0","code":40310000,"existing_qty":"63","held_for_orders":"63","message":"insufficient qty available for order (requested: 63, available: 0)","symbol":"NUKK"}
+2024-12-17T15:43:35.723Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.729Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-79f36904de2631ec"}
+2024-12-17T15:43:35.737Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.741Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-6be68b137346816e"}
+2024-12-17T15:43:35.749Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.753Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-ce5d6aa9823a9f77"}
+2024-12-17T15:43:35.761Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.764Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-08323db95228a4d0"}
+2024-12-17T15:43:35.770Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.773Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-7cb0e24b27a5a7bc"}
+2024-12-17T15:43:35.779Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:35.782Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-6d6015df9bc7af65"}
+2024-12-17T15:43:35.787Z [ERROR]: Error placing limit order to close position for NUKK: {"available":"0","code":40310000,"existing_qty":"47","held_for_orders":"47","message":"insufficient qty available for order (requested: 63, available: 0)","symbol":"NUKK"}
+2024-12-17T15:43:36.097Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:36.230Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.235Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-48db9408dfe2bad3"}
+2024-12-17T15:43:36.245Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.249Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-16cd506124d1e6d6"}
+2024-12-17T15:43:36.258Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.262Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-dc2014bebeba1d90"}
+2024-12-17T15:43:36.269Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.272Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-e397fa13e8c29c77"}
+2024-12-17T15:43:36.279Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.282Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-cc9bc16dbe4d2408"}
+2024-12-17T15:43:36.288Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.291Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-d0bf13f54bcf43ab"}
+2024-12-17T15:43:36.297Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.300Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-13bda5d275baafa5"}
+2024-12-17T15:43:36.305Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.308Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-b73dc288239cd10e"}
+2024-12-17T15:43:36.316Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:36.326Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.03","extended_hours":true,"client_order_id":"CLOSE-f56ad832fe503390"}
+2024-12-17T15:43:36.474Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:36.799Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:37.145Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:37.270Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:43:37.492Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:37.883Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:38.187Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:38.357Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.359Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-5520297405359fdc"}
+2024-12-17T15:43:38.365Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.368Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-4e7ce6abe66b7904"}
+2024-12-17T15:43:38.373Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.375Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-8a854fb5a9a06b28"}
+2024-12-17T15:43:38.381Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.383Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-06c91d6116ad1a66"}
+2024-12-17T15:43:38.388Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.391Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-2d4216d36f7fc944"}
+2024-12-17T15:43:38.396Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.399Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-1d479959393c428a"}
+2024-12-17T15:43:38.404Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.407Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-61fd30438dddc574"}
+2024-12-17T15:43:38.412Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.415Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-595461d5bf41b833"}
+2024-12-17T15:43:38.421Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.424Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-6fc7dbeeef4b0d51"}
+2024-12-17T15:43:38.430Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.432Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.01","extended_hours":true,"client_order_id":"CLOSE-ff689be124ed05a4"}
+2024-12-17T15:43:38.438Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.441Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.01","extended_hours":true,"client_order_id":"CLOSE-952351da335f4b93"}
+2024-12-17T15:43:38.446Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.449Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-a86e10bcea5a7ae0"}
+2024-12-17T15:43:38.455Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.458Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-35cdb0e55509b01e"}
+2024-12-17T15:43:38.596Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:38.741Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.746Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-3a3428f7f99d7228"}
+2024-12-17T15:43:38.755Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.759Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-01ebc20ad099eebf"}
+2024-12-17T15:43:38.766Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.769Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-6597eefa48593c88"}
+2024-12-17T15:43:38.776Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.779Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-fe3a0ce3287f1791"}
+2024-12-17T15:43:38.786Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.789Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.01","extended_hours":true,"client_order_id":"CLOSE-cdf7c21f9062d57f"}
+2024-12-17T15:43:38.795Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.798Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.01","extended_hours":true,"client_order_id":"CLOSE-ff921f187e67be51"}
+2024-12-17T15:43:38.804Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.806Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.01","extended_hours":true,"client_order_id":"CLOSE-4345d70f31664113"}
+2024-12-17T15:43:38.812Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.815Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-a29329c3dc2e551c"}
+2024-12-17T15:43:38.820Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.823Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-84f3624168e6c34e"}
+2024-12-17T15:43:38.828Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.831Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-92c3b2098898e08a"}
+2024-12-17T15:43:38.838Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.841Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-9c3c908c30fe189f"}
+2024-12-17T15:43:38.847Z [INFO]: Trailing stop hit for NUKK at $5.15. Closing remaining position.
+2024-12-17T15:43:38.850Z [INFO]: Closing position with limit order: {"symbol":"NUKK","qty":"63","side":"sell","type":"limit","time_in_force":"day","limit_price":"5.02","extended_hours":true,"client_order_id":"CLOSE-8c0744de16843abb"}
+2024-12-17T15:43:38.986Z [INFO]: Position removed: NUKK
+2024-12-17T15:43:39.235Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:39.600Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:39.935Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:40.427Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:40.646Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:41.352Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:41.703Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:42.040Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:42.402Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:42.739Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:43.100Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:43.448Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:43.789Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:44.142Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:44.497Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:44.840Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:45.195Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:45.576Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:45.888Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:46.248Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:46.606Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:46.943Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:47.275Z [INFO]: Dynamic config reloaded. Updated override symbols.
+2024-12-17T15:43:47.292Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:47.639Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:47.992Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}

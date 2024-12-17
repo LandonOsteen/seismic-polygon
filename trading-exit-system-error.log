@@ -4833,3 +4833,40 @@
 2024-12-16T23:15:15.521Z [ERROR]: Error adding symbol WKEY to watchlist: read ECONNRESET
 2024-12-16T23:30:34.856Z [ERROR]: Error refreshing positions: read ECONNRESET
 2024-12-16T23:31:33.940Z [ERROR]: Error adding symbol WKEY to watchlist: read ECONNRESET
+2024-12-17T15:40:05.788Z [ERROR]: Error placing limit order to close position for NUKK: {"available":"1800","code":40310000,"existing_qty":"2700","held_for_orders":"900","message":"insufficient qty available for order (requested: 2700, available: 1800)","related_orders":["4854ba52-5aca-4331-976d-49ff225c2d03"],"symbol":"NUKK"}
+2024-12-17T15:43:13.328Z [ERROR]: Error placing limit order for NUKK: {"available":"63","code":40310000,"existing_qty":"65","held_for_orders":"2","message":"insufficient qty available for order (requested: 79, available: 63)","related_orders":["d6fad1bd-864d-4e30-a541-f8e313fec56f"],"symbol":"NUKK"}
+2024-12-17T15:43:35.472Z [ERROR]: Error placing limit order to close position for NUKK: {"available":"0","code":40310000,"existing_qty":"63","held_for_orders":"63","message":"insufficient qty available for order (requested: 63, available: 0)","symbol":"NUKK"}
+2024-12-17T15:43:35.787Z [ERROR]: Error placing limit order to close position for NUKK: {"available":"0","code":40310000,"existing_qty":"47","held_for_orders":"47","message":"insufficient qty available for order (requested: 63, available: 0)","symbol":"NUKK"}
+2024-12-17T15:43:36.097Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:36.474Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:36.799Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:37.145Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:37.492Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:37.883Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:38.187Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:38.596Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:39.235Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:39.600Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:39.935Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:40.427Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:40.646Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:41.352Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:41.703Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:42.040Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:42.402Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:42.739Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:43.100Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:43.448Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:43.789Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:44.142Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:44.497Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:44.840Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:45.195Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:45.576Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:45.888Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:46.248Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:46.606Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:46.943Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:47.292Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:47.639Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
+2024-12-17T15:43:47.992Z [ERROR]: Error placing limit order to close position for NUKK: {"code":42210000,"message":"asset \"NUKK\" cannot be sold short"}
