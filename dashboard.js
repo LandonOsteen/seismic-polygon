@@ -1,5 +1,3 @@
-// dashboard.js
-
 const blessed = require('blessed');
 const contrib = require('blessed-contrib');
 const logger = require('./logger');
@@ -7,371 +5,235 @@ const config = require('./config');
 
 class Dashboard {
   constructor() {
-    // Create a screen object.
     this.screen = blessed.screen({
       smartCSR: true,
       title: 'Trading Exit System Dashboard',
     });
 
-    // Create a grid layout with 12 rows and 12 columns.
     this.grid = new contrib.grid({
       rows: 12,
       cols: 12,
       screen: this.screen,
     });
 
-    // --------------------------
-    // 1. Positions Table (Top-Left)
-    // --------------------------
-    this.positionsTable = this.grid.set(0, 0, 4, 9, contrib.table, {
+    // Positions (0,0,4,7)
+    this.positionsTable = this.grid.set(0, 0, 4, 7, contrib.table, {
       keys: true,
       fg: 'white',
-      selectedFg: 'white',
-      selectedBg: 'blue',
-      interactive: true,
       label: ' POSITIONS ',
-      width: '100%',
-      height: '100%',
       border: { type: 'line', fg: 'cyan' },
-      columnSpacing: 2,
-      columnWidth: [
-        8, // SYMBOL
-        6, // SIDE
-        6, // QTY
-        10, // AVG ENTRY
-        10, // BID
-        10, // ASK
-        9, // PROFIT
-        20, // STOP PRICE
-        16, // TARGETS HIT
-        16, // PYRAMIDS HIT
-      ],
-      style: {
-        header: { fg: 'cyan', bold: true },
-        cell: {
-          fg: 'white',
-          selected: {
-            fg: 'white',
-            bg: 'blue',
-          },
-        },
-      },
+      columnWidth: [8, 6, 6, 10, 10, 20, 20],
     });
-
-    // Define table headers for Positions Table (All Caps)
     this.positionsTable.setData({
       headers: [
         'SYMBOL',
         'SIDE',
         'QTY',
         'AVG ENTRY',
-        'BID',
-        'ASK',
         'PROFIT',
         'STOP PRICE',
-        'TARGETS HIT',
-        'PYRAMIDS HIT',
+        'TRAIL STOP',
       ],
       data: [],
     });
 
-    // --------------------------
-    // 1.5 Account Summary Box (Top-Right)
-    // --------------------------
-    this.accountSummaryBox = this.grid.set(0, 9, 4, 3, contrib.markdown, {
+    // Account Summary (0,7,2,5)
+    this.accountSummaryBox = this.grid.set(0, 7, 2, 5, contrib.markdown, {
       label: ' ACCOUNT SUMMARY ',
       border: { type: 'line', fg: 'cyan' },
-      style: {
-        fg: 'white',
-      },
     });
 
-    // --------------------------
-    // 2. Info Box and Orders Table (Middle)
-    // --------------------------
+    // Watchlist (2,7,2,5)
+    this.watchlistTable = this.grid.set(2, 7, 2, 5, contrib.table, {
+      keys: true,
+      fg: 'white',
+      label: ' WATCHLIST ',
+      border: { type: 'line', fg: 'cyan' },
+      columnWidth: [10, 10, 14, 10],
+    });
+    this.watchlistTable.setData({
+      headers: ['SYMBOL', 'HOD', 'CANDIDATE_HOD', 'TIER'],
+      data: [],
+    });
 
-    // Info Box (Left)
+    // Info (4,0,4,6)
     this.infoBox = this.grid.set(4, 0, 4, 6, contrib.log, {
       fg: 'green',
-      selectedFg: 'green',
       label: ' INFO ',
       tags: true,
       keys: true,
-      vi: true,
-      mouse: true,
-      scrollbar: {
-        fg: 'blue',
-        ch: ' ',
-      },
+      scrollbar: { fg: 'blue' },
     });
 
-    // Orders Table (Right)
+    // Orders (4,6,4,6)
     this.ordersTable = this.grid.set(4, 6, 4, 6, contrib.table, {
       keys: true,
       fg: 'magenta',
-      selectedFg: 'white',
-      selectedBg: 'blue',
-      interactive: true,
       label: ' ORDERS ',
-      width: '100%',
-      height: '100%',
       border: { type: 'line', fg: 'magenta' },
-      columnWidth: [8, 10, 6, 10, 10, 10, 12], // ID, SYMBOL, SIDE, TYPE, QTY, PRICE, STATUS
-      style: {
-        header: { fg: 'magenta', bold: true },
-        cell: {
-          fg: 'white',
-          selected: {
-            fg: 'white',
-            bg: 'blue',
-          },
-        },
-      },
+      columnWidth: [8, 10, 6, 10, 10, 10, 12],
     });
-
-    // Define table headers for Orders Table (All Caps)
     this.ordersTable.setData({
       headers: ['ID', 'SYMBOL', 'SIDE', 'TYPE', 'QTY', 'PRICE', 'STATUS'],
       data: [],
     });
 
-    // --------------------------
-    // 3. Errors Box and Warnings Box (Bottom)
-    // --------------------------
-
-    // Errors Box (Left)
+    // Errors (8,0,4,6)
     this.errorBox = this.grid.set(8, 0, 4, 6, contrib.log, {
       fg: 'red',
-      selectedFg: 'red',
       label: ' ERRORS ',
       tags: true,
       keys: true,
-      vi: true,
-      mouse: true,
-      scrollbar: {
-        fg: 'blue',
-        ch: ' ',
-      },
+      scrollbar: { fg: 'blue' },
     });
 
-    // Warnings Box (Right)
+    // Warnings (8,6,4,6)
     this.warningBox = this.grid.set(8, 6, 4, 6, contrib.log, {
       fg: 'yellow',
-      selectedFg: 'yellow',
       label: ' WARNINGS ',
       tags: true,
       keys: true,
-      vi: true,
-      mouse: true,
-      scrollbar: {
-        fg: 'blue',
-        ch: ' ',
-      },
+      scrollbar: { fg: 'blue' },
     });
 
-    // --------------------------
-    // 4. Quit Key Bindings
-    // --------------------------
-    // Quit on Escape, q, or Control-C.
-    this.screen.key(['escape', 'q', 'C-c'], () => {
-      return process.exit(0);
-    });
-
+    this.screen.key(['escape', 'q', 'C-c'], () => process.exit(0));
     this.screen.render();
   }
 
-  /**
-   * Logs informational messages to the Info box.
-   * @param {string} message - The message to log.
-   */
   logInfo(message) {
     if (this.shouldDisplayMessage(message)) {
       const timestamp = new Date().toISOString();
       this.infoBox.log(`[${timestamp}] INFO: ${message}`);
       this.screen.render();
     } else {
-      // Optionally, log to file without displaying on dashboard
       logger.debug(`Filtered out info message: ${message}`);
     }
   }
 
-  /**
-   * Logs warning messages to the Warnings box.
-   * @param {string} message - The warning message to log.
-   */
   logWarning(message) {
     const timestamp = new Date().toISOString();
     this.warningBox.log(`[${timestamp}] WARNING: ${message}`);
     this.screen.render();
   }
 
-  /**
-   * Logs error messages to the Errors box.
-   * @param {string} message - The error message to log.
-   */
   logError(message) {
     const timestamp = new Date().toISOString();
     this.errorBox.log(`[${timestamp}] ERROR: ${message}`);
     this.screen.render();
   }
 
-  /**
-   * Determines whether a message should be displayed on the Info box.
-   * @param {string} message - The message to evaluate.
-   * @returns {boolean} - True if the message should be displayed; false otherwise.
-   */
   shouldDisplayMessage(message) {
-    const excludedMessages = config.logging.excludedMessages || [
-      'Already refreshing positions. Skipping this interval.',
-      'Already polling order statuses. Skipping this interval.',
-      // Add any other messages you want to exclude from dashboard logs
-    ];
-
-    // Check if the message includes any of the excluded phrases
-    return !excludedMessages.some((excludedMsg) =>
-      message.includes(excludedMsg)
-    );
+    const excludedMessages = config.logging.excludedMessages || [];
+    return !excludedMessages.some((ex) => message.includes(ex));
   }
 
-  /**
-   * Updates the Positions table with the latest positions.
-   * @param {Array} positions - Array of position objects.
-   */
   updatePositions(positions) {
-    const tableData = positions.map((pos) => {
-      // Ensure all necessary properties are present
+    const data = positions.map((pos) => {
       const profitCents = parseFloat(pos.profitCents);
       const profit = `${profitCents.toFixed(2)}¢`;
 
-      // Simplify stop price display
-      const stopCentsValue = parseFloat(pos.stopCents);
-      const stopCentsDisplay = `${stopCentsValue >= 0 ? '' : '-'}${Math.abs(
-        stopCentsValue
-      )}¢`;
+      let stopPrice = 'N/A';
+      if (pos.stopPrice !== null && pos.stopPrice !== undefined) {
+        stopPrice = `$${pos.stopPrice.toFixed(2)} (dynamic)`;
+      }
 
-      const stopPrice = pos.stopPrice
-        ? `$${pos.stopPrice.toFixed(2)} (${stopCentsDisplay})`
-        : 'N/A';
-
-      // Fetch total profit targets from config
-      const totalProfitTargets =
-        pos.totalProfitTargets || config.orderSettings.profitTargets.length;
-
-      const profitTargetsHit = pos.profitTargetsHit
-        ? `${pos.profitTargetsHit}/${totalProfitTargets}`
-        : `0/${totalProfitTargets}`;
-
-      // Fetch total pyramid levels from config
-      const totalPyramidLevels =
-        pos.totalPyramidLevels || config.orderSettings.pyramidLevels.length;
-
-      const pyramidLevelsHit = pos.pyramidLevelsHit
-        ? `${pos.pyramidLevelsHit}/${totalPyramidLevels}`
-        : `0/${totalPyramidLevels}`;
+      let trailStop = 'N/A';
+      if (pos.trailingStopActive && pos.trailingStopPrice) {
+        trailStop = `$${pos.trailingStopPrice.toFixed(2)} (trail)`;
+      }
 
       return [
         pos.symbol,
         pos.side.toUpperCase(),
         pos.qty,
         `$${pos.avgEntryPrice.toFixed(2)}`,
-        pos.currentBid !== undefined ? `$${pos.currentBid.toFixed(2)}` : 'N/A',
-        pos.currentAsk !== undefined ? `$${pos.currentAsk.toFixed(2)}` : 'N/A',
         profit,
         stopPrice,
-        profitTargetsHit,
-        pyramidLevelsHit,
+        trailStop,
       ];
     });
 
-    // Update the table data with the new positions
     this.positionsTable.setData({
       headers: [
         'SYMBOL',
         'SIDE',
         'QTY',
         'AVG ENTRY',
-        'BID',
-        'ASK',
         'PROFIT',
         'STOP PRICE',
-        'TARGETS HIT',
-        'PYRAMIDS HIT',
+        'TRAIL STOP',
       ],
-      data: tableData,
+      data: data,
     });
 
-    // Apply coloring to rows based on profit or loss
     this.applyRowColors(positions);
-
     this.screen.render();
   }
 
-  /**
-   * Updates the Orders table with the latest orders.
-   * @param {Array} orders - Array of order objects.
-   */
-  updateOrders(orders) {
-    const tableData = orders.map((order) => {
-      const limitPrice = order.limit_price
-        ? `$${parseFloat(order.limit_price).toFixed(2)}`
-        : order.trail_price
-        ? `$${parseFloat(order.trail_price).toFixed(2)}`
-        : 'Market';
+  applyRowColors(positions) {
+    const rows = this.positionsTable.rows;
+    positions.forEach((pos, i) => {
+      const profitCents = parseFloat(pos.profitCents);
+      if (profitCents > 0) {
+        rows.items[i].style = { fg: 'green' };
+      } else if (profitCents < 0) {
+        rows.items[i].style = { fg: 'red' };
+      } else {
+        rows.items[i].style = { fg: 'yellow' };
+      }
+    });
+  }
 
+  updateOrders(orders) {
+    const data = orders.map((o) => {
+      const limitPrice = o.limit_price
+        ? `$${parseFloat(o.limit_price).toFixed(2)}`
+        : o.trail_price
+        ? `$${parseFloat(o.trail_price).toFixed(2)}`
+        : 'Market';
       return [
-        order.id,
-        order.symbol,
-        order.side.toUpperCase(),
-        order.type.toUpperCase(),
-        order.qty,
+        o.id,
+        o.symbol,
+        o.side.toUpperCase(),
+        o.type.toUpperCase(),
+        o.qty,
         limitPrice,
-        order.status.toUpperCase(),
+        o.status.toUpperCase(),
       ];
     });
 
     this.ordersTable.setData({
       headers: ['ID', 'SYMBOL', 'SIDE', 'TYPE', 'QTY', 'PRICE', 'STATUS'],
-      data: tableData,
+      data: data,
     });
-
     this.screen.render();
   }
 
-  /**
-   * Applies color coding to the positions table rows based on profit or loss.
-   * @param {Array} positions - Array of position objects.
-   */
-  applyRowColors(positions) {
-    // Retrieve the table rows
-    const rows = this.positionsTable.rows;
-
-    positions.forEach((pos, index) => {
-      const profitCents = parseFloat(pos.profitCents);
-
-      if (profitCents > 0) {
-        // Profit zone: Green text
-        rows.items[index].style = { fg: 'green' };
-      } else if (profitCents < 0) {
-        // Loss zone: Red text
-        rows.items[index].style = { fg: 'red' };
-      } else {
-        // Breakeven: Yellow text
-        rows.items[index].style = { fg: 'yellow' };
-      }
+  updateWatchlist(watchlist) {
+    const data = Object.keys(watchlist).map((sym) => {
+      const w = watchlist[sym];
+      return [
+        sym,
+        w.highOfDay !== null ? w.highOfDay.toFixed(2) : 'N/A',
+        w.candidateHOD !== null ? w.candidateHOD.toFixed(2) : 'N/A',
+        w.tier ? w.tier.name : 'N/A',
+      ];
     });
+
+    this.watchlistTable.setData({
+      headers: ['SYMBOL', 'HOD', 'CANDIDATE_HOD', 'TIER'],
+      data: data,
+    });
+    this.screen.render();
   }
 
-  /**
-   * Updates the Account Summary section with the latest account information.
-   * @param {Object} accountSummary - The account summary data.
-   */
-  updateAccountSummary(accountSummary) {
+  updateAccountSummary(account) {
     const content = `### Account Summary
 
-- **Equity**: $${accountSummary.equity}
-- **Cash**: $${accountSummary.cash}
-- **Day's P&L**: $${accountSummary.pnl} (${accountSummary.pnl_percentage}%)
-- **Open P&L**: $${accountSummary.unrealized_pl}
+- **Equity**: $${account.equity}
+- **Cash**: $${account.cash}
+- **Day's P&L**: $${account.pnl} (${account.pnl_percentage}%)
+- **Open P&L**: $${account.unrealized_pl}
 `;
     this.accountSummaryBox.setMarkdown(content);
     this.screen.render();

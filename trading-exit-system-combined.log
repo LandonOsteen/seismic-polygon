@@ -1,42 +1,94 @@
-2024-12-17T01:17:03.353Z [INFO]: Polygon WebSocket connected.
-2024-12-17T01:17:03.360Z [INFO]: Started polling for order statuses.
-2024-12-17T01:17:03.560Z [INFO]: Polygon WebSocket connection opened.
-2024-12-17T01:17:03.561Z [INFO]: Polygon WebSocket connected.
-2024-12-17T01:17:03.615Z [INFO]: Polygon WebSocket authenticated.
-2024-12-17T01:21:14.493Z [INFO]: Polygon WebSocket connected.
-2024-12-17T01:21:14.501Z [INFO]: Started polling for order statuses.
-2024-12-17T01:21:14.800Z [INFO]: Polygon WebSocket connection opened.
-2024-12-17T01:21:14.802Z [INFO]: Polygon WebSocket connected.
-2024-12-17T01:21:14.854Z [INFO]: Polygon WebSocket authenticated.
-2024-12-17T02:03:47.791Z [INFO]: Polygon WebSocket connected.
-2024-12-17T02:03:47.798Z [INFO]: Started polling for order statuses.
-2024-12-17T02:03:48.195Z [INFO]: Polygon WebSocket connection opened.
-2024-12-17T02:03:48.197Z [INFO]: Polygon WebSocket connected.
-2024-12-17T02:03:48.246Z [INFO]: Polygon WebSocket authenticated.
-2024-12-17T02:42:59.943Z [INFO]: Polygon WebSocket connected.
-2024-12-17T02:42:59.951Z [INFO]: Started polling for order statuses.
-2024-12-17T02:43:00.161Z [INFO]: Polygon WebSocket connection opened.
-2024-12-17T02:43:00.162Z [INFO]: Polygon WebSocket connected.
-2024-12-17T02:43:00.218Z [INFO]: Polygon WebSocket authenticated.
-2024-12-17T03:09:11.103Z [INFO]: Polygon WebSocket connected.
-2024-12-17T03:09:11.111Z [INFO]: Started polling for order statuses.
-2024-12-17T03:09:11.287Z [INFO]: Polygon WebSocket connection opened.
-2024-12-17T03:09:11.289Z [INFO]: Polygon WebSocket connected.
-2024-12-17T03:09:11.339Z [INFO]: Polygon WebSocket authenticated.
-2024-12-17T03:11:34.871Z [INFO]: Polygon WebSocket connected.
-2024-12-17T03:11:34.880Z [INFO]: Started polling for order statuses.
-2024-12-17T03:11:35.061Z [INFO]: Polygon WebSocket connection opened.
-2024-12-17T03:11:35.062Z [INFO]: Polygon WebSocket connected.
-2024-12-17T03:11:35.112Z [INFO]: Polygon WebSocket authenticated.
-2024-12-17T15:30:26.805Z [INFO]: Polygon WebSocket connected.
-2024-12-17T15:30:26.808Z [INFO]: Started polling for order statuses.
-2024-12-17T15:30:26.985Z [INFO]: Position added: OPTX | Qty: 2000 | Avg Entry: $4.49
-2024-12-17T15:30:26.998Z [INFO]: Polygon WebSocket connection opened.
-2024-12-17T15:30:26.999Z [INFO]: Polygon WebSocket connected.
-2024-12-17T15:30:27.050Z [INFO]: Polygon WebSocket authenticated.
-2024-12-17T15:30:27.297Z [INFO]: Stop condition met for OPTX. Initiating limit order to close position.
-2024-12-17T15:30:27.316Z [INFO]: Closing position with limit order: {"symbol":"OPTX","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.41","extended_hours":true,"client_order_id":"CLOSE-05c8a296a460ccc4"}
-2024-12-17T15:30:27.547Z [INFO]: Limit order placed to close position in OPTX. Order ID: ca481928-adcc-4c3e-a3bf-177dc21b37f6
-2024-12-17T15:30:28.229Z [INFO]: Order ca481928-adcc-4c3e-a3bf-177dc21b37f6 filled 1499 qty for OPTX. Remaining qty: -979
-2024-12-17T15:30:28.233Z [INFO]: Position removed: OPTX
-2024-12-17T15:30:28.236Z [INFO]: Unsubscribed from OPTX quotes.
+2024-12-17T19:52:38.165Z [INFO]: Loaded 2 tiers.
+2024-12-17T19:52:38.200Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:52:38.203Z [INFO]: Started polling for order statuses.
+2024-12-17T19:52:38.705Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T19:52:38.710Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:52:38.755Z [INFO]: Position added: RZLV | Qty: 1548 | Avg Entry: $3.35
+2024-12-17T19:52:38.762Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T19:54:02.871Z [INFO]: Loaded 2 tiers.
+2024-12-17T19:54:02.911Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:54:02.920Z [INFO]: Started polling for order statuses.
+2024-12-17T19:54:03.247Z [INFO]: Position added: RZLV | Qty: 1548 | Avg Entry: $3.35
+2024-12-17T19:54:03.296Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T19:54:03.298Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:54:03.355Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T19:54:45.294Z [INFO]: Loaded 2 tiers.
+2024-12-17T19:54:45.336Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:54:45.345Z [INFO]: Started polling for order statuses.
+2024-12-17T19:54:45.511Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T19:54:45.513Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:54:45.561Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T19:54:45.689Z [INFO]: Position added: RZLV | Qty: 1548 | Avg Entry: $3.35
+2024-12-17T19:55:12.310Z [INFO]: Loaded 2 tiers.
+2024-12-17T19:55:12.362Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:55:12.377Z [INFO]: Started polling for order statuses.
+2024-12-17T19:55:12.545Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T19:55:12.546Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:55:12.597Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T19:55:12.755Z [INFO]: Position added: RZLV | Qty: 1548 | Avg Entry: $3.35
+2024-12-17T19:55:42.909Z [INFO]: Stop condition met for RZLV. Closing position immediately.
+2024-12-17T19:55:44.508Z [INFO]: Position for RZLV removed.
+2024-12-17T19:55:52.360Z [INFO]: Unsubscribed from RZLV quotes.
+2024-12-17T19:55:52.361Z [INFO]: Unsubscribed from RZLV trades.
+2024-12-17T19:58:27.645Z [INFO]: Loaded 2 tiers.
+2024-12-17T19:58:27.683Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:58:27.690Z [INFO]: Started polling for order statuses.
+2024-12-17T19:58:27.866Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T19:58:27.867Z [INFO]: Polygon WebSocket connected.
+2024-12-17T19:58:27.923Z [INFO]: Subscribed to IONQ quotes.
+2024-12-17T19:58:27.923Z [INFO]: Subscribed to IONQ trades.
+2024-12-17T19:58:27.930Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T20:02:54.783Z [INFO]: Loaded 2 tiers.
+2024-12-17T20:02:54.820Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:02:54.827Z [INFO]: Started polling for order statuses.
+2024-12-17T20:02:55.025Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T20:02:55.026Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:02:55.077Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T20:02:55.276Z [INFO]: Subscribed to IONQ quotes.
+2024-12-17T20:02:55.277Z [INFO]: Subscribed to IONQ trades.
+2024-12-17T20:13:19.871Z [INFO]: Loaded 2 tiers.
+2024-12-17T20:13:19.911Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:13:19.920Z [INFO]: Started polling for order statuses.
+2024-12-17T20:13:20.155Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T20:13:20.157Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:13:20.175Z [INFO]: Subscribed to IONQ quotes.
+2024-12-17T20:13:20.175Z [INFO]: Subscribed to IONQ trades.
+2024-12-17T20:13:20.210Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T20:15:30.217Z [INFO]: Loaded 2 tiers.
+2024-12-17T20:15:30.258Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:15:30.267Z [INFO]: Started polling for order statuses.
+2024-12-17T20:15:30.583Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T20:15:30.584Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:15:30.638Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T20:15:30.643Z [INFO]: Subscribed to IONQ quotes.
+2024-12-17T20:15:30.643Z [INFO]: Subscribed to IONQ trades.
+2024-12-17T20:22:02.454Z [INFO]: Loaded undefined tiers.
+2024-12-17T20:22:02.495Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:22:02.503Z [INFO]: Started polling for order statuses.
+2024-12-17T20:22:02.674Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T20:22:02.675Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:22:02.723Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T20:28:27.991Z [INFO]: Loaded 4 tiers.
+2024-12-17T20:28:28.032Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:28:28.040Z [INFO]: Started polling for order statuses.
+2024-12-17T20:28:28.216Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T20:28:28.217Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:28:28.266Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T20:28:28.405Z [INFO]: Subscribed to IONQ quotes.
+2024-12-17T20:28:28.405Z [INFO]: Subscribed to IONQ trades.
+2024-12-17T20:28:51.172Z [INFO]: Loaded 4 tiers.
+2024-12-17T20:28:51.211Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:28:51.218Z [INFO]: Started polling for order statuses.
+2024-12-17T20:28:51.378Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T20:28:51.380Z [INFO]: Polygon WebSocket connected.
+2024-12-17T20:28:51.422Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T20:28:51.518Z [INFO]: Subscribed to IONQ quotes.
+2024-12-17T20:28:51.518Z [INFO]: Subscribed to IONQ trades.
+2024-12-17T20:31:01.223Z [INFO]: Unsubscribed from IONQ quotes.
+2024-12-17T20:31:01.223Z [INFO]: Unsubscribed from IONQ trades.
+2024-12-17T20:31:01.227Z [INFO]: Subscribed to MIND quotes.
+2024-12-17T20:31:01.227Z [INFO]: Subscribed to MIND trades.
+2024-12-17T20:34:31.244Z [INFO]: Unsubscribed from MIND quotes.
+2024-12-17T20:34:31.244Z [INFO]: Unsubscribed from MIND trades.
+2024-12-17T20:34:31.254Z [INFO]: Subscribed to CRDF quotes.
+2024-12-17T20:34:31.254Z [INFO]: Subscribed to CRDF trades.
