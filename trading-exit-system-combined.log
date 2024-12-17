@@ -1,0 +1,42 @@
+2024-12-17T01:17:03.353Z [INFO]: Polygon WebSocket connected.
+2024-12-17T01:17:03.360Z [INFO]: Started polling for order statuses.
+2024-12-17T01:17:03.560Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T01:17:03.561Z [INFO]: Polygon WebSocket connected.
+2024-12-17T01:17:03.615Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T01:21:14.493Z [INFO]: Polygon WebSocket connected.
+2024-12-17T01:21:14.501Z [INFO]: Started polling for order statuses.
+2024-12-17T01:21:14.800Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T01:21:14.802Z [INFO]: Polygon WebSocket connected.
+2024-12-17T01:21:14.854Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T02:03:47.791Z [INFO]: Polygon WebSocket connected.
+2024-12-17T02:03:47.798Z [INFO]: Started polling for order statuses.
+2024-12-17T02:03:48.195Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T02:03:48.197Z [INFO]: Polygon WebSocket connected.
+2024-12-17T02:03:48.246Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T02:42:59.943Z [INFO]: Polygon WebSocket connected.
+2024-12-17T02:42:59.951Z [INFO]: Started polling for order statuses.
+2024-12-17T02:43:00.161Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T02:43:00.162Z [INFO]: Polygon WebSocket connected.
+2024-12-17T02:43:00.218Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T03:09:11.103Z [INFO]: Polygon WebSocket connected.
+2024-12-17T03:09:11.111Z [INFO]: Started polling for order statuses.
+2024-12-17T03:09:11.287Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T03:09:11.289Z [INFO]: Polygon WebSocket connected.
+2024-12-17T03:09:11.339Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T03:11:34.871Z [INFO]: Polygon WebSocket connected.
+2024-12-17T03:11:34.880Z [INFO]: Started polling for order statuses.
+2024-12-17T03:11:35.061Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T03:11:35.062Z [INFO]: Polygon WebSocket connected.
+2024-12-17T03:11:35.112Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T15:30:26.805Z [INFO]: Polygon WebSocket connected.
+2024-12-17T15:30:26.808Z [INFO]: Started polling for order statuses.
+2024-12-17T15:30:26.985Z [INFO]: Position added: OPTX | Qty: 2000 | Avg Entry: $4.49
+2024-12-17T15:30:26.998Z [INFO]: Polygon WebSocket connection opened.
+2024-12-17T15:30:26.999Z [INFO]: Polygon WebSocket connected.
+2024-12-17T15:30:27.050Z [INFO]: Polygon WebSocket authenticated.
+2024-12-17T15:30:27.297Z [INFO]: Stop condition met for OPTX. Initiating limit order to close position.
+2024-12-17T15:30:27.316Z [INFO]: Closing position with limit order: {"symbol":"OPTX","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"3.41","extended_hours":true,"client_order_id":"CLOSE-05c8a296a460ccc4"}
+2024-12-17T15:30:27.547Z [INFO]: Limit order placed to close position in OPTX. Order ID: ca481928-adcc-4c3e-a3bf-177dc21b37f6
+2024-12-17T15:30:28.229Z [INFO]: Order ca481928-adcc-4c3e-a3bf-177dc21b37f6 filled 1499 qty for OPTX. Remaining qty: -979
+2024-12-17T15:30:28.233Z [INFO]: Position removed: OPTX
+2024-12-17T15:30:28.236Z [INFO]: Unsubscribed from OPTX quotes.
