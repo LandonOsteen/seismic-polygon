@@ -84,6 +84,50 @@ class OrderManager {
     }
   }
 
+  async fetchAndSetHod(symbol) {
+    try {
+      const hod = await this.restClient.getIntradayHighFromAgg(symbol);
+      if (hod) {
+        // Ensure watchlist entry exists
+        if (!this.watchlist[symbol]) {
+          this.watchlist[symbol] = {
+            highOfDay: null,
+            candidateHOD: null,
+            tier: null,
+            lastEntryTime: null,
+            hasPosition: false,
+            hasPendingEntryOrder: false,
+            isHODFrozen: false,
+            executedPyramidLevels: [],
+            isSubscribedToTrade: false,
+          };
+        }
+
+        this.watchlist[symbol].highOfDay = hod;
+        this.realHOD[symbol] = hod;
+        this.candidateHOD[symbol] = hod;
+
+        // Assign tier to symbol based on new HOD
+        this.assignTierToSymbol(symbol, hod);
+
+        this.dashboard.logInfo(
+          `HOD re-fetched and set for ${symbol}: ${hod.toFixed(2)}`
+        );
+      } else {
+        this.dashboard.logWarning(
+          `No new HOD data for ${symbol}, leaving as is.`
+        );
+      }
+
+      // Optionally refresh positions if you need up-to-date info after resetting HOD
+      await this.refreshPositions();
+    } catch (err) {
+      this.dashboard.logError(
+        `Error fetching and setting HOD for ${symbol}: ${err.message}`
+      );
+    }
+  }
+
   /**
    * Initializes existing positions by fetching them from Alpaca and adding to tracking.
    */

@@ -40,3 +40,42 @@
 2024-12-17T15:30:28.229Z [INFO]: Order ca481928-adcc-4c3e-a3bf-177dc21b37f6 filled 1499 qty for OPTX. Remaining qty: -979
 2024-12-17T15:30:28.233Z [INFO]: Position removed: OPTX
 2024-12-17T15:30:28.236Z [INFO]: Unsubscribed from OPTX quotes.
+2024-12-19T13:50:54.128Z [INFO]: Polygon WebSocket connected.
+2024-12-19T13:50:54.131Z [INFO]: Started polling for order statuses.
+2024-12-19T13:50:54.310Z [INFO]: Polygon WebSocket connection opened.
+2024-12-19T13:50:54.311Z [INFO]: Polygon WebSocket connected.
+2024-12-19T13:50:54.361Z [INFO]: Polygon WebSocket authenticated.
+2024-12-19T13:51:12.917Z [INFO]: Polygon WebSocket connected.
+2024-12-19T13:51:12.920Z [INFO]: Started polling for order statuses.
+2024-12-19T13:51:14.185Z [INFO]: Polygon WebSocket connection opened.
+2024-12-19T13:51:14.187Z [INFO]: Polygon WebSocket connected.
+2024-12-19T13:51:14.291Z [INFO]: Polygon WebSocket authenticated.
+2024-12-19T13:51:29.061Z [INFO]: Position added: TPET | Qty: 2000 | Avg Entry: $3.38915
+2024-12-19T13:51:29.068Z [INFO]: Subscribed to TPET quotes.
+2024-12-19T13:51:38.839Z [INFO]: Stop condition met for TPET. Initiating limit order to close position.
+2024-12-19T13:51:38.840Z [INFO]: Closing position with limit order: {"symbol":"TPET","qty":"4000","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.92","extended_hours":true,"client_order_id":"CLOSE-5426274b24973407"}
+2024-12-19T13:51:39.000Z [INFO]: Limit order placed to close position in TPET. Order ID: 93013c1b-3495-494c-a15c-42586bcbfe1d
+2024-12-19T13:51:39.341Z [INFO]: Position removed: TPET
+2024-12-19T13:51:39.344Z [INFO]: Unsubscribed from TPET quotes.
+2024-12-19T13:51:55.075Z [INFO]: Position added: TPET | Qty: 2000 | Avg Entry: $3.27495
+2024-12-19T13:51:55.080Z [INFO]: Subscribed to TPET quotes.
+2024-12-19T13:52:11.348Z [INFO]: Stop condition met for TPET. Initiating limit order to close position.
+2024-12-19T13:52:11.350Z [INFO]: Closing position with limit order: {"symbol":"TPET","qty":"2000","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.77","extended_hours":true,"client_order_id":"CLOSE-3ff8d566b4ca2f4a"}
+2024-12-19T13:52:11.778Z [INFO]: Limit order placed to close position in TPET. Order ID: 829eebe4-4cfd-4b8d-92c7-0ef9a09aa4be
+2024-12-19T13:52:12.122Z [INFO]: Position removed: TPET
+2024-12-19T13:52:12.125Z [INFO]: Unsubscribed from TPET quotes.
+2024-12-19T13:52:37.080Z [INFO]: Position added: TPET | Qty: 1000 | Avg Entry: $3.0499
+2024-12-19T13:52:37.086Z [INFO]: Subscribed to TPET quotes.
+2024-12-19T13:52:50.905Z [INFO]: Profit target hit for TPET: +14.01¢ >= +10¢
+2024-12-19T13:52:50.906Z [INFO]: Attempting to place limit order: {"symbol":"TPET","qty":"30","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.94","extended_hours":true,"client_order_id":"LIMIT-1a5a24343cc01194"}
+2024-12-19T13:52:51.100Z [INFO]: Placed limit order for 30 shares of TPET. Order ID: f472d604-ac1f-46be-8099-0cfc86b9bbce
+2024-12-19T13:53:22.963Z [INFO]: Stop condition met for TPET. Initiating limit order to close position.
+2024-12-19T13:53:22.965Z [INFO]: Closing position with limit order: {"symbol":"TPET","qty":"4970","side":"sell","type":"limit","time_in_force":"day","limit_price":"2.77","extended_hours":true,"client_order_id":"CLOSE-eeda6c7479e4036a"}
+2024-12-19T13:53:23.137Z [INFO]: Limit order placed to close position in TPET. Order ID: dda5240a-b83b-4269-80cb-23732bb376a6
+2024-12-19T13:53:23.478Z [INFO]: Position removed: TPET
+2024-12-19T13:53:23.480Z [INFO]: Unsubscribed from TPET quotes.
+2024-12-23T17:13:14.623Z [INFO]: Polygon WebSocket connected.
+2024-12-23T17:13:14.626Z [INFO]: Started polling for order statuses.
+2024-12-23T17:13:14.806Z [INFO]: Polygon WebSocket connection opened.
+2024-12-23T17:13:14.807Z [INFO]: Polygon WebSocket connected.
+2024-12-23T17:13:14.859Z [INFO]: Polygon WebSocket authenticated.
